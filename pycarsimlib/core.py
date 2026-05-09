@@ -172,3 +172,32 @@ class CarsimManager:
         logger.info(f"Saving results into {_target_dir}")
         shutil.copytree(_source_dir, _target_dir, dirs_exist_ok=True)
         logger.info("Successfully saved results.")
+
+    def set_vehicle_param(self,
+                          front_spring_rate: float = None,
+                          ):
+        self.close()
+
+        # 
+        if front_spring_rate is not None:
+            self.modify_simfile_param("FRONT_SPRING_RATE", front_spring_rate)
+        
+        self._init_carsim()
+        logger.info("车辆参数修改完成")
+
+    
+    def modify_simfile_param(self, param_name: str, value: float):
+        if not os.path.exists(self.simfile_path):
+            logger.error("Simfile not found.")
+            raise FileNotFoundError
+        
+        with open(self.simfile_path, "r", encoding="utf-8", errors="ignore") as f:
+            lines = f.read()
+
+        # 匹配 PARAM
+        pattern = rf'{param_name}\s*=\s*[-+]?\d*\.?\d+'
+        new_lines = f'{param_name} = {value:.6f}\n'
+        lines = re.sub(pattern, new_lines, lines)
+        
+        with open(self.simfile_path, "w", encoding="utf-8") as f:
+            f.write(lines)
