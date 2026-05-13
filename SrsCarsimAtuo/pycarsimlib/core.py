@@ -268,8 +268,8 @@ class CarsimManager:
             with open(par_path, 'w', encoding='utf-8') as f:
                 f.write(new_content)
 
-            self.logger.info(f"✅ 减震器阻尼修改成功: {par_path}, 缩放比例 = {value}")
+            self.logger.info(f"减震器阻尼修改成功: {par_path}, 缩放比例 = {value}")
 
         except Exception as e:
-            self.logger.error(f"❌ 修改减震器失败: {str(e)}")
+            self.logger.error(f"修改减震器失败: {str(e)}")
             raise FileNotFoundError("Simfile not found.")

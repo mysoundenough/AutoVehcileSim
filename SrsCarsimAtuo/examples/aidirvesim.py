@@ -2,7 +2,7 @@
 import gc
 gc.collect()
 import os
-os.chdir(r"C:\Carsim2024.1\Data\auto")  #
+os.chdir(r"C:\Srs\SrsAutoCarSim\auto")  #
 import sys
 from pathlib import Path
 # 把项目根目录加入 Python 路径
@@ -14,7 +14,7 @@ from rich.progress import track
 logger = initialize_logging(__name__)
 
 # constant params
-CARSIM_DB_DIR = r"C:\Carsim2024.1\Data\auto"
+CARSIM_DB_DIR = r"C:\Srs\SrsAutoCarSim\auto"
 VEHICLE_TYPE = "normal_vehicle"
 
 
@@ -29,13 +29,14 @@ def main() -> None:
     )
 
     # 1. 修改 前悬架空气弹簧刚度
-    par_path = r"C:\Carsim2024.1\Data\auto\Suspensions\Compliance\CmpInd_6a0a169e-9f67-48f4-8f46-0512eb1a3093.par"
-    cm.set_vehicle_param(par_path=par_path, front_spring_rate=25)  # N/m
+    par_path = r"C:\Srs\SrsAutoCarSim\auto\Suspensions\Compliance\CmpInd_6a0a169e-9f67-48f4-8f46-0512eb1a3093.par"
+    cm.set_vehicle_param(par_path=par_path, front_spring_rate=2)  # N/m
     # 2. 修改 转向
     # 3. 修改 阻尼
-    par_path = r"C:\Carsim2024.1\Data\auto\Suspensions\Shocks\Shock_06339072-ca43-46c4-af82-ec3bf59d6ffc.par"
-    cm.set_vehicle_param(par_path=par_path, shock_force_rate=10/9)  # *k 变化倍数
+    # par_path = r"C:\Srs\SrsAutoCarSim\auto\Suspensions\Shocks\Shock_06339072-ca43-46c4-af82-ec3bf59d6ffc.par"
+    # cm.set_vehicle_param(par_path=par_path, shock_force_rate=10/9)  # *k 变化倍数
     # 4. 修改 动力
+
     # # 修改目标车速（单位：km/h）
     # cm.set_vehicle_param(user_speed=50.0)  # km/h
 
