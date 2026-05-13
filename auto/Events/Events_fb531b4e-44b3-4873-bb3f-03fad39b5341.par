@@ -1,0 +1,55 @@
+PARSFILE
+#FullDataName Events`A. Apply Throttle in 1st gear`MT Acceleration
+#CheckBox1 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 >
+#RingCtrl10 1
+#RingCtrl11 0
+*NAME1 av_trans
+*VALUE1 300
+*SPEED 0
+OPT_SC 0
+SV_VXS 0
+PARSFILE Control\Throttle\Throttle_97e6432a-92e9-460c-b26f-db418b865ac3.par
+#BlueLink18 Control: Throttle (Open Loop)`Ramp To Full Throttle in 0.5 sec.` Ramp` , Speed link`Throttle_97e6432a-92e9-460c-b26f-db418b865ac3
+
+#MiscYellow0
+TSTART_THROTTLE = T
+TSTART_PBK_CON T
+TSTART_F_BRAKE_PEDAL T
+TSTART_GEAR = T
+TSTART_CLUTCH = T
+#ENDMYellow
+
+PARSFILE Control\Gear_mt\GearOL_0c1bc042-7f28-45be-9a4c-6317fbe6ee6f.par
+#BlueLink10 Control: Shifting (Open Loop)`1st Gear w/ 2 sec. Clutch Engagement` Constant` , Miscellaneous`GearOL_0c1bc042-7f28-45be-9a4c-6317fbe6ee6f
+
+PARSFILE Control\Braking\PbkCon_fd9ef75a-c7fa-48ec-a814-9563f688340e.par
+#BlueLink11 Control: Braking MC Pressure (Open Loop)`Smooth Brake Release: 1 to 0 MPa` Sigmoid` , Miscellaneous`PbkCon_fd9ef75a-c7fa-48ec-a814-9563f688340e
+
+#MiscYellow1
+CLUTCH_TORQUE_GAIN = 0.95; ! Allow for clutch slip
+TSCALE_PBK_CON = 1.5;
+#ENDMYellow
+
+MAKE_EVENT av_trans > 300 ; Events\Events_8ef0ee62-41e3-4fee-a317-5647e1778d2f.par
+#BlueLink0 Events`B. Switch to CL Shift Control` MT Acceleration` , Events`Events_8ef0ee62-41e3-4fee-a317-5647e1778d2f
+
+SET_EVENT_ID 0 ! reset to default
+
+LOG_ENTRY Used Dataset: Events; { MT Acceleration } A. Apply Throttle in 1st gear
+#Library : Events
+#DataSet : A. Apply Throttle in 1st gear
+#Category: MT Acceleration
+#FileID  : Events_fb531b4e-44b3-4873-bb3f-03fad39b5341
+#Created : 04-14-2021 08:44:28
+#Modified: 02-23-2023 16:21:00
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

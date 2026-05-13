@@ -1,0 +1,31 @@
+PARSFILE
+#FullDataName Events`02 - Jounce - Rear is at full jounce`K&C Test Sequence
+#CheckBox1 0    
+#CheckBox6 0    
+#CheckBox7 1    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 ZERO ~=
+#RingCtrl10 1
+#RingCtrl11 4
+*VALUE1 (at_max_l1 | at_max_r1) & (at_max_l2 | at_max_r2)
+PARSFILE Generic\VS_commands\GenVS_cce55e43-b151-47f7-9118-5f61950a16bc.par
+#BlueLink10 Generic VS Commands`02 - Jounce - Record max - Rr` K&C Test Sequence` , Miscellaneous`GenVS_cce55e43-b151-47f7-9118-5f61950a16bc
+
+DEFINE_EVENT (at_max_l1 | at_max_r1) & (at_max_l2 | at_max_r2) ; Events\Events_b5af09b5-d8ad-4e81-ae24-eebce691780e.par
+#BlueLink0 Events`End Events` ` , Events`Events_b5af09b5-d8ad-4e81-ae24-eebce691780e
+
+SET_EVENT_ID 0 ! reset to default
+
+LOG_ENTRY Used Dataset: Events; { K&C Test Sequence } 02 - Jounce - Rear is at full jounce
+#Library : Events
+#DataSet : 02 - Jounce - Rear is at full jounce
+#Category: K&C Test Sequence
+#FileID  : Events_259d64d6-0bd3-4c1b-a1f5-7252c0608e4d
+#Modified: 05-28-2021 14:59:27
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

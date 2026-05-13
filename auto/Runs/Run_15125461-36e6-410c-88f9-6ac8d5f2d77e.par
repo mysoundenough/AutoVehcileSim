@@ -1,0 +1,104 @@
+PARSFILE
+#FullDataName CarSim Run Control`AEB CCRs Test Series`AEB: Euro NCAP Tests
+#VEHICLECODE Ind_Ind
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_15125461-36e6-410c-88f9-6ac8d5f2d77e
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Animator\Cameras\Camera_a9a29c8e-4050-45dd-a1b0-68322cea8073.par
+#BlueLink0 Animator: Camera Setup`150 Azm, 10 El, 6.25 m` Vehicle Reference` , Animator camera`Camera_a9a29c8e-4050-45dd-a1b0-68322cea8073
+
+#CheckBox0 1    
+#CheckBox1 0    
+#CheckBox2 1    
+#CheckBox3 0    
+#CheckBox4 0    
+#CheckBox5 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox8 1    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+#CheckBox12 0    
+
+#RingCtrl0 4
+#RingCtrl1 3
+#RingCtrl2 3
+#RingCtrl3 0
+#RingCtrl6 0
+#RingCtrl7 -1
+*RUN_COLOR 0.8 0 0
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Vehicles\Assembly\Vehicle_e6f35df5-0f64-4e6d-b346-b14a899356c4.par
+#BlueLink2 Vehicle: Assembly`C-Class, Hatchback Euro NCAP SA` C-Class` , Math Model`Vehicle_e6f35df5-0f64-4e6d-b346-b14a899356c4
+
+PARSFILE Procedures\Proc_bd323e7d-2753-4d7c-b401-a0f1b5d093d2.par
+#BlueLink28 Procedures`AEB Test Series: CCRs` AEB: Automated Emergency Braking` , Procedure`Proc_bd323e7d-2753-4d7c-b401-a0f1b5d093d2
+
+PARSFILE Animator\HUD\HUD_28cddbb9-94c6-4e76-a06f-7737ba30c08f.par
+#BlueLink9 Animator: HUD`Throttle and Speed, L. Side, 19% Up` Vehicle Status Indicators` , Miscellaneous`HUD_28cddbb9-94c6-4e76-a06f-7737ba30c08f
+
+PARSFILE Animator\HUD\HUD_8bfe3738-adc6-4687-ab25-a13a7a623d5e.par
+#BlueLink10 Animator: HUD`AEB CCRs Label, Stationary GVT` Euro NCAP` , Miscellaneous`HUD_8bfe3738-adc6-4687-ab25-a13a7a623d5e
+
+PARSFILE Animator\HUD\HUD_492c4fac-ff9f-4170-b2dc-ea2afc29c8e5.par
+#BlueLink11 Animator: HUD`Time To Collision` Euro NCAP` , Miscellaneous`HUD_492c4fac-ff9f-4170-b2dc-ea2afc29c8e5
+
+*TSTOP 6
+*TSTART 0
+*SSTART 0
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Vehicles\Assembly\Vehicle_e6f35df5-0f64-4e6d-b346-b14a899356c4.png
+WRITE_SENSOR_DETECT
+Title AEB CCRs Test Series <AEB: Euro NCAP Tests>
+CATEGORY AEB: Euro NCAP Tests 
+DATASET_TITLE AEB CCRs Test Series
+#MiscYellow0
+! Adjust the start speed of the GVT ahead of
+! the ego vehilce (instantiated in Procedure)
+Vx_GVT = 0 ; km/h
+!Start station set too
+SSTART_GVT = VUT_START_STATION +40+LEN_GVT
+#ENDMYellow
+
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#AEB : Autonomous Emergency Braking
+#GVT : Global Vehicle Target
+#VUT : Vehicle Under Test
+#FCW : Forward Collision Warning
+#CCRs : Car-to-Car Rear, Stationary GVT
+#
+#This example shows a test scenario published by Euro NCAP for AEB systems. The target is stationary and a variety of speeds are simulated for the VUT with AEB:
+#- The GVT speed is defined with an output parameter Vx_GVT that can be set as a constant or managed with an equation.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { AEB: Euro NCAP Tests } AEB CCRs Test Series
+#Library : CarSim Run Control
+#DataSet : AEB CCRs Test Series
+#Category: AEB: Euro NCAP Tests
+#FileID  : Run_15125461-36e6-410c-88f9-6ac8d5f2d77e
+#Created : 09-09-2021 10:14:22
+#Modified: 11-21-2022 14:16:15
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Run
+
+END

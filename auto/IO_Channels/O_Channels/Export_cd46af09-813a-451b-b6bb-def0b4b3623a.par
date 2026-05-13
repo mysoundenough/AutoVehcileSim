@@ -1,0 +1,29 @@
+PARSFILE
+#FullDataName I/O Channels: Export`Velocity, Position, and Orientation`Parallel Solvers
+#RingCtrl1 1
+
+
+EXPORT Vx
+EXPORT Xo
+EXPORT Yo
+EXPORT Yaw
+#MiscYellow0
+#Number of Selected Channels: 4
+#CHN_NAME: Vx
+#CHN_NAME: Xo
+#CHN_NAME: Yo
+#CHN_NAME: Yaw
+#ENDMYellow
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Export; { Parallel Solvers } Velocity, Position, and Orientation
+#Library : I/O Channels: Export
+#DataSet : Velocity, Position, and Orientation
+#Category: Parallel Solvers
+#FileID  : Export_cd46af09-813a-451b-b6bb-def0b4b3623a
+#Modified: 06-16-2021 12:32:06
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Export Channels
+
+END

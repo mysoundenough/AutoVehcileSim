@@ -1,0 +1,120 @@
+PARSFILE
+#FullDataName CarSim Run Control`MF-Tyre on Simulink: DLC`Tire Models (External Software)
+#VEHICLECODE Ind_Ind
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_8cd3a747-3afe-44f3-9906-201cfc83373c
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Models\Simulink\Simlink_7dae724d-ae3d-4198-ab16-627959b7e323.par
+#BlueLink12 Models: Simulink`MF-Tyre/MF-Swift on Simulink` External Tires` , Models`Simlink_7dae724d-ae3d-4198-ab16-627959b7e323
+
+PARSFILE Animator\Cameras\Camera_8f7a3057-cb7d-444e-8cf2-c6f46989b6a4.par
+#BlueLink0 Animator: Camera Setup`0 Azm, 5 El, 27 m` Road Reference` , Animator camera`Camera_8f7a3057-cb7d-444e-8cf2-c6f46989b6a4
+
+#CheckBox0 1    
+#CheckBox1 1    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 0    
+#CheckBox5 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox8 0    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+#CheckBox12 0    
+
+#RingCtrl0 4
+#RingCtrl1 1
+#RingCtrl2 3
+#RingCtrl3 0
+#RingCtrl6 4
+#RingCtrl7 -1
+*RUN_COLOR 1 0.6 1
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Vehicles\Assembly\Vehicle_f55a8b81-0c90-4a9e-9aca-55bdf3ac0e45.par
+#BlueLink2 Vehicle: Assembly`E-Class, Sedan: Simulink Tire Model` External Tire Models` , Math Model`Vehicle_f55a8b81-0c90-4a9e-9aca-55bdf3ac0e45
+
+PARSFILE Procedures\Proc_3ae0353d-bd7c-43a3-9da4-150b6952a10e.par
+#BlueLink28 Procedures`DLC @ 120 km/h (Quick Start)` Handling Testing` , Procedure`Proc_3ae0353d-bd7c-43a3-9da4-150b6952a10e
+
+*SPEED 120
+*TSTOP 70
+*TSTART 0
+*SSTART 0
+*SSTOP 170
+PARSFILE Plot\Setup\Plot_c7306601-bee0-4edc-92fb-2c670cb34a1b.par
+#BlueLink15 Plot: Setup`Longitudinal Forces` Tire Forces and Moments` , Plot`Plot_c7306601-bee0-4edc-92fb-2c670cb34a1b
+
+PARSFILE Plot\Setup\Plot_0773e087-151d-42db-a308-f02b7b6ee48d.par
+#BlueLink16 Plot: Setup`Lateral Forces` Tire Forces and Moments` , Plot`Plot_0773e087-151d-42db-a308-f02b7b6ee48d
+
+PARSFILE Plot\Setup\Plot_a5884b30-2228-44f6-afe5-eb3fd414c1c3.par
+#BlueLink17 Plot: Setup`Aligning Moments` Tire Forces and Moments` , Plot`Plot_a5884b30-2228-44f6-afe5-eb3fd414c1c3
+
+PARSFILE Plot\Setup\Plot_64cb3336-8c32-4bee-ac86-7a1aead2adec.par
+#BlueLink18 Plot: Setup`Overturning Moments` Tire Forces and Moments` , Plot`Plot_64cb3336-8c32-4bee-ac86-7a1aead2adec
+
+
+SPECIAL_PARSFILE Runs\Run_313ed064-0068-4715-8778-afaae6752996.par
+#BlueLink23 CarSim Run Control`MF-Tyre, Sym.: DLC` Tire Models` , Overlay run or ERD file`Run_313ed064-0068-4715-8778-afaae6752996
+
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Animator\Vehicles\AniVeh_e52a21a6-9bb5-4010-a060-992aa1911e27.png
+#BlueLink13 ` , Output Variables` , Output Variables` , Output Variables`
+
+WRITE_SENSOR_DETECT
+Title MF-Tyre on Simulink: DLC <Tire Models (External Software)>
+CATEGORY Tire Models (External Software) 
+DATASET_TITLE MF-Tyre on Simulink: DLC
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#This example uses Siemens MF-Tyre/MF-Swift tire model connected with CarSim vehicle model in Simulink in which each of vehicle and tires is represented by a S-Function block.
+#
+#In order to run, the following extra steps are needed:
+#
+#1) 	Click "Send to Simulink" button on the CarSim Runs Control screen to open the Simulink model.
+#
+#2) 	On MATLAB command window, change the current directory to "mathworks" folder under Simcenter tire installation, e.g. \simcenter_tire\mftyre_mfswift-2022.1.1\mathworks\.
+#
+#3) 	On MATLAB command window, type "mfswift_startup" and hit return key.
+#
+#4) 	On MATLAB command window, change the current directory to CarSim data root directory, e.g. \CarSim_Data\, or click "Send to Simulink" button on the CarSim Runs Control screen again.
+#
+#5) 	Click run button on the Simulink model.
+#
+#
+#CarSim imports all tire forces and moments at WC (wheel center) and CTC (central tire contact) from the external tire model; and CarSim exports kinematics variables of location coordinates, velocities, orientation angles, angular speeds, road height/Mu, etc. of each tire to the external tire model.
+#
+#This Procedure demonstrates a common Double Lane Change handling test.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { Tire Models (External Software) } MF-Tyre on Simulink: DLC
+#Library : CarSim Run Control
+#DataSet : MF-Tyre on Simulink: DLC
+#Category: Tire Models (External Software)
+#FileID  : Run_8cd3a747-3afe-44f3-9906-201cfc83373c
+#Created : 10-14-2022 19:46:20
+#Modified: 07-06-2023 11:59:25
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Run
+
+END

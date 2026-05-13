@@ -1,0 +1,66 @@
+PARSFILE
+#FullDataName Road: 3D Surface (All Properties)`1001: Enter South, Exit East -Artic Bus`Intersection, 3D Roads with Curbs
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Roads\3D_Road\Road_0b06d4c6-606e-41a1-a65e-be49e77bf142.png
+#RingCtrl0 2
+#CheckBox0 0    
+
+SET_IROAD_FOR_ID 1001
+ROAD_N_DZ = 0
+CURRENT_ROAD_ID = ROAD_ID
+set_description road_id 1001: Enter South, Exit East -Artic Bus
+PARSFILE Roads\BuilderSegment\RoadSeg_a09c2235-681b-48de-a620-d24ab3577bd4.par
+#BlueLink0 Path: Segment Builder`South Entrance, Right Turn, 1001` Crossing with Curbs` , Reference Path`RoadSeg_a09c2235-681b-48de-a620-d24ab3577bd4
+
+ROAD_PATH_ID = PATH_ID
+
+set_description road_path_id PATH_ID for: South Entrance, Right Turn, 1001
+PARSFILE Roads\Center_Z\RdRefZ_d1e6faaf-d0e3-4d4a-ad3a-9adc96876a8c.par
+#BlueLink1 Road: Reference Line Elevation`Hill and Dip in the Road` Hills and Valleys` , Path Elevation`RdRefZ_d1e6faaf-d0e3-4d4a-ad3a-9adc96876a8c
+
+PARSFILE Roads\dZ_Map\RdMapZ_6efd998e-857b-4b19-ab53-7e21922819e9.par
+#BlueLink2 Road: Off-Center Elevation Map, S-L Grid`Cross-slope and Curb for Intersection` Gutters, Curbs, Ditches` , Miscellaneous`RdMapZ_6efd998e-857b-4b19-ab53-7e21922819e9
+
+PARSFILE Roads\Friction\RdMu_25e73395-9471-44b9-9c60-27bd9cc24921.par
+#BlueLink3 Road: Friction Map, S-L Grid`Constant: 0.85` Constant` , Friction`RdMu_25e73395-9471-44b9-9c60-27bd9cc24921
+
+PARSFILE Roads\Shapes\RdShape_36c96e8c-d80e-4b7f-a1ff-1fe9bd1d4083.par
+#BlueLink4 Road: Animator Surface Shapes`Rt Turn w/ Curb, Crswlk @ 10m w hills` Intersections` , Road shape definitions`RdShape_36c96e8c-d80e-4b7f-a1ff-1fe9bd1d4083
+
+RR_SURF_CONSTANT 1
+L_CAMERA_FRONT 0.5
+L_CAMERA_REAR 0.5
+add_reference_frame road_stuff_6__,_3D_Shapes
+reference_frame_ghosts off
+#BlueLink6 ` , 3D Shapes` , 3D Shapes` , 3D Shapes`
+
+add_reference_frame road_stuff_7__,_3D_Shapes
+reference_frame_ghosts off
+#BlueLink7 ` , 3D Shapes` , 3D Shapes` , 3D Shapes`
+
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36b2ee7b-54ec-4c39-9781-51b289ab39c0.par
+#BlueLink5 Animator: Camera Setup`180 Azm, 5 El, 49 m` Road Reference` , Camera`Camera_36b2ee7b-54ec-4c39-9781-51b289ab39c0
+
+parsfile Roads\3D_Road\Road_0b06d4c6-606e-41a1-a65e-be49e77bf142.ani
+
+#EMBEDDED_NOTES
+#This road is shared by the 3- and 4-way intersection examples. It enters from the South and exits East.
+#
+#The lane has cross-slope of about 2.5% when straight, but transitions to flat for the intersection.
+#
+#This includes a pedestrian crosswalk.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Road: 3D Surface (All Properties); { Intersection, 3D Roads with Curbs } 1001: Enter South, Exit East -Artic Bus
+#Library : Road: 3D Surface (All Properties)
+#DataSet : 1001: Enter South, Exit East -Artic Bus
+#Category: Intersection, 3D Roads with Curbs
+#FileID  : Road_0b06d4c6-606e-41a1-a65e-be49e77bf142
+#Created : 05-26-2022 23:11:42
+#Modified: 05-26-2022 23:11:42
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode 3D Road
+
+END

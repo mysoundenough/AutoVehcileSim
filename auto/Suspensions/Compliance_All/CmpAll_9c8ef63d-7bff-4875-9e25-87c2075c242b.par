@@ -1,0 +1,62 @@
+PARSFILE
+#FullDataName Suspension: Compliance (Nonlinear)`E-Class Sedan - Front, X DOF`
+#CheckBox0 0    
+#CheckBox1 0    
+#CheckBox2 1    
+
+#RingCtrl0 1
+#RingCtrl2 1
+#RingCtrl6 1
+#RingCtrl8 1
+#RingCtrl10 1
+#RingCtrl14 1
+#RingCtrl18 1
+#RingCtrl20 1
+#RingCtrl22 0
+#RingCtrl23 1
+*CT_FX_L -1.9e-6
+*CS_FY_L -3.3e-5
+*CS_MZ_L 1.4e-4
+*CC_FX_L 0
+*CI_FY_L 5e-5
+*CI_MZ_L -5.3e-5
+*C_LAT_L 2.2e-5
+*CD_MY_L 0
+*FX_SUSP_CMP_COEFFICIENT_L 1/2.0e-4
+
+
+DEFINE_SUSP_X_DOF iaxle
+iside 1
+CT_FX_COEFFICIENT -1.9e-6
+CS_FY_COEFFICIENT -3.3e-5
+CS_MZ_COEFFICIENT 1.4e-4
+CC_FX_COEFFICIENT 0
+CI_FY_COEFFICIENT 5e-5
+CI_MZ_COEFFICIENT -5.3e-5
+FX_SUSP_CMP_COEFFICIENT 1/2.0e-4
+C_LAT_COEFFICIENT 2.2e-5
+CD_MY_COEFFICIENT 0
+
+iside 2
+CT_FX_COEFFICIENT -1.9e-6
+CS_FY_COEFFICIENT -3.3e-5
+CS_MZ_COEFFICIENT 1.4e-4
+CC_FX_COEFFICIENT 0
+CI_FY_COEFFICIENT 5e-5
+CI_MZ_COEFFICIENT -5.3e-5
+FX_SUSP_CMP_COEFFICIENT 1/2.0e-4
+C_LAT_COEFFICIENT 2.2e-5
+CD_MY_COEFFICIENT 0
+
+LOG_ENTRY Used Dataset: Suspension: Compliance (Nonlinear); E-Class Sedan - Front, X DOF
+#Library : Suspension: Compliance (Nonlinear)
+#DataSet : E-Class Sedan - Front, X DOF
+#Category: 
+#FileID  : CmpAll_9c8ef63d-7bff-4875-9e25-87c2075c242b
+#Created : 05-26-2022 09:00:23
+#Modified: 05-26-2022 09:02:46
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Springs and Dampers
+
+END

@@ -1,0 +1,67 @@
+PARSFILE
+#FullDataName Vehicle: Sprung Mass`D-Class, Sedan (Ball Hitch)`D-Class
+#VehCode Rigid sprung mass
+#RingCtrl0 0
+#CheckBox2 1    
+#CheckBox3 1    
+X_LENGTH 2866
+Y_LENGTH 1500
+iaxle 2
+iside 1
+symbol_push_or_set <<hitch_x>> -4.2
+symbol_push_or_set <<hitch_y>> 0
+symbol_push_or_set <<hitch_z>> 0.5
+PARSFILE Hitches\Joint\Hitch_5519885d-2e7d-4e5e-a1ca-333ba1bd032c.par
+#BlueLink1 Hitch: Joint Assembly`Ball Hitch with Stops` ` , Hitch`Hitch_5519885d-2e7d-4e5e-a1ca-333ba1bd032c
+
+LX_H 4200
+H_H 500
+Y_H 0
+LX_AXLE 2866
+LX_CG_SU 1110
+M_SU 1370
+IXX_SU 671.3
+IYY_SU 1972.8
+IZZ_SU 2315.3
+IXZ_SU 0
+*RX 0.700
+*RY 1.200
+*RZ 1.300
+Y_CG_SU 0
+H_CG_SU 520
+IXY_SU 0
+IYZ_SU 0
+Z_LENGTH 1380
+Y_LENGTH 2162
+*HWC_LF 340
+*HWC_RF 340
+*HWC_LR 325
+*HWC_RR 325
+X_LENGTH 2866
+H_WC 325
+iside 2
+H_WC 325
+iaxle 1
+iside 1
+H_WC 340
+iside 2
+H_WC 340
+iaxle 2
+iside 1
+LX_F_SM 800
+HT_SM 1380
+WID_SM 2162
+LEN_SM 4800
+
+LOG_ENTRY Used Dataset: Vehicle: Sprung Mass; { D-Class } D-Class, Sedan (Ball Hitch)
+#Library : Vehicle: Sprung Mass
+#DataSet : D-Class, Sedan (Ball Hitch)
+#Category: D-Class
+#FileID  : SprMass_ea2ede7f-313c-4186-a7cc-f2de319840b8
+#Created : 10-06-2022 13:06:27
+#Modified: 10-06-2022 13:09:34
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Rigid sprung mass
+
+END

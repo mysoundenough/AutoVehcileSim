@@ -1,0 +1,71 @@
+PARSFILE
+#FullDataName Vehicle with Loads, Sensors, Trailer, etc.`C-Class Hatch: w/ACC,Blindspot,TTC Low`C-Class
+#VehCode Ind_Ind
+#CheckBox0 0    
+#CheckBox1 0    
+
+symbol_push <<hitch_x>> 0
+symbol_push <<hitch_y>> 0
+symbol_push <<hitch_z>> 0
+PARSFILE Vehicles\Assembly\Vehicle_9db9b98a-6725-424b-9635-e1ca6e15979d.par
+#BlueLink0 Vehicle: Assembly`C-Class, Hatchback` C-Class` , Lead Unit`Vehicle_9db9b98a-6725-424b-9635-e1ca6e15979d
+
+ADD_REFERENCE_FRAME LeadUnitPayloads
+SET_EULER_ANGLES YAW_PITCH_ROLL
+SET_X_NAME Xo
+WRT_Xo
+ANI_Xo
+SET_Y_NAME Yo
+WRT_Yo
+ANI_Yo
+SET_Z_NAME Zo
+WRT_Zo
+ANI_Zo
+SET_YAW_NAME Yaw
+WRT_Yaw
+ANI_Yaw
+SET_PITCH_NAME Pitch
+WRT_Pitch
+ANI_Pitch
+SET_ROLL_NAME Roll_E
+WRT_Roll_E
+ANI_Roll_E
+PARSFILE Generic\Group\GenGrp_a53f72a6-1cb0-4107-ab54-42e8e73a2a49.par
+#BlueLink2 Generic Data Group`C-Class hatch., ACC, w/Curve Predict` Obstacle Avoidance` , Miscellaneous`GenGrp_a53f72a6-1cb0-4107-ab54-42e8e73a2a49
+
+PARSFILE Animator\HUD\HUD_ed7412fb-ad48-4eb2-abf6-1345af1700a0.par
+#BlueLink3 Animator: HUD`Time To Collision_Radar` ADAS Alerts` , Miscellaneous`HUD_ed7412fb-ad48-4eb2-abf6-1345af1700a0
+
+PARSFILE Sensors_Traffic\Radar\Radar_57a31db5-b7af-4675-88ac-0bafd95a07c8.par
+#BlueLink4 ADAS Sensors for Range and Tracking`Left Blind-Spot, Forward Vx` Blind-Spot Sensors` , Miscellaneous`Radar_57a31db5-b7af-4675-88ac-0bafd95a07c8
+
+PARSFILE Sensors_Traffic\Radar\Radar_4f130510-328a-4f29-a328-43628a7b3768.par
+#BlueLink5 ADAS Sensors for Range and Tracking`Right Blind-Spot, Forward Vx` Blind-Spot Sensors` , Miscellaneous`Radar_4f130510-328a-4f29-a328-43628a7b3768
+
+PARSFILE Animator\HUD\HUD_2e2493a8-9b50-4867-8eb4-6060a81a368f.par
+#BlueLink6 Animator: HUD`Blind Spots` ADAS Alerts` , Miscellaneous`HUD_2e2493a8-9b50-4867-8eb4-6060a81a368f
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Vehicles\Assembly\Vehicle_9db9b98a-6725-424b-9635-e1ca6e15979d.png
+
+#EMBEDDED_NOTES
+#C-Class Hatchback with adapative cruise control (ACC) and two blind-spot sensors.
+#
+#The blind spot detection shows alerts for vehicles in the right lane, while the ACC controls the vehicle speed via throttle and brakes using the built-in CarSim speed closed-loop speed control.
+#
+#The blind spot detection signal includes a low-pass filter that prevents alerts from flashing when oncoming vehicles are detected.
+#
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Vehicle with Loads, Sensors, Trailer, etc.; { C-Class } C-Class Hatch: w/ACC,Blindspot,TTC Low
+#Library : Vehicle with Loads, Sensors, Trailer, etc.
+#DataSet : C-Class Hatch: w/ACC,Blindspot,TTC Low
+#Category: C-Class
+#FileID  : VehLoad_43d842a5-2778-494b-9bcb-1c4402462fd3
+#Created : 10-11-2021 13:22:27
+#Modified: 10-11-2021 13:22:34
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Ind_Ind
+
+END

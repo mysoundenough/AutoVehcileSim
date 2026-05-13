@@ -1,0 +1,87 @@
+PARSFILE
+#FullDataName CarSim Run Control`COSIN FTire: Small Bump`Tire Models (External Software)
+#VEHICLECODE Ind_Ind
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_692db40c-2638-4401-b68e-e47eac731bb9
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Animator\Cameras\Camera_3eaa41a1-4efa-4cad-9159-3ea5b86ad95a.par
+#BlueLink0 Animator: Camera Setup`90 Azm, 5 El, 45 m` Vehicle Reference` , Animator camera`Camera_3eaa41a1-4efa-4cad-9159-3ea5b86ad95a
+
+#CheckBox0 1    
+#CheckBox1 0    
+#CheckBox2 1    
+#CheckBox3 0    
+#CheckBox4 0    
+#CheckBox5 0    
+#CheckBox6 1    
+#CheckBox7 0    
+#CheckBox8 1    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+#CheckBox12 0    
+
+#RingCtrl0 4
+#RingCtrl1 13
+#RingCtrl2 3
+#RingCtrl3 0
+#RingCtrl6 0
+#RingCtrl7 -1
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Vehicles\Assembly\Vehicle_2305327b-c7d0-47d8-aded-a215f0973b9f.par
+#BlueLink2 Vehicle: Assembly`E-Class, Sedan: COSIN / FTire` External Tire Models` , Math Model`Vehicle_2305327b-c7d0-47d8-aded-a215f0973b9f
+
+PARSFILE Procedures\Proc_1f634f3b-3b9d-4c34-be98-bcddc7023ebe.par
+#BlueLink28 Procedures`Small, Sharp Bump` Driving` , Procedure`Proc_1f634f3b-3b9d-4c34-be98-bcddc7023ebe
+
+*TSTEP 0.0005
+*FREQ_MODEL 2000
+*TSTEP_OUT 0.0005
+*FREQ_OUT 2000
+tstep 0.0005
+iprint 1
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Animator\Vehicles\AniVeh_e52a21a6-9bb5-4010-a060-992aa1911e27.png
+WRITE_SENSOR_DETECT
+Title COSIN FTire: Small Bump <Tire Models (External Software)>
+CATEGORY Tire Models (External Software) 
+DATASET_TITLE COSIN FTire: Small Bump
+#MiscYellow0
+*CPAR_INCLUDE  Extensions\FTire
+#ENDMYellow
+
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#This example uses the COSIN FTire model.
+#
+#CarSim supports the COSIN FTire model (version 2022-3 or newer version), but a separate license is required.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { Tire Models (External Software) } COSIN FTire: Small Bump
+#Library : CarSim Run Control
+#DataSet : COSIN FTire: Small Bump
+#Category: Tire Models (External Software)
+#FileID  : Run_692db40c-2638-4401-b68e-e47eac731bb9
+#Modified: 12-08-2023 12:32:08
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Run
+
+END

@@ -1,0 +1,68 @@
+PARSFILE
+#FullDataName Procedures`01 - K & C Design Load (no plots)`K&C Test Sequence
+#CheckBox1 1    
+OPT_INIT_PATH 1
+#CheckBox4 0    
+
+#RingCtrl0 1
+#RingCtrl1 0
+#RingCtrl2 0
+OPT_STOP 0
+SSTART 0
+TSTART 0
+TSTART_WRITE = 0;
+TSTOP 60
+SSTOP = SSTART + 1 ;
+OPT_DIRECTION 1
+*SPEED 0
+*TSTOP 60
+*TSTART 0
+*SSTART 0
+*SSTOP 210
+
+INSTALL_SPEED_CONTROLLER
+OPT_SC 3
+SET_ISPEED_FOR_ID 0
+SPEED_ID_SC = SPEED_TARGET_ID
+SPEED_TARGET_COMBINE ADD
+SPEED_TARGET_S_CONSTANT 0
+set_description SPEED_TARGET_ID Procedure: 01 - K & C Design Load (no plots)
+SPEED_TARGET_CONSTANT 0
+OPT_SC_ENGINE_BRAKING 0
+PARSFILE Control\Steer\StrSW_d02d6236-3489-4162-b8b9-953cdc586f4c.par
+#BlueLink27 Control: Steering (Open Loop)`Constant: 0 deg.` Constant` , Steering`StrSW_d02d6236-3489-4162-b8b9-953cdc586f4c
+
+PARSFILE Control\Braking\PbkCon_99b49306-162c-4ce6-91b0-49d4a608d2d8.par
+#BlueLink28 Control: Braking MC Pressure (Open Loop)`Constant: 1 MPa` Constant` , Braking`PbkCon_99b49306-162c-4ce6-91b0-49d4a608d2d8
+
+PARSFILE Control\Gear_at\GearCL_395374af-90fa-4fef-80e1-a8df607bfbef.par
+#BlueLink30 Control: Shifting (Closed Loop)`Neutral` ` , Shifting Control`GearCL_395374af-90fa-4fef-80e1-a8df607bfbef
+
+PARSFILE Generic\Links\GenLink_a5c93536-9abc-4ee1-bed1-d13d08d3b7a2.par
+#BlueLink0 Generic Group of Links`K&C Rig for Design Load Condition` K&C Test Sequence` , Miscellaneous`GenLink_a5c93536-9abc-4ee1-bed1-d13d08d3b7a2
+
+PARSFILE Events\Events_2b242984-cef9-4097-bd21-47811f9b7c03.par
+#BlueLink1 Events`01 - End Design Load Run` K&C Test Sequence` , Miscellaneous`Events_2b242984-cef9-4097-bd21-47811f9b7c03
+
+
+#EMBEDDED_NOTES
+#This procedure brings the vehicle into the CarSim Design Load Condition.
+#
+#In the Design Load Condition, the Sprung mass origin is at Z = 0, pitch = 0, roll = 0, and the wheel center locations match the height shown on the Sprung Mass screen.
+#
+#The position is defined to have equal spring loads on the left and right sides.
+#
+#If the vehicle continues to oscillate or blows up, it likely has poorly chosen parameters.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Procedures; { K&C Test Sequence } 01 - K & C Design Load (no plots)
+#Library : Procedures
+#DataSet : 01 - K & C Design Load (no plots)
+#Category: K&C Test Sequence
+#FileID  : Proc_f4ed4639-0e94-4473-9135-c6887b43a421
+#Modified: 05-28-2021 14:59:20
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Procedure
+
+END

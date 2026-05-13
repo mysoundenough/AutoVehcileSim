@@ -1,0 +1,58 @@
+PARSFILE
+#FullDataName I/O Channels: Export`Restraint Forces, Vertical Tire Forces`Parallel Solvers
+#RingCtrl0 0
+#RingCtrl1 1
+*README_FILE Results\Run_f25743f3-86a3-466f-80bd-079c64ff56c0\Run_out_tab.txt
+
+
+EXPORT Fx_RP1
+EXPORT Fx_RP2
+EXPORT Fx_RP3
+EXPORT Fx_RP4
+EXPORT Fy_RP1
+EXPORT Fy_RP2
+EXPORT Fy_RP3
+EXPORT Fy_RP4
+EXPORT Fz_RP1
+EXPORT Fz_RP2
+EXPORT Fz_RP3
+EXPORT Fz_RP4
+EXPORT Fz_L1
+EXPORT Fz_R1
+EXPORT Fz_L2
+EXPORT Fz_R2
+#MiscYellow0
+#Number of Selected Channels: 16
+#CHN_NAME: Fx_RP1
+#CHN_NAME: Fx_RP2
+#CHN_NAME: Fx_RP3
+#CHN_NAME: Fx_RP4
+#CHN_NAME: Fy_RP1
+#CHN_NAME: Fy_RP2
+#CHN_NAME: Fy_RP3
+#CHN_NAME: Fy_RP4
+#CHN_NAME: Fz_RP1
+#CHN_NAME: Fz_RP2
+#CHN_NAME: Fz_RP3
+#CHN_NAME: Fz_RP4
+#CHN_NAME: Fz_L1
+#CHN_NAME: Fz_R1
+#CHN_NAME: Fz_L2
+#CHN_NAME: Fz_R2
+#ENDMYellow
+
+#BlueLink0 CarSim Run Control`Hauled Car - Car 2: DLC` Multiple Vehicles, Parallel Solvers` , example run`Run_f25743f3-86a3-466f-80bd-079c64ff56c0
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Export; { Parallel Solvers } Restraint Forces, Vertical Tire Forces
+#Library : I/O Channels: Export
+#DataSet : Restraint Forces, Vertical Tire Forces
+#Category: Parallel Solvers
+#FileID  : Export_2db91c12-1dda-4103-9399-1aaee8a6b021
+#Created : 01-11-2023 13:43:49
+#Modified: 01-11-2023 13:44:45
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Export Channels
+
+END

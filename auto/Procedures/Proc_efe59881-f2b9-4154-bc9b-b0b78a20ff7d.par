@@ -1,0 +1,88 @@
+PARSFILE
+#FullDataName Procedures`ACC Single Test: CCRb, 12m`ACC: Automatic Cruise Control
+#CheckBox1 0    
+OPT_INIT_PATH 0
+
+#RingCtrl0 2
+#RingCtrl1 0
+#RingCtrl2 0
+OPT_STOP 0
+TSTART 0
+TSTART_WRITE = 0;
+TSTOP 55
+SSTOP = SSTART + 1 ;
+OPT_DIRECTION 1
+*SPEED 50
+*TSTOP 55
+*TSTART 0
+*SSTART 0
+*SSTOP 210
+
+OPT_SC 2
+PARSFILE Control\Gear_at\GearCL_3f60e7d2-b8c4-4d68-a9c4-d897bb3e2a86.par
+#BlueLink30 Control: Shifting (Closed Loop)`AT (All Available Gears)` Closed-Loop Shifting` , Shifting Control`GearCL_3f60e7d2-b8c4-4d68-a9c4-d897bb3e2a86
+
+PARSFILE Control\Speed_t\SpdTime_05520538-4611-46ce-8c7b-303dea426d90.par
+#BlueLink31 Control: Speed (Closed Loop) Using Target Speed`Constant: 0 km/h` Constant` , Speed vs. time`SpdTime_05520538-4611-46ce-8c7b-303dea426d90
+
+PARSFILE Generic\Links\GenLink_c7add83a-53dc-442d-b7fb-24d2b8014a3f.par
+#BlueLink0 Generic Group of Links`PG: Straight Road, Two Lanes` Generic Proving Ground` , Miscellaneous`GenLink_c7add83a-53dc-442d-b7fb-24d2b8014a3f
+
+PARSFILE Generic\VS_commands\GenVS_5628b0e6-c8aa-4b2c-9d79-38d424f8b1d5.par
+#BlueLink1 Generic VS Commands`ACC, CCRb-12m. VUT and GVT Setup` Safety Assist Euro NCAP` , Miscellaneous`GenVS_5628b0e6-c8aa-4b2c-9d79-38d424f8b1d5
+
+PARSFILE Sensors_Traffic\Traffic\TMotion_8e10709e-7a92-4091-9698-aa6bde9f9346.par
+#BlueLink2 Multiple Moving Objects`Global Vehicle Target (GVT) for ACC` Euro NCAP` , Miscellaneous`TMotion_8e10709e-7a92-4091-9698-aa6bde9f9346
+
+PARSFILE Generic\VS_commands\GenVS_37f07381-6782-46af-a685-aeebaa6988b0.par
+#BlueLink3 Generic VS Commands`Euro NCAP: ACC CCrb, 12m Setup` ADAS Support` , Miscellaneous`GenVS_37f07381-6782-46af-a685-aeebaa6988b0
+
+PARSFILE Events\Events_036d52fe-e99a-4330-98f1-7a32cc9a1649.par
+#BlueLink4 Events`CCRb A1. Wait for ACC to Intervene` Euro NCAP ACC Testing` , Miscellaneous`Events_036d52fe-e99a-4330-98f1-7a32cc9a1649
+
+#MiscYellow1
+! Unchecked box for "Set vehicle x,y,&yaw based on path?
+! Locate vehicle 2m to the right of the road center
+Xo  = VUT_START_STATION
+Yo = -2
+Yaw = 0
+! These should be reset in the Events, as well
+#ENDMYellow
+
+#BlueLink34 ` , Miscellaneous` , Miscellaneous` , Miscellaneous`
+
+PARSFILE Plot\Setup\Plot_fc47e7de-e40f-4a76-ac75-28ddf27ac362.par
+#BlueLink9 Plot: Setup`Longit. Accel. of CG's vs. Time (m/s^2)` Vehicle Motion` , Plot`Plot_fc47e7de-e40f-4a76-ac75-28ddf27ac362
+
+PARSFILE Plot\Setup\Plot_dafae624-d48a-4548-93eb-fa73d080e21a.par
+#BlueLink10 Plot: Setup`Brake Control: M/C Pressure` Braking` , Plot`Plot_dafae624-d48a-4548-93eb-fa73d080e21a
+
+PARSFILE Plot\Setup\Plot_4f67d5b7-0627-47d3-baf7-12fe88008d68.par
+#BlueLink11 Plot: Setup`Gear Selection` Powertrain` , Plot`Plot_4f67d5b7-0627-47d3-baf7-12fe88008d68
+
+
+#EMBEDDED_NOTES
+#ACC: Automatic Cruise Control
+#GVT: Global Vehicle Target
+#VUT: Vehicle Under Test
+#FCW: Forward Collision Warning
+#LKAS: Lane-Keeping Assistance System
+#CCRb: Car-to-Car Rear, Braking GVT
+#
+#This procedure is based on a test scenario published by Euro NCAP for ACC systems.
+#
+#No steering controller is used, as LKAS is keeping the vehicle within it's lane, per the Euro NCAP spec.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Procedures; { ACC: Automatic Cruise Control } ACC Single Test: CCRb, 12m
+#Library : Procedures
+#DataSet : ACC Single Test: CCRb, 12m
+#Category: ACC: Automatic Cruise Control
+#FileID  : Proc_efe59881-f2b9-4154-bc9b-b0b78a20ff7d
+#Created : 05-12-2021 17:58:49
+#Modified: 10-11-2021 12:41:07
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Procedure
+
+END

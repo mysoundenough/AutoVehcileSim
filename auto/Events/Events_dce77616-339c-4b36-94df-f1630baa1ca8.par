@@ -1,0 +1,28 @@
+PARSFILE
+#FullDataName Events`Handoff to Driver Model (Angle)`Driver Model Handoff
+#CheckBox1 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl10 0
+#RingCtrl11 4
+#MiscYellow0
+set_import_mode imp_steer_sw add
+#ENDMYellow
+
+SET_EVENT_ID 0 ! reset to default
+
+LOG_ENTRY Used Dataset: Events; { Driver Model Handoff } Handoff to Driver Model (Angle)
+#Library : Events
+#DataSet : Handoff to Driver Model (Angle)
+#Category: Driver Model Handoff
+#FileID  : Events_dce77616-339c-4b36-94df-f1630baa1ca8
+#Created : 05-10-2023 13:39:19
+#Modified: 05-22-2023 11:26:53
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

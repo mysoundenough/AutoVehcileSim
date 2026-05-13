@@ -1,0 +1,58 @@
+PARSFILE
+#FullDataName Models: Simulink`MF-Tyre/MF-Swift on Simulink, 2SFs`External Tires
+#RunMdlFile Extensions\Simulink\simcenter_tire\Ext_MFTyre_MFSwift_2sf.slx
+SIMULINK_MODEL_FILE Extensions\Simulink\simcenter_tire\Ext_MFTyre_MFSwift_2sf.slx
+#RingCtrl0 -1
+#RingCtrl2 2
+OPT_MULTI_WRAPPERS 1
+*MULTI_S_WRAPPER 1
+*MULTI_SOLVERS 0
+#CheckBox0 0    
+*USE_ALT_DIR 0
+#CheckBox1 0    
+*USE_DIFF_SOLVERS 0
+#CheckBox3 1    
+#CheckBox5 0    
+#RingCtrl1 0
+OPT_INT_METHOD 0
+*TSTEP 0.0005
+*FREQ_MODEL 2000
+*TSTEP_OUT 0.001
+*FREQ_OUT 1000
+tstep 0.0005
+iprint 2
+#BlueLink2 I/O Channels: Ports`MF-Tyre/MF-Swift Multi-Ports I/O` External Tires` , Miscellaneous`Port_99721e27-7811-4051-9b02-6784ebbef50e
+
+IWRAPPER 1
+#BlueLink3 I/O Channels: Ports` ` , vs_state Ports` , vs_state Ports`
+
+IWRAPPER 2
+#BlueLink4 I/O Channels: Ports` ` , vs_ctl Ports` , vs_ctl Ports`
+
+IWRAPPER 3
+PARSFILE IO_Channels\Ports\Port_86af060a-058e-491d-b656-e8adc6fed090.par
+#BlueLink5 I/O Channels: Ports`MF-Tyre/MF-Swift Kinematics Export` External Tires` , vs_kin Ports`Port_86af060a-058e-491d-b656-e8adc6fed090
+
+IWRAPPER 4
+PARSFILE IO_Channels\Ports\Port_8802ff61-a67c-48c4-9806-0a853134bfc5.par
+#BlueLink6 I/O Channels: Ports`MF-Tyre/MF-Swift F&M Import` External Tires` , vs_dyn Ports`Port_8802ff61-a67c-48c4-9806-0a853134bfc5
+
+
+#EMBEDDED_NOTES
+#This dataset involves a Simulink model which involves Siemens MF-Tyre/MF-Swift by S-Function blocks.
+#
+#Vehicle model uses two separate S-Function blocks for kinematics and dynamics calculation.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Models: Simulink; { External Tires } MF-Tyre/MF-Swift on Simulink, 2SFs
+#Library : Models: Simulink
+#DataSet : MF-Tyre/MF-Swift on Simulink, 2SFs
+#Category: External Tires
+#FileID  : Simlink_a9b598c9-e841-459b-bd9c-8f24a08b346c
+#Created : 10-19-2022 13:15:50
+#Modified: 11-09-2022 16:16:31
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode 
+
+END

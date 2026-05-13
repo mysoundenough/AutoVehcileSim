@@ -1,0 +1,23 @@
+PARSFILE
+#FullDataName I/O Channels: Ports`Spring Compression (Kinematics)`External Springs
+#RingCtrl0 0
+#RingCtrl1 1
+#CheckBox0 0    
+
+IPORT_EXP 1
+PARSFILE IO_Channels\O_Channels\Export_7309da5d-bd3f-4ddf-a7c7-b36c32bb9062.par
+#BlueLink20 I/O Channels: Export`Ride Spring Compression` Suspension and Ride Control` , Library for factor B`Export_7309da5d-bd3f-4ddf-a7c7-b36c32bb9062
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Ports; { External Springs } Spring Compression (Kinematics)
+#Library : I/O Channels: Ports
+#DataSet : Spring Compression (Kinematics)
+#Category: External Springs
+#FileID  : Port_817460f0-4f7c-459d-b7c4-1e69eaec03b3
+#Created : 11-10-2022 13:45:37
+#Modified: 11-10-2022 13:47:06
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode I/O Ports
+
+END

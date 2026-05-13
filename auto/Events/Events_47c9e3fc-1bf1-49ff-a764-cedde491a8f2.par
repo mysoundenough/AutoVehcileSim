@@ -1,0 +1,31 @@
+PARSFILE
+#FullDataName Events`02 - Jounce - Rear back to full rebound`K&C Test Sequence
+#CheckBox1 0    
+#CheckBox6 0    
+#CheckBox7 1    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 ZERO ~=
+#RingCtrl10 1
+#RingCtrl11 4
+*VALUE1 (at_min_l1 | at_min_r1) & (at_min_l2 | at_min_r2)
+PARSFILE Generic\VS_commands\GenVS_e30e4d5c-9a00-4641-b07b-a92301cc0e69.par
+#BlueLink10 Generic VS Commands`02 - Jounce - Delete eq's Rr` K&C Test Sequence` , Miscellaneous`GenVS_e30e4d5c-9a00-4641-b07b-a92301cc0e69
+
+DEFINE_EVENT (at_min_l1 | at_min_r1) & (at_min_l2 | at_min_r2) ; Events\Events_b5af09b5-d8ad-4e81-ae24-eebce691780e.par
+#BlueLink0 Events`End Events` ` , Events`Events_b5af09b5-d8ad-4e81-ae24-eebce691780e
+
+SET_EVENT_ID 0 ! reset to default
+
+LOG_ENTRY Used Dataset: Events; { K&C Test Sequence } 02 - Jounce - Rear back to full rebound
+#Library : Events
+#DataSet : 02 - Jounce - Rear back to full rebound
+#Category: K&C Test Sequence
+#FileID  : Events_47c9e3fc-1bf1-49ff-a764-cedde491a8f2
+#Modified: 05-28-2021 14:59:27
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

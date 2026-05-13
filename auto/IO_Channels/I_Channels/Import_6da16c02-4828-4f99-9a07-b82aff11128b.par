@@ -1,0 +1,21 @@
+PARSFILE
+#FullDataName I/O Channels: Import`Target Speed`Driver Model
+#RingCtrl1 1
+
+#MiscYellow0
+IMP_SPEED Replace 0.0! 1
+#ENDMYellow
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Import; { Driver Model } Target Speed
+#Library : I/O Channels: Import
+#DataSet : Target Speed
+#Category: Driver Model
+#FileID  : Import_6da16c02-4828-4f99-9a07-b82aff11128b
+#Created : 05-18-2023 14:55:15
+#Modified: 05-23-2023 14:15:36
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Import Channels
+
+END

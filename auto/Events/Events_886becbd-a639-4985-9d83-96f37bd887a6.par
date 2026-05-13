@@ -1,0 +1,48 @@
+PARSFILE
+#FullDataName Events`Check 50% Collision, Child`Pedestrian Euro NCAP
+#CheckBox1 1    
+*CLEAR
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 >=
+#RingCtrl1 <
+#RingCtrl10 2
+#RingCtrl11 4
+RESET_EVENTS
+*NAME1 AEB_INIT_COLLIDE_DONE
+*NAME2 AEB_INIT_COLLIDE_DONE
+*VALUE1 1
+*VALUE2 1
+#MiscYellow0
+AEB_INIT_COLLIDE_DONE = ...
+if(COL_TEST_DONE & INITIAL_COL,1, 0)
+#ENDMYellow
+
+MAKE_EVENT AEB_INIT_COLLIDE_DONE >= 1 ; Events\Events_5f246d5e-d380-498e-9fc5-6f87de5cba0c.par
+#BlueLink0 Events`Activate AEB, 50%, Child` Pedestrian Euro NCAP` , Events`Events_5f246d5e-d380-498e-9fc5-6f87de5cba0c
+
+MAKE_EVENT AEB_INIT_COLLIDE_DONE < 1 ; Events\Events_bc9092bf-4dad-4c86-85f9-86d692e4ca5d.par
+#BlueLink1 Events`Wait for Initial Event to End` Pedestrian Euro NCAP` , Events`Events_bc9092bf-4dad-4c86-85f9-86d692e4ca5d
+
+SET_EVENT_ID 0 ! reset to default
+
+#EMBEDDED_NOTES
+#Confrim that the initial collision occured at 50% of the vehicle's width
+#
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Events; { Pedestrian Euro NCAP } Check 50% Collision, Child
+#Library : Events
+#DataSet : Check 50% Collision, Child
+#Category: Pedestrian Euro NCAP
+#FileID  : Events_886becbd-a639-4985-9d83-96f37bd887a6
+#Created : 08-18-2021 16:48:53
+#Modified: 08-30-2021 11:05:07
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

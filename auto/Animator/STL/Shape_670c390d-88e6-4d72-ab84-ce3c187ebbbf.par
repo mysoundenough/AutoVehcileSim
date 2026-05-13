@@ -1,0 +1,32 @@
+PARSFILE
+#FullDataName Animator: Shape File Link`Road Course`Generic Proving Ground: Roads
+#MiscYellow3
+add_obj Animator\3D_shape_files_DS\proving_ground\RoadCourse.OSG
+#ENDMYellow
+
+SET_COLOR 0.878 0.878 0.878
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 0    
+
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_4f6563e5-e5ae-4a53-9a2f-9b6ec739d45e.par
+#BlueLink2 Animator: Camera Setup`Proving Grounds: Road Course` Scene Specific Preview` , Video Camera`Camera_4f6563e5-e5ae-4a53-9a2f-9b6ec739d45e
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_670c390d-88e6-4d72-ab84-ce3c187ebbbf.png
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Generic Proving Ground: Roads } Road Course
+#Library : Animator: Shape File Link
+#DataSet : Road Course
+#Category: Generic Proving Ground: Roads
+#FileID  : Shape_670c390d-88e6-4d72-ab84-ce3c187ebbbf
+#Modified: 05-28-2021 15:03:14
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape File
+
+END

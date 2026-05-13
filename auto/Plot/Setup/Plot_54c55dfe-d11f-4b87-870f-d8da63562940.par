@@ -1,0 +1,41 @@
+PARSFILE
+#FullDataName Plot: Setup`AEB Euro NCAP Scoring Speeds`ADAS Sensor Detections
+
+ADD_ENTITY Plot
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS vutStart, Time
+PLOTCHANNELS Vxz_Fwd, Time
+PLOTCHANNELS EgoSpeedReduction, Time
+PLOTCHANNELS vImpactOut, Time
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE AEB Euro NCAP Scoring Speeds
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { ADAS Sensor Detections } AEB Euro NCAP Scoring Speeds
+#Library : Plot: Setup
+#DataSet : AEB Euro NCAP Scoring Speeds
+#Category: ADAS Sensor Detections
+#FileID  : Plot_54c55dfe-d11f-4b87-870f-d8da63562940
+#Created : 09-07-2021 16:19:54
+#Modified: 09-07-2021 16:20:03
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Plot Setup
+
+END

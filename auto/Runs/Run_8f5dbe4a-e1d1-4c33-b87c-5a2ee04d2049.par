@@ -1,0 +1,105 @@
+PARSFILE
+#FullDataName CarSim Run Control`Split Mu ABS, Simulink, Euler, Preview Off`Kinematical Preview Demo
+#VEHICLECODE Ind_Ind
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_8f5dbe4a-e1d1-4c33-b87c-5a2ee04d2049
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Models\Simulink\Simlink_b0d64117-9233-4d8c-9a29-5f23837fb576.par
+#BlueLink12 Models: Simulink`ABS Controller, Preview Off` Braking Controls` , Models`Simlink_b0d64117-9233-4d8c-9a29-5f23837fb576
+
+PARSFILE Animator\Cameras\Camera_8f7a3057-cb7d-444e-8cf2-c6f46989b6a4.par
+#BlueLink0 Animator: Camera Setup`0 Azm, 5 El, 27 m` Road Reference` , Animator camera`Camera_8f7a3057-cb7d-444e-8cf2-c6f46989b6a4
+
+#CheckBox0 1    
+#CheckBox1 1    
+#CheckBox2 1    
+#CheckBox3 0    
+#CheckBox4 1    
+#CheckBox5 1    
+#CheckBox6 0    
+#CheckBox7 1    
+#CheckBox8 1    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+#CheckBox12 0    
+
+#RingCtrl0 4
+#RingCtrl1 10
+#RingCtrl2 0
+#RingCtrl3 0
+#RingCtrl6 1
+#RingCtrl7 -1
+*RUN_COLOR 0 0.8 0
+SET_RUN_COLOR 0 0.8 0
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Vehicles\Assembly\Vehicle_2f9f653b-5d0c-4c2a-9470-0b2a5c5e79ac.par
+#BlueLink2 Vehicle: Assembly`B-Class, Hatchback` B-Class` , Math Model`Vehicle_2f9f653b-5d0c-4c2a-9470-0b2a5c5e79ac
+
+PARSFILE Procedures\Proc_af7b7a9d-340b-49a4-ae1a-008e5c2b5b38.par
+#BlueLink28 Procedures`Split Mu from 65 km/h` Accel. and Brake Testing` , Procedure`Proc_af7b7a9d-340b-49a4-ae1a-008e5c2b5b38
+
+OPT_STOP 0
+TSTOP 1.5
+OPT_DIRECTION 1
+*TSTOP 1.5
+DELETE_PLOT_GROUP default
+PLOT_GROUP default
+PARSFILE Plot\Setup\Plot_d356451c-b511-4676-bbfd-4f62ecce85fe.par
+#BlueLink15 Plot: Setup`Wheel Cylinder Pressure L1` Braking` , Plot`Plot_d356451c-b511-4676-bbfd-4f62ecce85fe
+
+
+SPECIAL_PARSFILE Runs\Run_4905d42d-fc29-4b33-ad02-5e21285012bd.par
+#BlueLink23 CarSim Run Control`Split Mu ABS, Built-In, 16k Reference` Kinematical Preview Demo` , Overlay run or ERD file`Run_4905d42d-fc29-4b33-ad02-5e21285012bd
+
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Vehicles\Assembly\Vehicle_2f9f653b-5d0c-4c2a-9470-0b2a5c5e79ac.png
+WRITE_SENSOR_DETECT
+Title Split Mu ABS, Simulink, Euler, Preview Off <Kinematical Preview Demo>
+CATEGORY Kinematical Preview Demo 
+DATASET_TITLE Split Mu ABS, Simulink, Euler, Preview Off
+#MiscYellow0
+opt_int_method = -1 ! Euler
+#ENDMYellow
+
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#This run is from the CPAR archive CarSim_Kinematical_Preview.cpar.
+#
+#This example shows ABS braking behavior on a split-mu surface. This particular run is made to compare different options for numerical integration and linking with Simulink. Outputs are written every time step (2000 Hz). The run is stopped after 1.5s because the behavior of interest can be seen the the plot of actuator pressure for one wheel.
+#
+#This specific run uses an ABS controller and brake system hydraulics defined in a Simulink model.
+#
+#The Sync kinematical option is unchecked, disabling preview. This particular run uses Euler integration rather than the recommended AB-2.
+#
+#The overlay plot shows that the Simulink version lags the built-in version.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { Kinematical Preview Demo } Split Mu ABS, Simulink, Euler, Preview Off
+#Library : CarSim Run Control
+#DataSet : Split Mu ABS, Simulink, Euler, Preview Off
+#Category: Kinematical Preview Demo
+#FileID  : Run_8f5dbe4a-e1d1-4c33-b87c-5a2ee04d2049
+#Modified: 11-21-2022 14:16:21
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Run
+
+END

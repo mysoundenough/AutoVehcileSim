@@ -1,0 +1,33 @@
+PARSFILE
+#FullDataName Events`06d - Reduce to zero and end`K&C Test Sequence
+#CheckBox1 0    
+#CheckBox6 0    
+#CheckBox7 1    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 <
+#RingCtrl10 1
+#RingCtrl11 4
+*NAME1 fx_ground
+*VALUE1 0
+#MiscYellow0
+FX_RATE = -FX_RATE
+#ENDMYellow
+
+MAKE_EVENT fx_ground < 0 ; Events\Events_b5af09b5-d8ad-4e81-ae24-eebce691780e.par
+#BlueLink0 Events`End Events` ` , Events`Events_b5af09b5-d8ad-4e81-ae24-eebce691780e
+
+SET_EVENT_ID 0 ! reset to default
+
+LOG_ENTRY Used Dataset: Events; { K&C Test Sequence } 06d - Reduce to zero and end
+#Library : Events
+#DataSet : 06d - Reduce to zero and end
+#Category: K&C Test Sequence
+#FileID  : Events_31a4bd91-06f7-48e1-a042-4ce490653913
+#Modified: 05-28-2021 14:59:28
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

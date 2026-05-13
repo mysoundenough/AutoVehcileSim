@@ -1,0 +1,42 @@
+PARSFILE
+#FullDataName Events`A. Bode Analysis for Steer Angle Input`Linearization
+#CheckBox1 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 >
+#RingCtrl10 1
+#RingCtrl11 4
+*NAME1 t
+*VALUE1 10
+#MiscYellow0
+linear_control IMP_STEER_SW
+linear_output EXP_AVz
+linear_output EXP_AY
+#ENDMYellow
+
+MAKE_EVENT t > 10 ; Events\Events_48f421c8-7bbb-4f9f-a4d5-b71e30dbe577.par
+#BlueLink0 Events`B. Linearize (Steer Angle Input)` Linearization` , Events`Events_48f421c8-7bbb-4f9f-a4d5-b71e30dbe577
+
+SET_EVENT_ID 0 ! reset to default
+
+#EMBEDDED_NOTES
+#This dataset specifies that the input for the model will be steering wheel angle.
+#
+#The linearization is applied after 10 seconds from the simulation started in order to wait for the vehicle to come to a steady-state condition after the math model initialization.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Events; { Linearization } A. Bode Analysis for Steer Angle Input
+#Library : Events
+#DataSet : A. Bode Analysis for Steer Angle Input
+#Category: Linearization
+#FileID  : Events_d841162b-dd6f-4d6d-93ab-e4d6d030ced7
+#Created : 02-26-2024 14:15:15
+#Modified: 02-26-2024 14:19:20
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

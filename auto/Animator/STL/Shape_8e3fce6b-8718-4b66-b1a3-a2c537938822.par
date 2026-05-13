@@ -1,0 +1,42 @@
+PARSFILE
+#FullDataName Animator: Shape File Link`Sedan: Brake Lights (E-Class)`Cars: European Vehicles
+#MiscYellow3
+add_obj Animator\3D_Shape_Files\Cars\E_Class_Sedan\E_Class_BrakesOn.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 0    
+
+SET_SPECULAR 1 1 1
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_82b28084-790d-4ba6-a774-1d2cd5796fec.par
+#BlueLink2 Animator: Camera Setup`Rear View` Shape Preview` , Video Camera`Camera_82b28084-790d-4ba6-a774-1d2cd5796fec
+
+*IMAGE_TYPE CUSTOM
+*IMAGE_FILE Animator\STL\Shape_8e3fce6b-8718-4b66-b1a3-a2c537938822.png
+
+#EMBEDDED_NOTES
+#E-Class Sedan Brake Lights
+#
+#The Animator: Vehicles and Sensor Targets library has a check box to include brake lights. Attach this shape file dataset here to implement visibility logic for braking.
+#
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Brake Lights (E-Class)
+#Library : Animator: Shape File Link
+#DataSet : Sedan: Brake Lights (E-Class)
+#Category: Cars: European Vehicles
+#FileID  : Shape_8e3fce6b-8718-4b66-b1a3-a2c537938822
+#Created : 03-27-2023 10:02:45
+#Modified: 07-06-2023 11:26:17
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape File
+
+END

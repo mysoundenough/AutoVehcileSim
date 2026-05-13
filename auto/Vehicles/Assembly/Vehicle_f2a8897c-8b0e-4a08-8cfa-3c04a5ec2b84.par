@@ -1,0 +1,114 @@
+PARSFILE
+#FullDataName Vehicle: Assembly`Baja Vehicle (VS TMRW)`VS TMRW
+#VehCode Ind_Ind
+IUNIT_INCREMENT
+IVEHICLE = IVEHICLE + 1
+NAXLES 2
+IOBJECT_SAVE
+symbol_add  <<vehicle>> 1
+symbol_add  <<unit>> 1
+#CheckBox0 0    
+#CheckBox1 0    
+#CheckBox2 1    
+INSTALL_SPEED_CONTROLLER
+
+#RingCtrl0 2
+#RingCtrl1 1
+#RingCtrl2 1
+#RingCtrl3 0
+PARSFILE Steering\System2\StrSys2_a5dd0fbd-5851-460b-967e-bbe25e62c7c0.par
+#BlueLink7 Steering`Baja SAE Manual Rack & Pinion` Mech. Sim. FSAE & Baja: Steering Systems` , Steering System`StrSys2_a5dd0fbd-5851-460b-967e-bbe25e62c7c0
+
+
+* Front components
+iaxle 1
+symbol_add  <<axle>> 1
+PARSFILE Suspensions\Kin_Indy\KinInd_c9ed1ab2-6d7d-402a-83ac-d9d5fc664dd3.par
+#BlueLink19 Suspension: Independent System Kinematics`Baja SAE: Front Susp. Kinematics` Mech. Sim. FSAE & Baja: Ind. Susp. Kinem.` , Kinematics`KinInd_c9ed1ab2-6d7d-402a-83ac-d9d5fc664dd3
+
+PARSFILE Suspensions\Compliance\CmpInd_d24d15ea-71dc-4589-be46-28505ca766db.par
+#BlueLink16 Suspension: Independent Compliance, Springs, and Dampers`Baja SAE Compliance` Mech. Sim. FSAE & Baja: Ind. Susp. Compliance` , Compliance`CmpInd_d24d15ea-71dc-4589-be46-28505ca766db
+
+
+OPT_ALL_FOUR_TIRES_ALIKE 1
+itire 1 ! just in case
+
+* LF tire
+iside 1
+WRITE_ADD_REFERENCE_FRAME_WHEEL
+symbol_push  <<tire>> L<<axle>>
+PARSFILE Tires\External\TireExt_cddac526-315a-4b0f-b5bc-9a3319d239f4.par
+#BlueLink999 Tire (External)`23 Inch Tire, Soft Soil` VS TMRW` , Tire`TireExt_cddac526-315a-4b0f-b5bc-9a3319d239f4
+
+
+* RF tire
+iside 2
+WRITE_ADD_REFERENCE_FRAME_WHEEL
+symbol_push  <<tire>> R<<axle>>
+PARSFILE Tires\External\TireExt_cddac526-315a-4b0f-b5bc-9a3319d239f4.par
+#BlueLink10 Tire (External)`23 Inch Tire, Soft Soil` VS TMRW` , Tire`TireExt_cddac526-315a-4b0f-b5bc-9a3319d239f4
+
+* Rear components
+iaxle 2
+symbol_add  <<axle>> 1
+PARSFILE Suspensions\Kin_Indy\KinInd_d357f6d4-b47f-4457-ba25-1ebbe3966e58.par
+#BlueLink20 Suspension: Independent System Kinematics`Baja SAE: Rear Susp. Kinematics` Mech. Sim. FSAE & Baja: Ind. Susp. Kinem.` , Kinematics`KinInd_d357f6d4-b47f-4457-ba25-1ebbe3966e58
+
+PARSFILE Suspensions\Compliance\CmpInd_d24d15ea-71dc-4589-be46-28505ca766db.par
+#BlueLink17 Suspension: Independent Compliance, Springs, and Dampers`Baja SAE Compliance` Mech. Sim. FSAE & Baja: Ind. Susp. Compliance` , Compliance`CmpInd_d24d15ea-71dc-4589-be46-28505ca766db
+
+
+* LR tire
+iside 1
+WRITE_ADD_REFERENCE_FRAME_WHEEL
+symbol_push  <<tire>> L<<axle>>
+PARSFILE Tires\External\TireExt_cddac526-315a-4b0f-b5bc-9a3319d239f4.par
+#BlueLink999 Tire (External)`23 Inch Tire, Soft Soil` VS TMRW` , Tire`TireExt_cddac526-315a-4b0f-b5bc-9a3319d239f4
+
+
+* RR tire
+iside 2
+WRITE_ADD_REFERENCE_FRAME_WHEEL
+symbol_push  <<tire>> R<<axle>>
+PARSFILE Tires\External\TireExt_cddac526-315a-4b0f-b5bc-9a3319d239f4.par
+#BlueLink999 Tire (External)`23 Inch Tire, Soft Soil` VS TMRW` , Tire`TireExt_cddac526-315a-4b0f-b5bc-9a3319d239f4
+
+symbol_add  <<axle>> -1
+WRITE_ADD_REFERENCE_FRAME_BODY
+PARSFILE Vehicles\Sprung_Mass\SprMass_39aa3051-db7a-47c3-8556-5616d113d89e.par
+#BlueLink0 Vehicle: Sprung Mass`Baja SAE Sprung Mass` Mech. Sim. FSAE & Baja` , Sprung Mass`SprMass_39aa3051-db7a-47c3-8556-5616d113d89e
+
+PARSFILE Aerodynamics\Aero_Main\Aero_c6f4d51d-25d4-4e5d-befc-d12172e7f3a3.par
+#BlueLink1 Aerodynamics: Basic`Baja SAE Aero` Baja SAE` , Aerodynamics`Aero_c6f4d51d-25d4-4e5d-befc-d12172e7f3a3
+
+PARSFILE Powertrain\Rwd\RWD_3fccf5ac-1b6c-4b13-a4f3-72ad2ec5778e.par
+#BlueLink4 Powertrain: Rear-Wheel Drive`Baja: RWD, 7.5 kW w/ CVT` Mech. Sim. FSAE & Baja: Powertrains` , Powertrain`RWD_3fccf5ac-1b6c-4b13-a4f3-72ad2ec5778e
+
+PARSFILE Brakes\4W_System\Brk4W_8ce8bb46-4bcf-4109-ac67-7b040d424256.par
+#BlueLink6 Brakes: Four-Wheel System`Baja SAE Brakes, No ABS` Mech. Sim. FSAE & Baja: Brakes` , Brake System`Brk4W_8ce8bb46-4bcf-4109-ac67-7b040d424256
+
+symbol_add  <<axle>> 1
+PARSFILE Animator\Vehicles\AniVeh_e2203068-c6b8-446c-bba4-888d09889b3b.par
+#BlueLink2 Animator: Vehicles and Sensor Targets`Baja SAE Vehicle` Mech. Sim. FSAE & Baja: Vehicles & Targets` , Vehicle 3D Shape`AniVeh_e2203068-c6b8-446c-bba4-888d09889b3b
+
+IOBJECT_RESTORE
+*IMAGE_FIT_MODE 1
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Vehicles\Assembly\Vehicle_f2a8897c-8b0e-4a08-8cfa-3c04a5ec2b84.png
+
+#EMBEDDED_NOTES
+#The tires are set to use VS Terramechanics: Rigid Wheel (VS TMRW).
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Vehicle: Assembly; { VS TMRW } Baja Vehicle (VS TMRW)
+#Library : Vehicle: Assembly
+#DataSet : Baja Vehicle (VS TMRW)
+#Category: VS TMRW
+#FileID  : Vehicle_f2a8897c-8b0e-4a08-8cfa-3c04a5ec2b84
+#Created : 11-29-2022 15:13:06
+#Modified: 11-29-2022 15:32:02
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Ind_Ind
+
+END

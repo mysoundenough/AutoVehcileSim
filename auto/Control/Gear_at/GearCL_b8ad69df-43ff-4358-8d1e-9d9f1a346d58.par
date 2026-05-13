@@ -1,0 +1,30 @@
+PARSFILE
+#FullDataName Control: Shifting (Closed Loop)`MT (All Gears) - Simple Shift Timeline`Closed-Loop Shifting
+#CheckBox0 0    
+
+#RingCtrl0 CONSTANT
+MODE_TRANS_CONSTANT NGEARS
+#RadioCtrl0 0    
+
+PARSFILE Control\Int_Shift\ClTime_d09beb65-7a2e-4dd9-bea7-45ce73ea0791.par
+#BlueLink0 Control: Clutch Shifting Timelines (Closed Loop)`Default Parameters` ` , Shifting`ClTime_d09beb65-7a2e-4dd9-bea7-45ce73ea0791
+
+*SCALAR NGEARS
+
+
+#EMBEDDED_NOTES
+#NGEARS is the internal symbol for the number of gears in a transmission. By setting the Mode to NGEARS, CarSim is told to use all of the transmission gears.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Control: Shifting (Closed Loop); { Closed-Loop Shifting } MT (All Gears) - Simple Shift Timeline
+#Library : Control: Shifting (Closed Loop)
+#DataSet : MT (All Gears) - Simple Shift Timeline
+#Category: Closed-Loop Shifting
+#FileID  : GearCL_b8ad69df-43ff-4358-8d1e-9d9f1a346d58
+#Created : 06-06-2022 13:25:48
+#Modified: 06-06-2022 13:26:22
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Closed-Loop Shift Control
+
+END

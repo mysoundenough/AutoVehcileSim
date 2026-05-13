@@ -1,0 +1,45 @@
+PARSFILE
+#FullDataName Plot: Setup`Fz: RP 1-8`Reference Points
+
+ADD_ENTITY Plot
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS Fz_RP1, Time
+PLOTCHANNELS Fz_RP2, Time
+PLOTCHANNELS Fz_RP3, Time
+PLOTCHANNELS Fz_RP4, Time
+PLOTCHANNELS Fz_RP5, Time
+PLOTCHANNELS Fz_RP6, Time
+PLOTCHANNELS Fz_RP7, Time
+PLOTCHANNELS Fz_RP8, Time
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Fz: RP 1-8
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Reference Points } Fz: RP 1-8
+#Library : Plot: Setup
+#DataSet : Fz: RP 1-8
+#Category: Reference Points
+#FileID  : Plot_aa3860a3-c1a4-4a09-8b16-608eb24c1cb2
+#Created : 01-11-2023 14:10:21
+#Modified: 01-11-2023 14:10:37
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Plot Setup
+
+END

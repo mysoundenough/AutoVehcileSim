@@ -1,0 +1,23 @@
+PARSFILE
+#FullDataName External Parsfile`Echo File for Baseline Run`Run fom Echo Files
+#VehCode i_i
+#MiscYellow0
+PARSFILE Results\Run_1a548dd6-6d7e-4561-905e-c3bb1a6e098b\LastRun_echo.par
+#ENDMYellow
+*CPAR_INCLUDE Results\Run_1a548dd6-6d7e-4561-905e-c3bb1a6e098b\LastRun_echo.par
+
+
+#RingCtrl0 1
+
+LOG_ENTRY Used Dataset: External Parsfile; { Run fom Echo Files } Echo File for Baseline Run
+#Library : External Parsfile
+#DataSet : Echo File for Baseline Run
+#Category: Run fom Echo Files
+#FileID  : GenExt_fe983991-2bfb-4deb-b980-606e61ad2c14
+#Created : 11-20-2023 10:49:50
+#Modified: 11-20-2023 11:02:47
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode i_i
+
+END

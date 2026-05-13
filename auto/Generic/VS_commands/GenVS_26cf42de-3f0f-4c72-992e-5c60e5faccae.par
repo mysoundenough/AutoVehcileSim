@@ -1,0 +1,48 @@
+PARSFILE
+#FullDataName Generic VS Commands`07d - Mz compliance (R)`K&C Test Sequence
+#VehCode VS Commands
+
+#MiscYellow0
+! An aligning moment compliance test that applies a moment in the
+! ground Z direction on the right side only.
+
+! Set user parameters for range of (+/-) moments to be used
+DEFINE_PARAMETER MZ_RANGE 100; N-m; Range of applied moment
+DEFINE_PARAMETER END_AFTER_EVENT 0; -; Switch to end run
+
+! Set the rate of change of moment
+! Define units for the moment rate of change
+DEFINE_UNITS N-m/s 1; 
+DEFINE_PARAMETER MZ_RATE = 2; N-m/s; Rate of change of moment
+
+! Activate the import variables for wheel center Mz
+IMPORT imp_mz_l1 VS_REPLACE 0
+IMPORT imp_mz_r1 VS_REPLACE 0
+IMPORT imp_mz_l2 VS_REPLACE 0
+IMPORT imp_mz_r2 VS_REPLACE 0
+
+! Differential equation to smoothly change moments
+DEFINE_OUTPUT mz_ground 0; N-m; Applied moment
+EQ_DIFFERENTIAL mz_ground = MZ_RATE;
+
+EQ_IN imp_mz_l1 = 0;
+EQ_IN imp_mz_r1 = mz_ground;
+EQ_IN imp_mz_l2 = 0;
+EQ_IN imp_mz_r2 = mz_ground;
+
+! Disable writing for first half-cycle
+OPT_WRITE 0
+#ENDMYellow
+
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { K&C Test Sequence } 07d - Mz compliance (R)
+#Library : Generic VS Commands
+#DataSet : 07d - Mz compliance (R)
+#Category: K&C Test Sequence
+#FileID  : GenVS_26cf42de-3f0f-4c72-992e-5c60e5faccae
+#Modified: 05-28-2021 15:02:27
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode VS Commands
+
+END

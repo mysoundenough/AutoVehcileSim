@@ -1,0 +1,140 @@
+PARSFILE
+#FullDataName CarSim Run Control`Hauled Car - Car 2: Bounce Test`Multiple Vehicles, Parallel Solvers
+#VEHICLECODE Ind_Ind
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_7369483b-ea32-49d2-96eb-3a7e70897bd5
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Models\Simulink\Simlink_5347ca06-065d-464d-ae6b-080d7ac885a4.par
+#BlueLink12 Models: Simulink`Vehicle Hauling - Car 2` Parallel Solvers` , Models`Simlink_5347ca06-065d-464d-ae6b-080d7ac885a4
+
+PARSFILE Animator\Cameras\Camera_de1f5f31-cdc6-45aa-8fad-27588467e961.par
+#BlueLink0 Animator: Camera Setup`350 Azm, 3 El, 49 m` Vehicle Reference` , Animator camera`Camera_de1f5f31-cdc6-45aa-8fad-27588467e961
+
+#CheckBox0 1    
+#CheckBox1 1    
+#CheckBox2 1    
+#CheckBox3 1    
+#CheckBox4 1    
+#CheckBox5 1    
+#CheckBox6 0    
+#CheckBox7 1    
+#CheckBox8 1    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+#CheckBox12 0    
+
+#RingCtrl0 5
+#RingCtrl1 3
+#RingCtrl2 1
+#RingCtrl3 0
+#RingCtrl6 4
+#RingCtrl7 -1
+*RUN_COLOR 1 1 1
+SET_RUN_COLOR 1 1 1
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Vehicles\Assembly\Vehicle_8c9aab4d-9278-4d76-bc45-ecb4cd86bc5c.par
+#BlueLink2 Vehicle: Assembly`D-Class, Sedan, No Driver` D-Class` , Math Model`Vehicle_8c9aab4d-9278-4d76-bc45-ecb4cd86bc5c
+
+PARSFILE Generic\Links\GenLink_bfc0b326-8b48-4a79-97cd-a25dc718bd56.par
+#BlueLink9 Generic Group of Links`Wheel Restraints, Car 2` Vehicle Hauling` , Miscellaneous`GenLink_bfc0b326-8b48-4a79-97cd-a25dc718bd56
+
+Opt_SC 0
+PARSFILE Control\SteerTorque\StrTrq_b5a629d5-423d-4e15-854a-63025f24d6ee.par
+#BlueLink3 Control: Steering Torque (Open Loop)`Zero torque` ` , Steering`StrTrq_b5a629d5-423d-4e15-854a-63025f24d6ee
+
+PARSFILE Control\Braking\PbkCon_bf4961f4-c4cf-4b18-a8f7-5f65e31ecd3f.par
+#BlueLink4 Control: Braking MC Pressure (Open Loop)`Constant: 0 MPa` Constant` , Braking`PbkCon_bf4961f4-c4cf-4b18-a8f7-5f65e31ecd3f
+
+PARSFILE Control\Throttle\Throttle_768d3744-c109-4ff7-a65b-3b0bea560117.par
+#BlueLink5 Control: Throttle (Open Loop)`Constant: 0` Constant` , Speed from path preview`Throttle_768d3744-c109-4ff7-a65b-3b0bea560117
+
+PARSFILE Control\Gear_at\GearCL_395374af-90fa-4fef-80e1-a8df607bfbef.par
+#BlueLink6 Control: Shifting (Closed Loop)`Neutral` ` , Shifting control`GearCL_395374af-90fa-4fef-80e1-a8df607bfbef
+
+OPT_STOP 1
+TSTART 0
+SSTART 0
+TSTART_WRITE = 0;
+TSTOP 73
+SSTOP 1200
+OPT_DIRECTION 0
+*TSTOP 73
+*TSTART 0
+*SSTART 0
+*SSTOP 1200
+DELETE_PLOT_GROUP default
+PLOT_GROUP default
+PARSFILE Plot\Setup\Plot_8e8eb123-8d3e-4a5b-bad8-a818adfa5608.par
+#BlueLink15 Plot: Setup`Fx: RP 1-8` Reference Points` , Plot`Plot_8e8eb123-8d3e-4a5b-bad8-a818adfa5608
+
+PARSFILE Plot\Setup\Plot_ecc9d06e-cd50-4170-a514-26facf24b58d.par
+#BlueLink16 Plot: Setup`Fy: RP 1-8` Reference Points` , Plot`Plot_ecc9d06e-cd50-4170-a514-26facf24b58d
+
+PARSFILE Plot\Setup\Plot_aa3860a3-c1a4-4a09-8b16-608eb24c1cb2.par
+#BlueLink17 Plot: Setup`Fz: RP 1-8` Reference Points` , Plot`Plot_aa3860a3-c1a4-4a09-8b16-608eb24c1cb2
+
+PARSFILE Plot\Setup\Plot_a146934a-339c-4983-9664-0f9749a0dfd6.par
+#BlueLink18 Plot: Setup`Vertical Forces` Tire Forces and Moments` , Plot`Plot_a146934a-339c-4983-9664-0f9749a0dfd6
+
+
+SPECIAL_PARSFILE Runs\Run_a0d35b85-ad46-4031-bf43-ecaa7727f747.par
+#BlueLink23 CarSim Run Control`Pickup Hauler - Car 1: Bounce Test` Multiple Vehicles, Parallel Solvers` , Overlay run or ERD file`Run_a0d35b85-ad46-4031-bf43-ecaa7727f747
+
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Animator\Vehicles\AniVeh_9826d11f-0daa-490a-9764-a7cde2fa7ad2.png
+WRITE_SENSOR_DETECT
+Title Hauled Car - Car 2: Bounce Test <Multiple Vehicles, Parallel Solvers>
+CATEGORY Multiple Vehicles, Parallel Solvers 
+DATASET_TITLE Hauled Car - Car 2: Bounce Test
+#MiscYellow0
+! Initialize Vehicle Combination, write outputs after settling
+eq_init2 sv_xo imp_restrain_l1_x
+eq_init2 sv_zo IMP_ZGND_L1
+define_parameter WriteStart = 50;
+define_parameter WriteStop = 73;
+EQ_IN OPT_WRITE = IF( (T >= WriteStart) & (T < WriteStop), 1, 0)
+#ENDMYellow
+
+PARSFILE Generic\Group\GenGrp_c11e4bbe-5e3a-4498-91a5-6c42d1db378a.par
+#BlueLink14 Generic Data Group`2 Axle - Fx, Fy, Fz` Tire Force Arrows` , Overriding data`GenGrp_c11e4bbe-5e3a-4498-91a5-6c42d1db378a
+
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#WARNING: do not click Run or Send to Simulink!
+#Use the 'Parallel Solvers Library (Libraries > Batch > Parallel Solvers) to run this example.
+#
+#This is 2 of 2 Run Control datasets used to simultaneously simulate  a lead unit hauling another fully modeled vehicle on a flatbed trailer.
+#
+#In this example, the output is written after the vehicle combination stabilizes.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { Multiple Vehicles, Parallel Solvers } Hauled Car - Car 2: Bounce Test
+#Library : CarSim Run Control
+#DataSet : Hauled Car - Car 2: Bounce Test
+#Category: Multiple Vehicles, Parallel Solvers
+#FileID  : Run_7369483b-ea32-49d2-96eb-3a7e70897bd5
+#Created : 01-12-2023 09:18:38
+#Modified: 07-17-2023 14:20:13
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Run
+
+END

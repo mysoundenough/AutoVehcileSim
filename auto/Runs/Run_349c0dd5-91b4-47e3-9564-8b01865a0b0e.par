@@ -1,0 +1,84 @@
+PARSFILE
+#FullDataName CarSim Run Control`MT, CL Shift & Clutch, Full Throt.`Powertrain: ICE
+#VEHICLECODE Ind_Ind
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_349c0dd5-91b4-47e3-9564-8b01865a0b0e
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Animator\Cameras\Camera_8eb08baf-478b-4574-8772-fb6308e8fbd6.par
+#BlueLink0 Animator: Camera Setup`35 Azm, 5 El, 13.5 m` Vehicle Reference` , Animator camera`Camera_8eb08baf-478b-4574-8772-fb6308e8fbd6
+
+#CheckBox0 1    
+#CheckBox1 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 0    
+#CheckBox5 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox8 1    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+#CheckBox12 0    
+
+#RingCtrl0 4
+#RingCtrl1 8
+#RingCtrl2 3
+#RingCtrl3 0
+#RingCtrl6 0
+#RingCtrl7 -1
+*RUN_COLOR 0.6 0 0
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Vehicles\Assembly\Vehicle_84c6f33d-5864-4a03-a9b0-cdb8f57d9f6c.par
+#BlueLink2 Vehicle: Assembly`Exotic Sports Car, AWD: MT` Exotic Sports Car` , Math Model`Vehicle_84c6f33d-5864-4a03-a9b0-cdb8f57d9f6c
+
+PARSFILE Procedures\Proc_4f2327de-1833-4612-a6d6-996876ea7a28.par
+#BlueLink28 Procedures`Full Throttle Accel. w/ Events: MT` Accel. and Brake Testing` , Procedure`Proc_4f2327de-1833-4612-a6d6-996876ea7a28
+
+PARSFILE Animator\HUD\HUD_ce21d6ea-73a6-4297-93d2-ebb98b8e52c5.par
+#BlueLink9 Animator: HUD`Throttle, Brakes, Speedo w/ Gear, Tach` Vehicle Status Indicators` , Miscellaneous`HUD_ce21d6ea-73a6-4297-93d2-ebb98b8e52c5
+
+*TSTOP 20
+*TSTART 0
+*SSTART 0
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Animator\Vehicles\AniVeh_30f1b262-73d2-47f4-b117-69aefa4b7382.png
+WRITE_SENSOR_DETECT
+Title MT, CL Shift & Clutch, Full Throt. <Powertrain: ICE>
+CATEGORY Powertrain: ICE 
+DATASET_TITLE MT, CL Shift & Clutch, Full Throt.
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#Events are used to set up an acceleration test which combines open-loop and closed-loop control of the throttle, shifting, and clutch.
+#
+#
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { Powertrain: ICE } MT, CL Shift & Clutch, Full Throt.
+#Library : CarSim Run Control
+#DataSet : MT, CL Shift & Clutch, Full Throt.
+#Category: Powertrain: ICE
+#FileID  : Run_349c0dd5-91b4-47e3-9564-8b01865a0b0e
+#Modified: 11-21-2022 14:16:24
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Run
+
+END

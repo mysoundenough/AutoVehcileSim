@@ -1,0 +1,43 @@
+PARSFILE
+#FullDataName Plot: Setup`Road Wheel vs Handwheel Steer - Front`Steering
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par
+#BlueLink0 Plot: Format`Default Plot Settings` ` , Plot format`PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS Steer_L1, Steer_SW
+PLOTCHANNELS Steer_R1, Steer_SW
+PLOTCHANNELS StrKp_L1, Steer_SW
+PLOTCHANNELS StrKp_R1, Steer_SW
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Road Wheel vs Handwheel Steer - Front
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Steering } Road Wheel vs Handwheel Steer - Front
+#Library : Plot: Setup
+#DataSet : Road Wheel vs Handwheel Steer - Front
+#Category: Steering
+#FileID  : Plot_f3951e73-cdb8-4845-9810-48c2fe76ca6e
+#Modified: 05-28-2021 14:59:44
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Plot Setup
+
+END

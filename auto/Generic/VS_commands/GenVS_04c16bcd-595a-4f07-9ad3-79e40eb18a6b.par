@@ -1,0 +1,32 @@
+PARSFILE
+#FullDataName Generic VS Commands`06d - AWD Lock trans, apply Fx`K&C Test Sequence
+#VehCode VS Commands
+
+#MiscYellow0
+! Capture the transmission output angle at the beginning of the test.
+A_PARK_D_F = Rot_D3f;
+A_PARK_D_R = Rot_D3r;
+
+! A spring and damper locks the transmission output shaft
+EQ_IN imp_m_out_d3_f = -1 * (Rot_D3f - A_PARK_D_F) * K_PARK - av_d3f * C_PARK
+EQ_IN imp_m_out_d3_r = -1 * (Rot_D3r - A_PARK_D_R) * K_PARK - av_d3r * C_PARK
+
+! Enable or disable Fx according to powertrain and test configuration.
+SWITCH_L1 = 1
+SWITCH_R1 = 1
+SWITCH_L2 = 1
+SWITCH_R2 = 1
+#ENDMYellow
+
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { K&C Test Sequence } 06d - AWD Lock trans, apply Fx
+#Library : Generic VS Commands
+#DataSet : 06d - AWD Lock trans, apply Fx
+#Category: K&C Test Sequence
+#FileID  : GenVS_04c16bcd-595a-4f07-9ad3-79e40eb18a6b
+#Modified: 05-28-2021 15:02:26
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode VS Commands
+
+END

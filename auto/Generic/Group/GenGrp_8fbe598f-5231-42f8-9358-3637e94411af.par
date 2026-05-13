@@ -1,0 +1,85 @@
+PARSFILE
+#FullDataName Generic Data Group`Ped. Euro NCAP Setup Adult, 25%, Sim.`Euro NCAP Pedestrian
+#VehCode AEB Sensor Setup
+#MiscYellow0
+  DEFINE_PARAMETER CURRENT_TEST = 0; - ; test ...
+number for lookup tables
+
+! Values for the type of test being conducted
+! to access for various look-up tables
+DEFINE_PARAMETER CPFA_50 = 0001;- ; CPFA-50 test type value
+DEFINE_PARAMETER CPNA_25 = 0002;- ; CPNA-25 test type value
+DEFINE_PARAMETER CPNA_75 = 0003;- ; CPNA-75 test type value
+DEFINE_PARAMETER CPNC_50 = 0004;- ; CPNC-50 test type value
+DEFINE_PARAMETER CPLA_50 = 0005;- ; CPLA-50 test type value
+DEFINE_PARAMETER CPLA_25 = 0006;- ; CPLA-25 test type value
+DEFINE_PARAMETER CPTA_Far = 0007;- ; CPTA far test type value
+DEFINE_PARAMETER CPTA_Near = 0008;- ; CPTA near test type value
+DEFINE_PARAMETER CPRA_Stationary = 0009;- ; CPRA stationary test type value
+DEFINE_PARAMETER CPRA_Moving = 0010;- ; CPFA-50 test type value
+DEFINE_PARAMETER CPNA_25_Night = 0011;- ; CPNA-25 night test type value
+DEFINE_PARAMETER CPNA_Far_Night = 0012;- ; CPNA far night test type value
+DEFINE_PARAMETER CPLA_25_Night = 0013;- ; CPLA-25 night test type value
+DEFINE_PARAMETER CPLA_Far_Night = 0014;- ; CPLA-far night test type value
+DEFINE_PARAMETER CBNA_50 = 0015;- ; CBNA-50 test type value
+#ENDMYellow
+
+PARSFILE Generic\VS_commands\GenVS_1e9587cc-5ad0-4cb1-8ec1-00471667e4f9.par
+#BlueLink0 Generic VS Commands`AEB CPNA 25 10 kph Initial Setup` Pedestrian Euro NCAP` , Link 1`GenVS_1e9587cc-5ad0-4cb1-8ec1-00471667e4f9
+
+
+PARSFILE Generic\GroupMore\GenGrpM_0390322e-cca9-454f-8be9-c6ff23b0ce89.par
+#BlueLink1 Generic Data Group (More)`Adult Pedestrian w/sensor, Simulink` Pedestrian Euro NCAP` , Link 2`GenGrpM_0390322e-cca9-454f-8be9-c6ff23b0ce89
+
+
+#MiscYellow2
+! w/LTARG, ydist is negative to the zero line
+define_output RelLtargVehPed = LTARGPED - Lat_Veh; m;...
+ Ped. ltarg w/r to vehicle
+
+! the pedestrian target lateral location 
+! w/respect to the VUT's front bumper
+define_output BumperStrike = if( PedSensMag > 0, ...
+( VEH_WID/2 - (-yDistAct )) /VEH_WID, 0); ...
+  % ; strike perc. of bumper width
+define_output StrikePercentDiff = ...
+abs(BumperStrike-TARG_STRIKE); %; ... 
+target vs. strike percent. diff
+#ENDMYellow
+
+PARSFILE Generic\VS_commands\GenVS_22397465-212c-4620-9250-a98dd5e1ffab.par
+#BlueLink2 Generic VS Commands`Scoring and Events` Pedestrian Euro NCAP` , Link 3`GenVS_22397465-212c-4620-9250-a98dd5e1ffab
+
+
+#MiscYellow3
+SCORE_NEW = ( SPEED_REDUCTION/VEH_SPD_INIT )*...
+AEB_MaxScore(CURRENT_TEST, VEH_SPD_INIT*3.6, 1); - ; score for current run
+#ENDMYellow
+
+PARSFILE Events\Events_02098bf5-c38a-493e-bf63-178858aad936.par
+#BlueLink3 Events`A. Initial Non-AEB Test, 25%, Adult` Pedestrian Euro NCAP` , Link 4`Events_02098bf5-c38a-493e-bf63-178858aad936
+
+
+
+
+
+
+
+*MODELCODE AEB Sensor Setup
+
+#EMBEDDED_NOTES
+#
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic Data Group; { Euro NCAP Pedestrian } Ped. Euro NCAP Setup Adult, 25%, Sim.
+#Library : Generic Data Group
+#DataSet : Ped. Euro NCAP Setup Adult, 25%, Sim.
+#Category: Euro NCAP Pedestrian
+#FileID  : GenGrp_8fbe598f-5231-42f8-9358-3637e94411af
+#Created : 08-25-2021 18:35:58
+#Modified: 08-30-2021 17:05:50
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode AEB Sensor Setup
+
+END

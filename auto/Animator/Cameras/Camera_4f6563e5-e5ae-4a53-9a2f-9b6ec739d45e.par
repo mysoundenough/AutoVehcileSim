@@ -1,0 +1,41 @@
+PARSFILE
+#FullDataName Animator: Camera Setup`Proving Grounds: Road Course`Scene Specific Preview
+#RingCtrl1 0
+
+#CheckBox1 0    
+#CheckBox2 0    
+#CheckBox3 0    
+
+SET_CAMERA_REFERENCE_FRAME Frame_02b47476-96e6-474b-919e-07d03b43f1ec
+PARSFILE Animator\Frames\Frame_02b47476-96e6-474b-919e-07d03b43f1ec.par
+#BlueLink0 Animator: Reference Frame`Yaw for Shape Preview` Shape Preview: Generic` , Reference frame for outside camera`Frame_02b47476-96e6-474b-919e-07d03b43f1ec
+
+SET_LOOKPOINT_REFERENCE_FRAME Frame_02b47476-96e6-474b-919e-07d03b43f1ec
+SET_LOOKPOINT_X -100
+SET_LOOKPOINT_Y 710
+SET_LOOKPOINT_Z 1.5
+SET_AZIMUTH 180
+SET_ELEVATION 5
+SET_DISTANCE 80
+SET_CAMERAMAN_NAME External camera
+*SET_LOOKPOINT_X -100
+*SET_LOOKPOINT_Y 710
+*SET_LOOKPOINT_Z 1.5
+*SET_AZIMUTH 180
+*SET_ELEVATION 5
+*SET_DISTANCE 80
+FOG_SCALE 142.16+306
+SET_FIELD_OF_VIEW 21.1
+
+LOG_ENTRY Used Dataset: Animator: Camera Setup; { Scene Specific Preview } Proving Grounds: Road Course
+#Library : Animator: Camera Setup
+#DataSet : Proving Grounds: Road Course
+#Category: Scene Specific Preview
+#FileID  : Camera_4f6563e5-e5ae-4a53-9a2f-9b6ec739d45e
+#Created : 05-26-2021 15:00:49
+#Modified: 05-28-2021 15:03:29
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Camera
+
+END

@@ -1,0 +1,30 @@
+PARSFILE
+#FullDataName Control: Speed (Closed Loop) Using Target Speed`70 km/h: Euro NCAP ACC Cut-Out`Constant
+SET_ISPEED_FOR_ID CUT_OUT_VEH_SPD_PROF
+set_description SPEED_TARGET_ID 70 km/h: Euro NCAP ACC Cut-Out
+#CheckBox2 0    
+#CheckBox3 0    
+*SCALAR 70
+*SCALAR2 0
+#RingCtrl0 CONSTANT
+#RingCtrl1 CONSTANT
+#RingCtrl2 ADD
+SPEED_TARGET_COMBINE ADD
+#RingCtrl3 2
+#RadioCtrl0 1    
+#RadioCtrl1 0    
+
+SPEED_TARGET_CONSTANT 70
+SPEED_TARGET_S_CONSTANT 0
+
+LOG_ENTRY Used Dataset: Control: Speed (Closed Loop) Using Target Speed; { Constant } 70 km/h: Euro NCAP ACC Cut-Out
+#Library : Control: Speed (Closed Loop) Using Target Speed
+#DataSet : 70 km/h: Euro NCAP ACC Cut-Out
+#Category: Constant
+#FileID  : SpdTime_f577b30a-c1b0-4021-987a-86ed456f011a
+#Modified: 05-28-2021 15:02:37
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Target Speed
+
+END

@@ -1,0 +1,54 @@
+PARSFILE
+#FullDataName Road: Reference Line Elevation`Hill and Dip in the Road`Hills and Valleys
+#CheckBox0 0    
+
+#RingCtrl0 SPLINE_FLAT
+#RadioCtrl0 0    
+
+#DiagramOne0
+ROAD_ZS_TABLE SPLINE_FLAT
+32, 0
+34, 0.1
+36, 0.25
+38, 0.4
+40, 0.6
+42, 0.8
+44, 0.82
+46, 0.82
+48, 0.82
+50, 0.8
+52, 0.6
+54, 0.4
+56, 0.25
+58, 0.1
+60, 0
+64, 0
+66, -0.1
+68, -0.2
+70, -0.3
+72, -0.4
+74, -0.5
+76, -0.52
+78, -0.52
+80, -0.52
+82, -0.5
+84, -0.4
+86, -0.3
+88, -0.2
+90, -0.1
+92, 0
+ENDTABLE
+
+
+LOG_ENTRY Used Dataset: Road: Reference Line Elevation; { Hills and Valleys } Hill and Dip in the Road
+#Library : Road: Reference Line Elevation
+#DataSet : Hill and Dip in the Road
+#Category: Hills and Valleys
+#FileID  : RdRefZ_d1e6faaf-d0e3-4d4a-ad3a-9adc96876a8c
+#Created : 04-18-2022 15:45:37
+#Modified: 05-27-2022 11:19:46
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Zs vs S
+
+END

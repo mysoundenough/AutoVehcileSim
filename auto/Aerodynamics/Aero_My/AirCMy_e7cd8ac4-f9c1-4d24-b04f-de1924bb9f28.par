@@ -1,0 +1,62 @@
+PARSFILE
+#FullDataName Aerodynamics: My (Pitch Moment) Coef. vs. Aero Slip`Trailer Pitch Testing`
+#CheckBox0 0    
+
+#RingCtrl0 LINEAR_FLAT
+#RadioCtrl0 0    
+
+#DiagramOne0
+MY_AERO_SHAPING_TABLE LINEAR_FLAT
+-180, -0.12
+-170, -0.15
+-160, -0.2
+-150, -0.26
+-140, -0.31
+-130, -0.33
+-120, -0.3
+-110, -0.17
+-100, -0.09
+-90, 0.05
+-80, 0.03
+-70, 0.11
+-60, 0.23
+-50, 0.25
+-40, 0.25
+-30, 0.25
+-20, 0.23
+-10, 0.16
+0, 0.12
+10, 0.16
+20, 0.23
+30, 0.25
+40, 0.25
+50, 0.25
+60, 0.23
+70, 0.11
+80, 0.03
+90, 0.05
+100, -0.09
+110, -0.17
+120, -0.3
+130, -0.33
+140, -0.31
+150, -0.26
+160, -0.2
+170, -0.15
+180, -0.12
+ENDTABLE
+*SCALAR 0
+
+
+LOG_ENTRY Used Dataset: Aerodynamics: My (Pitch Moment) Coef. vs. Aero Slip; Trailer Pitch Testing
+#Library : Aerodynamics: My (Pitch Moment) Coef. vs. Aero Slip
+#DataSet : Trailer Pitch Testing
+#Category: 
+#FileID  : AirCMy_e7cd8ac4-f9c1-4d24-b04f-de1924bb9f28
+#Created : 10-06-2022 12:58:09
+#Modified: 10-06-2022 13:03:02
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode My vs. Aero Slip
+
+END

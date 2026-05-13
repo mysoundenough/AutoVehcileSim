@@ -1,0 +1,36 @@
+PARSFILE
+#FullDataName Events`05c - Increase to max neg force (L)`K&C Test Sequence
+#CheckBox1 0    
+#CheckBox6 0    
+#CheckBox7 1    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 ZERO ~=
+#RingCtrl1 ZERO ~=
+#RingCtrl10 2
+#RingCtrl11 4
+*VALUE1 (fy_ground <= -FY_RANGE) & END_AFTER_EVENT
+*VALUE2 fy_ground <= -FY_RANGE
+PARSFILE Generic\VS_commands\GenVS_494d42d9-37b4-44c0-a5d4-138acab6e1b4.par
+#BlueLink10 Generic VS Commands`05c - Fy comp - move to max neg (L)` K&C Test Sequence` , Miscellaneous`GenVS_494d42d9-37b4-44c0-a5d4-138acab6e1b4
+
+DEFINE_EVENT (fy_ground <= -FY_RANGE) & END_AFTER_EVENT ; Events\Events_b5af09b5-d8ad-4e81-ae24-eebce691780e.par
+#BlueLink0 Events`End Events` ` , Events`Events_b5af09b5-d8ad-4e81-ae24-eebce691780e
+
+DEFINE_EVENT fy_ground <= -FY_RANGE ; Events\Events_73bd690f-0771-4fa5-b860-4401edc32b8d.par
+#BlueLink1 Events`05c - Increase to max pos force (L)` K&C Test Sequence` , Events`Events_73bd690f-0771-4fa5-b860-4401edc32b8d
+
+SET_EVENT_ID 0 ! reset to default
+
+LOG_ENTRY Used Dataset: Events; { K&C Test Sequence } 05c - Increase to max neg force (L)
+#Library : Events
+#DataSet : 05c - Increase to max neg force (L)
+#Category: K&C Test Sequence
+#FileID  : Events_eee8d1c5-12b4-432b-8903-5b5e02374951
+#Modified: 05-28-2021 14:59:28
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

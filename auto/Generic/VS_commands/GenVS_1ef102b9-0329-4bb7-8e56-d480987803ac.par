@@ -1,0 +1,76 @@
+PARSFILE
+#FullDataName Generic VS Commands`04a - Steer kinematics setup`K&C Test Sequence
+#VehCode VS Commands
+
+#MiscYellow0
+! Setup and test parameters ----------------------------------------------------
+! A steer kinematics test is run by first steering to the right (negative) until either
+! a user-specified steering wheel input angle, a maximum road wheel steer angle,
+! or a maximum kingpin torque is reached. Since the test is run on a frictionless
+! surface the max torque should only be reached if steering stops are implemented
+! on the test vehicle
+
+! Set the target max (left) and min (right) steer for the steering wheel
+DEFINE_PARAMETER SW_MAX = 360; deg; Max steering wheel angle
+DEFINE_PARAMETER SW_MIN = -360; deg; Min steering wheel angle
+
+! Set the target max (left) and min (right) steer for each road wheel
+DEFINE_PARAMETER RW_MAX_L1 = 90; deg; Max road wheel steer angle
+DEFINE_PARAMETER RW_MIN_L1 = -90; deg; Min road wheel steer angle
+DEFINE_PARAMETER RW_MAX_R1 = 90; deg; Max road wheel steer angle
+DEFINE_PARAMETER RW_MIN_R1 = -90; deg; Min road wheel steer angle
+
+! Four-wheel steer is possible
+! These are only used to record the range of steer.
+! Rear steer is typically under some sort of servo control, which is often
+! variable with vehicle speed. This test is conducted at zero speed, and
+! the rear steer is recorded for reference only.
+
+! The value of max rear steer is defined as the steer angle when the maximum front
+! steer is reached, and vice versa for minimum rear steer.
+DEFINE_PARAMETER RW_MAX_L2 = 0; deg; Max road wheel steer angle
+DEFINE_PARAMETER RW_MIN_L2 = 0; deg; Min road wheel steer angle
+DEFINE_PARAMETER RW_MAX_R2 = 0; deg; Max road wheel steer angle
+DEFINE_PARAMETER RW_MIN_R2 = 0; deg; Min road wheel steer angle
+
+! Set the limit steer stop torque at axle 1 (magnitude only)
+DEFINE_PARAMETER M_STOP_LIM = 100; N-m; Steering stop limit torque
+
+! Steering handwheel rate for test. The test must be slow enough to minimize
+! inertia and damping effects.
+! Initial rate is negative (steer to right)
+DEFINE_PARAMETER SW_RATE = 45; deg/s; Steering wheel angular rate
+
+! Things needed to control the test --------------------------------------------
+DEFINE_OUTPUT str_targ = Steer_SW; deg; Target steer angle
+
+! Apply control to Steering wheel angle
+EQ_DIFFERENTIAL str_targ = sw_rate;
+
+! Steering wheel angle
+EQ_IN imp_steer_sw = str_targ;
+IMPORT imp_steer_sw VS_REPLACE
+
+! Steering wheel angular rate
+EQ_IN imp_dsteer_sw = sw_rate;
+IMPORT imp_dsteer_sw VS_REPLACE
+
+! Note: Steer stops only apply at the outboard wheel when steering
+DEFINE_OUTPUT at_min_rw_l1 = steer_l1 < RW_MIN_L1 | M_StopL1 > M_STOP_LIM; -; 1/0 At/Not at min steer
+DEFINE_OUTPUT at_max_rw_r1 = steer_r1 > RW_MAX_R1 | M_StopR1 < -M_STOP_LIM; -; 1/0 At/Not at max steer
+
+!
+#ENDMYellow
+
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { K&C Test Sequence } 04a - Steer kinematics setup
+#Library : Generic VS Commands
+#DataSet : 04a - Steer kinematics setup
+#Category: K&C Test Sequence
+#FileID  : GenVS_1ef102b9-0329-4bb7-8e56-d480987803ac
+#Modified: 05-28-2021 15:02:26
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode VS Commands
+
+END

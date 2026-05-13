@@ -1,0 +1,36 @@
+PARSFILE
+#FullDataName Events`Test SET_IMPORT_MODE`Braking
+#CheckBox1 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 ZERO ~=
+#RingCtrl10 1
+#RingCtrl11 4
+*NAME1 t
+*VALUE1 Vxz_Fwd > 3 & max(abs(AVy_L1), abs(AVy_L2)) < 1
+DEFINE_EVENT Vxz_Fwd > 3 & max(abs(AVy_L1), abs(AVy_L2)) < 1 ; Events\Events_69b5a4f3-088f-4c2b-85d4-5038f61046ef.par
+#BlueLink0 Events`Activate Brake Pressure Imports` Braking` , Events`Events_69b5a4f3-088f-4c2b-85d4-5038f61046ef
+
+SET_EVENT_ID 0 ! reset to default
+
+#EMBEDDED_NOTES
+#This looks for a wheel near lockup in a run in Simulink has been setup with four brake pressure inputs desclared for import with the mode AVAILABLE. If this Event is triggered, the linked dataset is loaded and changes the modes for the import variabled to REPLACE.
+#
+#The triggter is that speed > 3 m/s and wheel spin rate on the left side is less than 1 rad/s
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Events; { Braking } Test SET_IMPORT_MODE
+#Library : Events
+#DataSet : Test SET_IMPORT_MODE
+#Category: Braking
+#FileID  : Events_bd5238af-cc94-4988-9cee-dda7d77d02c3
+#Created : 04-05-2023 09:30:25
+#Modified: 04-07-2023 10:47:24
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

@@ -1,0 +1,62 @@
+PARSFILE
+#FullDataName Aerodynamics: Fx (Drag) Coef. vs. Aero Slip`Trailer Drag Testing`
+#CheckBox0 0    
+
+#RingCtrl0 LINEAR_FLAT
+#RadioCtrl0 0    
+
+#DiagramOne0
+FX_AERO_SHAPING_TABLE LINEAR_FLAT
+-180, -0.5
+-170, -0.68
+-160, -0.84
+-150, -0.9
+-140, -0.87
+-130, -0.77
+-120, -0.63
+-110, -0.45
+-100, -0.29
+-90, -0.14
+-80, -0.01
+-70, 0.13
+-60, 0.27
+-50, 0.39
+-40, 0.53
+-30, 0.67
+-20, 0.68
+-10, 0.6
+0, 0.57
+10, 0.6
+20, 0.68
+30, 0.67
+40, 0.53
+50, 0.39
+60, 0.27
+70, 0.13
+80, -0.01
+90, -0.14
+100, -0.29
+110, -0.45
+120, -0.63
+130, -0.77
+140, -0.87
+150, -0.9
+160, -0.84
+170, -0.68
+180, -0.5
+ENDTABLE
+*SCALAR 0
+
+
+LOG_ENTRY Used Dataset: Aerodynamics: Fx (Drag) Coef. vs. Aero Slip; Trailer Drag Testing
+#Library : Aerodynamics: Fx (Drag) Coef. vs. Aero Slip
+#DataSet : Trailer Drag Testing
+#Category: 
+#FileID  : AirCFx_e38dd5b9-ec8b-404b-8b0a-ec507ef1a7c8
+#Created : 10-06-2022 12:57:48
+#Modified: 10-06-2022 13:01:29
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Drag vs. Aero Slip
+
+END

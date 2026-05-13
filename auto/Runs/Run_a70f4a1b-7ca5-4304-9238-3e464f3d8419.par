@@ -1,0 +1,84 @@
+PARSFILE
+#FullDataName CarSim Run Control`05c - Fy compliance (L)`K & C Tests - Complete sequence
+#VEHICLECODE ignore
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_a70f4a1b-7ca5-4304-9238-3e464f3d8419
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Animator\Cameras\Camera_78646c82-3c25-4eef-b153-d76a910f00fb.par
+#BlueLink0 Animator: Camera Setup`K & C View` K & C` , Animator camera`Camera_78646c82-3c25-4eef-b153-d76a910f00fb
+
+
+SPECIAL_PARSFILE Runs\Run_d9be42a4-e12e-4991-bab7-2410138b9a40.par
+#BlueLink1 CarSim Run Control`01 - K & C: Design Load (no plots)` K & C Tests - Complete sequence` , Continue`Run_d9be42a4-e12e-4991-bab7-2410138b9a40
+
+PARSFILE Results\Run_d9be42a4-e12e-4991-bab7-2410138b9a40\LastRun_END.PAR
+#CheckBox0 1    
+#CheckBox1 0    
+#CheckBox2 1    
+#CheckBox3 0    
+#CheckBox4 0    
+#CheckBox5 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox8 1    
+#CheckBox9 0    
+#CheckBox10 1    
+#CheckBox11 0    
+#CheckBox12 0    
+
+#RingCtrl0 4
+#RingCtrl1 0
+#RingCtrl2 3
+#RingCtrl3 0
+#RingCtrl6 0
+#RingCtrl7 -1
+*RUN_COLOR 1 0 0
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Procedures\Proc_c0381935-ee61-44cb-9253-6de5e9e056e9.par
+#BlueLink28 Procedures`05c - Fy compliance (left)` K&C Test Sequence` , Procedure`Proc_c0381935-ee61-44cb-9253-6de5e9e056e9
+
+#BlueLink23 CarSim Run Control`01 - K & C: Design Load Condition` K & C Tests - Complete sequence` , Overlay run or ERD file`Run_a7819ed0-2fa6-4994-9ef6-ad37e8135b30
+
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Animator\Vehicles\AniVeh_4ce91de0-b4f4-4075-a4a9-d4fc5b973de3.png
+WRITE_SENSOR_DETECT
+Title 05c - Fy compliance (L) <K & C Tests - Complete sequence>
+CATEGORY K & C Tests - Complete sequence 
+DATASET_TITLE 05c - Fy compliance (L)
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#In a left side-only lateral force test, force is applied in the Y direction of the sprung mass to the left side only. Its purpose is to aid in visualizing and analyzing the left/right interconnection between a pair of wheels.
+#
+#The tire forces in CarSim are in the tire coordinates, so these are calculated to account for any toe or steer of the wheels.
+#
+#Output from the test begins with force at the specified maximum value in the negative direction and runs through one complete cycle from negative to positive and back.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { K & C Tests - Complete sequence } 05c - Fy compliance (L)
+#Library : CarSim Run Control
+#DataSet : 05c - Fy compliance (L)
+#Category: K & C Tests - Complete sequence
+#FileID  : Run_a70f4a1b-7ca5-4304-9238-3e464f3d8419
+#Modified: 03-25-2024 14:49:51
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Run
+
+END

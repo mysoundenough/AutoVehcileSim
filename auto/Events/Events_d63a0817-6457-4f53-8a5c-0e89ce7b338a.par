@@ -1,0 +1,56 @@
+PARSFILE
+#FullDataName Events`AEB CCRm,s F1: New Test, Decrease Spd`Euro NCAP AEB Testing
+#CheckBox1 1    
+*CLEAR
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 ZERO ~=
+#RingCtrl10 1
+#RingCtrl11 4
+RESET_EVENTS
+*NAME1 t
+*VALUE1 1
+#MiscYellow0
+Crashed = 1
+V_IMPACT = abs(RelDistFrontBump)
+SPEED_REDUCTION = VUT_START - V_IMPACT
+! slow down
+VUT_START = VUT_START - (5/3.6);
+speed_limit = VUT_START
+SPEED_TARGET_CONSTANT(1) = VUT_START
+
+!check if speed reduction was >5km/h, yes 0.5 pts. no, 0 pts.
+! Check if ACC met speed reduction test requirement, during collision event
+SCORE_NEW = if(SPEED_REDUCTION >= MIN_SPD_REDUC, SCORE_OLD + 0.5, SCORE_OLD)
+SCORE_OLD = SCORE_NEW
+#ENDMYellow
+
+DEFINE_EVENT 1 ; Events\Events_f6e68474-72ca-4764-aea1-3503b932a712.par
+#BlueLink0 Events`AEB CCRm,s F2. Reset Veh. and Targets` Euro NCAP AEB Testing` , Events`Events_f6e68474-72ca-4764-aea1-3503b932a712
+
+SET_EVENT_ID 0 ! reset to default
+
+#EMBEDDED_NOTES
+#Impact with the target object occured. The variable Crashed is set to 1.
+#
+#Reduce the speed by 5 km/h and try again.
+#
+#If the speed was reduced by the threshold value of 5 km/h award 0.5 points for the test run, if not, award zero points.
+#
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Events; { Euro NCAP AEB Testing } AEB CCRm,s F1: New Test, Decrease Spd
+#Library : Events
+#DataSet : AEB CCRm,s F1: New Test, Decrease Spd
+#Category: Euro NCAP AEB Testing
+#FileID  : Events_d63a0817-6457-4f53-8a5c-0e89ce7b338a
+#Created : 09-08-2021 11:48:32
+#Modified: 09-09-2021 16:31:40
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

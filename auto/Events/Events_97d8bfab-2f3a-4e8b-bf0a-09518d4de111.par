@@ -1,0 +1,30 @@
+PARSFILE
+#FullDataName Events`01 - Delete EQ's and End`K&C Test Sequence
+#CheckBox1 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl10 0
+#RingCtrl11 4
+PARSFILE Generic\VS_commands\GenVS_e606d51f-0b91-4321-841a-0d2b6d905375.par
+#BlueLink10 Generic VS Commands`01 - Capture Ground Z, Delete Eq's` K&C Test Sequence` , Miscellaneous`GenVS_e606d51f-0b91-4321-841a-0d2b6d905375
+
+#MiscYellow1
+STOP_RUN_NOW End event triggered
+#ENDMYellow
+
+SET_EVENT_ID 0 ! reset to default
+
+LOG_ENTRY Used Dataset: Events; { K&C Test Sequence } 01 - Delete EQ's and End
+#Library : Events
+#DataSet : 01 - Delete EQ's and End
+#Category: K&C Test Sequence
+#FileID  : Events_97d8bfab-2f3a-4e8b-bf0a-09518d4de111
+#Modified: 05-28-2021 14:59:27
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

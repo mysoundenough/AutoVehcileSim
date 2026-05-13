@@ -1,0 +1,38 @@
+PARSFILE
+#FullDataName Events`05d - Increase to max pos force (R)`K&C Test Sequence
+#CheckBox1 1    
+*CLEAR
+#CheckBox6 0    
+#CheckBox7 1    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 ZERO ~=
+#RingCtrl10 1
+#RingCtrl11 4
+RESET_EVENTS
+*VALUE1 fy_ground >= FY_RANGE
+#MiscYellow0
+OPT_WRITE 1
+END_AFTER_EVENT 1
+#ENDMYellow
+
+PARSFILE Generic\VS_commands\GenVS_b284643f-4525-4bbd-81b0-ef62f630e896.par
+#BlueLink10 Generic VS Commands`05d - Fy comp - move to max neg (R)` K&C Test Sequence` , Miscellaneous`GenVS_b284643f-4525-4bbd-81b0-ef62f630e896
+
+DEFINE_EVENT fy_ground >= FY_RANGE ; Events\Events_91e65844-68f4-434c-895c-3922380a9412.par
+#BlueLink0 Events`05d - Increase to max neg force (R)` K&C Test Sequence` , Events`Events_91e65844-68f4-434c-895c-3922380a9412
+
+SET_EVENT_ID 0 ! reset to default
+
+LOG_ENTRY Used Dataset: Events; { K&C Test Sequence } 05d - Increase to max pos force (R)
+#Library : Events
+#DataSet : 05d - Increase to max pos force (R)
+#Category: K&C Test Sequence
+#FileID  : Events_b683b08c-5e54-4176-a4cb-36d1c33dda1a
+#Modified: 05-28-2021 14:59:28
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

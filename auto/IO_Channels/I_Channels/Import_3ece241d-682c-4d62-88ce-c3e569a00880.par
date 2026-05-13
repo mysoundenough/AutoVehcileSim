@@ -1,0 +1,20 @@
+PARSFILE
+#FullDataName I/O Channels: Import`Brake Wheel Cylinder Pressure L1`Brake System Control
+#RingCtrl1 1
+
+#MiscYellow0
+IMP_PBK_L1 Replace 0.0! 1
+#ENDMYellow
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Import; { Brake System Control } Brake Wheel Cylinder Pressure L1
+#Library : I/O Channels: Import
+#DataSet : Brake Wheel Cylinder Pressure L1
+#Category: Brake System Control
+#FileID  : Import_3ece241d-682c-4d62-88ce-c3e569a00880
+#Modified: 08-03-2021 10:14:07
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Import Channels
+
+END

@@ -1,0 +1,88 @@
+PARSFILE
+#FullDataName CarSim Run Control`VS Commands: INVERSE`Extended Models
+#VEHICLECODE Ind_Ind
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_550c7b62-f8bb-48e5-b0fb-ce4f77881d38
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Animator\Cameras\Camera_32ea6678-907c-4a10-af4b-b9431e3d2f8a.par
+#BlueLink0 Animator: Camera Setup`13 Azm, 9 El, 18 m, No Yaw` Vehicle Reference` , Animator camera`Camera_32ea6678-907c-4a10-af4b-b9431e3d2f8a
+
+#CheckBox0 1    
+#CheckBox1 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 1    
+#CheckBox5 0    
+#CheckBox6 0    
+#CheckBox7 1    
+#CheckBox8 1    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+#CheckBox12 0    
+
+#RingCtrl0 4
+#RingCtrl1 1
+#RingCtrl2 3
+#RingCtrl3 0
+#RingCtrl6 1
+#RingCtrl7 -1
+*RUN_COLOR 0.8 0 0
+SET_RUN_COLOR 0.8 0 0
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Vehicles\Assembly\Vehicle_02f34599-fa67-4a2d-b9f1-ec46601f2987.par
+#BlueLink2 Vehicle: Assembly`C-Class, Hatchback: No ABS` C-Class` , Math Model`Vehicle_02f34599-fa67-4a2d-b9f1-ec46601f2987
+
+PARSFILE Procedures\Proc_3ae0353d-bd7c-43a3-9da4-150b6952a10e.par
+#BlueLink28 Procedures`DLC @ 120 km/h (Quick Start)` Handling Testing` , Procedure`Proc_3ae0353d-bd7c-43a3-9da4-150b6952a10e
+
+PARSFILE Generic\VS_commands\GenVS_f30fd54f-2ba0-465e-8b95-b68914f1e5fa.par
+#BlueLink9 Generic VS Commands`Inverse` Miscellaneous VS Commands` , Miscellaneous`GenVS_f30fd54f-2ba0-465e-8b95-b68914f1e5fa
+
+DELETE_PLOT_GROUP default
+PLOT_GROUP default
+PARSFILE Plot\Setup\Plot_0fc88295-76e6-4fb9-9665-12b64877feac.par
+#BlueLink15 Plot: Setup`INVERSE` User-Defined Variables` , Plot`Plot_0fc88295-76e6-4fb9-9665-12b64877feac
+
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Vehicles\Assembly\Vehicle_02f34599-fa67-4a2d-b9f1-ec46601f2987.png
+WRITE_SENSOR_DETECT
+Title VS Commands: INVERSE <Extended Models>
+CATEGORY Extended Models 
+DATASET_TITLE VS Commands: INVERSE
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#This run is the same as the Quick Start Guide Baseline double lane change. The miscellaneous commands and plotting demonstrate the use of the INVERSE command for inverting conigurable functions.
+#
+#This example uses the INVERSE command to get the input back from the output of a configurable function.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { Extended Models } VS Commands: INVERSE
+#Library : CarSim Run Control
+#DataSet : VS Commands: INVERSE
+#Category: Extended Models
+#FileID  : Run_550c7b62-f8bb-48e5-b0fb-ce4f77881d38
+#Created : 05-19-2022 13:55:05
+#Modified: 11-21-2022 14:16:19
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Run
+
+END

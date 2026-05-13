@@ -1,0 +1,41 @@
+PARSFILE
+#FullDataName Animator: Camera Setup`Proving Grounds: Cardinal - West`Scene Specific Preview
+#RingCtrl1 0
+
+#CheckBox1 0    
+#CheckBox2 0    
+#CheckBox3 0    
+
+SET_CAMERA_REFERENCE_FRAME Frame_02b47476-96e6-474b-919e-07d03b43f1ec
+PARSFILE Animator\Frames\Frame_02b47476-96e6-474b-919e-07d03b43f1ec.par
+#BlueLink0 Animator: Reference Frame`Yaw for Shape Preview` Shape Preview: Generic` , Reference frame for outside camera`Frame_02b47476-96e6-474b-919e-07d03b43f1ec
+
+SET_LOOKPOINT_REFERENCE_FRAME Frame_02b47476-96e6-474b-919e-07d03b43f1ec
+SET_LOOKPOINT_X -510
+SET_LOOKPOINT_Y 0
+SET_LOOKPOINT_Z 3
+SET_AZIMUTH 0
+SET_ELEVATION 0
+SET_DISTANCE 100
+SET_CAMERAMAN_NAME External camera
+*SET_LOOKPOINT_X -510
+*SET_LOOKPOINT_Y 0
+*SET_LOOKPOINT_Z 3
+*SET_AZIMUTH 0
+*SET_ELEVATION 0
+*SET_DISTANCE 100
+FOG_SCALE 0
+SET_FIELD_OF_VIEW 21.1
+
+LOG_ENTRY Used Dataset: Animator: Camera Setup; { Scene Specific Preview } Proving Grounds: Cardinal - West
+#Library : Animator: Camera Setup
+#DataSet : Proving Grounds: Cardinal - West
+#Category: Scene Specific Preview
+#FileID  : Camera_f30dc5d8-3742-4b86-8f48-c3c6f0c6d720
+#Created : 05-26-2021 15:54:23
+#Modified: 05-28-2021 15:03:29
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Camera
+
+END

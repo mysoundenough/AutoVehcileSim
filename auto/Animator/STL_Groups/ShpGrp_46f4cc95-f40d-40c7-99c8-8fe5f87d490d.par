@@ -1,0 +1,44 @@
+PARSFILE
+#FullDataName Animator: Shape Assembly`E-Class Sedan (Right-Hand Drive)`Passenger Cars
+*COLOR .36 .117 .117
+*X_REF_LENGTH 3050
+*Y_REF_LENGTH 1880
+*Z_REF_LENGTH 1450
+#CheckBox0 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 0    
+#CheckBox5 1    
+
+#RingCtrl1 0
+#RingCtrl2 2
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL_Groups\ShpGrp_46f4cc95-f40d-40c7-99c8-8fe5f87d490d.png
+PARSFILE Animator\STL\Shape_127a44f6-6001-424d-937d-916c5b8ff82b.par
+#BlueLink0 Animator: Shape File Link`Sedan: Body (RHD)` Cars: E-Class` , Shape File`Shape_127a44f6-6001-424d-937d-916c5b8ff82b
+
+set_lighting on
+PARSFILE Animator\STL\Shape_792cec92-b3ac-4573-a083-1ed2dd651995.par
+#BlueLink1 Animator: Shape File Link`Sedan: Driver (Cauc. Male, RHD)` Cars: E-Class` , Shape File`Shape_792cec92-b3ac-4573-a083-1ed2dd651995
+
+set_lighting on
+x_ref_length 3050
+y_ref_length 1880
+z_ref_length 1450
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
+#BlueLink17 Animator: Camera Setup`YZ-Plane, No Offsets (with Yaw)` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+
+
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Passenger Cars } E-Class Sedan (Right-Hand Drive)
+#Library : Animator: Shape Assembly
+#DataSet : E-Class Sedan (Right-Hand Drive)
+#Category: Passenger Cars
+#FileID  : ShpGrp_46f4cc95-f40d-40c7-99c8-8fe5f87d490d
+#Created : 07-11-2023 09:34:43
+#Modified: 07-11-2023 10:19:36
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape Assembly
+
+END

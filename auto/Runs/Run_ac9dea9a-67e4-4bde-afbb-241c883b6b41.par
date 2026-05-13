@@ -1,0 +1,87 @@
+PARSFILE
+#FullDataName CarSim Run Control`Full-Size Pickup, 3A Gooseneck Trailer`Vehicle Configurations
+#VEHICLECODE Ind_SA + SSS
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_ac9dea9a-67e4-4bde-afbb-241c883b6b41
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Animator\Cameras\Camera_32ea6678-907c-4a10-af4b-b9431e3d2f8a.par
+#BlueLink0 Animator: Camera Setup`13 Azm, 9 El, 18 m, No Yaw` Vehicle Reference` , Animator camera`Camera_32ea6678-907c-4a10-af4b-b9431e3d2f8a
+
+#CheckBox0 1    
+#CheckBox1 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 0    
+#CheckBox5 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox8 1    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+#CheckBox12 0    
+
+#RingCtrl0 0
+#RingCtrl1 1
+#RingCtrl2 3
+#RingCtrl3 0
+#RingCtrl6 1
+#RingCtrl7 -1
+*RUN_COLOR 0.8 0 0
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Vehicles\Loaded\VehLoad_9aae7e0a-47d3-4dbb-b0f7-66e7b7e918ba.par
+#BlueLink2 Vehicle with Loads, Sensors, Trailer, etc.`Pickup, Full Size, 3A Gooseneck Trailer` Pickup, Full Size` , Math Model`VehLoad_9aae7e0a-47d3-4dbb-b0f7-66e7b7e918ba
+
+PARSFILE Procedures\Proc_b157e401-006e-4da8-821c-e954769dd1a8.par
+#BlueLink28 Procedures`DLC @ 50 km/h` Handling Testing` , Procedure`Proc_b157e401-006e-4da8-821c-e954769dd1a8
+
+PARSFILE Sensors_Traffic\Traffic\TMotion_685c5b22-b555-4300-90e6-7f354600c8d8.par
+#BlueLink9 Multiple Moving Objects`1 Driver Preview Point` Points of Interest` , Miscellaneous`TMotion_685c5b22-b555-4300-90e6-7f354600c8d8
+
+PARSFILE Generic\Group\GenGrp_dfd6b38e-7dd8-44b1-bcd4-2be02cc25297.par
+#BlueLink10 Generic Data Group`5 Axle - Fx, Fy, Fz` Tire Force Arrows` , Miscellaneous`GenGrp_dfd6b38e-7dd8-44b1-bcd4-2be02cc25297
+
+PARSFILE Plot\Setup\Plot_e63c50d7-929d-4614-87b0-e3aa73ef250a.par
+#BlueLink15 Plot: Setup`Hitch Forces` Hitch` , Plot`Plot_e63c50d7-929d-4614-87b0-e3aa73ef250a
+
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Animator\Vehicles\AniVeh_6ba13624-c527-4355-b1e1-654631d3017e.png
+WRITE_SENSOR_DETECT
+Title Full-Size Pickup, 3A Gooseneck Trailer <Vehicle Configurations>
+CATEGORY Vehicle Configurations 
+DATASET_TITLE Full-Size Pickup, 3A Gooseneck Trailer
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#A full size pickup truck towing a two-axle Gooseneck trailer performs a double lane change at 50 kph.
+#
+#The Gooseneck trailer uses a custom payload with a small agricultural tractor as the custom animation shape.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { Vehicle Configurations } Full-Size Pickup, 3A Gooseneck Trailer
+#Library : CarSim Run Control
+#DataSet : Full-Size Pickup, 3A Gooseneck Trailer
+#Category: Vehicle Configurations
+#FileID  : Run_ac9dea9a-67e4-4bde-afbb-241c883b6b41
+#Modified: 11-21-2022 14:16:35
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Run
+
+END

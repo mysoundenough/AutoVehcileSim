@@ -1,0 +1,75 @@
+PARSFILE
+#FullDataName Procedures`02 - Jounce - moving wheel pads`K&C Test Sequence
+#CheckBox1 1    
+OPT_INIT_PATH 1
+
+#RingCtrl0 4
+#RingCtrl1 -1
+#RingCtrl2 0
+OPT_STOP -1
+SSTART 0
+TSTART 0
+TSTART_WRITE = 0;
+SSTOP = SSTART + 1 ;
+OPT_DIRECTION 1
+TSTOP -1
+*SPEED 0
+*TSTOP 400
+*TSTART 0
+*SSTART 0
+*SSTOP 210
+
+PARSFILE Generic\VS_commands\GenVS_9b88c452-b3e3-4423-ab44-466021a7c184.par
+#BlueLink0 Generic VS Commands`02 - Jounce - moving wheel pads setup` K&C Test Sequence` , Miscellaneous`GenVS_9b88c452-b3e3-4423-ab44-466021a7c184
+
+PARSFILE Events\Events_78656b9a-d2e0-4b2a-bd86-1a0b2069b5c1.par
+#BlueLink1 Events`02 - Jounce: Move to full rebound` K&C Test Sequence` , Miscellaneous`Events_78656b9a-d2e0-4b2a-bd86-1a0b2069b5c1
+
+PARSFILE Plot\Setup\Plot_a45dfa2c-a9b5-4069-8b5e-4cfcd56039c6.par
+#BlueLink8 Plot: Setup`Dive vs. Jounce - Front` K&C Test Results` , Plot`Plot_a45dfa2c-a9b5-4069-8b5e-4cfcd56039c6
+
+PARSFILE Plot\Setup\Plot_530932b0-7687-43ef-83c0-adeca590497f.par
+#BlueLink9 Plot: Setup`Dive vs. Jounce - Rear` K&C Test Results` , Plot`Plot_530932b0-7687-43ef-83c0-adeca590497f
+
+PARSFILE Plot\Setup\Plot_4dfb6f27-3503-444f-929a-9cf2a4b25045.par
+#BlueLink10 Plot: Setup`X movement vs Jounce - Front` K&C Test Results` , Plot`Plot_4dfb6f27-3503-444f-929a-9cf2a4b25045
+
+PARSFILE Plot\Setup\Plot_a398c774-b27a-4f7d-9e1b-783201adc161.par
+#BlueLink11 Plot: Setup`X movement vs Jounce - Rear` K&C Test Results` , Plot`Plot_a398c774-b27a-4f7d-9e1b-783201adc161
+
+PARSFILE Plot\Setup\Plot_cf056469-49e9-4ac2-b00b-fd526c2aebfe.par
+#BlueLink12 Plot: Setup`Camber vs. Jounce - Front` Suspension Motion` , Plot`Plot_cf056469-49e9-4ac2-b00b-fd526c2aebfe
+
+PARSFILE Plot\Setup\Plot_925774b2-2830-4346-88bc-cd769b2daeeb.par
+#BlueLink13 Plot: Setup`Camber vs. Jounce - Rear` Suspension Motion` , Plot`Plot_925774b2-2830-4346-88bc-cd769b2daeeb
+
+PARSFILE Plot\Setup\Plot_d0c05913-1965-47d7-935c-9c43f863336c.par
+#BlueLink14 Plot: Setup`Y movement vs Jounce - Front` K&C Test Results` , Plot`Plot_d0c05913-1965-47d7-935c-9c43f863336c
+
+PARSFILE Plot\Setup\Plot_6b9a41d2-d8b4-43c0-b97d-4cec57c80271.par
+#BlueLink15 Plot: Setup`Y movement vs Jounce - Rear` K&C Test Results` , Plot`Plot_6b9a41d2-d8b4-43c0-b97d-4cec57c80271
+
+PARSFILE Plot\Setup\Plot_6765dca0-a8c5-4673-a0e0-5e5c54a3d6a7.par
+#BlueLink16 Plot: Setup`Toe vs. Jounce - Front` K&C Test Results` , Plot`Plot_6765dca0-a8c5-4673-a0e0-5e5c54a3d6a7
+
+PARSFILE Plot\Setup\Plot_842df1a6-a14e-48a6-b14f-2151bbc4e389.par
+#BlueLink17 Plot: Setup`Toe vs. Jounce - Rear` K&C Test Results` , Plot`Plot_842df1a6-a14e-48a6-b14f-2151bbc4e389
+
+PARSFILE Plot\Setup\Plot_f283958b-8053-46d9-9240-778dbaa7b004.par
+#BlueLink18 Plot: Setup`Jounce vs. t_stamp` Suspension Motion` , Plot`Plot_f283958b-8053-46d9-9240-778dbaa7b004
+
+PARSFILE Plot\Setup\Plot_a146934a-339c-4983-9664-0f9749a0dfd6.par
+#BlueLink19 Plot: Setup`Vertical Forces` Tire Forces and Moments` , Plot`Plot_a146934a-339c-4983-9664-0f9749a0dfd6
+
+
+LOG_ENTRY Used Dataset: Procedures; { K&C Test Sequence } 02 - Jounce - moving wheel pads
+#Library : Procedures
+#DataSet : 02 - Jounce - moving wheel pads
+#Category: K&C Test Sequence
+#FileID  : Proc_caaa59c7-14a6-4829-9970-814e21970d45
+#Modified: 05-28-2021 14:59:20
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Procedure
+
+END

@@ -1,0 +1,326 @@
+Run made by CarSim 2024.1 at 14:12 on March 25, 2024.
+Revision 222209, March 18, 2024
+Started with simfile: simfile_Run_e98eab5f-e662-45f7-8260-619db0854e2f.sim
+
+Include PARSFILE "Results\Run_e98eab5f-e662-45f7-8260-619db0854e2f\Run_all.par"
+Installed keywords into VS Solver for MODEL_LAYOUT I_I
+Used Dataset: Animator: Reference Frame; { Tracking: Vehicle } Vehicle X-Y-Z-Yaw
+Used Dataset: Animator: Camera Setup; { Vehicle Reference } 150 Azm, 10 El, 6.25 m
+Used Dataset: Steering System: Compliance; Constant: Zero
+Used Dataset: Steering System: Kinematics for 2 Wheels (Rack & Pinion); { CS C-Class } C-Class, Hatchback
+Used Dataset: Steering: Power Assist Force; { C-Class } C-Class Hatchback, Not Spd Sens
+Used Dataset: Steering System: Compliance; { Linear } 0.001 deg/N-m
+Used Dataset: Steering: Parking Torque for 2 Wheels; { C-Class } C-Class Hatchback
+Used Dataset: Steering; { CS C-Class } C-Class, Hbk: Power, R&P
+Used Dataset: Suspension: Dive Angle (Caster Change); { Strut } Front Strut - Dive Angle
+Used Dataset: Suspension: Longitudinal Movement; { Strut } Front Strut -  Longitudinal Movement
+Used Dataset: Suspension: Camber Angle; { Strut } Front Strut - Camber Change
+Used Dataset: Suspension: Lateral Movement Due to Jounce; { Strut } Front Strut - Lateral Movement
+Used Dataset: Suspension: Toe Angle; { Strut } Front Strut - Toe Angle
+Used Dataset: Suspension: Dive Angle (Caster Change); { Strut } Front Strut - Dive Angle
+Used Dataset: Suspension: Longitudinal Movement; { Strut } Front Strut -  Longitudinal Movement
+Used Dataset: Suspension: Camber Angle; { Strut } Front Strut - Camber Change
+Used Dataset: Suspension: Lateral Movement Due to Jounce; { Strut } Front Strut - Lateral Movement
+Used Dataset: Suspension: Toe Angle; { Strut } Front Strut - Toe Angle
+Used Dataset: Suspension: Independent System Kinematics; { C-Class } C-Class, Hatchback - Front
+Used Dataset: Suspension: Shock Absorber; { Passenger Car } Big Car
+Used Dataset: Suspension: Jounce and Rebound Stops; { Jounce Range: 50 mm to 99 mm } +60 mm / -40 mm
+Used Dataset: Suspension: Shock Absorber; { Passenger Car } Big Car
+Used Dataset: Suspension: Jounce and Rebound Stops; { Jounce Range: 50 mm to 99 mm } +60 mm / -40 mm
+Used Dataset: Suspension: Auxiliary Roll Moment; { Linear } Linear: 384 N-m/deg
+Used Dataset: Suspension: Independent Compliance, Springs, and Dampers; { C-Class } C-Class, Hatchback - Front
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Tire
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Wheel
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Stripe
+Used Dataset: Animator: Shape Assembly; { Tires } 195/45 R16
+Used Dataset: Generic Table; { Tire Relaxation Length } Lx Variable, Scaled to Tire
+Used Dataset: Generic Table; { Tire Relaxation Length } Ly Variable, Scaled to Tire
+Used Dataset: Tire: Aligning Moment; { Touring Tires } 215/55 R17 (SAE)
+Used Dataset: Tire: Lateral Force; { Touring Tires } 215/55 R17
+Used Dataset: Tire: Longitudinal Force; { Touring Tires } 215/55 R17
+Used Dataset: Tire: Camber Thrust Coefficient; { Touring Tires } 215/55 R17
+Used Dataset: Tire; { Touring Tires } 215/55 R17
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Tire
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Wheel
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Stripe
+Used Dataset: Animator: Shape Assembly; { Tires } 195/45 R16
+Used Dataset: Generic Table; { Tire Relaxation Length } Lx Variable, Scaled to Tire
+Used Dataset: Generic Table; { Tire Relaxation Length } Ly Variable, Scaled to Tire
+Used Dataset: Tire: Aligning Moment; { Touring Tires } 215/55 R17 (SAE)
+Used Dataset: Tire: Lateral Force; { Touring Tires } 215/55 R17
+Used Dataset: Tire: Longitudinal Force; { Touring Tires } 215/55 R17
+Used Dataset: Tire: Camber Thrust Coefficient; { Touring Tires } 215/55 R17
+Used Dataset: Tire; { Touring Tires } 215/55 R17
+Used Dataset: Suspension: Longitudinal Movement; { 5-Link Rear } Rear 5-Link - Longitudinal Movement
+Used Dataset: Suspension: Camber Angle; { 5-Link Rear } Rear 5-Link - Camber Change
+Used Dataset: Suspension: Lateral Movement Due to Jounce; { 5-Link Rear } Rear 5-Link - Lateral Movement
+Used Dataset: Suspension: Toe Angle; { 5-Link Rear } Rear 5-Link - Toe Change
+Used Dataset: Suspension: Longitudinal Movement; { 5-Link Rear } Rear 5-Link - Longitudinal Movement
+Used Dataset: Suspension: Camber Angle; { 5-Link Rear } Rear 5-Link - Camber Change
+Used Dataset: Suspension: Lateral Movement Due to Jounce; { 5-Link Rear } Rear 5-Link - Lateral Movement
+Used Dataset: Suspension: Toe Angle; { 5-Link Rear } Rear 5-Link - Toe Change
+Used Dataset: Suspension: Independent System Kinematics; { C-Class } C-Class, Hatchback - Rear
+Used Dataset: Suspension: Spring; 30 N/mm
+Used Dataset: Suspension: Shock Absorber; { Passenger Car } Big Car
+Used Dataset: Suspension: Jounce and Rebound Stops; { Jounce Range: 50 mm to 99 mm } +60 mm / -40 mm
+Used Dataset: Suspension: Spring; 30 N/mm
+Used Dataset: Suspension: Shock Absorber; { Passenger Car } Big Car
+Used Dataset: Suspension: Jounce and Rebound Stops; { Jounce Range: 50 mm to 99 mm } +60 mm / -40 mm
+Used Dataset: Suspension: Auxiliary Roll Moment; { Non-Linear } Non-linear: 344 N-m/deg
+Used Dataset: Suspension: Independent Compliance, Springs, and Dampers; { C-Class } C-Class, Hatchback - Rear
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Tire
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Wheel
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Stripe
+Used Dataset: Animator: Shape Assembly; { Tires } 195/45 R16
+Used Dataset: Generic Table; { Tire Relaxation Length } Lx Variable, Scaled to Tire
+Used Dataset: Generic Table; { Tire Relaxation Length } Ly Variable, Scaled to Tire
+Used Dataset: Tire: Aligning Moment; { Touring Tires } 215/55 R17 (SAE)
+Used Dataset: Tire: Lateral Force; { Touring Tires } 215/55 R17
+Used Dataset: Tire: Longitudinal Force; { Touring Tires } 215/55 R17
+Used Dataset: Tire: Camber Thrust Coefficient; { Touring Tires } 215/55 R17
+Used Dataset: Tire; { Touring Tires } 215/55 R17
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Tire
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Wheel
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Stripe
+Used Dataset: Animator: Shape Assembly; { Tires } 195/45 R16
+Used Dataset: Generic Table; { Tire Relaxation Length } Lx Variable, Scaled to Tire
+Used Dataset: Generic Table; { Tire Relaxation Length } Ly Variable, Scaled to Tire
+Used Dataset: Tire: Aligning Moment; { Touring Tires } 215/55 R17 (SAE)
+Used Dataset: Tire: Lateral Force; { Touring Tires } 215/55 R17
+Used Dataset: Tire: Longitudinal Force; { Touring Tires } 215/55 R17
+Used Dataset: Tire: Camber Thrust Coefficient; { Touring Tires } 215/55 R17
+Used Dataset: Tire; { Touring Tires } 215/55 R17
+Used Dataset: Vehicle: Sprung Mass; { C-Class } C-Class, Hatchback
+Used Dataset: Aerodynamics: Fx (Drag) Coef. vs. Aero Slip; { Spline Interpolation } Spline: 0.30 at 0 deg.
+Used Dataset: Aerodynamics: Fy (Side Force) Coef. vs. Aero Slip; { Spline Interpolation } Spline: 2 at 90 deg.
+Used Dataset: Aerodynamics: Fz (Lift) Coef. vs. Aero Slip; { Spline Interpolation } Spline: 0.18 at 0 deg.
+Used Dataset: Aerodynamics: Mx (Roll Moment) Coef. vs. Aero Slip; { Spline Interpolation } Spline: 0.3 at 90 deg.
+Used Dataset: Aerodynamics: My (Pitch Moment) Coef. vs. Aero Slip; { Spline Interpolation } Spline: 0.15 at 0 deg.
+Used Dataset: Aerodynamics: Mz (Yaw Moment) Coef. vs. Aero Slip; { Spline Interpolation } Spline: 0.2 at 35 deg.
+Used Dataset: Aerodynamics: Basic; { C-Class } C-Class, Hatchback Aero
+Used Dataset: Powertrain: Engine; { 43 kW - 125 kW Engines } 125 kW Engine
+Used Dataset: Powertrain: Torque Converter; { Torque Converters: 75 kW to 150 kW } Torque Converter: 125 kW Engine
+Used Dataset: Powertrain: Shift Schedule; { 6-speed } 6-speed, 1-2 Shift
+Used Dataset: Powertrain: Shift Schedule; { 6-speed } 6-speed, 2-3 Shift
+Used Dataset: Powertrain: Shift Schedule; { 6-speed } 6-speed, 3-4 Shift
+Used Dataset: Powertrain: Shift Schedule; { 6-speed } 6-speed, 4-5 Shift
+Used Dataset: Powertrain: Shift Schedule; { 6-speed } 6-speed, 5-6 Shift
+Used Dataset: Powertrain: Transmission (18 Gears or CVT); { 6-Speed Transmissions } 6-Speed
+Used Dataset: Powertrain: Front Differential; { Limited Slip and Viscous Coupling } Viscous: Gear Ratio 4.1:1
+Used Dataset: Powertrain: Front-Wheel Drive; { 75 kW - 125 kW Powertrains } 125 kW, 6-spd., 4.1 Ratio w/ Visc. Diff.
+Used Dataset: Brakes: Proportioning / Limiting Valve; Unity until 1.5MPa then 30%
+Used Dataset: Brakes: Proportioning / Limiting Valve; Unity until 1.5MPa then 30%
+Used Dataset: Brakes: Four-Wheel System; { C-Class } Hatchback: M/C Press, ABS
+Used Dataset: Generic Data Lists; Rear View Mirror (C -Class Example)
+Used Dataset: Animator: Shape File Link; { Cars: C-Class } Hatchback
+Used Dataset: Animator: Shape File Link; { Cars: C-Class } Hatchback: Driver (Caucasian Male)
+Used Dataset: Animator: Shape Assembly; { Passenger Cars } C-Class Hatchback
+Used Dataset: Animator: Shape File Link; { Cars: C-Class } Hatchback: Brake Lights
+Used Dataset: Animator: Shape File Link; { Cars: C-Class } C-Class Hatchback Reverse Lights
+Used Dataset: Animator: Vehicles and Sensor Targets; { C-Class } C-Class, Hatchback
+Used Dataset: Generic VS Commands; { Pedestrian Euro NCAP } Parameters - Safety Assist
+Used Dataset: Sensor Range and Bearing Sensitivity; { Sensor Range w/ Equations } 80-m Range, 2.5-m Bearing
+Used Dataset: Sensor Elevation Sensitivity; Unity Gain
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets } Sensor Fields: 20 deg FOV
+Used Dataset: ADAS Sensors for Range and Tracking; { Forward Facing Sensors: FCW and ACC } ACC: Range,Sensitivity by EQN
+Used Dataset: Animator: HUD; { Euro NCAP } FCW Alert (small - right side)
+Used Dataset: Generic VS Commands; { Safety Assist Euro NCAP } FCW Alert and AEB Control
+Used Dataset: Generic Data Group; { Euro NCAP Safety Assist } C-Class Hatchback AEB Setup
+Used Dataset: Vehicle: Assembly; { C-Class } C-Class, Hatchback Euro NCAP SA
+Used Dataset: Control: Steering by the Closed-loop Driver Model; { Constant Position: Non-Zero Offset } 1.8m Right, 0.4s Single Preview
+Used Dataset: Control: Shifting (Closed Loop); { Closed-Loop Shifting } AT (All Available Gears)
+Used Dataset: Control: Speed (Closed Loop) Using Target Speed; { Constant } Constant: 0 km/h
+ Straight East <Straight>
+Used Dataset: Path: Segment Builder; { Straight } Straight East
+Used Dataset: Road: Friction Map, S-L Grid; { Constant } Constant: 0.9
+Used Dataset: Road: Animator Surface Shapes; { Roads } 1 km Square Low
+Used Dataset: Animator: Reference Frame; { Tracking: Vehicle } Skybox (Vehicle X-Y-Z)
+Used Dataset: Animator: Shape File Link; { Environment: Sky Boxes } Partly Cloudy Sky
+Used Dataset: Animator: Shape File Link; { Environment: Land Bowls } Light Grass
+Used Dataset: Animator: Group; { Environment Spheres } Partly Cloudy Sky with Light Grass
+Used Dataset: Road: 3D Surface (All Properties); { Intersection, 3D Roads with Curbs } 999: 1 km Sq. Proving Ground, 0.9 mu
+ Path ID 1001: Straight East <Straight>
+Used Dataset: Path: Segment Builder; { Straight } Path ID 1001: Straight East
+Used Dataset: Road: Friction Map, S-L Grid; { Constant } Constant: 0.9
+Used Dataset: Road: Animator Surface Shapes; { Roads } 1 km Road w/Painted Lines
+Used Dataset: Animator: Reference Frame; { Tracking: Vehicle } Skybox (Vehicle X-Y-Z)
+Used Dataset: Animator: Shape File Link; { Environment: Sky Boxes } Partly Cloudy Sky
+Used Dataset: Animator: Shape File Link; { Environment: Land Bowls } Light Grass
+Used Dataset: Animator: Group; { Environment Spheres } Partly Cloudy Sky with Light Grass
+Used Dataset: Road: 3D Surface (All Properties); { Straight } 1001: 1 km, Two Lanes, Mu=0.90, Straight
+Used Dataset: Generic Group of Links; { Generic Proving Ground } PG: Straight Road, Two Lanes
+Used Dataset: Animator: Shape File Link; { ADAS and AV Safety Test Assets } Euro NCAP GVT Body
+Used Dataset: Animator: Shape File Link; { ADAS and AV Safety Test Assets } GVT Platform
+Used Dataset: Animator: Shape Assembly; { Euro NCAP } Euro NCAP GVT and Platform
+Used Dataset: Animator: Vehicles and Sensor Targets; { ADAS and AV Safety Tests } Euro NCAP GVT
+Used Dataset: Multiple Moving Objects; { Euro NCAP } Global Vehicle Target (GVT) for AEB
+Used Dataset: Generic VS Commands; { Pedestrian Euro NCAP } Backgnd Boxes: Upper, Wide, Short
+Used Dataset: Generic VS Commands; { Pedestrian Euro NCAP } Background Boxes: Lower, Large
+Used Dataset: Animator: HUD; { Euro NCAP } AEB HUD, Collided Outputs, CCRm,s
+Used Dataset: Animator: HUD; { Euro NCAP } Total Score Output AEB
+Used Dataset: Plot: Setup; { ADAS Sensor Detections } AEB Euro NCAP Scoring Speeds
+Used Dataset: Plot: Setup; { ADAS Sensor Detections } ACC Euro NCAP Scoring
+Used Dataset: Generic VS Commands; { ADAS Support } Euro NCAP: CCRm,s AEB Setup, Scoring
+Used Dataset: Events; { Euro NCAP AEB Testing } AEB CCRm,s A. Wait for AEB to Intervene
+Used Dataset: Plot: Format; Lines without Symbols
+Used Dataset: Plot: Setup; { Vehicle Motion } Longit. Accel. of CG's vs. Time (m/s^2)
+Used Dataset: Plot: Format; Lines without Symbols
+Used Dataset: Plot: Setup; { Braking } Brake Control: M/C Pressure
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { ADAS and AEB Alerts and Commands } AEB: Booleans
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { ADAS Sensor Detections } Distance for Closest Object
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { ADAS and AEB Alerts and Commands } AEB: Longitudinal Speeds
+Used Dataset: Procedures; { AEB: Automated Emergency Braking } AEB Test Series: CCRm
+Used Dataset: Animator: HUD; { Vehicle Status Indicators } Throttle and Speed, L. Side, 19% Up
+Used Dataset: Animator: HUD; { Euro NCAP } AEB CCRm Label, GVT 20 km/h
+Used Dataset: Animator: HUD; { Euro NCAP } Time To Collision
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Square: 1m (Scale: Y = 0.1)
+ AEB CCRm Test Series <AEB: Euro NCAP Tests>
+Used Dataset: CarSim Run Control; { AEB: Euro NCAP Tests } AEB CCRm Test Series
+
+Time to read input = 0.244443
+Function F_REB_STOP_TABLE(1,1) extrapolated (out of range HIGH) for X = 0 mm at T = 0
+Function F_JNC_STOP_TABLE(1,1) extrapolated (out of range LOW) for X = 0 mm at T = 0
+Function F_REB_STOP_TABLE(1,2) extrapolated (out of range HIGH) for X = 0 mm at T = 0
+Function F_JNC_STOP_TABLE(1,2) extrapolated (out of range LOW) for X = 0 mm at T = 0
+Function F_REB_STOP_TABLE(2,1) extrapolated (out of range HIGH) for X = 0 mm at T = 0
+Function F_JNC_STOP_TABLE(2,1) extrapolated (out of range LOW) for X = 0 mm at T = 0
+Function F_REB_STOP_TABLE(2,2) extrapolated (out of range HIGH) for X = 0 mm at T = 0
+Function F_JNC_STOP_TABLE(2,2) extrapolated (out of range LOW) for X = 0 mm at T = 0
+
+Run started: VS output file = Results\Run_e98eab5f-e662-45f7-8260-619db0854e2f\Run.vsb
+
+Event #1 occurred at t = 1.9805: ApplyAEB_FullStop
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_c5b04c43-87bb-49b7-8874-f5a05bbac563.par"
+Used Dataset: Events; { Euro NCAP AEB Testing } AEB CCRm,s B. Monitor Braking Progress
+Function PBK_DL_TABLE(2,1) extrapolated (out of range HIGH) for X = 7.5 MPa at T = 1.981
+Function PBK_DL_TABLE(2,2) extrapolated (out of range HIGH) for X = 7.5 MPa at T = 1.981
+
+Event #2 occurred at t = 2.3555: Vxz_Fwd <= Vx_GVT + MIN_THRESH
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_54997a14-3189-49b7-9db1-135f225583cf.par"
+Used Dataset: Events; { Euro NCAP AEB Testing } AEB CCRm,s C. Check More Tests
+
+Event #3 occurred at t = 2.356: Crashed <= 0
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_2c07d17a-44e6-4af9-96ae-093b38b2633d.par"
+Used Dataset: Events; { Euro NCAP AEB Testing } AEB CCRm,s E. New Test, Increase Speed
+
+Event #4 occurred at t = 2.3565: VUT_START <= MAX_TEST_SPD+MIN_THRESH
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_f6e68474-72ca-4764-aea1-3503b932a712.par"
+Used Dataset: Events; { Euro NCAP AEB Testing } AEB CCRm,s F2. Reset Veh. and Targets
+
+Event #5 occurred at t = 2.357: 1
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_f799ca2f-1cad-44ab-a98b-6e24b205fd5d.par"
+Used Dataset: Events; { Euro NCAP AEB Testing } AEB CCRm,s A. Wait for AEB to Intervene
+
+Event #6 occurred at t = 8.2455: ApplyAEB_FullStop
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_c5b04c43-87bb-49b7-8874-f5a05bbac563.par"
+Used Dataset: Events; { Euro NCAP AEB Testing } AEB CCRm,s B. Monitor Braking Progress
+
+Event #7 occurred at t = 8.9565: Vxz_Fwd <= Vx_GVT + MIN_THRESH
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_54997a14-3189-49b7-9db1-135f225583cf.par"
+Used Dataset: Events; { Euro NCAP AEB Testing } AEB CCRm,s C. Check More Tests
+
+Event #8 occurred at t = 8.957: Crashed <= 0
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_2c07d17a-44e6-4af9-96ae-093b38b2633d.par"
+Used Dataset: Events; { Euro NCAP AEB Testing } AEB CCRm,s E. New Test, Increase Speed
+
+Event #9 occurred at t = 8.9575: VUT_START <= MAX_TEST_SPD+MIN_THRESH
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_f6e68474-72ca-4764-aea1-3503b932a712.par"
+Used Dataset: Events; { Euro NCAP AEB Testing } AEB CCRm,s F2. Reset Veh. and Targets
+
+Event #10 occurred at t = 8.958: 1
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_f799ca2f-1cad-44ab-a98b-6e24b205fd5d.par"
+Used Dataset: Events; { Euro NCAP AEB Testing } AEB CCRm,s A. Wait for AEB to Intervene
+
+Event #11 occurred at t = 12.453: ApplyAEB_FullStop
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_c5b04c43-87bb-49b7-8874-f5a05bbac563.par"
+Used Dataset: Events; { Euro NCAP AEB Testing } AEB CCRm,s B. Monitor Braking Progress
+Function FS_EXT_TABLE(2,1) extrapolated (out of range LOW) for X = -50.0053 mm at T = 13.6555
+Function FS_COMP_TABLE(2,1) extrapolated (out of range LOW) for X = -50.0053 mm at T = 13.6555
+Function FS_EXT_TABLE(2,2) extrapolated (out of range LOW) for X = -50.0053 mm at T = 13.6555
+Function FS_COMP_TABLE(2,2) extrapolated (out of range LOW) for X = -50.0053 mm at T = 13.6555
+
+Event #12 occurred at t = 13.6605: Vxz_Fwd <= Vx_GVT + MIN_THRESH
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_54997a14-3189-49b7-9db1-135f225583cf.par"
+Used Dataset: Events; { Euro NCAP AEB Testing } AEB CCRm,s C. Check More Tests
+
+Event #13 occurred at t = 13.661: Crashed <= 0
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_2c07d17a-44e6-4af9-96ae-093b38b2633d.par"
+Used Dataset: Events; { Euro NCAP AEB Testing } AEB CCRm,s E. New Test, Increase Speed
+
+Event #14 occurred at t = 13.6615: VUT_START <= MAX_TEST_SPD+MIN_THRESH
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_f6e68474-72ca-4764-aea1-3503b932a712.par"
+Used Dataset: Events; { Euro NCAP AEB Testing } AEB CCRm,s F2. Reset Veh. and Targets
+
+Event #15 occurred at t = 13.662: 1
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_f799ca2f-1cad-44ab-a98b-6e24b205fd5d.par"
+Used Dataset: Events; { Euro NCAP AEB Testing } AEB CCRm,s A. Wait for AEB to Intervene
+
+Event #16 occurred at t = 15.931: ApplyAEB_FullStop
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_c5b04c43-87bb-49b7-8874-f5a05bbac563.par"
+Used Dataset: Events; { Euro NCAP AEB Testing } AEB CCRm,s B. Monitor Braking Progress
+
+Event #17 occurred at t = 17.505: Vxz_Fwd <= Vx_GVT + MIN_THRESH
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_54997a14-3189-49b7-9db1-135f225583cf.par"
+Used Dataset: Events; { Euro NCAP AEB Testing } AEB CCRm,s C. Check More Tests
+
+Event #18 occurred at t = 17.5055: Crashed <= 0
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_2c07d17a-44e6-4af9-96ae-093b38b2633d.par"
+Used Dataset: Events; { Euro NCAP AEB Testing } AEB CCRm,s E. New Test, Increase Speed
+
+Event #19 occurred at t = 17.506: VUT_START <= MAX_TEST_SPD+MIN_THRESH
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_f6e68474-72ca-4764-aea1-3503b932a712.par"
+Used Dataset: Events; { Euro NCAP AEB Testing } AEB CCRm,s F2. Reset Veh. and Targets
+
+Event #20 occurred at t = 17.5065: 1
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_f799ca2f-1cad-44ab-a98b-6e24b205fd5d.par"
+Used Dataset: Events; { Euro NCAP AEB Testing } AEB CCRm,s A. Wait for AEB to Intervene
+
+Event #21 occurred at t = 19.001: ApplyAEB_FullStop
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_c5b04c43-87bb-49b7-8874-f5a05bbac563.par"
+Used Dataset: Events; { Euro NCAP AEB Testing } AEB CCRm,s B. Monitor Braking Progress
+
+Event #22 occurred at t = 20.8575: Vxz_Fwd <= Vx_GVT + MIN_THRESH
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_54997a14-3189-49b7-9db1-135f225583cf.par"
+Used Dataset: Events; { Euro NCAP AEB Testing } AEB CCRm,s C. Check More Tests
+
+Event #23 occurred at t = 20.858: Crashed <= 0
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_2c07d17a-44e6-4af9-96ae-093b38b2633d.par"
+Used Dataset: Events; { Euro NCAP AEB Testing } AEB CCRm,s E. New Test, Increase Speed
+
+Event #24 occurred at t = 20.8585: VUT_START <= MAX_TEST_SPD+MIN_THRESH
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_f6e68474-72ca-4764-aea1-3503b932a712.par"
+Used Dataset: Events; { Euro NCAP AEB Testing } AEB CCRm,s F2. Reset Veh. and Targets
+
+Event #25 occurred at t = 20.859: 1
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_f799ca2f-1cad-44ab-a98b-6e24b205fd5d.par"
+Used Dataset: Events; { Euro NCAP AEB Testing } AEB CCRm,s A. Wait for AEB to Intervene
+
+Event #26 occurred at t = 21.9595: ApplyAEB_FullStop
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_c5b04c43-87bb-49b7-8874-f5a05bbac563.par"
+Used Dataset: Events; { Euro NCAP AEB Testing } AEB CCRm,s B. Monitor Braking Progress
+
+Event #27 occurred at t = 24.0175: Vxz_Fwd <= Vx_GVT + MIN_THRESH
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_54997a14-3189-49b7-9db1-135f225583cf.par"
+Used Dataset: Events; { Euro NCAP AEB Testing } AEB CCRm,s C. Check More Tests
+
+Event #28 occurred at t = 24.018: Crashed <= 0
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_2c07d17a-44e6-4af9-96ae-093b38b2633d.par"
+Used Dataset: Events; { Euro NCAP AEB Testing } AEB CCRm,s E. New Test, Increase Speed
+
+Event #29 occurred at t = 24.0185: VUT_START > MAX_TEST_SPD+MIN_THRESH
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_850c1411-e276-4b75-a833-0b8e200f164c.par"
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Control\Braking\PbkCon_39a32bf1-a003-4e04-a2a4-699c74763690.par"
+Used Dataset: Control: Braking MC Pressure (Open Loop); { Constant } Constant: AEB_MAX_BK_REQ
+Used Dataset: Events; { Euro NCAP AEB Testing } AEB CCRm,s D. Pause before ending
+
+Event #30 occurred at t = 26.019: T_EVENT > SCORE_PAUSE_TIME
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_b5af09b5-d8ad-4e81-ae24-eebce691780e.par"
+
+Run stopped at t = 26.019. VS Command STOP_RUN_NOW End event triggered
+Used Dataset: Events; End Events
+
+Computational time ratio: RTIME = 0.254396 (real time)/(simulation time)
+

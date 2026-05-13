@@ -1,0 +1,103 @@
+PARSFILE
+#FullDataName CarSim Run Control`Z = Sin(X), 1D Table`Imported Ground Elevation
+#VEHICLECODE Ind_Ind
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_75c7f4d2-dd78-4d7d-9175-ea26b68d8a10
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Animator\Cameras\Camera_32ea6678-907c-4a10-af4b-b9431e3d2f8a.par
+#BlueLink0 Animator: Camera Setup`13 Azm, 9 El, 18 m, No Yaw` Vehicle Reference` , Animator camera`Camera_32ea6678-907c-4a10-af4b-b9431e3d2f8a
+
+#CheckBox0 1    
+#CheckBox1 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 0    
+#CheckBox5 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox8 1    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+#CheckBox12 0    
+
+#RingCtrl0 0
+#RingCtrl1 0
+#RingCtrl2 3
+#RingCtrl3 0
+#RingCtrl6 6
+#RingCtrl7 -1
+*RUN_COLOR 1 1 0
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Vehicles\Assembly\Vehicle_9db9b98a-6725-424b-9635-e1ca6e15979d.par
+#BlueLink2 Vehicle: Assembly`C-Class, Hatchback` C-Class` , Math Model`Vehicle_9db9b98a-6725-424b-9635-e1ca6e15979d
+
+PARSFILE Procedures\Proc_3ae0353d-bd7c-43a3-9da4-150b6952a10e.par
+#BlueLink28 Procedures`DLC @ 120 km/h (Quick Start)` Handling Testing` , Procedure`Proc_3ae0353d-bd7c-43a3-9da4-150b6952a10e
+
+PARSFILE Sensors_Traffic\Traffic\TMotion_685c5b22-b555-4300-90e6-7f354600c8d8.par
+#BlueLink9 Multiple Moving Objects`1 Driver Preview Point` Points of Interest` , Miscellaneous`TMotion_685c5b22-b555-4300-90e6-7f354600c8d8
+
+PARSFILE Roads\3D_Road\Road_8f063464-7916-40a0-983f-f8ed133f3218.par
+#BlueLink10 Road: 3D Surface (All Properties)`DLC, Mu = 0.85, Sine Wave` Sine Wave` , Miscellaneous`Road_8f063464-7916-40a0-983f-f8ed133f3218
+
+*TSTOP 1
+*TSTART 0
+PARSFILE Plot\Setup\Plot_77698eda-4c1b-4f17-af87-a7d7b92a8161.par
+#BlueLink15 Plot: Setup`Z vs X for tires` Ground` , Plot`Plot_77698eda-4c1b-4f17-af87-a7d7b92a8161
+
+PARSFILE Plot\Setup\Plot_0b848622-b920-4d41-a985-8181f9d9d74b.par
+#BlueLink16 Plot: Setup`Tire CTC dZ/dX` Ground` , Plot`Plot_0b848622-b920-4d41-a985-8181f9d9d74b
+
+PARSFILE Plot\Setup\Plot_a146934a-339c-4983-9664-0f9749a0dfd6.par
+#BlueLink17 Plot: Setup`Vertical Forces` Tire Forces and Moments` , Plot`Plot_a146934a-339c-4983-9664-0f9749a0dfd6
+
+PARSFILE Plot\Setup\Plot_4e5f03b6-bc24-46a8-9679-7ba999344a05.par
+#BlueLink18 Plot: Setup`Vertical Accel. of Sprung Mass CG's` Vehicle Motion` , Plot`Plot_4e5f03b6-bc24-46a8-9679-7ba999344a05
+
+PARSFILE Plot\Setup\Plot_9993948a-2e88-4fb9-a7af-f2b08f482749.par
+#BlueLink19 Plot: Setup`Jounce` Suspension Motion` , Plot`Plot_9993948a-2e88-4fb9-a7af-f2b08f482749
+
+
+*IMAGE_TYPE DEFAULT
+WRITE_SENSOR_DETECT
+Title Z = Sin(X), 1D Table <Imported Ground Elevation>
+CATEGORY Imported Ground Elevation 
+DATASET_TITLE Z = Sin(X), 1D Table
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#Z gnd Calculated with internal tables using Sin(Xctc) along with dZ/dX and dZ/dY.
+#
+#The VS Browser builds road animation shapes based on the table, providing visualization of the sinusoidal road surface.
+#
+#Althought this is close to a pure sinusoide, the table is a spline fit rather than a pure trig function.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { Imported Ground Elevation } Z = Sin(X), 1D Table
+#Library : CarSim Run Control
+#DataSet : Z = Sin(X), 1D Table
+#Category: Imported Ground Elevation
+#FileID  : Run_75c7f4d2-dd78-4d7d-9175-ea26b68d8a10
+#Created : 10-06-2023 16:36:26
+#Modified: 01-23-2024 12:11:04
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Run
+
+END

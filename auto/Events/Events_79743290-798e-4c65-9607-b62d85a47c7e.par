@@ -1,0 +1,32 @@
+PARSFILE
+#FullDataName Events`Check AEB Condition`ADAS Detection
+#CheckBox1 1    
+*CLEAR
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 >
+#RingCtrl10 1
+#RingCtrl11 4
+RESET_EVENTS
+*NAME1 speedTargetCheck
+*VALUE1 0
+MAKE_EVENT speedTargetCheck > 0 ; Events\Events_94b44570-9eee-43ba-b83a-5a0315159cf6.par
+#BlueLink0 Events`Countdown Time After AEB` ADAS Detection` , Events`Events_94b44570-9eee-43ba-b83a-5a0315159cf6
+
+SET_EVENT_ID 0 ! reset to default
+
+LOG_ENTRY Used Dataset: Events; { ADAS Detection } Check AEB Condition
+#Library : Events
+#DataSet : Check AEB Condition
+#Category: ADAS Detection
+#FileID  : Events_79743290-798e-4c65-9607-b62d85a47c7e
+#Created : 11-04-2021 16:42:53
+#Modified: 11-04-2021 16:47:14
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

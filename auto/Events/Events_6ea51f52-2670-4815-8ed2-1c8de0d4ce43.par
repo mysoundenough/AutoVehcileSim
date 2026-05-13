@@ -1,0 +1,29 @@
+PARSFILE
+#FullDataName Events`Switch to Driver Model (Torque)`Driver Model Handoff
+#CheckBox1 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl10 0
+#RingCtrl11 4
+#MiscYellow0
+set_import_mode imp_steer_t_in add
+eq_in imp_steer_t_in 0
+#ENDMYellow
+
+SET_EVENT_ID 0 ! reset to default
+
+LOG_ENTRY Used Dataset: Events; { Driver Model Handoff } Switch to Driver Model (Torque)
+#Library : Events
+#DataSet : Switch to Driver Model (Torque)
+#Category: Driver Model Handoff
+#FileID  : Events_6ea51f52-2670-4815-8ed2-1c8de0d4ce43
+#Created : 05-10-2023 15:57:36
+#Modified: 05-22-2023 11:35:50
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

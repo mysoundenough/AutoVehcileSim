@@ -1,0 +1,24 @@
+PARSFILE
+#FullDataName I/O Channels: Export`EV Battery Export`Powertrain Control and Ext. Models
+#RingCtrl1 1
+
+
+EXPORT PwrBttry
+#MiscYellow0
+#Number of Selected Channels: 1
+#CHN_NAME: PwrBttry
+#ENDMYellow
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Export; { Powertrain Control and Ext. Models } EV Battery Export
+#Library : I/O Channels: Export
+#DataSet : EV Battery Export
+#Category: Powertrain Control and Ext. Models
+#FileID  : Export_731337db-210a-423c-83b4-b88d1f6c1a88
+#Created : 03-22-2023 14:09:02
+#Modified: 04-19-2023 15:38:04
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Export Channels
+
+END

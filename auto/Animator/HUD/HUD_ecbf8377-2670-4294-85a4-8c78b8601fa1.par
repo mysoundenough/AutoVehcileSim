@@ -1,0 +1,56 @@
+PARSFILE
+#FullDataName Animator: HUD`Total Score Output ACC`Euro NCAP
+#CheckBox1 1    
+#CheckBox2 1    
+
+#RingCtrl0 1
+#RingCtrl1 18
+#RingCtrl2 0
+#RingCtrl3 0
+#RingCtrl4 1
+*TITLE_1 Total NCAP ACC Score
+*LOCX_1 1
+*LOCY_1 9.5
+*VAR_NAME_1 TotalScore
+*COLOR_1 0.6 0.8 1
+*PREC1 2
+
+
+#Selection 18 for Icon 0
+#Selection_1 18 for Icon
+#Selection_2 Title: Total NCAP ACC Score AlX 0 AlY 0
+#Selection_3 Scale 1.000000 locX 16 locY 76
+#Selection_4 Fixed: 1 VarName: TotalScore  ColorStr: 0.6 0.8 1
+#Selection_5 ImgName: 
+ANI_TotalScore
+WRT_TotalScore
+ADD_ENTITY hud_text Text Output
+location 16 76 18 18
+align_x left
+align_y top
+size_mode absolute
+place_mode absolute
+# var name is TotalScore
+prefix Total NCAP ACC Score
+min_width_prefix 20
+value TotalScore
+precision 2
+color 0.6 0.8 1 1.0
+END_ENTITY hud_text Text Output
+
+#EMBEDDED_NOTES
+#Cumulative score during the Euro NCAP AEB Testing
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Animator: HUD; { Euro NCAP } Total Score Output ACC
+#Library : Animator: HUD
+#DataSet : Total Score Output ACC
+#Category: Euro NCAP
+#FileID  : HUD_ecbf8377-2670-4294-85a4-8c78b8601fa1
+#Created : 06-10-2021 13:13:31
+#Modified: 03-29-2022 16:14:40
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode HUD
+
+END

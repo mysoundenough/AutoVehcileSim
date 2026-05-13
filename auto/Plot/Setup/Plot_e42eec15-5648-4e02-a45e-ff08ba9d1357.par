@@ -1,0 +1,40 @@
+PARSFILE
+#FullDataName Plot: Setup`Slip ratio for peak longitudinal force`Tire utilization
+
+ADD_ENTITY Plot
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS KapPkL1, time
+PLOTCHANNELS KapPkR1, time
+PLOTCHANNELS KapPkL2, time
+PLOTCHANNELS KapPkR2, time
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Slip ratio for peak longitudinal force
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Tire utilization } Slip ratio for peak longitudinal force
+#Library : Plot: Setup
+#DataSet : Slip ratio for peak longitudinal force
+#Category: Tire utilization
+#FileID  : Plot_e42eec15-5648-4e02-a45e-ff08ba9d1357
+#Modified: 05-28-2021 14:59:47
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Plot Setup
+
+END

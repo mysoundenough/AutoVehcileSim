@@ -1,0 +1,17 @@
+PARSFILE
+#FullDataName Generic VS Commands`AEB Release`ADAS Support
+#VehCode VS Commands
+
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { ADAS Support } AEB Release
+#Library : Generic VS Commands
+#DataSet : AEB Release
+#Category: ADAS Support
+#FileID  : GenVS_dc6ed24c-3155-40f7-9130-d74b8d4356cd
+#Created : 11-03-2021 17:06:16
+#Modified: 11-03-2021 17:06:16
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode VS Commands
+
+END

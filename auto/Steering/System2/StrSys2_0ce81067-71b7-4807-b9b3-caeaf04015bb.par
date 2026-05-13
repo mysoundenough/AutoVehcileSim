@@ -1,0 +1,102 @@
+PARSFILE
+#FullDataName Steering`Artic Bus`
+INSTALL_STEERING
+I_COL 0.01
+I_GEAR_IN 0.0001
+D_COL 0.01
+HYS_COL 0.1
+BETA_COL 0.1
+A_STR_STOP_L -45
+A_STR_STOP_R 45
+K_STR_STOP_L 0
+K_STR_STOP_R 0
+#CheckBox0 0    
+OPT_I_GEAR_IN 0
+
+#RingCtrl0 0
+#RingCtrl1 0
+#RingCtrl2 0
+#RingCtrl3 0
+#RingCtrl4 0
+#RingCtrl5 0
+#RingCtrl6 0
+#RingCtrl7 1
+#RingCtrl8 0
+#RingCtrl9 0
+
+OPT_STEER_DEF 1
+
+OPT_M_SW_CALC 0
+PARSFILE Steering\Str_Wheel_Tq\TqSW_517e3dff-abbb-45ab-9063-ae6058ef799a.par
+#BlueLink0 Steering Wheel Torque`Articulated Bus` ` , Steering wheel torque`TqSW_517e3dff-abbb-45ab-9063-ae6058ef799a
+
+*L1_LKPO 100
+*R1_LKPO 100
+*L1_AKPI 7.2
+*R1_AKPI 7.2
+*L1_ACAST 5.2
+*R1_ACAST 5.2
+*L1_XKPO 0
+*R1_XKPO 0
+iside 1
+iaxle 1
+L_KPO 100
+A_KPI 7.2
+A_CASTER 5.2
+X_KPO 0
+
+iside 2
+L_KPO 100
+A_KPI 7.2
+A_CASTER 5.2
+X_KPO 0
+
+iside 1
+
+iaxle 2
+OPT_STEER_EXT 1
+OPT_RACK 0
+GEAR_ROT_COEFFICIENT 0.02
+*D_GR_F 0
+*H_GR_F 0
+*B_GR_F 2
+*RSW_F 25
+
+iaxle 1
+
+OPT_POWER 0
+OPT_RACK 0
+OPT_STEER_EXT 0
+GEAR_ROT_COEFFICIENT 1/25
+D_GEAR 0
+HYS_GEAR 0
+BETA_GEAR 2
+PARSFILE Steering\Kinematics2\StrKin2_842ddebe-295c-40dc-802f-025242b90bdc.par
+#BlueLink8 Steering System: Kinematics for 2 Wheels (Recirc. Ball)`Articulated Bus` ` , Pitman Arm to Front Wheels`StrKin2_842ddebe-295c-40dc-802f-025242b90bdc
+
+PARSFILE Steering\Compliance\StrCmp_04155b90-303f-4e9a-b97c-a2f522ed3d2a.par
+#BlueLink13 Steering System: Compliance`0.001 deg/N-m` Linear` , Front Compliance`StrCmp_04155b90-303f-4e9a-b97c-a2f522ed3d2a
+
+PARSFILE Steering\Str_Park_Trq2\TqPark2_da263d9a-af4c-4f45-b565-baeec6a50531.par
+#BlueLink15 Steering: Parking Torque for 2 Wheels`Articulated Bus` ` , Front Wheels`TqPark2_da263d9a-af4c-4f45-b565-baeec6a50531
+
+PARSFILE Generic\VS_commands\GenVS_c96c2cc2-c0d1-4663-ae05-5283353f8542.par
+#BlueLink21 Generic VS Commands`Articulated Bus Steering` ` , Miscellaneous`GenVS_c96c2cc2-c0d1-4663-ae05-5283353f8542
+
+
+#EMBEDDED_NOTES
+#The CarSiim steering system is symmetric.  However, heavy trucks and buses frequently have asymmetric systems.  The articulated bus steering system has been modified with VS Commands to be an asysmmetric system.  Click on the Articulated Bus Steering blue link in the lower right corner to view the VS Commands.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Steering; Artic Bus
+#Library : Steering
+#DataSet : Artic Bus
+#Category: 
+#FileID  : StrSys2_0ce81067-71b7-4807-b9b3-caeaf04015bb
+#Created : 11-24-2021 12:02:17
+#Modified: 07-31-2023 08:47:55
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode 4-Wheel Steer
+
+END

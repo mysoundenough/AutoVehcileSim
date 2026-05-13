@@ -1,0 +1,32 @@
+PARSFILE
+#FullDataName I/O Channels: Import`Tire F&M at WC and CTC, L1`Tire Forces and Moments
+#RingCtrl1 1
+
+#MiscYellow0
+IMP_FX0_L1 Replace 0.0! 1
+IMP_FY0_L1 Replace 0.0! 1
+IMP_FZ0_L1 Replace 0.0! 1
+IMP_MX0_L1 Replace 0.0! 1
+IMP_MY0_L1 Replace 0.0! 1
+IMP_MZ0_L1 Replace 0.0! 1
+IMP_FX_L1 Replace 0.0! 1
+IMP_FY_L1 Replace 0.0! 1
+IMP_FZ_L1 Replace 0.0! 1
+IMP_MX_L1 Replace 0.0! 1
+IMP_MY_L1 Replace 0.0! 1
+IMP_MZ_L1 Replace 0.0! 1
+#ENDMYellow
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Import; { Tire Forces and Moments } Tire F&M at WC and CTC, L1
+#Library : I/O Channels: Import
+#DataSet : Tire F&M at WC and CTC, L1
+#Category: Tire Forces and Moments
+#FileID  : Import_2bc081b8-a46a-4baf-87c6-8a23141c5dd3
+#Created : 10-17-2022 13:30:54
+#Modified: 11-21-2022 14:14:57
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Import Channels
+
+END

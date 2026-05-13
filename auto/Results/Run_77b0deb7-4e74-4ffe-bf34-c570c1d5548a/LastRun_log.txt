@@ -1,0 +1,289 @@
+Run made by CarSim 2024.1 at 14:10 on March 25, 2024.
+Revision 222209, March 18, 2024
+Started with simfile: simfile_Run_77b0deb7-4e74-4ffe-bf34-c570c1d5548a.sim
+
+Include PARSFILE "Results\Run_77b0deb7-4e74-4ffe-bf34-c570c1d5548a\Run_all.par"
+Installed keywords into VS Solver for MODEL_LAYOUT I_S__S
+Used Dataset: Animator: Reference Frame; { Tracking: Vehicle } Vehicle X-Y-Z-Yaw
+Used Dataset: Animator: Camera Setup; { Vehicle Reference } 180 deg. Azimuth, 90 deg. El., Veh. Ref.
+Used Dataset: Steering System: Kinematics for 2 Wheels (Rack & Pinion); { CS Pickup Trucks, SUVs, and Vans } Pickup, Midsize
+Used Dataset: Steering: Power Assist Force; Pickup, Midsize
+Used Dataset: Steering System: Compliance; { Linear } 0.002 deg/N-m
+Used Dataset: Steering: Parking Torque for 2 Wheels; { E-Class } E-Class Sedan
+Used Dataset: Steering; { Pickup Trucks } Pickup, Mid: Power, R&P
+Used Dataset: Suspension: Dive Angle (Caster Change); { SLA } Front SLA - Dive Angle
+Used Dataset: Suspension: Longitudinal Movement; { SLA } Front SLA - Longitudinal Movement
+Used Dataset: Suspension: Camber Angle; { SLA } Front SLA - Camber Change
+Used Dataset: Suspension: Lateral Movement Due to Jounce; { SLA } Front SLA - Lateral Movement
+Used Dataset: Suspension: Toe Angle; { SLA } Front SLA - Toe Change
+Used Dataset: Suspension: Dive Angle (Caster Change); { SLA } Front SLA - Dive Angle
+Used Dataset: Suspension: Longitudinal Movement; { SLA } Front SLA - Longitudinal Movement
+Used Dataset: Suspension: Camber Angle; { SLA } Front SLA - Camber Change
+Used Dataset: Suspension: Lateral Movement Due to Jounce; { SLA } Front SLA - Lateral Movement
+Used Dataset: Suspension: Toe Angle; { SLA } Front SLA - Toe Change
+Used Dataset: Suspension: Independent System Kinematics; { Pickup Trucks } Pickup, Midsize - Front
+Used Dataset: Suspension: Shock Absorber; { SUV and Light Truck } Big SUV
+Used Dataset: Suspension: Jounce and Rebound Stops; { Jounce Range: 100 mm to 150 mm } +150 mm / -110 mm
+Used Dataset: Suspension: Shock Absorber; { SUV and Light Truck } Big SUV
+Used Dataset: Suspension: Jounce and Rebound Stops; { Jounce Range: 100 mm to 150 mm } +150 mm / -110 mm
+Used Dataset: Suspension: Auxiliary Roll Moment; { Linear } Linear: 510 N-m/deg
+Used Dataset: Suspension: Independent Compliance, Springs, and Dampers; { Pickup Trucks } Pickup, Compact - Front
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 205/70 R15: Tire
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 205/70 R15: Wheel
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 205/70 R15: Stripe
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 205/70 R15: Brake Rotor
+Used Dataset: Animator: Shape Assembly; { Tires } 205/70 R15
+Used Dataset: Generic Table; { Tire Relaxation Length } Lx Variable, Scaled to Tire
+Used Dataset: Generic Table; { Tire Relaxation Length } Ly Variable, Scaled to Tire
+Used Dataset: Tire: Aligning Moment; { Touring Tires } 255/75 R16
+Used Dataset: Tire: Lateral Force; { Touring Tires } 255/75 R16
+Used Dataset: Tire: Longitudinal Force; { Touring Tires } 255/75 R16
+Used Dataset: Tire: Camber Thrust Coefficient; { Touring Tires } 255/75 R16
+Used Dataset: Tire; { Touring Tires } 255/75 R16
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 205/70 R15: Tire
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 205/70 R15: Wheel
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 205/70 R15: Stripe
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 205/70 R15: Brake Rotor
+Used Dataset: Animator: Shape Assembly; { Tires } 205/70 R15
+Used Dataset: Generic Table; { Tire Relaxation Length } Lx Variable, Scaled to Tire
+Used Dataset: Generic Table; { Tire Relaxation Length } Ly Variable, Scaled to Tire
+Used Dataset: Tire: Aligning Moment; { Touring Tires } 255/75 R16
+Used Dataset: Tire: Lateral Force; { Touring Tires } 255/75 R16
+Used Dataset: Tire: Longitudinal Force; { Touring Tires } 255/75 R16
+Used Dataset: Tire: Camber Thrust Coefficient; { Touring Tires } 255/75 R16
+Used Dataset: Tire; { Touring Tires } 255/75 R16
+Used Dataset: Suspension: Dive Angle (Solid Axle); Constant: Zero Dive Angle (deg)
+Used Dataset: Suspension: Longitudinal Movement (Solid Axle); { Hotchkiss Rear Axle } Rear Hotchkiss - Longitudinal Movement
+Used Dataset: Suspension: Lateral Movement Due to Roll and Jounce; { Hotchkiss } Rear Hotchkiss - Lateral Movement
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets } Solid Axles: Light Duty (Driven)
+Used Dataset: Suspension: Solid Axle System Kinematics; { Pickup Trucks } Pickup, Midsize - Rear
+Used Dataset: Suspension: Spring; { Pickup } Pickup - Rear
+Used Dataset: Suspension: Shock Absorber; { SUV and Light Truck } Big SUV
+Used Dataset: Suspension: Jounce and Rebound Stops; { Jounce Range: 100 mm to 150 mm } +150 mm / -110 mm
+Used Dataset: Suspension: Spring; { Pickup } Pickup - Rear
+Used Dataset: Suspension: Shock Absorber; { SUV and Light Truck } Big SUV
+Used Dataset: Suspension: Jounce and Rebound Stops; { Jounce Range: 100 mm to 150 mm } +150 mm / -110 mm
+Used Dataset: Suspension: Auxiliary Roll Moment; { Constant } Constant: Zero
+Used Dataset: Suspension: Solid Axle Compliance, Springs, and Dampers; { Pickup Trucks } Pickup, Compact - Rear
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 205/70 R15: Tire
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 205/70 R15: Wheel
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 205/70 R15: Stripe
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 205/70 R15: Brake Rotor
+Used Dataset: Animator: Shape Assembly; { Tires } 205/70 R15
+Used Dataset: Generic Table; { Tire Relaxation Length } Lx Variable, Scaled to Tire
+Used Dataset: Generic Table; { Tire Relaxation Length } Ly Variable, Scaled to Tire
+Used Dataset: Tire: Aligning Moment; { Touring Tires } 255/75 R16
+Used Dataset: Tire: Lateral Force; { Touring Tires } 255/75 R16
+Used Dataset: Tire: Longitudinal Force; { Touring Tires } 255/75 R16
+Used Dataset: Tire: Camber Thrust Coefficient; { Touring Tires } 255/75 R16
+Used Dataset: Tire; { Touring Tires } 255/75 R16
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 205/70 R15: Tire
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 205/70 R15: Wheel
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 205/70 R15: Stripe
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 205/70 R15: Brake Rotor
+Used Dataset: Animator: Shape Assembly; { Tires } 205/70 R15
+Used Dataset: Generic Table; { Tire Relaxation Length } Lx Variable, Scaled to Tire
+Used Dataset: Generic Table; { Tire Relaxation Length } Ly Variable, Scaled to Tire
+Used Dataset: Tire: Aligning Moment; { Touring Tires } 255/75 R16
+Used Dataset: Tire: Lateral Force; { Touring Tires } 255/75 R16
+Used Dataset: Tire: Longitudinal Force; { Touring Tires } 255/75 R16
+Used Dataset: Tire: Camber Thrust Coefficient; { Touring Tires } 255/75 R16
+Used Dataset: Tire; { Touring Tires } 255/75 R16
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets } Hitches: Ball Hitch
+Used Dataset: Hitch: Joint Assembly; Ball Hitch
+Used Dataset: Vehicle: Sprung Mass (from Whole Vehicle); Pickup, Midsize
+Used Dataset: Aerodynamics: Fx (Drag) Coef. vs. Aero Slip; { Spline Interpolation } Spline: 0.30 at 0 deg.
+Used Dataset: Aerodynamics: Fy (Side Force) Coef. vs. Aero Slip; { Spline Interpolation } Spline: 2 at 90 deg.
+Used Dataset: Aerodynamics: Fz (Lift) Coef. vs. Aero Slip; { Spline Interpolation } Spline: 0.18 at 0 deg.
+Used Dataset: Aerodynamics: Mx (Roll Moment) Coef. vs. Aero Slip; { Spline Interpolation } Spline: 0.3 at 90 deg.
+Used Dataset: Aerodynamics: My (Pitch Moment) Coef. vs. Aero Slip; { Spline Interpolation } Spline: 0.15 at 0 deg.
+Used Dataset: Aerodynamics: Mz (Yaw Moment) Coef. vs. Aero Slip; { Spline Interpolation } Spline: 0.2 at 35 deg.
+Used Dataset: Aerodynamics: Basic; { Pickup Trucks } Mid-Size Pickup (3261 mm wheelbase)
+Used Dataset: Powertrain: Engine; { 200 kW - 270 kW Engines } 200 kW Engine
+Used Dataset: Powertrain: Torque Converter; { Torque Converters: 150 kW to 250 kW } Torque Converter: 200 kW Engine
+Used Dataset: Powertrain: Shift Schedule; { 6-speed } 6-speed, 1-2 Shift
+Used Dataset: Powertrain: Shift Schedule; { 6-speed } 6-speed, 2-3 Shift
+Used Dataset: Powertrain: Shift Schedule; { 6-speed } 6-speed, 3-4 Shift
+Used Dataset: Powertrain: Shift Schedule; { 6-speed } 6-speed, 4-5 Shift
+Used Dataset: Powertrain: Shift Schedule; { 6-speed } 6-speed, 5-6 Shift
+Used Dataset: Powertrain: Transmission (18 Gears or CVT); { 6-Speed Transmissions } 6-Speed
+Used Dataset: Powertrain: Transfer Case; { Open } OTC: Part Time 50/50, 2WD
+Used Dataset: Powertrain: Front Differential; { Open } Open Differential: Gear Ratio 4.1:1
+Used Dataset: Powertrain: Rear Differential; { Open } Open Differential: Gear Ratio 4.1:1
+Used Dataset: Powertrain: 4-Wheel Drive; { 200 kW Powertrains } 200 kW, 6-spd, 4.1 Ratio, Open Diffs, 2WD
+Used Dataset: Brakes: Four-Wheel System; { Pickup Trucks } Pickup (Comp): MC Press, ABS
+Used Dataset: Animator: Shape File Link; { Trucks: Pickup Cabs } Compact, Regular Cab: Body
+Used Dataset: Animator: Shape File Link; { Trucks: Pickup Cabs } Compact, Regular Cab: Details
+Used Dataset: Animator: Shape File Link; { Trucks: Pickup Cabs } Compact, Regular Cab: Windows
+Used Dataset: Animator: Shape File Link; { Trucks: Pickup Cabs } Compact Cab: Driver (Caucasian Male)
+Used Dataset: Animator: Shape Assembly; { Pickup Trucks } Cab Assembly: Regular (Compact)
+Used Dataset: Animator: Shape File Link; { Trucks: Pickup Beds } 6-Ft Box: Body Midsize
+Used Dataset: Animator: Shape File Link; { Trucks: Pickup Beds } 6-Ft Box: Details Midsize
+Used Dataset: Animator: Shape Assembly; { Pickup Trucks } 6-Ft Box Midsize
+Used Dataset: Animator: Group; { Pickup Trucks } Pickup, Midsize: Regular Cab, 6 ft. Bed
+Used Dataset: Animator: Shape File Link; { Trucks: Pickup Beds } 6-Ft Box: Brake Lights (Midsize)
+Used Dataset: Animator: Shape File Link; { Trucks: Pickup Beds } 6-Ft Box: Reverse Lights (Midsize)
+Used Dataset: Animator: Vehicles and Sensor Targets; { Pickup Trucks } Pickup, Midsize: Regular Cab
+Used Dataset: Vehicle: Assembly; { Pickup Trucks } Pickup, Midsize: Part-Time 4WD (in 2WD)
+Used Dataset: Suspension: Shock Absorber; { Linear } Linear: 10 kN-s/m
+Used Dataset: Suspension: Jounce and Rebound Stops; { Jounce Range: 100 mm to 150 mm } +120 mm / -60 mm
+Used Dataset: Suspension: Shock Absorber; { Linear } Linear: 10 kN-s/m
+Used Dataset: Suspension: Jounce and Rebound Stops; { Jounce Range: 100 mm to 150 mm } +120 mm / -60 mm
+Used Dataset: Suspension: Auxiliary Roll Moment; { Linear } Load Dependent: Trailer
+Used Dataset: Suspension: Solid Axle Compliance, Springs, and Dampers; { Trailers } Susp. Compliance: Lg Rental Trailer (1A)
+Used Dataset: Suspension: Lateral Movement Due to Roll and Jounce; { Solid Axle } -2.4 mm/deg
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cylinder: Solid Axle, 60 mm Diameter
+Used Dataset: Suspension: Solid Axle System Kinematics; { Trailers } Susp. Kinematics: Lg. Rental Trailer (1A)
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 205/60 R14: Tire
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 205/60 R14: Wheel
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 205/60 R14: Stripe
+Used Dataset: Animator: Shape Assembly; { Tires } 205/60 R14
+Used Dataset: Generic Table; { Tire Relaxation Length } Lx Variable, Scaled to Tire
+Used Dataset: Generic Table; { Tire Relaxation Length } Ly Variable, Scaled to Tire
+Used Dataset: Tire: Aligning Moment; { Touring Tires } 175/65 R14 (SAE)
+Used Dataset: Tire: Lateral Force; { Touring Tires } 175/65 R14
+Used Dataset: Tire: Longitudinal Force; { Touring Tires } 175/65 R14
+Used Dataset: Tire: Camber Thrust Coefficient; { Touring Tires } 175/65 R14
+Used Dataset: Tire; { Touring Tires } 175/65 R14
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 205/60 R14: Tire
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 205/60 R14: Wheel
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 205/60 R14: Stripe
+Used Dataset: Animator: Shape Assembly; { Tires } 205/60 R14
+Used Dataset: Generic Table; { Tire Relaxation Length } Lx Variable, Scaled to Tire
+Used Dataset: Generic Table; { Tire Relaxation Length } Ly Variable, Scaled to Tire
+Used Dataset: Tire: Aligning Moment; { Touring Tires } 175/65 R14 (SAE)
+Used Dataset: Tire: Lateral Force; { Touring Tires } 175/65 R14
+Used Dataset: Tire: Longitudinal Force; { Touring Tires } 175/65 R14
+Used Dataset: Tire: Camber Thrust Coefficient; { Touring Tires } 175/65 R14
+Used Dataset: Tire; { Touring Tires } 175/65 R14
+Used Dataset: Brakes: Trailer Two-Wheel System; { Trailer Brakes } No Brakes
+Used Dataset: Vehicle: Trailer Sprung Mass; { Rental (box) } Large Rental Trailer (1A)
+Used Dataset: Aerodynamics: Fx (Drag) Coef. vs. Aero Slip; CFx = 0
+Used Dataset: Aerodynamics: Fy (Side Force) Coef. vs. Aero Slip; CFy = 0
+Used Dataset: Aerodynamics: Fz (Lift) Coef. vs. Aero Slip; CFz = 0
+Used Dataset: Aerodynamics: Mx (Roll Moment) Coef. vs. Aero Slip; CMx = 0
+Used Dataset: Aerodynamics: My (Pitch Moment) Coef. vs. Aero Slip; CMy = 0
+Used Dataset: Aerodynamics: Mz (Yaw Moment) Coef. vs. Aero Slip; CMz = 0
+Used Dataset: Aerodynamics: Basic; { Generic Aerodynamic Properties } No Aerodynamics
+Used Dataset: Animator: Shape File Link; { Trailers } Large Rental Trailer (1A) HD
+Used Dataset: Animator: Shape Assembly; { Trailers } Large Rental Trailer (1A)
+Used Dataset: Animator: Shape File Link; { Trailers } Rental Trailer (1A): Brake Lights HD
+Used Dataset: Animator: Vehicles and Sensor Targets; { Trailers } Large Rental Trailer (1A)
+Used Dataset: Vehicle: Trailer with 1 Axle; 1A Large Rental Trailer
+Used Dataset: Payload: Box Shape; { Trailers } Rental Trailer
+Used Dataset: Vehicle with Loads, Sensors, Trailer, etc.; { Pickup, Midsize } Pickup, Midsize, 1A Trailer
+Used Dataset: Control: Steering by the Closed-loop Driver Model; { Constant Position: No Offset } No Offset, 1.8s Preview, TBC
+Used Dataset: Control: Shifting (Closed Loop); Reverse
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Sphere: 0.1m Radius
+Used Dataset: Multiple Moving Objects; { Points of Interest } 1 Driver Preview Point
+Used Dataset: Generic VS Commands; { Miscellaneous Custom Controls } TBC: Target Accel
+ Straight East <Straight>
+Used Dataset: Path: Segment Builder; { Straight } Straight East
+Used Dataset: Road: Friction Map, S-L Grid; { Constant } Constant: 0.85
+Used Dataset: Road: Animator Surface Shapes; { Roads } 1 km Square
+Used Dataset: Animator: Reference Frame; { Tracking: Vehicle } Skybox (Vehicle X-Y-Z)
+Used Dataset: Animator: Shape File Link; { Environment: Sky Boxes } Partly Cloudy Sky
+Used Dataset: Animator: Shape File Link; { Environment: Land Bowls } Light Grass
+Used Dataset: Animator: Group; { Environment Spheres } Partly Cloudy Sky with Light Grass
+Used Dataset: Road: Animator Repeated Object; { Alley Dock } Horizontal Lines
+Used Dataset: Road: Animator Repeated Object; { Alley Dock } Vertical Lines
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car - Width 175 mm
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car - Width 175 mm
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car - Width 175 mm
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car - Width 175 mm
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car - Width 175 mm
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car - Width 175 mm
+Used Dataset: Animator: Shape File Link; { Trailers } Utility Flatbed Trailer: Floor
+Used Dataset: Animator: Shape File Link; { Trailers } Utility Flatbed Trailer: Frame
+Used Dataset: Animator: Shape Assembly; { Trailers } Utility Flatbed Trailer (3A)
+Used Dataset: Animator: Shape File Link; { Trailers } Utility Flatbed Trailer (3A): Fender
+Used Dataset: Animator: Group; { Trailers } Utility Flatbed Trailer (3A)
+Used Dataset: Animator: Shape File Link; { Trailers } Utility Flatbed Trailer: Brake Lights
+Used Dataset: Animator: Shape File Link; { Trailers } Utility Flatbed Trailer: Tongue (Ball)
+Used Dataset: Animator: Vehicles and Sensor Targets; { Trailers } Utility Flatbed Trailer (3A)
+Used Dataset: Single Moving Object (Custom); { For Alley Dock Test Pad (Small) } Flatbed Trailer
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car
+Used Dataset: Animator: Shape File Link; { Trailers } Rental Trl (2A): Solid Axle, Leaf Springs
+Used Dataset: Animator: Shape Assembly; { Trailers } Large Rental Trailer (2A)
+Used Dataset: Animator: Shape File Link; { Trailers } Rental Trailer (2A): Brake Lights
+Used Dataset: Animator: Vehicles and Sensor Targets; { Trailers } Large Rental Trailer (2A)
+Used Dataset: Single Moving Object (Custom); { For Alley Dock Test Pad (Small) } Rental Trailer
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Rectangle for Road Stripe (Small)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Rectangle for Road Stripe (Small)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Rectangle for Road Stripe (Small)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Rectangle for Road Stripe (Small)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Rectangle for Road Stripe (Small)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Rectangle for Road Stripe (Small)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Rectangle for Road Stripe (Small)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Rectangle for Road Stripe (Small)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Rectangle for Road Stripe (Small)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Rectangle for Road Stripe (Small)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Rectangle for Road Stripe (Small)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Rectangle for Road Stripe (Small)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Rectangle for Road Stripe (Small)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Rectangle for Road Stripe (Small)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Rectangle for Road Stripe (Small)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Rectangle for Road Stripe (Small)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Rectangle for Road Stripe (Small)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Rectangle for Road Stripe (Small)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Rectangle for Road Stripe (Small)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Rectangle for Road Stripe (Small)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Rectangle for Road Stripe (Small)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Rectangle for Road Stripe (Small)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Rectangle for Road Stripe (Small)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Rectangle for Road Stripe (Small)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Rectangle for Road Stripe (Small)
+Used Dataset: Road: 3D Surface (All Properties); { Flat Test Pads } Alley Dock Test Pad (Small)
+Used Dataset: Events; { Stop Conditions } Stop Condition: Trailer Axle X
+ Left Turn 18-ft Radius <Curves>
+Used Dataset: Path: Segment Builder; { Curves } Left Turn 18-ft Radius
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Hitch } Hitch Articulation vs. Desired
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Steering } Steering Wheel Angle
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Steering } Steering Wheel Angular Rate
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Vehicle Motion } Longitudinal Speed (Vxz_Fwd) vs. Time
+Used Dataset: Plot: Format; Lines without Symbols
+Used Dataset: Plot: Setup; { Braking } Brake Control: M/C Pressure
+Used Dataset: Plot: Format; Lines without Symbols
+Used Dataset: Plot: Setup; { Powertrain } Gear Selection
+Used Dataset: Procedures; { Driver Controls } TBC: Alley Dock w/ Accel Control
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Speed Controller } Accel. Control: Commanded vs. Actual
+ TBC: Alley Dock w/ Accel Control <Driver Model>
+Used Dataset: CarSim Run Control; { Driver Model } TBC: Alley Dock w/ Accel Control
+
+Time to read input = 0.274411
+Function L_RELAX_X_FZ_TABLE(2,1,1) extrapolated (out of range HIGH) for X = 1.26293 N at T = 0
+Function L_RELAX_X_FZ_TABLE(2,1,2) extrapolated (out of range HIGH) for X = 1.26293 N at T = 0
+Function F_JNC_STOP_TABLE(2,1,1) extrapolated (out of range LOW) for X = 16.1515 mm at T = 0
+Function F_REB_STOP_TABLE(2,1,1) extrapolated (out of range HIGH) for X = 16.1515 mm at T = 0
+Function F_JNC_STOP_TABLE(2,1,2) extrapolated (out of range LOW) for X = 16.1515 mm at T = 0
+Function F_REB_STOP_TABLE(2,1,2) extrapolated (out of range HIGH) for X = 16.1515 mm at T = 0
+Function F_REB_STOP_TABLE(1,1,1) extrapolated (out of range HIGH) for X = 1.76696 mm at T = 0
+Function F_JNC_STOP_TABLE(1,1,1) extrapolated (out of range LOW) for X = 1.76696 mm at T = 0
+Function F_REB_STOP_TABLE(1,1,2) extrapolated (out of range HIGH) for X = -8.31489 mm at T = 0
+Function F_JNC_STOP_TABLE(1,1,2) extrapolated (out of range LOW) for X = -8.31489 mm at T = 0
+Function F_JNC_STOP_TABLE(1,2,1) extrapolated (out of range LOW) for X = 19.79 mm at T = 0
+Function F_REB_STOP_TABLE(1,2,1) extrapolated (out of range HIGH) for X = 19.79 mm at T = 0
+Function F_JNC_STOP_TABLE(1,2,2) extrapolated (out of range LOW) for X = 15.4549 mm at T = 0
+Function F_REB_STOP_TABLE(1,2,2) extrapolated (out of range HIGH) for X = 15.4549 mm at T = 0
+
+Run started: VS output file = Results\Run_77b0deb7-4e74-4ffe-bf34-c570c1d5548a\Run.vsb
+Function MX_AUX_CARPET(2,1) extrapolated (out of range LOW) for X = -3.12009e-15 deg at T = 0.001
+Function RACK_KIN_TABLE(1,1,1) extrapolated (out of range HIGH) for X = 60.0055 mm at T = 5.5505
+Function RACK_KIN_TABLE(1,1,2) extrapolated (out of range HIGH) for X = 60.0055 mm at T = 5.5505
+
+Event #1 occurred at t = 10.0455: X_A3 <= 2.5
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_b5af09b5-d8ad-4e81-ae24-eebce691780e.par"
+
+Run stopped at t = 10.0455. VS Command STOP_RUN_NOW End event triggered
+Used Dataset: Events; End Events
+
+Computational time ratio: RTIME = 0.27265 (real time)/(simulation time)
+

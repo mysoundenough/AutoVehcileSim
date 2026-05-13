@@ -1,0 +1,33 @@
+PARSFILE
+#FullDataName Generic VS Commands`04c - Steer torque - reduce to min`K&C Test Sequence
+#VehCode VS Commands
+
+#MiscYellow0
+! Change sign to reduce moment
+M_STR_RATE = -M_STR_RATE
+
+! Reset switch
+DELETE_EQS_OUT at_max
+at_max = 0
+
+EQ_OUT at_min = m_str_applied < -M_STR_RANGE | ...
+                steer_l1 < RW_MIN_L1 | ...
+                steer_r1 < RW_MIN_R1 | ...
+                steer_sw < SW_MIN | ...
+                ABS(M_StopL1) > 0;
+
+!
+#ENDMYellow
+
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { K&C Test Sequence } 04c - Steer torque - reduce to min
+#Library : Generic VS Commands
+#DataSet : 04c - Steer torque - reduce to min
+#Category: K&C Test Sequence
+#FileID  : GenVS_becc8888-1739-4a89-a8e2-1cf4e8dc3901
+#Modified: 05-28-2021 15:02:26
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode VS Commands
+
+END

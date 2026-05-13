@@ -1,0 +1,31 @@
+PARSFILE
+#FullDataName Generic VS Commands`04a - Steer: Record min, steer to max`K&C Test Sequence
+#VehCode VS Commands
+
+#MiscYellow0
+! Record actual minimums
+RW_MIN_L1 = steer_l1
+RW_MIN_R1 = steer_r1
+RW_MIN_L2 = steer_l2
+RW_MIN_R2 = steer_r2
+SW_MIN = steer_sw
+
+! Reset switches
+at_min_rw_l1 = 0
+
+! Reverse steer direction
+SW_RATE = - SW_RATE;
+#ENDMYellow
+
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { K&C Test Sequence } 04a - Steer: Record min, steer to max
+#Library : Generic VS Commands
+#DataSet : 04a - Steer: Record min, steer to max
+#Category: K&C Test Sequence
+#FileID  : GenVS_4c5d5ba4-bc4d-4886-862a-693824c7ae0c
+#Modified: 05-28-2021 15:02:26
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode VS Commands
+
+END

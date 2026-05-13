@@ -1,0 +1,23 @@
+PARSFILE
+#FullDataName I/O Channels: Ports`Speed Export`Quick Start 4SFs
+#RingCtrl0 0
+#RingCtrl1 1
+#CheckBox0 0    
+
+IPORT_EXP 1
+PARSFILE IO_Channels\O_Channels\Export_6b995b51-a6b9-4624-82ff-4652ef42caf8.par
+#BlueLink20 I/O Channels: Export`Speed` 4 SF examples` , Library for factor B`Export_6b995b51-a6b9-4624-82ff-4652ef42caf8
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Ports; { Quick Start 4SFs } Speed Export
+#Library : I/O Channels: Ports
+#DataSet : Speed Export
+#Category: Quick Start 4SFs
+#FileID  : Port_271f230d-8940-43ee-a30b-15dcc727d04c
+#Created : 09-28-2022 08:20:07
+#Modified: 10-19-2022 10:02:47
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode I/O Ports
+
+END

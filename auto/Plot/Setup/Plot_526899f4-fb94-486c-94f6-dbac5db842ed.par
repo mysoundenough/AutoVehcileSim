@@ -1,0 +1,55 @@
+PARSFILE
+#FullDataName Plot: Setup`D-Class Twist-Beam Spr. Len.`User-Defined Variables
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par
+#BlueLink0 Plot: Format`Default Plot Settings` ` , Plot format`PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862
+
+#CheckBox1 0    
+
+
+#MiscYellow1
+! Spring length at design in SuspensionSim model is 313.51 mm.
+! For the coilover type, damper and spring compression are same.
+define_output LenSprL2 = 313.51/1000-CmpD_L2; mm
+define_output LenSprR2 = 313.51/1000-CmpD_R2; mm
+#ENDMYellow
+
+#MiscYellow0
+PLOTCHANNELS LenSprL2, Jnc_L2
+PLOTCHANNELS LenSprR2, Jnc_R2
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE D-Class Twist-Beam Spr. Len.
+
+END_ENTITY Plot
+
+
+#EMBEDDED_NOTES
+#This dataset is NOT FOR GENERAL USE.
+#
+#This is a specific plot used to validate the D-Class Sedan (Twist-Beam) spring length compared to the SuspensionSim version. See the tech memo "Twist Beam Suspensions: Using 2D Tables" for more information.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Plot: Setup; { User-Defined Variables } D-Class Twist-Beam Spr. Len.
+#Library : Plot: Setup
+#DataSet : D-Class Twist-Beam Spr. Len.
+#Category: User-Defined Variables
+#FileID  : Plot_526899f4-fb94-486c-94f6-dbac5db842ed
+#Created : 03-29-2021 16:15:30
+#Modified: 05-28-2021 14:59:48
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Plot Setup
+
+END

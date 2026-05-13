@@ -1,0 +1,41 @@
+PARSFILE
+#FullDataName Events`02 - Jounce - Move to full jounce`K&C Test Sequence
+#CheckBox1 0    
+#CheckBox6 0    
+#CheckBox7 1    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 ZERO ~=
+#RingCtrl1 ZERO ~=
+#RingCtrl10 2
+#RingCtrl11 4
+*VALUE1 at_max_l1 | at_max_r1
+*VALUE2 at_max_l2 | at_max_r2
+#MiscYellow0
+! Enable writing
+OPT_WRITE 1
+#ENDMYellow
+
+PARSFILE Generic\VS_commands\GenVS_6fd0f3d0-6fb4-4fba-bfe4-1afa073a6d50.par
+#BlueLink10 Generic VS Commands`02 - Jounce - Move to full jounce` K&C Test Sequence` , Miscellaneous`GenVS_6fd0f3d0-6fb4-4fba-bfe4-1afa073a6d50
+
+DEFINE_EVENT at_max_l1 | at_max_r1 ; Events\Events_cef24945-6ab0-42df-ad5b-83887fa58c1b.par
+#BlueLink0 Events`02 - Jounce - Front at full jounce` K&C Test Sequence` , Events`Events_cef24945-6ab0-42df-ad5b-83887fa58c1b
+
+DEFINE_EVENT at_max_l2 | at_max_r2 ; Events\Events_259d64d6-0bd3-4c1b-a1f5-7252c0608e4d.par
+#BlueLink1 Events`02 - Jounce - Rear is at full jounce` K&C Test Sequence` , Events`Events_259d64d6-0bd3-4c1b-a1f5-7252c0608e4d
+
+SET_EVENT_ID 0 ! reset to default
+
+LOG_ENTRY Used Dataset: Events; { K&C Test Sequence } 02 - Jounce - Move to full jounce
+#Library : Events
+#DataSet : 02 - Jounce - Move to full jounce
+#Category: K&C Test Sequence
+#FileID  : Events_c1ea44a9-2248-40b1-81c9-1e717adb2600
+#Modified: 05-28-2021 14:59:27
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

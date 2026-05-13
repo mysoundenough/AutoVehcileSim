@@ -1,0 +1,67 @@
+PARSFILE
+#FullDataName Tire Tester`Sweep Slip Angle (VS TMRW)`VS TMRW
+*ALPHA_LOWER -25
+*ALPHA_UPPER 25
+*ALPHA_STEP 0.01
+*FZ_TEST 900
+*KAPPA_TEST 0
+*GAMMA_TEST 0
+MUX_TEST 0
+MUY_TEST 0
+SPEED_TEST 1
+RR_SURF 0
+
+iunit 1
+#RingCtrl0 1
+OPT_TEST_MODE 1
+ALPHA_LOWER -25
+ALPHA_UPPER 25
+ALPHA_STEP 0.01
+FZ_TEST 900
+KAPPA_TEST 0
+GAMMA_TEST 0
+
+PARSFILE Plot\Setup\Plot_3c5f8bac-e2f6-4ebc-ab48-a1828a269fd4.par
+#BlueLink1 Plot: Setup`Slip Angles: Instant` Tire Kinematics` , Plot`Plot_3c5f8bac-e2f6-4ebc-ab48-a1828a269fd4
+
+PARSFILE Plot\Setup\Plot_5ead09bd-2b8f-470e-af04-1a232741844f.par
+#BlueLink2 Plot: Setup`Fy vs. Alpha` Tire Tester` , Plot`Plot_5ead09bd-2b8f-470e-af04-1a232741844f
+
+PARSFILE Plot\Setup\Plot_78fa5051-de39-41b2-9ad6-a691c6d178f9.par
+#BlueLink3 Plot: Setup`Mz vs. Alpha` Tire Tester` , Plot`Plot_78fa5051-de39-41b2-9ad6-a691c6d178f9
+
+PARSFILE Plot\Setup\Plot_1bec74f4-8fd2-4cb3-9a6c-64f17192d829.par
+#BlueLink4 Plot: Setup`Fx Components (VS TMRW)` VS TMRW` , Plot`Plot_1bec74f4-8fd2-4cb3-9a6c-64f17192d829
+
+PARSFILE Plot\Setup\Plot_f3545c87-18a8-4fb8-af6a-5bbbc72357dc.par
+#BlueLink5 Plot: Setup`Fy Components (VS TMRW)` VS TMRW` , Plot`Plot_f3545c87-18a8-4fb8-af6a-5bbbc72357dc
+
+PARSFILE Plot\Setup\Plot_f496acfc-5364-4c14-ab7f-5cacd7f577bf.par
+#BlueLink6 Plot: Setup`Fz Components (VS TMRW)` VS TMRW` , Plot`Plot_f496acfc-5364-4c14-ab7f-5cacd7f577bf
+
+PARSFILE Plot\Setup\Plot_5b4ffb03-88f9-486e-bd2d-d1117595d831.par
+#BlueLink7 Plot: Setup`Mx Components (VS TMRW)` VS TMRW` , Plot`Plot_5b4ffb03-88f9-486e-bd2d-d1117595d831
+
+PARSFILE Plot\Setup\Plot_665250a6-b092-4ca2-a96b-ac3f15190f8a.par
+#BlueLink8 Plot: Setup`My Components (VS TMRW)` VS TMRW` , Plot`Plot_665250a6-b092-4ca2-a96b-ac3f15190f8a
+
+PARSFILE Plot\Setup\Plot_2d428d25-7024-4301-9389-a4fb8f68f1e6.par
+#BlueLink9 Plot: Setup`Mz Components (VS TMRW)` VS TMRW` , Plot`Plot_2d428d25-7024-4301-9389-a4fb8f68f1e6
+
+
+#EMBEDDED_NOTES
+#With VS Terramechanics: Rigid Wheel, the road friction and rolling resistance associated with the road surface are not used.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Tire Tester; { VS TMRW } Sweep Slip Angle (VS TMRW)
+#Library : Tire Tester
+#DataSet : Sweep Slip Angle (VS TMRW)
+#Category: VS TMRW
+#FileID  : TestTire_90313cac-40bf-4946-ba33-59e23784f1aa
+#Created : 11-30-2022 09:26:13
+#Modified: 11-30-2022 10:14:55
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Tire Tester
+
+END

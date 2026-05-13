@@ -1,0 +1,89 @@
+PARSFILE
+#FullDataName CarSim Run Control`TBC: Alley Dock w/ Accel Control`Driver Model
+#VEHICLECODE Ind_SA + S
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_77b0deb7-4e74-4ffe-bf34-c570c1d5548a
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Animator\Cameras\Camera_4e243600-1feb-4ec1-bea0-fe178c20fce3.par
+#BlueLink0 Animator: Camera Setup`180 deg. Azimuth, 90 deg. El., Veh. Ref.` Vehicle Reference` , Animator camera`Camera_4e243600-1feb-4ec1-bea0-fe178c20fce3
+
+#CheckBox0 1    
+#CheckBox1 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 0    
+#CheckBox5 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox8 0    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+#CheckBox12 0    
+
+#RingCtrl0 4
+#RingCtrl1 0
+#RingCtrl2 3
+#RingCtrl3 0
+ANI_T_STAMP
+TIME_CHANNEL T_STAMP
+
+#RingCtrl6 1
+#RingCtrl7 -1
+#RingCtrl4 on
+RT_WINDOW_CLOSE on
+#RingCtrl5 1
+LIVE_SERVER_MAX_CONNECTIONS 1
+PARSFILE Vehicles\Loaded\VehLoad_48d6fcc2-405f-433e-9188-0d379cd01d13.par
+#BlueLink2 Vehicle with Loads, Sensors, Trailer, etc.`Pickup, Midsize, 1A Trailer` Pickup, Midsize` , Math Model`VehLoad_48d6fcc2-405f-433e-9188-0d379cd01d13
+
+PARSFILE Procedures\Proc_9e037c39-f4b4-4cbc-8b58-89ca9155b0c0.par
+#BlueLink28 Procedures`TBC: Alley Dock w/ Accel Control` Driver Controls` , Procedure`Proc_9e037c39-f4b4-4cbc-8b58-89ca9155b0c0
+
+PARSFILE Plot\Setup\Plot_5608ae47-21c9-479d-95fe-8c73f9f1f785.par
+#BlueLink15 Plot: Setup`Accel. Control: Commanded vs. Actual` Speed Controller` , Plot`Plot_5608ae47-21c9-479d-95fe-8c73f9f1f785
+
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Vehicles\Assembly\Vehicle_1b5706dc-31e1-42c4-8598-c83e6b95d5ef.png
+WRITE_SENSOR_DETECT
+Title TBC: Alley Dock w/ Accel Control <Driver Model>
+CATEGORY Driver Model 
+DATASET_TITLE TBC: Alley Dock w/ Accel Control
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#In this example, a midsize pickup with rental trailer performs an alley dock maneuver.
+#
+#Steering control uses the built-in trailer backing controller (TBC), introduced in CarSim 2022.1.
+#
+#Speed control uses the direct acceleration control,
+#OPT_SC 5
+#
+#NOTE: The CarSim Trailers license is required to run this example. You may still view video and plots without it.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { Driver Model } TBC: Alley Dock w/ Accel Control
+#Library : CarSim Run Control
+#DataSet : TBC: Alley Dock w/ Accel Control
+#Category: Driver Model
+#FileID  : Run_77b0deb7-4e74-4ffe-bf34-c570c1d5548a
+#Created : 10-05-2023 10:19:16
+#Modified: 01-23-2024 12:10:37
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Run
+
+END

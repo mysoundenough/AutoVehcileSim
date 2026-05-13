@@ -1,0 +1,40 @@
+PARSFILE
+#FullDataName Plot: Setup`Test Steer and Normal Steer`Steering
+
+ADD_ENTITY Plot
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS Test_Str_L1, Time
+PLOTCHANNELS Test_Str_R1, Time
+PLOTCHANNELS StrKp_L1, Time
+PLOTCHANNELS StrKp_R1, Time
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Test Steer and Normal Steer
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Steering } Test Steer and Normal Steer
+#Library : Plot: Setup
+#DataSet : Test Steer and Normal Steer
+#Category: Steering
+#FileID  : Plot_264b7f01-f5fd-4a05-9ab6-a86908b431e5
+#Modified: 09-07-2023 14:38:43
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Plot Setup
+
+END

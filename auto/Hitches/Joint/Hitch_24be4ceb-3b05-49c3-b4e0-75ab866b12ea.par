@@ -1,0 +1,24 @@
+PARSFILE
+#FullDataName Hitch: Joint Assembly`Pintle Hitch`
+#CheckBox2 0    
+
+OPT_HITCH_TYPE 2
+WRITE_ADD_REFERENCE_FRAME_HITCH
+PARSFILE Animator\STL\Shape_6dd1b2b0-da10-4bb9-8bc6-3bcae306e898.par
+#BlueLink3 Animator: Shape File Link`Hitches: Pintle Hitch` Common Vehicle Assets` , Hitch Shape`Shape_6dd1b2b0-da10-4bb9-8bc6-3bcae306e898
+
+SET_OFFSET_X <<hitch_x>>
+SET_OFFSET_Y <<hitch_y>>
+SET_OFFSET_Z <<hitch_z>>
+
+LOG_ENTRY Used Dataset: Hitch: Joint Assembly; Pintle Hitch
+#Library : Hitch: Joint Assembly
+#DataSet : Pintle Hitch
+#Category: 
+#FileID  : Hitch_24be4ceb-3b05-49c3-b4e0-75ab866b12ea
+#Modified: 11-29-2021 14:59:00
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Hitch
+
+END

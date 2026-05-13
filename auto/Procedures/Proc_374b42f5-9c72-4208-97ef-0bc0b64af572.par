@@ -1,0 +1,64 @@
+PARSFILE
+#FullDataName Procedures`04c - Steer torque`K&C Test Sequence
+#CheckBox1 1    
+OPT_INIT_PATH 1
+
+#RingCtrl0 4
+#RingCtrl1 -1
+#RingCtrl2 0
+OPT_STOP -1
+SSTART 0
+TSTART 0
+TSTART_WRITE = 0;
+SSTOP = SSTART + 1 ;
+OPT_DIRECTION 1
+TSTOP -1
+*TSTOP 1000
+*TSTART 0
+*SSTART 0
+
+PARSFILE Generic\VS_commands\GenVS_acbda493-31cf-4e82-8e99-c2e65147c988.par
+#BlueLink0 Generic VS Commands`04c - Steer torque` K&C Test Sequence` , Miscellaneous`GenVS_acbda493-31cf-4e82-8e99-c2e65147c988
+
+PARSFILE Events\Events_77682088-be12-4899-b9c9-6624ce5bda40.par
+#BlueLink1 Events`04c - Steer torque - reduce to min` K&C Test Sequence` , Miscellaneous`Events_77682088-be12-4899-b9c9-6624ce5bda40
+
+PARSFILE Plot\Setup\Plot_6bb14d6c-a68f-4d3b-a1c7-683c8b2f437a.par
+#BlueLink8 Plot: Setup`Steering Wheel Angular Rate` Steering` , Plot`Plot_6bb14d6c-a68f-4d3b-a1c7-683c8b2f437a
+
+PARSFILE Plot\Setup\Plot_57fbe53b-9356-4cb1-9fd0-29f3e70d3894.par
+#BlueLink9 Plot: Setup`Road Wheel Steer Angle - Front` Steering` , Plot`Plot_57fbe53b-9356-4cb1-9fd0-29f3e70d3894
+
+PARSFILE Plot\Setup\Plot_a146934a-339c-4983-9664-0f9749a0dfd6.par
+#BlueLink10 Plot: Setup`Vertical Forces` Tire Forces and Moments` , Plot`Plot_a146934a-339c-4983-9664-0f9749a0dfd6
+
+PARSFILE Plot\Setup\Plot_986ce074-9acb-4be0-8bd7-ac8e03eb16ab.par
+#BlueLink11 Plot: Setup`Steer Torque` Steering` , Plot`Plot_986ce074-9acb-4be0-8bd7-ac8e03eb16ab
+
+PARSFILE Plot\Setup\Plot_076736e1-2cdd-49d5-8a36-d55940b011f0.par
+#BlueLink12 Plot: Setup`Steering: Handwheel Angle` Steering` , Plot`Plot_076736e1-2cdd-49d5-8a36-d55940b011f0
+
+PARSFILE Plot\Setup\Plot_aff91df0-74c6-4ce9-adbb-a60597a39884.par
+#BlueLink13 Plot: Setup`Driver input steer torque vs. steer angle` Steering` , Plot`Plot_aff91df0-74c6-4ce9-adbb-a60597a39884
+
+PARSFILE Plot\Setup\Plot_de4e6a27-917e-471f-aa74-ebc5d58ad279.par
+#BlueLink14 Plot: Setup`Rack Force from Tie Rods` Steering` , Plot`Plot_de4e6a27-917e-471f-aa74-ebc5d58ad279
+
+
+#EMBEDDED_NOTES
+#When steer input is by torque, the steering system should have steering stops defined. Without them, the resulting steer angles can reach unexpected values.
+#
+#Steering stop parameters are set using the VS Commands linked on this Procedure. If the vehicle used in the baseline run (01 - K & C: Design Load (no plots)) has steering stops defined, you can comment out the lines that define them in the VS Commands linked to this Procedure.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Procedures; { K&C Test Sequence } 04c - Steer torque
+#Library : Procedures
+#DataSet : 04c - Steer torque
+#Category: K&C Test Sequence
+#FileID  : Proc_374b42f5-9c72-4208-97ef-0bc0b64af572
+#Modified: 05-28-2021 14:59:20
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Procedure
+
+END

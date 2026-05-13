@@ -1,0 +1,35 @@
+PARSFILE
+#FullDataName Generic Table`Ext. Battery Open-Circuit Voltage`Powertrain (HEV)
+#RingCtrl0 CONSTANT
+#RingCtrl1 MULTIPLY
+#RingCtrl2 CONSTANT
+#CheckBox0 1    
+
+VOC_BATTERY_COMBINE MULTIPLY
+VOC_BATTERY_CONSTANT 0
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+*KEYWORD VOC_BATTERY
+*X_LABEL State of charged (-)
+*Y_LABEL Voltage (V)
+*SCALAR 0
+*X_LABEL_2 Temperature (C)
+
+
+#EMBEDDED_NOTES
+#This dataset is used for an external battery model.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic Table; { Powertrain (HEV) } Ext. Battery Open-Circuit Voltage
+#Library : Generic Table
+#DataSet : Ext. Battery Open-Circuit Voltage
+#Category: Powertrain (HEV)
+#FileID  : GenTab_02c4bd37-95f5-4ff0-9f79-652848273228
+#Created : 03-23-2023 14:12:13
+#Modified: 04-04-2023 13:19:08
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode table
+
+END

@@ -1,0 +1,74 @@
+PARSFILE
+#FullDataName Generic Data Group`Traffic: ACC Cut-In, 10 km/h`ADAS: Traffic for ACC & FCW
+#VehCode Generic Group
+PARSFILE Generic\VS_commands\GenVS_c64bb511-e9fa-4c89-8550-3d7694de8472.par
+#BlueLink0 Generic VS Commands`ACC/AEB Cut-In Params, 50 km/h` Obstacle Avoidance` , Link 1`GenVS_c64bb511-e9fa-4c89-8550-3d7694de8472
+
+
+PARSFILE Control\Speed_t\SpdTime_004a6289-2c34-4239-bc78-4d71c6df91a0.par
+#BlueLink1 Control: Speed (Closed Loop) Using Target Speed`Constant: 50 km/h, no DM Cntl` Constant` , Link 2`SpdTime_004a6289-2c34-4239-bc78-4d71c6df91a0
+
+
+#MiscYellow2
+SET_ILTARG_FOR_ID LEAD_VEH_LTARG_PROF
+ltarg_constant = LEAD_LTARG_INIT
+set_description ltarg_id ...
+  Lateral target for right lane
+#ENDMYellow
+
+PARSFILE Sensors_Traffic\Traffic\TMotion_6a28d428-6057-4737-bc91-235ee2700c10.par
+#BlueLink2 Multiple Moving Objects`1 Veh Highway, Euro NCAP Lead Veh` Traffic Vehicles (Forward)` , Link 3`TMotion_6a28d428-6057-4737-bc91-235ee2700c10
+
+
+#MiscYellow3
+SET_ILTARG_FOR_ID CUT_IN_LTARG_PROF
+ltarg_constant = CUT_IN_LTARG_INIT
+set_description ltarg_id ...
+  Lateral target for adjacent lane
+#ENDMYellow
+
+PARSFILE Control\Driver\StrDM_2d0a2dfb-68d1-447d-bfee-e3964c23e87e.par
+#BlueLink3 Control: Steering by the Closed-loop Driver Model`Go to Right 1 m, dS = 2 m, Cut-In` Normalized Path Changes` , Link 4`StrDM_2d0a2dfb-68d1-447d-bfee-e3964c23e87e
+
+
+#MiscYellow4
+!Parameter values located in a VS Commands Dataset
+SSTART_LTARG CUT_IN_SSTART_LTARG
+SSCALE_LTARG CUT_IN_SSCALE_LTARG
+LTARG_GAIN CUT_IN_LTARG_GAIN
+#ENDMYellow
+
+PARSFILE Control\Speed_t\SpdTime_5c8e09ee-db9c-4ac1-a9b4-fe6ad3630128.par
+#BlueLink4 Control: Speed (Closed Loop) Using Target Speed`10 km/h: Euro NCAP ACC, Cut-In` Constant` , Link 5`SpdTime_5c8e09ee-db9c-4ac1-a9b4-fe6ad3630128
+
+
+PARSFILE Sensors_Traffic\Traffic\TMotion_957057fd-180d-42f8-bdae-a2d14c28c7a1.par
+#BlueLink5 Multiple Moving Objects`1 Veh., ACC Euro NCAP: Cut-In` Traffic Vehicles (Forward)` , Link 6`TMotion_957057fd-180d-42f8-bdae-a2d14c28c7a1
+
+
+
+
+
+
+#EMBEDDED_NOTES
+#This dataset assembles some traffic vehicles in two lanes.
+#
+#The moving objects from link 1 lead the ego vehicle. Their positions are based on the position of the vehicle station.
+#
+#The moving objects from link 2 have speed proportional to that of the vehicle: Vx.
+#
+#The lateral positions of the moving objects are set using the LTARG function, with datasets specified with ILTARG. Descriptions are specified that will appear in the Echo file. A new command SET_ILTARG_FOR_ID adds LTARG datasets.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic Data Group; { ADAS: Traffic for ACC & FCW } Traffic: ACC Cut-In, 10 km/h
+#Library : Generic Data Group
+#DataSet : Traffic: ACC Cut-In, 10 km/h
+#Category: ADAS: Traffic for ACC & FCW
+#FileID  : GenGrp_27f56b76-0dfb-432f-aad0-227472736496
+#Created : 05-03-2021 12:57:06
+#Modified: 09-10-2021 16:30:47
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Generic Group
+
+END

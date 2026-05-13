@@ -1,0 +1,101 @@
+PARSFILE
+#FullDataName Procedures`Euro NCAP ACC Cut-In Test, 120 km/h`ACC: Automatic Cruise Control
+#CheckBox1 0    
+OPT_INIT_PATH 0
+
+#RingCtrl0 2
+#RingCtrl1 1
+OPT_STOP 1
+SSTART -400
+TSTART 0
+TSTART_WRITE = 0;
+TSTOP 20
+SSTOP 900
+OPT_DIRECTION 0
+*SPEED 120
+*TSTOP 20
+*TSTART 0
+*SSTART -400
+*SSTOP 900
+
+OPT_SC 2
+PARSFILE Control\Gear_at\GearCL_3f60e7d2-b8c4-4d68-a9c4-d897bb3e2a86.par
+#BlueLink30 Control: Shifting (Closed Loop)`AT (All Available Gears)` Closed-Loop Shifting` , Shifting Control`GearCL_3f60e7d2-b8c4-4d68-a9c4-d897bb3e2a86
+
+PARSFILE Control\Speed_t\SpdTime_05520538-4611-46ce-8c7b-303dea426d90.par
+#BlueLink31 Control: Speed (Closed Loop) Using Target Speed`Constant: 0 km/h` Constant` , Speed vs. time`SpdTime_05520538-4611-46ce-8c7b-303dea426d90
+
+#MiscYellow0
+define_output laneWidth = 4.0 ; m ; lane width of road
+define_output vehWidth = WID_SM; m; vehicle width
+DEFINE_PARAMETER VUT_START_STATION = -400; m; VUT start station
+DEFINE_PARAMETER VUT_INIT_SPD = 120; km/h; VUT start speed
+#ENDMYellow
+
+PARSFILE Generic\Links\GenLink_c7add83a-53dc-442d-b7fb-24d2b8014a3f.par
+#BlueLink0 Generic Group of Links`PG: Straight Road, Two Lanes` Generic Proving Ground` , Miscellaneous`GenLink_c7add83a-53dc-442d-b7fb-24d2b8014a3f
+
+PARSFILE Generic\Group\GenGrp_c11e4bbe-5e3a-4498-91a5-6c42d1db378a.par
+#BlueLink1 Generic Data Group`2 Axle - Fx, Fy, Fz` Tire Force Arrows` , Miscellaneous`GenGrp_c11e4bbe-5e3a-4498-91a5-6c42d1db378a
+
+PARSFILE Generic\Group\GenGrp_b19a63e3-26c4-4383-af2a-e0a3c768776e.par
+#BlueLink2 Generic Data Group`Traffic: ACC Cut-In, 70 km/h` ADAS: Traffic for ACC & FCW` , Miscellaneous`GenGrp_b19a63e3-26c4-4383-af2a-e0a3c768776e
+
+PARSFILE Generic\VS_commands\GenVS_3bba8858-a58e-406a-a313-c020e7fa77a7.par
+#BlueLink3 Generic VS Commands`Euro NCAP: Cut-In/Out Scoring` ADAS Support` , Miscellaneous`GenVS_3bba8858-a58e-406a-a313-c020e7fa77a7
+
+PARSFILE Events\Events_862d0731-70f9-4532-b841-b8fd1f570f63.par
+#BlueLink4 Events`CCR Cut-In A. Wait for ACC to Intervene` Euro NCAP ACC Testing` , Miscellaneous`Events_862d0731-70f9-4532-b841-b8fd1f570f63
+
+#MiscYellow1
+! Unchecked box for "Set vehicle x,y,&yaw based on path?
+! Locate vehicle 2m to the right of the road center
+Xo  = VUT_START_STATION
+Yo = -2
+Yaw = 0
+#ENDMYellow
+
+PARSFILE Plot\Setup\Plot_315ea46e-b7b6-40d8-84de-a7ef2624a470.par
+#BlueLink8 Plot: Setup`Lateral Tracking vs. Station` Tracking` , Plot`Plot_315ea46e-b7b6-40d8-84de-a7ef2624a470
+
+PARSFILE Plot\Setup\Plot_076736e1-2cdd-49d5-8a36-d55940b011f0.par
+#BlueLink9 Plot: Setup`Steering: Handwheel Angle` Steering` , Plot`Plot_076736e1-2cdd-49d5-8a36-d55940b011f0
+
+PARSFILE Plot\Setup\Plot_57fbe53b-9356-4cb1-9fd0-29f3e70d3894.par
+#BlueLink10 Plot: Setup`Road Wheel Steer Angle - Front` Steering` , Plot`Plot_57fbe53b-9356-4cb1-9fd0-29f3e70d3894
+
+PARSFILE Plot\Setup\Plot_fc47e7de-e40f-4a76-ac75-28ddf27ac362.par
+#BlueLink11 Plot: Setup`Longit. Accel. of CG's vs. Time (m/s^2)` Vehicle Motion` , Plot`Plot_fc47e7de-e40f-4a76-ac75-28ddf27ac362
+
+PARSFILE Plot\Setup\Plot_dafae624-d48a-4548-93eb-fa73d080e21a.par
+#BlueLink12 Plot: Setup`Brake Control: M/C Pressure` Braking` , Plot`Plot_dafae624-d48a-4548-93eb-fa73d080e21a
+
+PARSFILE Plot\Setup\Plot_a146934a-339c-4983-9664-0f9749a0dfd6.par
+#BlueLink13 Plot: Setup`Vertical Forces` Tire Forces and Moments` , Plot`Plot_a146934a-339c-4983-9664-0f9749a0dfd6
+
+PARSFILE Plot\Setup\Plot_4f67d5b7-0627-47d3-baf7-12fe88008d68.par
+#BlueLink14 Plot: Setup`Gear Selection` Powertrain` , Plot`Plot_4f67d5b7-0627-47d3-baf7-12fe88008d68
+
+
+#EMBEDDED_NOTES
+#ACC: Automatic Cruise Control
+#GVT : Global Vehicle Target
+#VUT : Vehicle Under Test
+#FCW : Forward Collision Warning
+#
+#This procedure is based on a test scenario published by Euro NCAP for ACC systems.
+#
+#No steering controller is used, as LKAS is keeping the vehicle within it's lane, per the Euro NCAP spec.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Procedures; { ACC: Automatic Cruise Control } Euro NCAP ACC Cut-In Test, 120 km/h
+#Library : Procedures
+#DataSet : Euro NCAP ACC Cut-In Test, 120 km/h
+#Category: ACC: Automatic Cruise Control
+#FileID  : Proc_679121db-685f-43ce-b04a-e4d1d60bbb95
+#Modified: 09-15-2021 11:03:54
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Procedure
+
+END

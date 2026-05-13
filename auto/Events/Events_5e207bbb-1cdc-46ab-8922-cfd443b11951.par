@@ -1,0 +1,45 @@
+PARSFILE
+#FullDataName Events`End Initial Collision Run, 50%, Child`Pedestrian Euro NCAP
+#CheckBox1 1    
+*CLEAR
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 >=
+#RingCtrl10 1
+#RingCtrl11 4
+RESET_EVENTS
+*NAME1 t_event
+*VALUE1 T_WAIT
+#MiscYellow0
+TSTART_T_EVENT = T
+DEFINE_PARAMETER T_WAIT = 0.5; s; wait a ...
+a little before moving to the next event
+COL_TEST_DONE = 1
+INITIAL_COL = if(StrikePercentDiff < STRIKE_THRESH ,1, 0);
+#ENDMYellow
+
+MAKE_EVENT t_event >= T_WAIT ; Events\Events_886becbd-a639-4985-9d83-96f37bd887a6.par
+#BlueLink0 Events`Check 50% Collision, Child` Pedestrian Euro NCAP` , Events`Events_886becbd-a639-4985-9d83-96f37bd887a6
+
+SET_EVENT_ID 0 ! reset to default
+
+#EMBEDDED_NOTES
+#The initial vehicle-to-pedetrian collision check has completed
+#- Next a calculation that determines at what percent of the ego vehicle's front bumper, did the pedestrian strike
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Events; { Pedestrian Euro NCAP } End Initial Collision Run, 50%, Child
+#Library : Events
+#DataSet : End Initial Collision Run, 50%, Child
+#Category: Pedestrian Euro NCAP
+#FileID  : Events_5e207bbb-1cdc-46ab-8922-cfd443b11951
+#Created : 08-18-2021 16:48:23
+#Modified: 08-18-2021 16:48:54
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

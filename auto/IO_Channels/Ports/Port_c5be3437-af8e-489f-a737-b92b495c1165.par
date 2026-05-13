@@ -1,0 +1,23 @@
+PARSFILE
+#FullDataName I/O Channels: Ports`Steering Wheel Angle Export`Quick Start 4SFs
+#RingCtrl0 0
+#RingCtrl1 1
+#CheckBox0 0    
+
+IPORT_EXP 1
+PARSFILE IO_Channels\O_Channels\Export_b6c0aa1f-f10d-4958-a922-f2c12b2ecf73.par
+#BlueLink20 I/O Channels: Export`Steering Wheel Angle` 4 SF examples` , Library for factor B`Export_b6c0aa1f-f10d-4958-a922-f2c12b2ecf73
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Ports; { Quick Start 4SFs } Steering Wheel Angle Export
+#Library : I/O Channels: Ports
+#DataSet : Steering Wheel Angle Export
+#Category: Quick Start 4SFs
+#FileID  : Port_c5be3437-af8e-489f-a737-b92b495c1165
+#Created : 09-28-2022 08:16:36
+#Modified: 10-19-2022 10:02:47
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode I/O Ports
+
+END

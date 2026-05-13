@@ -1,0 +1,58 @@
+PARSFILE
+#FullDataName Procedures`05b - Fy compliance (opposed)`K&C Test Sequence
+#CheckBox1 1    
+OPT_INIT_PATH 1
+
+#RingCtrl0 4
+#RingCtrl1 -1
+#RingCtrl2 0
+OPT_STOP -1
+SSTART 0
+TSTART 0
+TSTART_WRITE = 0;
+SSTOP = SSTART + 1 ;
+OPT_DIRECTION 1
+TSTOP -1
+*TSTOP 250
+*TSTART 0
+*SSTART 0
+
+PARSFILE Generic\VS_commands\GenVS_c288a22f-37c8-4dcf-b2df-000c458d5150.par
+#BlueLink0 Generic VS Commands`05b - Fy compliance (opposed)` K&C Test Sequence` , Miscellaneous`GenVS_c288a22f-37c8-4dcf-b2df-000c458d5150
+
+PARSFILE Events\Events_3657f2d2-b8de-4501-8e6d-c9fa65828473.par
+#BlueLink1 Events`05b - Increase to max inward force` K&C Test Sequence` , Miscellaneous`Events_3657f2d2-b8de-4501-8e6d-c9fa65828473
+
+PARSFILE Plot\Setup\Plot_03ea5614-9c63-4a14-b58a-86da54c9e732.par
+#BlueLink8 Plot: Setup`Camber vs Fy` K&C Test Results` , Plot`Plot_03ea5614-9c63-4a14-b58a-86da54c9e732
+
+PARSFILE Plot\Setup\Plot_b95da2cb-0067-4f9d-b9fe-4dadffcd7a44.par
+#BlueLink9 Plot: Setup`Steer vs Fy` K&C Test Results` , Plot`Plot_b95da2cb-0067-4f9d-b9fe-4dadffcd7a44
+
+PARSFILE Plot\Setup\Plot_0773e087-151d-42db-a308-f02b7b6ee48d.par
+#BlueLink10 Plot: Setup`Lateral Forces` Tire Forces and Moments` , Plot`Plot_0773e087-151d-42db-a308-f02b7b6ee48d
+
+PARSFILE Plot\Setup\Plot_a146934a-339c-4983-9664-0f9749a0dfd6.par
+#BlueLink11 Plot: Setup`Vertical Forces` Tire Forces and Moments` , Plot`Plot_a146934a-339c-4983-9664-0f9749a0dfd6
+
+PARSFILE Plot\Setup\Plot_1d658b7a-d95c-4dcb-a910-5060d28ca6d2.par
+#BlueLink12 Plot: Setup`Steer vs. Jounce - Front` Suspension Motion` , Plot`Plot_1d658b7a-d95c-4dcb-a910-5060d28ca6d2
+
+PARSFILE Plot\Setup\Plot_ef35c81f-c710-4a6c-b123-19c7b8cbdfd2.par
+#BlueLink13 Plot: Setup`Jounce - Front vs Fy` K&C Test Results` , Plot`Plot_ef35c81f-c710-4a6c-b123-19c7b8cbdfd2
+
+PARSFILE Plot\Setup\Plot_32dd1ec8-9b9b-4e02-b880-b8f332714c53.par
+#BlueLink14 Plot: Setup`Jounce - Rear vs Fy` K&C Test Results` , Plot`Plot_32dd1ec8-9b9b-4e02-b880-b8f332714c53
+
+
+LOG_ENTRY Used Dataset: Procedures; { K&C Test Sequence } 05b - Fy compliance (opposed)
+#Library : Procedures
+#DataSet : 05b - Fy compliance (opposed)
+#Category: K&C Test Sequence
+#FileID  : Proc_cf564b1c-dde9-40b8-8cef-df61d5b7dcb5
+#Modified: 05-28-2021 14:59:20
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Procedure
+
+END

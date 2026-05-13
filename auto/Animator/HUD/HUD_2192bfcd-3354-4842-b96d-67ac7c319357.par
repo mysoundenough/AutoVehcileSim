@@ -1,0 +1,81 @@
+PARSFILE
+#FullDataName Animator: HUD`Cut-Out Label: VUT 70 km/h`Euro NCAP
+#CheckBox1 1    
+#CheckBox2 1    
+#CheckBox4 1    
+#CheckBox5 1    
+
+#RingCtrl0 2
+#RingCtrl1 18
+#RingCtrl2 0
+#RingCtrl3 0
+#RingCtrl4 1
+#RingCtrl5 18
+#RingCtrl6 0
+#RingCtrl7 0
+#RingCtrl8 2
+*TITLE_1 Car-to-Car: Cut-Out, VUT 70 km/h
+*LOCX_1 1
+*LOCY_1 6
+*COLOR_1 1 1 1
+*TITLE_2 Euro NCAP Highway Assist: ACC
+*LOCX_2 1
+*LOCY_2 2
+*COLOR_2 1 1 1
+
+
+#Selection 18 for Icon 0
+#Selection_1 18 for Icon
+#Selection_2 Title: Car-to-Car: Cut-Out, VUT 70 km/h AlX 0 AlY 0
+#Selection_3 Scale 1.000000 locX 16 locY 48
+#Selection_4 Fixed: 1 VarName:   ColorStr: 1 1 1
+#Selection_5 ImgName: 
+ANI_
+WRT_
+ADD_ENTITY hud_text Text Output
+location 16 48 18 18
+align_x left
+align_y top
+size_mode absolute
+place_mode absolute
+# var name is 
+prefix Car-to-Car: Cut-Out, VUT 70 km/h
+min_width_prefix 20
+color 1 1 1 1.0
+END_ENTITY hud_text Text Output
+#Selection 18 for Icon 1
+#Selection_1 18 for Icon
+#Selection_2 Title: Euro NCAP Highway Assist: ACC AlX 0 AlY 0
+#Selection_3 Scale 1.333333 locX 16 locY 16
+#Selection_4 Fixed: 1 VarName:   ColorStr: 1 1 1
+#Selection_5 ImgName: 
+ANI_
+WRT_
+ADD_ENTITY hud_text Text Output
+location 16 16 24 24
+align_x left
+align_y top
+size_mode absolute
+place_mode absolute
+# var name is 
+prefix Euro NCAP Highway Assist: ACC
+min_width_prefix 20
+color 1 1 1 1.0
+END_ENTITY hud_text Text Output
+
+#EMBEDDED_NOTES
+#Custom name for test: Euro NCAP Car-to-Car Stationary object ACC test series
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Animator: HUD; { Euro NCAP } Cut-Out Label: VUT 70 km/h
+#Library : Animator: HUD
+#DataSet : Cut-Out Label: VUT 70 km/h
+#Category: Euro NCAP
+#FileID  : HUD_2192bfcd-3354-4842-b96d-67ac7c319357
+#Created : 05-20-2021 17:05:43
+#Modified: 03-29-2022 16:14:38
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode HUD
+
+END

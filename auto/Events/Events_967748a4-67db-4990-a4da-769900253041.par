@@ -1,0 +1,46 @@
+PARSFILE
+#FullDataName Events`AEB CCRb B. Monitor Speed`Euro NCAP AEB Testing
+#CheckBox1 1    
+*CLEAR
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 <
+#RingCtrl1 ZERO ~=
+#RingCtrl10 2
+#RingCtrl11 4
+RESET_EVENTS
+*NAME1 Vxz_Fwd
+*NAME2 Vxz_Fwd
+*VALUE1 Vx_GVT
+*VALUE2 Contact
+*VALUE3 Contact
+#BlueLink10 ` , Miscellaneous` , Miscellaneous` , Miscellaneous`
+
+MAKE_EVENT Vxz_Fwd < Vx_GVT ; Events\Events_1e8b8b58-8d3d-44b4-8b07-3264e834b7eb.par
+#BlueLink0 Events`AEB CCRb C1. Monitor Stop Speed` Euro NCAP AEB Testing` , Events`Events_1e8b8b58-8d3d-44b4-8b07-3264e834b7eb
+
+DEFINE_EVENT Contact ; Events\Events_e593b8d2-c6aa-4557-901c-5eef73df74e0.par
+#BlueLink1 Events`AEB CCRb C2: Contact, Add Score` Euro NCAP AEB Testing` , Events`Events_e593b8d2-c6aa-4557-901c-5eef73df74e0
+
+SET_EVENT_ID 0 ! reset to default
+
+#EMBEDDED_NOTES
+#For this CCRb example the VUT must brake to avoid hitting the GVT:
+#- If the VUT Vx is less than MIN_THRESH (small pos. number close to 0) without hitting the GVT, or the VUT contacts the GVT, the example will end
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Events; { Euro NCAP AEB Testing } AEB CCRb B. Monitor Speed
+#Library : Events
+#DataSet : AEB CCRb B. Monitor Speed
+#Category: Euro NCAP AEB Testing
+#FileID  : Events_967748a4-67db-4990-a4da-769900253041
+#Created : 09-07-2021 15:12:50
+#Modified: 09-09-2021 16:06:47
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

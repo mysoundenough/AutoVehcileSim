@@ -1,0 +1,41 @@
+PARSFILE
+#FullDataName Animator: Shape Assembly`3A Sleeper Cab`Truck Lead Units
+*SCALE_X 1
+*SCALE_Y 1.1
+*SCALE_Z 1
+*OFFSET_X 0
+*OFFSET_Y 0
+*OFFSET_Z 0.4
+#CheckBox0 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 0    
+#CheckBox5 0    
+
+#RingCtrl1 2
+#RingCtrl2 2
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL_Groups\ShpGrp_e311ccbf-2a4d-467c-8afe-6d79204222ec.png
+PARSFILE Animator\STL\Shape_6f2d4912-956c-4c57-b4c5-6aea9e9d4aae.par
+#BlueLink0 Animator: Shape File Link`3A Sleeper Cab HD` Trucks: Cabs` , Shape File`Shape_6f2d4912-956c-4c57-b4c5-6aea9e9d4aae
+
+PARSFILE Animator\STL\Shape_de65eb35-56bc-44bd-856b-36fbed9c49dc.par
+#BlueLink1 Animator: Shape File Link`Sleeper Cab: Driver (Caucasian Female)` Trucks: Cabs` , Shape File`Shape_de65eb35-56bc-44bd-856b-36fbed9c49dc
+
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
+#BlueLink17 Animator: Camera Setup`YZ-Plane, No Offsets (with Yaw)` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+
+
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Truck Lead Units } 3A Sleeper Cab
+#Library : Animator: Shape Assembly
+#DataSet : 3A Sleeper Cab
+#Category: Truck Lead Units
+#FileID  : ShpGrp_e311ccbf-2a4d-467c-8afe-6d79204222ec
+#Created : 12-06-2021 14:17:09
+#Modified: 12-06-2021 14:20:03
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape Assembly
+
+END

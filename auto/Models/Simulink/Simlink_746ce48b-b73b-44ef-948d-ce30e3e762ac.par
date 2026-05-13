@@ -1,0 +1,87 @@
+PARSFILE
+#FullDataName Models: Simulink`Soft RT VS Connect (port 4380)`Live Video
+#RunMdlFile Extensions\Simulink\time_throttled.slx
+SIMULINK_MODEL_FILE Extensions\Simulink\time_throttled.slx
+#RingCtrl0 -1
+#RingCtrl2 0
+*MULTI_SOLVERS 0
+*MULTI_S_WRAPPER 0
+#CheckBox0 0    
+*USE_ALT_DIR 0
+#CheckBox1 0    
+*USE_DIFF_SOLVERS 0
+#CheckBox3 1    
+#CheckBox5 0    
+#RingCtrl1 0
+OPT_INT_METHOD 0
+#CheckBox4 0    
+OPT_IO_SYNC_FM 0
+*TSTEP 0.0005
+*FREQ_MODEL 2000
+*TSTEP_OUT 0.025
+*FREQ_OUT 40
+tstep 0.0005
+iprint 50
+#MiscYellow0
+! These keywords for "legacy" animation are
+! processed by vs_sfv and VS Visualizer. These
+! are ignored by vs_sf and VS Visualizer Pro.
+LIVE_SERVER localhost
+#ENDMYellow
+
+#BlueLink0 ` , Import` , Import` , Import`
+
+#BlueLink3 I/O Channels: Ports` ` , vs_ctl Ports` , vs_state Ports`
+
+#BlueLink4 I/O Channels: Ports` ` , vs_kin Ports` , vs_ctl Ports`
+
+#BlueLink5 I/O Channels: Ports` ` , vs_dyn Ports` , vs_kin Ports`
+
+#BlueLink6 I/O Channels: Ports` ` , vs_dyn Ports` , vs_dyn Ports`
+
+#MiscYellow1
+! These keywords are processed by the VS Connect "server" (typically a solver wrapper such as the
+! vs_sf s-function).
+VSC_OPT_ENABLE_SERVER 1
+! VSC_MIN_CONNECTIONS 1
+! VSC_DESIRED_CONNECTIONS 0
+! VSC_MAX_CONNECTIONS 3
+! VSC_STARTUP_TIMEOUT_MS 5000
+! VSC_SHUTDOWN_TIMEOUT_MS 3000
+
+! These keywords are processed by both VS Connect "server" and the "client" (e.g. VSV Pro, or some
+! other VS Connect client).
+! They instruct the server on which network interface and port to create the server process
+! that will service client connections.
+! They tell the client where to find the server.
+! VSC_HOST_ADDR localhost
+VSC_HOST_PORT 4380
+
+! These keywords are processed only by VSV Pro (or other remote client). As such,
+! they are relative to the client.
+! "Incoming" refers to data transmitted from the server (sovler) to the client (animator).
+! "Outgoing" refers to data transmitted from the client (animator) to the server (sovler).
+! VSC_INCOMING_PERIOD_MICROSEC 4167
+! VSC_OUTGOING_PERIOD_MICROSEC 4167
+#ENDMYellow
+
+LIVE_SERVER_UPDATE_FREQ_MAX 120
+
+#EMBEDDED_NOTES
+#This datasets includes VS Connect keywords for Live Animation using Unreal Engine or VSV Pro.
+#
+#See the tech memo titled "Unreal Engine Live Animation of a CarSim Solver in Simulink" for more information about this dataset. This tech memo can be foundon the Help menu:  Help -> Technical Memos -> Unreal Engine: Live Animation
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Models: Simulink; { Live Video } Soft RT VS Connect (port 4380)
+#Library : Models: Simulink
+#DataSet : Soft RT VS Connect (port 4380)
+#Category: Live Video
+#FileID  : Simlink_746ce48b-b73b-44ef-948d-ce30e3e762ac
+#Created : 06-01-2022 09:29:52
+#Modified: 05-19-2023 11:29:30
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode 
+
+END

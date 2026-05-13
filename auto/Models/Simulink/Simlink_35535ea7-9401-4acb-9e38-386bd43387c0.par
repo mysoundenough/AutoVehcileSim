@@ -1,0 +1,46 @@
+PARSFILE
+#FullDataName Models: Simulink`2 S-Functions for QSG, Ctl & Kin`Series of S-Functions
+#RunMdlFile Extensions\Simulink\sf_series\qsg_2sf_ctl_kin.slx
+SIMULINK_MODEL_FILE Extensions\Simulink\sf_series\qsg_2sf_ctl_kin.slx
+#RingCtrl0 -1
+#RingCtrl2 2
+OPT_MULTI_WRAPPERS 1
+*MULTI_S_WRAPPER 1
+*MULTI_SOLVERS 0
+#CheckBox0 0    
+*USE_ALT_DIR 0
+#CheckBox1 0    
+*USE_DIFF_SOLVERS 0
+#CheckBox3 1    
+#CheckBox5 0    
+#RingCtrl1 0
+OPT_INT_METHOD 0
+*TSTEP 0.0005
+*FREQ_MODEL 2000
+*TSTEP_OUT 0.025
+*FREQ_OUT 40
+tstep 0.0005
+iprint 50
+IWRAPPER 1
+IWRAPPER 2
+PARSFILE IO_Channels\Ports\Port_c5be3437-af8e-489f-a737-b92b495c1165.par
+#BlueLink4 I/O Channels: Ports`Steering Wheel Angle Export` Quick Start 4SFs` , vs_ctl Ports`Port_c5be3437-af8e-489f-a737-b92b495c1165
+
+IWRAPPER 3
+PARSFILE IO_Channels\Ports\Port_9d467a45-94ba-49d7-834a-f9d2802ff138.par
+#BlueLink5 I/O Channels: Ports`Yaw Rate Export` Quick Start 4SFs` , vs_kin Ports`Port_9d467a45-94ba-49d7-834a-f9d2802ff138
+
+IWRAPPER 4
+
+LOG_ENTRY Used Dataset: Models: Simulink; { Series of S-Functions } 2 S-Functions for QSG, Ctl & Kin
+#Library : Models: Simulink
+#DataSet : 2 S-Functions for QSG, Ctl & Kin
+#Category: Series of S-Functions
+#FileID  : Simlink_35535ea7-9401-4acb-9e38-386bd43387c0
+#Created : 10-13-2022 11:12:11
+#Modified: 11-09-2022 16:16:32
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode 
+
+END

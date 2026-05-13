@@ -1,0 +1,30 @@
+PARSFILE
+#FullDataName Events`Wait for Handoff (PID Torque)`Driver Model Handoff
+#CheckBox1 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 >
+#RingCtrl10 1
+#RingCtrl11 4
+*NAME1 t
+*VALUE1 10
+MAKE_EVENT t > 10 ; Events\Events_cb590939-0fed-447f-bee9-06310818c2c8.par
+#BlueLink0 Events`Handoff to PID Torque Controller` Driver Model Handoff` , Events`Events_cb590939-0fed-447f-bee9-06310818c2c8
+
+SET_EVENT_ID 0 ! reset to default
+
+LOG_ENTRY Used Dataset: Events; { Driver Model Handoff } Wait for Handoff (PID Torque)
+#Library : Events
+#DataSet : Wait for Handoff (PID Torque)
+#Category: Driver Model Handoff
+#FileID  : Events_2d6e53a0-d4c8-46de-92e2-25325afbe666
+#Created : 05-10-2023 14:06:53
+#Modified: 05-22-2023 11:34:26
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

@@ -1,0 +1,91 @@
+PARSFILE
+#FullDataName Vehicle: Trailer with 1 Axle`1A Large Rental Trailer`
+#VehCode S
+IUNIT_INCREMENT
+NAXLES 1
+IOBJECT_SAVE
+symbol_add  <<unit>> 1
+symbol_add  <<axle>> 1
+#CheckBox1 0    
+#CheckBox2 0    
+
+#RingCtrl0 3
+#RingCtrl1 1
+
+* Trailer front suspension
+iaxle 1
+WRITE_ADD_REFERENCE_FRAME_AXLE
+
+PARSFILE Suspensions\Compliance_SA\CmpSA_a86e13b0-109c-49b7-98c3-5ec5d039839d.par
+#BlueLink10 Suspension: Solid Axle Compliance, Springs, and Dampers`Susp. Compliance: Lg Rental Trailer (1A)` Trailers` , Compliance`CmpSA_a86e13b0-109c-49b7-98c3-5ec5d039839d
+
+PARSFILE Suspensions\Kin_Solid\KinSA_07cf5df5-d6e5-4dfd-9a74-afcbcbcb90d3.par
+#BlueLink11 Suspension: Solid Axle System Kinematics`Susp. Kinematics: Lg. Rental Trailer (1A)` Trailers` , Kinematics`KinSA_07cf5df5-d6e5-4dfd-9a74-afcbcbcb90d3
+
+itire 1 ! just in case
+* LF tire
+iaxle 1
+iside 1
+symbol_push  <<tire>> L<<axle>>
+WRITE_ADD_REFERENCE_FRAME_WHEEL
+PARSFILE Tires\Tire\Tire_d4b58623-61c9-4fd6-9d6b-d19fdbbbd93f.par
+#BlueLink9 Tire`175/65 R14` Touring Tires` , Tire`Tire_d4b58623-61c9-4fd6-9d6b-d19fdbbbd93f
+
+* RF tire
+iside 2
+symbol_push  <<tire>> R<<axle>>
+WRITE_ADD_REFERENCE_FRAME_WHEEL
+PARSFILE Tires\Tire\Tire_d4b58623-61c9-4fd6-9d6b-d19fdbbbd93f.par
+#BlueLink9 Tire`175/65 R14` Touring Tires` , Tire`Tire_d4b58623-61c9-4fd6-9d6b-d19fdbbbd93f
+
+* sprung mass data
+ADD_REFERENCE_FRAME TrlSprungMass
+SET_EULER_ANGLES YAW_PITCH_ROLL
+SET_X_NAME Xo_2
+WRT_Xo_2
+ANI_Xo_2
+SET_Y_NAME Yo_2
+WRT_Yo_2
+ANI_Yo_2
+SET_Z_NAME Zo_2
+WRT_Zo_2
+ANI_Zo_2
+SET_YAW_NAME Yaw_2
+WRT_Yaw_2
+ANI_Yaw_2
+SET_PITCH_NAME Pitch_2
+WRT_Pitch_2
+ANI_Pitch_2
+SET_ROLL_NAME Roll_E_2
+WRT_Roll_E_2
+ANI_Roll_E_2
+PARSFILE Brakes\2W_System\Brk2W_211ce6bb-d030-45a2-8053-0d8ba032edd4.par
+#BlueLink4 Brakes: Trailer Two-Wheel System`No Brakes` Trailer Brakes` , Brakes`Brk2W_211ce6bb-d030-45a2-8053-0d8ba032edd4
+
+PARSFILE Vehicles\Trl_Sprung_Mass\TrlSprM_13634a08-87d5-4727-97f9-1772bcdc5b2a.par
+#BlueLink0 Vehicle: Trailer Sprung Mass`Large Rental Trailer (1A)` Rental (box)` , Sprung mass`TrlSprM_13634a08-87d5-4727-97f9-1772bcdc5b2a
+
+PARSFILE Aerodynamics\Aero_Main\Aero_3479bdf1-b57e-4404-97d9-41c21f83ddb4.par
+#BlueLink1 Aerodynamics: Basic`No Aerodynamics` Generic Aerodynamic Properties` , Aerodynamics`Aero_3479bdf1-b57e-4404-97d9-41c21f83ddb4
+
+PARSFILE Animator\Vehicles\AniVeh_271da2b7-5c7b-4393-9cea-0e4a58d5b5d9.par
+#BlueLink2 Animator: Vehicles and Sensor Targets`Large Rental Trailer (1A)` Trailers` , Trailer 3D Shape`AniVeh_271da2b7-5c7b-4393-9cea-0e4a58d5b5d9
+
+IUNIT_DECREMENT
+IUNIT_INCREMENT
+IOBJECT_RESTORE
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Vehicles\Trailer_1A\Trl_1a_20c4640f-8853-4c1c-884c-42de28c36dc8.png
+
+LOG_ENTRY Used Dataset: Vehicle: Trailer with 1 Axle; 1A Large Rental Trailer
+#Library : Vehicle: Trailer with 1 Axle
+#DataSet : 1A Large Rental Trailer
+#Category: 
+#FileID  : Trl_1a_20c4640f-8853-4c1c-884c-42de28c36dc8
+#Created : 12-13-2021 10:12:44
+#Modified: 09-07-2023 14:41:14
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode S
+
+END

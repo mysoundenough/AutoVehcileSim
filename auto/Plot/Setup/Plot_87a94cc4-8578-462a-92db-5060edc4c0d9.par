@@ -1,0 +1,43 @@
+PARSFILE
+#FullDataName Plot: Setup`Steer vs Fy_R`K&C Test Results
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par
+#BlueLink0 Plot: Format`Default Plot Settings` ` , Plot format`PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS Steer_L1, Fy_R1
+PLOTCHANNELS Steer_R1, Fy_R1
+PLOTCHANNELS Steer_L2, Fy_R2
+PLOTCHANNELS Steer_R2, Fy_R2
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Steer vs Fy_R
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { K&C Test Results } Steer vs Fy_R
+#Library : Plot: Setup
+#DataSet : Steer vs Fy_R
+#Category: K&C Test Results
+#FileID  : Plot_87a94cc4-8578-462a-92db-5060edc4c0d9
+#Modified: 05-28-2021 14:59:41
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Plot Setup
+
+END

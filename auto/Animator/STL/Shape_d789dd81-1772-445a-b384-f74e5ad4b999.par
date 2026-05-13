@@ -1,0 +1,40 @@
+PARSFILE
+#FullDataName Animator: Shape File Link`Cardinal: North-West`Generic Proving Ground: Signs
+#MiscYellow3
+add_obj Animator\3D_shape_files_DS\proving_ground\nw.obj
+#ENDMYellow
+
+SET_COLOR 0.878 0.878 0.878
+SET_ANGLE_Z 135
+SET_ANGLE_Y 0
+SET_ANGLE_X 0
+SET_OFFSET_X -510
+SET_OFFSET_Y 510
+SET_OFFSET_Z -3
+*SPECULAR .5
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 0    
+
+SET_SPECULAR .5 .5 .5
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_33c6f397-2fc8-42a6-b996-30ea19d0dce7.par
+#BlueLink2 Animator: Camera Setup`Proving Grounds: Cardinal - North-West` Scene Specific Preview` , Video Camera`Camera_33c6f397-2fc8-42a6-b996-30ea19d0dce7
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_d789dd81-1772-445a-b384-f74e5ad4b999.png
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Generic Proving Ground: Signs } Cardinal: North-West
+#Library : Animator: Shape File Link
+#DataSet : Cardinal: North-West
+#Category: Generic Proving Ground: Signs
+#FileID  : Shape_d789dd81-1772-445a-b384-f74e5ad4b999
+#Modified: 05-28-2021 15:03:14
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape File
+
+END

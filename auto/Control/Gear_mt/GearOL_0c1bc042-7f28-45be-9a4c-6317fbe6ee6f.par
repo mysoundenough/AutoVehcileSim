@@ -1,0 +1,28 @@
+PARSFILE
+#FullDataName Control: Shifting (Open Loop)`1st Gear w/ 2 sec. Clutch Engagement`Constant
+
+MODE_TRANS_CONSTANT 1
+#CheckBox0 0    
+
+#RingCtrl0 CONSTANT
+GEAR_TRANS_CONSTANT 1
+#RadioCtrl0 0    
+
+PARSFILE Control\Clutch\ClCon_16dc587e-225e-4876-90f2-147f9cc7b726.par
+#BlueLink0 Control: Clutch (Open Loop)`Engage at 1 sec, 2 sec. duration` Single Engagement / Disengagement` , Clutch Control`ClCon_16dc587e-225e-4876-90f2-147f9cc7b726
+
+*SCALAR 1
+
+
+LOG_ENTRY Used Dataset: Control: Shifting (Open Loop); { Constant } 1st Gear w/ 2 sec. Clutch Engagement
+#Library : Control: Shifting (Open Loop)
+#DataSet : 1st Gear w/ 2 sec. Clutch Engagement
+#Category: Constant
+#FileID  : GearOL_0c1bc042-7f28-45be-9a4c-6317fbe6ee6f
+#Created : 04-14-2021 08:47:17
+#Modified: 05-28-2021 15:02:39
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Open-Loop Shift Control
+
+END

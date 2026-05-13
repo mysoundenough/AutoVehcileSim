@@ -1,0 +1,51 @@
+PARSFILE
+#FullDataName Animator: Shape Assembly`5.5-Ft Box (Reg Cab, Compact, Trans.)`Pickup Trucks
+*COLOR 0.588 0.588 0.588
+*OFFSET_X -1.93
+*OFFSET_Y 0
+*OFFSET_Z 0.375
+*TRANSPARENCY 0.5
+#CheckBox0 1    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 1    
+#CheckBox5 0    
+#CheckBox6 0    
+
+#RingCtrl1 2
+#RingCtrl2 2
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL_Groups\ShpGrp_a9251b31-250e-4ce9-86fd-929ba6c0b5e7.png
+PARSFILE Animator\STL\Shape_be39e8cd-41db-431b-8335-053ee363823b.par
+#BlueLink0 Animator: Shape File Link`5.5-Ft Box: Body (Compact)` Trucks: Pickup Beds` , Shape File`Shape_be39e8cd-41db-431b-8335-053ee363823b
+
+set_color 0.588 0.588 0.588
+set_transparency 0.5
+set_offset_x -1.93
+set_offset_y 0
+set_offset_z 0.375
+PARSFILE Animator\STL\Shape_40ed8b44-f3c3-41ab-b86f-836c9c0ba79d.par
+#BlueLink1 Animator: Shape File Link`5.5-Ft Box: Details (Compact)` Trucks: Pickup Beds` , Shape File`Shape_40ed8b44-f3c3-41ab-b86f-836c9c0ba79d
+
+set_color 0.588 0.588 0.588
+set_transparency 0.5
+set_offset_x -1.93
+set_offset_y 0
+set_offset_z 0.375
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
+#BlueLink17 Animator: Camera Setup`YZ-Plane, No Offsets (with Yaw)` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+
+
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Pickup Trucks } 5.5-Ft Box (Reg Cab, Compact, Trans.)
+#Library : Animator: Shape Assembly
+#DataSet : 5.5-Ft Box (Reg Cab, Compact, Trans.)
+#Category: Pickup Trucks
+#FileID  : ShpGrp_a9251b31-250e-4ce9-86fd-929ba6c0b5e7
+#Created : 05-20-2021 16:39:42
+#Modified: 09-20-2023 15:30:33
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape Assembly
+
+END

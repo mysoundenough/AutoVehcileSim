@@ -1,0 +1,21 @@
+PARSFILE
+#FullDataName Generic VS Commands`04a - Steer - Move to min (max R)`K&C Test Sequence
+#VehCode VS Commands
+
+#MiscYellow0
+! Set steer direction to be negative
+SW_RATE = -SW_RATE;
+#ENDMYellow
+
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { K&C Test Sequence } 04a - Steer - Move to min (max R)
+#Library : Generic VS Commands
+#DataSet : 04a - Steer - Move to min (max R)
+#Category: K&C Test Sequence
+#FileID  : GenVS_e6c8a865-488d-438e-83d3-d4fa86bef3d9
+#Modified: 05-28-2021 15:02:26
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode VS Commands
+
+END

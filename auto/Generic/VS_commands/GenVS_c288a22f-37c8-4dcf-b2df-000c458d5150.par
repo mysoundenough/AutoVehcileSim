@@ -1,0 +1,65 @@
+PARSFILE
+#FullDataName Generic VS Commands`05b - Fy compliance (opposed)`K&C Test Sequence
+#VehCode VS Commands
+
+#MiscYellow0
+! A lateral force compliance test with forces opposed
+! applies lateral forces (in the tire Y direction) at the ground 
+! with equal magnitude and opposite sign.
+
+! Set user parameters for range of (+/-) forces to be used
+DEFINE_PARAMETER FY_RANGE 4000; N; Range of applied force
+DEFINE_PARAMETER END_AFTER_EVENT 0; -; Switch to end run
+
+! Set the rate of change of force
+! Define units for the force rate of change
+DEFINE_UNITS N/s 1; 
+DEFINE_PARAMETER FY_RATE = 50; N/s; Force rate of change
+
+! Differential equation to smoothly change force
+DEFINE_OUTPUT fy_ground 0; N; Magnitude of Fy
+EQ_DIFFERENTIAL fy_ground = fy_rate;
+
+! Tire import forces are applied in the tire coordinate directions, but
+! K&C machines apply forces in the sprung mass directions. (Note that in this
+! test the sprung mass directions are aligned with the global directions, meaning
+! the yaw angle of each wheel can be used for the correction.)
+
+! activate the import variables for ground Fy
+IMPORT imp_fy_l1 VS_REPLACE 0
+IMPORT imp_fy_r1 VS_REPLACE 0
+IMPORT imp_fy_l2 VS_REPLACE 0
+IMPORT imp_fy_r2 VS_REPLACE 0
+
+EQ_IN imp_fy_l1 = fy_ground * cos(yaw_l1);
+EQ_IN imp_fy_r1 = -fy_ground * cos(yaw_r1);
+EQ_IN imp_fy_l2 = fy_ground * cos(yaw_l2);
+EQ_IN imp_fy_r2 = -fy_ground * cos(yaw_r2);
+
+! activate the import variables for ground Fx
+IMPORT imp_fx_l1 VS_REPLACE 0
+IMPORT imp_fx_r1 VS_REPLACE 0
+IMPORT imp_fx_l2 VS_REPLACE 0
+IMPORT imp_fx_r2 VS_REPLACE 0
+
+EQ_IN imp_fx_l1 = fy_ground * sin(yaw_l1);
+EQ_IN imp_fx_r1 = -fy_ground * sin(yaw_r1);
+EQ_IN imp_fx_l2 = fy_ground * sin(yaw_l2);
+EQ_IN imp_fx_r2 = -fy_ground * sin(yaw_r2);
+
+! Disable writing for first half-cycle
+OPT_WRITE 0
+#ENDMYellow
+
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { K&C Test Sequence } 05b - Fy compliance (opposed)
+#Library : Generic VS Commands
+#DataSet : 05b - Fy compliance (opposed)
+#Category: K&C Test Sequence
+#FileID  : GenVS_c288a22f-37c8-4dcf-b2df-000c458d5150
+#Modified: 05-28-2021 15:02:26
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode VS Commands
+
+END

@@ -1,0 +1,36 @@
+PARSFILE
+#FullDataName Animator: Group`Aero Force Moment Arrows (Trailer)`Aerodynamics
+PARSFILE Animator\Frames\Frame_6fb9348a-ddbe-448e-b17c-53c89c8c725c.par
+#BlueLink2 Animator: Reference Frame`Trailer Aero Fx` Aero Forces & Moments` , Miscellaneous`Frame_6fb9348a-ddbe-448e-b17c-53c89c8c725c
+
+PARSFILE Animator\Frames\Frame_a9d97375-f487-4d85-b338-15748b500a47.par
+#BlueLink3 Animator: Reference Frame`Trailer Aero Fy` Aero Forces & Moments` , Miscellaneous`Frame_a9d97375-f487-4d85-b338-15748b500a47
+
+PARSFILE Animator\Frames\Frame_55b58e6f-3ee0-4461-8f5c-4da38a35c75d.par
+#BlueLink4 Animator: Reference Frame`Trailer Aero Fz` Aero Forces & Moments` , Miscellaneous`Frame_55b58e6f-3ee0-4461-8f5c-4da38a35c75d
+
+PARSFILE Animator\Frames\Frame_8a42623d-a717-4154-8450-bb519bd85112.par
+#BlueLink5 Animator: Reference Frame`Trailer Aero Mx` Aero Forces & Moments` , Miscellaneous`Frame_8a42623d-a717-4154-8450-bb519bd85112
+
+PARSFILE Animator\Frames\Frame_0b85fa02-1067-443f-bc35-3755763cfae6.par
+#BlueLink6 Animator: Reference Frame`Trailer Aero My` Aero Forces & Moments` , Miscellaneous`Frame_0b85fa02-1067-443f-bc35-3755763cfae6
+
+PARSFILE Animator\Frames\Frame_6891bd62-6ca6-47aa-b431-52fb51f56645.par
+#BlueLink7 Animator: Reference Frame`Trailer Aero Mz` Aero Forces & Moments` , Miscellaneous`Frame_6891bd62-6ca6-47aa-b431-52fb51f56645
+
+
+#CheckBox0 0    
+
+
+LOG_ENTRY Used Dataset: Animator: Group; { Aerodynamics } Aero Force Moment Arrows (Trailer)
+#Library : Animator: Group
+#DataSet : Aero Force Moment Arrows (Trailer)
+#Category: Aerodynamics
+#FileID  : Group_3f4520b1-e574-4101-a85a-9fb304b89c3e
+#Created : 10-06-2022 13:38:37
+#Modified: 10-06-2022 13:39:41
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Animator Group
+
+END

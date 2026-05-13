@@ -1,0 +1,41 @@
+PARSFILE
+#FullDataName Events`03 - Roll - Move to min roll`K&C Test Sequence
+#CheckBox1 0    
+#CheckBox6 0    
+#CheckBox7 1    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 ZERO ~=
+#RingCtrl1 ZERO ~=
+#RingCtrl10 2
+#RingCtrl11 4
+*VALUE1 at_min_1
+*VALUE2 at_min_2
+#MiscYellow0
+! Disable writing during move
+OPT_WRITE 0
+#ENDMYellow
+
+PARSFILE Generic\VS_commands\GenVS_e23f88cc-4768-4c34-a8ed-7e3ae85339bd.par
+#BlueLink10 Generic VS Commands`03 - Roll - Move to min roll` K&C Test Sequence` , Miscellaneous`GenVS_e23f88cc-4768-4c34-a8ed-7e3ae85339bd
+
+DEFINE_EVENT at_min_1 ; Events\Events_01b1fc5e-c5be-49c6-8dfe-e57d5a9e6e84.par
+#BlueLink0 Events`03 - Roll - Front is at min roll` K&C Test Sequence` , Events`Events_01b1fc5e-c5be-49c6-8dfe-e57d5a9e6e84
+
+DEFINE_EVENT at_min_2 ; Events\Events_671c5820-a0a6-4bb9-9b72-dac7a6baafbf.par
+#BlueLink1 Events`03 - Roll - Rear is at min roll` K&C Test Sequence` , Events`Events_671c5820-a0a6-4bb9-9b72-dac7a6baafbf
+
+SET_EVENT_ID 0 ! reset to default
+
+LOG_ENTRY Used Dataset: Events; { K&C Test Sequence } 03 - Roll - Move to min roll
+#Library : Events
+#DataSet : 03 - Roll - Move to min roll
+#Category: K&C Test Sequence
+#FileID  : Events_f9213428-127e-444f-af4f-77eb8c1bc4e7
+#Modified: 05-28-2021 14:59:28
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

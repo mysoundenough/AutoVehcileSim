@@ -1,0 +1,55 @@
+PARSFILE
+#FullDataName Vehicle: Trailer Sprung Mass`Large Rental Trailer (1A)`Rental (box)
+#CheckBox0 0    
+#CheckBox1 0    
+#CheckBox2 1    
+
+#RingCtrl0 0
+X_LENGTH 2864
+H_CG_SU 971
+Z_LENGTH 2250
+LX_CG_SU 2000
+M_SU 465
+IXX_SU 708
+IYY_SU 1810
+IZZ_SU 1764
+IXZ_SU 0
+*RX 1.234
+*RY 1.973
+*RZ 1.948
+Y_CG_SU 0
+IXY_SU 0
+IYZ_SU 0
+Y_LENGTH 2100
+H_H_FRONT 500
+*HWC_LF 350
+*HWC_RF 350
+*LXA1 2864
+X_LENGTH 2864
+HT_SM 2250
+WID_SM 2100
+iaxle 1
+iside 1
+H_WC 350
+LX_AXLE 2864
+iside 2
+H_WC 350
+iaxle 2
+iside 1
+iside 2
+iaxle 3
+iside 1
+iside 2
+
+LOG_ENTRY Used Dataset: Vehicle: Trailer Sprung Mass; { Rental (box) } Large Rental Trailer (1A)
+#Library : Vehicle: Trailer Sprung Mass
+#DataSet : Large Rental Trailer (1A)
+#Category: Rental (box)
+#FileID  : TrlSprM_13634a08-87d5-4727-97f9-1772bcdc5b2a
+#Created : 12-13-2021 10:15:12
+#Modified: 03-18-2022 16:08:43
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Sprung Mass (Trailer)
+
+END

@@ -1,0 +1,122 @@
+Run made by CarSim 2024.1 at 14:46 on March 25, 2024.
+Revision 222209, March 18, 2024
+Started with simfile: simfile.sim
+
+Include PARSFILE "Results\Run_566c90b2-cbe2-44b0-af1d-ab19b83bb84a\Run_all.par"
+Used Dataset: Animator: Reference Frame; { Tracking: Vehicle } Vehicle X-Y
+Used Dataset: Animator: Camera Setup; { K & C } K & C View
+Installed keywords into VS Solver for MODEL_LAYOUT I_I
+ 01 - K & C: Design Load (no plots) <K & C Tests - Complete sequence>
+Used Dataset: Generic VS Commands; { K&C Test Sequence } 03 - Roll - moving wheel pads setup
+Used Dataset: Generic VS Commands; { K&C Test Sequence } 03 - Roll - Move to min roll
+Used Dataset: Events; { K&C Test Sequence } 03 - Roll - Move to min roll
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { K&C Test Results } Dive vs. Jounce - Front
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { K&C Test Results } Dive vs. Jounce - Rear
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { K&C Test Results } X movement vs Jounce - Front
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { K&C Test Results } X movement vs Jounce - Rear
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Suspension Motion } Camber vs. Jounce - Front
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Suspension Motion } Camber vs. Jounce - Rear
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { K&C Test Results } Y movement vs Jounce - Front
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { K&C Test Results } Y movement vs Jounce - Rear
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { K&C Test Results } Toe vs. Jounce - Front
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { K&C Test Results } Toe vs. Jounce - Rear
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { K&C Test Results } Axle relative roll
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Tire Forces and Moments } Vertical Forces
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Suspension Forces and Moments } Auxiliary Roll Moment
+Used Dataset: Procedures; { K&C Test Sequence } 03 - Roll - moving wheel pads
+ 03b - Roll, stab bars on <K & C Tests - Complete sequence>
+Used Dataset: CarSim Run Control; { K & C Tests - Complete sequence } 03b - Roll, stab bars on
+
+Time to read input = 0.0749993
+Function FY_TIRE_CARPET(1,1) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function MZ_TIRE_CARPET(1,1) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function FY_TIRE_CARPET(1,2) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function MZ_TIRE_CARPET(1,2) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function FY_TIRE_CARPET(2,1) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function MZ_TIRE_CARPET(2,1) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function FY_TIRE_CARPET(2,2) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function MZ_TIRE_CARPET(2,2) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function F_REB_STOP_TABLE(1,1) extrapolated (out of range HIGH) for X = 1.84289e-05 mm at T = 0
+Function F_JNC_STOP_TABLE(1,1) extrapolated (out of range LOW) for X = 1.84289e-05 mm at T = 0
+Function F_REB_STOP_TABLE(1,2) extrapolated (out of range HIGH) for X = 1.84289e-05 mm at T = 0
+Function F_JNC_STOP_TABLE(1,2) extrapolated (out of range LOW) for X = 1.84289e-05 mm at T = 0
+Function F_REB_STOP_TABLE(2,1) extrapolated (out of range HIGH) for X = -6.6721e-07 mm at T = 0
+Function F_JNC_STOP_TABLE(2,1) extrapolated (out of range LOW) for X = -6.6721e-07 mm at T = 0
+Function F_REB_STOP_TABLE(2,2) extrapolated (out of range HIGH) for X = -6.6721e-07 mm at T = 0
+Function F_JNC_STOP_TABLE(2,2) extrapolated (out of range LOW) for X = -6.6721e-07 mm at T = 0
+
+Run started: VS output file = Results\Run_566c90b2-cbe2-44b0-af1d-ab19b83bb84a\LastRun.vsb
+Function L_RELAX_X_FZ_TABLE(1,1) extrapolated (out of range HIGH) for X = 1 N at T = 13.5415
+
+Event #1 occurred at t = 28.5415: at_min_2
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_671c5820-a0a6-4bb9-9b72-dac7a6baafbf.par"
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Generic\VS_commands\GenVS_365f0b29-8bf2-4aae-bf74-4fd6da1c7851.par"
+Used Dataset: Generic VS Commands; { K&C Test Sequence } 03 - Roll - Record min - Rr
+Used Dataset: Events; { K&C Test Sequence } 03 - Roll - Rear is at min roll
+Function L_RELAX_X_FZ_TABLE(2,1) extrapolated (out of range HIGH) for X = 1.00001 N at T = 30.5895
+
+Event #2 occurred at t = 37.523: at_min_1
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_01b1fc5e-c5be-49c6-8dfe-e57d5a9e6e84.par"
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Generic\VS_commands\GenVS_6569a017-df86-4248-8537-db32aa1ff19b.par"
+Used Dataset: Generic VS Commands; { K&C Test Sequence } 03 - Roll - Record min - Fr
+Used Dataset: Events; { K&C Test Sequence } 03 - Roll - Front is at min roll
+
+Event #3 occurred at t = 37.5235: at_min_1 & at_min_2
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_9e694a39-782a-41e5-a961-80599134c797.par"
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Generic\VS_commands\GenVS_202b5f5f-cc79-4682-9b12-4484656358e1.par"
+Used Dataset: Generic VS Commands; { K&C Test Sequence } 03 - Roll - Move to max roll
+Used Dataset: Events; { K&C Test Sequence } 03 - Roll - Move to max roll
+Function L_RELAX_X_FZ_TABLE(1,2) extrapolated (out of range HIGH) for X = 1.00001 N at T = 88.588
+Function L_RELAX_X_FZ_TABLE(2,2) extrapolated (out of range HIGH) for X = 1.00001 N at T = 97.472
+
+Event #4 occurred at t = 102.697: at_max_2
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_2d43d795-9dbb-4bec-9a3d-861e802ebd56.par"
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Generic\VS_commands\GenVS_46b1e278-e31b-4744-ba8b-a9da025279d4.par"
+Used Dataset: Generic VS Commands; { K&C Test Sequence } 03 - Roll - Record max - Rr
+Used Dataset: Events; { K&C Test Sequence } 03 - Roll - Rear is at max roll
+
+Event #5 occurred at t = 112.57: at_max_1
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_27d483bf-8593-4eac-9477-33b09244b16a.par"
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Generic\VS_commands\GenVS_a520bfa1-5ab7-4dd1-9677-c4ff416fc8bb.par"
+Used Dataset: Generic VS Commands; { K&C Test Sequence } 03 - Roll - Record max - Fr
+Used Dataset: Events; { K&C Test Sequence } 03 - Roll - Front is at max roll
+
+Event #6 occurred at t = 112.57: at_max_1 & at_max_2
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_23fb4cd7-c0f8-4b0f-aeda-4360d7160386.par"
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Generic\VS_commands\GenVS_ea5c9b1b-1bd4-4d9b-b7a5-04c176e492ab.par"
+Used Dataset: Generic VS Commands; { K&C Test Sequence } 03 - Roll - Return to min roll
+Used Dataset: Events; { K&C Test Sequence } 03 - Roll: Return to min roll
+
+Event #7 occurred at t = 173.153: at_min_2
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_60cc7fa4-fa88-4642-b248-e6124d0e89c7.par"
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Generic\VS_commands\GenVS_1ecdac55-7579-4d9d-9af2-8627a061fce0.par"
+Used Dataset: Generic VS Commands; { K&C Test Sequence } 03 - Roll - Delete eqs - Rr
+Used Dataset: Events; { K&C Test Sequence } 03 - Roll - Rear is back at min roll
+
+Event #8 occurred at t = 187.527: at_min_1
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_b82f3cc1-30aa-4c6d-81b7-cba48215e660.par"
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Generic\VS_commands\GenVS_7ed8643f-d288-43d8-a2fe-9845bd60973f.par"
+Used Dataset: Generic VS Commands; { K&C Test Sequence } 03 - Roll - Delete eqs - Fr
+Used Dataset: Events; { K&C Test Sequence } 03 - Roll - Front is back at min roll
+
+Event #9 occurred at t = 187.528: at_min_1 & at_min_2
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_b5af09b5-d8ad-4e81-ae24-eebce691780e.par"
+
+Run stopped at t = 187.528. VS Command STOP_RUN_NOW End event triggered
+Used Dataset: Events; End Events
+
+Computational time ratio: RTIME = 0.0969858 (real time)/(simulation time)
+

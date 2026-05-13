@@ -1,0 +1,47 @@
+PARSFILE
+#FullDataName Events`AEB CCRm,s B. Monitor Braking Progress`Euro NCAP AEB Testing
+#CheckBox1 1    
+*CLEAR
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 <=
+#RingCtrl1 ZERO ~=
+#RingCtrl10 2
+#RingCtrl11 4
+RESET_EVENTS
+*NAME1 Vxz_Fwd
+*NAME2 Contact
+*VALUE1 Vx_GVT + MIN_THRESH
+*VALUE2 Contact
+#BlueLink10 ` , Miscellaneous` , Miscellaneous` , Miscellaneous`
+
+MAKE_EVENT Vxz_Fwd <= Vx_GVT + MIN_THRESH ; Events\Events_54997a14-3189-49b7-9db1-135f225583cf.par
+#BlueLink0 Events`AEB CCRm,s C. Check More Tests` Euro NCAP AEB Testing` , Events`Events_54997a14-3189-49b7-9db1-135f225583cf
+
+DEFINE_EVENT Contact ; Events\Events_d63a0817-6457-4f53-8a5c-0e89ce7b338a.par
+#BlueLink1 Events`AEB CCRm,s F1: New Test, Decrease Spd` Euro NCAP AEB Testing` , Events`Events_d63a0817-6457-4f53-8a5c-0e89ce7b338a
+
+SET_EVENT_ID 0 ! reset to default
+
+#EMBEDDED_NOTES
+#For this CCRm or CCRs example, the VUT must slow down to avoid hitting the GVT:
+#- If the VUT Vx is less than MIN_THRESH (small pos. number close to 0) + the speed of the GVT, without hitting the GVT, or the VUT contacts the GVT, the example will end
+#
+#If Contact is not zero, a crash occured. Try again with a lower speed.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Events; { Euro NCAP AEB Testing } AEB CCRm,s B. Monitor Braking Progress
+#Library : Events
+#DataSet : AEB CCRm,s B. Monitor Braking Progress
+#Category: Euro NCAP AEB Testing
+#FileID  : Events_c5b04c43-87bb-49b7-8874-f5a05bbac563
+#Created : 09-08-2021 11:45:44
+#Modified: 09-09-2021 16:29:47
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

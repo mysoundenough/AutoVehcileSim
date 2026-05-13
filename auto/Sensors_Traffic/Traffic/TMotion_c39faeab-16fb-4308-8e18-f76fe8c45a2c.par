@@ -1,0 +1,91 @@
+PARSFILE
+#FullDataName Multiple Moving Objects`Lg Occl Vehicle, Cross`Euro NCAP
+#RingCtrl0 1
+DEFINE_MOVING_OBJECTS 1
+#RingCtrl1 0
+#RingCtrl2 2
+#RingCtrl3 3
+#CheckBox0 0    
+#CheckBox1 1    
+#CheckBox2 1    
+#CheckBox25 1    
+#CheckBox26 1    
+#CheckBox38 1    
+
+DZ_OBJECT 0
+#MiscYellow0
+#DEFINE_PARAMETER LRG_VEH_LTARG_FR_BMP = 0; m; small occlusion vehicle start station
+#EQ_PRE_INIT LRG_VEH_LTARG_FR_BMP =  0.88; m; dist from fr axle to fr. bump
+#DEFINE_PARAMETER LRG_VEH_LTARG = 0; m; small occlusion vehicle start station
+#EQ_PRE_INIT LRG_VEH_LTARG =  PED_L_START - (LRG_VEH_LTARG_FR_BMP+LRG_VEH_LN); m; sml
+#ENDMYellow
+
+*L LRG_VEH_LTARG
+*PATH_ID 1005
+*ROAD_ID 1005
+*HEADING -(PI/2)
+
+IOBJECT_INCREMENT
+symbol_add <<o>> 1
+SET_DESCRIPTION OBJECT_NAME Lg Occl Vehicle, Cross
+OPT_SPEED_OBJ 0
+DEFINE_PARAMETER LRG_VEH_LTARG_FR_BMP = 0; m; small occlusion vehicle start station
+EQ_PRE_INIT LRG_VEH_LTARG_FR_BMP =  0.88; m; dist from fr axle to fr. bump
+DEFINE_PARAMETER LRG_VEH_LTARG = 0; m; small occlusion vehicle start station
+EQ_PRE_INIT LRG_VEH_LTARG =  PED_L_START - (LRG_VEH_LTARG_FR_BMP+LRG_VEH_LN); m; sml
+EQ_INIT HEADO_<<o>> = -(PI/2)
+#RingCtrl4 1
+PATH_ID_OBJ 1005
+ROAD_ID_OBJ 1005
+OPT_RECYCLE_OBJ 0
+*SINIT_1 LRG_VEH_STRT_S
+EQ_INIT S_OBJ_<<o>> = LRG_VEH_STRT_S
+EQ_INIT LATO_<<o>> = LRG_VEH_LTARG
+*COLOR_1 1 1 1
+SET_RUN_COLOR 1 1 1
+*H_TARGET_1 -2.0
+H_OBJ -2.0
+PARSFILE Animator\Vehicles\AniVeh_7766865b-f79e-4505-b015-c9c8746f4878.par
+#BlueLink0 Animator: Vehicles and Sensor Targets`Pickup, Crew Cab 8 Bed Dark` Pickup Trucks` , 3D Shape for Video`AniVeh_7766865b-f79e-4505-b015-c9c8746f4878
+
+OPT_SHAPE_OBJ 1
+SHAPE_TYPE_OBJ 1
+DZ_OBJECT 0
+*SIZE_1 6.7
+LENGTH_OBJ 6.7
+*WIDTH_1 2.4
+WIDTH_OBJ 2.4
+*LX_FRONT_1 0.9
+LX_FRONT_OBJ 0.9
+*REFLECT_1 2
+MATERIAL_TYPE_OBJ 2
+WRITE_ADD_REFERENCE_FRAME_OBJECT
+X_REF_LENGTH 1
+Y_REF_LENGTH 1
+Z_REF_LENGTH 1
+X_LENGTH 6.7
+Y_LENGTH 2.4
+Z_LENGTH 2
+add_obj Resources\Animator\3D_Shape_Files\Geometric_Shapes\Cubes\cube_1m_wide.obj
+set_transparency 0.5
+SET_OFFSET_X -0.365672
+SET_OFFSET_Z 0.5
+SET_COLOR 1 1 1
+UNSET_RUN_COLOR
+
+#EMBEDDED_NOTES
+#Small and large vehicles at rest, designed to occlude the sensing of the ego vehicle in tracking the pedestrian target
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Multiple Moving Objects; { Euro NCAP } Lg Occl Vehicle, Cross
+#Library : Multiple Moving Objects
+#DataSet : Lg Occl Vehicle, Cross
+#Category: Euro NCAP
+#FileID  : TMotion_c39faeab-16fb-4308-8e18-f76fe8c45a2c
+#Created : 08-19-2021 15:06:00
+#Modified: 08-19-2021 16:01:06
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Multiple Objects
+
+END

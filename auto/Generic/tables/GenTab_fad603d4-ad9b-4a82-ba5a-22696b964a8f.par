@@ -1,0 +1,44 @@
+PARSFILE
+#FullDataName Generic Table`Batt. discharge resis. (5 milliohms)`Powertrain (HEV)
+#RingCtrl0 2D_SPLINE
+#CheckBox0 1    
+
+*3D_XLabel Temperature (C)
+*3D_YLabel State of charged (-)
+*3D_ZLabel Resistance (V2/W)
+
+#DiagramTwo0
+*3D_DATA 3, 4 ! columns x rows
+R_DIS_BATTERY_CARPET 2D_SPLINE
+0, 0, 25, 45
+0, 0.01508, 0.00754, 0.00754
+0.2, 0.012, 0.006, 0.006
+0.6, 0.01076, 0.00538, 0.00538
+1, 0.01248, 0.00624, 0.00624
+ENDTABLE
+
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+*KEYWORD R_DIS_BATTERY
+*X_LABEL State of charged (-)
+*Y_LABEL Resistance (V2/W)
+*X_LABEL_2 Temperature (C)
+
+
+#EMBEDDED_NOTES
+#5.38 milli-Ohms at nominal (SOC: 60%, Temperature: 25C)
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic Table; { Powertrain (HEV) } Batt. discharge resis. (5 milliohms)
+#Library : Generic Table
+#DataSet : Batt. discharge resis. (5 milliohms)
+#Category: Powertrain (HEV)
+#FileID  : GenTab_fad603d4-ad9b-4a82-ba5a-22696b964a8f
+#Created : 11-19-2021 18:58:52
+#Modified: 01-14-2022 12:39:55
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode table
+
+END

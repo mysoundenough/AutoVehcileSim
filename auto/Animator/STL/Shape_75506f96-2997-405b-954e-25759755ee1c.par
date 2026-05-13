@@ -1,0 +1,37 @@
+PARSFILE
+#FullDataName Animator: Shape File Link`Infinite Road: Walls`Generic Proving Ground: Cones and Walls
+#MiscYellow3
+add_obj Animator\3D_shape_files_DS\proving_ground\infinite_road_walls.obj
+#ENDMYellow
+
+SET_COLOR 0.878 0.878 0.878
+SET_SCALE_X 1
+SET_SCALE_Y 1
+SET_SCALE_Z 1
+*SPECULAR .6
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 0    
+
+SET_SPECULAR .6 .6 .6
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_d021cf05-f385-430e-94d3-c9c3fa76a17b.par
+#BlueLink2 Animator: Camera Setup`Proving Grounds: Infinite Road Wall` Scene Specific Preview` , Video Camera`Camera_d021cf05-f385-430e-94d3-c9c3fa76a17b
+
+*IMAGE_TYPE DEFAULT*IMAGE_TYPE PASTED
+*IMAGE_FILE Animator\STL\Shape_75506f96-2997-405b-954e-25759755ee1c.png
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Generic Proving Ground: Cones and Walls } Infinite Road: Walls
+#Library : Animator: Shape File Link
+#DataSet : Infinite Road: Walls
+#Category: Generic Proving Ground: Cones and Walls
+#FileID  : Shape_75506f96-2997-405b-954e-25759755ee1c
+#Modified: 05-28-2021 15:03:14
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape File
+
+END

@@ -1,0 +1,44 @@
+PARSFILE
+#FullDataName Animator: Shape File Link`Skid-Steer Loader: Tire (R)`Cars: Other Vehicles
+#MiscYellow3
+add_obj Animator\3D_Shape_Files\Other_Vehicles\Skid_Steer\Skid_Steer_R_Tires.osg
+#ENDMYellow
+
+SET_COLOR 1 0.4 0
+SET_SCALE_X 0.00199
+SET_SCALE_Y 0.00199
+SET_SCALE_Z 0.00199
+SET_ANGLE_Z 180
+*SPECULAR 0.5
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 0.5 0.5 0.5
+vsv_enable_shadows_recursive
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_33b67ee8-3864-4ecd-9184-4b42ee5fc75f.par
+#BlueLink2 Animator: Camera Setup`Vehicle Pictures` Shape Preview` , Video Camera`Camera_33b67ee8-3864-4ecd-9184-4b42ee5fc75f
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_c6a2c578-0a9b-4129-817a-7b3296176866.png
+
+#EMBEDDED_NOTES
+#Scale factor of 0.00199 based on converting the art shape radius of 503 mm to 1 mm, allowing the scaling to be handled by the tire screen.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Cars: Other Vehicles } Skid-Steer Loader: Tire (R)
+#Library : Animator: Shape File Link
+#DataSet : Skid-Steer Loader: Tire (R)
+#Category: Cars: Other Vehicles
+#FileID  : Shape_c6a2c578-0a9b-4129-817a-7b3296176866
+#Created : 03-02-2023 13:46:07
+#Modified: 03-02-2023 16:20:14
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape File
+
+END

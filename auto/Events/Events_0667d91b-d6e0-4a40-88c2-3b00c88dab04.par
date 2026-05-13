@@ -1,0 +1,42 @@
+PARSFILE
+#FullDataName Events`A. Bode Analysis for Steer Torque Input`Linearization
+#CheckBox1 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 >
+#RingCtrl10 1
+#RingCtrl11 4
+*NAME1 t
+*VALUE1 10
+#MiscYellow0
+linear_control IMP_STEER_T_IN
+linear_output EXP_AVz
+linear_output EXP_AY
+#ENDMYellow
+
+MAKE_EVENT t > 10 ; Events\Events_5a16f785-db71-4d8f-a0e2-b8efa57d1ff2.par
+#BlueLink0 Events`B. Linearize (Steer Torque Input)` Linearization` , Events`Events_5a16f785-db71-4d8f-a0e2-b8efa57d1ff2
+
+SET_EVENT_ID 0 ! reset to default
+
+#EMBEDDED_NOTES
+#This dataset specifies that the input for the model will be steering wheel torque.
+#
+#The linearization is applied after 10 seconds from the simulation started in order to wait for the vehicle to come to a steady-state condition after the math model initialization.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Events; { Linearization } A. Bode Analysis for Steer Torque Input
+#Library : Events
+#DataSet : A. Bode Analysis for Steer Torque Input
+#Category: Linearization
+#FileID  : Events_0667d91b-d6e0-4a40-88c2-3b00c88dab04
+#Created : 02-26-2024 14:23:36
+#Modified: 02-26-2024 14:24:48
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

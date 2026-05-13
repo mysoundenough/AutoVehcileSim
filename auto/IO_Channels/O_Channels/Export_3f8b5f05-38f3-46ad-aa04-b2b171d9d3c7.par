@@ -1,0 +1,24 @@
+PARSFILE
+#FullDataName I/O Channels: Export`Ay`4 SF examples
+#RingCtrl1 1
+
+
+EXPORT Ay
+#MiscYellow0
+#Number of Selected Channels: 1
+#CHN_NAME: Ay
+#ENDMYellow
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Export; { 4 SF examples } Ay
+#Library : I/O Channels: Export
+#DataSet : Ay
+#Category: 4 SF examples
+#FileID  : Export_3f8b5f05-38f3-46ad-aa04-b2b171d9d3c7
+#Created : 09-28-2022 08:19:17
+#Modified: 10-19-2022 10:05:17
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Export Channels
+
+END

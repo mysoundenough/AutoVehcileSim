@@ -1,0 +1,39 @@
+PARSFILE
+#FullDataName Events`07a,b,c,d - Mz comp - increase to max`K&C Test Sequence
+#CheckBox1 1    
+*CLEAR
+#CheckBox6 0    
+#CheckBox7 1    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 ZERO ~=
+#RingCtrl10 1
+#RingCtrl11 4
+RESET_EVENTS
+*VALUE1 mz_ground >=MZ_RANGE
+#MiscYellow0
+! Enable writing
+OPT_WRITE 1
+END_AFTER_EVENT 1
+#ENDMYellow
+
+PARSFILE Generic\VS_commands\GenVS_51c55f9a-4c77-456b-a83c-e4e0225d7609.par
+#BlueLink10 Generic VS Commands`07a,b,c,d - Mz comp - Increase to max` K&C Test Sequence` , Miscellaneous`GenVS_51c55f9a-4c77-456b-a83c-e4e0225d7609
+
+DEFINE_EVENT mz_ground >=MZ_RANGE ; Events\Events_a055a4e1-6649-4220-a1e5-3d6d814a59d4.par
+#BlueLink0 Events`07a,b,c,d - Mz comp - reduce to min` K&C Test Sequence` , Events`Events_a055a4e1-6649-4220-a1e5-3d6d814a59d4
+
+SET_EVENT_ID 0 ! reset to default
+
+LOG_ENTRY Used Dataset: Events; { K&C Test Sequence } 07a,b,c,d - Mz comp - increase to max
+#Library : Events
+#DataSet : 07a,b,c,d - Mz comp - increase to max
+#Category: K&C Test Sequence
+#FileID  : Events_e60a26e3-6f98-40e2-bf99-64ab4d3f15a8
+#Modified: 05-28-2021 14:59:28
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

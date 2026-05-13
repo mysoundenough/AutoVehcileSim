@@ -1,0 +1,33 @@
+PARSFILE
+#FullDataName I/O Channels: Export`ABS: Vehicle Speed, M/C Pressure`Brake System Control
+#RingCtrl1 1
+
+
+EXPORT Vx_L1
+EXPORT Vx_R1
+EXPORT Vx_L2
+EXPORT Vx_R2
+EXPORT Vxz_Fwd
+EXPORT Pbk_Con
+#MiscYellow0
+#Number of Selected Channels: 6
+#CHN_NAME: Vx_L1
+#CHN_NAME: Vx_R1
+#CHN_NAME: Vx_L2
+#CHN_NAME: Vx_R2
+#CHN_NAME: Vxz_Fwd
+#CHN_NAME: Pbk_Con
+#ENDMYellow
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Export; { Brake System Control } ABS: Vehicle Speed, M/C Pressure
+#Library : I/O Channels: Export
+#DataSet : ABS: Vehicle Speed, M/C Pressure
+#Category: Brake System Control
+#FileID  : Export_df421d7e-0823-442a-b07c-0057573f0076
+#Modified: 06-16-2021 12:31:46
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Export Channels
+
+END

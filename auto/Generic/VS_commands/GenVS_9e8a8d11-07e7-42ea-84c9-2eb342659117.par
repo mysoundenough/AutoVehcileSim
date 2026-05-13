@@ -1,0 +1,87 @@
+PARSFILE
+#FullDataName Generic VS Commands`Wheel Restraint Imports`Vehicle Hauling
+#VehCode VS Commands
+
+#MiscYellow0
+! Define Road surface as Imported Wheel Contact Points on the Hauler
+Import IMP_ZGND_L1 Replace 0.0 
+Import IMP_ZGND_R1 Replace 0.0 
+Import IMP_ZGND_L2 Replace 0.0 
+Import IMP_ZGND_R2 Replace 0.0
+mu_road_constant 0
+eq_out rot_l1 0
+eq_out rot_r1 0
+eq_out rot_l2 0
+eq_out rot_r2 0
+
+! Define Imports for Restraint Point Positions on the Hauler
+define_import imp_restrain_l1_x
+import imp_restrain_l1_x
+define_import imp_restrain_r1_x
+import imp_restrain_r1_x
+define_import imp_restrain_l2_x
+import imp_restrain_l2_x
+define_import imp_restrain_r2_x
+import imp_restrain_r2_x
+
+define_import imp_restrain_l1_y
+import imp_restrain_l1_y
+define_import imp_restrain_r1_y
+import imp_restrain_r1_y
+define_import imp_restrain_l2_y
+import imp_restrain_l2_y
+define_import imp_restrain_r2_y
+import imp_restrain_r2_y
+
+define_import imp_restrain_l1_z
+import imp_restrain_l1_z
+define_import imp_restrain_r1_z
+import imp_restrain_r1_z
+define_import imp_restrain_l2_z
+import imp_restrain_l2_z
+define_import imp_restrain_r2_z
+import imp_restrain_r2_z
+
+
+! Define Imports for Restraint Point Velocities on the Hauler
+define_import imp_restrain_l1_vx
+import imp_restrain_l1_vx
+define_import imp_restrain_r1_vx
+import imp_restrain_r1_vx
+define_import imp_restrain_l2_vx
+import imp_restrain_l2_vx
+define_import imp_restrain_r2_vx
+import imp_restrain_r2_vx
+
+define_import imp_restrain_l1_vy
+import imp_restrain_l1_vy
+define_import imp_restrain_r1_vy
+import imp_restrain_r1_vy
+define_import imp_restrain_l2_vy
+import imp_restrain_l2_vy
+define_import imp_restrain_r2_vy
+import imp_restrain_r2_vy
+
+define_import imp_restrain_l1_vz
+import imp_restrain_l1_vz
+define_import imp_restrain_r1_vz
+import imp_restrain_r1_vz
+define_import imp_restrain_l2_vz
+import imp_restrain_l2_vz
+define_import imp_restrain_r2_vz
+import imp_restrain_r2_vz
+#ENDMYellow
+
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { Vehicle Hauling } Wheel Restraint Imports
+#Library : Generic VS Commands
+#DataSet : Wheel Restraint Imports
+#Category: Vehicle Hauling
+#FileID  : GenVS_9e8a8d11-07e7-42ea-84c9-2eb342659117
+#Created : 01-11-2023 13:33:03
+#Modified: 01-11-2023 13:35:35
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode VS Commands
+
+END

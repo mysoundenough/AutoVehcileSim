@@ -1,0 +1,62 @@
+# Blender 3.5.1 MTL File: 'tractor_front_details.blend'
+# www.blender.org
+
+newmtl TractorGrill
+Ns 27.999998
+Ka 1.000000 1.000000 1.000000
+Ks 0.650000 0.650000 0.650000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd Tractor/TractorGrill_di.dds
+
+newmtl dark_low_specular
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd Tractor/tractor_details_di.dds
+
+newmtl engine
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd Tractor/tractor_details_di.dds
+
+newmtl light
+Ns 10.000005
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd Tractor/TractorLight.dds
+
+newmtl plastic
+Ns 32.000008
+Ka 1.000000 1.000000 1.000000
+Ks 0.410000 0.410000 0.410000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd Tractor/tractor_details_di.dds
+
+newmtl seat
+Ns 18.000004
+Ka 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 1
+map_Kd Tractor/tractor_details_di.dds

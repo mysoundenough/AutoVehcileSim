@@ -1,0 +1,42 @@
+PARSFILE
+#FullDataName Plot: Setup`ACC Euro NCAP Scoring Speeds`ADAS Sensor Detections
+
+ADD_ENTITY Plot
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS vutStart, Time
+PLOTCHANNELS Vxz_Fwd, Time
+PLOTCHANNELS EgoSpeedReduction, Time
+PLOTCHANNELS vImpactOut, Time
+PLOTCHANNELS ssACC_MovingSpeed, Time
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE ACC Euro NCAP Scoring Speeds
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { ADAS Sensor Detections } ACC Euro NCAP Scoring Speeds
+#Library : Plot: Setup
+#DataSet : ACC Euro NCAP Scoring Speeds
+#Category: ADAS Sensor Detections
+#FileID  : Plot_9788e6e8-2f5b-46bf-b6b8-bf8149553c86
+#Created : 05-05-2021 12:29:48
+#Modified: 05-28-2021 14:59:37
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Plot Setup
+
+END

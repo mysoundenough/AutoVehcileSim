@@ -1,0 +1,40 @@
+PARSFILE
+#FullDataName Animator: Shape File Link`Sedan: Driver (Cauc. Male, RHD)`Cars: E-Class
+#MiscYellow3
+add_obj Animator\3D_Shape_Files\Cars\E_Class_Sedan\Drivers\Caucasian_Male\Caucasian_Male_Right_Drive.obj
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 0.75
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 0.75 0.75 0.75
+vsv_enable_shadows_recursive
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_aad9f5dd-7a61-4319-88b3-b90a1214f577.par
+#BlueLink2 Animator: Camera Setup`Vehicles and Drivers - Cars` Shape Preview` , Video Camera`Camera_aad9f5dd-7a61-4319-88b3-b90a1214f577
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_792cec92-b3ac-4573-a083-1ed2dd651995.png
+
+#EMBEDDED_NOTES
+#E-Class Sedan Driver (RHD)
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Cars: E-Class } Sedan: Driver (Cauc. Male, RHD)
+#Library : Animator: Shape File Link
+#DataSet : Sedan: Driver (Cauc. Male, RHD)
+#Category: Cars: E-Class
+#FileID  : Shape_792cec92-b3ac-4573-a083-1ed2dd651995
+#Created : 07-11-2023 10:01:30
+#Modified: 07-11-2023 10:19:42
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape File
+
+END

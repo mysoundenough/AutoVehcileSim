@@ -1,0 +1,40 @@
+PARSFILE
+#FullDataName Wind Speed`40 km/h Bursts`Wind Bursts and Gusts
+#CheckBox0 0    
+
+#RingCtrl0 CONSTANT
+#RingCtrl1 LINEAR_FLAT
+#RingCtrl2 MULTIPLY
+WIND_SPEED_COMBINE MULTIPLY
+WIND_SPEED_CONSTANT 40
+#DiagramOne1
+WIND_SPEED_S_TABLE LINEAR_FLAT
+0, 0
+20, 0
+20.5, 1
+49.5, 1
+50, 0
+80, 0
+80.5, 1
+109.5, 1
+110, 0
+ENDTABLE
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+*SCALAR 40
+*SCALAR2 1
+D_AIR 1.206
+
+
+LOG_ENTRY Used Dataset: Wind Speed; { Wind Bursts and Gusts } 40 km/h Bursts
+#Library : Wind Speed
+#DataSet : 40 km/h Bursts
+#Category: Wind Bursts and Gusts
+#FileID  : Wind_6b787635-c1cb-4f71-b6a7-36440312c211
+#Modified: 10-07-2022 09:46:46
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Wind Speed
+
+END

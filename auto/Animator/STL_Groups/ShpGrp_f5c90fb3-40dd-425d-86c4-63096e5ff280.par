@@ -1,0 +1,51 @@
+PARSFILE
+#FullDataName Animator: Shape Assembly`Environment: Terrain, Forest, Trees`Generic Proving Ground
+*ANGLE_Z 0
+*OFFSET_Z .45
+*X_REF_LENGTH 3344
+*Y_REF_LENGTH 2490
+*Z_REF_LENGTH 1757
+#CheckBox0 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 0    
+#CheckBox5 0    
+
+#RingCtrl1 1
+#RingCtrl2 2
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL_Groups\ShpGrp_f5c90fb3-40dd-425d-86c4-63096e5ff280.png
+PARSFILE Animator\STL\Shape_c0b30e43-3273-4b1d-a2cc-5710bd6452e0.par
+#BlueLink0 Animator: Shape File Link`Terrain` Generic Proving Ground: Environment` , Shape File`Shape_c0b30e43-3273-4b1d-a2cc-5710bd6452e0
+
+#MiscYellow0
+translucent_fix on
+#ENDMYellow
+
+set_lighting off
+PARSFILE Animator\STL\Shape_96eb4926-c007-406a-9e38-75af4ed4781a.par
+#BlueLink1 Animator: Shape File Link`Background Forest` Generic Proving Ground: Environment` , Shape File`Shape_96eb4926-c007-406a-9e38-75af4ed4781a
+
+translucent_fix on
+set_lighting off
+PARSFILE Animator\STL\Shape_c460acb4-dec7-41ee-816e-ca291afadb5b.par
+#BlueLink2 Animator: Shape File Link`Trees` Generic Proving Ground: Environment` , Shape File`Shape_c460acb4-dec7-41ee-816e-ca291afadb5b
+
+translucent_fix on
+set_lighting off
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_2ca51b0c-6404-4a0c-ae22-5f42bc878f27.par
+#BlueLink17 Animator: Camera Setup`Proving Grounds: Road Course Walls` Scene Specific Preview` , Video Camera`Camera_2ca51b0c-6404-4a0c-ae22-5f42bc878f27
+
+
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Generic Proving Ground } Environment: Terrain, Forest, Trees
+#Library : Animator: Shape Assembly
+#DataSet : Environment: Terrain, Forest, Trees
+#Category: Generic Proving Ground
+#FileID  : ShpGrp_f5c90fb3-40dd-425d-86c4-63096e5ff280
+#Modified: 05-28-2021 15:02:59
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape Assembly
+
+END

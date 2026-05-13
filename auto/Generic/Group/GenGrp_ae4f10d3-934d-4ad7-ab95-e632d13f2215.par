@@ -1,0 +1,49 @@
+PARSFILE
+#FullDataName Generic Data Group`Driver Model Handoff (Torque)`Driver Model Handoff
+#VehCode Driver Model Handoff
+#MiscYellow0
+IMPORT IMP_STEER_SW replace 0
+eq_in IMP_STEER_SW 0
+#ENDMYellow
+
+
+PARSFILE Events\Events_d7066425-837e-45d7-8385-74986a77aff5.par
+#BlueLink1 Events`Wait for Handoff (Torque)` Driver Model Handoff` , Link 2`Events_d7066425-837e-45d7-8385-74986a77aff5
+
+
+#BlueLink2 ` , Link 3` , Link 3` , Link 3`
+
+
+PARSFILE Sensors_Traffic\Traffic\TMotion_f6cf1e2f-2df0-4560-a087-ab8202e699b3.par
+#BlueLink3 Multiple Moving Objects`Slower Vehicle Left Lane` Traffic Vehicles (Forward)` , Link 4`TMotion_f6cf1e2f-2df0-4560-a087-ab8202e699b3
+
+
+
+
+
+#BlueLink7 ` , Link 8` , Link 8` , Link 8`
+
+
+
+*MODELCODE Driver Model Handoff
+
+#EMBEDDED_NOTES
+#The import variable for steering angle is activated with IMP_STEER_SW overwriting the Driver Model steering.
+#
+#A slow vehicle in the left lane inhibits the ego vehicle from the desired lane change.
+#
+#After passing the slower car, the ego hands back steering control to the driver model to commence the single lane change maneuver.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic Data Group; { Driver Model Handoff } Driver Model Handoff (Torque)
+#Library : Generic Data Group
+#DataSet : Driver Model Handoff (Torque)
+#Category: Driver Model Handoff
+#FileID  : GenGrp_ae4f10d3-934d-4ad7-ab95-e632d13f2215
+#Created : 05-10-2023 13:15:36
+#Modified: 05-22-2023 11:33:49
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Driver Model Handoff
+
+END

@@ -1,0 +1,55 @@
+PARSFILE
+#FullDataName Animator: Shape Assembly`Longitudinal V-Engine and Trans. (Large)`Engine Mount
+*ANGLE_Z 0
+*SCALE_X 1.5
+*SCALE_Y 1.5
+*SCALE_Z 1.5
+*OFFSET_X -0.1
+*OFFSET_Y 0
+*OFFSET_Z -0.15
+*IMAGE_FIT_MODE 1
+#CheckBox0 0    
+#CheckBox2 0    
+#CheckBox3 1    
+#CheckBox4 1    
+#CheckBox5 0    
+
+#RingCtrl1 2
+#RingCtrl2 2
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL_Groups\ShpGrp_b0c46296-b5a3-444b-ab0c-6ffddc2bc70f.png
+PARSFILE Animator\STL\Shape_9f7bf49f-2ae8-45c0-98b8-c4b0a6b79626.par
+#BlueLink0 Animator: Shape File Link`Engines: V-Design: Longitudinal` Common Vehicle Assets` , Shape File`Shape_9f7bf49f-2ae8-45c0-98b8-c4b0a6b79626
+
+set_scale_x 1.5
+set_scale_y 1.5
+set_scale_z 1.5
+set_offset_x -0.1
+set_offset_y 0
+set_offset_z -0.15
+PARSFILE Animator\STL\Shape_a00f6f21-c306-409e-a39f-c7113f432fb1.par
+#BlueLink1 Animator: Shape File Link`Transmission: Longitudinal` Common Vehicle Assets` , Shape File`Shape_a00f6f21-c306-409e-a39f-c7113f432fb1
+
+set_scale_x 1.5
+set_scale_y 1.5
+set_scale_z 1.5
+set_offset_x -0.1
+set_offset_y 0
+set_offset_z -0.15
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_af7c7c91-f09a-4493-9104-5b2725e3cf03.par
+#BlueLink17 Animator: Camera Setup`Isometric View - Small Objects` Shape Preview` , Video Camera`Camera_af7c7c91-f09a-4493-9104-5b2725e3cf03
+
+
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Engine Mount } Longitudinal V-Engine and Trans. (Large)
+#Library : Animator: Shape Assembly
+#DataSet : Longitudinal V-Engine and Trans. (Large)
+#Category: Engine Mount
+#FileID  : ShpGrp_b0c46296-b5a3-444b-ab0c-6ffddc2bc70f
+#Created : 05-20-2021 18:58:03
+#Modified: 05-28-2021 15:02:59
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape Assembly
+
+END

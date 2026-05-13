@@ -1,0 +1,82 @@
+PARSFILE
+#FullDataName I/O Channels: Export`Restraint Point Positions and Velocities`Parallel Solvers
+#RingCtrl0 0
+#RingCtrl1 1
+*README_FILE Results\Run_e8d254bc-1169-4bc1-b964-53a785de3a21\Run_out_tab.txt
+
+
+EXPORT Z_RP1
+EXPORT Z_RP2
+EXPORT Z_RP3
+EXPORT Z_RP4
+EXPORT X_RP5
+EXPORT X_RP6
+EXPORT X_RP7
+EXPORT X_RP8
+EXPORT Y_RP5
+EXPORT Y_RP6
+EXPORT Y_RP7
+EXPORT Y_RP8
+EXPORT Z_RP5
+EXPORT Z_RP6
+EXPORT Z_RP7
+EXPORT Z_RP8
+EXPORT Vx_S1
+EXPORT Vx_S2
+EXPORT Vx_S3
+EXPORT Vx_S4
+EXPORT Vy_S1
+EXPORT Vy_S2
+EXPORT Vy_S3
+EXPORT Vy_S4
+EXPORT Vz_S1
+EXPORT Vz_S2
+EXPORT Vz_S3
+EXPORT Vz_S4
+#MiscYellow0
+#Number of Selected Channels: 28
+#CHN_NAME: Z_RP1
+#CHN_NAME: Z_RP2
+#CHN_NAME: Z_RP3
+#CHN_NAME: Z_RP4
+#CHN_NAME: X_RP5
+#CHN_NAME: X_RP6
+#CHN_NAME: X_RP7
+#CHN_NAME: X_RP8
+#CHN_NAME: Y_RP5
+#CHN_NAME: Y_RP6
+#CHN_NAME: Y_RP7
+#CHN_NAME: Y_RP8
+#CHN_NAME: Z_RP5
+#CHN_NAME: Z_RP6
+#CHN_NAME: Z_RP7
+#CHN_NAME: Z_RP8
+#CHN_NAME: Vx_S1
+#CHN_NAME: Vx_S2
+#CHN_NAME: Vx_S3
+#CHN_NAME: Vx_S4
+#CHN_NAME: Vy_S1
+#CHN_NAME: Vy_S2
+#CHN_NAME: Vy_S3
+#CHN_NAME: Vy_S4
+#CHN_NAME: Vz_S1
+#CHN_NAME: Vz_S2
+#CHN_NAME: Vz_S3
+#CHN_NAME: Vz_S4
+#ENDMYellow
+
+#BlueLink0 CarSim Run Control`Pickup Hauler - Car 1: DLC` Multiple Vehicles, Parallel Solvers` , example run`Run_e8d254bc-1169-4bc1-b964-53a785de3a21
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Export; { Parallel Solvers } Restraint Point Positions and Velocities
+#Library : I/O Channels: Export
+#DataSet : Restraint Point Positions and Velocities
+#Category: Parallel Solvers
+#FileID  : Export_f6fd6f27-65de-4632-bcd4-aa8a57227544
+#Created : 01-11-2023 13:40:52
+#Modified: 01-11-2023 13:42:01
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Export Channels
+
+END

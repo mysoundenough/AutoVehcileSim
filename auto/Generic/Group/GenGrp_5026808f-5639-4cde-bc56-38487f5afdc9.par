@@ -1,0 +1,37 @@
+PARSFILE
+#FullDataName Generic Data Group`LKAS Weak: w/LDW,RDM,ACC PD`LKAS, LDW, RDM
+#VehCode Generic Group
+
+PARSFILE Generic\VS_commands\GenVS_270b0882-d873-474c-bd04-3646f1c62d59.par
+#BlueLink1 Generic VS Commands`LKAS Weak Control.: LDW + RDM` Path Detection` , Link 2`GenVS_270b0882-d873-474c-bd04-3646f1c62d59
+
+
+PARSFILE Generic\VS_commands\GenVS_137a3f7b-31b9-47e6-8283-3bb8bdb90f4c.par
+#BlueLink2 Generic VS Commands`Lane Departure Warning, from Path Det.` ADAS Support` , Link 3`GenVS_137a3f7b-31b9-47e6-8283-3bb8bdb90f4c
+
+
+
+
+
+
+
+
+
+#EMBEDDED_NOTES
+#Strong LKAS Tuning:
+#- Lane Keepnig Assistance System utilzes the Path (road curvature) Detector tools, instantiated in ACC/AEB Dataset
+#- The strong LKAS PID gain values prevent the ego vehicle from wandering in it's lane, and thus prevent a need for Lane Deaprture Warnings (LDWs) or Road Departure Mitigation
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic Data Group; { LKAS, LDW, RDM } LKAS Weak: w/LDW,RDM,ACC PD
+#Library : Generic Data Group
+#DataSet : LKAS Weak: w/LDW,RDM,ACC PD
+#Category: LKAS, LDW, RDM
+#FileID  : GenGrp_5026808f-5639-4cde-bc56-38487f5afdc9
+#Created : 10-11-2021 16:13:23
+#Modified: 10-11-2021 16:13:32
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Generic Group
+
+END

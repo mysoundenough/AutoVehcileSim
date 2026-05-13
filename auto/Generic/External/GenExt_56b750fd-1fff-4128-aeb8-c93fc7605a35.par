@@ -1,0 +1,22 @@
+PARSFILE
+#FullDataName External Parsfile`2023.0 New Signs`Environments
+#VehCode External file
+#MiscYellow0
+PARSFILE Generic\2023.0_New_Signs.par
+#ENDMYellow
+*CPAR_INCLUDE Generic\2023.0_New_Signs.par
+
+#RingCtrl0 0
+
+LOG_ENTRY Used Dataset: External Parsfile; { Environments } 2023.0 New Signs
+#Library : External Parsfile
+#DataSet : 2023.0 New Signs
+#Category: Environments
+#FileID  : GenExt_56b750fd-1fff-4128-aeb8-c93fc7605a35
+#Created : 09-28-2022 22:23:05
+#Modified: 10-04-2022 11:38:17
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode External file
+
+END

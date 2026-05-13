@@ -1,0 +1,29 @@
+PARSFILE
+#FullDataName Generic VS Commands`02 - Jounce - Record min - Rr`K&C Test Sequence
+#VehCode VS Commands
+
+#MiscYellow0
+! Set the actual min jounce found
+jnc_min_l2 = jnc_l2
+jnc_min_r2 = jnc_r2
+
+! Delete eq's to be replaced with others
+delete_eqs_out at_min_l2
+delete_eqs_out at_min_r2
+
+delete_eqs_in imp_zgnd_l2
+delete_eqs_in imp_zgnd_r2
+#ENDMYellow
+
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { K&C Test Sequence } 02 - Jounce - Record min - Rr
+#Library : Generic VS Commands
+#DataSet : 02 - Jounce - Record min - Rr
+#Category: K&C Test Sequence
+#FileID  : GenVS_7a4767f9-e10b-4f01-8f3e-2bd1d3eaa562
+#Modified: 05-28-2021 15:02:26
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode VS Commands
+
+END

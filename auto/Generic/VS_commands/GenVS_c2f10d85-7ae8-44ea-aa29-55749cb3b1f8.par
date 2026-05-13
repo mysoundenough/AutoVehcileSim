@@ -1,0 +1,141 @@
+PARSFILE
+#FullDataName Generic VS Commands`01 - K & C Design Load Setup`K&C Test Sequence
+#VehCode VS Commands
+
+#MiscYellow0
+DEFINE_UNITS N/mm 0.001
+DEFINE_UNITS N-s/mm 0.001
+
+! Some outputs for animator reference frames
+DEFINE_OUTPUT x_kc = -LX_AXLE(2)/2; m; Location of K&C table reference
+DEFINE_OUTPUT y_kc = 0; m; Location of K&C table reference
+
+DEFINE_PARAMETER Z_TABLE_PAR = 100; mm; Location of K&C table reference
+DEFINE_OUTPUT z_kc = Z_TABLE_PAR; m; Location of K&C table reference
+
+DEFINE_OUTPUT roll_kc = 0; deg; Location of K&C table reference
+DEFINE_OUTPUT pitch_kc = 0; deg; Location of K&C table reference
+DEFINE_OUTPUT yaw_kc = 0; deg; Location of K&C table reference
+
+! The same stiffness and damping parameter values are used for X and Y,
+! Z requires higher stiffness
+DEFINE_PARAMETER K_FIXTURE_XY = 100000; N/mm; Stiffness of chassis clamps
+DEFINE_PARAMETER C_FIXTURE_XY = 100; N-s/mm; Damping of chassis clamps
+DEFINE_PARAMETER K_FIXTURE_Z = 100000; N/mm; Stiffness of chassis clamps
+DEFINE_PARAMETER C_FIXTURE_Z = 100; N-s/mm; Damping of chassis clamps
+
+! Create output variables for the reference point locations so their values are
+! written to the echo file. Use the output variables in the spring force calculations
+! so they will have correct values at the beginning
+DEFINE_OUTPUT x_clamp_l1 = X_RP1; mm; Clamp location
+DEFINE_OUTPUT y_clamp_l1 = Y_RP1; mm; Clamp location
+DEFINE_OUTPUT z_clamp_l1 = Z_RP1; mm; Clamp location
+DEFINE_OUTPUT vx_clamp_l1 = VX_S1; m/s; Clamp deflection rate
+DEFINE_OUTPUT vy_clamp_l1 = VY_S1; m/s; Clamp deflection rate
+DEFINE_OUTPUT vz_clamp_l1 = VZ_S1; m/s; Clamp deflection rate
+
+DEFINE_OUTPUT x_clamp_r1 = X_RP2; mm; Clamp location
+DEFINE_OUTPUT y_clamp_r1 = Y_RP2; mm; Clamp location
+DEFINE_OUTPUT z_clamp_r1 = Z_RP2; mm; Clamp location
+DEFINE_OUTPUT vx_clamp_r1 = VX_S2; m/s; Clamp deflection rate
+DEFINE_OUTPUT vy_clamp_r1 = VY_S2; m/s; Clamp deflection rate
+DEFINE_OUTPUT vz_clamp_r1 = VZ_S2; m/s; Clamp deflection rate
+
+DEFINE_OUTPUT x_clamp_l2 = X_RP3; mm; Clamp location
+DEFINE_OUTPUT y_clamp_l2 = Y_RP3; mm; Clamp location
+DEFINE_OUTPUT z_clamp_l2 = Z_RP3; mm; Clamp location
+DEFINE_OUTPUT vx_clamp_l2 = VX_S3; m/s; Clamp deflection rate
+DEFINE_OUTPUT vy_clamp_l2 = VY_S3; m/s; Clamp deflection rate
+DEFINE_OUTPUT vz_clamp_l2 = VZ_S3; m/s; Clamp deflection rate
+
+DEFINE_OUTPUT x_clamp_r2 = X_RP4; mm; Clamp location
+DEFINE_OUTPUT y_clamp_r2 = Y_RP4; mm; Clamp location
+DEFINE_OUTPUT z_clamp_r2 = Z_RP4; mm; Clamp location
+DEFINE_OUTPUT vx_clamp_r2 = VX_S4; m/s; Clamp deflection rate
+DEFINE_OUTPUT vy_clamp_r2 = VY_S4; m/s; Clamp deflection rate
+DEFINE_OUTPUT vz_clamp_r2 = VZ_S4; m/s; Clamp deflection rate
+
+! Horizontal
+EQ_IN IMP_FX_RP_1 = -K_FIXTURE_XY * x_clamp_l1 + -C_FIXTURE_XY * vx_clamp_l1;
+EQ_IN IMP_FY_RP_1 = -K_FIXTURE_XY * (y_clamp_l1 - L_TRACK(1)/2) + -C_FIXTURE_XY * vy_clamp_l1;
+IMPORT IMP_FX_RP_1 VS_REPLACE 0
+IMPORT IMP_FY_RP_1 VS_REPLACE 0
+
+EQ_IN IMP_FX_RP_2 = -K_FIXTURE_XY * x_clamp_r1 + -C_FIXTURE_XY * vx_clamp_r1;
+EQ_IN IMP_FY_RP_2 = -K_FIXTURE_XY * (y_clamp_r1 + L_TRACK(1)/2) + -C_FIXTURE_XY * vy_clamp_r1;
+IMPORT IMP_FX_RP_2 VS_REPLACE 0
+IMPORT IMP_FY_RP_2 VS_REPLACE 0
+
+EQ_IN IMP_FX_RP_3 = -K_FIXTURE_XY * (x_clamp_l2 + LX_AXLE(2)) + -C_FIXTURE_XY * vx_clamp_l2;
+EQ_IN IMP_FY_RP_3 = -K_FIXTURE_XY * (y_clamp_l2 - L_TRACK(2)/2) + -C_FIXTURE_XY * vy_clamp_l2;
+IMPORT IMP_FX_RP_3 VS_REPLACE 0
+IMPORT IMP_FY_RP_3 VS_REPLACE 0
+
+EQ_IN IMP_FX_RP_4 = -K_FIXTURE_XY * (x_clamp_r2 + LX_AXLE(2)) + -C_FIXTURE_XY * vx_clamp_r2;
+EQ_IN IMP_FY_RP_4 = -K_FIXTURE_XY * (y_clamp_r2 + L_TRACK(2)/2) + -C_FIXTURE_XY * vy_clamp_r2;
+IMPORT IMP_FX_RP_4 VS_REPLACE 0
+IMPORT IMP_FY_RP_4 VS_REPLACE 0
+
+! Vertical
+EQ_IN IMP_FZ_RP_1 = -K_FIXTURE_Z * z_clamp_l1 + -C_FIXTURE_Z * vz_clamp_l1;
+IMPORT IMP_FZ_RP_1 VS_REPLACE 0
+EQ_IN IMP_FZ_RP_2 = -K_FIXTURE_Z * z_clamp_r1 + -C_FIXTURE_Z * vz_clamp_r1;
+IMPORT IMP_FZ_RP_2 VS_REPLACE 0
+EQ_IN IMP_FZ_RP_3 = -K_FIXTURE_Z * z_clamp_l2 + -C_FIXTURE_Z * vz_clamp_l2;
+IMPORT IMP_FZ_RP_3 VS_REPLACE 0
+EQ_IN IMP_FZ_RP_4 = -K_FIXTURE_Z * z_clamp_r2 + -C_FIXTURE_Z * vz_clamp_r2;
+IMPORT IMP_FZ_RP_4 VS_REPLACE 0
+
+! Move the ground under each wheel to set the wheel center height to the
+! spec on the sprung mass screen
+DEFINE_PARAMETER H_WC_GAIN 0.01; -; Control gain for ground
+DEFINE_PARAMETER H_TOL = 1E-9; mm; Tolerance on wheel center location
+
+! Adjust the ground to obtain the target wheel center height
+DEFINE_OUTPUT err_l1 = ABS(H_WC(1,1) - z_l1); mm; Wheel center position error L1;
+EQ_IN IMP_ZGND_L1 = zgnd_l1 +(H_WC(1,1) - z_l1) * H_WC_GAIN;
+IMPORT IMP_ZGND_L1 VS_ADD
+
+DEFINE_OUTPUT err_r1 = ABS(H_WC(1,2) - z_r1); mm; Wheel center position error R1;
+EQ_IN IMP_ZGND_R1 = zgnd_r1 + (H_WC(1,2) - z_r1) * H_WC_GAIN;
+IMPORT IMP_ZGND_R1 VS_ADD
+
+DEFINE_OUTPUT err_l2 = ABS(H_WC(2,1) - z_l2); mm; Wheel center position error L2;
+EQ_IN IMP_ZGND_L2 = zgnd_l2 + (H_WC(2,1) - z_l2) * H_WC_GAIN;
+IMPORT IMP_ZGND_L2 VS_ADD
+
+DEFINE_OUTPUT err_r2 = ABS(H_WC(2,2) - z_r2); mm; Wheel center position error R2;
+EQ_IN IMP_ZGND_R2 = zgnd_r2 + (H_WC(2,2) - z_r2) * H_WC_GAIN;
+IMPORT IMP_ZGND_R2 VS_ADD
+
+! Parameters to keep the ground Z at each wheel at the end of the run, for use in tests
+! These are set in the VS Event that ends the run.
+DEFINE_PARAMETER GND_Z_AT_DESIGN_L1 0; m; Ground Z at design load
+DEFINE_PARAMETER GND_Z_AT_DESIGN_R1 0; m; Ground Z at design load
+DEFINE_PARAMETER GND_Z_AT_DESIGN_L2 0; m; Ground Z at design load
+DEFINE_PARAMETER GND_Z_AT_DESIGN_R2 0; m; Ground Z at design load
+
+!
+#ENDMYellow
+
+
+#EMBEDDED_NOTES
+#Springs and dampers to constrain the position of the sprung mass are defined here.
+#
+#Three springs (X, Y, Z) are defined at each wheel center location, and while this is more than necessary, it is conceptually simple and makes it easy to use the same stiffness properties at all locations
+#
+#They can be turned off and on as needed to let the vehicle move or lock it in place.
+#
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { K&C Test Sequence } 01 - K & C Design Load Setup
+#Library : Generic VS Commands
+#DataSet : 01 - K & C Design Load Setup
+#Category: K&C Test Sequence
+#FileID  : GenVS_c2f10d85-7ae8-44ea-aa29-55749cb3b1f8
+#Modified: 05-28-2021 15:02:26
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode VS Commands
+
+END

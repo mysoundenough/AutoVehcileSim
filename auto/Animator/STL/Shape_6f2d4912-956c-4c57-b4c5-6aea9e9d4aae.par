@@ -1,0 +1,43 @@
+PARSFILE
+#FullDataName Animator: Shape File Link`3A Sleeper Cab HD`Trucks: Cabs
+#MiscYellow3
+add_obj Animator\3D_Shape_Files\Trucks\Cabs\Sleeper_Cab\Sleeper_Cab.OSG
+#ENDMYellow
+
+SET_COLOR 1 1 1
+SET_OFFSET_X 0
+SET_OFFSET_Y 0
+SET_OFFSET_Z 0
+*SPECULAR 0.2
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 0.2 0.2 0.2
+vsv_enable_shadows_recursive
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_9b4c5cd2-92e8-495b-8821-3533af8d141d.par
+#BlueLink2 Animator: Camera Setup`Vehicles and Drivers - Trucks (Heavy)` Shape Preview` , Video Camera`Camera_9b4c5cd2-92e8-495b-8821-3533af8d141d
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_6f2d4912-956c-4c57-b4c5-6aea9e9d4aae.png
+
+#EMBEDDED_NOTES
+#3-axle sleeper cab body
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Trucks: Cabs } 3A Sleeper Cab HD
+#Library : Animator: Shape File Link
+#DataSet : 3A Sleeper Cab HD
+#Category: Trucks: Cabs
+#FileID  : Shape_6f2d4912-956c-4c57-b4c5-6aea9e9d4aae
+#Created : 12-06-2021 13:33:40
+#Modified: 12-06-2021 14:22:14
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape File
+
+END

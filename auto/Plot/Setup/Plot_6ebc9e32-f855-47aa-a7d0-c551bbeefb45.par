@@ -1,0 +1,52 @@
+PARSFILE
+#FullDataName Plot: Setup`Normalized Throttle at Pedal`Controls: Driver
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par
+#BlueLink0 Plot: Format`Default Plot Settings` ` , Plot format`PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS Throttle, Time
+
+#ENDMYellow
+
+YAXISLABEL Throttle -
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Normalized Throttle at Pedal
+
+END_ENTITY Plot
+
+
+#EMBEDDED_NOTES
+#The variable "Throttle" is the sum of any throttle control calculated by the CarSim closed loop speed controller and any specified open-loop throttle.
+#
+#The source of open-loop throttle command may be from internal tables, VS commmands, or external sources like Simulink or the API.
+#
+#By using the sum of these 2 command sources you can implement things like driver aids for active safety that augment actions taken by the driver.
+#
+#When switching between open loop and closed loop control, take care that no unintended open loop control is "left over" by supplying a data set that sets the open loop component to zero.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Controls: Driver } Normalized Throttle at Pedal
+#Library : Plot: Setup
+#DataSet : Normalized Throttle at Pedal
+#Category: Controls: Driver
+#FileID  : Plot_6ebc9e32-f855-47aa-a7d0-c551bbeefb45
+#Created : 05-24-2022 17:00:56
+#Modified: 05-24-2022 17:02:24
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Plot Setup
+
+END

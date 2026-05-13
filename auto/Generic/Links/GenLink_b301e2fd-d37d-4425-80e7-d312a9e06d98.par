@@ -1,0 +1,43 @@
+PARSFILE
+#FullDataName Generic Group of Links`ADAS Suite, C-Class Hatch: Weak LKAS`ADAS Setups
+#VehCode Generic Links
+PARSFILE Generic\Group\GenGrp_a18b046c-0a54-46bb-af2d-47799d4d4eb4.par
+#BlueLink0 Generic Data Group`C-Class hatch. AEB/ACC Sensors, Cent.` Obstacle Avoidance` , Miscellaneous`GenGrp_a18b046c-0a54-46bb-af2d-47799d4d4eb4
+
+PARSFILE Sensors_Traffic\Radar\Radar_57a31db5-b7af-4675-88ac-0bafd95a07c8.par
+#BlueLink1 ADAS Sensors for Range and Tracking`Left Blind-Spot, Forward Vx` Blind-Spot Sensors` , Miscellaneous`Radar_57a31db5-b7af-4675-88ac-0bafd95a07c8
+
+PARSFILE Sensors_Traffic\Radar\Radar_4f130510-328a-4f29-a328-43628a7b3768.par
+#BlueLink2 ADAS Sensors for Range and Tracking`Right Blind-Spot, Forward Vx` Blind-Spot Sensors` , Miscellaneous`Radar_4f130510-328a-4f29-a328-43628a7b3768
+
+PARSFILE Animator\HUD\HUD_2e2493a8-9b50-4867-8eb4-6060a81a368f.par
+#BlueLink3 Animator: HUD`Blind Spots` ADAS Alerts` , Miscellaneous`HUD_2e2493a8-9b50-4867-8eb4-6060a81a368f
+
+PARSFILE Animator\HUD\HUD_5c1bd951-4419-4510-b1fb-882bfbc18ca3.par
+#BlueLink4 Animator: HUD`Time-To-Collision Radar, Low` ADAS Alerts` , Miscellaneous`HUD_5c1bd951-4419-4510-b1fb-882bfbc18ca3
+
+PARSFILE Generic\Group\GenGrp_5026808f-5639-4cde-bc56-38487f5afdc9.par
+#BlueLink5 Generic Data Group`LKAS Weak: w/LDW,RDM,ACC PD` LKAS, LDW, RDM` , Miscellaneous`GenGrp_5026808f-5639-4cde-bc56-38487f5afdc9
+
+
+#EMBEDDED_NOTES
+#AEB applies quick and large braking input, when the ACC is not braking quickly enough
+#
+#The blind spot detection shows alerts for vehicles in the right lane, while the ACC controls the vehicle speed via throttle and brakes using the built-in CarSim speed closed-loop speed control.
+#
+#The blind spot detection signal includes a low-pass filter that prevents alerts from flashing when oncoming vehicles are detected.
+#
+#The Weak LKAS tuning setup is selcted here
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic Group of Links; { ADAS Setups } ADAS Suite, C-Class Hatch: Weak LKAS
+#Library : Generic Group of Links
+#DataSet : ADAS Suite, C-Class Hatch: Weak LKAS
+#Category: ADAS Setups
+#FileID  : GenLink_b301e2fd-d37d-4425-80e7-d312a9e06d98
+#Modified: 10-11-2021 16:13:23
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Generic Links
+
+END

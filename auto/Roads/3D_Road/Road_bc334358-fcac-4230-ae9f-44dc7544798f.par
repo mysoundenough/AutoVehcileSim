@@ -1,0 +1,58 @@
+PARSFILE
+#FullDataName Road: 3D Surface (All Properties)`1001: 1 km, Two Lanes, Mu=0.90, Straight`Straight
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Roads\3D_Road\Road_bc334358-fcac-4230-ae9f-44dc7544798f.png
+#RingCtrl0 2
+#CheckBox0 0    
+
+SET_IROAD_FOR_ID 1001
+ROAD_N_DZ = 0
+CURRENT_ROAD_ID = ROAD_ID
+set_description road_id 1001: 1 km, Two Lanes, Mu=0.90, Straight
+PARSFILE Roads\BuilderSegment\RoadSeg_d898b814-eb51-40bd-bb53-17db6828710e.par
+#BlueLink0 Path: Segment Builder`Path ID 1001: Straight East` Straight` , Reference Path`RoadSeg_d898b814-eb51-40bd-bb53-17db6828710e
+
+ROAD_PATH_ID = PATH_ID
+
+set_description road_path_id PATH_ID for: Path ID 1001: Straight East
+#BlueLink1 ` , Path Elevation` , Path Elevation` , Path Elevation`
+
+#BlueLink2 ` , Miscellaneous` , Miscellaneous` , Miscellaneous`
+
+PARSFILE Roads\Friction\RdMu_76157e0a-7f92-4d03-8249-7715bd43a5ba.par
+#BlueLink3 Road: Friction Map, S-L Grid`Constant: 0.9` Constant` , Friction`RdMu_76157e0a-7f92-4d03-8249-7715bd43a5ba
+
+PARSFILE Roads\Shapes\RdShape_fb6cdb11-dc56-4b7a-849c-6117317fde52.par
+#BlueLink4 Road: Animator Surface Shapes`1 km Road w/Painted Lines` Roads` , Road shape definitions`RdShape_fb6cdb11-dc56-4b7a-849c-6117317fde52
+
+#BlueLink10 ` , Miscellaneous` , Miscellaneous` , Miscellaneous`
+
+RR_SURF_CONSTANT 1
+L_CAMERA_FRONT 0.5
+L_CAMERA_REAR 0.5
+add_reference_frame road_stuff_6_Partly_Cloudy_Sky_with_Light_Grass
+reference_frame_ghosts off
+PARSFILE Animator\Groups\Group_4ccae742-4649-427a-8871-7b3629a730a2.par
+#BlueLink6 Animator: Group`Partly Cloudy Sky with Light Grass` Environment Spheres` , 3D Shapes`Group_4ccae742-4649-427a-8871-7b3629a730a2
+
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36b2ee7b-54ec-4c39-9781-51b289ab39c0.par
+#BlueLink5 Animator: Camera Setup`180 Azm, 5 El, 49 m` Road Reference` , Camera`Camera_36b2ee7b-54ec-4c39-9781-51b289ab39c0
+
+parsfile Roads\3D_Road\Road_bc334358-fcac-4230-ae9f-44dc7544798f.ani
+
+#EMBEDDED_NOTES
+#Flat and straight.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Road: 3D Surface (All Properties); { Straight } 1001: 1 km, Two Lanes, Mu=0.90, Straight
+#Library : Road: 3D Surface (All Properties)
+#DataSet : 1001: 1 km, Two Lanes, Mu=0.90, Straight
+#Category: Straight
+#FileID  : Road_bc334358-fcac-4230-ae9f-44dc7544798f
+#Modified: 03-18-2022 16:36:53
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode 3D Road
+
+END

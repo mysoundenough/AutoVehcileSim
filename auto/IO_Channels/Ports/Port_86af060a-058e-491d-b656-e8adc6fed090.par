@@ -1,0 +1,39 @@
+PARSFILE
+#FullDataName I/O Channels: Ports`MF-Tyre/MF-Swift Kinematics Export`External Tires
+#RingCtrl0 0
+#RingCtrl1 4
+#CheckBox0 0    
+
+IPORT_EXP 1
+PARSFILE IO_Channels\O_Channels\Export_ff31fac2-b3b0-4255-821f-b24f81e9acb6.par
+#BlueLink20 I/O Channels: Export`MF-Tyre/MF-Swift Kinematics, L1` Tire Kinematics` , Library for factor B`Export_ff31fac2-b3b0-4255-821f-b24f81e9acb6
+
+IPORT_EXP 2
+PARSFILE IO_Channels\O_Channels\Export_2a14c4d4-25c2-4534-9df8-82b15a6abde2.par
+#BlueLink21 I/O Channels: Export`MF-Tyre/MF-Swift Kinematics, R1` Tire Kinematics` , Baseline run`Export_2a14c4d4-25c2-4534-9df8-82b15a6abde2
+
+IPORT_EXP 3
+PARSFILE IO_Channels\O_Channels\Export_b1cfb3c6-6216-4b6f-8396-254d0877cd03.par
+#BlueLink22 I/O Channels: Export`MF-Tyre/MF-Swift Kinematics, L2` Tire Kinematics` , Baseline run`Export_b1cfb3c6-6216-4b6f-8396-254d0877cd03
+
+IPORT_EXP 4
+PARSFILE IO_Channels\O_Channels\Export_a8f95946-3c6a-4971-975a-7b9154eda069.par
+#BlueLink23 I/O Channels: Export`MF-Tyre/MF-Swift Kinematics, R2` Tire Kinematics` , Baseline run`Export_a8f95946-3c6a-4971-975a-7b9154eda069
+
+
+#EMBEDDED_NOTES
+#Export kinematics variables of location coordinates, velocities, orientation angles, angular speeds, road height/Mu, etc. of each tire.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: I/O Channels: Ports; { External Tires } MF-Tyre/MF-Swift Kinematics Export
+#Library : I/O Channels: Ports
+#DataSet : MF-Tyre/MF-Swift Kinematics Export
+#Category: External Tires
+#FileID  : Port_86af060a-058e-491d-b656-e8adc6fed090
+#Created : 10-19-2022 13:19:33
+#Modified: 10-19-2022 14:48:33
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode I/O Ports
+
+END

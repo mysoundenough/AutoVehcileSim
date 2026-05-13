@@ -1,0 +1,21 @@
+PARSFILE
+#FullDataName Generic VS Commands`06a - Fx comp - increase to max brake`K&C Test Sequence
+#VehCode VS Commands
+
+#MiscYellow0
+! Change sign to set force in the braking direction
+FX_RATE = -FX_RATE
+#ENDMYellow
+
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { K&C Test Sequence } 06a - Fx comp - increase to max brake
+#Library : Generic VS Commands
+#DataSet : 06a - Fx comp - increase to max brake
+#Category: K&C Test Sequence
+#FileID  : GenVS_42d1f809-fa78-4518-b16c-321e0153da85
+#Modified: 05-28-2021 15:02:26
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode VS Commands
+
+END

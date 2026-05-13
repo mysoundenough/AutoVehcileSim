@@ -1,0 +1,36 @@
+PARSFILE
+#FullDataName Events`05b - Increase to max inward force`K&C Test Sequence
+#CheckBox1 0    
+#CheckBox6 0    
+#CheckBox7 1    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 ZERO ~=
+#RingCtrl1 ZERO ~=
+#RingCtrl10 2
+#RingCtrl11 4
+*VALUE1 (fy_ground <= -FY_RANGE) & END_AFTER_EVENT
+*VALUE2 fy_ground <= -FY_RANGE
+PARSFILE Generic\VS_commands\GenVS_cad3cdbe-6dab-422d-9948-ca2b26c843c0.par
+#BlueLink10 Generic VS Commands`05b - Fy compliance - move to max In` K&C Test Sequence` , Miscellaneous`GenVS_cad3cdbe-6dab-422d-9948-ca2b26c843c0
+
+DEFINE_EVENT (fy_ground <= -FY_RANGE) & END_AFTER_EVENT ; Events\Events_b5af09b5-d8ad-4e81-ae24-eebce691780e.par
+#BlueLink0 Events`End Events` ` , Events`Events_b5af09b5-d8ad-4e81-ae24-eebce691780e
+
+DEFINE_EVENT fy_ground <= -FY_RANGE ; Events\Events_ec6ca6b5-3da4-4f20-8066-19628086201c.par
+#BlueLink1 Events`05b - Increase to max outward force` K&C Test Sequence` , Events`Events_ec6ca6b5-3da4-4f20-8066-19628086201c
+
+SET_EVENT_ID 0 ! reset to default
+
+LOG_ENTRY Used Dataset: Events; { K&C Test Sequence } 05b - Increase to max inward force
+#Library : Events
+#DataSet : 05b - Increase to max inward force
+#Category: K&C Test Sequence
+#FileID  : Events_3657f2d2-b8de-4501-8e6d-c9fa65828473
+#Modified: 05-28-2021 14:59:28
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

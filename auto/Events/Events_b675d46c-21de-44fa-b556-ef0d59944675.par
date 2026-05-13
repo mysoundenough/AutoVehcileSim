@@ -1,0 +1,49 @@
+PARSFILE
+#FullDataName Events`2. Re-Initialize Batch Iteration`Batch Iteration
+#CheckBox1 0    
+#CheckBox2 1    
+#CheckBox3 1    
+#CheckBox4 1    
+#CheckBox5 1    
+#CheckBox6 1    
+#CheckBox7 1    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl10 0
+#RingCtrl11 4
+*VALUE1 1
+OPT_INIT_CONFIG 1
+OPT_INIT_PATH 1
+OPT_INIT_SPEED 1
+
+! Reset all open-loop control clocks by setting parameters to current time
+TSTART_T_EVENT = T ;
+TSTART_STEER_TQ = T ;
+TSTART_F_BRAKE_PEDAL = T ;
+TSTART_PBK_CON = T ;
+TSTART_CLUTCH = T ;
+TSTART_GEAR = T ;
+TSTART_SPEED_TARGET = T ;
+TSTART_STEER = T ;
+TSTART_THROTTLE = T ;
+TSTART_TRANS = T ;
+TSTART_WIND = T ;
+SET_EVENT_ID 0 ! reset to default
+
+#EMBEDDED_NOTES
+#This event re-initializes the model after the iterated variable value is retrieved from the simulink model.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Events; { Batch Iteration } 2. Re-Initialize Batch Iteration
+#Library : Events
+#DataSet : 2. Re-Initialize Batch Iteration
+#Category: Batch Iteration
+#FileID  : Events_b675d46c-21de-44fa-b556-ef0d59944675
+#Created : 05-18-2023 16:12:08
+#Modified: 05-25-2023 11:49:57
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

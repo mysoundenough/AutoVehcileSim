@@ -1,0 +1,62 @@
+PARSFILE
+#FullDataName Multiple Moving Objects`Slower Vehicle Left Lane`Traffic Vehicles (Forward)
+#RingCtrl0 1
+DEFINE_MOVING_OBJECTS 1
+#RingCtrl1 3
+#RingCtrl2 2
+#RingCtrl3 0
+#RingCtrl4 1
+#CheckBox0 0    
+#CheckBox1 1    
+#CheckBox2 1    
+#CheckBox25 0    
+#CheckBox26 0    
+#CheckBox38 1    
+#CheckBox39 0    
+
+DZ_OBJECT 0
+*L 1.7
+*PATH_ID PATH_ID_DM
+*ROAD_ID CURRENT_ROAD_ID
+*V 10
+
+IOBJECT_INCREMENT
+symbol_add <<o>> 1
+SET_DESCRIPTION OBJECT_NAME Slower Vehicle Left Lane
+OPT_SPEED_OBJ 1
+OPT_DIR_OBJ 1
+
+EQ_INIT HEADO_<<o>> = 0
+#RingCtrl4 1
+PATH_ID_OBJ PATH_ID_DM
+ROAD_ID_OBJ CURRENT_ROAD_ID
+OPT_RECYCLE_OBJ 0
+*SINIT_1 80
+EQ_INIT S_OBJ_<<o>> = 80
+EQ_INIT V_OBJ_<<o>> = 10
+EQ_STATE V_OBJ_<<o>> = 10
+EQ_INIT LATO_<<o>> = 1.7
+*COLOR_1 1 1 1
+SET_RUN_COLOR 1 1 1
+H_OBJ = 0 ! Default for blank field
+PARSFILE Animator\Vehicles\AniVeh_ecb4bc00-731a-4eec-9e10-b0fa5a9a76b7.par
+#BlueLink0 Animator: Vehicles and Sensor Targets`F-Class, Sedan` F-Class` , 3D Shape for Video`AniVeh_ecb4bc00-731a-4eec-9e10-b0fa5a9a76b7
+
+OPT_SHAPE_OBJ 1
+SHAPE_TYPE_OBJ 1
+DZ_OBJECT 0
+MATERIAL_TYPE_OBJ 0
+UNSET_RUN_COLOR
+
+LOG_ENTRY Used Dataset: Multiple Moving Objects; { Traffic Vehicles (Forward) } Slower Vehicle Left Lane
+#Library : Multiple Moving Objects
+#DataSet : Slower Vehicle Left Lane
+#Category: Traffic Vehicles (Forward)
+#FileID  : TMotion_f6cf1e2f-2df0-4560-a087-ab8202e699b3
+#Created : 05-10-2023 13:21:52
+#Modified: 03-02-2024 08:51:56
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Multiple Objects
+
+END

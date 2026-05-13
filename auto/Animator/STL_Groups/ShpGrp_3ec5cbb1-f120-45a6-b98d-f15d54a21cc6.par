@@ -1,0 +1,51 @@
+PARSFILE
+#FullDataName Animator: Shape Assembly`Tractor, Articulated (Rear)`Utility Vehicles
+*OFFSET_X 0.8
+*OFFSET_Y 0
+*OFFSET_Z 0
+*X_REF_LENGTH 2050
+*Y_REF_LENGTH 2240
+*Z_REF_LENGTH 1944
+*IMAGE_FIT_MODE 1
+#CheckBox0 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 1    
+#CheckBox5 1    
+
+#RingCtrl1 2
+#RingCtrl2 2
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL_Groups\ShpGrp_3ec5cbb1-f120-45a6-b98d-f15d54a21cc6.png
+PARSFILE Animator\STL\Shape_22f29cf1-f861-4b41-a595-2c49405a82e3.par
+#BlueLink0 Animator: Shape File Link`Tractor: Body (Rear)` Cars: Other Vehicles` , Shape File`Shape_22f29cf1-f861-4b41-a595-2c49405a82e3
+
+set_offset_x 0.8
+set_offset_y 0
+set_offset_z 0
+PARSFILE Animator\STL\Shape_c98f9f3a-edb9-4ade-83df-dae2ce29c8bf.par
+#BlueLink1 Animator: Shape File Link`Articulated Tractor: Driver` Cars: Other Vehicles` , Shape File`Shape_c98f9f3a-edb9-4ade-83df-dae2ce29c8bf
+
+set_offset_x 0.8
+set_offset_y 0
+set_offset_z 0
+x_ref_length 2050
+y_ref_length 2240
+z_ref_length 1944
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_e6e4b5e2-348e-42ad-ab7c-62eacd66bb44.par
+#BlueLink17 Animator: Camera Setup`Vehicles and Drivers - Trucks` Shape Preview` , Video Camera`Camera_e6e4b5e2-348e-42ad-ab7c-62eacd66bb44
+
+
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Utility Vehicles } Tractor, Articulated (Rear)
+#Library : Animator: Shape Assembly
+#DataSet : Tractor, Articulated (Rear)
+#Category: Utility Vehicles
+#FileID  : ShpGrp_3ec5cbb1-f120-45a6-b98d-f15d54a21cc6
+#Created : 05-23-2023 16:56:29
+#Modified: 09-21-2023 10:56:00
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape Assembly
+
+END

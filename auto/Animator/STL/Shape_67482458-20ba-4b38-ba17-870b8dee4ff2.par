@@ -1,0 +1,37 @@
+PARSFILE
+#FullDataName Animator: Shape File Link`Road Course: Walls`Generic Proving Ground: Cones and Walls
+#MiscYellow3
+add_obj Animator\3D_shape_files_DS\proving_ground\road_course_walls.obj
+#ENDMYellow
+
+SET_COLOR 0.878 0.878 0.878
+SET_SCALE_X 1
+SET_SCALE_Y 1
+SET_SCALE_Z 1
+*SPECULAR .6
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 0    
+
+SET_SPECULAR .6 .6 .6
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_2ca51b0c-6404-4a0c-ae22-5f42bc878f27.par
+#BlueLink2 Animator: Camera Setup`Proving Grounds: Road Course Walls` Scene Specific Preview` , Video Camera`Camera_2ca51b0c-6404-4a0c-ae22-5f42bc878f27
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_67482458-20ba-4b38-ba17-870b8dee4ff2.png
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Generic Proving Ground: Cones and Walls } Road Course: Walls
+#Library : Animator: Shape File Link
+#DataSet : Road Course: Walls
+#Category: Generic Proving Ground: Cones and Walls
+#FileID  : Shape_67482458-20ba-4b38-ba17-870b8dee4ff2
+#Modified: 05-28-2021 15:03:14
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape File
+
+END

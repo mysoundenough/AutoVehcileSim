@@ -1,0 +1,76 @@
+PARSFILE
+#FullDataName Procedures`TBC: Alley Dock w/ Accel Control`Driver Controls
+#CheckBox1 1    
+OPT_INIT_PATH 1
+
+#RingCtrl0 4
+#RingCtrl1 -1
+#RingCtrl2 1
+OPT_STOP -1
+SSTART -5
+TSTART 0
+TSTART_WRITE = 0;
+SSTOP = SSTART - 1 ;
+OPT_DIRECTION -1
+TSTOP -1
+*SPEED -5
+*TSTOP 30
+*TSTART 0
+*SSTART -5
+
+PARSFILE Control\Driver\StrDM_bff69626-1707-4881-8d3e-8f8466e8510c.par
+#BlueLink27 Control: Steering by the Closed-loop Driver Model`No Offset, 1.8s Preview, TBC` Constant Position: No Offset` , Steering`StrDM_bff69626-1707-4881-8d3e-8f8466e8510c
+
+PARSFILE Control\Gear_at\GearCL_73dd8273-cecc-4a62-afb7-b1a8adae1c0c.par
+#BlueLink30 Control: Shifting (Closed Loop)`Reverse` ` , Shifting Control`GearCL_73dd8273-cecc-4a62-afb7-b1a8adae1c0c
+
+PARSFILE Sensors_Traffic\Traffic\TMotion_685c5b22-b555-4300-90e6-7f354600c8d8.par
+#BlueLink0 Multiple Moving Objects`1 Driver Preview Point` Points of Interest` , Miscellaneous`TMotion_685c5b22-b555-4300-90e6-7f354600c8d8
+
+PARSFILE Generic\VS_commands\GenVS_18cd396f-7c3b-4697-ad6a-48c2171fe39d.par
+#BlueLink1 Generic VS Commands`TBC: Target Accel` Miscellaneous Custom Controls` , Miscellaneous`GenVS_18cd396f-7c3b-4697-ad6a-48c2171fe39d
+
+PARSFILE Roads\3D_Road\Road_7fc69f66-41f1-4da4-abc9-35486642ef36.par
+#BlueLink4 Road: 3D Surface (All Properties)`Alley Dock Test Pad (Small)` Flat Test Pads` , Miscellaneous`Road_7fc69f66-41f1-4da4-abc9-35486642ef36
+
+PARSFILE Events\Events_c75341b7-a550-4a59-8c39-4f5f9bbcba80.par
+#BlueLink5 Events`Stop Condition: Trailer Axle X` Stop Conditions` , Miscellaneous`Events_c75341b7-a550-4a59-8c39-4f5f9bbcba80
+
+PARSFILE Roads\BuilderSegment\RoadSeg_89ba0613-5ddd-4bad-a574-79354484c2f7.par
+#BlueLink6 Path: Segment Builder`Left Turn 18-ft Radius` Curves` , Miscellaneous`RoadSeg_89ba0613-5ddd-4bad-a574-79354484c2f7
+
+PARSFILE Plot\Setup\Plot_24530d21-f100-4efd-97c3-5851cf2d8c3b.par
+#BlueLink8 Plot: Setup`Hitch Articulation vs. Desired` Hitch` , Plot`Plot_24530d21-f100-4efd-97c3-5851cf2d8c3b
+
+PARSFILE Plot\Setup\Plot_dc3bd4cb-2a9b-4dbc-8126-38a398aefd1b.par
+#BlueLink9 Plot: Setup`Steering Wheel Angle` Steering` , Plot`Plot_dc3bd4cb-2a9b-4dbc-8126-38a398aefd1b
+
+PARSFILE Plot\Setup\Plot_6bb14d6c-a68f-4d3b-a1c7-683c8b2f437a.par
+#BlueLink10 Plot: Setup`Steering Wheel Angular Rate` Steering` , Plot`Plot_6bb14d6c-a68f-4d3b-a1c7-683c8b2f437a
+
+PARSFILE Plot\Setup\Plot_a243fc1c-fc6b-4404-89ac-bc8209a293be.par
+#BlueLink12 Plot: Setup`Longitudinal Speed (Vxz_Fwd) vs. Time` Vehicle Motion` , Plot`Plot_a243fc1c-fc6b-4404-89ac-bc8209a293be
+
+PARSFILE Plot\Setup\Plot_dafae624-d48a-4548-93eb-fa73d080e21a.par
+#BlueLink13 Plot: Setup`Brake Control: M/C Pressure` Braking` , Plot`Plot_dafae624-d48a-4548-93eb-fa73d080e21a
+
+PARSFILE Plot\Setup\Plot_4f67d5b7-0627-47d3-baf7-12fe88008d68.par
+#BlueLink14 Plot: Setup`Gear Selection` Powertrain` , Plot`Plot_4f67d5b7-0627-47d3-baf7-12fe88008d68
+
+
+#EMBEDDED_NOTES
+#The vehicle combination backs into a spot behind and to its left, using the built-in trailer backing controller (TBC). An event is used to stop the simulation when the trailer is within the parking space.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Procedures; { Driver Controls } TBC: Alley Dock w/ Accel Control
+#Library : Procedures
+#DataSet : TBC: Alley Dock w/ Accel Control
+#Category: Driver Controls
+#FileID  : Proc_9e037c39-f4b4-4cbc-8b58-89ca9155b0c0
+#Created : 10-05-2023 10:19:23
+#Modified: 10-05-2023 11:16:48
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Procedure
+
+END

@@ -1,0 +1,76 @@
+PARSFILE
+#FullDataName Procedures`Single Lane Change, Impaired Driver`Driver Controls
+#CheckBox1 1    
+OPT_INIT_PATH 1
+#CheckBox4 0    
+
+#RingCtrl0 1
+#RingCtrl1 1
+OPT_STOP 1
+SSTART 0
+TSTART 0
+TSTART_WRITE = 0;
+TSTOP 15
+SSTOP 500
+OPT_DIRECTION 0
+*SPEED 120
+*TSTOP 15
+*TSTART 0
+*SSTART 0
+*SSTOP 500
+
+INSTALL_SPEED_CONTROLLER
+OPT_SC 3
+SET_ISPEED_FOR_ID 0
+SPEED_ID_SC = SPEED_TARGET_ID
+SPEED_TARGET_COMBINE ADD
+SPEED_TARGET_S_CONSTANT 0
+set_description SPEED_TARGET_ID Procedure: Single Lane Change, Impaired Driver
+SPEED_TARGET_CONSTANT 120
+OPT_SC_ENGINE_BRAKING 0
+PARSFILE Control\Driver\StrDM_f5a3df7d-5426-4ba2-b9f6-9c3867ed766b.par
+#BlueLink27 Control: Steering by the Closed-loop Driver Model`Single Lane Change (1s Pvw, 0.15s Lag)` Vehicle Dynamics Tests` , Steering`StrDM_f5a3df7d-5426-4ba2-b9f6-9c3867ed766b
+
+PARSFILE Control\Braking\PbkCon_bf4961f4-c4cf-4b18-a8f7-5f65e31ecd3f.par
+#BlueLink28 Control: Braking MC Pressure (Open Loop)`Constant: 0 MPa` Constant` , Braking`PbkCon_bf4961f4-c4cf-4b18-a8f7-5f65e31ecd3f
+
+PARSFILE Control\Gear_at\GearCL_3f60e7d2-b8c4-4d68-a9c4-d897bb3e2a86.par
+#BlueLink30 Control: Shifting (Closed Loop)`AT (All Available Gears)` Closed-Loop Shifting` , Shifting Control`GearCL_3f60e7d2-b8c4-4d68-a9c4-d897bb3e2a86
+
+PARSFILE Roads\3D_Road\Road_1858fd7f-8c63-404a-a7a7-9f6c232bb1e9.par
+#BlueLink0 Road: 3D Surface (All Properties)`1200 m, Two Lanes, Mu = 0.85` Straight` , Miscellaneous`Road_1858fd7f-8c63-404a-a7a7-9f6c232bb1e9
+
+PARSFILE Generic\VS_commands\GenVS_3d4cf994-c25e-417e-8dbd-4d869ef1f8ec.par
+#BlueLink4 Generic VS Commands`Driver Impairment Model` Miscellaneous Custom Controls` , Miscellaneous`GenVS_3d4cf994-c25e-417e-8dbd-4d869ef1f8ec
+
+PARSFILE Plot\Setup\Plot_92fd4997-826f-46e1-92ad-380b7b9bc848.par
+#BlueLink8 Plot: Setup`Lateral Target vs. Station` Tracking` , Plot`Plot_92fd4997-826f-46e1-92ad-380b7b9bc848
+
+PARSFILE Plot\Setup\Plot_d2b0df33-75b1-471c-8c3b-5b40586a01a5.par
+#BlueLink9 Plot: Setup`Lateral Coordinate vs. Station` Tracking` , Plot`Plot_d2b0df33-75b1-471c-8c3b-5b40586a01a5
+
+PARSFILE Plot\Setup\Plot_076736e1-2cdd-49d5-8a36-d55940b011f0.par
+#BlueLink10 Plot: Setup`Steering: Handwheel Angle` Steering` , Plot`Plot_076736e1-2cdd-49d5-8a36-d55940b011f0
+
+PARSFILE Plot\Setup\Plot_8b22f20a-1297-43cf-9e59-a0b1d530d136.par
+#BlueLink11 Plot: Setup`Lateral Accel. of CG's vs. Time` Vehicle Motion` , Plot`Plot_8b22f20a-1297-43cf-9e59-a0b1d530d136
+
+PARSFILE Plot\Setup\Plot_2865bd77-14b2-4e51-9c7f-3484aa98e979.par
+#BlueLink12 Plot: Setup`Roll Angle of Sprung Masses vs. Time` Vehicle Motion` , Plot`Plot_2865bd77-14b2-4e51-9c7f-3484aa98e979
+
+PARSFILE Plot\Setup\Plot_310b0189-b08d-49fc-a484-ee359eb89744.par
+#BlueLink13 Plot: Setup`Yaw Rate of Sprung Masses vs. Time` Vehicle Motion` , Plot`Plot_310b0189-b08d-49fc-a484-ee359eb89744
+
+
+LOG_ENTRY Used Dataset: Procedures; { Driver Controls } Single Lane Change, Impaired Driver
+#Library : Procedures
+#DataSet : Single Lane Change, Impaired Driver
+#Category: Driver Controls
+#FileID  : Proc_50980ea0-08d5-40a4-a43a-05557bb83622
+#Created : 05-26-2022 13:44:31
+#Modified: 05-26-2022 14:37:04
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Procedure
+
+END

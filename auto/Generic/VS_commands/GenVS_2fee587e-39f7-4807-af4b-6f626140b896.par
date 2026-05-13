@@ -1,0 +1,32 @@
+PARSFILE
+#FullDataName Generic VS Commands`04c - Steer torque - Increase to max`K&C Test Sequence
+#VehCode VS Commands
+
+#MiscYellow0
+!  Change sign to increase moment
+M_STR_RATE = -M_STR_RATE
+
+! Reset switch
+DELETE_EQS_OUT  at_min
+at_min = 0
+
+EQ_OUT at_max = m_str_applied > M_STR_RANGE | ...
+                steer_l1 > RW_MAX_L1 | ...
+                steer_r1 > RW_MAX_R1 | ...
+                steer_sw > SW_MAX | ...
+                ABS(M_StopR1) > 0;
+!
+#ENDMYellow
+
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { K&C Test Sequence } 04c - Steer torque - Increase to max
+#Library : Generic VS Commands
+#DataSet : 04c - Steer torque - Increase to max
+#Category: K&C Test Sequence
+#FileID  : GenVS_2fee587e-39f7-4807-af4b-6f626140b896
+#Modified: 05-28-2021 15:02:26
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode VS Commands
+
+END

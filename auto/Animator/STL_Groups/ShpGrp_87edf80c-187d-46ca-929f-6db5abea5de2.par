@@ -1,0 +1,59 @@
+PARSFILE
+#FullDataName Animator: Shape Assembly`Hitch Bike Rack`
+*OFFSET_X -4.3
+*OFFSET_Y 0
+*OFFSET_Z 0.411
+*TRANSPARENCY 1
+*IMAGE_FIT_MODE 1
+#CheckBox0 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 1    
+#CheckBox5 0    
+
+#RingCtrl1 2
+#RingCtrl2 2
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL_Groups\ShpGrp_87edf80c-187d-46ca-929f-6db5abea5de2.png
+PARSFILE Animator\STL\Shape_83a893a5-bea1-4cc8-9417-ddee2abee1f9.par
+#BlueLink0 Animator: Shape File Link`Bicycle Rack` Common Vehicle Assets: Payloads` , Shape File`Shape_83a893a5-bea1-4cc8-9417-ddee2abee1f9
+
+set_transparency 1
+set_offset_x -4.3
+set_offset_y 0
+set_offset_z 0.411
+PARSFILE Animator\STL\Shape_372af3e8-a9f0-4261-a485-b66da0a7ed8e.par
+#BlueLink1 Animator: Shape File Link`Bicycle_1 on Rack` Common Vehicle Assets: Payloads` , Shape File`Shape_372af3e8-a9f0-4261-a485-b66da0a7ed8e
+
+set_transparency 1
+set_offset_x -4.3
+set_offset_y 0
+set_offset_z 0.411
+PARSFILE Animator\STL\Shape_3fc3df04-7bf8-494f-b669-a06ef25648b5.par
+#BlueLink2 Animator: Shape File Link`Bicycle_2 on Rack` Common Vehicle Assets: Payloads` , Shape File`Shape_3fc3df04-7bf8-494f-b669-a06ef25648b5
+
+set_transparency 1
+set_offset_x -4.3
+set_offset_y 0
+set_offset_z 0.411
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
+#BlueLink17 Animator: Camera Setup`YZ-Plane, No Offsets (with Yaw)` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+
+
+#EMBEDDED_NOTES
+#The coordinate offsets for the assembly shift the animation to the correct hitch-mounted point
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; Hitch Bike Rack
+#Library : Animator: Shape Assembly
+#DataSet : Hitch Bike Rack
+#Category: 
+#FileID  : ShpGrp_87edf80c-187d-46ca-929f-6db5abea5de2
+#Created : 03-06-2023 15:49:31
+#Modified: 03-07-2023 13:19:29
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape Assembly
+
+END

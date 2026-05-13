@@ -1,0 +1,46 @@
+PARSFILE
+#FullDataName Animator: Shape Assembly`Infinite Road: Entrance`Generic Proving Ground
+*ANGLE_Z 0
+*OFFSET_Z .45
+*X_REF_LENGTH 3344
+*Y_REF_LENGTH 2490
+*Z_REF_LENGTH 1757
+#CheckBox0 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 0    
+#CheckBox5 0    
+
+#RingCtrl1 1
+#RingCtrl2 2
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL_Groups\ShpGrp_1716dc3c-63a4-4d8f-ac69-6411b94be223.png
+PARSFILE Animator\STL\Shape_fe37aa7c-588d-4cba-97e5-44c25536efa0.par
+#BlueLink0 Animator: Shape File Link`Infinite Road: Entrance` Generic Proving Ground: Signs` , Shape File`Shape_fe37aa7c-588d-4cba-97e5-44c25536efa0
+
+#MiscYellow0
+translucent_fix on
+#ENDMYellow
+
+set_lighting off
+PARSFILE Animator\STL\Shape_8957c7f3-134c-4abe-8b68-62ad44a2385c.par
+#BlueLink1 Animator: Shape File Link`Infinite Road: Sign's Shadow` Generic Proving Ground: Signs` , Shape File`Shape_8957c7f3-134c-4abe-8b68-62ad44a2385c
+
+translucent_fix on
+set_lighting off
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_b4548458-0bf0-4925-8b77-e94ccb3f78b9.par
+#BlueLink17 Animator: Camera Setup`Proving Grounds: Infinite Road Entrance` Scene Specific Preview` , Video Camera`Camera_b4548458-0bf0-4925-8b77-e94ccb3f78b9
+
+
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Generic Proving Ground } Infinite Road: Entrance
+#Library : Animator: Shape Assembly
+#DataSet : Infinite Road: Entrance
+#Category: Generic Proving Ground
+#FileID  : ShpGrp_1716dc3c-63a4-4d8f-ac69-6411b94be223
+#Modified: 05-28-2021 15:02:59
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape Assembly
+
+END

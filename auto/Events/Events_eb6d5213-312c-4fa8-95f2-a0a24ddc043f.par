@@ -1,0 +1,36 @@
+PARSFILE
+#FullDataName Events`04a - Steer: Record min, steer to max`K&C Test Sequence
+#CheckBox1 0    
+#CheckBox6 0    
+#CheckBox7 1    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 ZERO ~=
+#RingCtrl10 1
+#RingCtrl11 4
+*VALUE1 at_max_rw_r1 | steer_sw > SW_MAX
+#MiscYellow0
+! Enable writing
+OPT_WRITE 1
+#ENDMYellow
+
+PARSFILE Generic\VS_commands\GenVS_4c5d5ba4-bc4d-4886-862a-693824c7ae0c.par
+#BlueLink10 Generic VS Commands`04a - Steer: Record min, steer to max` K&C Test Sequence` , Miscellaneous`GenVS_4c5d5ba4-bc4d-4886-862a-693824c7ae0c
+
+DEFINE_EVENT at_max_rw_r1 | steer_sw > SW_MAX ; Events\Events_e6528498-f059-4b8b-b2fd-2ea033e68070.par
+#BlueLink0 Events`04a - Steer: Record max, steer to min` K&C Test Sequence` , Events`Events_e6528498-f059-4b8b-b2fd-2ea033e68070
+
+SET_EVENT_ID 0 ! reset to default
+
+LOG_ENTRY Used Dataset: Events; { K&C Test Sequence } 04a - Steer: Record min, steer to max
+#Library : Events
+#DataSet : 04a - Steer: Record min, steer to max
+#Category: K&C Test Sequence
+#FileID  : Events_eb6d5213-312c-4fa8-95f2-a0a24ddc043f
+#Modified: 05-28-2021 14:59:28
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

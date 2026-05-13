@@ -1,0 +1,43 @@
+PARSFILE
+#FullDataName Events`Wait for Initial Event to End`Pedestrian Euro NCAP
+#CheckBox1 1    
+*CLEAR
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 >=
+#RingCtrl10 1
+#RingCtrl11 4
+RESET_EVENTS
+*NAME1 t_event
+*VALUE1 T_WAIT
+#MiscYellow0
+TSTART_T_EVENT = T
+DEFINE_PARAMETER T_WAIT = 2.0; s; wait a ...
+a little before moving to the next event
+#ENDMYellow
+
+MAKE_EVENT t_event >= T_WAIT ; Events\Events_53834ce7-106e-45a2-97f5-0571297bae44.par
+#BlueLink0 Events`Wrong Init. Ped. Calibration` Pedestrian Euro NCAP` , Events`Events_53834ce7-106e-45a2-97f5-0571297bae44
+
+SET_EVENT_ID 0 ! reset to default
+
+#EMBEDDED_NOTES
+#The initial vehicle-to-pedetrian collision check has completed
+#- Next a calculation that determines at what percent of the ego vehicle's front bumper, did the pedestrian strike
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Events; { Pedestrian Euro NCAP } Wait for Initial Event to End
+#Library : Events
+#DataSet : Wait for Initial Event to End
+#Category: Pedestrian Euro NCAP
+#FileID  : Events_bc9092bf-4dad-4c86-85f9-86d692e4ca5d
+#Created : 08-17-2021 12:44:46
+#Modified: 08-17-2021 12:51:27
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

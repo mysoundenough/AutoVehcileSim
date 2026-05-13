@@ -1,0 +1,43 @@
+PARSFILE
+#FullDataName Events`CCRb A1. Wait for ACC to Intervene`Euro NCAP ACC Testing
+#CheckBox1 1    
+*CLEAR
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 >
+#RingCtrl10 1
+#RingCtrl11 4
+RESET_EVENTS
+*NAME1 T_EVENT
+*VALUE1 T_BK
+#MiscYellow0
+TSTART_T_EVENT = T ;
+#ENDMYellow
+
+#BlueLink10 ` , Miscellaneous` , Miscellaneous` , Miscellaneous`
+
+MAKE_EVENT T_EVENT > T_BK ; Events\Events_397a6c58-de63-455e-8a08-a77cdd9568a9.par
+#BlueLink0 Events`CCRb A2. Wait for ACC to Intervene` Euro NCAP ACC Testing` , Events`Events_397a6c58-de63-455e-8a08-a77cdd9568a9
+
+SET_EVENT_ID 0 ! reset to default
+
+#EMBEDDED_NOTES
+#Wait until T_BK to check ACC outputs
+#- T_BK represents when the lead vehicle/target brakes
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Events; { Euro NCAP ACC Testing } CCRb A1. Wait for ACC to Intervene
+#Library : Events
+#DataSet : CCRb A1. Wait for ACC to Intervene
+#Category: Euro NCAP ACC Testing
+#FileID  : Events_036d52fe-e99a-4330-98f1-7a32cc9a1649
+#Created : 05-12-2021 18:02:23
+#Modified: 06-10-2021 13:12:57
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

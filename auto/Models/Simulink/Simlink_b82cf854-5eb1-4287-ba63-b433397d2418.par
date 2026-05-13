@@ -1,0 +1,46 @@
+PARSFILE
+#FullDataName Models: Simulink`2 S-Functions for QSG, Kin & Dyn`Series of S-Functions
+#RunMdlFile Extensions\Simulink\sf_series\qsg_2sf_kin_dyn.slx
+SIMULINK_MODEL_FILE Extensions\Simulink\sf_series\qsg_2sf_kin_dyn.slx
+#RingCtrl0 -1
+#RingCtrl2 2
+OPT_MULTI_WRAPPERS 1
+*MULTI_S_WRAPPER 1
+*MULTI_SOLVERS 0
+#CheckBox0 0    
+*USE_ALT_DIR 0
+#CheckBox1 0    
+*USE_DIFF_SOLVERS 0
+#CheckBox3 1    
+#CheckBox5 0    
+#RingCtrl1 0
+OPT_INT_METHOD 0
+*TSTEP 0.0005
+*FREQ_MODEL 2000
+*TSTEP_OUT 0.025
+*FREQ_OUT 40
+tstep 0.0005
+iprint 50
+IWRAPPER 1
+IWRAPPER 2
+IWRAPPER 3
+PARSFILE IO_Channels\Ports\Port_9d467a45-94ba-49d7-834a-f9d2802ff138.par
+#BlueLink5 I/O Channels: Ports`Yaw Rate Export` Quick Start 4SFs` , vs_kin Ports`Port_9d467a45-94ba-49d7-834a-f9d2802ff138
+
+IWRAPPER 4
+PARSFILE IO_Channels\Ports\Port_c4f2031b-2f89-4201-a60f-1219775ec811.par
+#BlueLink6 I/O Channels: Ports`Ay Export` Quick Start 4SFs` , vs_dyn Ports`Port_c4f2031b-2f89-4201-a60f-1219775ec811
+
+
+LOG_ENTRY Used Dataset: Models: Simulink; { Series of S-Functions } 2 S-Functions for QSG, Kin & Dyn
+#Library : Models: Simulink
+#DataSet : 2 S-Functions for QSG, Kin & Dyn
+#Category: Series of S-Functions
+#FileID  : Simlink_b82cf854-5eb1-4287-ba63-b433397d2418
+#Created : 10-13-2022 11:31:36
+#Modified: 11-09-2022 16:16:32
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode 
+
+END

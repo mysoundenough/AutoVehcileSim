@@ -1,0 +1,82 @@
+PARSFILE
+#FullDataName CarSim Run Control`01a - Continuity check`K & C Tests - Complete sequence
+#VEHICLECODE ignore
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_d9b91505-4641-418c-8020-734f4deddf5f
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Animator\Cameras\Camera_78646c82-3c25-4eef-b153-d76a910f00fb.par
+#BlueLink0 Animator: Camera Setup`K & C View` K & C` , Animator camera`Camera_78646c82-3c25-4eef-b153-d76a910f00fb
+
+
+SPECIAL_PARSFILE Runs\Run_a7819ed0-2fa6-4994-9ef6-ad37e8135b30.par
+#BlueLink1 CarSim Run Control`01 - K & C: Design Load Condition` K & C Tests - Complete sequence` , Continue`Run_a7819ed0-2fa6-4994-9ef6-ad37e8135b30
+
+PARSFILE Results\Run_a7819ed0-2fa6-4994-9ef6-ad37e8135b30\LastRun_END.PAR
+#CheckBox0 1    
+#CheckBox1 1    
+#CheckBox2 1    
+#CheckBox3 0    
+#CheckBox4 0    
+#CheckBox5 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox8 1    
+#CheckBox9 0    
+#CheckBox10 1    
+#CheckBox11 0    
+#CheckBox12 0    
+
+#RingCtrl0 4
+#RingCtrl1 0
+#RingCtrl2 3
+#RingCtrl3 0
+#RingCtrl6 0
+#RingCtrl7 -1
+*RUN_COLOR 1 0 0
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Procedures\Proc_e3f725a9-670b-4bc6-a8a2-38aaa98e2e28.par
+#BlueLink28 Procedures`01a - K & C Continuity check` K&C Test Sequence` , Procedure`Proc_e3f725a9-670b-4bc6-a8a2-38aaa98e2e28
+
+
+SPECIAL_PARSFILE Runs\Run_a7819ed0-2fa6-4994-9ef6-ad37e8135b30.par
+#BlueLink23 CarSim Run Control`01 - K & C: Design Load Condition` K & C Tests - Complete sequence` , Overlay run or ERD file`Run_a7819ed0-2fa6-4994-9ef6-ad37e8135b30
+
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Animator\Vehicles\AniVeh_4ce91de0-b4f4-4075-a4a9-d4fc5b973de3.png
+WRITE_SENSOR_DETECT
+Title 01a - Continuity check <K & C Tests - Complete sequence>
+CATEGORY K & C Tests - Complete sequence 
+DATASET_TITLE 01a - Continuity check
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#This test simply continues the K&C Design Load Condition test. It is used to verify that the continuation works correctly.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { K & C Tests - Complete sequence } 01a - Continuity check
+#Library : CarSim Run Control
+#DataSet : 01a - Continuity check
+#Category: K & C Tests - Complete sequence
+#FileID  : Run_d9b91505-4641-418c-8020-734f4deddf5f
+#Modified: 03-25-2024 14:46:25
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Run
+
+END

@@ -1,0 +1,44 @@
+PARSFILE
+#FullDataName Plot: Setup`Z-Moment (WC)`Wheel Center Forces
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d.par
+#BlueLink0 Plot: Format`Lines without Symbols` ` , Plot format`PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS Mz_WC_L1
+PLOTCHANNELS Mz_WC_R1
+PLOTCHANNELS Mz_WC_L2
+PLOTCHANNELS Mz_WC_R2
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Z-Moment (WC)
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Wheel Center Forces } Z-Moment (WC)
+#Library : Plot: Setup
+#DataSet : Z-Moment (WC)
+#Category: Wheel Center Forces
+#FileID  : Plot_246bf4d6-481f-4158-9134-deb0460297ef
+#Created : 11-29-2022 15:23:47
+#Modified: 11-29-2022 15:24:52
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Plot Setup
+
+END

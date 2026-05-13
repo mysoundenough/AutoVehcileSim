@@ -1,0 +1,75 @@
+PARSFILE
+#FullDataName Powertrain: 4-Wheel Drive`300 kW, 7-spd., 3.1 Ratio, MT`300 kW Powertrains
+INSTALL_POWERTRAIN 3
+OPT_PT 3
+INSTALL_ENGINE
+INSTALL_TORQUE_TRANSFER_DEVICE
+INSTALL_TRANSMISSION
+
+R_REAR_DRIVE_SC 0.5
+
+OPT_ENGINE_PITCH_REACTION(1) 0
+OPT_ENGINE_PITCH_REACTION(2) 0
+
+#RingCtrl0 0
+R_MDRIVE 0
+#RingCtrl1 1
+#RingCtrl2 2
+#RingCtrl3 2
+#RingCtrl4 1
+#RingCtrl5 1
+#RingCtrl6 1
+#RingCtrl7 0
+OPT_HEV 0
+DRIVELINE_FREQ 9
+DRIVELINE_ZETA 0.9
+#CheckBox0 0    
+#CheckBox1 0    
+
+OPT_ENGINE_INTERNAL 1
+OPT_PWR_CPL_INTERNAL 1
+OPT_TRANS_INTERNAL 1
+IDIFF 1
+OPT_DIFF_INTERNAL 1
+IDIFF 2
+OPT_DIFF_INTERNAL 1
+IDIFF 3
+OPT_DIFF_INTERNAL 1
+
+PARSFILE Powertrain\Engine\Engine_8040b1ad-5f06-4c6c-a6e6-740997750fc3.par
+#BlueLink0 Powertrain: Engine`300 kW Engine` 300 kW Engines` , Engine`Engine_8040b1ad-5f06-4c6c-a6e6-740997750fc3
+
+PARSFILE Powertrain\Clutch\TrqCl_07454745-39f2-4228-9c43-cff89325c560.par
+#BlueLink6 Powertrain: Clutch Torque`1000 N-m (Linear)` ` , Clutch`TrqCl_07454745-39f2-4228-9c43-cff89325c560
+
+PARSFILE Powertrain\TransExt\Trans18_4dfb5d8a-94a1-4f31-b6ac-807129b2cc8a.par
+#BlueLink10 Powertrain: Transmission (18 Gears or CVT)`7-Speed (Exotic Sports Car)` 7-Speed Transmissions` , Transmission`Trans18_4dfb5d8a-94a1-4f31-b6ac-807129b2cc8a
+
+
+IDIFF 3
+PARSFILE Powertrain\Centerdiff\XC_eab57451-9d2c-4c0a-91ca-a1c4a8b73a1a.par
+#BlueLink3 Powertrain: Transfer Case`Viscous Coupling: 50/50, Gear Ratio 1:1` Limited Slip and Viscous Coupling` , Transfer case`XC_eab57451-9d2c-4c0a-91ca-a1c4a8b73a1a
+
+
+IDIFF 1
+PARSFILE Powertrain\Frontdiff\DiffF_47cc06d1-4dba-4096-ba90-c418b5d28dfa.par
+#BlueLink4 Powertrain: Front Differential`Viscous: Gear Ratio 3.1` Limited Slip and Viscous Coupling` , Differential front`DiffF_47cc06d1-4dba-4096-ba90-c418b5d28dfa
+
+
+IDIFF 2
+PARSFILE Powertrain\Reardiff\DiffR_43875e05-6d2d-4f1a-9396-a76529dd683d.par
+#BlueLink5 Powertrain: Rear Differential`Viscous: Gear Ratio 3.1:1` Limited Slip and Viscous Coupling` , Differential rear`DiffR_43875e05-6d2d-4f1a-9396-a76529dd683d
+
+
+LOG_ENTRY Used Dataset: Powertrain: 4-Wheel Drive; { 300 kW Powertrains } 300 kW, 7-spd., 3.1 Ratio, MT
+#Library : Powertrain: 4-Wheel Drive
+#DataSet : 300 kW, 7-spd., 3.1 Ratio, MT
+#Category: 300 kW Powertrains
+#FileID  : 4WD_b7a72559-a8f5-4d6a-a3b7-c1e604cda7b8
+#Created : 04-14-2021 08:13:03
+#Modified: 01-06-2022 16:41:32
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode 4WD
+
+END

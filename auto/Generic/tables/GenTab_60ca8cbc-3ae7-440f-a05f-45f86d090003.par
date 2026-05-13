@@ -1,0 +1,44 @@
+PARSFILE
+#FullDataName Generic Table`Batt. charged resis. (4 milliohms)`Powertrain (HEV)
+#RingCtrl0 2D_SPLINE
+#CheckBox0 1    
+
+*3D_XLabel Temperature (C)
+*3D_YLabel State of charged (-)
+*3D_ZLabel Resistance (V2/W)
+
+#DiagramTwo0
+*3D_DATA 3, 4 ! columns x rows
+R_CHRG_BATTERY_CARPET 2D_SPLINE
+0, 0, 25, 45
+0, 0.0094, 0.0047, 0.0047
+0.2, 0.0082, 0.0041, 0.0041
+0.6, 0.00792, 0.00396, 0.00396
+1, 0.00816, 0.00408, 0.00408
+ENDTABLE
+
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+*KEYWORD R_CHRG_BATTERY
+*X_LABEL State of charged (-)
+*Y_LABEL Resistance (V2/W)
+*X_LABEL_2 Temperature (C)
+
+
+#EMBEDDED_NOTES
+#3.96 milli-Ohms at nominal (SOC: 60%, Temperature: 25C)
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic Table; { Powertrain (HEV) } Batt. charged resis. (4 milliohms)
+#Library : Generic Table
+#DataSet : Batt. charged resis. (4 milliohms)
+#Category: Powertrain (HEV)
+#FileID  : GenTab_60ca8cbc-3ae7-440f-a05f-45f86d090003
+#Created : 11-19-2021 18:56:55
+#Modified: 01-14-2022 12:39:39
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode table
+
+END

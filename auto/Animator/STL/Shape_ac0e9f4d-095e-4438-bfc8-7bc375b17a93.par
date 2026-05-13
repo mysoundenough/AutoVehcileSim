@@ -1,0 +1,47 @@
+PARSFILE
+#FullDataName Animator: Shape File Link`VDA: Arrows for Maneuvers`Generic Proving Ground: Signs
+#MiscYellow3
+add_obj Animator\3D_shape_files_DS\proving_ground\vdaarrows.obj
+#ENDMYellow
+
+SET_COLOR 1 1 1
+SET_OFFSET_X 0
+SET_OFFSET_Y 0
+SET_OFFSET_Z .03
+*SPECULAR 1
+*TRANSPARENCY 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 0    
+
+set_transparency 1
+SET_SPECULAR 1 1 1
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_afcdc32f-f767-4c94-b03d-ab015ea668e1.par
+#BlueLink2 Animator: Camera Setup`Proving Grounds: Road Arrows` Scene Specific Preview` , Video Camera`Camera_afcdc32f-f767-4c94-b03d-ab015ea668e1
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_ac0e9f4d-095e-4438-bfc8-7bc375b17a93.png
+
+#EMBEDDED_NOTES
+#This shape is white in color.  On a white background, it may not appear when the View with VS Visualizer button is pressed.  To check the shape, please alter the background color in VS Visualizer.
+#
+#The background color preference is accessible from the preferences dialog in VS Visualizer. (Tools -> Preferences...)
+#
+#When setting the background color, you should only have one VS Visualizer window open, and you will need to close that window and re-launch VS Visualizer in order to see the change.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Generic Proving Ground: Signs } VDA: Arrows for Maneuvers
+#Library : Animator: Shape File Link
+#DataSet : VDA: Arrows for Maneuvers
+#Category: Generic Proving Ground: Signs
+#FileID  : Shape_ac0e9f4d-095e-4438-bfc8-7bc375b17a93
+#Modified: 05-28-2021 15:03:15
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape File
+
+END

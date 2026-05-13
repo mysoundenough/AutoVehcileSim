@@ -1,0 +1,41 @@
+PARSFILE
+#FullDataName Animator: Shape File Link`US: Speed Limit 70mph (18''x24'')`Environment: Speed Limit Signs, Varying Sizes
+#MiscYellow3
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\Speed_Limit\Sign_70_MPH_18_24.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+*IMAGE_FIT_MODE 1
+#CheckBox0 1    
+set_lighting off
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+vsv_enable_shadows_recursive
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
+#BlueLink2 Animator: Camera Setup`YZ-Plane, No Offsets (with Yaw)` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_1052279a-691a-49ed-9b10-297ca8a314a7.png
+
+#EMBEDDED_NOTES
+#US Road Sign
+#Speed Limit 55mph
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Environment: Speed Limit Signs, Varying Sizes } US: Speed Limit 70mph (18''x24'')
+#Library : Animator: Shape File Link
+#DataSet : US: Speed Limit 70mph (18''x24'')
+#Category: Environment: Speed Limit Signs, Varying Sizes
+#FileID  : Shape_1052279a-691a-49ed-9b10-297ca8a314a7
+#Created : 09-27-2022 15:50:24
+#Modified: 09-27-2022 16:34:20
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape File
+
+END

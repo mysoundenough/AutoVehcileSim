@@ -1,0 +1,139 @@
+PARSFILE
+#FullDataName CarSim Run Control`Pickup Hauler - Car 1: DLC`Multiple Vehicles, Parallel Solvers
+#VEHICLECODE Ind_SA + SS
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_e8d254bc-1169-4bc1-b964-53a785de3a21
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Models\Simulink\Simlink_510eb405-96d0-4670-a192-ce0f7d6fb374.par
+#BlueLink12 Models: Simulink`Vehicle Hauling - Car 1` Parallel Solvers` , Models`Simlink_510eb405-96d0-4670-a192-ce0f7d6fb374
+
+PARSFILE Animator\Cameras\Camera_5c5efc90-194c-430c-929a-bfe55db49abf.par
+#BlueLink0 Animator: Camera Setup`310 Azm, 4 El, 16 m, No Yaw` Vehicle Reference` , Animator camera`Camera_5c5efc90-194c-430c-929a-bfe55db49abf
+
+#CheckBox0 1    
+#CheckBox1 1    
+#CheckBox2 1    
+#CheckBox3 0    
+#CheckBox4 1    
+#CheckBox5 1    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox8 1    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+#CheckBox12 0    
+
+#RingCtrl0 4
+#RingCtrl1 1
+#RingCtrl2 1
+#RingCtrl3 0
+#RingCtrl6 6
+#RingCtrl7 -1
+*RUN_COLOR 1 1 1
+SET_RUN_COLOR 1 1 1
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Vehicles\Loaded\VehLoad_332b2c80-7834-4416-9672-add74e299607.par
+#BlueLink2 Vehicle with Loads, Sensors, Trailer, etc.`Pickup, 2A Gooseneck Trailer, No Load` Pickup, Full Size` , Math Model`VehLoad_332b2c80-7834-4416-9672-add74e299607
+
+PARSFILE Procedures\Proc_b157e401-006e-4da8-821c-e954769dd1a8.par
+#BlueLink28 Procedures`DLC @ 50 km/h` Handling Testing` , Procedure`Proc_b157e401-006e-4da8-821c-e954769dd1a8
+
+PARSFILE Generic\Links\GenLink_5ef1deb7-58d3-4925-bcc8-e970ebec79be.par
+#BlueLink9 Generic Group of Links`Wheel Restraints, Car 1` Vehicle Hauling` , Miscellaneous`GenLink_5ef1deb7-58d3-4925-bcc8-e970ebec79be
+
+PARSFILE Generic\Group\GenGrp_88a558cd-6268-4c8d-9d16-1e62d4572906.par
+#BlueLink10 Generic Data Group`4 Axle - Fx, Fy, Fz` Tire Force Arrows` , Miscellaneous`GenGrp_88a558cd-6268-4c8d-9d16-1e62d4572906
+
+PARSFILE Roads\Profiles\Profile_af659265-1cf7-421d-a0bb-b7dd3e02df5c.par
+#BlueLink11 Surface: Roughness Profiles`Rough Road 02 - 92 in/mi (1.45 m/km)` Rough Road - Sample Data` , Miscellaneous`Profile_af659265-1cf7-421d-a0bb-b7dd3e02df5c
+
+OPT_STOP 1
+TSTART 0
+SSTART -215
+TSTART_WRITE = 0;
+TSTOP 65
+SSTOP 1200
+OPT_DIRECTION 0
+*TSTOP 65
+*TSTART 0
+*SSTART -215
+*SSTOP 1200
+PARSFILE Plot\Setup\Plot_7251a722-18c9-43db-a324-bd380d275618.par
+#BlueLink15 Plot: Setup`Throttle: Control Input` Controls: Driver` , Plot`Plot_7251a722-18c9-43db-a324-bd380d275618
+
+PARSFILE Plot\Setup\Plot_dc3bd4cb-2a9b-4dbc-8126-38a398aefd1b.par
+#BlueLink16 Plot: Setup`Steering Wheel Angle` Steering` , Plot`Plot_dc3bd4cb-2a9b-4dbc-8126-38a398aefd1b
+
+PARSFILE Plot\Setup\Plot_dafae624-d48a-4548-93eb-fa73d080e21a.par
+#BlueLink17 Plot: Setup`Brake Control: M/C Pressure` Braking` , Plot`Plot_dafae624-d48a-4548-93eb-fa73d080e21a
+
+PARSFILE Plot\Setup\Plot_4e56afb6-6de8-41b6-aaf4-1c1f35754a0f.par
+#BlueLink18 Plot: Setup`Station vs. Time` Tracking` , Plot`Plot_4e56afb6-6de8-41b6-aaf4-1c1f35754a0f
+
+PARSFILE Plot\Setup\Plot_a146934a-339c-4983-9664-0f9749a0dfd6.par
+#BlueLink19 Plot: Setup`Vertical Forces` Tire Forces and Moments` , Plot`Plot_a146934a-339c-4983-9664-0f9749a0dfd6
+
+PARSFILE Plot\Setup\Plot_a243fc1c-fc6b-4404-89ac-bc8209a293be.par
+#BlueLink20 Plot: Setup`Longitudinal Speed (Vxz_Fwd) vs. Time` Vehicle Motion` , Plot`Plot_a243fc1c-fc6b-4404-89ac-bc8209a293be
+
+
+SPECIAL_PARSFILE Runs\Run_f25743f3-86a3-466f-80bd-079c64ff56c0.par
+#BlueLink23 CarSim Run Control`Hauled Car - Car 2: DLC` Multiple Vehicles, Parallel Solvers` , Overlay run or ERD file`Run_f25743f3-86a3-466f-80bd-079c64ff56c0
+
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Animator\Vehicles\AniVeh_6ba13624-c527-4355-b1e1-654631d3017e.png
+WRITE_SENSOR_DETECT
+Title Pickup Hauler - Car 1: DLC <Multiple Vehicles, Parallel Solvers>
+CATEGORY Multiple Vehicles, Parallel Solvers 
+DATASET_TITLE Pickup Hauler - Car 1: DLC
+#MiscYellow0
+! Initialize Vehicle Combination, write outputs after settling
+SPEED_TARGET_CONSTANT 0
+eq_in pbk_con_constant if(t>32, 0, 3000000)
+eq_in speed_target_constant if(t>32, 50/3.6, 0)
+define_parameter WriteStart = 50;
+define_parameter WriteStop = 65;
+EQ_IN OPT_WRITE = IF( (T >= WriteStart) & (T < WriteStop), 1, 0)
+#ENDMYellow
+
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#WARNING: do not click Run or Send to Simulink!
+#Use the 'Parallel Solvers Library (Libraries > Batch > Parallel Solvers) to run this example.
+#
+#This is 1 of 2 Run Control datasets used to simultaneously simulate  a lead unit hauling another fully modeled vehicle on a flatbed trailer.
+#
+#In this example, the output is written after the vehicle combination stabilizes.
+#
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { Multiple Vehicles, Parallel Solvers } Pickup Hauler - Car 1: DLC
+#Library : CarSim Run Control
+#DataSet : Pickup Hauler - Car 1: DLC
+#Category: Multiple Vehicles, Parallel Solvers
+#FileID  : Run_e8d254bc-1169-4bc1-b964-53a785de3a21
+#Created : 01-11-2023 13:03:54
+#Modified: 07-17-2023 14:21:18
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Run
+
+END

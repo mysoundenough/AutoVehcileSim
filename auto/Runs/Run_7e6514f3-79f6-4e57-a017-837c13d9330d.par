@@ -1,0 +1,115 @@
+PARSFILE
+#FullDataName CarSim Run Control`1c. Handoff to Driver Model (PID Torque)`Change Import Mode
+#VEHICLECODE Ind_Ind
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_7e6514f3-79f6-4e57-a017-837c13d9330d
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Animator\Cameras\Camera_27cfa3aa-bcd7-4b05-b522-6516bf0a17ae.par
+#BlueLink0 Animator: Camera Setup`200 Azm, 10 El, 25 m, No Yaw` Vehicle Reference` , Animator camera`Camera_27cfa3aa-bcd7-4b05-b522-6516bf0a17ae
+
+#CheckBox0 1    
+#CheckBox1 1    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 1    
+#CheckBox5 1    
+#CheckBox6 0    
+#CheckBox7 1    
+#CheckBox8 1    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+#CheckBox12 0    
+
+#RingCtrl0 0
+#RingCtrl1 10
+#RingCtrl2 0
+#RingCtrl3 0
+#RingCtrl6 4
+#RingCtrl7 -1
+*RUN_COLOR 1 0 0
+SET_RUN_COLOR 1 0 0
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Vehicles\Assembly\Vehicle_9db9b98a-6725-424b-9635-e1ca6e15979d.par
+#BlueLink2 Vehicle: Assembly`C-Class, Hatchback` C-Class` , Math Model`Vehicle_9db9b98a-6725-424b-9635-e1ca6e15979d
+
+PARSFILE Procedures\Proc_b0146b38-063b-42f6-80a9-84f11983454e.par
+#BlueLink28 Procedures`SLC, Handoff to Driver Model` Handling Testing` , Procedure`Proc_b0146b38-063b-42f6-80a9-84f11983454e
+
+PARSFILE Generic\Group\GenGrp_2672ac01-959f-44a8-83e4-b3dd95bb8c2b.par
+#BlueLink9 Generic Data Group`Driver Model Handoff (PID Torque)` Driver Model Handoff` , Miscellaneous`GenGrp_2672ac01-959f-44a8-83e4-b3dd95bb8c2b
+
+OPT_STOP 0
+TSTART 0
+SSTART -10
+TSTART_WRITE = 0;
+TSTOP 15
+SSTOP =  SSTART + 1 ;
+OPT_DIRECTION 1
+*TSTOP 15
+*TSTART 0
+*SSTART -10
+DELETE_PLOT_GROUP default
+PLOT_GROUP default
+PARSFILE Plot\Setup\Plot_dc3bd4cb-2a9b-4dbc-8126-38a398aefd1b.par
+#BlueLink15 Plot: Setup`Steering Wheel Angle` Steering` , Plot`Plot_dc3bd4cb-2a9b-4dbc-8126-38a398aefd1b
+
+PARSFILE Plot\Setup\Plot_0ae17b35-10e1-48bb-b226-c3ed72aa451b.par
+#BlueLink16 Plot: Setup`Lateral Forces (Axle 1)` Tire Forces and Moments` , Plot`Plot_0ae17b35-10e1-48bb-b226-c3ed72aa451b
+
+PARSFILE Plot\Setup\Plot_8b22f20a-1297-43cf-9e59-a0b1d530d136.par
+#BlueLink17 Plot: Setup`Lateral Accel. of CG's vs. Time` Vehicle Motion` , Plot`Plot_8b22f20a-1297-43cf-9e59-a0b1d530d136
+
+PARSFILE Plot\Setup\Plot_8ab0454a-0c16-4cba-b280-35e4f7405d7b.par
+#BlueLink18 Plot: Setup`Steering Wheel Angular Rate (Import)` Steering` , Plot`Plot_8ab0454a-0c16-4cba-b280-35e4f7405d7b
+
+
+SPECIAL_PARSFILE Runs\Run_39de44c5-7637-4d34-acb7-8b5a76a5c9b0.par
+#BlueLink23 CarSim Run Control`1a. Handoff to Driver Model (Angle)` Change Import Mode` , Overlay run or ERD file`Run_39de44c5-7637-4d34-acb7-8b5a76a5c9b0
+
+
+SPECIAL_PARSFILE Runs\Run_8d1d16a9-687d-4f1b-a05b-6442281db3dd.par
+#BlueLink24 CarSim Run Control`1b. Handoff to Driver Model (Torque)` Change Import Mode` , Overlay run or ERD file`Run_8d1d16a9-687d-4f1b-a05b-6442281db3dd
+
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Vehicles\Assembly\Vehicle_9db9b98a-6725-424b-9635-e1ca6e15979d.png
+WRITE_SENSOR_DETECT
+Title 1c. Handoff to Driver Model (PID Torque) <Change Import Mode>
+CATEGORY Change Import Mode 
+DATASET_TITLE 1c. Handoff to Driver Model (PID Torque)
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#This example series demonstrates Handoff steering from Manual control to the Driver Model. Initially, the steering wheel angle is overwritten with the import variable IMP_STEER_SW in replace mode. An Event series is used to switch this mode to 'Add' in order to handoff to the Driver Model.
+#
+#This third example sets the steering mode to torque steer and a PID damping controller during handoff to provide a very smooth transition back to the driver model calculation.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { Change Import Mode } 1c. Handoff to Driver Model (PID Torque)
+#Library : CarSim Run Control
+#DataSet : 1c. Handoff to Driver Model (PID Torque)
+#Category: Change Import Mode
+#FileID  : Run_7e6514f3-79f6-4e57-a017-837c13d9330d
+#Created : 05-10-2023 14:06:22
+#Modified: 07-17-2023 13:47:24
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Run
+
+END

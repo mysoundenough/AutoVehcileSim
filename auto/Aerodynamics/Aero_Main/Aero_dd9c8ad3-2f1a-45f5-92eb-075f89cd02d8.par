@@ -1,0 +1,51 @@
+PARSFILE
+#FullDataName Aerodynamics: Basic`Trailer Aerodynamics Testing`
+#CheckBox0 0    
+
+#RingCtrl0 2
+#RingCtrl1 2
+#RingCtrl2 2
+#RingCtrl3 2
+#RingCtrl4 2
+#RingCtrl5 2
+PARSFILE Aerodynamics\Aero_Fx\AirCFx_e38dd5b9-ec8b-404b-8b0a-ec507ef1a7c8.par
+#BlueLink0 Aerodynamics: Fx (Drag) Coef. vs. Aero Slip`Trailer Drag Testing` ` , CFx`AirCFx_e38dd5b9-ec8b-404b-8b0a-ec507ef1a7c8
+
+PARSFILE Aerodynamics\Aero_Fy\AirCFy_459c514d-bb90-4760-a0c3-76202d122244.par
+#BlueLink1 Aerodynamics: Fy (Side Force) Coef. vs. Aero Slip`Trailer Side Testing` ` , CFy`AirCFy_459c514d-bb90-4760-a0c3-76202d122244
+
+PARSFILE Aerodynamics\Aero_Fz\AirCFz_04bcd1bc-e39a-416f-bd8b-00cd0d91c278.par
+#BlueLink2 Aerodynamics: Fz (Lift) Coef. vs. Aero Slip`Trailer Lift Testing` ` , CFz`AirCFz_04bcd1bc-e39a-416f-bd8b-00cd0d91c278
+
+PARSFILE Aerodynamics\Aero_Mx\AirCMx_eb37ef5a-e970-4ad6-b377-f14c6cacd0ce.par
+#BlueLink3 Aerodynamics: Mx (Roll Moment) Coef. vs. Aero Slip`Trailer Roll Testing` ` , CMx`AirCMx_eb37ef5a-e970-4ad6-b377-f14c6cacd0ce
+
+PARSFILE Aerodynamics\Aero_My\AirCMy_e7cd8ac4-f9c1-4d24-b04f-de1924bb9f28.par
+#BlueLink4 Aerodynamics: My (Pitch Moment) Coef. vs. Aero Slip`Trailer Pitch Testing` ` , CMy`AirCMy_e7cd8ac4-f9c1-4d24-b04f-de1924bb9f28
+
+PARSFILE Aerodynamics\Aero_Mz\AirCMz_0ece6711-d652-489b-9792-9beeb072c2c0.par
+#BlueLink5 Aerodynamics: Mz (Yaw Moment) Coef. vs. Aero Slip`Trailer Yaw Testing` ` , CMz`AirCMz_0ece6711-d652-489b-9792-9beeb072c2c0
+
+X_REF_AERO -2864
+Y_REF_AERO 0
+H_REF_AERO 0
+L_REF_AERO 2000
+AREA_AERO 3.0
+D_AIR 1.206
+
+#EMBEDDED_NOTES
+#Aerodynamics data representative of a small van, adapted for use as a trailer aerodynamics dataset. Not necessarily representative of the aerodynamics of a trailer which is tested behind a tow vehicle.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Aerodynamics: Basic; Trailer Aerodynamics Testing
+#Library : Aerodynamics: Basic
+#DataSet : Trailer Aerodynamics Testing
+#Category: 
+#FileID  : Aero_dd9c8ad3-2f1a-45f5-92eb-075f89cd02d8
+#Created : 10-06-2022 12:56:56
+#Modified: 10-06-2022 13:51:46
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Aerodynamics
+
+END

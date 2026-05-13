@@ -1,0 +1,46 @@
+PARSFILE
+#FullDataName Events`Check AEB Final Run, 50%, Bicyclist`Pedestrian Euro NCAP
+#CheckBox1 1    
+*CLEAR
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 >=
+#RingCtrl1 <
+#RingCtrl10 2
+#RingCtrl11 4
+RESET_EVENTS
+*NAME1 END_FINAL_RUN
+*NAME2 END_FINAL_RUN
+*VALUE1 1
+*VALUE2 1
+#MiscYellow0
+END_FINAL_RUN = if ( (FINAL_AEB_TEST & AEB_OnTestSuccess) | (FINAL_AEB_TEST & AEB_ON_COLLIDE), 1, 0)
+#ENDMYellow
+
+MAKE_EVENT END_FINAL_RUN >= 1 ; Events\Events_ea969e12-443d-4590-84d1-e4d34c5706fc.par
+#BlueLink0 Events`End Last Run` Pedestrian Euro NCAP` , Events`Events_ea969e12-443d-4590-84d1-e4d34c5706fc
+
+MAKE_EVENT END_FINAL_RUN < 1 ; Events\Events_f3abcdd9-1fa4-403d-a3d5-e6f509833be9.par
+#BlueLink1 Events`AEB Run Success, 50%, Bicyclist` Pedestrian Euro NCAP` , Events`Events_f3abcdd9-1fa4-403d-a3d5-e6f509833be9
+
+SET_EVENT_ID 0 ! reset to default
+
+#EMBEDDED_NOTES
+#Once the AEB test run has completed, check to see if it is the final run in the test, or if there are more runs left to complete
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Events; { Pedestrian Euro NCAP } Check AEB Final Run, 50%, Bicyclist
+#Library : Events
+#DataSet : Check AEB Final Run, 50%, Bicyclist
+#Category: Pedestrian Euro NCAP
+#FileID  : Events_159bb0f5-d0ab-4c3f-83b6-720202eabc69
+#Created : 08-17-2021 13:57:38
+#Modified: 08-30-2021 11:20:52
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

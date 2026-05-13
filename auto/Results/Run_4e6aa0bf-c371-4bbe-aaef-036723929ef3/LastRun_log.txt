@@ -1,0 +1,70 @@
+Run made by CarSim 2024.1 at 14:51 on March 25, 2024.
+Revision 222209, March 18, 2024
+Started with simfile: simfile.sim
+
+Include PARSFILE "Results\Run_4e6aa0bf-c371-4bbe-aaef-036723929ef3\Run_all.par"
+Used Dataset: Animator: Reference Frame; { Tracking: Vehicle } Vehicle X-Y
+Used Dataset: Animator: Camera Setup; { K & C } K & C View
+Installed keywords into VS Solver for MODEL_LAYOUT I_I
+ 01 - K & C: Design Load (no plots) <K & C Tests - Complete sequence>
+Used Dataset: Generic VS Commands; { K&C Test Sequence } 07b - Mz compliance (opposed)
+Used Dataset: Generic VS Commands; { K&C Test Sequence } 07a,b,c,d - Mz comp - reduce to min
+Used Dataset: Events; { K&C Test Sequence } 07a,b,c,d - Mz comp - reduce to min
+Used Dataset: Plot: Format; Lines without Symbols
+Used Dataset: Plot: Setup; { K&C Test Results } Camber vs Fx
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { K&C Test Results } Steer vs Fx
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Tire Forces and Moments } Lateral Forces
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Tire Forces and Moments } Vertical Forces
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { K&C Test Results } Jounce - Front vs Mz
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { K&C Test Results } Jounce - Rear vs Mz
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Tire Forces and Moments } Aligning Moments
+Used Dataset: Procedures; { K&C Test Sequence } 07b - Mz compliance (opposed)
+ 07b - Mz comp. (opposed) <K & C Tests - Complete sequence>
+Used Dataset: CarSim Run Control; { K & C Tests - Complete sequence } 07b - Mz comp. (opposed)
+
+Time to read input = 0.0466624
+Function FY_TIRE_CARPET(1,1) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function MZ_TIRE_CARPET(1,1) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function FY_TIRE_CARPET(1,2) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function MZ_TIRE_CARPET(1,2) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function FY_TIRE_CARPET(2,1) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function MZ_TIRE_CARPET(2,1) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function FY_TIRE_CARPET(2,2) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function MZ_TIRE_CARPET(2,2) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function F_REB_STOP_TABLE(1,1) extrapolated (out of range HIGH) for X = 1.84289e-05 mm at T = 0
+Function F_JNC_STOP_TABLE(1,1) extrapolated (out of range LOW) for X = 1.84289e-05 mm at T = 0
+Function F_REB_STOP_TABLE(1,2) extrapolated (out of range HIGH) for X = 1.84289e-05 mm at T = 0
+Function F_JNC_STOP_TABLE(1,2) extrapolated (out of range LOW) for X = 1.84289e-05 mm at T = 0
+Function F_REB_STOP_TABLE(2,1) extrapolated (out of range HIGH) for X = -6.6721e-07 mm at T = 0
+Function F_JNC_STOP_TABLE(2,1) extrapolated (out of range LOW) for X = -6.6721e-07 mm at T = 0
+Function F_REB_STOP_TABLE(2,2) extrapolated (out of range HIGH) for X = -6.6721e-07 mm at T = 0
+Function F_JNC_STOP_TABLE(2,2) extrapolated (out of range LOW) for X = -6.6721e-07 mm at T = 0
+
+Run started: VS output file = Results\Run_4e6aa0bf-c371-4bbe-aaef-036723929ef3\LastRun.vsb
+
+Event #1 occurred at t = 50: mz_ground <= -MZ_RANGE
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_e60a26e3-6f98-40e2-bf99-64ab4d3f15a8.par"
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Generic\VS_commands\GenVS_51c55f9a-4c77-456b-a83c-e4e0225d7609.par"
+Used Dataset: Generic VS Commands; { K&C Test Sequence } 07a,b,c,d - Mz comp - Increase to max
+Used Dataset: Events; { K&C Test Sequence } 07a,b,c,d - Mz comp - increase to max
+
+Event #2 occurred at t = 150: mz_ground >=MZ_RANGE
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_a055a4e1-6649-4220-a1e5-3d6d814a59d4.par"
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Generic\VS_commands\GenVS_68ab7523-3b22-4979-adbb-7a69271117ab.par"
+Used Dataset: Generic VS Commands; { K&C Test Sequence } 07a,b,c,d - Mz comp - reduce to min
+Used Dataset: Events; { K&C Test Sequence } 07a,b,c,d - Mz comp - reduce to min
+
+Event #3 occurred at t = 250.001: (mz_ground <= -MZ_RANGE) & END_AFTER_EVENT
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_b5af09b5-d8ad-4e81-ae24-eebce691780e.par"
+
+Run stopped at t = 250.001. VS Command STOP_RUN_NOW End event triggered
+Used Dataset: Events; End Events
+
+Computational time ratio: RTIME = 0.0539748 (real time)/(simulation time)
+

@@ -1,0 +1,41 @@
+PARSFILE
+#FullDataName Plot: Setup`Spring Comp. (External) L1`Suspension Motion
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par
+#BlueLink0 Plot: Format`Default Plot Settings` ` , Plot format`PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS CmpS_L1, Time
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Spring Comp. (External) L1
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Suspension Motion } Spring Comp. (External) L1
+#Library : Plot: Setup
+#DataSet : Spring Comp. (External) L1
+#Category: Suspension Motion
+#FileID  : Plot_996d1b35-03aa-4506-987d-f4328e2c94fd
+#Created : 11-12-2022 12:16:49
+#Modified: 11-17-2022 11:36:42
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Plot Setup
+
+END

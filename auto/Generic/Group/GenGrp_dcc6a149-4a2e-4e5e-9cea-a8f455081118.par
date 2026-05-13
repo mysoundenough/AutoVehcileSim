@@ -1,0 +1,35 @@
+PARSFILE
+#FullDataName Generic Data Group`Headwind: 120 km/h`Wind and Environment
+#VehCode Generic Group
+PARSFILE Wind\Speed\Wind_6ccad2e5-8eb6-4c82-a840-76bdc3d08bf7.par
+#BlueLink0 Wind Speed`Constant: 120 km/h` Constant` , Link 1`Wind_6ccad2e5-8eb6-4c82-a840-76bdc3d08bf7
+
+
+PARSFILE Wind\Heading\WindDir_4eb0420e-d1f8-4571-88ee-19cad887c2cc.par
+#BlueLink1 Wind Heading`Constant: -180 deg` Constant` , Link 2`WindDir_4eb0420e-d1f8-4571-88ee-19cad887c2cc
+
+
+#BlueLink2 ` , Link 3` , Link 3` , Link 3`
+
+
+#BlueLink3 ` , Link 4` , Link 4` , Link 4`
+
+
+
+
+
+
+
+
+LOG_ENTRY Used Dataset: Generic Data Group; { Wind and Environment } Headwind: 120 km/h
+#Library : Generic Data Group
+#DataSet : Headwind: 120 km/h
+#Category: Wind and Environment
+#FileID  : GenGrp_dcc6a149-4a2e-4e5e-9cea-a8f455081118
+#Created : 10-06-2022 10:55:05
+#Modified: 10-06-2022 11:05:13
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Generic Group
+
+END

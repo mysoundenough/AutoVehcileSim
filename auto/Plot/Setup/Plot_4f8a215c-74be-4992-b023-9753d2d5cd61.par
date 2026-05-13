@@ -1,0 +1,43 @@
+PARSFILE
+#FullDataName Plot: Setup`Kingpin Torque vs Steering Wheel Angle`Steering
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par
+#BlueLink0 Plot: Format`Default Plot Settings` ` , Plot format`PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS Mz_KP_L1, Steer_SW
+PLOTCHANNELS Mz_KP_R1, Steer_SW
+PLOTCHANNELS Mz_KP_L2, Steer_SW
+PLOTCHANNELS Mz_KP_R2, Steer_SW
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Kingpin Torque vs Steering Wheel Angle
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Steering } Kingpin Torque vs Steering Wheel Angle
+#Library : Plot: Setup
+#DataSet : Kingpin Torque vs Steering Wheel Angle
+#Category: Steering
+#FileID  : Plot_4f8a215c-74be-4992-b023-9753d2d5cd61
+#Modified: 05-28-2021 14:59:43
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Plot Setup
+
+END

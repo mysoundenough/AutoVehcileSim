@@ -1,0 +1,57 @@
+PARSFILE
+#FullDataName Generic VS Commands`Measured Aero Coefficients`Virtual Wind Tunnel
+#VehCode VS Commands
+
+#MiscYellow0
+define_output Cd_VWT = -Fx_Air/(AREA_AERO*D_AIR*Vwind^2/2); -; Drag coefficient
+define_output Cs_VWT = -Fy_Air/(AREA_AERO*D_AIR*Vwind^2/2); -; Side coefficient
+define_output Cl_VWT = Fz_Air/(AREA_AERO*D_AIR*Vwind^2/2); -; Lift coefficient
+define_output Cr_VWT = Mx_Air/(AREA_AERO*L_REF_AERO*D_AIR*Vwind^2/2); -; Roll coefficient
+define_output Cp_VWT = -My_Air/(AREA_AERO*L_REF_AERO*D_AIR*Vwind^2/2); -; Pitch coefficient
+define_output Cy_VWT = -Mz_Air/(AREA_AERO*L_REF_AERO*D_AIR*Vwind^2/2); -; Yaw coefficient
+
+define_output Cd_Input = FX_AERO_SHAPING(0, BetaAir, 1); -; Drag coefficient
+define_output Cs_Input = FY_AERO_SHAPING(0, BetaAir, 1); -; Side coefficient
+define_output Cl_Input = FZ_AERO_SHAPING(0, BetaAir, 1); -; Lift coefficient
+define_output Cr_Input = MX_AERO_SHAPING(0, BetaAir, 1); -; Roll coefficient
+define_output Cp_Input = MY_AERO_SHAPING(0, BetaAir, 1); -; Pitch coefficient
+define_output Cy_Input = Mz_AERO_SHAPING(0, BetaAir, 1); -; Yaw coefficient
+#ENDMYellow
+
+PARSFILE Plot\Setup\Plot_fa0b5796-0893-462c-bb0f-66be8427b69e.par
+#BlueLink3 Plot: Setup`Drag Coeff: Measured vs Input` Virtual Wind Tunnel` , Plot`Plot_fa0b5796-0893-462c-bb0f-66be8427b69e
+
+PARSFILE Plot\Setup\Plot_3b110c8f-5a6d-4cfb-a6d1-d98c0ceeb0d7.par
+#BlueLink4 Plot: Setup`Side Coeff: Measured vs Input` Virtual Wind Tunnel` , Plot`Plot_3b110c8f-5a6d-4cfb-a6d1-d98c0ceeb0d7
+
+PARSFILE Plot\Setup\Plot_7e1d3234-c1ae-4c53-9a48-99e8a5002536.par
+#BlueLink5 Plot: Setup`Lift Coeff: Measured vs Input` Virtual Wind Tunnel` , Plot`Plot_7e1d3234-c1ae-4c53-9a48-99e8a5002536
+
+PARSFILE Plot\Setup\Plot_614b9447-59c1-401c-b691-82a35aaa6913.par
+#BlueLink6 Plot: Setup`Roll Coeff: Measured vs Input` Virtual Wind Tunnel` , Plot`Plot_614b9447-59c1-401c-b691-82a35aaa6913
+
+PARSFILE Plot\Setup\Plot_cdacb3dd-d020-4e59-a556-db58b976630b.par
+#BlueLink7 Plot: Setup`Pitch Coeff: Measured vs Input` Virtual Wind Tunnel` , Plot`Plot_cdacb3dd-d020-4e59-a556-db58b976630b
+
+PARSFILE Plot\Setup\Plot_4501f9d2-019d-4616-93f5-f54a48768016.par
+#BlueLink8 Plot: Setup`Yaw Coeff: Measured vs Input` Virtual Wind Tunnel` , Plot`Plot_4501f9d2-019d-4616-93f5-f54a48768016
+
+
+#EMBEDDED_NOTES
+#In this dataset, the aerodynamics coefficients are calculated from the measured aero forces and moments. These are then compared to the original input data.
+#
+#The intent is to show how the aero forces and moments are calculated from the coefficient data, and to confirm that the input data is reflected faithfully in the simulated behavior.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { Virtual Wind Tunnel } Measured Aero Coefficients
+#Library : Generic VS Commands
+#DataSet : Measured Aero Coefficients
+#Category: Virtual Wind Tunnel
+#FileID  : GenVS_8ce960d1-76e0-4365-8579-b121cc57c9bf
+#Created : 10-06-2022 11:17:13
+#Modified: 10-06-2022 14:20:26
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode VS Commands
+
+END

@@ -1,0 +1,46 @@
+PARSFILE
+#FullDataName Animator: Shape File Link`Cube: Artic Bus Unit 1 stripe`Artic Bus
+#MiscYellow3
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Cubes\cube_1m_wide.obj
+#ENDMYellow
+
+SET_COLOR 1 1 1
+SET_SCALE_X 0.1
+SET_SCALE_Y 0.5
+SET_SCALE_Z 0.035
+SET_OFFSET_X -0.5
+SET_OFFSET_Z 0.01
+X_REF_LENGTH 1
+Y_REF_LENGTH 1
+Z_REF_LENGTH 1
+*SPECULAR 1
+#CheckBox0 1    
+set_lighting off
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 0    
+
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_af7c7c91-f09a-4493-9104-5b2725e3cf03.par
+#BlueLink2 Animator: Camera Setup`Isometric View - Small Objects` Shape Preview` , Video Camera`Camera_af7c7c91-f09a-4493-9104-5b2725e3cf03
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_74a9ae55-6cf1-44e5-91d8-85690ec57aed.png
+
+#EMBEDDED_NOTES
+#Intended to be detection vector of ADAS sensor. 0.1m Y and Z, 1m X.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Artic Bus } Cube: Artic Bus Unit 1 stripe
+#Library : Animator: Shape File Link
+#DataSet : Cube: Artic Bus Unit 1 stripe
+#Category: Artic Bus
+#FileID  : Shape_74a9ae55-6cf1-44e5-91d8-85690ec57aed
+#Created : 04-18-2022 14:14:07
+#Modified: 05-26-2022 22:43:30
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape File
+
+END

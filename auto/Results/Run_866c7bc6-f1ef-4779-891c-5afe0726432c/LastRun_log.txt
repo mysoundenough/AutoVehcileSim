@@ -1,0 +1,65 @@
+Run made by CarSim 2024.1 at 14:51 on March 25, 2024.
+Revision 222209, March 18, 2024
+Started with simfile: simfile.sim
+
+Include PARSFILE "Results\Run_866c7bc6-f1ef-4779-891c-5afe0726432c\Run_all.par"
+Used Dataset: Animator: Reference Frame; { Tracking: Vehicle } Vehicle X-Y
+Used Dataset: Animator: Camera Setup; { K & C } K & C View
+Installed keywords into VS Solver for MODEL_LAYOUT I_I
+ 01 - K & C: Design Load (no plots) <K & C Tests - Complete sequence>
+Used Dataset: Control: Braking MC Pressure (Open Loop); { Constant } Constant: 30 MPa
+Used Dataset: Generic VS Commands; { K&C Test Sequence } 06c - Fx compliance (brakes, R)
+Used Dataset: Generic VS Commands; { K&C Test Sequence } 06b - Fx comp-increase to max brake (R)
+Used Dataset: Events; { K&C Test Sequence } 06c - Increase to max brake force (R)
+Used Dataset: Plot: Format; Lines without Symbols
+Used Dataset: Plot: Setup; { K&C Test Results } Camber vs Fx_R
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { K&C Test Results } Steer vs Fx_R
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Tire Forces and Moments } Longitudinal Forces
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Tire Forces and Moments } Vertical Forces
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { K&C Test Results } Jounce - Front vs Fx_R
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { K&C Test Results } Jounce - Rear vs Fx_R
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Steering } Kingpin Torque
+Used Dataset: Procedures; { K&C Test Sequence } 06c - Fx compliance (brakes, right)
+ 06c - Fx compliance (brakes, R) <K & C Tests - Complete sequence>
+Used Dataset: CarSim Run Control; { K & C Tests - Complete sequence } 06c - Fx compliance (brakes, R)
+
+Time to read input = 0.0669174
+Function FY_TIRE_CARPET(1,1) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function MZ_TIRE_CARPET(1,1) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function FY_TIRE_CARPET(1,2) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function MZ_TIRE_CARPET(1,2) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function FY_TIRE_CARPET(2,1) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function MZ_TIRE_CARPET(2,1) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function FY_TIRE_CARPET(2,2) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function MZ_TIRE_CARPET(2,2) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function F_REB_STOP_TABLE(1,1) extrapolated (out of range HIGH) for X = 1.84289e-05 mm at T = 0
+Function F_JNC_STOP_TABLE(1,1) extrapolated (out of range LOW) for X = 1.84289e-05 mm at T = 0
+Function F_REB_STOP_TABLE(1,2) extrapolated (out of range HIGH) for X = 1.84289e-05 mm at T = 0
+Function F_JNC_STOP_TABLE(1,2) extrapolated (out of range LOW) for X = 1.84289e-05 mm at T = 0
+Function F_REB_STOP_TABLE(2,1) extrapolated (out of range HIGH) for X = -6.6721e-07 mm at T = 0
+Function F_JNC_STOP_TABLE(2,1) extrapolated (out of range LOW) for X = -6.6721e-07 mm at T = 0
+Function F_REB_STOP_TABLE(2,2) extrapolated (out of range HIGH) for X = -6.6721e-07 mm at T = 0
+Function F_JNC_STOP_TABLE(2,2) extrapolated (out of range LOW) for X = -6.6721e-07 mm at T = 0
+
+Run started: VS output file = Results\Run_866c7bc6-f1ef-4779-891c-5afe0726432c\LastRun.vsb
+
+Event #1 occurred at t = 80: fx_ground <= -FX_RANGE
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_65b352f1-ea4d-4012-b75a-c188865c2904.par"
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Generic\VS_commands\GenVS_0e964ec0-666f-400a-997a-a7677fe1c1d2.par"
+Used Dataset: Generic VS Commands; { K&C Test Sequence } 06b - Fx comp - Reduce to zero (R)
+Used Dataset: Events; { K&C Test Sequence } 06c - Reduce brake force to zero (R)
+
+Event #2 occurred at t = 160: fx_ground >= 0
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_b5af09b5-d8ad-4e81-ae24-eebce691780e.par"
+
+Run stopped at t = 160. VS Command STOP_RUN_NOW End event triggered
+Used Dataset: Events; End Events
+
+Computational time ratio: RTIME = 0.0551572 (real time)/(simulation time)
+

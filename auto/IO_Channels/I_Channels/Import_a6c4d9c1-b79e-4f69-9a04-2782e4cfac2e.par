@@ -1,0 +1,27 @@
+PARSFILE
+#FullDataName I/O Channels: Import`Tire Z, dZ/dX, dZ/dY, Tire R2, Custom Init`Tire Ground
+#RingCtrl1 1
+
+#MiscYellow0
+IMP_ZGND_R2 Replace 1! 1
+IMP_DZDX_R2 Replace 0.0! 1
+IMP_DZDY_R2 Replace 0.0! 1
+#ENDMYellow
+
+
+#EMBEDDED_NOTES
+#Note the initial value of 1 m
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: I/O Channels: Import; { Tire Ground } Tire Z, dZ/dX, dZ/dY, Tire R2, Custom Init
+#Library : I/O Channels: Import
+#DataSet : Tire Z, dZ/dX, dZ/dY, Tire R2, Custom Init
+#Category: Tire Ground
+#FileID  : Import_a6c4d9c1-b79e-4f69-9a04-2782e4cfac2e
+#Created : 10-18-2023 14:42:24
+#Modified: 10-30-2023 10:38:44
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Import Channels
+
+END

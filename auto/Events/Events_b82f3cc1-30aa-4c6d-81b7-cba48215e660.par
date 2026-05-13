@@ -1,0 +1,31 @@
+PARSFILE
+#FullDataName Events`03 - Roll - Front is back at min roll`K&C Test Sequence
+#CheckBox1 0    
+#CheckBox6 0    
+#CheckBox7 1    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 ZERO ~=
+#RingCtrl10 1
+#RingCtrl11 4
+*VALUE1 at_min_1 & at_min_2
+PARSFILE Generic\VS_commands\GenVS_7ed8643f-d288-43d8-a2fe-9845bd60973f.par
+#BlueLink10 Generic VS Commands`03 - Roll - Delete eqs - Fr` K&C Test Sequence` , Miscellaneous`GenVS_7ed8643f-d288-43d8-a2fe-9845bd60973f
+
+DEFINE_EVENT at_min_1 & at_min_2 ; Events\Events_b5af09b5-d8ad-4e81-ae24-eebce691780e.par
+#BlueLink0 Events`End Events` ` , Events`Events_b5af09b5-d8ad-4e81-ae24-eebce691780e
+
+SET_EVENT_ID 0 ! reset to default
+
+LOG_ENTRY Used Dataset: Events; { K&C Test Sequence } 03 - Roll - Front is back at min roll
+#Library : Events
+#DataSet : 03 - Roll - Front is back at min roll
+#Category: K&C Test Sequence
+#FileID  : Events_b82f3cc1-30aa-4c6d-81b7-cba48215e660
+#Modified: 05-28-2021 14:59:28
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

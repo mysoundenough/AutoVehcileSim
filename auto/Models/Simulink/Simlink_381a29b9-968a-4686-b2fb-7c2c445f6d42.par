@@ -1,0 +1,57 @@
+PARSFILE
+#FullDataName Models: Simulink`Sinusoidal Ground Z, 1 SF, Custom Init`External Ground Elevation
+#RunMdlFile Extensions\Simulink\Ground_Z_from_XY_Preview.slx
+SIMULINK_MODEL_FILE Extensions\Simulink\Ground_Z_from_XY_Preview.slx
+#RingCtrl0 -1
+#RingCtrl2 0
+*MULTI_SOLVERS 0
+*MULTI_S_WRAPPER 0
+#CheckBox0 0    
+*USE_ALT_DIR 0
+#CheckBox1 0    
+*USE_DIFF_SOLVERS 0
+#CheckBox3 1    
+#CheckBox5 0    
+#RingCtrl1 0
+OPT_INT_METHOD 0
+#CheckBox4 1    
+OPT_IO_SYNC_FM 1
+*TSTEP 0.0005
+*FREQ_MODEL 2000
+*TSTEP_OUT 0.025
+*FREQ_OUT 40
+tstep 0.0005
+iprint 50
+PARSFILE IO_Channels\Ports\Port_92439609-eafe-480b-a45e-22216ab3c562.par
+#BlueLink0 I/O Channels: Ports`Z, dZdX, dZ/dY for 4 tires, Custom Init` Ground Z for 4 Tires` , Import`Port_92439609-eafe-480b-a45e-22216ab3c562
+
+PARSFILE IO_Channels\Ports\Port_ae875c5c-9f67-494d-a439-233482f3d966.par
+#BlueLink1 I/O Channels: Ports`Export CTC XY for 4 Tires` Ground Z for 4 Tires` , Import/Export`Port_ae875c5c-9f67-494d-a439-233482f3d966
+
+#BlueLink3 I/O Channels: Ports` ` , vs_state Ports` , vs_state Ports`
+
+#BlueLink4 I/O Channels: Ports` ` , vs_ctl Ports` , vs_ctl Ports`
+
+#BlueLink5 I/O Channels: Ports`Export CTC XY for 4 Tires` Ground Z for 4 Tires` , vs_kin Ports`Port_ae875c5c-9f67-494d-a439-233482f3d966
+
+#BlueLink6 I/O Channels: Ports`Z, dZdX, dZ/dY for 4 tires` Ground Z for 4 Tires` , vs_dyn Ports`Port_1661529b-73bd-4e8e-9f13-473b9509ced5
+
+
+#EMBEDDED_NOTES
+#This does not delay the initialiation with OPT_DELAY_INIT. Instead, it set the inital values of the imported Z variables to 1.
+#
+#These settings are only valid for a ground surface where Z = 1 is close to the values that will be imported from Simulink.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Models: Simulink; { External Ground Elevation } Sinusoidal Ground Z, 1 SF, Custom Init
+#Library : Models: Simulink
+#DataSet : Sinusoidal Ground Z, 1 SF, Custom Init
+#Category: External Ground Elevation
+#FileID  : Simlink_381a29b9-968a-4686-b2fb-7c2c445f6d42
+#Created : 10-18-2023 14:01:19
+#Modified: 10-18-2023 14:49:02
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode 
+
+END

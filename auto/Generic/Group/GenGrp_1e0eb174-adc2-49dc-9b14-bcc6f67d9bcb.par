@@ -1,0 +1,59 @@
+PARSFILE
+#FullDataName Generic Data Group`Traffic: ACC, Slow-to-Stop Test`ADAS: Traffic for ACC & FCW
+#VehCode Generic Group
+PARSFILE Generic\VS_commands\GenVS_eeab060f-5526-43b7-a7ef-ce66e1aa62b1.par
+#BlueLink0 Generic VS Commands`ACC/AEB Cut-Out Params 70 km/h` Obstacle Avoidance` , Link 1`GenVS_eeab060f-5526-43b7-a7ef-ce66e1aa62b1
+
+
+PARSFILE Control\Speed_t\SpdTime_f577b30a-c1b0-4021-987a-86ed456f011a.par
+#BlueLink1 Control: Speed (Closed Loop) Using Target Speed`70 km/h: Euro NCAP ACC Cut-Out` Constant` , Link 2`SpdTime_f577b30a-c1b0-4021-987a-86ed456f011a
+
+
+#MiscYellow2
+SET_ILTARG_FOR_ID CUT_OUT_LTARG_PROF
+ltarg_constant = 2
+set_description ltarg_id ...
+  Lateral target for right lane
+#ENDMYellow
+
+
+PARSFILE Sensors_Traffic\Traffic\TMotion_c81ae2d8-9e6f-4bc2-8dfa-4f3d86f4e90c.par
+#BlueLink3 Multiple Moving Objects`1 Veh., ACC Euro NCAP: Cut-Out` Traffic Vehicles (Forward)` , Link 4`TMotion_c81ae2d8-9e6f-4bc2-8dfa-4f3d86f4e90c
+
+
+
+#MiscYellow5
+SET_ILTARG_FOR_ID STOPPED_LTARG_PROF
+ltarg_constant = -2
+set_description ltarg_id ...
+  Lateral target for right lane
+#ENDMYellow
+
+PARSFILE Sensors_Traffic\Traffic\TMotion_dfeaed58-b113-465f-b7ee-2eff121a6c4c.par
+#BlueLink5 Multiple Moving Objects`1 Vehicle, Stopped On Hwy` Traffic Vehicles (Forward)` , Link 6`TMotion_dfeaed58-b113-465f-b7ee-2eff121a6c4c
+
+
+
+
+
+
+#EMBEDDED_NOTES
+#This is a simple ACC test where the lead vehicle is stopped on the highway, initially out-of-range of the ego vehicle's ACC radar
+#- Once the lead vehicle is in-range and detected by the ACC radar, the ego vehicle ACC slows to a stop, and creeps to the desired minimum spacing distance
+#
+#An additional parked vehicle on side of highway is added to assure that ACC Radar of the ego vehicle does not process a false detection, which could result in erroneous braking
+#
+#The lateral positions of the moving objects are set using the LTARG function, with datasets specified with ILTARG. Descriptions are specified that will appear in the Echo file. A new command SET_ILTARG_FOR_ID adds LTARG datasets.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic Data Group; { ADAS: Traffic for ACC & FCW } Traffic: ACC, Slow-to-Stop Test
+#Library : Generic Data Group
+#DataSet : Traffic: ACC, Slow-to-Stop Test
+#Category: ADAS: Traffic for ACC & FCW
+#FileID  : GenGrp_1e0eb174-adc2-49dc-9b14-bcc6f67d9bcb
+#Modified: 08-31-2021 17:32:00
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Generic Group
+
+END

@@ -1,0 +1,35 @@
+PARSFILE
+#FullDataName Generic Table`Ext. Batt. charged resis. (0 milliohms)`Powertrain (HEV)
+#RingCtrl0 CONSTANT
+#RingCtrl1 MULTIPLY
+#RingCtrl2 CONSTANT
+#CheckBox0 1    
+
+R_CHRG_BATTERY_COMBINE MULTIPLY
+R_CHRG_BATTERY_CONSTANT 0
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+*KEYWORD R_CHRG_BATTERY
+*X_LABEL State of charged (-)
+*Y_LABEL Resistance (V2/W)
+*SCALAR 0
+*X_LABEL_2 Temperature (C)
+
+
+#EMBEDDED_NOTES
+#This dataset is used for an external battery model.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic Table; { Powertrain (HEV) } Ext. Batt. charged resis. (0 milliohms)
+#Library : Generic Table
+#DataSet : Ext. Batt. charged resis. (0 milliohms)
+#Category: Powertrain (HEV)
+#FileID  : GenTab_e298b873-8243-4ea0-b4dd-96adb3bb388a
+#Created : 03-31-2023 17:38:28
+#Modified: 04-04-2023 13:17:25
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode table
+
+END

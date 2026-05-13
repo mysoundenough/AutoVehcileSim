@@ -1,0 +1,46 @@
+Run made by CarSim 2024.1 at 14:13 on March 25, 2024.
+Revision 222209, March 18, 2024
+Started with simfile: simfile_Run_62c4f038-7058-41e9-a4c3-0264672114a9.sim
+
+Include PARSFILE "Results\Run_62c4f038-7058-41e9-a4c3-0264672114a9\Run_all.par"
+Installed keywords into VS Solver for MODEL_LAYOUT I_I
+Used Dataset: Animator: Reference Frame; { Tracking: Vehicle } Vehicle X-Y-Z
+Used Dataset: Animator: Camera Setup; { Vehicle Reference } 13 Azm, 9 El, 18 m, No Yaw
+ Do Not Show [D], Echo WRITE <Echo File Options>
+Used Dataset: External Parsfile; { Run fom Echo Files } Echo File for Baseline Run
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Tracking } Lateral Tracking vs. Station
+Used Dataset: Plot: Format; Lines without Symbols
+Used Dataset: Plot: Setup; { Steering } Steering: Handwheel Angle
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Steering } Road Wheel Steer Angle - Front
+Used Dataset: Plot: Format; Lines without Symbols
+Used Dataset: Plot: Setup; { Vehicle Motion } Lateral Accel. of CG's vs. Time
+Used Dataset: Plot: Format; Lines without Symbols
+Used Dataset: Plot: Setup; { Vehicle Motion } Pitch Angle of Sprung Masses vs. Time
+Used Dataset: Plot: Format; Lines without Symbols
+Used Dataset: Plot: Setup; { Vehicle Motion } Yaw Rate of Sprung Masses vs. Time
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Tire Forces and Moments } Vertical Forces
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Vehicle Motion } Longitudinal Speed (Vxz_Fwd) vs. Time
+ Reproduce Run from Echo File <Echo File Options>
+Used Dataset: CarSim Run Control; { Echo File Options } Reproduce Run from Echo File
+
+Time to read input = 0.0997279
+Function F_REB_STOP_TABLE(1,1) extrapolated (out of range HIGH) for X = 0 mm at T = 0
+Function F_JNC_STOP_TABLE(1,1) extrapolated (out of range LOW) for X = 0 mm at T = 0
+Function F_REB_STOP_TABLE(1,2) extrapolated (out of range HIGH) for X = 0 mm at T = 0
+Function F_JNC_STOP_TABLE(1,2) extrapolated (out of range LOW) for X = 0 mm at T = 0
+Function F_REB_STOP_TABLE(2,1) extrapolated (out of range HIGH) for X = 0 mm at T = 0
+Function F_JNC_STOP_TABLE(2,1) extrapolated (out of range LOW) for X = 0 mm at T = 0
+Function F_REB_STOP_TABLE(2,2) extrapolated (out of range HIGH) for X = 0 mm at T = 0
+Function F_JNC_STOP_TABLE(2,2) extrapolated (out of range LOW) for X = 0 mm at T = 0
+
+Run started: VS output file = Results\Run_62c4f038-7058-41e9-a4c3-0264672114a9\Run.vsb
+Function L_RELAX_X_FZ_TABLE(1,2) extrapolated (out of range HIGH) for X = 1.00011 N at T = 2.117
+
+Run stopped at t = 6.313. Station limit reached: driver station = 210.009
+
+Computational time ratio: RTIME = 0.0565389 (real time)/(simulation time)
+

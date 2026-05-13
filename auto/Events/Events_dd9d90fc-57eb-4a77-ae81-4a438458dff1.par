@@ -1,0 +1,40 @@
+PARSFILE
+#FullDataName Events`CCR Cut-In C1. Monitor Stop Speed`Euro NCAP ACC Testing
+#CheckBox1 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 ZERO ~=
+#RingCtrl10 1
+#RingCtrl11 4
+*NAME1 Vxz_Fwd
+*VALUE1 1
+#MiscYellow0
+! increase score, one full point
+SCORE_NEW = SCORE_OLD + 1
+SCORE_OLD = SCORE_NEW
+#ENDMYellow
+
+DEFINE_EVENT 1 ; Events\Events_e97c11c4-af79-4b8c-970b-3208265b298d.par
+#BlueLink0 Events`CCRm,s D. Pause before ending` Euro NCAP ACC Testing` , Events`Events_e97c11c4-af79-4b8c-970b-3208265b298d
+
+SET_EVENT_ID 0 ! reset to default
+
+#EMBEDDED_NOTES
+#Add up score
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Events; { Euro NCAP ACC Testing } CCR Cut-In C1. Monitor Stop Speed
+#Library : Events
+#DataSet : CCR Cut-In C1. Monitor Stop Speed
+#Category: Euro NCAP ACC Testing
+#FileID  : Events_dd9d90fc-57eb-4a77-ae81-4a438458dff1
+#Created : 05-20-2021 18:41:28
+#Modified: 09-15-2021 10:36:49
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

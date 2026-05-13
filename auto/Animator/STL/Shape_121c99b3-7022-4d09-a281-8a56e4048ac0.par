@@ -1,0 +1,41 @@
+PARSFILE
+#FullDataName Animator: Shape File Link`Box Trailer, 53-ft: Axle Rails`Trailers
+#MiscYellow3
+add_obj Animator\3D_Shape_Files\Common_Vehicle_Assets\Solid_Axles\Trailer_Axle\axle_rail_long.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+SET_OFFSET_X -12.45
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_9cfa1033-fce4-4d22-8928-0bfc456f9467.par
+#BlueLink2 Animator: Camera Setup`Vehicles - Trailers (Heavy)` Shape Preview` , Video Camera`Camera_9cfa1033-fce4-4d22-8928-0bfc456f9467
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_121c99b3-7022-4d09-a281-8a56e4048ac0.png
+
+#EMBEDDED_NOTES
+#
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Trailers } Box Trailer, 53-ft: Axle Rails
+#Library : Animator: Shape File Link
+#DataSet : Box Trailer, 53-ft: Axle Rails
+#Category: Trailers
+#FileID  : Shape_121c99b3-7022-4d09-a281-8a56e4048ac0
+#Created : 12-08-2021 12:03:30
+#Modified: 12-08-2021 12:07:54
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape File
+
+END

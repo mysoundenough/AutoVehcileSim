@@ -1,0 +1,62 @@
+PARSFILE
+#FullDataName Models: Simulink`Driver Model - 2 SFs`Steering and Steering Controls
+#RunMdlFile Extensions\Simulink\Driver_2SF.slx
+SIMULINK_MODEL_FILE Extensions\Simulink\Driver_2SF.slx
+#RingCtrl0 -1
+#RingCtrl2 2
+OPT_MULTI_WRAPPERS 1
+*MULTI_S_WRAPPER 1
+*MULTI_SOLVERS 0
+#CheckBox0 0    
+*USE_ALT_DIR 0
+#CheckBox1 0    
+*USE_DIFF_SOLVERS 0
+#CheckBox3 1    
+#CheckBox5 0    
+#RingCtrl1 0
+OPT_INT_METHOD 0
+*TSTEP 0.0005
+*FREQ_MODEL 2000
+*TSTEP_OUT 0.025
+*FREQ_OUT 40
+tstep 0.0005
+iprint 50
+#BlueLink0 I/O Channels: Import`Steering Wheel Angle` Steering System Control` , Import`Import_e162b7ef-9515-4d6b-861a-eaf869a81e05
+
+#BlueLink1 I/O Channels: Export`Ext. Driver Model w/ Driver Preview Pts.` Steering System Control` , Import/Export`Export_4deac4b6-9935-4055-9378-ac47c99557d4
+
+IWRAPPER 1
+PARSFILE IO_Channels\Ports\Port_ca930599-395a-4c6d-8016-ef2357d6af5d.par
+#BlueLink3 I/O Channels: Ports`Exported Path Preview` External Driver Model` , vs_state Ports`Port_ca930599-395a-4c6d-8016-ef2357d6af5d
+
+IWRAPPER 2
+PARSFILE IO_Channels\Ports\Port_b96d0a85-796d-4dce-a490-bfa4ffb37b49.par
+#BlueLink4 I/O Channels: Ports`Imported Steering Wheel Angle` External Driver Model` , vs_ctl Ports`Port_b96d0a85-796d-4dce-a490-bfa4ffb37b49
+
+IWRAPPER 3
+#BlueLink5 I/O Channels: Ports` ` , vs_dyn Ports` , vs_kin Ports`
+
+IWRAPPER 4
+#BlueLink6 I/O Channels: Ports` ` , vs_dyn Ports` , vs_dyn Ports`
+
+LIVE_SERVER_UPDATE_FREQ_MAX 60
+
+#EMBEDDED_NOTES
+#This dataset links to a Simulink model of a steering controller that replaces the steering wheel angle determined by the built-in CarSim model.
+#
+#It uses 2 CarSim S-Functions: one to export variables related to the sate of the vehicle and path preview, and the other to import a Steering wheel angle from Simulink
+#
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Models: Simulink; { Steering and Steering Controls } Driver Model - 2 SFs
+#Library : Models: Simulink
+#DataSet : Driver Model - 2 SFs
+#Category: Steering and Steering Controls
+#FileID  : Simlink_bb5a0d62-93ec-4d48-b0c0-f8d52d7864d8
+#Created : 11-04-2022 12:39:16
+#Modified: 11-09-2022 16:16:34
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode 
+
+END

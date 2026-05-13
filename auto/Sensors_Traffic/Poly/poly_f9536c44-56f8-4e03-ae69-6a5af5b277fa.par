@@ -1,0 +1,32 @@
+PARSFILE
+#FullDataName Polygonal Shape Coordinates`Bus Stop Polygon Boundary`
+WRITE_ADD_REFERENCE_FRAME_OBJECT
+PARSFILE Animator\STL\Shape_faa38307-24fd-4981-b224-f998a5c30bdf.par
+#BlueLink0 Animator: Shape File Link`Bus Stop` Environment: Props (1 of 2)` , 3D Shape for Video`Shape_faa38307-24fd-4981-b224-f998a5c30bdf
+
+SET_IPOLYGON_FOR_ID 0
+#DiagramOne0
+POLY_SHAPE_TABLE
+-2.865, -0.075
+-2.865, -0.025
+2.755, -0.025
+2.755, 2.125
+2.805, 2.125
+2.805, -0.075
+-2.865, -0.075
+ENDTABLE
+#RadioCtrl0 0    
+
+
+LOG_ENTRY Used Dataset: Polygonal Shape Coordinates; Bus Stop Polygon Boundary
+#Library : Polygonal Shape Coordinates
+#DataSet : Bus Stop Polygon Boundary
+#Category: 
+#FileID  : poly_f9536c44-56f8-4e03-ae69-6a5af5b277fa
+#Created : 11-17-2021 11:21:44
+#Modified: 11-17-2021 12:55:17
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Polygonal Coordinates
+
+END

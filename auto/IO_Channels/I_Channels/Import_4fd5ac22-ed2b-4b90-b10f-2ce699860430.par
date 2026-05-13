@@ -1,0 +1,28 @@
+PARSFILE
+#FullDataName I/O Channels: Import`ABS: Wheel Cylinder Pressures Available`Brake System Control
+#RingCtrl1 1
+
+#MiscYellow0
+IMP_PBK_L1 Available 0.0! 1
+IMP_PBK_R1 Available 0.0! 1
+IMP_PBK_L2 Available 0.0! 1
+IMP_PBK_R2 Available 0.0! 1
+#ENDMYellow
+
+
+#EMBEDDED_NOTES
+#In this example, a connection is setup where four wheel brake pressures can be imported. However, they are not active. They can be activated during the simulation using Events with VS Command SET_IMPORT_MODE.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: I/O Channels: Import; { Brake System Control } ABS: Wheel Cylinder Pressures Available
+#Library : I/O Channels: Import
+#DataSet : ABS: Wheel Cylinder Pressures Available
+#Category: Brake System Control
+#FileID  : Import_4fd5ac22-ed2b-4b90-b10f-2ce699860430
+#Created : 04-07-2023 08:47:52
+#Modified: 04-19-2023 15:38:03
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Import Channels
+
+END

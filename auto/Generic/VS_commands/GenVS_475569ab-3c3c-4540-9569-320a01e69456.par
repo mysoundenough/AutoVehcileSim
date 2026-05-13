@@ -1,0 +1,135 @@
+PARSFILE
+#FullDataName Generic VS Commands`06d - Fx Tractive`K&C Test Sequence
+#VehCode VS Commands
+
+#MiscYellow0
+! Longitudinal forces applied at the ground (in the positive tire X direction)
+! represent tractive effort forces. The transmission output shaft is 
+! locked so reaction forces through the suspension are correctly represented.
+! If the minimum powertrain is used the wheel rotations are locked.
+
+! Variables and parameters must be defined before the run starts
+! Equations and expressions appropriate for each case will be created
+! in individual VS Event sequences
+
+! Set user parameters for range of forces to be used (magnitude only)
+DEFINE_PARAMETER FX_RANGE 5000; N; Range of applied force
+
+! Set the rate of change of force
+! Define units for the force rate of change
+DEFINE_UNITS N/s 1;
+DEFINE_PARAMETER FX_RATE 50; N/s; Rate of change of force
+
+! Create parameters to use as switches to selectively enable/disable forces
+! depending on context.
+DEFINE_PARAMETER SWITCH_L1 0; -; Switch to enable/disable force
+DEFINE_PARAMETER SWITCH_R1 0; -; Switch to enable/disable force
+DEFINE_PARAMETER SWITCH_L2 0; -; Switch to enable/disable force
+DEFINE_PARAMETER SWITCH_R2 0; -; Switch to enable/disable force
+
+! differential equation to smoothly change force
+DEFINE_OUTPUT fx_ground 0; N; Magnitude of Fx
+EQ_DIFFERENTIAL fx_ground = FX_RATE;
+
+! Tire import forces are applied in the tire coordinate directions, but
+! K&C machines apply forces in the sprung mass directions. (Note that in this
+! test the sprung mass directions are aligned with the global directions.)
+
+! activate the import variables for ground Fx
+IMPORT imp_fx_l1 VS_REPLACE
+IMPORT imp_fx_r1 VS_REPLACE
+IMPORT imp_fx_l2 VS_REPLACE
+IMPORT imp_fx_r2 VS_REPLACE
+
+EQ_IN imp_fx_l1 = fx_ground * cos(yaw_l1) * SWITCH_L1;
+EQ_IN imp_fx_r1 = fx_ground * cos(yaw_r1) * SWITCH_R1;
+EQ_IN imp_fx_l2 = fx_ground * cos(yaw_l2) * SWITCH_L2;
+EQ_IN imp_fx_r2 = fx_ground * cos(yaw_r2) * SWITCH_R2;
+
+! activate the import variables for ground Fy
+IMPORT imp_fy_l1 VS_REPLACE
+IMPORT imp_fy_r1 VS_REPLACE
+IMPORT imp_fy_l2 VS_REPLACE
+IMPORT imp_fy_r2 VS_REPLACE
+
+EQ_IN imp_fy_l1 = fx_ground * -sin(yaw_l1) * SWITCH_L1;
+EQ_IN imp_fy_r1 = fx_ground * -sin(yaw_r1) * SWITCH_R1;
+EQ_IN imp_fy_l2 = fx_ground * -sin(yaw_l2) * SWITCH_L2;
+EQ_IN imp_fy_r2 = fx_ground * -sin(yaw_r2) * SWITCH_R2;
+
+! Locking the trans or wheel rotation -----------------------------------------
+! Parameters for the torsional stiffness and damping of the park mechanism
+DEFINE_PARAMETER K_PARK 25; N-m/deg; Torsional stiffness of the park mechanism
+DEFINE_PARAMETER C_PARK 2; N-m-s/deg; Damping of the park mechanism
+
+! Multiplier to represent the final drive ratio in the case of minimum powertrain
+! to get the stiffness in the right range
+DEFINE_PARAMETER FD_MIN_PT_PARK 4; -; Final drive ratio to use with minimum powertrain
+
+! Parameters to get the transmission (if there is one) or wheel rotation angle.
+! These are initialized in the VS Events because their existence depends on the 
+! powertrain type in the run being continued.
+DEFINE_PARAMETER A_PARK 0; deg; Rotation angle of transmission
+
+! In AWD, the differential inputs are locked so the wheels can't
+! feedback through the center diff
+DEFINE_PARAMETER A_PARK_D_F 0; deg; Rotation angle of differential
+DEFINE_PARAMETER A_PARK_D_R 0; deg;
+
+! If there is no transmission, parameters to get the wheel rotation angles.
+DEFINE_PARAMETER A_PARK_L1 0; deg; Rotation angle of wheel
+DEFINE_PARAMETER A_PARK_R1 0; deg; Rotation angle of wheel
+DEFINE_PARAMETER A_PARK_L2 0; deg; Rotation angle of wheel
+DEFINE_PARAMETER A_PARK_R2 0; deg; Rotation angle of wheel
+
+! Apply springs and dampers for each lock, selectively based on transmission in
+! the VS Event sequence appropriate for the powertrain.
+
+! Define import variables that might be needed here, in case the chosen
+! powertrain doesn't use them.
+
+! Prevents crash due to non-existent import
+DEFINE_IMPORT imp_m_out_tr; N-m;
+DEFINE_IMPORT imp_m_out_d3_f; N-m;
+DEFINE_IMPORT imp_m_out_d3_r; N-m;
+
+! Activate import variables here.
+
+! Used to lock the transmission output in 2WD
+IMPORT imp_m_out_tr VS_REPLACE
+
+! Used to lock differential inputs in AWD
+IMPORT imp_m_out_d3_f VS_REPLACE
+IMPORT imp_m_out_d3_r VS_REPLACE
+
+! Used to lock wheels with minimum powertrain
+IMPORT imp_mysm_l1 VS_REPLACE
+IMPORT imp_mysm_r1 VS_REPLACE
+IMPORT imp_mysm_l2 VS_REPLACE
+IMPORT imp_mysm_r2 VS_REPLACE
+
+! Lock differentials so minor asymmetry doesn't cause side-to-side feedback
+OPT_LOCKED_DIFF(1) 1
+OPT_LOCKED_DIFF(2) 1
+
+!
+#ENDMYellow
+
+
+#EMBEDDED_NOTES
+#In testing complinace to tractive effort, it is necessary to lock the powertrain so the tractive forces are reacted through it and the comlaince of the powertrain is included in results.
+#
+#This means that powertrains with external components are not supported.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { K&C Test Sequence } 06d - Fx Tractive
+#Library : Generic VS Commands
+#DataSet : 06d - Fx Tractive
+#Category: K&C Test Sequence
+#FileID  : GenVS_475569ab-3c3c-4540-9569-320a01e69456
+#Modified: 05-28-2021 15:02:27
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode VS Commands
+
+END

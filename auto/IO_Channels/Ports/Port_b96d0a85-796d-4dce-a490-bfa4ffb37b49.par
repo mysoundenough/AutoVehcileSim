@@ -1,0 +1,23 @@
+PARSFILE
+#FullDataName I/O Channels: Ports`Imported Steering Wheel Angle`External Driver Model
+#RingCtrl0 1
+#RingCtrl1 0
+#CheckBox0 0    
+
+IPORT_IMP 1
+PARSFILE IO_Channels\I_Channels\Import_e162b7ef-9515-4d6b-861a-eaf869a81e05.par
+#BlueLink0 I/O Channels: Import`Steering Wheel Angle` Steering System Control` , Library for factor A`Import_e162b7ef-9515-4d6b-861a-eaf869a81e05
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Ports; { External Driver Model } Imported Steering Wheel Angle
+#Library : I/O Channels: Ports
+#DataSet : Imported Steering Wheel Angle
+#Category: External Driver Model
+#FileID  : Port_b96d0a85-796d-4dce-a490-bfa4ffb37b49
+#Created : 11-04-2022 12:42:18
+#Modified: 11-04-2022 12:42:29
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode I/O Ports
+
+END

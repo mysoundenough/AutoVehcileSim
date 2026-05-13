@@ -1,0 +1,95 @@
+PARSFILE
+#FullDataName CarSim Run Control`ACC: Simple, Slow-Down Test`ACC: Euro NCAP Tests
+#VEHICLECODE Ind_Ind
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_f0a6315c-874c-4f34-a7f4-f076b7edf885
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Animator\Cameras\Camera_12cb229c-38c4-4b06-897b-5b5858dacd53.par
+#BlueLink0 Animator: Camera Setup`190 Azm, 12 El, 30 m` Vehicle Reference` , Animator camera`Camera_12cb229c-38c4-4b06-897b-5b5858dacd53
+
+#CheckBox0 1    
+#CheckBox1 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 1    
+#CheckBox5 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox8 1    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+#CheckBox12 0    
+
+#RingCtrl0 4
+#RingCtrl1 1
+#RingCtrl2 3
+#RingCtrl3 0
+#RingCtrl6 0
+#RingCtrl7 -1
+*RUN_COLOR 0.2 0 0.984
+SET_RUN_COLOR 0.2 0 0.984
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Vehicles\Loaded\VehLoad_ad0e07c0-ecbe-4414-93df-dd582664fb45.par
+#BlueLink2 Vehicle with Loads, Sensors, Trailer, etc.`C-Class ACC, FCW,LKAS, (AEB off)` C-Class` , Math Model`VehLoad_ad0e07c0-ecbe-4414-93df-dd582664fb45
+
+PARSFILE Procedures\Proc_d51a022f-aa7f-4da8-bd7f-de47ee2cd698.par
+#BlueLink28 Procedures`ACC: Slow Down Test` ACC: Automatic Cruise Control` , Procedure`Proc_d51a022f-aa7f-4da8-bd7f-de47ee2cd698
+
+PARSFILE Animator\HUD\HUD_3dd34d85-8cf9-4aa6-b284-b77aa2374d99.par
+#BlueLink9 Animator: HUD`Simple Slow-Down Test` Euro NCAP` , Miscellaneous`HUD_3dd34d85-8cf9-4aa6-b284-b77aa2374d99
+
+PARSFILE Animator\HUD\HUD_28cddbb9-94c6-4e76-a06f-7737ba30c08f.par
+#BlueLink10 Animator: HUD`Throttle and Speed, L. Side, 19% Up` Vehicle Status Indicators` , Miscellaneous`HUD_28cddbb9-94c6-4e76-a06f-7737ba30c08f
+
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Vehicles\Assembly\Vehicle_02f34599-fa67-4a2d-b9f1-ec46601f2987.png
+WRITE_SENSOR_DETECT
+Title ACC: Simple, Slow-Down Test <ACC: Euro NCAP Tests>
+CATEGORY ACC: Euro NCAP Tests 
+DATASET_TITLE ACC: Simple, Slow-Down Test
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#AEB: Autonomous Emergency Braking
+#ACC: Automatic Cruise Control
+#GVT: Global Vehicle Target
+#VUT: Vehicle Under Test (ego vehicle)
+#FCW: Forward Collision Warning
+#LKAS: Lane-Keeping Assistance System
+#
+#The ACC example is used for ACC testing, tuning, and development, when prepareing for the ACC-specific Euro NCAP tests
+#- This example is not part of the Euro NCAP test protocol
+#- In this example the ego vehilce encounters a vehicle ahead and in its lane that is moving at a slower speed
+#- The ego vehicle should automatically slow to the speed of the lead vehicle, while maintaining a safe stopping distance and desired time gap
+#- A parked vehicle added to test ACC Radar perception robustness against false-positive detections in adjacent lanes
+#
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { ACC: Euro NCAP Tests } ACC: Simple, Slow-Down Test
+#Library : CarSim Run Control
+#DataSet : ACC: Simple, Slow-Down Test
+#Category: ACC: Euro NCAP Tests
+#FileID  : Run_f0a6315c-874c-4f34-a7f4-f076b7edf885
+#Modified: 11-21-2022 14:16:14
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Run
+
+END

@@ -1,0 +1,50 @@
+PARSFILE
+#FullDataName Animator: Shape Assembly`Conventional Box Trailer, 53-ft.`Trailers
+*OFFSET_Z 1.1
+#CheckBox0 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 1    
+#CheckBox5 1    
+
+#RingCtrl1 2
+#RingCtrl2 2
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL_Groups\ShpGrp_3b11a397-e10c-42be-9114-5b631ae6bc73.png
+PARSFILE Animator\STL\Shape_3c26476d-299e-4919-9b17-6c58b7cb5667.par
+#BlueLink0 Animator: Shape File Link`Box Trailer, 53-ft: Walls` Trailers` , Shape File`Shape_3c26476d-299e-4919-9b17-6c58b7cb5667
+
+set_offset_z 1.1
+PARSFILE Animator\STL\Shape_be80868a-90c6-4a8d-8f38-1874e2abee64.par
+#BlueLink1 Animator: Shape File Link`Box Trailer, 53-ft: Mudflaps` Trailers` , Shape File`Shape_be80868a-90c6-4a8d-8f38-1874e2abee64
+
+set_offset_z 1.1
+PARSFILE Animator\STL\Shape_121c99b3-7022-4d09-a281-8a56e4048ac0.par
+#BlueLink2 Animator: Shape File Link`Box Trailer, 53-ft: Axle Rails` Trailers` , Shape File`Shape_121c99b3-7022-4d09-a281-8a56e4048ac0
+
+set_offset_z 1.1
+PARSFILE Animator\STL\Shape_8d4a6e28-fe3d-4e50-9422-7e14afa8decc.par
+#BlueLink3 Animator: Shape File Link`Box Trailer, 53-ft: TruckSim Logo` Common Vehicle Assets` , Shape File`Shape_8d4a6e28-fe3d-4e50-9422-7e14afa8decc
+
+set_offset_z 1.1
+PARSFILE Animator\STL\Shape_6e45c0b2-afc3-4938-bedc-b3671e321014.par
+#BlueLink4 Animator: Shape File Link`Box Trailer, 53-ft: Landing Jacks` Common Vehicle Assets` , Shape File`Shape_6e45c0b2-afc3-4938-bedc-b3671e321014
+
+set_offset_z 1.1
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
+#BlueLink17 Animator: Camera Setup`YZ-Plane, No Offsets (with Yaw)` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+
+
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Trailers } Conventional Box Trailer, 53-ft.
+#Library : Animator: Shape Assembly
+#DataSet : Conventional Box Trailer, 53-ft.
+#Category: Trailers
+#FileID  : ShpGrp_3b11a397-e10c-42be-9114-5b631ae6bc73
+#Created : 12-08-2021 11:56:28
+#Modified: 12-08-2021 12:04:01
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape Assembly
+
+END

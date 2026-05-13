@@ -1,0 +1,37 @@
+PARSFILE
+#FullDataName Models: Transfer to Local Windows Directory`Simfile for MATLAB Optimization`
+*USE_ALT_DIR 1
+#ALTPATH Extensions\Custom_M
+#CheckBox1 0    
+#CheckBox2 0    
+*USE_DIFF_SOLVERS 0
+#RingCtrl1 1
+*X64SOLVER 1
+#RingCtrl2 -1
+#MiscYellow1
+SIMFILE lap_time.sim
+
+! Flag external code for inclusion in CPAR (not required, but convenient)
+*CPAR_INCLUDE Extensions\Custom_M\lap_time_opti.m
+*CPAR_INCLUDE Extensions\Custom_M\lap_time.m
+*CPAR_INCLUDE Extensions\Custom_M\vs_api_def_m.h
+*CPAR_INCLUDE Extensions\Custom_M\vs_dll_path.m
+*CPAR_INCLUDE Extensions\Custom_M\vs_statement.m
+#ENDMYellow
+
+
+#EMBEDDED_NOTES
+#This dataset is set for using a 64-bit version of MATLAB. If using a 32-bit version, please change the specification to use a 32-bit Solver. (Use the drop-down control in the upper-right corner of the screen.)
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Models: Transfer to Local Windows Directory; Simfile for MATLAB Optimization
+#Library : Models: Transfer to Local Windows Directory
+#DataSet : Simfile for MATLAB Optimization
+#Category: 
+#FileID  : Local_a46aa896-fe7e-4355-9adc-1b4ea56df6a3
+#Modified: 05-28-2021 15:02:20
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode 
+
+END

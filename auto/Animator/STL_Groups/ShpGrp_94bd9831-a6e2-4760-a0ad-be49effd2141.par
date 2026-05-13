@@ -1,0 +1,46 @@
+PARSFILE
+#FullDataName Animator: Shape Assembly`Road Course: Entrance`Generic Proving Ground
+*ANGLE_Z 0
+*OFFSET_Z .45
+*X_REF_LENGTH 3344
+*Y_REF_LENGTH 2490
+*Z_REF_LENGTH 1757
+#CheckBox0 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 0    
+#CheckBox5 0    
+
+#RingCtrl1 1
+#RingCtrl2 2
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL_Groups\ShpGrp_94bd9831-a6e2-4760-a0ad-be49effd2141.png
+PARSFILE Animator\STL\Shape_b013cf93-2070-499e-8114-92f2f22f8f34.par
+#BlueLink0 Animator: Shape File Link`Road Course: Entrance` Generic Proving Ground: Signs` , Shape File`Shape_b013cf93-2070-499e-8114-92f2f22f8f34
+
+#MiscYellow0
+translucent_fix on
+#ENDMYellow
+
+set_lighting off
+PARSFILE Animator\STL\Shape_1ddfd75b-5334-449c-822b-01b58d2f650f.par
+#BlueLink1 Animator: Shape File Link`Road Course: Shadows of Signs` Generic Proving Ground: Signs` , Shape File`Shape_1ddfd75b-5334-449c-822b-01b58d2f650f
+
+translucent_fix on
+set_lighting off
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_ed79f493-c2ab-44c3-b747-053c314c42e3.par
+#BlueLink17 Animator: Camera Setup`Proving Grounds: Road Course Entrance` Scene Specific Preview` , Video Camera`Camera_ed79f493-c2ab-44c3-b747-053c314c42e3
+
+
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Generic Proving Ground } Road Course: Entrance
+#Library : Animator: Shape Assembly
+#DataSet : Road Course: Entrance
+#Category: Generic Proving Ground
+#FileID  : ShpGrp_94bd9831-a6e2-4760-a0ad-be49effd2141
+#Modified: 05-28-2021 15:02:59
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape Assembly
+
+END

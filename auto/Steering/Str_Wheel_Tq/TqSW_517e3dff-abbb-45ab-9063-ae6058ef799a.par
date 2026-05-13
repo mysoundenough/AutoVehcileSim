@@ -1,0 +1,29 @@
+PARSFILE
+#FullDataName Steering Wheel Torque`Articulated Bus`
+#CheckBox0 0    
+
+#RingCtrl0 COEFFICIENT
+#RingCtrl1 CONSTANT
+#RingCtrl2 MULTIPLY
+M_SW_COMBINE MULTIPLY
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+M_SW_COEFFICIENT 1/25
+M_SW_V_CONSTANT 1
+*SCALAR 1/25
+*SCALAR2 1
+
+
+LOG_ENTRY Used Dataset: Steering Wheel Torque; Articulated Bus
+#Library : Steering Wheel Torque
+#DataSet : Articulated Bus
+#Category: 
+#FileID  : TqSW_517e3dff-abbb-45ab-9063-ae6058ef799a
+#Created : 05-26-2022 11:16:36
+#Modified: 05-26-2022 11:18:32
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Steering Wheel Torque
+
+END

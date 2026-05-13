@@ -1,0 +1,63 @@
+PARSFILE
+#FullDataName Generic VS Commands`06b - Fx compliance (brakes, L)`K&C Test Sequence
+#VehCode VS Commands
+
+#MiscYellow0
+! A longitudinal force compliance test with brakes applied. 
+! This test applies longitudinal forces at the ground in the
+! braking direction (i.e., negative X) to the left side only. 
+! Such a test represents a “worst case” split mu condition. 
+
+! Set user parameters for range of forces to be used (magnitude only)
+DEFINE_PARAMETER fx_range 4000; N; Range of applied force
+
+! set the rate of change of force
+! define units for the force rate of change
+DEFINE_UNITS N/s 1; 
+DEFINE_PARAMETER fx_rate = 50; N/s; Rate of change of force
+
+! differential equation to smoothly change force
+DEFINE_OUTPUT fx_ground 0; N; Magnitude of Fx
+EQ_DIFFERENTIAL fx_ground = fx_rate;
+
+! Tire import forces are applied in the tire coordinate directions, but
+! K&C machines apply forces in the sprung mass directions. (Note that in this
+! test the sprung mass directions are aligned with the global directions.)
+
+! activate the import variables for ground Fx
+IMPORT imp_fx_l1 VS_REPLACE 0
+IMPORT imp_fx_r1 VS_REPLACE 0
+IMPORT imp_fx_l2 VS_REPLACE 0
+IMPORT imp_fx_r2 VS_REPLACE 0
+
+EQ_IN imp_fx_l1 = fx_ground * cos(yaw_l1);
+EQ_IN imp_fx_r1 = 0;
+EQ_IN imp_fx_l2 = fx_ground * cos(yaw_l2);
+EQ_IN imp_fx_r2 = 0;
+
+! activate the import variables for ground Fy
+IMPORT imp_fy_l1 VS_REPLACE 0
+IMPORT imp_fy_r1 VS_REPLACE 0
+IMPORT imp_fy_l2 VS_REPLACE 0
+IMPORT imp_fy_r2 VS_REPLACE 0
+
+EQ_IN imp_fy_l1 = fx_ground * -sin(yaw_l1);
+EQ_IN imp_fy_r1 = 0;
+EQ_IN imp_fy_l2 = fx_ground * -sin(yaw_l2);
+EQ_IN imp_fy_r2 = 0;
+
+OPT_WRITE 1
+#ENDMYellow
+
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { K&C Test Sequence } 06b - Fx compliance (brakes, L)
+#Library : Generic VS Commands
+#DataSet : 06b - Fx compliance (brakes, L)
+#Category: K&C Test Sequence
+#FileID  : GenVS_de977ad3-90b9-40dc-a3d3-c7f982c27189
+#Modified: 05-28-2021 15:02:26
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode VS Commands
+
+END

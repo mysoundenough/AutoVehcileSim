@@ -1,0 +1,71 @@
+PARSFILE
+#FullDataName Procedures`TBC: DLC @ -5 km/h`Driver Controls
+#CheckBox1 1    
+OPT_INIT_PATH 1
+
+#RingCtrl0 2
+#RingCtrl1 0
+#RingCtrl2 1
+OPT_STOP 0
+SSTART 30
+TSTART 0
+TSTART_WRITE = 0;
+TSTOP 90
+SSTOP = SSTART - 1 ;
+OPT_DIRECTION -1
+*SPEED -10
+*TSTOP 90
+*TSTART 0
+*SSTART 30
+*SSTOP 150
+
+OPT_SC 2
+PARSFILE Control\Driver\StrDM_3e8ecff5-bb79-44f3-a4fc-36fd3c039f63.par
+#BlueLink27 Control: Steering by the Closed-loop Driver Model`DLC, 5.0s Preview, TBC` Vehicle Dynamics Tests` , Steering`StrDM_3e8ecff5-bb79-44f3-a4fc-36fd3c039f63
+
+PARSFILE Control\Braking\PbkCon_bf4961f4-c4cf-4b18-a8f7-5f65e31ecd3f.par
+#BlueLink28 Control: Braking MC Pressure (Open Loop)`Constant: 0 MPa` Constant` , Braking`PbkCon_bf4961f4-c4cf-4b18-a8f7-5f65e31ecd3f
+
+PARSFILE Control\Gear_at\GearCL_73dd8273-cecc-4a62-afb7-b1a8adae1c0c.par
+#BlueLink30 Control: Shifting (Closed Loop)`Reverse` ` , Shifting Control`GearCL_73dd8273-cecc-4a62-afb7-b1a8adae1c0c
+
+PARSFILE Control\Speed_t\SpdTime_6a4f25b9-d5b2-4059-83b3-7c82c8aa874b.par
+#BlueLink31 Control: Speed (Closed Loop) Using Target Speed`Constant: -5 km/h` Constant` , Speed vs. time`SpdTime_6a4f25b9-d5b2-4059-83b3-7c82c8aa874b
+
+PARSFILE Roads\3D_Road\Road_c76ab0d9-60d9-4781-bd32-84e57bf8316e.par
+#BlueLink0 Road: 3D Surface (All Properties)`DLC, Mu = 0.85` Flat Test Pads` , Miscellaneous`Road_c76ab0d9-60d9-4781-bd32-84e57bf8316e
+
+PARSFILE Sensors_Traffic\Traffic\TMotion_685c5b22-b555-4300-90e6-7f354600c8d8.par
+#BlueLink1 Multiple Moving Objects`1 Driver Preview Point` Points of Interest` , Miscellaneous`TMotion_685c5b22-b555-4300-90e6-7f354600c8d8
+
+PARSFILE Plot\Setup\Plot_24530d21-f100-4efd-97c3-5851cf2d8c3b.par
+#BlueLink8 Plot: Setup`Hitch Articulation vs. Desired` Hitch` , Plot`Plot_24530d21-f100-4efd-97c3-5851cf2d8c3b
+
+PARSFILE Plot\Setup\Plot_dc3bd4cb-2a9b-4dbc-8126-38a398aefd1b.par
+#BlueLink9 Plot: Setup`Steering Wheel Angle` Steering` , Plot`Plot_dc3bd4cb-2a9b-4dbc-8126-38a398aefd1b
+
+PARSFILE Plot\Setup\Plot_6bb14d6c-a68f-4d3b-a1c7-683c8b2f437a.par
+#BlueLink10 Plot: Setup`Steering Wheel Angular Rate` Steering` , Plot`Plot_6bb14d6c-a68f-4d3b-a1c7-683c8b2f437a
+
+PARSFILE Plot\Setup\Plot_a243fc1c-fc6b-4404-89ac-bc8209a293be.par
+#BlueLink12 Plot: Setup`Longitudinal Speed (Vxz_Fwd) vs. Time` Vehicle Motion` , Plot`Plot_a243fc1c-fc6b-4404-89ac-bc8209a293be
+
+PARSFILE Plot\Setup\Plot_dafae624-d48a-4548-93eb-fa73d080e21a.par
+#BlueLink13 Plot: Setup`Brake Control: M/C Pressure` Braking` , Plot`Plot_dafae624-d48a-4548-93eb-fa73d080e21a
+
+PARSFILE Plot\Setup\Plot_4f67d5b7-0627-47d3-baf7-12fe88008d68.par
+#BlueLink14 Plot: Setup`Gear Selection` Powertrain` , Plot`Plot_4f67d5b7-0627-47d3-baf7-12fe88008d68
+
+
+LOG_ENTRY Used Dataset: Procedures; { Driver Controls } TBC: DLC @ -5 km/h
+#Library : Procedures
+#DataSet : TBC: DLC @ -5 km/h
+#Category: Driver Controls
+#FileID  : Proc_6f2de6a1-ed4a-4a32-902e-1dfeba98ee73
+#Created : 05-20-2022 13:38:15
+#Modified: 05-20-2022 13:42:02
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Procedure
+
+END

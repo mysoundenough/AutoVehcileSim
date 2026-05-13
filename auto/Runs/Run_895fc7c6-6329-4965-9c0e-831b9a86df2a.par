@@ -1,0 +1,98 @@
+PARSFILE
+#FullDataName CarSim Run Control`PID Ctrl, Constant Target Speed DLC`Extended Models
+#VEHICLECODE Ind_Ind
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_895fc7c6-6329-4965-9c0e-831b9a86df2a
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Animator\Cameras\Camera_de93188e-85a0-4e48-a39b-ef07b4e54be0.par
+#BlueLink0 Animator: Camera Setup`175 Azm, 5 El, 20 m, No Yaw` Vehicle Reference` , Animator camera`Camera_de93188e-85a0-4e48-a39b-ef07b4e54be0
+
+#CheckBox0 1    
+#CheckBox1 0    
+#CheckBox2 1    
+#CheckBox3 0    
+#CheckBox4 0    
+#CheckBox5 0    
+#CheckBox6 0    
+#CheckBox7 1    
+#CheckBox8 1    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+#CheckBox12 0    
+
+#RingCtrl0 4
+#RingCtrl1 1
+#RingCtrl2 3
+#RingCtrl3 0
+#RingCtrl6 2
+#RingCtrl7 -1
+*RUN_COLOR 0.8 0 0
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Vehicles\Assembly\Vehicle_4c56d437-56bf-48a1-b545-6f016e2bae89.par
+#BlueLink2 Vehicle: Assembly`D-Class, Sedan` D-Class` , Math Model`Vehicle_4c56d437-56bf-48a1-b545-6f016e2bae89
+
+PARSFILE Procedures\Proc_74236392-0a94-4652-bb80-5cd30d3fb85e.par
+#BlueLink28 Procedures`DLC w/ initial speed` Driver Controls` , Procedure`Proc_74236392-0a94-4652-bb80-5cd30d3fb85e
+
+PARSFILE Events\Events_b5846d43-5d85-42af-a01f-4b2a69305edc.par
+#BlueLink9 Events`Reset integral at T = 4` PID Control` , Miscellaneous`Events_b5846d43-5d85-42af-a01f-4b2a69305edc
+
+DELETE_PLOT_GROUP default
+PLOT_GROUP default
+PARSFILE Plot\Setup\Plot_a243fc1c-fc6b-4404-89ac-bc8209a293be.par
+#BlueLink15 Plot: Setup`Longitudinal Speed (Vxz_Fwd) vs. Time` Vehicle Motion` , Plot`Plot_a243fc1c-fc6b-4404-89ac-bc8209a293be
+
+PARSFILE Plot\Setup\Plot_315ea46e-b7b6-40d8-84de-a7ef2624a470.par
+#BlueLink16 Plot: Setup`Lateral Tracking vs. Station` Tracking` , Plot`Plot_315ea46e-b7b6-40d8-84de-a7ef2624a470
+
+#BlueLink23 CarSim Run Control`DLC, Preview Speed Control` Driver Model` , Overlay run or ERD file`Run_3c0b0556-bee4-4b58-b62a-723cb72a4e75
+
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Animator\Vehicles\AniVeh_4ce91de0-b4f4-4075-a4a9-d4fc5b973de3.png
+WRITE_SENSOR_DETECT
+Title PID Ctrl, Constant Target Speed DLC <Extended Models>
+CATEGORY Extended Models 
+DATASET_TITLE PID Ctrl, Constant Target Speed DLC
+#MiscYellow0
+IMPORT IMP_THROTTLE_ENGINE ADD
+define_parameter Setpoint 48; km/h
+eq_in IMP_THROTTLE_ENGINE = PID_CONTROLLER(Vxz_fwd, Setpoint, 1.8, 0.5, 0.2, 1)
+#ENDMYellow
+
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#A D-Class Sedan performs a double lane change maneuver with a constant target speed of 48 km/h. The target speed was chosen to allow the car to follow the path with a minimum of error.
+#
+#The car throttle is controlled with a generic PID controller, located on the Run Control screen.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { Extended Models } PID Ctrl, Constant Target Speed DLC
+#Library : CarSim Run Control
+#DataSet : PID Ctrl, Constant Target Speed DLC
+#Category: Extended Models
+#FileID  : Run_895fc7c6-6329-4965-9c0e-831b9a86df2a
+#Created : 04-18-2023 12:07:15
+#Modified: 07-17-2023 13:23:40
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Run
+
+END

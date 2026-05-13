@@ -1,0 +1,28 @@
+PARSFILE
+#FullDataName Generic VS Commands`03 - Roll - Record max - Rr`K&C Test Sequence
+#VehCode VS Commands
+
+#MiscYellow0
+! Set the actual minimum jounce found.
+ROLL_MAX_2 = Roll_A2r
+
+! Delete eq's to be replaced with others
+DELETE_EQS_OUT at_max_2
+DELETE_EQS_OUT roll_err_2
+
+DELETE_EQS_IN imp_zgnd_l2
+DELETE_EQS_IN imp_zgnd_r2
+#ENDMYellow
+
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { K&C Test Sequence } 03 - Roll - Record max - Rr
+#Library : Generic VS Commands
+#DataSet : 03 - Roll - Record max - Rr
+#Category: K&C Test Sequence
+#FileID  : GenVS_46b1e278-e31b-4744-ba8b-a9da025279d4
+#Modified: 05-28-2021 15:02:26
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode VS Commands
+
+END

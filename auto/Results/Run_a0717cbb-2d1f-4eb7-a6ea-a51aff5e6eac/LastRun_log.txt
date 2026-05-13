@@ -1,0 +1,69 @@
+Run made by CarSim 2024.1 at 14:47 on March 25, 2024.
+Revision 222209, March 18, 2024
+Started with simfile: simfile.sim
+
+Include PARSFILE "Results\Run_a0717cbb-2d1f-4eb7-a6ea-a51aff5e6eac\Run_all.par"
+Used Dataset: Animator: Reference Frame; { Tracking: Vehicle } Vehicle X-Y
+Used Dataset: Animator: Camera Setup; { K & C } K & C View
+Installed keywords into VS Solver for MODEL_LAYOUT I_I
+ 01 - K & C: Design Load (no plots) <K & C Tests - Complete sequence>
+Used Dataset: Generic VS Commands; { K&C Test Sequence } 04c - Steer torque
+Used Dataset: Generic VS Commands; { K&C Test Sequence } 04c - Steer torque - reduce to min
+Used Dataset: Events; { K&C Test Sequence } 04c - Steer torque - reduce to min
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Steering } Steering Wheel Angular Rate
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Steering } Road Wheel Steer Angle - Front
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Tire Forces and Moments } Vertical Forces
+Used Dataset: Plot: Format; Lines without Symbols
+Used Dataset: Plot: Setup; { Steering } Steer Torque
+Used Dataset: Plot: Format; Lines without Symbols
+Used Dataset: Plot: Setup; { Steering } Steering: Handwheel Angle
+Used Dataset: Plot: Format; Lines without Symbols
+Used Dataset: Plot: Setup; { Steering } Driver input steer torque vs. steer angle
+Used Dataset: Plot: Setup; { Steering } Rack Force from Tie Rods
+Used Dataset: Procedures; { K&C Test Sequence } 04c - Steer torque
+ 04c - Steer torque - engine off <K & C Tests - Complete sequence>
+Used Dataset: CarSim Run Control; { K & C Tests - Complete sequence } 04c - Steer torque - engine off
+
+Time to read input = 0.0733487
+Function FY_TIRE_CARPET(1,1) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function MZ_TIRE_CARPET(1,1) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function FY_TIRE_CARPET(1,2) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function MZ_TIRE_CARPET(1,2) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function FY_TIRE_CARPET(2,1) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function MZ_TIRE_CARPET(2,1) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function FY_TIRE_CARPET(2,2) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function MZ_TIRE_CARPET(2,2) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function F_REB_STOP_TABLE(1,1) extrapolated (out of range HIGH) for X = 1.84289e-05 mm at T = 0
+Function F_JNC_STOP_TABLE(1,1) extrapolated (out of range LOW) for X = 1.84289e-05 mm at T = 0
+Function F_REB_STOP_TABLE(1,2) extrapolated (out of range HIGH) for X = 1.84289e-05 mm at T = 0
+Function F_JNC_STOP_TABLE(1,2) extrapolated (out of range LOW) for X = 1.84289e-05 mm at T = 0
+Function F_REB_STOP_TABLE(2,1) extrapolated (out of range HIGH) for X = -6.6721e-07 mm at T = 0
+Function F_JNC_STOP_TABLE(2,1) extrapolated (out of range LOW) for X = -6.6721e-07 mm at T = 0
+Function F_REB_STOP_TABLE(2,2) extrapolated (out of range HIGH) for X = -6.6721e-07 mm at T = 0
+Function F_JNC_STOP_TABLE(2,2) extrapolated (out of range LOW) for X = -6.6721e-07 mm at T = 0
+
+Run started: VS output file = Results\Run_a0717cbb-2d1f-4eb7-a6ea-a51aff5e6eac\LastRun.vsb
+
+Event #1 occurred at t = 50.0005: at_min
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_285b48d2-0c89-49ed-8ab2-89427aa6b5e6.par"
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Generic\VS_commands\GenVS_2fee587e-39f7-4807-af4b-6f626140b896.par"
+Used Dataset: Generic VS Commands; { K&C Test Sequence } 04c - Steer torque - Increase to max
+Used Dataset: Events; { K&C Test Sequence } 04c - Steer torque - increase to max
+
+Event #2 occurred at t = 150.002: at_max
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_77682088-be12-4899-b9c9-6624ce5bda40.par"
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Generic\VS_commands\GenVS_becc8888-1739-4a89-a8e2-1cf4e8dc3901.par"
+Used Dataset: Generic VS Commands; { K&C Test Sequence } 04c - Steer torque - reduce to min
+Used Dataset: Events; { K&C Test Sequence } 04c - Steer torque - reduce to min
+
+Event #3 occurred at t = 250.003: at_min & END_AFTER_EVENT
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_b5af09b5-d8ad-4e81-ae24-eebce691780e.par"
+
+Run stopped at t = 250.003. VS Command STOP_RUN_NOW End event triggered
+Used Dataset: Events; End Events
+
+Computational time ratio: RTIME = 0.11036 (real time)/(simulation time)
+

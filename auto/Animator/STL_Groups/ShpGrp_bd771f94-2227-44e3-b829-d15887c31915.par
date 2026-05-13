@@ -1,0 +1,43 @@
+PARSFILE
+#FullDataName Animator: Shape Assembly`D-Class Sedan (OSG, No occupants)`Passenger Cars
+*COLOR .36 .117 .117
+*X_REF_LENGTH 2866
+*Y_REF_LENGTH 2162
+*Z_REF_LENGTH 1380
+#CheckBox0 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 0    
+#CheckBox5 1    
+
+#RingCtrl1 0
+#RingCtrl2 2
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL_Groups\ShpGrp_bd771f94-2227-44e3-b829-d15887c31915.png
+PARSFILE Animator\STL\Shape_f1c66e3a-8948-4ada-9eb9-5eb47f06ab57.par
+#BlueLink0 Animator: Shape File Link`Sedan` Cars: D-Class` , Shape File`Shape_f1c66e3a-8948-4ada-9eb9-5eb47f06ab57
+
+#MiscYellow0
+vsv_disable_shadows_recursive
+#ENDMYellow
+
+set_lighting on
+x_ref_length 2866
+y_ref_length 2162
+z_ref_length 1380
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
+#BlueLink17 Animator: Camera Setup`YZ-Plane, No Offsets (with Yaw)` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+
+
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Passenger Cars } D-Class Sedan (OSG, No occupants)
+#Library : Animator: Shape Assembly
+#DataSet : D-Class Sedan (OSG, No occupants)
+#Category: Passenger Cars
+#FileID  : ShpGrp_bd771f94-2227-44e3-b829-d15887c31915
+#Modified: 05-28-2021 15:03:00
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape Assembly
+
+END

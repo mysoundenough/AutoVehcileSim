@@ -1,0 +1,50 @@
+PARSFILE
+#FullDataName Generic Group of Links`3-Way Intersection, Articulated Bus`Roads and Paths
+#VehCode Generic Links
+PARSFILE Roads\3D_Road\Road_a7d44c5a-7add-421f-9d72-f959b260f643.par
+#BlueLink0 Road: 3D Surface (All Properties)`999: Grass and Intersection, 3-Way` Intersection, 3D Roads with Curbs` , Miscellaneous`Road_a7d44c5a-7add-421f-9d72-f959b260f643
+
+PARSFILE Roads\3D_Road\Road_0b06d4c6-606e-41a1-a65e-be49e77bf142.par
+#BlueLink1 Road: 3D Surface (All Properties)`1001: Enter South, Exit East -Artic Bus` Intersection, 3D Roads with Curbs` , Miscellaneous`Road_0b06d4c6-606e-41a1-a65e-be49e77bf142
+
+PARSFILE Roads\3D_Road\Road_f4ca2a27-e057-4d89-9b95-aef27a1b4a3c.par
+#BlueLink2 Road: 3D Surface (All Properties)`1002: Enter East, Exit North -Artic Bus` Intersection, 3D Roads with Curbs` , Miscellaneous`Road_f4ca2a27-e057-4d89-9b95-aef27a1b4a3c
+
+PARSFILE Roads\3D_Road\Road_4d523001-97a6-4842-813f-3782b79fb456.par
+#BlueLink3 Road: 3D Surface (All Properties)`1013: Enter North Straight South` Intersection, 3D Roads with Curbs` , Miscellaneous`Road_4d523001-97a6-4842-813f-3782b79fb456
+
+PARSFILE Roads\BuilderSegment\RoadSeg_a20c35cb-eb82-4e8d-b754-f60f90236a38.par
+#BlueLink4 Path: Segment Builder`2004: S Entrance, Right Turn, Artic Bus` Crossing with Curbs` , Miscellaneous`RoadSeg_a20c35cb-eb82-4e8d-b754-f60f90236a38
+
+#BlueLink5 ` , Miscellaneous` , Miscellaneous` , Miscellaneous`
+
+PARSFILE Roads\Boundaries\RdBnd_23c898a4-0355-49ae-b5ca-19cfccd3f975.par
+#BlueLink9 Road: Boundaries`3-Way Intersection, No West Entrance` Crossing with Curbs` , Miscellaneous`RdBnd_23c898a4-0355-49ae-b5ca-19cfccd3f975
+
+#MiscYellow1
+path_id_dm = 2004; !Path ID 2004 is for articulated trucks
+current_road_id = 1001
+#ENDMYellow
+
+
+#EMBEDDED_NOTES
+#This example has two-lane roads intersecting, with one ending at the intersection.
+#
+#The network is built from three road datasets. Each represents a single lane (including the adjacent curb). The reference paths are on the left edge of the paths, which is the road centerline.
+#
+#Note that Path ID 2004 is used for articulated trucks. Rather than attempt a constant radius turn at the intersection, the path has the vehicle perform a wider turn to reduce or eliminate the trailer riding up on the inside curb.
+#
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic Group of Links; { Roads and Paths } 3-Way Intersection, Articulated Bus
+#Library : Generic Group of Links
+#DataSet : 3-Way Intersection, Articulated Bus
+#Category: Roads and Paths
+#FileID  : GenLink_bd0be6b7-442d-4547-8f37-6abb11d2a74f
+#Created : 05-26-2022 15:14:15
+#Modified: 05-26-2022 23:11:43
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Generic Links
+
+END

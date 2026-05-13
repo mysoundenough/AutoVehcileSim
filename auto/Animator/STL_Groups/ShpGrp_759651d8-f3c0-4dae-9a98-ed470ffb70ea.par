@@ -1,0 +1,66 @@
+PARSFILE
+#FullDataName Animator: Shape Assembly`Cardinal Direction Signs`Generic Proving Ground
+*ANGLE_Z 0
+*OFFSET_Z .45
+*X_REF_LENGTH 3344
+*Y_REF_LENGTH 2490
+*Z_REF_LENGTH 1757
+*IMAGE_FIT_MODE 1
+#CheckBox0 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 0    
+#CheckBox5 0    
+
+#RingCtrl1 1
+#RingCtrl2 2
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL_Groups\ShpGrp_759651d8-f3c0-4dae-9a98-ed470ffb70ea.png
+PARSFILE Animator\STL\Shape_ad7637b8-f104-439c-b50c-d179d07a0509.par
+#BlueLink0 Animator: Shape File Link`Cardinal: North` Generic Proving Ground: Signs` , Shape File`Shape_ad7637b8-f104-439c-b50c-d179d07a0509
+
+set_lighting off
+PARSFILE Animator\STL\Shape_496ae73c-951b-4b8f-8751-7e7d2325d48e.par
+#BlueLink1 Animator: Shape File Link`Cardinal: South` Generic Proving Ground: Signs` , Shape File`Shape_496ae73c-951b-4b8f-8751-7e7d2325d48e
+
+set_lighting off
+PARSFILE Animator\STL\Shape_a6f45d77-0b2a-4581-ba0b-7182f546ea78.par
+#BlueLink2 Animator: Shape File Link`Cardinal: East` Generic Proving Ground: Signs` , Shape File`Shape_a6f45d77-0b2a-4581-ba0b-7182f546ea78
+
+set_lighting off
+PARSFILE Animator\STL\Shape_13b2c264-0599-40eb-9a13-ce8fecf0abd9.par
+#BlueLink3 Animator: Shape File Link`Cardinal: West` Generic Proving Ground: Signs` , Shape File`Shape_13b2c264-0599-40eb-9a13-ce8fecf0abd9
+
+set_lighting off
+PARSFILE Animator\STL\Shape_e6f5cefc-ad65-4771-a226-752ef1038589.par
+#BlueLink4 Animator: Shape File Link`Cardinal: North-East` Generic Proving Ground: Signs` , Shape File`Shape_e6f5cefc-ad65-4771-a226-752ef1038589
+
+set_lighting off
+PARSFILE Animator\STL\Shape_3f50181d-9ce3-427e-816f-0c0d17d1f350.par
+#BlueLink5 Animator: Shape File Link`Cardinal: South-East` Generic Proving Ground: Signs` , Shape File`Shape_3f50181d-9ce3-427e-816f-0c0d17d1f350
+
+set_lighting off
+PARSFILE Animator\STL\Shape_177f4bdc-bdb8-4958-8736-fc1fda13f2bd.par
+#BlueLink6 Animator: Shape File Link`Cardinal: South-West` Generic Proving Ground: Signs` , Shape File`Shape_177f4bdc-bdb8-4958-8736-fc1fda13f2bd
+
+set_lighting off
+PARSFILE Animator\STL\Shape_d789dd81-1772-445a-b384-f74e5ad4b999.par
+#BlueLink7 Animator: Shape File Link`Cardinal: North-West` Generic Proving Ground: Signs` , Shape File`Shape_d789dd81-1772-445a-b384-f74e5ad4b999
+
+set_lighting off
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_5ee1c133-e1f9-4b1b-bf7d-aef920ff286a.par
+#BlueLink17 Animator: Camera Setup`Proving Grounds: Cardinal - North` Scene Specific Preview` , Video Camera`Camera_5ee1c133-e1f9-4b1b-bf7d-aef920ff286a
+
+
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Generic Proving Ground } Cardinal Direction Signs
+#Library : Animator: Shape Assembly
+#DataSet : Cardinal Direction Signs
+#Category: Generic Proving Ground
+#FileID  : ShpGrp_759651d8-f3c0-4dae-9a98-ed470ffb70ea
+#Modified: 05-28-2021 15:02:59
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape Assembly
+
+END

@@ -1,0 +1,85 @@
+PARSFILE
+#FullDataName CarSim Run Control`Ext. Driver Model - 1 SF`Simulink Models, Multi S-Function
+#VEHICLECODE Ind_Ind
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_4c2ccfa3-2c4b-4d4b-a1ca-75b2ea00640f
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Models\Simulink\Simlink_23ff145f-5dd5-47df-9e22-ee3add675864.par
+#BlueLink12 Models: Simulink`Driver Model - 1SF` Steering and Steering Controls` , Models`Simlink_23ff145f-5dd5-47df-9e22-ee3add675864
+
+PARSFILE Animator\Cameras\Camera_12cb229c-38c4-4b06-897b-5b5858dacd53.par
+#BlueLink0 Animator: Camera Setup`190 Azm, 12 El, 30 m` Vehicle Reference` , Animator camera`Camera_12cb229c-38c4-4b06-897b-5b5858dacd53
+
+#CheckBox0 1    
+#CheckBox1 1    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 1    
+#CheckBox5 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox8 0    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+#CheckBox12 0    
+
+#RingCtrl0 4
+#RingCtrl1 1
+#RingCtrl2 3
+#RingCtrl3 0
+#RingCtrl6 0
+#RingCtrl7 -1
+*RUN_COLOR 0.2 0.4 0.6
+SET_RUN_COLOR 0.2 0.4 0.6
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Vehicles\Loaded\VehLoad_f0558012-9b84-4424-a9a1-2401522b62dc.par
+#BlueLink2 Vehicle with Loads, Sensors, Trailer, etc.`E-Class, Sedan w/ 5 Driver Sensors` E-Class` , Math Model`VehLoad_f0558012-9b84-4424-a9a1-2401522b62dc
+
+PARSFILE Procedures\Proc_b0ac9acf-bdb1-4afe-bafb-be6dc62da5ae.par
+#BlueLink28 Procedures`Constant Speed for Ext. Driver Control` Driver Model, Extended and External` , Procedure`Proc_b0ac9acf-bdb1-4afe-bafb-be6dc62da5ae
+
+
+SPECIAL_PARSFILE Runs\Run_838743c8-f603-41f5-9b64-8e4c2dd16463.par
+#BlueLink23 CarSim Run Control`Ext. Driver Model` Simulink Models` , Overlay run or ERD file`Run_838743c8-f603-41f5-9b64-8e4c2dd16463
+
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Animator\Vehicles\AniVeh_e52a21a6-9bb5-4010-a060-992aa1911e27.png
+WRITE_SENSOR_DETECT
+Title Ext. Driver Model - 1 SF <Simulink Models, Multi S-Function>
+CATEGORY Simulink Models, Multi S-Function 
+DATASET_TITLE Ext. Driver Model - 1 SF
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#This Simulnk example from previous versions of CarSim was modified to remove a time-step delay to improve the response.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { Simulink Models, Multi S-Function } Ext. Driver Model - 1 SF
+#Library : CarSim Run Control
+#DataSet : Ext. Driver Model - 1 SF
+#Category: Simulink Models, Multi S-Function
+#FileID  : Run_4c2ccfa3-2c4b-4d4b-a1ca-75b2ea00640f
+#Created : 11-04-2022 12:08:48
+#Modified: 07-06-2023 11:54:21
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Run
+
+END

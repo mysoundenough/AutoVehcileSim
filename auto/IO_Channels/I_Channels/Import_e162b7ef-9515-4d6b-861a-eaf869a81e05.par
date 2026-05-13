@@ -1,0 +1,20 @@
+PARSFILE
+#FullDataName I/O Channels: Import`Steering Wheel Angle`Steering System Control
+#RingCtrl1 1
+
+#MiscYellow0
+IMP_STEER_SW Replace 0.0! 1
+#ENDMYellow
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Import; { Steering System Control } Steering Wheel Angle
+#Library : I/O Channels: Import
+#DataSet : Steering Wheel Angle
+#Category: Steering System Control
+#FileID  : Import_e162b7ef-9515-4d6b-861a-eaf869a81e05
+#Modified: 08-03-2021 10:14:07
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Import Channels
+
+END

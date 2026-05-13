@@ -1,0 +1,62 @@
+PARSFILE
+#FullDataName Animator: Shape Assembly`Trailer Tire`Tires
+*ANGLE_Z 180
+*ANGLE_Y 0
+*ANGLE_X 0
+*X_REF_LENGTH 331
+*Y_REF_LENGTH 205
+*Z_REF_LENGTH 331
+*IMAGE_FIT_MODE 1
+#CheckBox0 0    
+#CheckBox2 1    
+#CheckBox3 0    
+#CheckBox4 0    
+#CheckBox5 1    
+
+#RingCtrl1 2
+#RingCtrl2 2
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL_Groups\ShpGrp_90ae7d58-a5c5-4c3b-ac5d-0c404da6bcc7.png
+PARSFILE Animator\STL\Shape_88fc6c7b-fa61-401f-a8f9-f8af9da78797.par
+#BlueLink0 Animator: Shape File Link`205/75 R14: Tire` Tires` , Shape File`Shape_88fc6c7b-fa61-401f-a8f9-f8af9da78797
+
+set_angle_x 0
+set_angle_y 0
+set_angle_z 180
+PARSFILE Animator\STL\Shape_3aa3ac90-cc6f-4602-a6d6-738abf8c3f98.par
+#BlueLink1 Animator: Shape File Link`205/75 R14: Wheel` Tires` , Shape File`Shape_3aa3ac90-cc6f-4602-a6d6-738abf8c3f98
+
+set_angle_x 0
+set_angle_y 0
+set_angle_z 180
+PARSFILE Animator\STL\Shape_562d5f21-92e5-43a4-9bab-85a629019784.par
+#BlueLink2 Animator: Shape File Link`205/75 R14: Stripe` Tires` , Shape File`Shape_562d5f21-92e5-43a4-9bab-85a629019784
+
+set_angle_x 0
+set_angle_y 0
+set_angle_z 180
+PARSFILE Animator\STL\Shape_b43dfca1-a7fb-427d-a0e2-69fc62490e4f.par
+#BlueLink3 Animator: Shape File Link`205/75 R14: Nut` Tires` , Shape File`Shape_b43dfca1-a7fb-427d-a0e2-69fc62490e4f
+
+set_angle_x 0
+set_angle_y 0
+set_angle_z 180
+x_ref_length 331
+y_ref_length 205
+z_ref_length 331
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
+#BlueLink17 Animator: Camera Setup`YZ-Plane, No Offsets (with Yaw)` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+
+
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Tires } Trailer Tire
+#Library : Animator: Shape Assembly
+#DataSet : Trailer Tire
+#Category: Tires
+#FileID  : ShpGrp_90ae7d58-a5c5-4c3b-ac5d-0c404da6bcc7
+#Modified: 05-28-2021 15:03:01
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape Assembly
+
+END

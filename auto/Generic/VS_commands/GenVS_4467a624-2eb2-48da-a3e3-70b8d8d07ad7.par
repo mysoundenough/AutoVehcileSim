@@ -1,0 +1,55 @@
+PARSFILE
+#FullDataName Generic VS Commands`3D Sinusoidal Ground Surface`External 3D Ground Surface
+#VehCode VS Commands
+
+#MiscYellow0
+OPT_DELAY_INIT 1 ! critical for this approach
+
+! Activate imports for tire CTC points
+IMPORT IMP_ZGND_L1 VS_REPLACE
+IMPORT IMP_DZDX_L1 VS_REPLACE
+IMPORT IMP_DZDY_L1 VS_REPLACE
+IMPORT IMP_ZGND_R1 VS_REPLACE
+IMPORT IMP_DZDX_R1 VS_REPLACE
+IMPORT IMP_DZDY_R1 VS_REPLACE
+IMPORT IMP_ZGND_L2 VS_REPLACE
+IMPORT IMP_DZDX_L2 VS_REPLACE
+IMPORT IMP_DZDY_L2 VS_REPLACE
+IMPORT IMP_ZGND_R2 VS_REPLACE
+IMPORT IMP_DZDX_R2 VS_REPLACE
+IMPORT IMP_DZDY_R2 VS_REPLACE
+
+EQ_DYN IMP_ZGND_L1 = 1 + SIN(2*PI*Xctc_L1/100)
+EQ_DYN IMP_ZGND_R1 = 1 + SIN(2*PI*Xctc_R1/100)
+EQ_DYN IMP_ZGND_L2 = 1 + SIN(2*PI*Xctc_L2/100)
+EQ_DYN IMP_ZGND_R2 = 1 + SIN(2*PI*Xctc_R2/100)
+
+EQ_DYN IMP_DZDX_L1 = (2*pi/100)*cos(2*PI*Xctc_L1/100)
+EQ_DYN IMP_DZDX_R1 = (2*pi/100)*cos(2*PI*Xctc_R1/100)
+EQ_DYN IMP_DZDX_L2 = (2*pi/100)*cos(2*PI*Xctc_L2/100)
+EQ_DYN IMP_DZDX_R2 = (2*pi/100)*cos(2*PI*Xctc_R2/100)
+#ENDMYellow
+
+
+#EMBEDDED_NOTES
+#The model here is:
+#
+#Z = 1 + sin(2*pi*X/100)
+#DZDX = (2*pi/100)*cos(2*pi*X/100)
+#DZDY = 0
+#
+#Xctc values used in the formulae are calculated in the Kin stage
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { External 3D Ground Surface } 3D Sinusoidal Ground Surface
+#Library : Generic VS Commands
+#DataSet : 3D Sinusoidal Ground Surface
+#Category: External 3D Ground Surface
+#FileID  : GenVS_4467a624-2eb2-48da-a3e3-70b8d8d07ad7
+#Created : 10-06-2023 10:50:34
+#Modified: 10-13-2023 11:30:55
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode VS Commands
+
+END

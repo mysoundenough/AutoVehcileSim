@@ -1,0 +1,59 @@
+PARSFILE
+#FullDataName Generic VS Commands`Linearization (33 SVs)`Miscellaneous VS Commands
+#VehCode VS Commands
+
+#MiscYellow0
+OPT_LINEARIZATION 1
+linear_sv SV_ZO
+linear_sv SV_PITCH
+linear_sv SV_ROLL
+linear_sv SV_SWA
+linear_sv SV_AV_SW
+linear_sv SV_STR_IN_GR_A1
+linear_sv SV_STR_IN_DGR_A1
+linear_sv SV_JNC_L1
+linear_sv SV_JNC_R1
+linear_sv SV_JNC_L2
+linear_sv SV_JNC_R2
+linear_sv SV_SLIP_LAT_L1
+linear_sv SV_SLIP_LAT_R1
+linear_sv SV_SLIP_LAT_L2
+linear_sv SV_SLIP_LAT_R2
+linear_sv SV_SLIP_LONG_L1
+linear_sv SV_SLIP_LONG_R1
+linear_sv SV_SLIP_LONG_L2
+linear_sv SV_SLIP_LONG_R2
+linear_sv SV_VXS
+linear_sv SV_VYS
+linear_sv SV_VZS
+linear_sv SV_AVZ
+linear_sv SV_AVY
+linear_sv SV_AVX
+linear_sv SV_JNCR_L1
+linear_sv SV_JNCR_R1
+linear_sv SV_JNCR_L2
+linear_sv SV_JNCR_R2
+linear_sv SV_AVY_L1
+linear_sv SV_AVY_R1
+linear_sv SV_AVY_L2
+linear_sv SV_AVY_R2
+
+*CPAR_INCLUDE  Extensions\Linearization
+#ENDMYellow
+
+
+#EMBEDDED_NOTES
+#33 state variables are specified to linearize the system for examples involving steering input (steering wheel angle or torque).
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { Miscellaneous VS Commands } Linearization (33 SVs)
+#Library : Generic VS Commands
+#DataSet : Linearization (33 SVs)
+#Category: Miscellaneous VS Commands
+#FileID  : GenVS_44f17f63-d827-475c-9c3a-8644fb05fc42
+#Modified: 02-26-2024 16:00:46
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode VS Commands
+
+END

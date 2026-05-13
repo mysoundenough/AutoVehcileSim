@@ -1,0 +1,39 @@
+PARSFILE
+#FullDataName Animator: Shape File Link`Tractor: Details (Front)`Cars: Other Vehicles
+#MiscYellow3
+add_obj Animator\3D_Shape_Files_User\articulated_tractor\tractor_front_details.obj
+#ENDMYellow
+
+SET_COLOR 0.188 0.188 0.188
+SET_OFFSET_X 0
+SET_OFFSET_Y 0
+SET_OFFSET_Z 0.55
+*SPECULAR 0.3
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 0.3 0.3 0.3
+vsv_enable_shadows_recursive
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_e6e4b5e2-348e-42ad-ab7c-62eacd66bb44.par
+#BlueLink2 Animator: Camera Setup`Vehicles and Drivers - Trucks` Shape Preview` , Video Camera`Camera_e6e4b5e2-348e-42ad-ab7c-62eacd66bb44
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_d8d8125c-95ca-480b-a68e-ddcb6436ae33.png
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Cars: Other Vehicles } Tractor: Details (Front)
+#Library : Animator: Shape File Link
+#DataSet : Tractor: Details (Front)
+#Category: Cars: Other Vehicles
+#FileID  : Shape_d8d8125c-95ca-480b-a68e-ddcb6436ae33
+#Created : 05-23-2023 15:16:33
+#Modified: 06-15-2023 10:48:13
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape File
+
+END

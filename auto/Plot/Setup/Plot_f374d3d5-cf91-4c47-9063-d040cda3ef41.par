@@ -1,0 +1,48 @@
+PARSFILE
+#FullDataName Plot: Setup`Station vs. Time: GVT`Tracking
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d.par
+#BlueLink0 Plot: Format`Lines without Symbols` ` , Plot format`PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d
+
+#CheckBox1 0    
+
+
+#MiscYellow1
+define_output sObj1 = S_OBJ_25; m; station of the GVT
+define_output startGVT = SSTART_GVT; m; expected GVT start
+#ENDMYellow
+
+#MiscYellow0
+PLOTCHANNELS Station, Time
+PLOTCHANNELS sObj1, Time
+PLOTCHANNELS startGVT, Time
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Station vs. Time: GVT
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Tracking } Station vs. Time: GVT
+#Library : Plot: Setup
+#DataSet : Station vs. Time: GVT
+#Category: Tracking
+#FileID  : Plot_f374d3d5-cf91-4c47-9063-d040cda3ef41
+#Created : 05-17-2021 20:00:29
+#Modified: 06-25-2021 14:43:18
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Plot Setup
+
+END

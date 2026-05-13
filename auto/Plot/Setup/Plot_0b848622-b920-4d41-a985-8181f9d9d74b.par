@@ -1,0 +1,44 @@
+PARSFILE
+#FullDataName Plot: Setup`Tire CTC dZ/dX`Ground
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par
+#BlueLink0 Plot: Format`Default Plot Settings` ` , Plot format`PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS dZdX_L1, Time
+PLOTCHANNELS dZdX_R1, Time
+PLOTCHANNELS dZdX_L2, Time
+PLOTCHANNELS dZdX_R2, Time
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Tire CTC dZ/dX
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Ground } Tire CTC dZ/dX
+#Library : Plot: Setup
+#DataSet : Tire CTC dZ/dX
+#Category: Ground
+#FileID  : Plot_0b848622-b920-4d41-a985-8181f9d9d74b
+#Created : 10-05-2023 12:15:43
+#Modified: 10-30-2023 10:36:57
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Plot Setup
+
+END

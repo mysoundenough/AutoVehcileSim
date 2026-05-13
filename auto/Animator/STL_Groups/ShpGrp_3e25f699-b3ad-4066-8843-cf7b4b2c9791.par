@@ -1,0 +1,46 @@
+PARSFILE
+#FullDataName Animator: Shape Assembly`Large Rental Trailer (1A)`Trailers
+*OFFSET_X 0
+*OFFSET_Y 0
+*OFFSET_Z 0.4
+*X_REF_LENGTH 2864
+*Y_REF_LENGTH 2024
+*Z_REF_LENGTH 1757
+*TRANSPARENCY 0.9
+#CheckBox0 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 1    
+#CheckBox5 1    
+
+#RingCtrl1 2
+#RingCtrl2 2
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL_Groups\ShpGrp_3e25f699-b3ad-4066-8843-cf7b4b2c9791.png
+PARSFILE Animator\STL\Shape_1677f26a-a840-45ce-88d1-d1c1be18276b.par
+#BlueLink0 Animator: Shape File Link`Large Rental Trailer (1A) HD` Trailers` , Shape File`Shape_1677f26a-a840-45ce-88d1-d1c1be18276b
+
+set_transparency 0.9
+set_offset_x 0
+set_offset_y 0
+set_offset_z 0.4
+x_ref_length 2864
+y_ref_length 2024
+z_ref_length 1757
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
+#BlueLink17 Animator: Camera Setup`YZ-Plane, No Offsets (with Yaw)` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+
+
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Trailers } Large Rental Trailer (1A)
+#Library : Animator: Shape Assembly
+#DataSet : Large Rental Trailer (1A)
+#Category: Trailers
+#FileID  : ShpGrp_3e25f699-b3ad-4066-8843-cf7b4b2c9791
+#Created : 12-13-2021 10:18:26
+#Modified: 02-04-2022 12:07:58
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape Assembly
+
+END

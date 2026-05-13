@@ -1,0 +1,39 @@
+PARSFILE
+#FullDataName Generic VS Commands`Simulation Time Controls`Miscellaneous Custom Controls
+#VehCode Simulation Output Controls
+
+#MiscYellow0
+! do not decimate the results - to avoid distorting the clutch control waveforms
+iprint 0
+
+! define new parameters to control simulation write status
+define_parameter write_on = 1; units = -; Setting opt_write to write_on will enable writing to disk.
+define_parameter write_off = 0; units = -; Setting opt_write to write_off will disable writing to disk.
+
+define_parameter write_start = 2; units = s; Begin recording output at this time
+define_parameter write_end = 3; units = s; Finish recording output at this time
+
+! Use an EQ statement to control the value of opt_write every time step
+EQ_IN opt_write = IF( ( T >= write_start ) & ( T <= write_end ), write_on, write_off)
+#ENDMYellow
+
+*MODELCODE Simulation Output Controls
+
+#EMBEDDED_NOTES
+#This dataset controls when the results are written to disk.  Only a brief time period in the results is kept, this is to make the specific shift behavior of interest more visible on the plots.
+#
+#To view the entire simulation output, just unlink this dataset and run the simulation again.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { Miscellaneous Custom Controls } Simulation Time Controls
+#Library : Generic VS Commands
+#DataSet : Simulation Time Controls
+#Category: Miscellaneous Custom Controls
+#FileID  : GenVS_2006e5a4-5b15-4b13-8794-59c248b75d6f
+#Created : 05-24-2022 16:31:15
+#Modified: 05-24-2022 16:37:24
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Simulation Output Controls
+
+END

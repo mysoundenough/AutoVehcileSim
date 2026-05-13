@@ -1,0 +1,59 @@
+PARSFILE
+#FullDataName Powertrain: Hybrid/Electric System`Hybrid Powertrain, Ext. Battery`
+#RingCtrl0 1
+OPT_HEV 1
+#CheckBox1 0    
+OPT_MOTOR_ON_AXLE 0 
+IDIFF 1
+ISIDE 1
+N_TH_SUN 30
+N_TH_RING 78
+IPLNT_SUN 0.025
+IPLNT_RING 0
+IPLNT_CR 0
+N_BATTERY 0
+T_BATTERY_INIT 0
+BATTERY_CHARGE_INIT 0
+V_MOTOR_MIN 0
+V_BATTERY_MIN 0
+V_BATTERY_MAX 0
+
+INSTALL_ELECTRIC_DRIVE_MOTORS 
+
+PARSFILE Powertrain\Motor\MMotor_9c4019ad-c573-405a-aa24-20a17ddaef20.par
+#BlueLink0 Powertrain: Electric Motor Torque`Max. Output 305 N-m` Electric Motor` , Electric Motor`MMotor_9c4019ad-c573-405a-aa24-20a17ddaef20
+
+PARSFILE Generic\Links\GenLink_1e61da3e-2c03-4189-9e05-76481bfea320.par
+#BlueLink1 Generic Group of Links`Electric Generator: Max. Load 66 N-m` Powertrain (HEV)` , Electric Generator`GenLink_1e61da3e-2c03-4189-9e05-76481bfea320
+
+PARSFILE Generic\tables\GenTab_e298b873-8243-4ea0-b4dd-96adb3bb388a.par
+#BlueLink2 Generic Table`Ext. Batt. charged resis. (0 milliohms)` Powertrain (HEV)` , Charging resistance`GenTab_e298b873-8243-4ea0-b4dd-96adb3bb388a
+
+PARSFILE Generic\tables\GenTab_0717f060-3fda-40e0-ae41-6953951be20d.par
+#BlueLink3 Generic Table`Ext. Batt. discharged resis. (0 milliohms)` Powertrain (HEV)` , Discharging resistance`GenTab_0717f060-3fda-40e0-ae41-6953951be20d
+
+PARSFILE Generic\tables\GenTab_02c4bd37-95f5-4ff0-9f79-652848273228.par
+#BlueLink4 Generic Table`Ext. Battery Open-Circuit Voltage` Powertrain (HEV)` , Open-circuit voltage`GenTab_02c4bd37-95f5-4ff0-9f79-652848273228
+
+PARSFILE Generic\tables\GenTab_9c40f3dd-8c55-4a58-a7a2-95bb569d1e6a.par
+#BlueLink5 Generic Table`Battery Max Capacity (External)` Powertrain (HEV)` , Max. capacity`GenTab_9c40f3dd-8c55-4a58-a7a2-95bb569d1e6a
+
+
+#EMBEDDED_NOTES
+#Generic a 40 kW electric motor is equipped.
+#
+#All parameters and data in the Battery area are set to zero for external battery model.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Powertrain: Hybrid/Electric System; Hybrid Powertrain, Ext. Battery
+#Library : Powertrain: Hybrid/Electric System
+#DataSet : Hybrid Powertrain, Ext. Battery
+#Category: 
+#FileID  : HEV_44d6e79a-f2a4-4141-9afd-b7590668ddcf
+#Created : 03-23-2023 14:11:34
+#Modified: 04-04-2023 13:20:21
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode HEV
+
+END

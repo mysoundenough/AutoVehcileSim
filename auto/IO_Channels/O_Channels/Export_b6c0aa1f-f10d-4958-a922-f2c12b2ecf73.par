@@ -1,0 +1,24 @@
+PARSFILE
+#FullDataName I/O Channels: Export`Steering Wheel Angle`4 SF examples
+#RingCtrl1 1
+
+
+EXPORT Steer_SW
+#MiscYellow0
+#Number of Selected Channels: 1
+#CHN_NAME: Steer_SW
+#ENDMYellow
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Export; { 4 SF examples } Steering Wheel Angle
+#Library : I/O Channels: Export
+#DataSet : Steering Wheel Angle
+#Category: 4 SF examples
+#FileID  : Export_b6c0aa1f-f10d-4958-a922-f2c12b2ecf73
+#Created : 09-28-2022 08:17:34
+#Modified: 10-19-2022 10:06:40
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Export Channels
+
+END

@@ -1,0 +1,56 @@
+PARSFILE
+#FullDataName I/O Channels: Export`MF-Tyre/MF-Swift Kinematics, L2`Tire Kinematics
+#RingCtrl1 1
+
+
+EXPORT X_L2
+EXPORT Y_L2
+EXPORT Z_L2
+EXPORT Roll_L2
+EXPORT Pitch_L2
+EXPORT Yaw_L2
+EXPORT Rot_L2
+EXPORT Vx_Wc_L2
+EXPORT Vy_Wc_L2
+EXPORT Vz_Wc_L2
+EXPORT AVx_L2
+EXPORT AVy_W_L2
+EXPORT AVz_L2
+EXPORT AVy_L2
+EXPORT Zgnd_L2
+EXPORT MuX_L2
+EXPORT MuY_L2
+#MiscYellow0
+#Number of Selected Channels: 17
+#CHN_NAME: X_L2
+#CHN_NAME: Y_L2
+#CHN_NAME: Z_L2
+#CHN_NAME: Roll_L2
+#CHN_NAME: Pitch_L2
+#CHN_NAME: Yaw_L2
+#CHN_NAME: Rot_L2
+#CHN_NAME: Vx_Wc_L2
+#CHN_NAME: Vy_Wc_L2
+#CHN_NAME: Vz_Wc_L2
+#CHN_NAME: AVx_L2
+#CHN_NAME: AVy_W_L2
+#CHN_NAME: AVz_L2
+#CHN_NAME: AVy_L2
+#CHN_NAME: Zgnd_L2
+#CHN_NAME: MuX_L2
+#CHN_NAME: MuY_L2
+#ENDMYellow
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Export; { Tire Kinematics } MF-Tyre/MF-Swift Kinematics, L2
+#Library : I/O Channels: Export
+#DataSet : MF-Tyre/MF-Swift Kinematics, L2
+#Category: Tire Kinematics
+#FileID  : Export_b1cfb3c6-6216-4b6f-8396-254d0877cd03
+#Created : 10-13-2022 20:12:56
+#Modified: 10-19-2022 14:46:42
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Export Channels
+
+END

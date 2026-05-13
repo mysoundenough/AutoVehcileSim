@@ -1,0 +1,39 @@
+PARSFILE
+#FullDataName Events`AEB CCRb A2. Wait for AEB to Intervene`Euro NCAP AEB Testing
+#CheckBox1 1    
+*CLEAR
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 ZERO ~=
+#RingCtrl10 1
+#RingCtrl11 4
+RESET_EVENTS
+*NAME1 minACC_Gain
+*VALUE1 ApplyAEB_FullStop
+#BlueLink10 ` , Miscellaneous` , Miscellaneous` , Miscellaneous`
+
+DEFINE_EVENT ApplyAEB_FullStop ; Events\Events_967748a4-67db-4990-a4da-769900253041.par
+#BlueLink0 Events`AEB CCRb B. Monitor Speed` Euro NCAP AEB Testing` , Events`Events_967748a4-67db-4990-a4da-769900253041
+
+SET_EVENT_ID 0 ! reset to default
+
+#EMBEDDED_NOTES
+#Check to see if the AEB system has requested brake intervention
+#
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Events; { Euro NCAP AEB Testing } AEB CCRb A2. Wait for AEB to Intervene
+#Library : Events
+#DataSet : AEB CCRb A2. Wait for AEB to Intervene
+#Category: Euro NCAP AEB Testing
+#FileID  : Events_49bc5c79-6a14-497e-954a-814c8763c302
+#Created : 09-07-2021 15:11:57
+#Modified: 09-09-2021 16:09:38
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

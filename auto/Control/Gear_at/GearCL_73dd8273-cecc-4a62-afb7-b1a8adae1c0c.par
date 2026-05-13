@@ -1,0 +1,22 @@
+PARSFILE
+#FullDataName Control: Shifting (Closed Loop)`Reverse`
+#CheckBox0 0    
+
+#RingCtrl0 CONSTANT
+MODE_TRANS_CONSTANT -1
+#RadioCtrl0 0    
+
+*SCALAR -1
+
+
+LOG_ENTRY Used Dataset: Control: Shifting (Closed Loop); Reverse
+#Library : Control: Shifting (Closed Loop)
+#DataSet : Reverse
+#Category: 
+#FileID  : GearCL_73dd8273-cecc-4a62-afb7-b1a8adae1c0c
+#Modified: 05-28-2021 15:02:39
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Closed-Loop Shift Control
+
+END

@@ -1,0 +1,40 @@
+PARSFILE
+#FullDataName Animator: Shape File Link`Container Trailer: Front (Universal)`Trailers
+#MiscYellow3
+add_obj Animator\3D_Shape_Files\Trailers\Shipping_Container_Adjustable\containerchassis_front.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_9cfa1033-fce4-4d22-8928-0bfc456f9467.par
+#BlueLink2 Animator: Camera Setup`Vehicles - Trailers (Heavy)` Shape Preview` , Video Camera`Camera_9cfa1033-fce4-4d22-8928-0bfc456f9467
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_74e2680c-6369-47cd-9937-6b9018861d64.png
+
+#EMBEDDED_NOTES
+#
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Trailers } Container Trailer: Front (Universal)
+#Library : Animator: Shape File Link
+#DataSet : Container Trailer: Front (Universal)
+#Category: Trailers
+#FileID  : Shape_74e2680c-6369-47cd-9937-6b9018861d64
+#Created : 12-07-2021 15:05:48
+#Modified: 12-07-2021 15:08:47
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape File
+
+END

@@ -1,0 +1,109 @@
+PARSFILE
+#FullDataName Generic VS Commands`AEB CBNA 50 10 kph Initial Setup`Pedestrian Euro NCAP
+#VehCode VS Commands
+
+#MiscYellow0
+********** Setup Values for Particular VRU AEB Test Type **********
+
+CURRENT_TEST = CBNA_50; - ; current test for scoring table
+
+DEFINE_UNITS % 100 !unit definition for percent calculations 
+DEFINE_PARAMETER PED_S_START = 48.75; m; Pedestrian start station
+
+! Define size and location of occlusion vehicles
+DEFINE_PARAMETER SML_VEH_LN = 3050; mm; length of the sedan meant to occlude ... 
+the vision of the camera sensor
+DEFINE_PARAMETER LRG_VEH_LN = 4470; mm; length of the sedan meant to occlude ... 
+the vision of the camera sensor
+DEFINE_PARAMETER LRG_VEH_WID = 2392; mm; truck width
+DEFINE_PARAMETER SML_VEH_WID = 1880; mm; truck width
+
+DEFINE_PARAMETER SML_VEH_STRT_S = 0; m; small occlusion vehicle start station
+EQ_PRE_INIT SML_VEH_STRT_S =  PED_S_START - 1 - (SML_VEH_WID/2); m; sml. occ. veh. start station
+DEFINE_PARAMETER LRG_VEH_STRT_S =  0; m; large occlusion vehicle start station
+EQ_PRE_INIT LRG_VEH_STRT_S =  PED_S_START - 1 - (LRG_VEH_WID/2); m; lg. occ. veh. start station
+
+! Parameters needed for placing the pedestrian at the proper location to begin the test
+DEFINE_PARAMETER BIKE_LN = 700; mm; length of bicycle target
+DEFINE_PARAMETER BIKE_WD = 500; mm; width of bicycle target
+! Baseline starting position of the pedestreian target w/respect to the center of the vehicle
+! Note: in simulation there is no need to account for the distance it takes for the 
+! bicyclist to reach the target speed 
+DEFINE_PARAMETER PED_L_BASE = -17; m ; Center of bicyclist dist. to center of VUT
+DEFINE_PARAMETER VEH_SPD_INIT = 10; km/h; ego vehicle init. target speed
+DEFINE_PARAMETER PED_SPEED_10 = 10; km/h; speed of pedestrian bicylist riding
+
+********** updated depeding on percentage of vehicle to stike the pedestrian **********
+DEFINE_PARAMETER TARG_STRIKE = 50; %; % of the vehicle to strike when no AEB is applied
+DEFINE_PARAMETER STRIKE_THRESH = 2; % ; allowable % diff between target and actual strike
+
+********** common setup equations for all examples ********** 
+DEFINE_PARAMETER WID_SM_NO_MIR = WID_SM- 0.2320; m; width of the vehicle - mirrors
+DEFINE_PARAMETER VEH_WID = 0; m; width of the vehicle
+EQ_PRE_INIT VEH_WID = WID_SM_NO_MIR - 0.1; m; veh. wid - 50mm from each side
+
+! target offset from VUT centerline that the pedestrian target should strike w/AEB off
+DEFINE_PARAMETER VEH_STRIKE_OFFSET = 0; m; LTARG offset % from VUT midline
+! Distance to center of the VUT as defined by Euro NCAP Protocol
+! Starting position of the pedestreian target w/respect to the TARG_STRIKE of the VUT's width
+DEFINE_PARAMETER PED_L_PROTO= PED_L_BASE - VEH_STRIKE_OFFSET*VEH_WID; m ; Ped LTARG based on protocol 
+
+!The baseline setup for CBNA is so the pedestrian strikes the car at 50% of its width
+! Set LTARG of pedestrian for the start of the run = ped dist based on Euro NCAP protocol + VUT's starting LTARG
+! based on LTARG = 0 at center line 0
+DEFINE_PARAMETER PED_L_START = PED_L_PROTO + LTARG_CONSTANT; m; the intial pedestrian LTARG
+EQ_PRE_INIT PED_L_START = PED_L_PROTO + LTARG_CONSTANT; m; the intial pedestrian LTARG
+
+! Time that the pedestrian will reach TARG_STRIKE of the vehicle's width: needed for vehicle 
+! start station
+DEFINE_PARAMETER T_PED_PROTO = 0;  s ; pedestrian intial time-to-collision
+EQ_PRE_INIT T_PED_PROTO = -PED_L_PROTO/(PED_SPEED_10); s; pedestrian intial time-to-collision
+
+! In practice there will need to be some manual adjustment to the pedestrian target
+! to assure that it strikes the vehicle at the proper percentage of the vehicle's width
+! for the initial setup test (start with 0.0 m and change as necessary)
+DEFINE_PARAMETER STRIKE_LAT_ADJ = 0.13; m; value to offset initial vehicle position to meet TARG_STRIKE
+
+DEFINE_PARAMETER VEH_DIST_INIT =0; m; Long distance from pedestrian where vehicle starts
+! Note, LX_F_SM is defined in the Vehicle Sprung Mass screen
+EQ_PRE_INIT VEH_DIST_INIT = VEH_SPD_INIT*T_PED_PROTO + ...
+(VEH_STRIKE_OFFSET+ STRIKE_LAT_ADJ)*VEH_WID + LX_F_SM; m; x-dist. from veh start to ped.
+
+DEFINE_PARAMETER VEH_S_START = 0; m ; vehicle starting Station
+EQ_PRE_INIT VEH_S_START = PED_S_START - VEH_DIST_INIT; m; vehicle starting Station
+
+DEFINE_PARAMETER SIM_TIME_BUFFER = 5; s; buffer to extend example runtime
+DEFINE_PARAMETER TOT_SIM_TIME = 0 ; s; necessary runtime for the example + some buffer time
+EQ_PRE_INIT TOT_SIM_TIME = VEH_DIST_INIT/VEH_SPD_INIT + SIM_TIME_BUFFER; s; example runtime + buff.
+
+********************** Update Procedure Initial Conditions **********************
+EQ_PRE_INIT SSTART = VEH_S_START; s; vehicle start S
+EQ_PRE_INIT TSTOP = TOT_SIM_TIME; s; example stop time
+EQ_PRE_INIT SPEED_TARGET_CONSTANT = VEH_SPD_INIT; km/h; ego vehicle init. target speed
+#ENDMYellow
+
+PARSFILE Animator\HUD\HUD_36e03653-c6ed-4112-8243-6ab932025786.par
+#BlueLink0 Animator: HUD`Time To Collision Occ` Euro NCAP` , Miscellaneous`HUD_36e03653-c6ed-4112-8243-6ab932025786
+
+
+#EMBEDDED_NOTES
+#Specific values for each Euro NCAP VRU AEB test - also values to automate the starting position of the ego vehicle, so that if AEB were not active, it would strike the pedestrian target at the desired percentage of the vehicle's width
+#
+#Note: the NCAP VRU AEB spec calls for the vehicle detection to be the vehicle width - 50 mm from each side, and this is accounted for in VEH_WID
+#
+#There is a correction to project the sensor vector from a 3D space to the xy-plane
+#- After this, the horizontal sensor combined distance is into x and y components for distance calculations
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { Pedestrian Euro NCAP } AEB CBNA 50 10 kph Initial Setup
+#Library : Generic VS Commands
+#DataSet : AEB CBNA 50 10 kph Initial Setup
+#Category: Pedestrian Euro NCAP
+#FileID  : GenVS_bf77970e-d186-45b3-9c7c-d18160ffaef0
+#Created : 08-09-2021 15:13:35
+#Modified: 08-26-2021 15:53:12
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode VS Commands
+
+END

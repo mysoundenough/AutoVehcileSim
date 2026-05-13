@@ -1,0 +1,48 @@
+PARSFILE
+#FullDataName Events`Activate AEB, 50%, Child`Pedestrian Euro NCAP
+#CheckBox1 1    
+*CLEAR
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 ZERO ~=
+#RingCtrl10 1
+#RingCtrl11 4
+RESET_EVENTS
+*NAME1 0
+*VALUE1 1
+#MiscYellow0
+AEB_On = 1 ! need to do this before resetting conditions, before the ...
+next run
+
+!after the non-AEB run, we will run the same setup with AEB on, ...
+so no need to increment speed
+PREV_RUN_SPD_INCR = 0 ! indicates no speed increment
+#ENDMYellow
+
+PARSFILE Generic\VS_commands\GenVS_06d724b5-db41-4a6b-91a6-6ad74669de4a.par
+#BlueLink10 Generic VS Commands`Reload Key Parameters, 50%, Child` Pedestrian Euro NCAP` , Miscellaneous`GenVS_06d724b5-db41-4a6b-91a6-6ad74669de4a
+
+DEFINE_EVENT 1 ; Events\Events_ffb033a0-fd1f-469b-89fa-613c935f2764.par
+#BlueLink0 Events`Reset Positions, 50%, Child` Pedestrian Euro NCAP` , Events`Events_ffb033a0-fd1f-469b-89fa-613c935f2764
+
+SET_EVENT_ID 0 ! reset to default
+
+#EMBEDDED_NOTES
+#Take one time step to prepare for the resest
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Events; { Pedestrian Euro NCAP } Activate AEB, 50%, Child
+#Library : Events
+#DataSet : Activate AEB, 50%, Child
+#Category: Pedestrian Euro NCAP
+#FileID  : Events_5f246d5e-d380-498e-9fc5-6f87de5cba0c
+#Created : 08-18-2021 16:49:04
+#Modified: 08-30-2021 11:02:16
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

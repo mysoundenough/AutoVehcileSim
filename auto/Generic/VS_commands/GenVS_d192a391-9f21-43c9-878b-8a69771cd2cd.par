@@ -1,0 +1,36 @@
+PARSFILE
+#FullDataName Generic VS Commands`06d - Min PT Lock d/s, apply Fx`K&C Test Sequence
+#VehCode VS Commands
+
+#MiscYellow0
+! Capture the transmission output angle at the beginning of the test.
+A_PARK_L1 = rot_l1;
+A_PARK_R1 = rot_r1;
+A_PARK_L2 = rot_l2;
+A_PARK_R2 = rot_r2;
+
+! A spring and damper lock the driveshaft
+EQ_IN imp_mysm_l1 = (-1 * (rot_l1 - A_PARK_L1) * K_PARK - avy_l1 * C_PARK) * FD_MIN_PT_PARK;
+EQ_IN imp_mysm_r1 = (-1 * (rot_r1 - A_PARK_R1) * K_PARK - avy_r1 * C_PARK) * FD_MIN_PT_PARK;
+EQ_IN imp_mysm_l2 = (-1 * (rot_l2 - A_PARK_L2) * K_PARK - avy_l2 * C_PARK) * FD_MIN_PT_PARK;
+EQ_IN imp_mysm_r2 = (-1 * (rot_r2 - A_PARK_R2) * K_PARK - avy_r2 * C_PARK) * FD_MIN_PT_PARK;
+
+! Enable or disable Fx according to powertrain and test configuration
+SWITCH_L1 = 1
+SWITCH_R1 = 1
+SWITCH_L2 = 1
+SWITCH_R2 = 1
+#ENDMYellow
+
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { K&C Test Sequence } 06d - Min PT Lock d/s, apply Fx
+#Library : Generic VS Commands
+#DataSet : 06d - Min PT Lock d/s, apply Fx
+#Category: K&C Test Sequence
+#FileID  : GenVS_d192a391-9f21-43c9-878b-8a69771cd2cd
+#Modified: 05-28-2021 15:02:27
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode VS Commands
+
+END

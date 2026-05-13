@@ -1,0 +1,20 @@
+# Shape file for lane 2
+v 2.75 4 0.01
+vt 0 0
+v 2.75 -4 0.01
+vt 1 0
+v 3.25 4 0.01
+vt 0 0.5
+v 3.25 -4 0.01
+vt 1 0.5
+mtllib Roads\3D_Road\Road_89d4a142-808f-4480-8cb3-807e4c52ca45_2.mtl
+usemtl Snow
+g g1
+s 1
+f  1/1 2/2 4/4 3/3
+g g2
+s 2
+g g3
+s 3
+g g4
+s 4

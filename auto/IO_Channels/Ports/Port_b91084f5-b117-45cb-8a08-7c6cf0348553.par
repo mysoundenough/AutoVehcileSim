@@ -1,0 +1,31 @@
+PARSFILE
+#FullDataName I/O Channels: Ports`External EV Battery`Powertrain
+#RingCtrl0 2
+#RingCtrl1 1
+#CheckBox0 0    
+
+IPORT_IMP 1
+PARSFILE IO_Channels\I_Channels\Import_02bb243f-7903-42dc-acff-45c3050d2be0.par
+#BlueLink0 I/O Channels: Import`EV Battery Essential Import` Powertrain Control and Ext. Models` , Library for factor A`Import_02bb243f-7903-42dc-acff-45c3050d2be0
+
+IPORT_IMP 2
+PARSFILE IO_Channels\I_Channels\Import_f06b67f6-70da-4dba-a6d4-d9b3ef3ced1c.par
+#BlueLink1 I/O Channels: Import`EV Battery Plot Import` Powertrain Control and Ext. Models` , Baseline run`Import_f06b67f6-70da-4dba-a6d4-d9b3ef3ced1c
+
+IPORT_EXP 1
+PARSFILE IO_Channels\O_Channels\Export_731337db-210a-423c-83b4-b88d1f6c1a88.par
+#BlueLink20 I/O Channels: Export`EV Battery Export` Powertrain Control and Ext. Models` , Library for factor B`Export_731337db-210a-423c-83b4-b88d1f6c1a88
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Ports; { Powertrain } External EV Battery
+#Library : I/O Channels: Ports
+#DataSet : External EV Battery
+#Category: Powertrain
+#FileID  : Port_b91084f5-b117-45cb-8a08-7c6cf0348553
+#Created : 03-22-2023 14:04:57
+#Modified: 03-22-2023 14:33:06
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode I/O Ports
+
+END

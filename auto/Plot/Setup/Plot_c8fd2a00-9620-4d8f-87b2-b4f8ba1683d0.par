@@ -1,0 +1,44 @@
+PARSFILE
+#FullDataName Plot: Setup`Longitudinal Force (WC)`Wheel Center Forces
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d.par
+#BlueLink0 Plot: Format`Lines without Symbols` ` , Plot format`PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS Fx_WC_L1
+PLOTCHANNELS Fx_WC_R1
+PLOTCHANNELS Fx_WC_L2
+PLOTCHANNELS Fx_WC_R2
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Longitudinal Force (WC)
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Wheel Center Forces } Longitudinal Force (WC)
+#Library : Plot: Setup
+#DataSet : Longitudinal Force (WC)
+#Category: Wheel Center Forces
+#FileID  : Plot_c8fd2a00-9620-4d8f-87b2-b4f8ba1683d0
+#Created : 11-29-2022 15:22:36
+#Modified: 11-29-2022 15:23:57
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Plot Setup
+
+END

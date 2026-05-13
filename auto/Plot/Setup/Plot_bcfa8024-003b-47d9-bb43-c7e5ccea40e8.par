@@ -1,0 +1,42 @@
+PARSFILE
+#FullDataName Plot: Setup`Check Additional Pressure`Obstacle Avoidance
+
+ADD_ENTITY Plot
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS !addBrkPress, Time
+PLOTCHANNELS speedTargetGainOut, Time
+PLOTCHANNELS ApplyAEB_FullStop, Time
+PLOTCHANNELS speedTargetCheck, Time
+PLOTCHANNELS minACC_Gain, Time
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Check Additional Pressure
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Obstacle Avoidance } Check Additional Pressure
+#Library : Plot: Setup
+#DataSet : Check Additional Pressure
+#Category: Obstacle Avoidance
+#FileID  : Plot_bcfa8024-003b-47d9-bb43-c7e5ccea40e8
+#Created : 11-02-2021 16:28:57
+#Modified: 11-04-2021 16:53:57
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Plot Setup
+
+END

@@ -1,0 +1,23 @@
+PARSFILE
+#FullDataName I/O Channels: Export`Master Cylinder Pressure (Pbk_Con)`Brake System Control
+#RingCtrl1 1
+
+
+EXPORT Pbk_Con
+#MiscYellow0
+#Number of Selected Channels: 1
+#CHN_NAME: Pbk_Con
+#ENDMYellow
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Export; { Brake System Control } Master Cylinder Pressure (Pbk_Con)
+#Library : I/O Channels: Export
+#DataSet : Master Cylinder Pressure (Pbk_Con)
+#Category: Brake System Control
+#FileID  : Export_3a65ed44-0d6d-4669-8e50-26ed8228d897
+#Modified: 06-16-2021 12:31:06
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Export Channels
+
+END

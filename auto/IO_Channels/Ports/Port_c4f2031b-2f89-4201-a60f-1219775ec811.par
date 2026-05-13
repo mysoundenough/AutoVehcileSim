@@ -1,0 +1,23 @@
+PARSFILE
+#FullDataName I/O Channels: Ports`Ay Export`Quick Start 4SFs
+#RingCtrl0 0
+#RingCtrl1 1
+#CheckBox0 0    
+
+IPORT_EXP 1
+PARSFILE IO_Channels\O_Channels\Export_3f8b5f05-38f3-46ad-aa04-b2b171d9d3c7.par
+#BlueLink20 I/O Channels: Export`Ay` 4 SF examples` , Library for factor B`Export_3f8b5f05-38f3-46ad-aa04-b2b171d9d3c7
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Ports; { Quick Start 4SFs } Ay Export
+#Library : I/O Channels: Ports
+#DataSet : Ay Export
+#Category: Quick Start 4SFs
+#FileID  : Port_c4f2031b-2f89-4201-a60f-1219775ec811
+#Created : 09-28-2022 08:20:31
+#Modified: 10-19-2022 10:02:47
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode I/O Ports
+
+END

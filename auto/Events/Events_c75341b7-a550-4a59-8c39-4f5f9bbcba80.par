@@ -1,0 +1,30 @@
+PARSFILE
+#FullDataName Events`Stop Condition: Trailer Axle X`Stop Conditions
+#CheckBox1 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 <=
+#RingCtrl10 1
+#RingCtrl11 4
+*NAME1 X_A3
+*VALUE1 2.5
+MAKE_EVENT X_A3 <= 2.5 ; Events\Events_b5af09b5-d8ad-4e81-ae24-eebce691780e.par
+#BlueLink0 Events`End Events` ` , Events`Events_b5af09b5-d8ad-4e81-ae24-eebce691780e
+
+SET_EVENT_ID 0 ! reset to default
+
+LOG_ENTRY Used Dataset: Events; { Stop Conditions } Stop Condition: Trailer Axle X
+#Library : Events
+#DataSet : Stop Condition: Trailer Axle X
+#Category: Stop Conditions
+#FileID  : Events_c75341b7-a550-4a59-8c39-4f5f9bbcba80
+#Created : 10-08-2021 12:51:44
+#Modified: 10-11-2021 13:13:06
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

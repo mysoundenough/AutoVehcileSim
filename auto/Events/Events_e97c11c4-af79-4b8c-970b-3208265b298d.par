@@ -1,0 +1,43 @@
+PARSFILE
+#FullDataName Events`CCRm,s D. Pause before ending`Euro NCAP ACC Testing
+#CheckBox1 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 >
+#RingCtrl10 1
+#RingCtrl11 4
+*NAME1 T_EVENT
+*NAME2 Contact
+*VALUE1 SCORE_PAUSE_TIME
+*VALUE2 0
+#MiscYellow0
+TSTART_T_EVENT = T ;
+#ENDMYellow
+
+#BlueLink10 ` , Miscellaneous` , Miscellaneous` , Miscellaneous`
+
+MAKE_EVENT T_EVENT > SCORE_PAUSE_TIME ; Events\Events_b5af09b5-d8ad-4e81-ae24-eebce691780e.par
+#BlueLink0 Events`End Events` ` , Events`Events_b5af09b5-d8ad-4e81-ae24-eebce691780e
+
+SET_EVENT_ID 0 ! reset to default
+
+#EMBEDDED_NOTES
+#Wait some time to see final score, before ending
+#
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Events; { Euro NCAP ACC Testing } CCRm,s D. Pause before ending
+#Library : Events
+#DataSet : CCRm,s D. Pause before ending
+#Category: Euro NCAP ACC Testing
+#FileID  : Events_e97c11c4-af79-4b8c-970b-3208265b298d
+#Created : 06-10-2021 16:13:53
+#Modified: 06-10-2021 16:17:02
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

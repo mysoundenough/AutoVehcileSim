@@ -1,0 +1,62 @@
+PARSFILE
+#FullDataName Aerodynamics: Mz (Yaw Moment) Coef. vs. Aero Slip`Trailer Yaw Testing`
+#CheckBox0 0    
+
+#RingCtrl0 LINEAR_FLAT
+#RadioCtrl0 0    
+
+#DiagramOne0
+MZ_AERO_SHAPING_TABLE LINEAR_FLAT
+-180, -0.02
+-170, 0.12
+-160, 0.21
+-150, 0.27
+-140, 0.3
+-130, 0.31
+-120, 0.29
+-110, 0.24
+-100, 0.16
+-90, 0.04
+-80, -0.06
+-70, -0.17
+-60, -0.27
+-50, -0.37
+-40, -0.44
+-30, -0.41
+-20, -0.33
+-10, -0.18
+0, -0.02
+10, 0.18
+20, 0.33
+30, 0.41
+40, 0.44
+50, 0.37
+60, 0.27
+70, 0.17
+80, 0.06
+90, -0.04
+100, -0.16
+110, -0.24
+120, -0.29
+130, -0.31
+140, -0.3
+150, -0.27
+160, -0.21
+170, -0.12
+180, 0.02
+ENDTABLE
+*SCALAR 0
+
+
+LOG_ENTRY Used Dataset: Aerodynamics: Mz (Yaw Moment) Coef. vs. Aero Slip; Trailer Yaw Testing
+#Library : Aerodynamics: Mz (Yaw Moment) Coef. vs. Aero Slip
+#DataSet : Trailer Yaw Testing
+#Category: 
+#FileID  : AirCMz_0ece6711-d652-489b-9792-9beeb072c2c0
+#Created : 10-06-2022 12:58:14
+#Modified: 10-06-2022 13:03:21
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Mz vs. Aero Slip
+
+END

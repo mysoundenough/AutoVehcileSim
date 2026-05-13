@@ -1,0 +1,38 @@
+PARSFILE
+#FullDataName Plot: Setup`Throttle: After Idle Control`Controls: Driver
+
+ADD_ENTITY Plot
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS TotalThrottle, Time
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Throttle: After Idle Control
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Controls: Driver } Throttle: After Idle Control
+#Library : Plot: Setup
+#DataSet : Throttle: After Idle Control
+#Category: Controls: Driver
+#FileID  : Plot_c5c7ec86-771e-40eb-8fab-48dd5a041dbc
+#Created : 12-11-2023 15:15:51
+#Modified: 12-11-2023 15:25:06
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Plot Setup
+
+END

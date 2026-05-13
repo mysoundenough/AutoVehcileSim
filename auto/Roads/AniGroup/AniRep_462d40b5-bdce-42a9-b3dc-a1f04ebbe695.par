@@ -1,0 +1,51 @@
+PARSFILE
+#FullDataName Road: Animator Repeated Object`Vertical Lines`Alley Dock
+#RingCtrl0 0
+#RingCtrl1 1
+#DiagramOne0
+*POINTS_TABLE
+0, 0
+0, 0.9144
+12.8016, 0
+12.8016, 0.9144
+12.8016, 1.8288
+12.8016, 2.7432
+12.8016, 3.6576
+12.8016, 4.572
+12.8016, 5.4864
+12.8016, 6.4008
+12.8016, 7.3152
+12.8016, 8.2296
+12.8016, 9.144
+12.8016, 10.0584
+12.8016, 10.9728
+12.8016, 11.8872
+12.8016, 12.8016
+ENDTABLE
+#RadioCtrl0 1    
+
+#CheckBox0 0    
+
+*ANGLE_OFFSET 90
+
+
+SPECIAL_PARSFILE Animator\STL\Shape_7162a9d6-dea6-4b7b-af09-a7d2b1a69b2b.par
+#BlueLink0 Animator: Shape File Link`Rectangle for Road Stripe (Small)` Geometric Shapes` , 3D Object`Shape_7162a9d6-dea6-4b7b-af09-a7d2b1a69b2b
+
+
+#EMBEDDED_NOTES
+#The far left points define the end of the parking spot, while the far right points indicate the nominal width of the parking aisle, 24 ft.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Road: Animator Repeated Object; { Alley Dock } Vertical Lines
+#Library : Road: Animator Repeated Object
+#DataSet : Vertical Lines
+#Category: Alley Dock
+#FileID  : AniRep_462d40b5-bdce-42a9-b3dc-a1f04ebbe695
+#Created : 10-11-2021 13:22:45
+#Modified: 10-11-2021 13:34:53
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Repeated Object
+
+END

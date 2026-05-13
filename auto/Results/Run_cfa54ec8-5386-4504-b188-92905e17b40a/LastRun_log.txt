@@ -1,0 +1,35 @@
+Run made by VS Tire Tester for CarSim and TruckSim 2024.1 at 14:12 on March 25, 2024.
+Utility to calculate tire behavior for simulated quasi-static tests
+Started with simfile: simfile_Run_cfa54ec8-5386-4504-b188-92905e17b40a.sim
+
+Include PARSFILE "Results\Run_cfa54ec8-5386-4504-b188-92905e17b40a\Run_all.par"
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Tire
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Wheel
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Stripe
+Used Dataset: Animator: Shape Assembly; { Tires } 195/45 R16
+  Delft-Tyre: INFO - MF-Tyre/MF-Swift 2312  (a9f297f05a74)
+  Delft-Tyre: WARNING - The tyre properties MC_CONTOUR_A and MC_COUNTOUR_B both have the default value of 0.5.
+  Delft-Tyre: WARNING - They are reset to 0.0 to avoid using Motorcyle behavior.
+  Delft-Tyre: WARNING - If Motorcycle behavior is needed, adjust at least one of the properties to a slightly different values.
+  Delft-Tyre: WARNING - Residual stiffness (CCX) is (almost) zero.
+Used Dataset: Tire (External); { MF-Tyre/MF-Swift } 225/60 R18 (Tyre, Static)
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Tire Tester } Fy vs. Gamma
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Tire Tester } Mx vs. Gamma
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Tire Tester } My vs. Gamma
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Tire Tester } Mz vs. Gamma
+Used Dataset: Tire Tester; { Sweep Gamma +/- 5 deg } Sweep Gamma: Fz = 4000 N
+Used Dataset: I/O Channels: Write; All Outputs with Tire for Excel
+ MF-Tyre Sweep Gamma (Fz = 2000 N) <Tire Tester>
+Used Dataset: CarSim Run Control; { Tire Tester } MF-Tyre Sweep Gamma (Fz = 2000 N)
+
+Time to read input = 0.0275435
+
+Run started: VS output file = Results\Run_cfa54ec8-5386-4504-b188-92905e17b40a\Run.vsb
+
+Run stopped at t = 0.5. alpha = 5 deg
+Computational time ratio: RTIME = 0.119811 (real time)/(simulation time)
+

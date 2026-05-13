@@ -1,0 +1,52 @@
+PARSFILE
+#FullDataName Tire`225/60 R18 (Simulink Tire Model)`External Tire Model
+FZ_REF 5500
+X_LENGTH 364
+Z_LENGTH 364
+Y_LENGTH 225
+#CheckBox2 0    
+#CheckBox6 0    
+
+#RingCtrl0 0
+#RingCtrl7 3
+#RingCtrl8 3
+OPT_TIRE_MODEL 0
+
+PARSFILE Animator\STL_Groups\ShpGrp_d5b55623-3c6f-43ea-b7a0-880a3303d1d2.par
+#BlueLink4 Animator: Shape Assembly`195/45 R16` Tires` , Animator`ShpGrp_d5b55623-3c6f-43ea-b7a0-880a3303d1d2
+
+WRITE_WHEEL_OFFSET
+*SET_THICKNESS 225
+RRE 364
+R0 364
+FZ_TIRE_COEFFICIENT 230
+FZ_MAX 100000
+M_TIRE 25
+IT 2
+IT_XXZZ 1.1
+L_CONTACT_X_CONSTANT 0
+L_CONTACT_Y_CONSTANT 0
+*KY_TIRE 956.08
+KY_TIRE 956.08
+
+
+#EMBEDDED_NOTES
+#This tire data selects the model option "External Shear Model."  All tire forces and moments at CTC (central tire contact) and WC (wheel center) are supposed to be imported from the external tire model namely on Simulink.
+#
+#However, the data for vertical force on this screen (effective rolling radius, free radius, and spring rate) are used to initialize the vehicle height position and wheel speeds.
+#
+#References 195/45 R16 Animator Shape Data, but the shape is resized for 225/60 R18 in the animation.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Tire; { External Tire Model } 225/60 R18 (Simulink Tire Model)
+#Library : Tire
+#DataSet : 225/60 R18 (Simulink Tire Model)
+#Category: External Tire Model
+#FileID  : Tire_8e9c55a8-647f-459d-91a9-689a4b3ccd9e
+#Created : 10-17-2022 12:41:40
+#Modified: 10-17-2022 12:51:31
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Tire
+
+END

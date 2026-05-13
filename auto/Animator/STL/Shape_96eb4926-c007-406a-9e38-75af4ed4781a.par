@@ -1,0 +1,39 @@
+PARSFILE
+#FullDataName Animator: Shape File Link`Background Forest`Generic Proving Ground: Environment
+#MiscYellow3
+add_obj Animator\3D_shape_files_DS\proving_ground\Forest.OSG
+#ENDMYellow
+
+SET_COLOR 0.753 0.753 0.753
+SET_ANGLE_Z 0
+SET_ANGLE_Y 0
+SET_ANGLE_X 0
+SET_OFFSET_X 0
+SET_OFFSET_Y 0
+SET_OFFSET_Z 0
+*SPECULAR .5
+#CheckBox0 1    
+set_lighting off
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 0    
+
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
+#BlueLink2 Animator: Camera Setup`YZ-Plane, No Offsets (with Yaw)` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_96eb4926-c007-406a-9e38-75af4ed4781a.png
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Generic Proving Ground: Environment } Background Forest
+#Library : Animator: Shape File Link
+#DataSet : Background Forest
+#Category: Generic Proving Ground: Environment
+#FileID  : Shape_96eb4926-c007-406a-9e38-75af4ed4781a
+#Modified: 05-28-2021 15:03:14
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape File
+
+END

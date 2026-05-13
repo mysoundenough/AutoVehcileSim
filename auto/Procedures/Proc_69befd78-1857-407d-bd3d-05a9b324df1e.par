@@ -1,0 +1,93 @@
+PARSFILE
+#FullDataName Procedures`Ego and Traffic Setup, No DM, 3 Fwd Lns`Driver Controls
+#CheckBox1 0    
+OPT_INIT_PATH 0
+
+#RingCtrl0 2
+#RingCtrl1 0
+#RingCtrl2 0
+OPT_STOP 0
+TSTART 0
+TSTART_WRITE = 0;
+TSTOP 40
+SSTOP = SSTART + 1 ;
+OPT_DIRECTION 1
+*SPEED 100
+*TSTOP 40
+*TSTART 0
+*SSTART 0
+*SSTOP 500
+
+OPT_SC 2
+PARSFILE Control\Gear_at\GearCL_3f60e7d2-b8c4-4d68-a9c4-d897bb3e2a86.par
+#BlueLink30 Control: Shifting (Closed Loop)`AT (All Available Gears)` Closed-Loop Shifting` , Shifting Control`GearCL_3f60e7d2-b8c4-4d68-a9c4-d897bb3e2a86
+
+PARSFILE Control\Speed_t\SpdTime_05520538-4611-46ce-8c7b-303dea426d90.par
+#BlueLink31 Control: Speed (Closed Loop) Using Target Speed`Constant: 0 km/h` Constant` , Speed vs. time`SpdTime_05520538-4611-46ce-8c7b-303dea426d90
+
+#MiscYellow0
+DEFINE_PARAMETER AEB_WAIT_TIME = 5; s; time to resume after AEB
+#ENDMYellow
+
+PARSFILE Roads\3D_Road\Road_3ffd4401-007b-490b-b434-fd682b3d08ed.par
+#BlueLink0 Road: 3D Surface (All Properties)`5-Lane Section` Many Lanes` , Miscellaneous`Road_3ffd4401-007b-490b-b434-fd682b3d08ed
+
+PARSFILE Generic\Group\GenGrp_4481684a-a43b-411b-83c7-ad0c2b42d532.par
+#BlueLink1 Generic Data Group`3 Fwd. Lns. 3 Traffic Setup` ADAS: Traffic for ACC & FCW` , Miscellaneous`GenGrp_4481684a-a43b-411b-83c7-ad0c2b42d532
+
+PARSFILE Events\Events_4423b9db-d291-4ffe-ad7c-3eae776e1f53.par
+#BlueLink2 Events`0. Start Straight` Combined ADAS - LDW` , Miscellaneous`Events_4423b9db-d291-4ffe-ad7c-3eae776e1f53
+
+PARSFILE Animator\HUD\HUD_aa66695b-4262-4484-94fd-d175f64eaeee.par
+#BlueLink3 Animator: HUD`Hwy Perf., Vehicle In-Lane Detected` ADAS Alerts` , Miscellaneous`HUD_aa66695b-4262-4484-94fd-d175f64eaeee
+
+PARSFILE Events\Events_79743290-798e-4c65-9607-b62d85a47c7e.par
+#BlueLink4 Events`Check AEB Condition` ADAS Detection` , Miscellaneous`Events_79743290-798e-4c65-9607-b62d85a47c7e
+
+#BlueLink6 ` , Miscellaneous` , Miscellaneous` , Miscellaneous`
+
+#MiscYellow1
+! Unchecked box for "Set vehicle x,y,&yaw based on path?
+! Locate vehicle 2m to the left of the road center
+Xo  = 0
+Yo = 2
+Yaw = 0
+#ENDMYellow
+
+#BlueLink7 ` , Miscellaneous` , Miscellaneous` , Miscellaneous`
+
+#BlueLink34 ` , Miscellaneous` , Miscellaneous` , Miscellaneous`
+
+PARSFILE Generic\VS_commands\GenVS_aec8d12c-ea50-4614-babd-3631ce40b8a3.par
+#BlueLink8 Generic VS Commands`Velocity and Position` Plot Groups` , Plot`GenVS_aec8d12c-ea50-4614-babd-3631ce40b8a3
+
+PARSFILE Generic\VS_commands\GenVS_9adae0f9-c659-4690-8e88-e92525112141.par
+#BlueLink9 Generic VS Commands`Driver Controls` Plot Groups` , Plot`GenVS_9adae0f9-c659-4690-8e88-e92525112141
+
+PARSFILE Generic\VS_commands\GenVS_8f7411b8-c46e-45ca-8259-b31bc7af7dd3.par
+#BlueLink10 Generic VS Commands`Acceleration` Plot Groups` , Plot`GenVS_8f7411b8-c46e-45ca-8259-b31bc7af7dd3
+
+
+#EMBEDDED_NOTES
+#This procedure defines driver controls, vehicle positioning, and setup for the accompanying traffic.
+#
+#The ego vehicle speed setup is in the traffic setup VS Commands Dataset.
+#
+#Events are used to resume the ego vehicle ACC after AEB brings the ego to a complete stop, if AEB is activated.
+#
+#
+#
+#
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Procedures; { Driver Controls } Ego and Traffic Setup, No DM, 3 Fwd Lns
+#Library : Procedures
+#DataSet : Ego and Traffic Setup, No DM, 3 Fwd Lns
+#Category: Driver Controls
+#FileID  : Proc_69befd78-1857-407d-bd3d-05a9b324df1e
+#Modified: 11-05-2021 12:40:46
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Procedure
+
+END

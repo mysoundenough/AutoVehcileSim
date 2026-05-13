@@ -1,0 +1,40 @@
+PARSFILE
+#FullDataName Plot: Setup`ACC Euro NCAP Scoring`ADAS Sensor Detections
+
+ADD_ENTITY Plot
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS CurrentRunScore, Time
+PLOTCHANNELS TotalScore, Time
+
+#ENDMYellow
+
+YAXISLABEL Score Values
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE ACC Euro NCAP Scoring
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { ADAS Sensor Detections } ACC Euro NCAP Scoring
+#Library : Plot: Setup
+#DataSet : ACC Euro NCAP Scoring
+#Category: ADAS Sensor Detections
+#FileID  : Plot_99ebefb4-f88f-4cd7-9497-8b07f45dddee
+#Created : 05-18-2021 17:01:45
+#Modified: 05-28-2021 14:59:37
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Plot Setup
+
+END

@@ -1,0 +1,41 @@
+PARSFILE
+#FullDataName Animator: Shape File Link`US: Speed Limit 45mph, Damage 2`Environment: Road Signs
+#MiscYellow3
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\Speed_Limit\Speed_Limit_45_var2.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
+#BlueLink2 Animator: Camera Setup`YZ-Plane, No Offsets (with Yaw)` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_32070047-fc89-4188-b483-9139467cfadd.png
+
+#EMBEDDED_NOTES
+#US Road Sign
+#
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Environment: Road Signs } US: Speed Limit 45mph, Damage 2
+#Library : Animator: Shape File Link
+#DataSet : US: Speed Limit 45mph, Damage 2
+#Category: Environment: Road Signs
+#FileID  : Shape_32070047-fc89-4188-b483-9139467cfadd
+#Created : 10-10-2022 14:54:36
+#Modified: 10-10-2022 14:56:15
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape File
+
+END

@@ -1,0 +1,40 @@
+PARSFILE
+#FullDataName Events`CCRb C1. Monitor Stop Speed`Euro NCAP ACC Testing
+#CheckBox1 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 >=
+#RingCtrl10 1
+#RingCtrl11 4
+*NAME1 Vxz_Fwd
+*VALUE1 0.01
+#MiscYellow0
+! increase score, one full point
+SCORE_NEW = SCORE_OLD + 1
+SCORE_OLD = SCORE_NEW
+#ENDMYellow
+
+MAKE_EVENT Vxz_Fwd >= 0.01 ; Events\Events_282c4e8b-3cfc-4c30-98a0-e1f806029564.par
+#BlueLink0 Events`AEB CCRb D. Pause before ending` Euro NCAP ACC Testing` , Events`Events_282c4e8b-3cfc-4c30-98a0-e1f806029564
+
+SET_EVENT_ID 0 ! reset to default
+
+#EMBEDDED_NOTES
+#Monitor the stopping speed to see if the VUT has come to a complete stop, and add up the score
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Events; { Euro NCAP ACC Testing } CCRb C1. Monitor Stop Speed
+#Library : Events
+#DataSet : CCRb C1. Monitor Stop Speed
+#Category: Euro NCAP ACC Testing
+#FileID  : Events_35ae284f-cf82-41b6-92c3-a5c9cbc45b80
+#Created : 05-12-2021 18:11:05
+#Modified: 09-09-2021 16:52:45
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

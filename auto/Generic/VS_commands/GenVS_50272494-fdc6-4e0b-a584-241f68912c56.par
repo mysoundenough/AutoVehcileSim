@@ -1,0 +1,55 @@
+PARSFILE
+#FullDataName Generic VS Commands`ACC/AEB Cut-Out Params 50 km/h`Obstacle Avoidance
+#VehCode ADAS Euro NCAP Tests
+
+#MiscYellow0
+!Starting LTARG of the Lead vehicle
+DEFINE_PARAMETER CUT_OUT_STOPPED_LTARG_INIT= -1.65; m; init. lead veh. LTARG
+!Starting LTARG of the Cut-Out vehicle
+DEFINE_PARAMETER CUT_OUT_VEH_LTARG_INIT= -1.65; m; init. lead veh. LTARG
+! Distance in station that the lead vehicle starts ahead of the ego vehicle
+! Determines if or how soon the ego vehicle detects lead vehicle, before it detects the stopped vehicle 
+DEFINE_PARAMETER CUT_OUT_HEAD_START= 85; m; head start for cut out veh. 
+
+! Speed Profile for Cut-Out veh.
+DEFINE_PARAMETER CUT_OUT_VEH_SPD_PROF= 2114; -; cut-out veh. speed profile
+! Starting Station of the Cut-Out Vehicle
+DEFINE_PARAMETER CUT_OUT_VEH_SSTART= SSTART + CUT_OUT_HEAD_START; m;  cut-out veh. start = ego +XX
+! Station of the Stopped vehicle
+DEFINE_PARAMETER CUT_OUT_STOPPED_VEHSSTART= -200; m; init. cut-out veh location 
+
+!LTARG ID for Cut-Out Vehicle
+DEFINE_PARAMETER CUT_OUT_LTARG_PROF= 2114; -; cut-in LTARG profile
+!LTARG ID for Stopped vehilcle in VUT's lane
+DEFINE_PARAMETER STOPPED_LTARG_PROF= 2115; -; cut-in LTARG profile
+
+! X-scaling factor for the Cut-Out maneuver (this will be multiplied by two, in the maneuver profile)
+! length of maneuver should be 44m  = 22*2
+DEFINE_PARAMETER CUT_OUT_SSCALE_LTARG= 22; m; cut-in long. dist scale value
+! Y-scaling factor for the Cut-Out maneuver (this will be multiplied by two, in the maneuver profile)
+! lateral distance of maneuver should be 3.5m = 1.75*2
+DEFINE_PARAMETER CUT_OUT_LTARG_GAIN= 1.75; m; cut-in lat. dist scale valuee
+
+DEFINE_PARAMETER CUT_OUT_TTC = 3; s; lead veh. cutout time
+DEFINE_PARAMETER CUT_OUT_SPD2 = 70; km/h; lead veh. cutout time
+DEFINE_PARAMETER CUT_OUT_DIST2  = CUT_OUT_SPD2*CUT_OUT_TTC; m; dist. for lead veh to cut out
+
+!add the cutout distance based on lead vehicle speed and required TTC, to the stopped vehicle's station
+!note the stopped vehicle is starting at a negative station
+DEFINE_PARAMETER CUT_OUT_SSTART_LTARG2= CUT_OUT_STOPPED_VEHSSTART + (-CUT_OUT_DIST2); m; init. station of veh. cut-in profile
+#ENDMYellow
+
+*MODELCODE ADAS Euro NCAP Tests
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { Obstacle Avoidance } ACC/AEB Cut-Out Params 50 km/h
+#Library : Generic VS Commands
+#DataSet : ACC/AEB Cut-Out Params 50 km/h
+#Category: Obstacle Avoidance
+#FileID  : GenVS_50272494-fdc6-4e0b-a584-241f68912c56
+#Created : 05-03-2021 16:03:00
+#Modified: 08-16-2021 10:42:39
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode ADAS Euro NCAP Tests
+
+END

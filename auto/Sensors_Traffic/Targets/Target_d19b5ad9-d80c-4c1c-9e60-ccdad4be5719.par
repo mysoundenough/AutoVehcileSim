@@ -1,0 +1,38 @@
+PARSFILE
+#FullDataName Single Moving Object (Custom)`Flatbed Trailer`For Alley Dock Test Pad (Small)
+DEFINE_MOVING_OBJECTS 1
+IOBJECT_INCREMENT
+symbol_add <<o>> 1
+SET_DESCRIPTION OBJECT_NAME Flatbed Trailer
+OPT_SPEED_OBJ 0
+
+OPT_ROAD_OBJ 0 ! Legacy pre-9
+PATH_ID_OBJ 0
+ROAD_ID_OBJ 0
+#CheckBox8 0    
+
+#RingCtrl0 5
+H_OBJ 0
+*S_INIT 7
+*L_INIT 4.5
+MATERIAL_TYPE_OBJ 0
+REFLECT_OBJ 0
+OPT_SHAPE_OBJ 0
+PARSFILE Animator\Vehicles\AniVeh_77d8457f-0afc-4093-9797-39e7fd309840.par
+#BlueLink0 Animator: Vehicles and Sensor Targets`Utility Flatbed Trailer (3A)` Trailers` , 3D Shape for Video`AniVeh_77d8457f-0afc-4093-9797-39e7fd309840
+
+EQ_INIT X_Obj_<<o>> 7
+EQ_INIT Y_Obj_<<o>> 4.5
+
+LOG_ENTRY Used Dataset: Single Moving Object (Custom); { For Alley Dock Test Pad (Small) } Flatbed Trailer
+#Library : Single Moving Object (Custom)
+#DataSet : Flatbed Trailer
+#Category: For Alley Dock Test Pad (Small)
+#FileID  : Target_d19b5ad9-d80c-4c1c-9e60-ccdad4be5719
+#Created : 10-21-2021 12:29:14
+#Modified: 11-21-2022 14:16:08
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Moving Object (Custom)
+
+END

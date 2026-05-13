@@ -1,0 +1,72 @@
+Run made by CarSim 2024.1 at 14:49 on March 25, 2024.
+Revision 222209, March 18, 2024
+Started with simfile: simfile.sim
+
+Include PARSFILE "Results\Run_a70f4a1b-7ca5-4304-9238-3e464f3d8419\Run_all.par"
+Used Dataset: Animator: Reference Frame; { Tracking: Vehicle } Vehicle X-Y
+Used Dataset: Animator: Camera Setup; { K & C } K & C View
+Installed keywords into VS Solver for MODEL_LAYOUT I_I
+ 01 - K & C: Design Load (no plots) <K & C Tests - Complete sequence>
+Used Dataset: Generic VS Commands; { K&C Test Sequence } 05c - Fy compliance (L)
+Used Dataset: Generic VS Commands; { K&C Test Sequence } 05c - Fy comp - move to max neg (L)
+Used Dataset: Events; { K&C Test Sequence } 05c - Increase to max neg force (L)
+Used Dataset: Plot: Format; Lines without Symbols
+Used Dataset: Plot: Setup; { K&C Test Results } Camber vs Fy_L
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { K&C Test Results } Steer vs Fy_L
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Tire Forces and Moments } Lateral Forces
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Tire Forces and Moments } Vertical Forces
+Used Dataset: Plot: Format; Lines without Symbols
+Used Dataset: Plot: Setup; { Vehicle Motion } Roll Angle of Sprung Masses vs. Time
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { K&C Test Results } Jounce - Front vs Fy_L
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { K&C Test Results } Jounce - Rear vs Fy_L
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Tire Forces and Moments } Lateral Forces
+Used Dataset: Procedures; { K&C Test Sequence } 05c - Fy compliance (left)
+ 05c - Fy compliance (L) <K & C Tests - Complete sequence>
+Used Dataset: CarSim Run Control; { K & C Tests - Complete sequence } 05c - Fy compliance (L)
+
+Time to read input = 0.0533542
+Function FY_TIRE_CARPET(1,1) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function MZ_TIRE_CARPET(1,1) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function FY_TIRE_CARPET(1,2) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function MZ_TIRE_CARPET(1,2) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function FY_TIRE_CARPET(2,1) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function MZ_TIRE_CARPET(2,1) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function FY_TIRE_CARPET(2,2) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function MZ_TIRE_CARPET(2,2) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function F_REB_STOP_TABLE(1,1) extrapolated (out of range HIGH) for X = 1.84289e-05 mm at T = 0
+Function F_JNC_STOP_TABLE(1,1) extrapolated (out of range LOW) for X = 1.84289e-05 mm at T = 0
+Function F_REB_STOP_TABLE(1,2) extrapolated (out of range HIGH) for X = 1.84289e-05 mm at T = 0
+Function F_JNC_STOP_TABLE(1,2) extrapolated (out of range LOW) for X = 1.84289e-05 mm at T = 0
+Function F_REB_STOP_TABLE(2,1) extrapolated (out of range HIGH) for X = -6.6721e-07 mm at T = 0
+Function F_JNC_STOP_TABLE(2,1) extrapolated (out of range LOW) for X = -6.6721e-07 mm at T = 0
+Function F_REB_STOP_TABLE(2,2) extrapolated (out of range HIGH) for X = -6.6721e-07 mm at T = 0
+Function F_JNC_STOP_TABLE(2,2) extrapolated (out of range LOW) for X = -6.6721e-07 mm at T = 0
+
+Run started: VS output file = Results\Run_a70f4a1b-7ca5-4304-9238-3e464f3d8419\LastRun.vsb
+
+Event #1 occurred at t = 80: fy_ground <= -FY_RANGE
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_73bd690f-0771-4fa5-b860-4401edc32b8d.par"
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Generic\VS_commands\GenVS_7abcc025-f679-434e-96b8-1cb8ee725fce.par"
+Used Dataset: Generic VS Commands; { K&C Test Sequence } 05c - Fy comp - move to max pos (L)
+Used Dataset: Events; { K&C Test Sequence } 05c - Increase to max pos force (L)
+
+Event #2 occurred at t = 240: fy_ground >= FY_RANGE
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_eee8d1c5-12b4-432b-8903-5b5e02374951.par"
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Generic\VS_commands\GenVS_494d42d9-37b4-44c0-a5d4-138acab6e1b4.par"
+Used Dataset: Generic VS Commands; { K&C Test Sequence } 05c - Fy comp - move to max neg (L)
+Used Dataset: Events; { K&C Test Sequence } 05c - Increase to max neg force (L)
+
+Event #3 occurred at t = 400.001: (fy_ground <= -FY_RANGE) & END_AFTER_EVENT
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_b5af09b5-d8ad-4e81-ae24-eebce691780e.par"
+
+Run stopped at t = 400.001. VS Command STOP_RUN_NOW End event triggered
+Used Dataset: Events; End Events
+
+Computational time ratio: RTIME = 0.0584868 (real time)/(simulation time)
+

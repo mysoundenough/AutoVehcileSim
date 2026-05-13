@@ -1,0 +1,42 @@
+PARSFILE
+#FullDataName Payload: Box Shape`Rental Trailer (No Ani. Shape)`Trailers
+DEFINE_PAYLOADS 1
+ILOAD = NLOAD
+OPT_PL_BODY_ID = IUNIT
+SET_DESCRIPTION PAYLOAD_NAME Rental Trailer (No Ani. Shape)
+IOBJECT_SAVE
+*X_LENGTH 600
+*Y_LENGTH 800
+*Z_LENGTH 400
+Y_CG_PL 0
+H_BOX_BOTTOM 700
+X_CG_PL 2500
+M_PL 200
+*SET_COLOR 0.6 0 0
+
+#CheckBox0 0    
+
+#RingCtrl0 0
+OPT_TRAILER_REF_FRAME 0
+! Calculated height of payload CG
+Z_CG_PL 900.00
+IXX_PL 13.33
+IYY_PL 8.67
+IZZ_PL 16.67
+IXY_PL 0
+IXZ_PL 0
+IYZ_PL 0
+IOBJECT_RESTORE
+
+LOG_ENTRY Used Dataset: Payload: Box Shape; { Trailers } Rental Trailer (No Ani. Shape)
+#Library : Payload: Box Shape
+#DataSet : Rental Trailer (No Ani. Shape)
+#Category: Trailers
+#FileID  : Box_0d6bb025-8b22-449b-9de7-de5bdcf4754e
+#Created : 10-06-2022 13:46:40
+#Modified: 02-22-2023 13:19:23
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Payload: Box
+
+END

@@ -1,0 +1,138 @@
+PARSFILE
+#FullDataName Generic VS Commands`Measured Aero Coeff. (Incl. Trailer)`Virtual Wind Tunnel
+#VehCode VS Commands
+
+#MiscYellow0
+! Aero coefficients of the car by itself.
+
+define_output Cd_VWT = -Fx_Air/(AREA_AERO(1)*D_AIR*Vwind^2/2); -; Drag coefficient
+define_output Cs_VWT = -Fy_Air/(AREA_AERO(1)*D_AIR*Vwind^2/2); -; Side coefficient
+define_output Cl_VWT = Fz_Air/(AREA_AERO(1)*D_AIR*Vwind^2/2); -; Lift coefficient
+define_output Cr_VWT = Mx_Air/(AREA_AERO(1)*L_REF_AERO(1)*D_AIR*Vwind^2/2); -; Roll coefficient
+define_output Cp_VWT = -My_Air/(AREA_AERO(1)*L_REF_AERO(1)*D_AIR*Vwind^2/2); -; Pitch coefficient
+define_output Cy_VWT = -Mz_Air/(AREA_AERO(1)*L_REF_AERO(1)*D_AIR*Vwind^2/2); -; Yaw coefficient
+
+define_output Cd_Input = FX_AERO_SHAPING(0, BetaAir, 1); -; Drag coefficient
+define_output Cs_Input = FY_AERO_SHAPING(0, BetaAir, 1); -; Side coefficient
+define_output Cl_Input = FZ_AERO_SHAPING(0, BetaAir, 1); -; Lift coefficient
+define_output Cr_Input = MX_AERO_SHAPING(0, BetaAir, 1); -; Roll coefficient
+define_output Cp_Input = MY_AERO_SHAPING(0, BetaAir, 1); -; Pitch coefficient
+define_output Cy_Input = Mz_AERO_SHAPING(0, BetaAir, 1); -; Yaw coefficient
+
+! Aero coefficients of the trailer by itself.
+
+define_output Cd_VWT_2 = -Fx_Air_2/(AREA_AERO(2)*D_AIR*Vwind^2/2); -; Drag coefficient
+define_output Cs_VWT_2 = -Fy_Air_2/(AREA_AERO(2)*D_AIR*Vwind^2/2); -; Side coefficient
+define_output Cl_VWT_2 = Fz_Air_2/(AREA_AERO(2)*D_AIR*Vwind^2/2); -; Lift coefficient
+define_output Cr_VWT_2 = Mx_Air_2/(AREA_AERO(2)*L_REF_AERO(2)*D_AIR*Vwind^2/2); -; Roll coefficient
+define_output Cp_VWT_2 = -My_Air_2/(AREA_AERO(2)*L_REF_AERO(2)*D_AIR*Vwind^2/2); -; Pitch coefficient
+define_output Cy_VWT_2 = -Mz_Air_2/(AREA_AERO(2)*L_REF_AERO(2)*D_AIR*Vwind^2/2); -; Yaw coefficient
+
+define_output Cd_Input_2 = FX_AERO_SHAPING(0, BetaAir2, 2); -; Drag coefficient
+define_output Cs_Input_2 = FY_AERO_SHAPING(0, BetaAir2, 2); -; Side coefficient
+define_output Cl_Input_2 = FZ_AERO_SHAPING(0, BetaAir2, 2); -; Lift coefficient
+define_output Cr_Input_2 = MX_AERO_SHAPING(0, BetaAir2, 2); -; Roll coefficient
+define_output Cp_Input_2 = MY_AERO_SHAPING(0, BetaAir2, 2); -; Pitch coefficient
+define_output Cy_Input_2 = Mz_AERO_SHAPING(0, BetaAir2, 2); -; Yaw coefficient
+
+! Aero coefficients of the car with the trailer, defined at the car's aero reference point, and
+! using the car's frontal area and reference length. This involves some coordinate system 
+! transformations in order to get everything into the same car coordinate system. Generally
+! speaking, if all of the coefficients for the car and trailer are positive, we expect that the
+! drag, side, lift, and roll coefficients for the combination are positive. The pitch and yaw
+! coefficients, however, tend to be negative because the trailer is located far behind the car.
+
+ ! trailer aero ref pt relative to car aero ref pt, global coords
+define_variable px_g; mm
+define_variable py_g; mm
+define_variable pz_g; mm
+eq_out px_g = X_S2-X_S1; mm
+eq_out py_g = Y_S2-Y_S1; mm
+eq_out pz_g = Z_S2-Z_S1; mm
+
+ ! trailer aero ref pt relative to car ref pt, car coords
+define_variable px; mm
+define_variable py; mm
+define_variable pz; mm
+eq_out px = px_g*cos(Pitch)*cos(Yaw) + py_g*sin(Yaw)*cos(Pitch) - pz_g*sin(Pitch);
+eq_out py = px_g*(sin(Pitch)*sin(Roll_E)*cos(Yaw) - sin(Yaw)*cos(Roll_E)) + py_g*(sin(Pitch)*sin(Roll_E)*sin(Yaw) + cos(Roll_E)*cos(Yaw)) + pz_g*sin(Roll_E)*cos(Pitch);
+eq_out pz = px_g*(sin(Pitch)*cos(Roll_E)*cos(Yaw) + sin(Roll_E)*sin(Yaw)) + py_g*(sin(Pitch)*sin(Yaw)*cos(Roll_E) - sin(Roll_E)*cos(Yaw)) + pz_g*cos(Pitch)*cos(Roll_E);
+
+! trailer aero force, car coords
+define_variable fx_trailer; N
+define_variable fy_trailer; N
+define_variable fz_trailer; N
+eq_out fx_trailer = Fx_Air_2*(sin(Pitch)*sin(Pitch_2) + cos(Pitch)*cos(Pitch_2)*cos(Yaw - Yaw_2)) + Fy_Air_2*(-sin(Pitch)*sin(Roll_E_2)*cos(Pitch_2) + sin(Pitch_2)*sin(Roll_E_2)*cos(Pitch)*cos(Yaw - Yaw_2) + sin(Yaw - Yaw_2)*cos(Pitch)*cos(Roll_E_2)) + Fz_Air_2*(-sin(Pitch)*cos(Pitch_2)*cos(Roll_E_2) + sin(Pitch_2)*cos(Pitch)*cos(Roll_E_2)*cos(Yaw - Yaw_2) - sin(Roll_E_2)*sin(Yaw - Yaw_2)*cos(Pitch));
+eq_out fy_trailer = Fx_Air_2*(sin(Pitch)*sin(Roll_E)*cos(Pitch_2)*cos(Yaw - Yaw_2) - sin(Pitch_2)*sin(Roll_E)*cos(Pitch) - sin(Yaw - Yaw_2)*cos(Pitch_2)*cos(Roll_E)) + Fy_Air_2*(sin(Pitch)*sin(Pitch_2)*sin(Roll_E)*sin(Roll_E_2)*cos(Yaw - Yaw_2) + sin(Pitch)*sin(Roll_E)*sin(Yaw - Yaw_2)*cos(Roll_E_2) - sin(Pitch_2)*sin(Roll_E_2)*sin(Yaw - Yaw_2)*cos(Roll_E) + sin(Roll_E)*sin(Roll_E_2)*cos(Pitch)*cos(Pitch_2) + cos(Roll_E)*cos(Roll_E_2)*cos(Yaw - Yaw_2)) + Fz_Air_2*(sin(Pitch)*sin(Pitch_2)*sin(Roll_E)*cos(Roll_E_2)*cos(Yaw - Yaw_2) - sin(Pitch)*sin(Roll_E)*sin(Roll_E_2)*sin(Yaw - Yaw_2) - sin(Pitch_2)*sin(Yaw - Yaw_2)*cos(Roll_E)*cos(Roll_E_2) + sin(Roll_E)*cos(Pitch)*cos(Pitch_2)*cos(Roll_E_2) - sin(Roll_E_2)*cos(Roll_E)*cos(Yaw - Yaw_2));
+eq_out fz_trailer = Fx_Air_2*(sin(Pitch)*cos(Pitch_2)*cos(Roll_E)*cos(Yaw - Yaw_2) - sin(Pitch_2)*cos(Pitch)*cos(Roll_E) + sin(Roll_E)*sin(Yaw - Yaw_2)*cos(Pitch_2)) + Fy_Air_2*(sin(Pitch)*sin(Pitch_2)*sin(Roll_E_2)*cos(Roll_E)*cos(Yaw - Yaw_2) + sin(Pitch)*sin(Yaw - Yaw_2)*cos(Roll_E)*cos(Roll_E_2) + sin(Pitch_2)*sin(Roll_E)*sin(Roll_E_2)*sin(Yaw - Yaw_2) - sin(Roll_E)*cos(Roll_E_2)*cos(Yaw - Yaw_2) + sin(Roll_E_2)*cos(Pitch)*cos(Pitch_2)*cos(Roll_E)) + Fz_Air_2*(sin(Pitch)*sin(Pitch_2)*cos(Roll_E)*cos(Roll_E_2)*cos(Yaw - Yaw_2) - sin(Pitch)*sin(Roll_E_2)*sin(Yaw - Yaw_2)*cos(Roll_E) + sin(Pitch_2)*sin(Roll_E)*sin(Yaw - Yaw_2)*cos(Roll_E_2) + sin(Roll_E)*sin(Roll_E_2)*cos(Yaw - Yaw_2) + cos(Pitch)*cos(Pitch_2)*cos(Roll_E)*cos(Roll_E_2));
+
+! trailer aero moment, car coords
+define_variable mx_trailer; N-m
+define_variable my_trailer; N-m
+define_variable mz_trailer; N-m
+eq_out mx_trailer = Mx_Air_2*(sin(Pitch)*sin(Pitch_2) + cos(Pitch)*cos(Pitch_2)*cos(Yaw - Yaw_2)) + My_Air_2*(-sin(Pitch)*sin(Roll_E_2)*cos(Pitch_2) + sin(Pitch_2)*sin(Roll_E_2)*cos(Pitch)*cos(Yaw - Yaw_2) + sin(Yaw - Yaw_2)*cos(Pitch)*cos(Roll_E_2)) + Mz_Air_2*(-sin(Pitch)*cos(Pitch_2)*cos(Roll_E_2) + sin(Pitch_2)*cos(Pitch)*cos(Roll_E_2)*cos(Yaw - Yaw_2) - sin(Roll_E_2)*sin(Yaw - Yaw_2)*cos(Pitch));
+eq_out my_trailer = Mx_Air_2*(sin(Pitch)*sin(Roll_E)*cos(Pitch_2)*cos(Yaw - Yaw_2) - sin(Pitch_2)*sin(Roll_E)*cos(Pitch) - sin(Yaw - Yaw_2)*cos(Pitch_2)*cos(Roll_E)) + My_Air_2*(sin(Pitch)*sin(Pitch_2)*sin(Roll_E)*sin(Roll_E_2)*cos(Yaw - Yaw_2) + sin(Pitch)*sin(Roll_E)*sin(Yaw - Yaw_2)*cos(Roll_E_2) - sin(Pitch_2)*sin(Roll_E_2)*sin(Yaw - Yaw_2)*cos(Roll_E) + sin(Roll_E)*sin(Roll_E_2)*cos(Pitch)*cos(Pitch_2) + cos(Roll_E)*cos(Roll_E_2)*cos(Yaw - Yaw_2)) + Mz_Air_2*(sin(Pitch)*sin(Pitch_2)*sin(Roll_E)*cos(Roll_E_2)*cos(Yaw - Yaw_2) - sin(Pitch)*sin(Roll_E)*sin(Roll_E_2)*sin(Yaw - Yaw_2) - sin(Pitch_2)*sin(Yaw - Yaw_2)*cos(Roll_E)*cos(Roll_E_2) + sin(Roll_E)*cos(Pitch)*cos(Pitch_2)*cos(Roll_E_2) - sin(Roll_E_2)*cos(Roll_E)*cos(Yaw - Yaw_2));
+eq_out mz_trailer = Mx_Air_2*(sin(Pitch)*cos(Pitch_2)*cos(Roll_E)*cos(Yaw - Yaw_2) - sin(Pitch_2)*cos(Pitch)*cos(Roll_E) + sin(Roll_E)*sin(Yaw - Yaw_2)*cos(Pitch_2)) + My_Air_2*(sin(Pitch)*sin(Pitch_2)*sin(Roll_E_2)*cos(Roll_E)*cos(Yaw - Yaw_2) + sin(Pitch)*sin(Yaw - Yaw_2)*cos(Roll_E)*cos(Roll_E_2) + sin(Pitch_2)*sin(Roll_E)*sin(Roll_E_2)*sin(Yaw - Yaw_2) - sin(Roll_E)*cos(Roll_E_2)*cos(Yaw - Yaw_2) + sin(Roll_E_2)*cos(Pitch)*cos(Pitch_2)*cos(Roll_E)) + Mz_Air_2*(sin(Pitch)*sin(Pitch_2)*cos(Roll_E)*cos(Roll_E_2)*cos(Yaw - Yaw_2) - sin(Pitch)*sin(Roll_E_2)*sin(Yaw - Yaw_2)*cos(Roll_E) + sin(Pitch_2)*sin(Roll_E)*sin(Yaw - Yaw_2)*cos(Roll_E_2) + sin(Roll_E)*sin(Roll_E_2)*cos(Yaw - Yaw_2) + cos(Pitch)*cos(Pitch_2)*cos(Roll_E)*cos(Roll_E_2));
+
+! total aero force, car coords
+define_variable fx_total; N
+define_variable fy_total; N
+define_variable fz_total; N
+eq_out fx_total = Fx_Air + fx_trailer;
+eq_out fy_total = Fy_Air + fy_trailer;
+eq_out fz_total = Fz_Air + fz_trailer;
+
+! total aero moment, car coords
+define_variable mx_total; N
+define_variable my_total; N
+define_variable mz_total; N
+eq_out mx_total = Mx_Air + mx_trailer - pz*fy_trailer + py*fz_trailer;
+eq_out my_total = My_Air + my_trailer + pz*fx_trailer - px*fz_trailer;
+eq_out mz_total = Mz_Air + mz_trailer - py*fx_trailer + px*fy_trailer;
+
+! aero coefficients of car+trailer, assuming frontal area and reference length of car
+define_output Cd_Total = -fx_total/(AREA_AERO(1)*D_AIR*Vwind^2/2); -; Drag coefficient
+define_output Cs_Total = -fy_total/(AREA_AERO(1)*D_AIR*Vwind^2/2); -; Side coefficient
+define_output Cl_Total = fz_total/(AREA_AERO(1)*D_AIR*Vwind^2/2); -; Lift coefficient
+define_output Cr_Total = mx_total/(AREA_AERO(1)*L_REF_AERO(1)*D_AIR*Vwind^2/2); -; Roll coefficient
+define_output Cp_Total = -my_total/(AREA_AERO(1)*L_REF_AERO(1)*D_AIR*Vwind^2/2); -; Pitch coefficient
+define_output Cy_Total = -mz_total/(AREA_AERO(1)*L_REF_AERO(1)*D_AIR*Vwind^2/2); -; Yaw coefficient
+#ENDMYellow
+
+PARSFILE Plot\Setup\Plot_fa0b5796-0893-462c-bb0f-66be8427b69e.par
+#BlueLink3 Plot: Setup`Drag Coeff: Measured vs Input` Virtual Wind Tunnel` , Plot`Plot_fa0b5796-0893-462c-bb0f-66be8427b69e
+
+PARSFILE Plot\Setup\Plot_3b110c8f-5a6d-4cfb-a6d1-d98c0ceeb0d7.par
+#BlueLink4 Plot: Setup`Side Coeff: Measured vs Input` Virtual Wind Tunnel` , Plot`Plot_3b110c8f-5a6d-4cfb-a6d1-d98c0ceeb0d7
+
+PARSFILE Plot\Setup\Plot_7e1d3234-c1ae-4c53-9a48-99e8a5002536.par
+#BlueLink5 Plot: Setup`Lift Coeff: Measured vs Input` Virtual Wind Tunnel` , Plot`Plot_7e1d3234-c1ae-4c53-9a48-99e8a5002536
+
+PARSFILE Plot\Setup\Plot_614b9447-59c1-401c-b691-82a35aaa6913.par
+#BlueLink6 Plot: Setup`Roll Coeff: Measured vs Input` Virtual Wind Tunnel` , Plot`Plot_614b9447-59c1-401c-b691-82a35aaa6913
+
+PARSFILE Plot\Setup\Plot_cdacb3dd-d020-4e59-a556-db58b976630b.par
+#BlueLink7 Plot: Setup`Pitch Coeff: Measured vs Input` Virtual Wind Tunnel` , Plot`Plot_cdacb3dd-d020-4e59-a556-db58b976630b
+
+PARSFILE Plot\Setup\Plot_4501f9d2-019d-4616-93f5-f54a48768016.par
+#BlueLink8 Plot: Setup`Yaw Coeff: Measured vs Input` Virtual Wind Tunnel` , Plot`Plot_4501f9d2-019d-4616-93f5-f54a48768016
+
+
+#EMBEDDED_NOTES
+#The effect of the trailer on the car is interpreted by calculating aero coefficients for the combined car with trailer, resolved at the aero reference point of the car. This calculation assumes that the car and trailer are rigidly connected together, which is not true in general (the ball hitch does not transfer moments).
+#
+#However, vehicles with trailers are tested as a rigid combination in a wind tunnel or CFD simulation on occasion, and similar overall aero coefficients are reported. There does not seem to be a standard choice of frontal area or reference length for this kind of testing. Here we use the values of the car to faciliatate comparison of the combo values with the isolated car values.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { Virtual Wind Tunnel } Measured Aero Coeff. (Incl. Trailer)
+#Library : Generic VS Commands
+#DataSet : Measured Aero Coeff. (Incl. Trailer)
+#Category: Virtual Wind Tunnel
+#FileID  : GenVS_6b92c0b5-79ff-406d-8d50-ee114adc33e5
+#Created : 10-06-2022 14:05:46
+#Modified: 10-06-2022 15:51:24
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode VS Commands
+
+END

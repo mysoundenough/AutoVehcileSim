@@ -1,0 +1,36 @@
+PARSFILE
+#FullDataName Generic Group of Links`Wheel Restraints, Car 2`Vehicle Hauling
+#VehCode Generic Links
+PARSFILE Generic\VS_commands\GenVS_9e8a8d11-07e7-42ea-84c9-2eb342659117.par
+#BlueLink0 Generic VS Commands`Wheel Restraint Imports` Vehicle Hauling` , Miscellaneous`GenVS_9e8a8d11-07e7-42ea-84c9-2eb342659117
+
+PARSFILE Output\Points\RefPt_ea111d9b-18d8-49d8-af20-8472b269088a.par
+#BlueLink1 Custom Forces and Reference Points`Wheel Restraint Points, Car 2` Vehicle Hauling` , Miscellaneous`RefPt_ea111d9b-18d8-49d8-af20-8472b269088a
+
+PARSFILE Output\Sensors\MoSen_5a099d2a-1ac3-426b-9bd2-987826d3a84a.par
+#BlueLink2 Positions, Velocities, and Accelerations`Wheel Restraint Sensors, Car 2` Vehicle Hauling` , Miscellaneous`MoSen_5a099d2a-1ac3-426b-9bd2-987826d3a84a
+
+PARSFILE Generic\VS_commands\GenVS_05850d9e-71eb-4b1c-b431-74e63ec39400.par
+#BlueLink3 Generic VS Commands`Wheel Restraint Forces` Vehicle Hauling` , Miscellaneous`GenVS_05850d9e-71eb-4b1c-b431-74e63ec39400
+
+
+#EMBEDDED_NOTES
+#Imports defined for the Vehicle Hauler  configuration.
+#
+#Custom Force and Motion Sensor points points set at the locations of the wheel restraints.
+#
+#Wheel Restraint Forces are calculated to maintain the hauled vehicle to the transport.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic Group of Links; { Vehicle Hauling } Wheel Restraints, Car 2
+#Library : Generic Group of Links
+#DataSet : Wheel Restraints, Car 2
+#Category: Vehicle Hauling
+#FileID  : GenLink_bfc0b326-8b48-4a79-97cd-a25dc718bd56
+#Created : 01-11-2023 13:25:19
+#Modified: 01-11-2023 16:07:25
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Generic Links
+
+END

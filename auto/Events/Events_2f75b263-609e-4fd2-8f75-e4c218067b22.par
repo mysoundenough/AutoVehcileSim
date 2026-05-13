@@ -1,0 +1,35 @@
+PARSFILE
+#FullDataName Events`1. Initialize Batch Iteration`Batch Iteration
+#CheckBox1 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 ZERO ~=
+#RingCtrl10 1
+#RingCtrl11 4
+*VALUE1 1
+DEFINE_EVENT 1 ; Events\Events_b675d46c-21de-44fa-b556-ef0d59944675.par
+#BlueLink0 Events`2. Re-Initialize Batch Iteration` Batch Iteration` , Events`Events_b675d46c-21de-44fa-b556-ef0d59944675
+
+SET_EVENT_ID 0 ! reset to default
+
+#EMBEDDED_NOTES
+#This event is required for batch iteration.
+#
+#A single time-step passes before the run is reinitialized to set the iteration variable.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Events; { Batch Iteration } 1. Initialize Batch Iteration
+#Library : Events
+#DataSet : 1. Initialize Batch Iteration
+#Category: Batch Iteration
+#FileID  : Events_2f75b263-609e-4fd2-8f75-e4c218067b22
+#Created : 05-18-2023 16:09:50
+#Modified: 05-22-2023 09:28:58
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

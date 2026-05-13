@@ -1,0 +1,52 @@
+PARSFILE
+#FullDataName Tire (External)`23 Inch Tire, Soft Soil`VS TMRW
+Y_LENGTH 175
+#CheckBox3 1    
+
+#RingCtrl0 11
+#RingCtrl5 0
+OPT_TIRE_MODEL 10
+
+X_LENGTH 292
+Z_LENGTH 292
+PARSFILE Animator\STL_Groups\ShpGrp_83c2aa51-8851-4837-aa3f-9447d8973e81.par
+#BlueLink0 Animator: Shape Assembly`Baja SAE Left Side Tire` Mech. Sim. FSAE & Baja: Shape Assembly` , Animator`ShpGrp_83c2aa51-8851-4837-aa3f-9447d8973e81
+
+WRITE_WHEEL_OFFSET
+*SET_THICKNESS 175
+*SET_RADIUS 292
+KY_TIRE 30
+IT 0
+M_TIRE 0
+IT_XXZZ 0
+
+#External API information
+EXTERNAL_TIRE_MODULE_DLL tmrw
+STI_RT_LIB vs_sti_tmrw_lnx32.so
+INSTALL_EXTERNAL_TIRE_API
+*EXT_MODULE_DLL tmrw
+
+#User Tire Model setting data
+PARSFILE Generic\tables\GenTab_cbe0c257-e823-40cb-a11a-0c5476644190.par
+#BlueLink1 Generic Table`23 Inch Tire, Soft Soil` VS TMRW` , External`GenTab_cbe0c257-e823-40cb-a11a-0c5476644190
+
+USER_STI_INIT
+
+#EMBEDDED_NOTES
+#For this example, the tire mass and inertia properties are lumped with the unsprung values entered on the Suspension Kinematics screen.
+#
+#The cornering stiffness value is based on testing with VS Tire Tester.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Tire (External); { VS TMRW } 23 Inch Tire, Soft Soil
+#Library : Tire (External)
+#DataSet : 23 Inch Tire, Soft Soil
+#Category: VS TMRW
+#FileID  : TireExt_cddac526-315a-4b0f-b5bc-9a3319d239f4
+#Created : 11-29-2022 15:14:20
+#Modified: 06-08-2023 13:04:14
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Tire (External)
+
+END

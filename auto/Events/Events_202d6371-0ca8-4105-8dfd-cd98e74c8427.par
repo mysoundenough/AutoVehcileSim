@@ -1,0 +1,63 @@
+PARSFILE
+#FullDataName Events`CCRm,s D. New Test, Increase Speed, ACC`Euro NCAP ACC Testing
+#CheckBox1 1    
+*CLEAR
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 <=
+#RingCtrl1 >
+#RingCtrl10 2
+#RingCtrl11 4
+RESET_EVENTS
+*NAME1 VUT_START
+*NAME2 VUT_START
+*VALUE1 MAX_TEST_SPD
+*VALUE2 MAX_TEST_SPD
+#MiscYellow0
+! update target speed
+VUT_START = VUT_START + (10/3.6);
+! update ACC speed limit
+speed_limit = VUT_START
+VUT_GVT_GAP = VUT_START*INIT_TTC
+START_DISTANCE = VUT_GVT_GAP+LEN_GVT
+!Initial location of VUT
+VUT_START_STATION = SSTART_GVT - START_DISTANCE - X_Sensor
+!Set VUT speed
+SPEED_TARGET_CONSTANT(1) = VUT_START
+! increase score, one full point
+SCORE_NEW = SCORE_OLD + 1
+SCORE_OLD = SCORE_NEW
+#ENDMYellow
+
+#BlueLink10 ` , Miscellaneous` , Miscellaneous` , Miscellaneous`
+
+MAKE_EVENT VUT_START <= MAX_TEST_SPD ; Events\Events_1c952d90-0586-43be-a9fa-d7b824c328f0.par
+#BlueLink0 Events`CCRm,s F2. Reset Veh. and Targets, ACC` Euro NCAP ACC Testing` , Events`Events_1c952d90-0586-43be-a9fa-d7b824c328f0
+
+MAKE_EVENT VUT_START > MAX_TEST_SPD ; Events\Events_b5af09b5-d8ad-4e81-ae24-eebce691780e.par
+#BlueLink1 Events`End Events` ` , Events`Events_b5af09b5-d8ad-4e81-ae24-eebce691780e
+
+SET_EVENT_ID 0 ! reset to default
+
+#EMBEDDED_NOTES
+#Reset VUT_START to 10 km/h higher than previous initial speed.
+#Reset target vehicle starting location.
+#
+#If The final run has been completed already, end the test
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Events; { Euro NCAP ACC Testing } CCRm,s D. New Test, Increase Speed, ACC
+#Library : Events
+#DataSet : CCRm,s D. New Test, Increase Speed, ACC
+#Category: Euro NCAP ACC Testing
+#FileID  : Events_202d6371-0ca8-4105-8dfd-cd98e74c8427
+#Created : 05-05-2021 12:17:57
+#Modified: 10-12-2021 13:46:55
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

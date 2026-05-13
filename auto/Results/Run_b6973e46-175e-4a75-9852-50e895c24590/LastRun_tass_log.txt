@@ -1,0 +1,19 @@
+INFO - MF-Tyre/MF-Swift 2306  (57a91f539973)
+WARNING - The tyre properties MC_CONTOUR_A and MC_COUNTOUR_B both have the default value of 0.5.
+WARNING - They are reset to 0.0 to avoid using Motorcyle behavior.
+WARNING - If Motorcycle behavior is needed, adjust at least one of the properties to a slightly different values.
+WARNING - Residual stiffness (CCX) is (almost) zero.
+WARNING - The tyre properties MC_CONTOUR_A and MC_COUNTOUR_B both have the default value of 0.5.
+WARNING - They are reset to 0.0 to avoid using Motorcyle behavior.
+WARNING - If Motorcycle behavior is needed, adjust at least one of the properties to a slightly different values.
+WARNING - Residual stiffness (CCX) is (almost) zero.
+WARNING - The tyre properties MC_CONTOUR_A and MC_COUNTOUR_B both have the default value of 0.5.
+WARNING - They are reset to 0.0 to avoid using Motorcyle behavior.
+WARNING - If Motorcycle behavior is needed, adjust at least one of the properties to a slightly different values.
+WARNING - Residual stiffness (CCX) is (almost) zero.
+WARNING - The tyre properties MC_CONTOUR_A and MC_COUNTOUR_B both have the default value of 0.5.
+WARNING - They are reset to 0.0 to avoid using Motorcyle behavior.
+WARNING - If Motorcycle behavior is needed, adjust at least one of the properties to a slightly different values.
+WARNING - Residual stiffness (CCX) is (almost) zero.
+WARNING - Vertical load is above tire file maximum parameter FZMAX. It is capped at (8400).
+WARNING - Vertical load is below tire file parameter FZMIN. It is capped at (100).

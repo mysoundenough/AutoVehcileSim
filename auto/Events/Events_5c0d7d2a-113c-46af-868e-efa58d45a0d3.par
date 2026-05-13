@@ -1,0 +1,31 @@
+PARSFILE
+#FullDataName Events`06c - Increase to max brake force (R)`K&C Test Sequence
+#CheckBox1 0    
+#CheckBox6 0    
+#CheckBox7 1    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 ZERO ~=
+#RingCtrl10 1
+#RingCtrl11 4
+*VALUE1 fx_ground <= -FX_RANGE
+PARSFILE Generic\VS_commands\GenVS_26283c5f-c30b-4a74-ae08-98925e6ce3ee.par
+#BlueLink10 Generic VS Commands`06b - Fx comp-increase to max brake (R)` K&C Test Sequence` , Miscellaneous`GenVS_26283c5f-c30b-4a74-ae08-98925e6ce3ee
+
+DEFINE_EVENT fx_ground <= -FX_RANGE ; Events\Events_65b352f1-ea4d-4012-b75a-c188865c2904.par
+#BlueLink0 Events`06c - Reduce brake force to zero (R)` K&C Test Sequence` , Events`Events_65b352f1-ea4d-4012-b75a-c188865c2904
+
+SET_EVENT_ID 0 ! reset to default
+
+LOG_ENTRY Used Dataset: Events; { K&C Test Sequence } 06c - Increase to max brake force (R)
+#Library : Events
+#DataSet : 06c - Increase to max brake force (R)
+#Category: K&C Test Sequence
+#FileID  : Events_5c0d7d2a-113c-46af-868e-efa58d45a0d3
+#Modified: 05-28-2021 14:59:28
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

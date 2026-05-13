@@ -1,0 +1,37 @@
+Run made by VS Road Calculator at 17:21 on May 08, 2026.
+Utility to calculate road and path coordinates for visualization
+Started with simfile: Roads\3D_Road\simfile_road
+
+Include PARSFILE "Roads\3D_Road\Road_89d4a142-808f-4480-8cb3-807e4c52ca45.par"
+Include PARSFILE "Roads\BuilderSegment\RoadSeg_299f5dd8-31b0-44f2-9251-eaaf215df33c.par"
+ Straight East <Straight>
+Used Dataset: Path: Segment Builder; { Straight } Straight East
+Include PARSFILE "Roads\Friction\RdMu_76157e0a-7f92-4d03-8249-7715bd43a5ba.par"
+Used Dataset: Road: Friction Map, S-L Grid; { Constant } Constant: 0.9
+Include PARSFILE "Roads\Shapes\RdShape_ed8e596e-74cd-4248-8cd0-0ce2a2ec2611.par"
+Used Dataset: Road: Animator Surface Shapes; { Roads } 1 km Square w/ Line
+Include PARSFILE "Animator\Groups\Group_4ccae742-4649-427a-8871-7b3629a730a2.par"
+Include PARSFILE "Animator\Frames\Frame_8761c9b6-c784-4d2d-b8bc-72683578e773.par"
+Used Dataset: Animator: Reference Frame; { Tracking: Vehicle } Skybox (Vehicle X-Y-Z)
+Include PARSFILE "Animator\STL\Shape_6d5f4980-0cdc-4aa2-841c-f127e1b02f97.par"
+Used Dataset: Animator: Shape File Link; { Environment: Sky Boxes } Partly Cloudy Sky
+Include PARSFILE "Animator\STL\Shape_8747e07e-81f8-4899-bd41-ca6921d43beb.par"
+Used Dataset: Animator: Shape File Link; { Environment: Land Bowls } Light Grass
+Used Dataset: Animator: Group; { Environment Spheres } Partly Cloudy Sky with Light Grass
+Include PARSFILE "Roads\AniGroup\AniRep_48c74e87-86e0-4b47-9546-9e2d2a944f35.par"
+Used Dataset: Road: Animator Repeated Object; { Cones } 2 Cones at S=3
+Include PARSFILE "Roads\3D_Road\Road_89d4a142-808f-4480-8cb3-807e4c52ca45.ani"
+Include PARSFILE "Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par"
+Used Dataset: Animator: Shape File Link; { Environment: Props (2 of 2) } Traffic Cone
+Include PARSFILE "Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par"
+Used Dataset: Animator: Shape File Link; { Environment: Props (2 of 2) } Traffic Cone
+Used Dataset: Road: 3D Surface (All Properties); { Flat Test Pads } 1 km Square w/ Cones, Mu = 0.9
+
+Time to read input = 0.0020155
+
+Run stopped at t = 12.68. Stop time reached.
+
+Run started: VS output file = Roads\3D_Road\Road_89d4a142-808f-4480-8cb3-807e4c52ca45.vsb
+
+Computational time ratio: RTIME = inf (real time)/(simulation time)
+

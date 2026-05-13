@@ -1,0 +1,24 @@
+PARSFILE
+#FullDataName Generic VS Commands`Lateral Tracking Error of Driver Model`Miscellaneous Custom Output Variables
+#VehCode VS Commands
+
+#MiscYellow0
+DEFINE_OUTPUT LatError = Lat_Targ - Lat_Veh; mm ; Lateral tracking error
+#ENDMYellow
+
+*MODELCODE VS Commands
+PARSFILE Plot\Setup\Plot_504122fe-f748-45ca-bed5-01514ca57fdc.par
+#BlueLink3 Plot: Setup`Lateral Tracking Error` PBS (Performance Based Standards)` , Plot`Plot_504122fe-f748-45ca-bed5-01514ca57fdc
+
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { Miscellaneous Custom Output Variables } Lateral Tracking Error of Driver Model
+#Library : Generic VS Commands
+#DataSet : Lateral Tracking Error of Driver Model
+#Category: Miscellaneous Custom Output Variables
+#FileID  : GenVS_37e84277-0d72-45f4-8189-de141df19f07
+#Modified: 11-30-2022 13:17:08
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode VS Commands
+
+END

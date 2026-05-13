@@ -1,0 +1,74 @@
+PARSFILE
+#FullDataName Control: Steering by the Closed-loop Driver Model`DLC, 5.0s Preview, TBC`Vehicle Dynamics Tests
+SET_ILTARG_FOR_ID 0
+set_description LTARG_ID DLC, 5.0s Preview, TBC
+INSTALL_DM_PATH_FOLLOWER
+#CheckBox4 1    
+OPT_DM 3
+INSTALL_DM_IMPORTS
+#MiscYellow0
+install_dm_tbc
+tbc_gain 3
+#ENDMYellow
+
+#RingCtrl0 0
+#RingCtrl1 SPLINE
+#RingCtrl2 1
+#DiagramOne0
+LTARG_TABLE SPLINE
+70, 0
+75, 0.2
+80, 1.1
+85, 2.4
+90, 3.3
+95, 3.5
+100, 3.5
+105, 3.5
+110, 3.5
+115, 3.5
+120, 3.5
+125, 3.3
+130, 2.4
+135, 1.1
+140, 0.2
+145, 0
+ENDTABLE
+#RadioCtrl0 0    
+
+*SCALAR 0
+SET_PATH_WIDTH 0.1
+SET_PATH_DASH_INTERVAL 0.5
+SET_PATH_VERTEX_INTERVAL 1
+SET_PATH_DZ 0.03
+SET_PATH_COLOR 0.4 0.4 1
+#CheckBox2 1    
+#CheckBox3 1    
+LTARG_ID_DM LTARG_ID
+#CheckBox0 0    
+#CheckBox1 1    
+CREATE_PATH_OBJ on
+#CheckBox5 0    
+OPT_STR_BY_TRQ 0
+AV_SW_MAX_DM 1200
+A_SW_MAX_DM 720
+*TPREV 5.0
+*GAIN 0
+VLOW_DM 10
+TPREV_CONSTANT 5.0
+
+#EMBEDDED_NOTES
+#The optional trailer backing controller is installed with the VS Command install_dm_tbc. This has an associated control gain parameter tbc_gain which may be set.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Control: Steering by the Closed-loop Driver Model; { Vehicle Dynamics Tests } DLC, 5.0s Preview, TBC
+#Library : Control: Steering by the Closed-loop Driver Model
+#DataSet : DLC, 5.0s Preview, TBC
+#Category: Vehicle Dynamics Tests
+#FileID  : StrDM_3e8ecff5-bb79-44f3-a4fc-36fd3c039f63
+#Created : 05-20-2022 13:40:05
+#Modified: 11-02-2022 15:25:48
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Driver Path Follower
+
+END

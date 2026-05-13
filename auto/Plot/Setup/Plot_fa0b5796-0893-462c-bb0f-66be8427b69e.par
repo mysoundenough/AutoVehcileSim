@@ -1,0 +1,45 @@
+PARSFILE
+#FullDataName Plot: Setup`Drag Coeff: Measured vs Input`Virtual Wind Tunnel
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par
+#BlueLink0 Plot: Format`Default Plot Settings` ` , Plot format`PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS Cd_VWT, Time, Car (Meas.)
+PLOTCHANNELS Cd_Input, Time, Car (Input)
+PLOTCHANNELS Cd_VWT_2, Time, Trailer (Meas.)
+PLOTCHANNELS Cd_Input_2, Time, Trailer (Input)
+PLOTCHANNELS Cd_Total, Time, Combo (Meas.)
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Drag Coeff: Measured vs Input
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Virtual Wind Tunnel } Drag Coeff: Measured vs Input
+#Library : Plot: Setup
+#DataSet : Drag Coeff: Measured vs Input
+#Category: Virtual Wind Tunnel
+#FileID  : Plot_fa0b5796-0893-462c-bb0f-66be8427b69e
+#Created : 10-06-2022 11:44:53
+#Modified: 10-06-2022 15:38:19
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Plot Setup
+
+END

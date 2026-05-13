@@ -1,0 +1,30 @@
+PARSFILE
+#FullDataName Events`Reset integral at T = 4`PID Control
+#CheckBox1 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 >
+#RingCtrl10 1
+#RingCtrl11 4
+*NAME1 T
+*VALUE1 4
+MAKE_EVENT T > 4 ; Events\Events_800aed4b-d1be-4efb-80b0-965280dff020.par
+#BlueLink0 Events`Reset Integral #1` PID Control` , Events`Events_800aed4b-d1be-4efb-80b0-965280dff020
+
+SET_EVENT_ID 0 ! reset to default
+
+LOG_ENTRY Used Dataset: Events; { PID Control } Reset integral at T = 4
+#Library : Events
+#DataSet : Reset integral at T = 4
+#Category: PID Control
+#FileID  : Events_b5846d43-5d85-42af-a01f-4b2a69305edc
+#Created : 06-05-2023 09:42:58
+#Modified: 06-05-2023 10:01:09
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

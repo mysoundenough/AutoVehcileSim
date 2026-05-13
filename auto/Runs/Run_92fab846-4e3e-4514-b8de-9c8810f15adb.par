@@ -1,0 +1,96 @@
+PARSFILE
+#FullDataName CarSim Run Control`Unreal Engine Live Animation`External Control, Wrappers
+#VEHICLECODE Ind_Ind
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_92fab846-4e3e-4514-b8de-9c8810f15adb
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Models\Simulink\Simlink_746ce48b-b73b-44ef-948d-ce30e3e762ac.par
+#BlueLink12 Models: Simulink`Soft RT VS Connect (port 4380)` Live Video` , Models`Simlink_746ce48b-b73b-44ef-948d-ce30e3e762ac
+
+PARSFILE Animator\Cameras\Camera_ecdefc4d-7cad-4145-8e71-fe30ae738fd5.par
+#BlueLink0 Animator: Camera Setup`254 Azm, 8 El, 15 m, No Yaw` Vehicle Reference` , Animator camera`Camera_ecdefc4d-7cad-4145-8e71-fe30ae738fd5
+
+#CheckBox0 1    
+#CheckBox1 0    
+#CheckBox2 1    
+#CheckBox3 0    
+#CheckBox4 0    
+#CheckBox5 1    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox8 1    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+#CheckBox12 0    
+
+#RingCtrl0 4
+#RingCtrl1 1
+#RingCtrl2 -1
+#RingCtrl3 0
+#RingCtrl6 0
+#RingCtrl7 -1
+*RUN_COLOR 0.8 0 0
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Vehicles\Assembly\Vehicle_4c56d437-56bf-48a1-b545-6f016e2bae89.par
+#BlueLink2 Vehicle: Assembly`D-Class, Sedan` D-Class` , Math Model`Vehicle_4c56d437-56bf-48a1-b545-6f016e2bae89
+
+PARSFILE Procedures\Proc_e55140e2-b93a-449d-be41-03a88085c960.par
+#BlueLink28 Procedures`UE Demo Scene Loop` ADAS and Active Safety` , Procedure`Proc_e55140e2-b93a-449d-be41-03a88085c960
+
+OPT_STOP -1
+OPT_DIRECTION 1
+TSTOP -1
+*TSTOP 75.525
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Animator\Vehicles\AniVeh_4ce91de0-b4f4-4075-a4a9-d4fc5b973de3.png
+WRITE_SENSOR_DETECT
+Title Unreal Engine Live Animation <External Control, Wrappers>
+CATEGORY External Control, Wrappers 
+DATASET_TITLE Unreal Engine Live Animation
+#MiscYellow0
+VSC_VEHICLE_NAME USI Car 0
+OPT_BUFFER_WRITE 1
+NSAMP_BUFFER 5000
+#ENDMYellow
+
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#This example is for use with the VehicleSim Dynamics plugin for Unreal Engine, or VS Visualizer Pro. It will not work as configured with VS Visualizer (vs_sf could be swapped out for vs_sfv "Live Video" block in the Simulink model to use VSV).
+#
+#The tutorial for this dataset can be found on the Help menu: Help -> Technical Memos -> Unreal Engine: Live Animation
+#
+#To use this Run with VS Visualizer Pro, ensure that VSV Pro is enabled for Live Animation and set "Number of live animators" to 1, then click "Send to Simulink".
+#
+#To use this Run with Unreal Engine and the VehicleSim Dynamics plugin for Unreal Engine, visit the Unreal page in the User section of our website where the plugin, documentation, tutorials, and examples are available for download: www.carsim.com
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { External Control, Wrappers } Unreal Engine Live Animation
+#Library : CarSim Run Control
+#DataSet : Unreal Engine Live Animation
+#Category: External Control, Wrappers
+#FileID  : Run_92fab846-4e3e-4514-b8de-9c8810f15adb
+#Created : 06-01-2022 09:28:08
+#Modified: 06-12-2023 09:30:46
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Run
+
+END

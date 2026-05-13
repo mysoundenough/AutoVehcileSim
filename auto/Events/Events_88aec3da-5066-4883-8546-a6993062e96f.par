@@ -1,0 +1,47 @@
+PARSFILE
+#FullDataName Events`CCR Cut-In B. Monitor Speed ACC`Euro NCAP ACC Testing
+#CheckBox1 1    
+*CLEAR
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 >=
+#RingCtrl1 ZERO ~=
+#RingCtrl10 2
+#RingCtrl11 4
+RESET_EVENTS
+*NAME1 detectOnSpeedMatch
+*NAME2 Vxz_Fwd
+*VALUE1 1
+*VALUE2 Contact
+*VALUE3 Contact
+#BlueLink10 ` , Miscellaneous` , Miscellaneous` , Miscellaneous`
+
+MAKE_EVENT detectOnSpeedMatch >= 1 ; Events\Events_dd9d90fc-57eb-4a77-ae81-4a438458dff1.par
+#BlueLink0 Events`CCR Cut-In C1. Monitor Stop Speed` Euro NCAP ACC Testing` , Events`Events_dd9d90fc-57eb-4a77-ae81-4a438458dff1
+
+DEFINE_EVENT Contact ; Events\Events_7edc2f78-3066-4d8c-90fe-2b2f79a46128.par
+#BlueLink1 Events`CCRb C2: Contact Occured, Add Score` Euro NCAP ACC Testing` , Events`Events_7edc2f78-3066-4d8c-90fe-2b2f79a46128
+
+SET_EVENT_ID 0 ! reset to default
+
+#EMBEDDED_NOTES
+#Assure detection of the object is active and relative speed values between the vehicle and the object are being
+#
+#If contact has occured and the score, and end the run
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Events; { Euro NCAP ACC Testing } CCR Cut-In B. Monitor Speed ACC
+#Library : Events
+#DataSet : CCR Cut-In B. Monitor Speed ACC
+#Category: Euro NCAP ACC Testing
+#FileID  : Events_88aec3da-5066-4883-8546-a6993062e96f
+#Created : 05-20-2021 18:39:48
+#Modified: 06-10-2021 16:25:55
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

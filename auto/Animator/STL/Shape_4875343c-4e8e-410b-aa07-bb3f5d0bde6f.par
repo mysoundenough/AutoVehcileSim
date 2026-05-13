@@ -1,0 +1,42 @@
+PARSFILE
+#FullDataName Animator: Shape File Link`Torque Tube Bell Housing`Common Vehicle Assets
+#MiscYellow3
+add_obj Animator\3D_Shape_Files\Common_Vehicle_Assets\Transmissions\torque_tube\bell_housing.obj
+#ENDMYellow
+
+SET_COLOR 0.6 0.6 0.6
+SET_ANGLE_Z 90
+SET_ANGLE_Y 0
+SET_ANGLE_X 0
+SET_OFFSET_X -0.295
+SET_OFFSET_Y 0
+SET_OFFSET_Z 0
+*SPECULAR 0.5
+*IMAGE_FIT_MODE 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 0.5 0.5 0.5
+vsv_enable_shadows_recursive
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_af7c7c91-f09a-4493-9104-5b2725e3cf03.par
+#BlueLink2 Animator: Camera Setup`Isometric View - Small Objects` Shape Preview` , Video Camera`Camera_af7c7c91-f09a-4493-9104-5b2725e3cf03
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_4875343c-4e8e-410b-aa07-bb3f5d0bde6f.png
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Common Vehicle Assets } Torque Tube Bell Housing
+#Library : Animator: Shape File Link
+#DataSet : Torque Tube Bell Housing
+#Category: Common Vehicle Assets
+#FileID  : Shape_4875343c-4e8e-410b-aa07-bb3f5d0bde6f
+#Modified: 05-28-2021 15:03:07
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape File
+
+END

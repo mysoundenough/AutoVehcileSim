@@ -1,0 +1,40 @@
+PARSFILE
+#FullDataName I/O Channels: Import`Restrained Vehicle Forces`Parallel Solvers
+#RingCtrl0 0
+#RingCtrl1 1
+*README_FILE Results\Run_e8d254bc-1169-4bc1-b964-53a785de3a21\Run_imp_tab.txt
+
+#MiscYellow0
+IMP_FX_RP_5 Add 0.0! 0
+IMP_FX_RP_6 Add 0.0! 0
+IMP_FX_RP_7 Add 0.0! 0
+IMP_FX_RP_8 Add 0.0! 0
+IMP_FY_RP_5 Add 0.0! 0
+IMP_FY_RP_6 Add 0.0! 0
+IMP_FY_RP_7 Add 0.0! 0
+IMP_FY_RP_8 Add 0.0! 0
+IMP_FZ_RP_5 Add 0.0! 0
+IMP_FZ_RP_6 Add 0.0! 0
+IMP_FZ_RP_7 Add 0.0! 0
+IMP_FZ_RP_8 Add 0.0! 0
+IMP_FZ_RP_1 Add 0.0! 0
+IMP_FZ_RP_2 Add 0.0! 0
+IMP_FZ_RP_3 Add 0.0! 0
+IMP_FZ_RP_4 Add 0.0! 0
+#ENDMYellow
+
+#BlueLink0 CarSim Run Control`Pickup Hauler - Car 1: DLC` Multiple Vehicles, Parallel Solvers` , example run`Run_e8d254bc-1169-4bc1-b964-53a785de3a21
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Import; { Parallel Solvers } Restrained Vehicle Forces
+#Library : I/O Channels: Import
+#DataSet : Restrained Vehicle Forces
+#Category: Parallel Solvers
+#FileID  : Import_012cd409-820d-4620-9406-0f28a4f4d21f
+#Created : 01-11-2023 13:39:04
+#Modified: 01-24-2023 10:41:30
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Import Channels
+
+END

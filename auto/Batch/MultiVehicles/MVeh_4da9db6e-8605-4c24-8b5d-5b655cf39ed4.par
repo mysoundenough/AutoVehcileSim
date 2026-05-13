@@ -1,0 +1,37 @@
+PARSFILE
+#FullDataName Parallel VS Math Models`Pickup Hauling Car: Bounce Test`Vehicle Hauling
+PARSFILE Runs\Run_a0d35b85-ad46-4031-bf43-ecaa7727f747.par
+#BlueLink0 CarSim Run Control`Pickup Hauler - Car 1: Bounce Test` Multiple Vehicles, Parallel Solvers` , Vehicle 1:`Run_a0d35b85-ad46-4031-bf43-ecaa7727f747
+
+PARSFILE Runs\Run_7369483b-ea32-49d2-96eb-3a7e70897bd5.par
+#BlueLink1 CarSim Run Control`Hauled Car - Car 2: Bounce Test` Multiple Vehicles, Parallel Solvers` , Vehicle 2:`Run_7369483b-ea32-49d2-96eb-3a7e70897bd5
+
+#RingCtrl0 0
+*RUN_PLATFORM 0
+#RingCtrl1 2
+*SHOW_LINK 2
+
+#EMBEDDED_NOTES
+#To run this example in Windows:
+#1) click Open Model or Generate FMU
+#2) in Simulink, click the run button
+#3) review results from the last vehicle
+#
+#V: Video
+#P: Plot
+#
+#Each vehicle in the Vehicle Hauler configuration uses a shared simulink model that leverages parallel solvers to simulate the vehicles across multiple CarSim Runs.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Parallel VS Math Models; { Vehicle Hauling } Pickup Hauling Car: Bounce Test
+#Library : Parallel VS Math Models
+#DataSet : Pickup Hauling Car: Bounce Test
+#Category: Vehicle Hauling
+#FileID  : MVeh_4da9db6e-8605-4c24-8b5d-5b655cf39ed4
+#Created : 01-12-2023 09:18:15
+#Modified: 06-20-2023 11:00:15
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode mVeh
+
+END

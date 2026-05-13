@@ -1,0 +1,46 @@
+PARSFILE
+#FullDataName Plot: Setup`Y movement vs Jounce - Front`K&C Test Results
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par
+#BlueLink0 Plot: Format`Default Plot Settings` ` , Plot format`PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862
+
+#CheckBox1 0    
+
+
+#MiscYellow1
+define_output Y_In_Rel_L1 = -YRel_L1+l_track(1)/2;mm; Y inward movement from design
+define_output Y_In_Rel_R1 = YRel_R1+l_track(1)/2;mm; Y inward movement from design
+#ENDMYellow
+
+#MiscYellow0
+PLOTCHANNELS Y_In_Rel_L1, Jnc_L1
+PLOTCHANNELS Y_In_Rel_R1, Jnc_R1
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Y movement vs Jounce - Front
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { K&C Test Results } Y movement vs Jounce - Front
+#Library : Plot: Setup
+#DataSet : Y movement vs Jounce - Front
+#Category: K&C Test Results
+#FileID  : Plot_d0c05913-1965-47d7-935c-9c43f863336c
+#Modified: 05-28-2021 14:59:41
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Plot Setup
+
+END

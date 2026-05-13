@@ -1,0 +1,109 @@
+PARSFILE
+#FullDataName CarSim Run Control`Electric AWD: Twin Clutch Control`Simulink Models
+#VEHICLECODE Ind_Ind
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_4629e7c3-8f62-467a-9700-e526ecca1983
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Models\Simulink\Simlink_0709db82-944b-47a9-b88e-2e0ce37340a4.par
+#BlueLink12 Models: Simulink`Differential Controller - EV` External Powertrain` , Models`Simlink_0709db82-944b-47a9-b88e-2e0ce37340a4
+
+PARSFILE Animator\Cameras\Camera_32ea6678-907c-4a10-af4b-b9431e3d2f8a.par
+#BlueLink0 Animator: Camera Setup`13 Azm, 9 El, 18 m, No Yaw` Vehicle Reference` , Animator camera`Camera_32ea6678-907c-4a10-af4b-b9431e3d2f8a
+
+#CheckBox0 1    
+#CheckBox1 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 1    
+#CheckBox5 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox8 0    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+#CheckBox12 0    
+
+#RingCtrl0 4
+#RingCtrl1 1
+#RingCtrl2 3
+#RingCtrl3 0
+#RingCtrl6 5
+#RingCtrl7 -1
+*RUN_COLOR 0 0.6 1
+SET_RUN_COLOR 0 0.6 1
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Vehicles\Assembly\Vehicle_052339eb-7b29-4b6a-832c-82f572e3efea.par
+#BlueLink2 Vehicle: Assembly`B-Class, Hbk: EV AWD, Twin Clutch Ctrl.` B-Class` , Math Model`Vehicle_052339eb-7b29-4b6a-832c-82f572e3efea
+
+PARSFILE Procedures\Proc_96be71da-7554-4c77-ae09-58e2596d581e.par
+#BlueLink28 Procedures`Hybrid/Electric: Accel then Regen. Brk.` Accel. and Brake Testing` , Procedure`Proc_96be71da-7554-4c77-ae09-58e2596d581e
+
+*TSTOP 30
+*TSTART 0
+*SSTART 0
+PARSFILE Plot\Setup\Plot_fee9314f-6343-4691-83cc-3990f5bd08bd.par
+#BlueLink15 Plot: Setup`Twin Clutch Control Input` Controls: Chassis and Powertrain` , Plot`Plot_fee9314f-6343-4691-83cc-3990f5bd08bd
+
+PARSFILE Plot\Setup\Plot_9a7127aa-7b01-4699-9997-7e34388e70d6.par
+#BlueLink16 Plot: Setup`Twin Clutch Torque` Powertrain` , Plot`Plot_9a7127aa-7b01-4699-9997-7e34388e70d6
+
+PARSFILE Plot\Setup\Plot_2109be29-240d-4c11-b60e-823b8aa93f2b.par
+#BlueLink17 Plot: Setup`Wheel Drive Torques - Front` Powertrain` , Plot`Plot_2109be29-240d-4c11-b60e-823b8aa93f2b
+
+PARSFILE Plot\Setup\Plot_50f46a40-9207-462f-95eb-1f0a9f7660f8.par
+#BlueLink18 Plot: Setup`Wheel Drive Torques - Rear` Powertrain` , Plot`Plot_50f46a40-9207-462f-95eb-1f0a9f7660f8
+
+PARSFILE Plot\Setup\Plot_dc3bd4cb-2a9b-4dbc-8126-38a398aefd1b.par
+#BlueLink19 Plot: Setup`Steering Wheel Angle` Steering` , Plot`Plot_dc3bd4cb-2a9b-4dbc-8126-38a398aefd1b
+
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Animator\Vehicles\AniVeh_744dc54f-cca9-4d31-8bee-3535b6477b13.png
+WRITE_SENSOR_DETECT
+Title Electric AWD: Twin Clutch Control <Simulink Models>
+CATEGORY Simulink Models 
+DATASET_TITLE Electric AWD: Twin Clutch Control
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#This example demonstrates a Simulink-controlled twin clutch front and rear differential with electrified powertrain. (Libraries > Models > Models: Simulink)
+#
+#CarSim support for electric powertrains includes an electric motor, electric powertrain assembly, and power management control.
+#
+#The vehicle in this example is AWD in which an electric motor is equipped on each of the front and rear drive axles.
+#
+#Browse to the Vehicle: Assembly screen and click on the powertrain blue link to see the settings for the externally controlled twin clutch front and rear differential.
+#
+#Click on the blue link "Differential Controller - EV" to see how the Simulink model is connected to CarSim, and how to define the import and export variables that allow CarSim and Simulink to communicate.
+#
+#The Procedure has open-loop controls for throttle and braking.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { Simulink Models } Electric AWD: Twin Clutch Control
+#Library : CarSim Run Control
+#DataSet : Electric AWD: Twin Clutch Control
+#Category: Simulink Models
+#FileID  : Run_4629e7c3-8f62-467a-9700-e526ecca1983
+#Created : 07-01-2022 15:03:05
+#Modified: 01-24-2023 10:31:22
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Run
+
+END

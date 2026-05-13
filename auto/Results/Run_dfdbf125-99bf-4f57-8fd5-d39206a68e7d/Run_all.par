@@ -1,0 +1,521 @@
+PARSFILE
+
+! EXPANDED_PARSFILE for Math models and animator
+
+! This is an expansion of the Parsfile: "Runs\Run_dfdbf125-99bf-4f57-8fd5-d39206a68e7d.par"
+! It contains the contents of that file plus the contents of any files linked
+! with the "PARSFILE" keyword.
+
+! File created by CarSim 2024.1
+
+PRODUCT_NAME CarSim
+MODEL_LAYOUT tire
+
+tstep 0.0005
+iprint 50
+
+ENTER_PARSFILE Runs\Run_dfdbf125-99bf-4f57-8fd5-d39206a68e7d.par
+#FullDataName CarSim Run Control`Tire Tester: Sweep Slip Angle`Terramechanics
+*VEHICLE_CODE tire
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 1
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+ANI_T_STAMP
+TIME_CHANNEL T_STAMP
+RT_WINDOW_CLOSE on
+LIVE_SERVER_MAX_CONNECTIONS 1
+ENTER_PARSFILE Tires\External\TireExt_cddac526-315a-4b0f-b5bc-9a3319d239f4.par
+#FullDataName Tire (External)`23 Inch Tire, Soft Soil`VS TMRW
+Y_LENGTH 175
+OPT_TIRE_MODEL 10
+X_LENGTH 292
+Z_LENGTH 292
+ENTER_PARSFILE Animator\STL_Groups\ShpGrp_83c2aa51-8851-4837-aa3f-9447d8973e81.par
+#FullDataName Animator: Shape Assembly`Baja SAE Left Side Tire`Mech. Sim. FSAE & Baja: Shape Assembly
+ENTER_PARSFILE Animator\STL\Shape_2587c54a-8e52-4945-bbe3-a9a00219831a.par
+#FullDataName Animator: Shape File Link`Baja SAE: Left Side Tire`Mech. Sim. Baja: Shape Files
+add_obj Animator\3D_Shape_Files_User\SAE\Mini Baja\tire.obj
+SET_COLOR 1 1 1
+set_lighting on
+set_fogging on
+vsv_enable_shadows_recursive
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Mech. Sim. Baja: Shape Files } Baja SAE: Left Side Tire
+EXIT_PARSFILE Animator\STL\Shape_2587c54a-8e52-4945-bbe3-a9a00219831a.par
+
+x_ref_length 265
+y_ref_length 178
+z_ref_length 265
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Mech. Sim. FSAE & Baja: Shape Assembly } Baja SAE Left Side Tire
+EXIT_PARSFILE Animator\STL_Groups\ShpGrp_83c2aa51-8851-4837-aa3f-9447d8973e81.par
+
+WRITE_WHEEL_OFFSET
+SET_OFFSET_Y 0
+KY_TIRE 30
+IT 0
+M_TIRE 0
+IT_XXZZ 0
+EXTERNAL_TIRE_MODULE_DLL tmrw
+STI_RT_LIB vs_sti_tmrw_lnx32.so
+INSTALL_EXTERNAL_TIRE_API
+ENTER_PARSFILE Generic\tables\GenTab_cbe0c257-e823-40cb-a11a-0c5476644190.par
+#FullDataName Generic Table`23 Inch Tire, Soft Soil`VS TMRW
+STI_TYPARR_TABLE STEP
+0, 292
+1, 175
+2, 10
+3, 0.5
+4, 0.8
+5, 16.5
+6, 911
+7, 3.71
+8, 25.6
+9, 2.1
+10, 15.7
+11, 0.43
+12, 0.32
+13, -1
+14, 0
+15, 0
+16, 0.1178
+17, 0.1672
+18, 0.0348
+19, 0
+20, 0
+21, 0.05
+22, 1
+23, 1
+24, 1
+25, 1
+26, 1
+27, 5
+28, 5
+29, 0
+ENDTABLE
+LOG_ENTRY Used Dataset: Generic Table; { VS TMRW } 23 Inch Tire, Soft Soil
+EXIT_PARSFILE Generic\tables\GenTab_cbe0c257-e823-40cb-a11a-0c5476644190.par
+
+USER_STI_INIT
+LOG_ENTRY Used Dataset: Tire (External); { VS TMRW } 23 Inch Tire, Soft Soil
+EXIT_PARSFILE Tires\External\TireExt_cddac526-315a-4b0f-b5bc-9a3319d239f4.par
+
+ENTER_PARSFILE Tire_Tester\TestTire_90313cac-40bf-4946-ba33-59e23784f1aa.par
+#FullDataName Tire Tester`Sweep Slip Angle (VS TMRW)`VS TMRW
+MUX_TEST 0
+MUY_TEST 0
+SPEED_TEST 1
+RR_SURF 0
+iunit 1
+OPT_TEST_MODE 1
+ALPHA_LOWER -25
+ALPHA_UPPER 25
+ALPHA_STEP 0.01
+FZ_TEST 900
+KAPPA_TEST 0
+GAMMA_TEST 0
+ENTER_PARSFILE Plot\Setup\Plot_3c5f8bac-e2f6-4ebc-ab48-a1828a269fd4.par
+#FullDataName Plot: Setup`Slip Angles: Instant`Tire Kinematics
+ADD_ENTITY Plot
+ENTER_PARSFILE Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par
+#FullDataName Plot: Format`Default Plot Settings`
+LEGENDPERCENT 60
+TITLEFONTSIZE 10
+TITLELOCATION -1
+AXES Axes
+FRAME Frame
+GRID CourseGrid
+LEGENDDATA_1 RigidBodyName
+TITLEFONTSTYLE Regular
+TITLEFONTNAME Arial
+LEGENDFONTNAME Arial
+LEGENDFONTSIZE 10
+LEGENDFONTSTYLE Regular
+LABELFONTNAME Arial
+LABELFONTSIZE 10
+LABELFONTSTYLE Regular
+TICLABELFONTNAME Arial
+TICLABELFONTSIZE 10
+TICLABELFONTSTYLE Regular
+SYMBOLS 10,1,2,3,4,5,6,7,8,9,10,4,1,2,3,4,5,6,7,8
+LINESTYL 1,1,1,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1
+COLORS 8,2,3,11,4,0,6,14,8,7,10,8,12,13,14,6,1,2,0,4
+LOG_ENTRY Used Dataset: Plot: Format; Default Plot Settings
+EXIT_PARSFILE Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par
+
+PLOTCHANNELS Alpha_L1, Time
+WRT_ALPHA_L1
+PLOTCHANNELS Alpha_R1, Time
+WRT_ALPHA_R1
+PLOTCHANNELS Alpha_L2, Time
+WRT_ALPHA_L2
+PLOTCHANNELS Alpha_R2, Time
+WRT_ALPHA_R2
+YMaxmin Auto
+XMaxmin Auto
+PTITLE Slip Angles: Instant
+END_ENTITY Plot
+LOG_ENTRY Used Dataset: Plot: Setup; { Tire Kinematics } Slip Angles: Instant
+EXIT_PARSFILE Plot\Setup\Plot_3c5f8bac-e2f6-4ebc-ab48-a1828a269fd4.par
+
+ENTER_PARSFILE Plot\Setup\Plot_5ead09bd-2b8f-470e-af04-1a232741844f.par
+#FullDataName Plot: Setup`Fy vs. Alpha`Tire Tester
+ADD_ENTITY Plot
+ENTER_PARSFILE Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par
+#FullDataName Plot: Format`Default Plot Settings`
+LEGENDPERCENT 60
+TITLEFONTSIZE 10
+TITLELOCATION -1
+AXES Axes
+FRAME Frame
+GRID CourseGrid
+LEGENDDATA_1 RigidBodyName
+TITLEFONTSTYLE Regular
+TITLEFONTNAME Arial
+LEGENDFONTNAME Arial
+LEGENDFONTSIZE 10
+LEGENDFONTSTYLE Regular
+LABELFONTNAME Arial
+LABELFONTSIZE 10
+LABELFONTSTYLE Regular
+TICLABELFONTNAME Arial
+TICLABELFONTSIZE 10
+TICLABELFONTSTYLE Regular
+SYMBOLS 10,1,2,3,4,5,6,7,8,9,10,4,1,2,3,4,5,6,7,8
+LINESTYL 1,1,1,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1
+COLORS 8,2,3,11,4,0,6,14,8,7,10,8,12,13,14,6,1,2,0,4
+LOG_ENTRY Used Dataset: Plot: Format; Default Plot Settings
+EXIT_PARSFILE Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par
+
+PLOTCHANNELS Fy_L1, Alpha_L1
+WRT_FY_L1
+WRT_ALPHA_L1
+YMaxmin Auto
+XMaxmin Auto
+PTITLE Fy vs. Alpha
+END_ENTITY Plot
+LOG_ENTRY Used Dataset: Plot: Setup; { Tire Tester } Fy vs. Alpha
+EXIT_PARSFILE Plot\Setup\Plot_5ead09bd-2b8f-470e-af04-1a232741844f.par
+
+ENTER_PARSFILE Plot\Setup\Plot_78fa5051-de39-41b2-9ad6-a691c6d178f9.par
+#FullDataName Plot: Setup`Mz vs. Alpha`Tire Tester
+ADD_ENTITY Plot
+ENTER_PARSFILE Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par
+#FullDataName Plot: Format`Default Plot Settings`
+LEGENDPERCENT 60
+TITLEFONTSIZE 10
+TITLELOCATION -1
+AXES Axes
+FRAME Frame
+GRID CourseGrid
+LEGENDDATA_1 RigidBodyName
+TITLEFONTSTYLE Regular
+TITLEFONTNAME Arial
+LEGENDFONTNAME Arial
+LEGENDFONTSIZE 10
+LEGENDFONTSTYLE Regular
+LABELFONTNAME Arial
+LABELFONTSIZE 10
+LABELFONTSTYLE Regular
+TICLABELFONTNAME Arial
+TICLABELFONTSIZE 10
+TICLABELFONTSTYLE Regular
+SYMBOLS 10,1,2,3,4,5,6,7,8,9,10,4,1,2,3,4,5,6,7,8
+LINESTYL 1,1,1,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1
+COLORS 8,2,3,11,4,0,6,14,8,7,10,8,12,13,14,6,1,2,0,4
+LOG_ENTRY Used Dataset: Plot: Format; Default Plot Settings
+EXIT_PARSFILE Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par
+
+PLOTCHANNELS Mz_L1, Alpha_L1
+WRT_MZ_L1
+WRT_ALPHA_L1
+YMaxmin Auto
+XMaxmin Auto
+PTITLE Mz vs. Alpha
+END_ENTITY Plot
+LOG_ENTRY Used Dataset: Plot: Setup; { Tire Tester } Mz vs. Alpha
+EXIT_PARSFILE Plot\Setup\Plot_78fa5051-de39-41b2-9ad6-a691c6d178f9.par
+
+ENTER_PARSFILE Plot\Setup\Plot_1bec74f4-8fd2-4cb3-9a6c-64f17192d829.par
+#FullDataName Plot: Setup`Fx Components (VS TMRW)`VS TMRW
+ADD_ENTITY Plot
+ENTER_PARSFILE Plot\Format\PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d.par
+#FullDataName Plot: Format`Lines without Symbols`
+LEGENDPERCENT 60
+TITLEFONTSIZE 10
+TITLELOCATION -1
+AXES Axes
+FRAME Frame
+GRID CourseGrid
+LEGENDDATA_1 RigidBodyName
+JUNK AutoLocation
+TITLEFONTSTYLE Regular
+TITLEFONTNAME Arial
+LEGENDFONTNAME Arial
+LEGENDFONTSIZE 10
+LEGENDFONTSTYLE Regular
+LABELFONTNAME Arial
+LABELFONTSIZE 10
+LABELFONTSTYLE Regular
+TICLABELFONTNAME Arial
+TICLABELFONTSIZE 10
+TICLABELFONTSTYLE Regular
+SYMBOLS 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+LINESTYL 1,1,1,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1
+COLORS 8,2,3,7,4,0,6,14,8,9,10,11,12,13,14,6,1,2,0,4
+LOG_ENTRY Used Dataset: Plot: Format; Lines without Symbols
+EXIT_PARSFILE Plot\Format\PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d.par
+
+PLOTCHANNELS FxWSI_L1
+WRT_FXWSI_L1
+PLOTCHANNELS FxBDL_L1
+WRT_FXBDL_L1
+PLOTCHANNELS FxBDR_L1
+WRT_FXBDR_L1
+PLOTCHANNELS FxAux_L1
+WRT_FXAUX_L1
+YMaxmin Auto
+XMaxmin Auto
+PTITLE Fx Components (VS TMRW)
+END_ENTITY Plot
+LOG_ENTRY Used Dataset: Plot: Setup; { VS TMRW } Fx Components (VS TMRW)
+EXIT_PARSFILE Plot\Setup\Plot_1bec74f4-8fd2-4cb3-9a6c-64f17192d829.par
+
+ENTER_PARSFILE Plot\Setup\Plot_f3545c87-18a8-4fb8-af6a-5bbbc72357dc.par
+#FullDataName Plot: Setup`Fy Components (VS TMRW)`VS TMRW
+ADD_ENTITY Plot
+ENTER_PARSFILE Plot\Format\PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d.par
+#FullDataName Plot: Format`Lines without Symbols`
+LEGENDPERCENT 60
+TITLEFONTSIZE 10
+TITLELOCATION -1
+AXES Axes
+FRAME Frame
+GRID CourseGrid
+LEGENDDATA_1 RigidBodyName
+JUNK AutoLocation
+TITLEFONTSTYLE Regular
+TITLEFONTNAME Arial
+LEGENDFONTNAME Arial
+LEGENDFONTSIZE 10
+LEGENDFONTSTYLE Regular
+LABELFONTNAME Arial
+LABELFONTSIZE 10
+LABELFONTSTYLE Regular
+TICLABELFONTNAME Arial
+TICLABELFONTSIZE 10
+TICLABELFONTSTYLE Regular
+SYMBOLS 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+LINESTYL 1,1,1,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1
+COLORS 8,2,3,7,4,0,6,14,8,9,10,11,12,13,14,6,1,2,0,4
+LOG_ENTRY Used Dataset: Plot: Format; Lines without Symbols
+EXIT_PARSFILE Plot\Format\PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d.par
+
+PLOTCHANNELS FyWSI_L1
+WRT_FYWSI_L1
+PLOTCHANNELS FyBDL_L1
+WRT_FYBDL_L1
+PLOTCHANNELS FyBDR_L1
+WRT_FYBDR_L1
+PLOTCHANNELS FyAux_L1
+WRT_FYAUX_L1
+YMaxmin Auto
+XMaxmin Auto
+PTITLE Fy Components (VS TMRW)
+END_ENTITY Plot
+LOG_ENTRY Used Dataset: Plot: Setup; { VS TMRW } Fy Components (VS TMRW)
+EXIT_PARSFILE Plot\Setup\Plot_f3545c87-18a8-4fb8-af6a-5bbbc72357dc.par
+
+ENTER_PARSFILE Plot\Setup\Plot_f496acfc-5364-4c14-ab7f-5cacd7f577bf.par
+#FullDataName Plot: Setup`Fz Components (VS TMRW)`VS TMRW
+ADD_ENTITY Plot
+ENTER_PARSFILE Plot\Format\PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d.par
+#FullDataName Plot: Format`Lines without Symbols`
+LEGENDPERCENT 60
+TITLEFONTSIZE 10
+TITLELOCATION -1
+AXES Axes
+FRAME Frame
+GRID CourseGrid
+LEGENDDATA_1 RigidBodyName
+JUNK AutoLocation
+TITLEFONTSTYLE Regular
+TITLEFONTNAME Arial
+LEGENDFONTNAME Arial
+LEGENDFONTSIZE 10
+LEGENDFONTSTYLE Regular
+LABELFONTNAME Arial
+LABELFONTSIZE 10
+LABELFONTSTYLE Regular
+TICLABELFONTNAME Arial
+TICLABELFONTSIZE 10
+TICLABELFONTSTYLE Regular
+SYMBOLS 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+LINESTYL 1,1,1,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1
+COLORS 8,2,3,7,4,0,6,14,8,9,10,11,12,13,14,6,1,2,0,4
+LOG_ENTRY Used Dataset: Plot: Format; Lines without Symbols
+EXIT_PARSFILE Plot\Format\PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d.par
+
+PLOTCHANNELS FzWSI_L1
+WRT_FZWSI_L1
+PLOTCHANNELS FzBDL_L1
+WRT_FZBDL_L1
+PLOTCHANNELS FzBDR_L1
+WRT_FZBDR_L1
+PLOTCHANNELS FzAux_L1
+WRT_FZAUX_L1
+YMaxmin Auto
+XMaxmin Auto
+PTITLE Fz Components (VS TMRW)
+END_ENTITY Plot
+LOG_ENTRY Used Dataset: Plot: Setup; { VS TMRW } Fz Components (VS TMRW)
+EXIT_PARSFILE Plot\Setup\Plot_f496acfc-5364-4c14-ab7f-5cacd7f577bf.par
+
+ENTER_PARSFILE Plot\Setup\Plot_5b4ffb03-88f9-486e-bd2d-d1117595d831.par
+#FullDataName Plot: Setup`Mx Components (VS TMRW)`VS TMRW
+ADD_ENTITY Plot
+ENTER_PARSFILE Plot\Format\PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d.par
+#FullDataName Plot: Format`Lines without Symbols`
+LEGENDPERCENT 60
+TITLEFONTSIZE 10
+TITLELOCATION -1
+AXES Axes
+FRAME Frame
+GRID CourseGrid
+LEGENDDATA_1 RigidBodyName
+JUNK AutoLocation
+TITLEFONTSTYLE Regular
+TITLEFONTNAME Arial
+LEGENDFONTNAME Arial
+LEGENDFONTSIZE 10
+LEGENDFONTSTYLE Regular
+LABELFONTNAME Arial
+LABELFONTSIZE 10
+LABELFONTSTYLE Regular
+TICLABELFONTNAME Arial
+TICLABELFONTSIZE 10
+TICLABELFONTSTYLE Regular
+SYMBOLS 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+LINESTYL 1,1,1,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1
+COLORS 8,2,3,7,4,0,6,14,8,9,10,11,12,13,14,6,1,2,0,4
+LOG_ENTRY Used Dataset: Plot: Format; Lines without Symbols
+EXIT_PARSFILE Plot\Format\PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d.par
+
+PLOTCHANNELS MxWSI_L1
+WRT_MXWSI_L1
+PLOTCHANNELS MxBDL_L1
+WRT_MXBDL_L1
+PLOTCHANNELS MxBDR_L1
+WRT_MXBDR_L1
+PLOTCHANNELS MxAux_L1
+WRT_MXAUX_L1
+YMaxmin Auto
+XMaxmin Auto
+PTITLE Mx Components (VS TMRW)
+END_ENTITY Plot
+LOG_ENTRY Used Dataset: Plot: Setup; { VS TMRW } Mx Components (VS TMRW)
+EXIT_PARSFILE Plot\Setup\Plot_5b4ffb03-88f9-486e-bd2d-d1117595d831.par
+
+ENTER_PARSFILE Plot\Setup\Plot_665250a6-b092-4ca2-a96b-ac3f15190f8a.par
+#FullDataName Plot: Setup`My Components (VS TMRW)`VS TMRW
+ADD_ENTITY Plot
+ENTER_PARSFILE Plot\Format\PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d.par
+#FullDataName Plot: Format`Lines without Symbols`
+LEGENDPERCENT 60
+TITLEFONTSIZE 10
+TITLELOCATION -1
+AXES Axes
+FRAME Frame
+GRID CourseGrid
+LEGENDDATA_1 RigidBodyName
+JUNK AutoLocation
+TITLEFONTSTYLE Regular
+TITLEFONTNAME Arial
+LEGENDFONTNAME Arial
+LEGENDFONTSIZE 10
+LEGENDFONTSTYLE Regular
+LABELFONTNAME Arial
+LABELFONTSIZE 10
+LABELFONTSTYLE Regular
+TICLABELFONTNAME Arial
+TICLABELFONTSIZE 10
+TICLABELFONTSTYLE Regular
+SYMBOLS 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+LINESTYL 1,1,1,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1
+COLORS 8,2,3,7,4,0,6,14,8,9,10,11,12,13,14,6,1,2,0,4
+LOG_ENTRY Used Dataset: Plot: Format; Lines without Symbols
+EXIT_PARSFILE Plot\Format\PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d.par
+
+PLOTCHANNELS MyWSI_L1
+WRT_MYWSI_L1
+PLOTCHANNELS MyBDL_L1
+WRT_MYBDL_L1
+PLOTCHANNELS MyBDR_L1
+WRT_MYBDR_L1
+PLOTCHANNELS MyAux_L1
+WRT_MYAUX_L1
+YMaxmin Auto
+XMaxmin Auto
+PTITLE My Components (VS TMRW)
+END_ENTITY Plot
+LOG_ENTRY Used Dataset: Plot: Setup; { VS TMRW } My Components (VS TMRW)
+EXIT_PARSFILE Plot\Setup\Plot_665250a6-b092-4ca2-a96b-ac3f15190f8a.par
+
+ENTER_PARSFILE Plot\Setup\Plot_2d428d25-7024-4301-9389-a4fb8f68f1e6.par
+#FullDataName Plot: Setup`Mz Components (VS TMRW)`VS TMRW
+ADD_ENTITY Plot
+ENTER_PARSFILE Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par
+#FullDataName Plot: Format`Default Plot Settings`
+LEGENDPERCENT 60
+TITLEFONTSIZE 10
+TITLELOCATION -1
+AXES Axes
+FRAME Frame
+GRID CourseGrid
+LEGENDDATA_1 RigidBodyName
+TITLEFONTSTYLE Regular
+TITLEFONTNAME Arial
+LEGENDFONTNAME Arial
+LEGENDFONTSIZE 10
+LEGENDFONTSTYLE Regular
+LABELFONTNAME Arial
+LABELFONTSIZE 10
+LABELFONTSTYLE Regular
+TICLABELFONTNAME Arial
+TICLABELFONTSIZE 10
+TICLABELFONTSTYLE Regular
+SYMBOLS 10,1,2,3,4,5,6,7,8,9,10,4,1,2,3,4,5,6,7,8
+LINESTYL 1,1,1,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1
+COLORS 8,2,3,11,4,0,6,14,8,7,10,8,12,13,14,6,1,2,0,4
+LOG_ENTRY Used Dataset: Plot: Format; Default Plot Settings
+EXIT_PARSFILE Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par
+
+PLOTCHANNELS MzWSI_L1
+WRT_MZWSI_L1
+PLOTCHANNELS MzBDL_L1
+WRT_MZBDL_L1
+PLOTCHANNELS MzBDR_L1
+WRT_MZBDR_L1
+PLOTCHANNELS MzAux_L1
+WRT_MZAUX_L1
+YMaxmin Auto
+XMaxmin Auto
+PTITLE Mz Components (VS TMRW)
+END_ENTITY Plot
+LOG_ENTRY Used Dataset: Plot: Setup; { VS TMRW } Mz Components (VS TMRW)
+EXIT_PARSFILE Plot\Setup\Plot_2d428d25-7024-4301-9389-a4fb8f68f1e6.par
+
+LOG_ENTRY Used Dataset: Tire Tester; { VS TMRW } Sweep Slip Angle (VS TMRW)
+EXIT_PARSFILE Tire_Tester\TestTire_90313cac-40bf-4946-ba33-59e23784f1aa.par
+
+WRITE_SENSOR_DETECT
+Title Tire Tester: Sweep Slip Angle <Terramechanics>
+CATEGORY Terramechanics
+DATASET_TITLE Tire Tester: Sweep Slip Angle
+NUM_CACHED_RUNS 1
+LOG_ENTRY Used Dataset: CarSim Run Control; { Terramechanics } Tire Tester: Sweep Slip Angle
+EXIT_PARSFILE Runs\Run_dfdbf125-99bf-4f57-8fd5-d39206a68e7d.par
+
+
+
+END

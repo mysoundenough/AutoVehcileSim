@@ -1,0 +1,44 @@
+PARSFILE
+#FullDataName Plot: Setup`Driver input steer torque vs. steer angle`Steering
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d.par
+#BlueLink0 Plot: Format`Lines without Symbols` ` , Plot format`PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d
+
+#CheckBox1 0    
+
+
+#MiscYellow1
+define_output m_sw_test = -m_sw;
+#ENDMYellow
+
+#MiscYellow0
+PLOTCHANNELS m_sw_test, Steer_SW
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Driver input steer torque vs. steer angle
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Steering } Driver input steer torque vs. steer angle
+#Library : Plot: Setup
+#DataSet : Driver input steer torque vs. steer angle
+#Category: Steering
+#FileID  : Plot_aff91df0-74c6-4ce9-adbb-a60597a39884
+#Modified: 05-28-2021 14:59:43
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Plot Setup
+
+END

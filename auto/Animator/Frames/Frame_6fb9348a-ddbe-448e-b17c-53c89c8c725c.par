@@ -1,0 +1,49 @@
+PARSFILE
+#FullDataName Animator: Reference Frame`Trailer Aero Fx`Aero Forces & Moments
+ADD_REFERENCE_FRAME Frame_6fb9348a-ddbe-448e-b17c-53c89c8c725c
+#RingCtrl0 yaw_pitch_roll
+SET_EULER_ANGLES yaw_pitch_roll
+SET_X_NAME X_S2
+SET_Y_NAME Y_S2
+SET_Z_NAME Z_S2
+SET_ROLL_NAME Roll_E_2
+SET_PITCH_NAME Pitch_2
+SET_YAW_NAME Yaw_2
+SET_OFFSET_VAR_Z 0.05
+SET_FRAME_SCALE_X_NAME FX_AIR_2 / 400
+
+PARSFILE Animator\STL_Groups\ShpGrp_c46513ba-398b-4542-a362-91b6e5cca8c0.par
+#BlueLink0 Animator: Shape Assembly`Fx Double (Tail Origin)` Arrows` , Animator Data`ShpGrp_c46513ba-398b-4542-a362-91b6e5cca8c0
+
+#MiscYellow0
+WRT_FX_AIR_2
+ANI_FX_AIR_2
+#ENDMYellow
+
+WRT_X_S2
+ANI_X_S2
+WRT_Y_S2
+ANI_Y_S2
+WRT_Z_S2
+ANI_Z_S2
+WRT_Roll_E_2
+ANI_Roll_E_2
+WRT_Pitch_2
+ANI_Pitch_2
+WRT_Yaw_2
+ANI_Yaw_2
+WRT_FX_AIR_2 / 400
+ANI_FX_AIR_2 / 400
+
+LOG_ENTRY Used Dataset: Animator: Reference Frame; { Aero Forces & Moments } Trailer Aero Fx
+#Library : Animator: Reference Frame
+#DataSet : Trailer Aero Fx
+#Category: Aero Forces & Moments
+#FileID  : Frame_6fb9348a-ddbe-448e-b17c-53c89c8c725c
+#Created : 10-06-2022 13:39:11
+#Modified: 10-06-2022 13:41:41
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Reference Frame
+
+END

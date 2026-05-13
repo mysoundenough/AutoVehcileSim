@@ -1,0 +1,38 @@
+Run made by VS Tire Tester for CarSim and TruckSim 2024.1 at 14:12 on March 25, 2024.
+Utility to calculate tire behavior for simulated quasi-static tests
+Started with simfile: simfile_Run_dfdbf125-99bf-4f57-8fd5-d39206a68e7d.sim
+
+Include PARSFILE "Results\Run_dfdbf125-99bf-4f57-8fd5-d39206a68e7d\Run_all.par"
+Used Dataset: Animator: Shape File Link; { Mech. Sim. Baja: Shape Files } Baja SAE: Left Side Tire
+Used Dataset: Animator: Shape Assembly; { Mech. Sim. FSAE & Baja: Shape Assembly } Baja SAE Left Side Tire
+Used Dataset: Generic Table; { VS TMRW } 23 Inch Tire, Soft Soil
+Used Dataset: Tire (External); { VS TMRW } 23 Inch Tire, Soft Soil
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Tire Kinematics } Slip Angles: Instant
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Tire Tester } Fy vs. Alpha
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Tire Tester } Mz vs. Alpha
+Used Dataset: Plot: Format; Lines without Symbols
+Used Dataset: Plot: Setup; { VS TMRW } Fx Components (VS TMRW)
+Used Dataset: Plot: Format; Lines without Symbols
+Used Dataset: Plot: Setup; { VS TMRW } Fy Components (VS TMRW)
+Used Dataset: Plot: Format; Lines without Symbols
+Used Dataset: Plot: Setup; { VS TMRW } Fz Components (VS TMRW)
+Used Dataset: Plot: Format; Lines without Symbols
+Used Dataset: Plot: Setup; { VS TMRW } Mx Components (VS TMRW)
+Used Dataset: Plot: Format; Lines without Symbols
+Used Dataset: Plot: Setup; { VS TMRW } My Components (VS TMRW)
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { VS TMRW } Mz Components (VS TMRW)
+Used Dataset: Tire Tester; { VS TMRW } Sweep Slip Angle (VS TMRW)
+ Tire Tester: Sweep Slip Angle <Terramechanics>
+Used Dataset: CarSim Run Control; { Terramechanics } Tire Tester: Sweep Slip Angle
+
+Time to read input = 0.0040359
+
+Run started: VS output file = Results\Run_dfdbf125-99bf-4f57-8fd5-d39206a68e7d\Run.vsb
+
+Run stopped at t = 2.5. alpha = 25 deg
+Computational time ratio: RTIME = 1.67834 (real time)/(simulation time)
+

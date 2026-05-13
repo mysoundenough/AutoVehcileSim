@@ -1,0 +1,23 @@
+PARSFILE
+#FullDataName I/O Channels: Ports`Exported Path Preview`External Driver Model
+#RingCtrl0 0
+#RingCtrl1 1
+#CheckBox0 0    
+
+IPORT_EXP 1
+PARSFILE IO_Channels\O_Channels\Export_4deac4b6-9935-4055-9378-ac47c99557d4.par
+#BlueLink20 I/O Channels: Export`Ext. Driver Model w/ Driver Preview Pts.` Steering System Control` , Library for factor B`Export_4deac4b6-9935-4055-9378-ac47c99557d4
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Ports; { External Driver Model } Exported Path Preview
+#Library : I/O Channels: Ports
+#DataSet : Exported Path Preview
+#Category: External Driver Model
+#FileID  : Port_ca930599-395a-4c6d-8016-ef2357d6af5d
+#Created : 11-04-2022 12:43:14
+#Modified: 11-04-2022 12:43:29
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode I/O Ports
+
+END

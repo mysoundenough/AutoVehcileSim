@@ -1,0 +1,53 @@
+PARSFILE
+#FullDataName Models: Simulink`ABS Controller, 2 SFs`Braking Controls
+#RunMdlFile Extensions\Simulink\sf_series\abs_2sf.slx
+SIMULINK_MODEL_FILE Extensions\Simulink\sf_series\abs_2sf.slx
+#RingCtrl0 -1
+#RingCtrl2 2
+OPT_MULTI_WRAPPERS 1
+*MULTI_S_WRAPPER 1
+*MULTI_SOLVERS 0
+#CheckBox0 0    
+*USE_ALT_DIR 0
+#CheckBox1 0    
+*USE_DIFF_SOLVERS 0
+#CheckBox3 1    
+#CheckBox5 0    
+#RingCtrl1 0
+OPT_INT_METHOD 0
+*TSTEP 0.0005
+*FREQ_MODEL 2000
+*TSTEP_OUT 0.01
+*FREQ_OUT 100
+tstep 0.0005
+iprint 20
+IWRAPPER 1
+#BlueLink3 I/O Channels: Ports` ` , vs_state Ports` , vs_state Ports`
+
+IWRAPPER 2
+IWRAPPER 3
+PARSFILE IO_Channels\Ports\Port_8345f9f3-4eee-44aa-9e9f-d00a4d413d68.par
+#BlueLink5 I/O Channels: Ports`Exports for wheel speeds, M/C pressure` ABS, 2 SFs` , vs_kin Ports`Port_8345f9f3-4eee-44aa-9e9f-d00a4d413d68
+
+IWRAPPER 4
+PARSFILE IO_Channels\Ports\Port_fa87e3cb-4af4-48d9-bfb4-0ba93b17c9ef.par
+#BlueLink6 I/O Channels: Ports`Brake Actuator Pressures, Import` ABS, 2 SFs` , vs_dyn Ports`Port_fa87e3cb-4af4-48d9-bfb4-0ba93b17c9ef
+
+LIVE_SERVER_UPDATE_FREQ_MAX 60
+
+#EMBEDDED_NOTES
+#This uses WIP three SFs and the current debug VS Solver
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Models: Simulink; { Braking Controls } ABS Controller, 2 SFs
+#Library : Models: Simulink
+#DataSet : ABS Controller, 2 SFs
+#Category: Braking Controls
+#FileID  : Simlink_8ce43a05-8fcf-4244-81ff-863f0053cb9b
+#Created : 10-13-2022 09:07:43
+#Modified: 11-18-2022 12:15:48
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode 
+
+END

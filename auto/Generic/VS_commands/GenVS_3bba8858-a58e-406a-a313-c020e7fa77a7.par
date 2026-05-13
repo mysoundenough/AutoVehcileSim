@@ -1,0 +1,84 @@
+PARSFILE
+#FullDataName Generic VS Commands`Euro NCAP: Cut-In/Out Scoring`ADAS Support
+#VehCode Euro NCAP ACC Setup
+
+#MiscYellow0
+! vut_start is used to repeat tests with different start speeds
+DEFINE_PARAMETER VUT_START_SPEED = VUT_INIT_SPD; km/h ; Start speed of driven vehicle (VUT)
+
+! set speed controller target to pre-defined VUT start speed
+EQ_PRE_INIT  SPEED_TARGET_CONSTANT(1) = VUT_START_SPEED; 
+define_output vutStart = VUT_START_SPEED; km/h; requested start speed of VUT
+
+*************************** Scoring Setup ***************************
+DEFINE_PARAMETER V_FINAL = 0; km/h; final speed at end of run
+DEFINE_PARAMETER V_IMPACT = 0; km/h; speed at which the vehicle impacts the pedestrian target
+DEFINE_PARAMETER SCORE_NEW = 0; -; score for the current run
+DEFINE_PARAMETER SCORE_OLD = 0; -; cumulative score
+DEFINE_PARAMETER SCORE_PAUSE_TIME = 2; s; time to pause for score calculation
+
+*************************** Contact management ***************************
+DEFINE_PARAMETER SPEED_REDUCTION = 0; km/h; speed reduction for the current run
+! Threshold minimum threshold speed reduction allowed to still achive points when a collision occurs
+DEFINE_PARAMETER MIN_SPD_REDUC = 5; km/h; min. speed reduction after crash
+
+!  Contact is defined for a distance of 0.2 m for the closest detection 
+define_output Contact = MagS2_1 &  minRelDistBump < 0.2; - ; Boolean: contact with GxVT
+
+! Crashed variable is only updated with events. Used to manage a test series
+define_output Crashed = 0; - ;  Boolean: crash occured
+
+*************************** Test Stop Conditions ***************************
+! Flag for when the desired time gap has been reached
+define_output timeGapMatched = if(acc_TTC > MIN_THRESH & acc_TTC <= time_gap, 1, 0); - ; ...
+bool, desired time gap reached
+define_output targetSpdMatched = if( timeGapMatched >=1 & Vxz_Fwd <= leadVehSpeed, 1, 0); - ; ...
+bool target speed reached + time gap
+
+!assure object detection is on and relative speed values have been calculated
+define_output detectOnSpeedMatch = if( abs(acc_TTC) >0 &   Vxz_Fwd <= leadVehSpeed, 1, 0); - ; w/detection ego < object speed
+
+**************** Outputs for scoring HUD and plots **************** 
+define_output CurrentRunScore = SCORE_NEW; -;
+define_output TotalScore = SCORE_OLD; -;
+define_output EgoSpeedReduction = SPEED_REDUCTION; km/h
+define_output vImpactOut = V_IMPACT; km/h; Vimpact plotting output
+#ENDMYellow
+
+*MODELCODE Euro NCAP ACC Setup
+PARSFILE Animator\HUD\HUD_ebf69e07-4db4-4442-8d71-281124ce34b1.par
+#BlueLink0 Animator: HUD`ACC HUD, Collided Outputs` Euro NCAP` , Miscellaneous`HUD_ebf69e07-4db4-4442-8d71-281124ce34b1
+
+PARSFILE Animator\HUD\HUD_2c3c34bc-85cd-4e96-ba77-ce60648ceca0.par
+#BlueLink1 Animator: HUD`Total Score Output` Euro NCAP` , Miscellaneous`HUD_2c3c34bc-85cd-4e96-ba77-ce60648ceca0
+
+PARSFILE Plot\Setup\Plot_99ebefb4-f88f-4cd7-9497-8b07f45dddee.par
+#BlueLink3 Plot: Setup`ACC Euro NCAP Scoring` ADAS Sensor Detections` , Plot`Plot_99ebefb4-f88f-4cd7-9497-8b07f45dddee
+
+PARSFILE Plot\Setup\Plot_9788e6e8-2f5b-46bf-b6b8-bf8149553c86.par
+#BlueLink4 Plot: Setup`ACC Euro NCAP Scoring Speeds` ADAS Sensor Detections` , Plot`Plot_9788e6e8-2f5b-46bf-b6b8-bf8149553c86
+
+PARSFILE Plot\Setup\Plot_36388c17-57b5-40ef-affe-6a1fb6bf51ea.par
+#BlueLink5 Plot: Setup`ACC Events Validation` ADAS Sensor Detections` , Plot`Plot_36388c17-57b5-40ef-affe-6a1fb6bf51ea
+
+
+#EMBEDDED_NOTES
+#Euro NCAP ACC Cut-In and Cut-Out Scoring Setup
+#- This Dataset has a few commands to support a sequence of tests that are managed with Events.
+#- These include the parameter vut_start and the output variables Contact and Crashed.
+#- Scoring methods used for Euro NCAP ACC CCRm and CCRs tests are also included here
+#- The heads-up display (HUD) Datasets are to show the score output, and other ego vehicle outputs related to collision detection and time gap to the lead vehicle
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { ADAS Support } Euro NCAP: Cut-In/Out Scoring
+#Library : Generic VS Commands
+#DataSet : Euro NCAP: Cut-In/Out Scoring
+#Category: ADAS Support
+#FileID  : GenVS_3bba8858-a58e-406a-a313-c020e7fa77a7
+#Created : 05-20-2021 11:40:10
+#Modified: 10-11-2021 14:40:24
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Euro NCAP ACC Setup
+
+END

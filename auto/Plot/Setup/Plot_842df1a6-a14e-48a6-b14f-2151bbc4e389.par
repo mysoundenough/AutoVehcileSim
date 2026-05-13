@@ -1,0 +1,47 @@
+PARSFILE
+#FullDataName Plot: Setup`Toe vs. Jounce - Rear`K&C Test Results
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par
+#BlueLink0 Plot: Format`Default Plot Settings` ` , Plot format`PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862
+
+#CheckBox1 0    
+
+
+#MiscYellow1
+! This is only valid for zero steer in a K&C jounce test
+define_output Toe_L2 = - Steer_L2;deg; Left rear toe
+define_output Toe_R2 = Steer_R2;deg; Right rear toe
+#ENDMYellow
+
+#MiscYellow0
+PLOTCHANNELS Toe_L2, Jnc_L2
+PLOTCHANNELS Toe_R2, Jnc_R2
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Toe vs. Jounce - Rear
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { K&C Test Results } Toe vs. Jounce - Rear
+#Library : Plot: Setup
+#DataSet : Toe vs. Jounce - Rear
+#Category: K&C Test Results
+#FileID  : Plot_842df1a6-a14e-48a6-b14f-2151bbc4e389
+#Modified: 05-28-2021 14:59:41
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Plot Setup
+
+END

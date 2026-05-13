@@ -1,0 +1,32 @@
+PARSFILE
+#FullDataName Events`06a - Reduce brake force to zero`K&C Test Sequence
+#CheckBox1 0    
+#CheckBox6 0    
+#CheckBox7 1    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 ZERO ~=
+#RingCtrl10 1
+#RingCtrl11 4
+*VALUE1 fx_ground >= 0
+*VALUE2 fy_ground <= -fy_range
+PARSFILE Generic\VS_commands\GenVS_6d64dcb3-8863-49c8-9607-328a3a2142d4.par
+#BlueLink10 Generic VS Commands`06a - Fx comp - Reduce to zero` K&C Test Sequence` , Miscellaneous`GenVS_6d64dcb3-8863-49c8-9607-328a3a2142d4
+
+DEFINE_EVENT fx_ground >= 0 ; Events\Events_b5af09b5-d8ad-4e81-ae24-eebce691780e.par
+#BlueLink0 Events`End Events` ` , Events`Events_b5af09b5-d8ad-4e81-ae24-eebce691780e
+
+SET_EVENT_ID 0 ! reset to default
+
+LOG_ENTRY Used Dataset: Events; { K&C Test Sequence } 06a - Reduce brake force to zero
+#Library : Events
+#DataSet : 06a - Reduce brake force to zero
+#Category: K&C Test Sequence
+#FileID  : Events_85862d91-dd20-4e46-a996-e4278637b72c
+#Modified: 05-28-2021 14:59:28
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

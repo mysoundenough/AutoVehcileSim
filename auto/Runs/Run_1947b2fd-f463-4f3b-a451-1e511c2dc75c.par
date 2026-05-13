@@ -1,0 +1,121 @@
+PARSFILE
+#FullDataName CarSim Run Control`PID Ctrl, Built-in Differentiator`Extended Models
+#VEHICLECODE Ind_Ind
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_1947b2fd-f463-4f3b-a451-1e511c2dc75c
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Animator\Cameras\Camera_de93188e-85a0-4e48-a39b-ef07b4e54be0.par
+#BlueLink0 Animator: Camera Setup`175 Azm, 5 El, 20 m, No Yaw` Vehicle Reference` , Animator camera`Camera_de93188e-85a0-4e48-a39b-ef07b4e54be0
+
+#CheckBox0 1    
+#CheckBox1 0    
+#CheckBox2 1    
+#CheckBox3 0    
+#CheckBox4 0    
+#CheckBox5 1    
+#CheckBox6 1    
+#CheckBox7 1    
+#CheckBox8 1    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+#CheckBox12 0    
+
+#RingCtrl0 4
+#RingCtrl1 8
+#RingCtrl2 0
+#RingCtrl3 0
+#RingCtrl6 4
+#RingCtrl7 -1
+*RUN_COLOR 0.8 0 0
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Vehicles\Assembly\Vehicle_4c56d437-56bf-48a1-b545-6f016e2bae89.par
+#BlueLink2 Vehicle: Assembly`D-Class, Sedan` D-Class` , Math Model`Vehicle_4c56d437-56bf-48a1-b545-6f016e2bae89
+
+PARSFILE Procedures\Proc_470220af-1209-4658-9784-f010a3bc1a73.par
+#BlueLink28 Procedures`Open Loop Steer` Driver Controls` , Procedure`Proc_470220af-1209-4658-9784-f010a3bc1a73
+
+*TSTEP 0.0005
+*FREQ_MODEL 2000
+*TSTEP_OUT 0.025
+*FREQ_OUT 40
+tstep 0.0005
+iprint 50
+OPT_STOP 0
+TSTART 0
+SSTART 0
+TSTART_WRITE = 0;
+TSTOP 30
+SSTOP =  SSTART + 1 ;
+OPT_DIRECTION 1
+*TSTOP 30
+*TSTART 0
+*SSTART 0
+DELETE_PLOT_GROUP default
+PLOT_GROUP default
+PARSFILE Plot\Setup\Plot_a243fc1c-fc6b-4404-89ac-bc8209a293be.par
+#BlueLink15 Plot: Setup`Longitudinal Speed (Vxz_Fwd) vs. Time` Vehicle Motion` , Plot`Plot_a243fc1c-fc6b-4404-89ac-bc8209a293be
+
+PARSFILE Plot\Setup\Plot_28c94c84-5587-4acc-a373-81fb9df7b26a.par
+#BlueLink16 Plot: Setup`Steering Wheel Angle vs. Time` Steering` , Plot`Plot_28c94c84-5587-4acc-a373-81fb9df7b26a
+
+PARSFILE Plot\Setup\Plot_6bb14d6c-a68f-4d3b-a1c7-683c8b2f437a.par
+#BlueLink17 Plot: Setup`Steering Wheel Angular Rate` Steering` , Plot`Plot_6bb14d6c-a68f-4d3b-a1c7-683c8b2f437a
+
+PARSFILE Plot\Setup\Plot_f704a22c-f159-4499-9f30-95a17962dd16.par
+#BlueLink18 Plot: Setup`Custom Steering Wheel Rate` User-Defined Variables` , Plot`Plot_f704a22c-f159-4499-9f30-95a17962dd16
+
+#BlueLink23 CarSim Run Control`DLC, Preview Speed Control` Driver Model` , Overlay run or ERD file`Run_3c0b0556-bee4-4b58-b62a-723cb72a4e75
+
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Animator\Vehicles\AniVeh_4ce91de0-b4f4-4075-a4a9-d4fc5b973de3.png
+WRITE_SENSOR_DETECT
+Title PID Ctrl, Built-in Differentiator <Extended Models>
+CATEGORY Extended Models 
+DATASET_TITLE PID Ctrl, Built-in Differentiator
+#MiscYellow0
+IMPORT IMP_THROTTLE_ENGINE ADD
+define_parameter Setpoint 48; km/h
+eq_in IMP_THROTTLE_ENGINE = PID_CONTROLLER(Vxz_fwd, Setpoint, 1.8, 0.5, 0.2, 1)
+IMPORT IMP_STEER_SW REPLACE
+DEFINE_OUTPUT Custom_StrAV
+EQ_IN IMP_STEER_SW = 0.5* sin(0.5 * T)
+EQ_OUT Custom_StrAV = DIFFERENTIATE(STEER_SW)
+#ENDMYellow
+
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#A D-Class sedan drives on a test pad while slowly turning the wheel.
+#
+#This run exists to demonstrate both the generic PID controller and differentiator within VS Commands. The sedan's throttle is controlled with a PID controller to maintain a constant speed of 48 km/h. The steering wheel angle is overriden with an import variable, and a differentiator is used to get the derivative of this user supplied signal.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { Extended Models } PID Ctrl, Built-in Differentiator
+#Library : CarSim Run Control
+#DataSet : PID Ctrl, Built-in Differentiator
+#Category: Extended Models
+#FileID  : Run_1947b2fd-f463-4f3b-a451-1e511c2dc75c
+#Created : 05-19-2023 09:22:13
+#Modified: 07-17-2023 13:19:39
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Run
+
+END

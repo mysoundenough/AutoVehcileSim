@@ -1,0 +1,85 @@
+PARSFILE
+#FullDataName Generic VS Commands`03 - Roll - moving wheel pads setup`K&C Test Sequence
+#VehCode VS Commands
+
+#MiscYellow0
+! Setup and test parameters ----------------------------------------------------
+! Axle roll is defined as the out-of-phase vertical motion of a pair of wheels
+! on an axle relative to a reference. In this case, the reference is taken to be
+! the design load position.
+
+! Axle roll relative to the chassis is considered positive when the right wheel
+! moves up and the left wheel moves down relative to the chassis.
+
+! Set the target max and min roll for each axle
+DEFINE_PARAMETER ROLL_MAX_1 = 5; deg; Front axle max roll
+DEFINE_PARAMETER ROLL_MIN_1 = -5; deg; Front axle min roll
+
+DEFINE_PARAMETER ROLL_MAX_2 = 5; deg; Rear axle max roll
+DEFINE_PARAMETER ROLL_MIN_2 = -5; deg; Rear axle min. roll
+
+! Jounce rate for test. The test must be slow enough to minimize inertia and damping effects.
+! For rebound, the rate is negative
+DEFINE_PARAMETER JNC_RATE = 2; mm/s; Roll angle rate
+
+! Position errors for each axle's roll. Equations will be added in VS Events.
+! Initialize with a large value so the run does not quit immediately
+DEFINE_OUTPUT roll_err_1 = 20; deg; Error to target roll
+DEFINE_OUTPUT roll_err_2 = 20; deg; Error to target roll
+
+! Tolerances for the settings
+DEFINE_PARAMETER ROLL_TOL = 0.01; deg; Tolerance on roll angle error
+
+! Things needed to control the test --------------------------------------------
+DEFINE_OUTPUT z_targ_l1 = zgnd_l1; m; Z ground target for roll angle
+DEFINE_OUTPUT z_targ_r1 = zgnd_r1; m; Z ground target for roll angle
+DEFINE_OUTPUT z_targ_l2 = zgnd_l2; m; Z ground target for roll angle
+DEFINE_OUTPUT z_targ_r2 = zgnd_r2; m; Z ground target for roll angle
+
+! Apply control to Z_Gnd to bring the axle roll to target, within the specified tolerance
+EQ_DIFFERENTIAL z_targ_l1 = JNC_RATE;
+EQ_DIFFERENTIAL z_targ_r1 = -JNC_RATE;
+EQ_DIFFERENTIAL z_targ_l2 = JNC_RATE;
+EQ_DIFFERENTIAL z_targ_r2 = -JNC_RATE;
+
+! Expressions to test jounce is within tolerance to target
+! Roll is at minimum if target is reached or the right tire load is zero
+! or left jounce stop is contacted
+DEFINE_OUTPUT at_min_1 = ABS(roll_err_1)<=ROLL_TOL | fz_r1<0.001 | fjst_l1>0.0; -; 1/0 At/Not at minimum roll angle
+DEFINE_OUTPUT at_min_2 = ABS(roll_err_2)<=ROLL_TOL | fz_r2<0.001 | fjst_l2>0.0; -; 1/0 At/Not at minimum roll angle
+
+! Roll is at maximum if target is reached or the left tire load is zero
+! or the right jounce stop is contacted
+! EQ's are added in events
+DEFINE_OUTPUT at_max_1 = 0; -; 1/0 At/Not at maximum roll angle
+DEFINE_OUTPUT at_max_2 = 0; -; 1/0 At/Not at maximum roll angle
+
+! Calculate the ground roll angle and set dz/dy values
+! Front
+EQ_OUT imp_dzdy_l1 = (zgnd_l1 - zgnd_r1) / (yctc_l1 - yctc_r1);
+IMPORT imp_dzdy_l1 VS_REPLACE
+EQ_OUT imp_dzdy_r1 = imp_dzdy_l1;
+IMPORT imp_dzdy_r1 VS_REPLACE
+DEFINE_OUTPUT a_gnd_f = ATAN(imp_dzdy_l1); deg;
+! Rear
+EQ_OUT imp_dzdy_l2 = (zgnd_l2 - zgnd_r2) / (yctc_l2 - yctc_r2);
+IMPORT imp_dzdy_l2 VS_REPLACE
+EQ_OUT imp_dzdy_r2 = imp_dzdy_l2;
+IMPORT imp_dzdy_r2 VS_REPLACE
+DEFINE_OUTPUT a_gnd_r = ATAN(imp_dzdy_l2); deg;
+
+!
+#ENDMYellow
+
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { K&C Test Sequence } 03 - Roll - moving wheel pads setup
+#Library : Generic VS Commands
+#DataSet : 03 - Roll - moving wheel pads setup
+#Category: K&C Test Sequence
+#FileID  : GenVS_e103f8c6-b18a-4c19-8d6c-9407770d8e83
+#Modified: 05-28-2021 15:02:26
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode VS Commands
+
+END

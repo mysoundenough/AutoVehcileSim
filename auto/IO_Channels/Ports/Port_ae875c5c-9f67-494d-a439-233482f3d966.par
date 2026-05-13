@@ -1,0 +1,39 @@
+PARSFILE
+#FullDataName I/O Channels: Ports`Export CTC XY for 4 Tires`Ground Z for 4 Tires
+#RingCtrl0 0
+#RingCtrl1 4
+#CheckBox0 0    
+
+IPORT_EXP 1
+PARSFILE IO_Channels\O_Channels\Export_1a2cbecc-413e-43ef-98bc-3ed9a0f6509b.par
+#BlueLink20 I/O Channels: Export`Tire CTC XY, L1` Tire Ground` , Library for factor B`Export_1a2cbecc-413e-43ef-98bc-3ed9a0f6509b
+
+IPORT_EXP 2
+PARSFILE IO_Channels\O_Channels\Export_7d32cba0-3035-4c45-a870-6ec31723b08c.par
+#BlueLink21 I/O Channels: Export`Tire CTC XY, R1` Tire Ground` , Baseline run`Export_7d32cba0-3035-4c45-a870-6ec31723b08c
+
+IPORT_EXP 3
+PARSFILE IO_Channels\O_Channels\Export_724e2e68-db11-4d19-9977-aed8b5a9dabc.par
+#BlueLink22 I/O Channels: Export`Tire CTC XY, L2` Tire Ground` , Baseline run`Export_724e2e68-db11-4d19-9977-aed8b5a9dabc
+
+IPORT_EXP 4
+PARSFILE IO_Channels\O_Channels\Export_10abd597-82a1-42b3-a0b3-a8e9ab0cad72.par
+#BlueLink23 I/O Channels: Export`Tire CTC XY, R2` Tire Ground` , Baseline run`Export_10abd597-82a1-42b3-a0b3-a8e9ab0cad72
+
+
+#EMBEDDED_NOTES
+#Each port has 2 export variables for the X-Y coordinates of the centers of tire contact.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: I/O Channels: Ports; { Ground Z for 4 Tires } Export CTC XY for 4 Tires
+#Library : I/O Channels: Ports
+#DataSet : Export CTC XY for 4 Tires
+#Category: Ground Z for 4 Tires
+#FileID  : Port_ae875c5c-9f67-494d-a439-233482f3d966
+#Created : 10-05-2023 10:36:08
+#Modified: 10-18-2023 14:54:41
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode I/O Ports
+
+END

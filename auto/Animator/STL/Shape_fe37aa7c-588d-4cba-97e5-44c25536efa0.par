@@ -1,0 +1,34 @@
+PARSFILE
+#FullDataName Animator: Shape File Link`Infinite Road: Entrance`Generic Proving Ground: Signs
+#MiscYellow3
+add_obj Animator\3D_shape_files_DS\proving_ground\entrance_signs\infinite_road_sign.obj
+#ENDMYellow
+
+SET_COLOR 0.878 0.878 0.878
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 0    
+
+SET_SPECULAR 1 1 1
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_b4548458-0bf0-4925-8b77-e94ccb3f78b9.par
+#BlueLink2 Animator: Camera Setup`Proving Grounds: Infinite Road Entrance` Scene Specific Preview` , Video Camera`Camera_b4548458-0bf0-4925-8b77-e94ccb3f78b9
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_fe37aa7c-588d-4cba-97e5-44c25536efa0.png
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Generic Proving Ground: Signs } Infinite Road: Entrance
+#Library : Animator: Shape File Link
+#DataSet : Infinite Road: Entrance
+#Category: Generic Proving Ground: Signs
+#FileID  : Shape_fe37aa7c-588d-4cba-97e5-44c25536efa0
+#Modified: 05-28-2021 15:03:14
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape File
+
+END

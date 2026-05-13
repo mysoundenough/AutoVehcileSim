@@ -1,0 +1,54 @@
+PARSFILE
+#FullDataName Generic VS Commands`Background Boxes: Upper, Veh. In-Lane`Obstacle Avoidance
+#VehCode Background Boxes for HUD
+
+#MiscYellow0
+!------------- Upper Outer Box --------------
+ADD_ENTITY hud_image Text_BG_Outer
+  size_mode absolute
+  place_mode absolute
+  align_x left
+  align_y top
+  location 5 10 455 150
+  red 0
+  green 0
+  blue 0
+  opacity .5
+!  image_file Animator\Hud\Text_Box.tga
+END_ENTITY hud_image Text_BG_Outer
+
+!------------- Upper Inner Box --------------
+ADD_ENTITY hud_image Text_BG_Inner
+  size_mode absolute
+  place_mode absolute
+  align_x left
+  align_y top
+  location 10 15 445 140
+  red 0
+  green 0
+  blue 0
+  opacity .25
+!  image_file Animator\Hud\Text_Box.tga
+END_ENTITY hud_image Text_BG_Inner
+#ENDMYellow
+
+*MODELCODE Background Boxes for HUD
+
+#EMBEDDED_NOTES
+#Background boxes to allow HUD information to be seen easier
+#
+#
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { Obstacle Avoidance } Background Boxes: Upper, Veh. In-Lane
+#Library : Generic VS Commands
+#DataSet : Background Boxes: Upper, Veh. In-Lane
+#Category: Obstacle Avoidance
+#FileID  : GenVS_ee822389-3656-4cf3-9d03-53f3373c95ef
+#Created : 10-07-2021 15:14:48
+#Modified: 10-07-2021 15:18:28
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Background Boxes for HUD
+
+END

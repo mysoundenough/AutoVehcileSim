@@ -1,0 +1,39 @@
+PARSFILE
+#FullDataName Events`B. Linearize (Steer Angle Input)`Linearization
+#CheckBox1 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl10 0
+#RingCtrl11 4
+*NAME1 t
+*VALUE1 10
+#MiscYellow0
+LINEARIZE Extensions\Linearization\Linear_steer_angle_input.m
+*cpar_include Extensions\Linearization\Linear_steer_angle_input.m
+#ENDMYellow
+
+SET_EVENT_ID 0 ! reset to default
+
+#EMBEDDED_NOTES
+#Linearize the vehicle model and write the linear system matrices (A, B, C and D) in specified text file using MATLAB M-File format.
+#
+#The file name is for the case of steering wheel angle as the model input.
+#
+#The *cpar_include command forces the named file to be added to a .cpar if one is exported. This assures that the path exists in the target database, so the file can be written when the run is made.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Events; { Linearization } B. Linearize (Steer Angle Input)
+#Library : Events
+#DataSet : B. Linearize (Steer Angle Input)
+#Category: Linearization
+#FileID  : Events_48f421c8-7bbb-4f9f-a4d5-b71e30dbe577
+#Created : 02-26-2024 14:19:18
+#Modified: 02-26-2024 14:27:34
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

@@ -1,0 +1,38 @@
+PARSFILE
+#FullDataName Generic Group of Links`K&C Rig for Design Load Condition`K&C Test Sequence
+#VehCode Generic Links
+PARSFILE Output\Points\RefPt_b01eaaec-f5ae-4aad-8782-cb3d99bc4bb8.par
+#BlueLink0 Custom Forces and Reference Points`K and C Rig (Parametric Location)` K & C Test Rig` , Miscellaneous`RefPt_b01eaaec-f5ae-4aad-8782-cb3d99bc4bb8
+
+PARSFILE Output\Sensors\MoSen_65d09bcd-670d-4171-9019-5014ec6e62a0.par
+#BlueLink1 Positions, Velocities, and Accelerations`K & C Sensors (Parametric Locations)` K & C Test Rig` , Miscellaneous`MoSen_65d09bcd-670d-4171-9019-5014ec6e62a0
+
+PARSFILE Generic\VS_commands\GenVS_cbbcc259-eea3-4a91-bc3b-4f2210bb8861.par
+#BlueLink2 Generic VS Commands`01 - Disable Stabilizer Bars` K&C Test Sequence` , Miscellaneous`GenVS_cbbcc259-eea3-4a91-bc3b-4f2210bb8861
+
+PARSFILE Roads\3D_Road\Road_3d3efdbc-9b94-40d6-aa37-04d5a6fb360d.par
+#BlueLink3 Road: 3D Surface (All Properties)`K & C Test Rig` Test Facilities` , Miscellaneous`Road_3d3efdbc-9b94-40d6-aa37-04d5a6fb360d
+
+PARSFILE Generic\VS_commands\GenVS_c2f10d85-7ae8-44ea-aa29-55749cb3b1f8.par
+#BlueLink4 Generic VS Commands`01 - K & C Design Load Setup` K&C Test Sequence` , Miscellaneous`GenVS_c2f10d85-7ae8-44ea-aa29-55749cb3b1f8
+
+
+#EMBEDDED_NOTES
+#Points are installed to apply forces to constrain the chassis and provide some outputs needed for animation.
+#
+#Motion sensors are used to get velocities at points for calculating damping
+#
+#The VS Commands implement springs to clamp the chassis in place and move the ground pads to locate the wheel centers at the design height.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic Group of Links; { K&C Test Sequence } K&C Rig for Design Load Condition
+#Library : Generic Group of Links
+#DataSet : K&C Rig for Design Load Condition
+#Category: K&C Test Sequence
+#FileID  : GenLink_a5c93536-9abc-4ee1-bed1-d13d08d3b7a2
+#Modified: 05-28-2021 15:02:31
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Generic Links
+
+END

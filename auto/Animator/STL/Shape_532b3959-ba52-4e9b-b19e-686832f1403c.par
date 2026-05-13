@@ -1,0 +1,42 @@
+PARSFILE
+#FullDataName Animator: Shape File Link`UNREAL_Test_Scene_Roads`Self-Contained Scenes
+#MiscYellow3
+add_obj Animator\3D_Shape_Files\Self_Contained_Scenes\UE_Plugin_Example\Roads.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 1    
+set_fogging off
+#CheckBox3 0    
+#CheckBox4 1    
+
+vsv_enable_shadows_recursive
+#MiscYellow0
+translucent_fix on
+#ENDMYellow
+
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_9080781f-cafb-4524-9f90-b976961c41a3.par
+#BlueLink2 Animator: Camera Setup`Isometric View - Scene Objects` Shape Preview` , Video Camera`Camera_9080781f-cafb-4524-9f90-b976961c41a3
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_532b3959-ba52-4e9b-b19e-686832f1403c.png
+
+#EMBEDDED_NOTES
+#This image will only animate using the VsVisualizer.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Self-Contained Scenes } UNREAL_Test_Scene_Roads
+#Library : Animator: Shape File Link
+#DataSet : UNREAL_Test_Scene_Roads
+#Category: Self-Contained Scenes
+#FileID  : Shape_532b3959-ba52-4e9b-b19e-686832f1403c
+#Created : 05-09-2023 13:34:40
+#Modified: 05-09-2023 14:14:01
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape File
+
+END

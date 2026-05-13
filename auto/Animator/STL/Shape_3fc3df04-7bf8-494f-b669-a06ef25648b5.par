@@ -1,0 +1,41 @@
+PARSFILE
+#FullDataName Animator: Shape File Link`Bicycle_2 on Rack`Common Vehicle Assets: Payloads
+#MiscYellow3
+add_obj Animator\3D_Shape_Files\Common_Vehicle_Assets\Payloads\Bike_Rack\Bike_2_ON_Rack.OSG
+#ENDMYellow
+
+SET_COLOR 0.4 1 1
+*SPECULAR 0
+*IMAGE_FIT_MODE 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 0 0 0
+vsv_enable_shadows_recursive
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_5f245a76-02e8-4402-ad4f-d68e6778dc25.par
+#BlueLink2 Animator: Camera Setup`Isometric View - Medium Objects` Shape Preview` , Video Camera`Camera_5f245a76-02e8-4402-ad4f-d68e6778dc25
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_3fc3df04-7bf8-494f-b669-a06ef25648b5.png
+
+#EMBEDDED_NOTES
+#Bicycle 2 on the hitch rack
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Payloads } Bicycle_2 on Rack
+#Library : Animator: Shape File Link
+#DataSet : Bicycle_2 on Rack
+#Category: Common Vehicle Assets: Payloads
+#FileID  : Shape_3fc3df04-7bf8-494f-b669-a06ef25648b5
+#Created : 03-06-2023 16:00:54
+#Modified: 03-06-2023 16:42:41
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape File
+
+END

@@ -1,0 +1,31 @@
+PARSFILE
+#FullDataName I/O Channels: Import`Tire Z, dZ/dX, dZ/dY, Tire L2, Custom Init`Tire Ground
+#RingCtrl0 0
+#RingCtrl1 1
+*README_FILE Results\Run_13dabb50-a55c-49ab-9194-5f395f3637e2\Run_imp_tab.txt
+
+#MiscYellow0
+IMP_ZGND_L2 Replace 1! 1
+IMP_DZDX_L2 Replace 0.0! 1
+IMP_DZDY_L2 Replace 0.0! 1
+#ENDMYellow
+
+#BlueLink0 CarSim Run Control`Z = Sin(X), OPT_DELAY_INIT` Imported Ground Elevation` , example run`Run_13dabb50-a55c-49ab-9194-5f395f3637e2
+
+
+#EMBEDDED_NOTES
+#Note the initial value of 1 m
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: I/O Channels: Import; { Tire Ground } Tire Z, dZ/dX, dZ/dY, Tire L2, Custom Init
+#Library : I/O Channels: Import
+#DataSet : Tire Z, dZ/dX, dZ/dY, Tire L2, Custom Init
+#Category: Tire Ground
+#FileID  : Import_d7b3bd11-5ea5-43cc-99ed-8513611589e0
+#Created : 10-18-2023 14:36:36
+#Modified: 10-30-2023 10:38:44
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Import Channels
+
+END

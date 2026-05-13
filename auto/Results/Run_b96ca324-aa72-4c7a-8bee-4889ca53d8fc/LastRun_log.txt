@@ -1,0 +1,130 @@
+Run made by CarSim 2024.1 at 14:46 on March 25, 2024.
+Revision 222209, March 18, 2024
+Started with simfile: simfile.sim
+
+Include PARSFILE "Results\Run_b96ca324-aa72-4c7a-8bee-4889ca53d8fc\Run_all.par"
+Used Dataset: Animator: Reference Frame; { Tracking: Vehicle } Vehicle X-Y
+Used Dataset: Animator: Camera Setup; { K & C } K & C View
+Installed keywords into VS Solver for MODEL_LAYOUT I_I
+ 01 - K & C: Design Load (no plots) <K & C Tests - Complete sequence>
+Used Dataset: Generic VS Commands; { K&C Test Sequence } 02 - Jounce - moving wheel pads setup
+Used Dataset: Generic VS Commands; { K&C Test Sequence } 02 - Jounce - Move to full rebound
+Used Dataset: Events; { K&C Test Sequence } 02 - Jounce: Move to full rebound
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { K&C Test Results } Dive vs. Jounce - Front
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { K&C Test Results } Dive vs. Jounce - Rear
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { K&C Test Results } X movement vs Jounce - Front
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { K&C Test Results } X movement vs Jounce - Rear
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Suspension Motion } Camber vs. Jounce - Front
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Suspension Motion } Camber vs. Jounce - Rear
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { K&C Test Results } Y movement vs Jounce - Front
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { K&C Test Results } Y movement vs Jounce - Rear
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { K&C Test Results } Toe vs. Jounce - Front
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { K&C Test Results } Toe vs. Jounce - Rear
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Suspension Motion } Jounce vs. t_stamp
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Tire Forces and Moments } Vertical Forces
+Used Dataset: Procedures; { K&C Test Sequence } 02 - Jounce - moving wheel pads
+ 02 - Jounce, moving wheel pads <K & C Tests - Complete sequence>
+Used Dataset: CarSim Run Control; { K & C Tests - Complete sequence } 02 - Jounce, moving wheel pads
+
+Time to read input = 0.0584954
+Function FY_TIRE_CARPET(1,1) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function MZ_TIRE_CARPET(1,1) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function FY_TIRE_CARPET(1,2) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function MZ_TIRE_CARPET(1,2) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function FY_TIRE_CARPET(2,1) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function MZ_TIRE_CARPET(2,1) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function FY_TIRE_CARPET(2,2) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function MZ_TIRE_CARPET(2,2) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function F_REB_STOP_TABLE(1,1) extrapolated (out of range HIGH) for X = 1.84289e-05 mm at T = 0
+Function F_JNC_STOP_TABLE(1,1) extrapolated (out of range LOW) for X = 1.84289e-05 mm at T = 0
+Function F_REB_STOP_TABLE(1,2) extrapolated (out of range HIGH) for X = 1.84289e-05 mm at T = 0
+Function F_JNC_STOP_TABLE(1,2) extrapolated (out of range LOW) for X = 1.84289e-05 mm at T = 0
+Function F_REB_STOP_TABLE(2,1) extrapolated (out of range HIGH) for X = -6.6721e-07 mm at T = 0
+Function F_JNC_STOP_TABLE(2,1) extrapolated (out of range LOW) for X = -6.6721e-07 mm at T = 0
+Function F_REB_STOP_TABLE(2,2) extrapolated (out of range HIGH) for X = -6.6721e-07 mm at T = 0
+Function F_JNC_STOP_TABLE(2,2) extrapolated (out of range LOW) for X = -6.6721e-07 mm at T = 0
+
+Run started: VS output file = Results\Run_b96ca324-aa72-4c7a-8bee-4889ca53d8fc\LastRun.vsb
+
+Event #1 occurred at t = 35.649: at_min_l2 | at_min_r2
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_57185f95-2a1a-4bba-9063-ab78035bad83.par"
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Generic\VS_commands\GenVS_7a4767f9-e10b-4f01-8f3e-2bd1d3eaa562.par"
+Used Dataset: Generic VS Commands; { K&C Test Sequence } 02 - Jounce - Record min - Rr
+Used Dataset: Events; { K&C Test Sequence } 02 - Jounce - Rear is at full rebound
+
+Event #2 occurred at t = 39.0165: at_min_l1 | at_min_r1
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_1f8cac62-dad9-4f28-864b-5396bda372d3.par"
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Generic\VS_commands\GenVS_1be50593-31b9-433b-ae43-956b95f39584.par"
+Used Dataset: Generic VS Commands; { K&C Test Sequence } 02 - Jounce - Record min - Fr
+Used Dataset: Events; { K&C Test Sequence } 02 - Jounce - Front at full rebound
+
+Event #3 occurred at t = 39.017: (at_min_l1 | at_min_r1) & (at_min_l2 | at_min_r2)
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_c1ea44a9-2248-40b1-81c9-1e717adb2600.par"
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Generic\VS_commands\GenVS_6fd0f3d0-6fb4-4fba-bfe4-1afa073a6d50.par"
+Used Dataset: Generic VS Commands; { K&C Test Sequence } 02 - Jounce - Move to full jounce
+Used Dataset: Events; { K&C Test Sequence } 02 - Jounce - Move to full jounce
+Function L_RELAX_X_FZ_TABLE(1,1) extrapolated (out of range HIGH) for X = 1 N at T = 94.457
+Function L_RELAX_X_FZ_TABLE(1,2) extrapolated (out of range HIGH) for X = 1 N at T = 94.457
+Function L_RELAX_X_FZ_TABLE(2,1) extrapolated (out of range HIGH) for X = 1 N at T = 113.022
+Function L_RELAX_X_FZ_TABLE(2,2) extrapolated (out of range HIGH) for X = 1 N at T = 113.022
+Function SUSP_X_TABLE(1,1) extrapolated (out of range HIGH) for X = 70.0004 mm at T = 121.612
+Function SUSP_LAT_TABLE(1,1) extrapolated (out of range HIGH) for X = 70.0004 mm at T = 121.612
+Function CAMBER_TABLE(1,1) extrapolated (out of range HIGH) for X = 70.0004 mm at T = 121.612
+Function SUSP_DIVE_TABLE(1,1) extrapolated (out of range HIGH) for X = 70.0004 mm at T = 121.612
+Function TOE_TABLE(1,1) extrapolated (out of range HIGH) for X = 70.0004 mm at T = 121.612
+Function SUSP_X_TABLE(1,2) extrapolated (out of range HIGH) for X = 70.0004 mm at T = 121.612
+Function SUSP_LAT_TABLE(1,2) extrapolated (out of range HIGH) for X = 70.0004 mm at T = 121.612
+Function CAMBER_TABLE(1,2) extrapolated (out of range HIGH) for X = 70.0004 mm at T = 121.612
+Function SUSP_DIVE_TABLE(1,2) extrapolated (out of range HIGH) for X = 70.0004 mm at T = 121.612
+Function TOE_TABLE(1,2) extrapolated (out of range HIGH) for X = 70.0004 mm at T = 121.612
+
+Event #4 occurred at t = 126.462: at_max_l2 | at_max_r2
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_259d64d6-0bd3-4c1b-a1f5-7252c0608e4d.par"
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Generic\VS_commands\GenVS_cce55e43-b151-47f7-9118-5f61950a16bc.par"
+Used Dataset: Generic VS Commands; { K&C Test Sequence } 02 - Jounce - Record max - Rr
+Used Dataset: Events; { K&C Test Sequence } 02 - Jounce - Rear is at full jounce
+
+Event #5 occurred at t = 134.382: at_max_l1 | at_max_r1
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_cef24945-6ab0-42df-ad5b-83887fa58c1b.par"
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Generic\VS_commands\GenVS_94981df3-144b-4534-8f68-be674fbf6d91.par"
+Used Dataset: Generic VS Commands; { K&C Test Sequence } 02 - Jounce - Record max- Fr
+Used Dataset: Events; { K&C Test Sequence } 02 - Jounce - Front at full jounce
+
+Event #6 occurred at t = 134.382: (at_max_l1 | at_max_r1) & (at_max_l2 | at_max_r2)
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_4351577c-88e2-4e4c-95c3-7a84f11131a5.par"
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Generic\VS_commands\GenVS_d7a1a3ee-bbe4-4c35-93f0-a738ce972a02.par"
+Used Dataset: Generic VS Commands; { K&C Test Sequence } 02 - Jounce - Return to full rebound
+Used Dataset: Events; { K&C Test Sequence } 02 - Jounce: Return to full rebound
+
+Event #7 occurred at t = 221.821: at_min_l2 | at_min_r2
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_47c9e3fc-1bf1-49ff-a764-cedde491a8f2.par"
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Generic\VS_commands\GenVS_e30e4d5c-9a00-4641-b07b-a92301cc0e69.par"
+Used Dataset: Generic VS Commands; { K&C Test Sequence } 02 - Jounce - Delete eq's Rr
+Used Dataset: Events; { K&C Test Sequence } 02 - Jounce - Rear back to full rebound
+
+Event #8 occurred at t = 229.661: at_min_l1 | at_min_r1
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_d086048a-5382-4460-b81b-3b5aba6eafa0.par"
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Generic\VS_commands\GenVS_f4f4c3ad-0697-4d56-8391-f4d8d767f986.par"
+Used Dataset: Generic VS Commands; { K&C Test Sequence } 02 - Jounce - Delete eq's Fnt
+Used Dataset: Events; { K&C Test Sequence } 02 - Jounce - Front back to full rebound
+
+Event #9 occurred at t = 229.662: (at_min_l1 | at_min_r1) & (at_min_l2 | at_min_r2)
+Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_b5af09b5-d8ad-4e81-ae24-eebce691780e.par"
+
+Run stopped at t = 229.662. VS Command STOP_RUN_NOW End event triggered
+Used Dataset: Events; End Events
+
+Computational time ratio: RTIME = 0.0831318 (real time)/(simulation time)
+

@@ -1,0 +1,34 @@
+PARSFILE
+#FullDataName Generic VS Commands`Inverse`Miscellaneous VS Commands
+#VehCode Miscellaneous VS Commands
+
+#MiscYellow0
+! Plot the value of a configurable function input, output, and inverse 
+! (i.e. get the input back from the output)
+
+define_variable spring_force
+
+! Calculate the damper force as a function of displacement every timestep
+eq_out spring_force = FS_COMP(0,CmpS_L2,3); N
+! Apply INVERSE VS Command to invert the table and find the input again.
+! This is also our output variable
+define_output spring_comp = inverse(FS_COMP, spring_force, 0, 3); mm
+#ENDMYellow
+
+*MODELCODE Miscellaneous VS Commands
+PARSFILE Plot\Setup\Plot_0fc88295-76e6-4fb9-9665-12b64877feac.par
+#BlueLink3 Plot: Setup`INVERSE` User-Defined Variables` , Plot`Plot_0fc88295-76e6-4fb9-9665-12b64877feac
+
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { Miscellaneous VS Commands } Inverse
+#Library : Generic VS Commands
+#DataSet : Inverse
+#Category: Miscellaneous VS Commands
+#FileID  : GenVS_f30fd54f-2ba0-465e-8b95-b68914f1e5fa
+#Created : 05-20-2022 15:36:37
+#Modified: 05-25-2022 16:37:26
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Miscellaneous VS Commands
+
+END

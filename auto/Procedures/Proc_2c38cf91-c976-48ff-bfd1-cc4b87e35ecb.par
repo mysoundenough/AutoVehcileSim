@@ -1,0 +1,91 @@
+PARSFILE
+#FullDataName Procedures`AEB Test Series: CCRm`AEB: Automated Emergency Braking
+#CheckBox1 1    
+OPT_INIT_PATH 1
+
+#RingCtrl0 2
+#RingCtrl1 0
+#RingCtrl2 0
+OPT_STOP 0
+SSTART 0
+TSTART 0
+TSTART_WRITE = 0;
+TSTOP 120
+SSTOP = SSTART + 1 ;
+OPT_DIRECTION 1
+*SPEED 50
+*TSTOP 120
+*TSTART 0
+*SSTART 0
+*SSTOP 210
+
+OPT_SC 2
+PARSFILE Control\Driver\StrDM_5014cfce-6420-4784-b8ba-4ca87bd28149.par
+#BlueLink27 Control: Steering by the Closed-loop Driver Model`1.8m Right, 0.4s Single Preview` Constant Position: Non-Zero Offset` , Steering`StrDM_5014cfce-6420-4784-b8ba-4ca87bd28149
+
+PARSFILE Control\Gear_at\GearCL_3f60e7d2-b8c4-4d68-a9c4-d897bb3e2a86.par
+#BlueLink30 Control: Shifting (Closed Loop)`AT (All Available Gears)` Closed-Loop Shifting` , Shifting Control`GearCL_3f60e7d2-b8c4-4d68-a9c4-d897bb3e2a86
+
+PARSFILE Control\Speed_t\SpdTime_05520538-4611-46ce-8c7b-303dea426d90.par
+#BlueLink31 Control: Speed (Closed Loop) Using Target Speed`Constant: 0 km/h` Constant` , Speed vs. time`SpdTime_05520538-4611-46ce-8c7b-303dea426d90
+
+#MiscYellow0
+DEFINE_PARAMETER VUT_INIT_SPD = 30; km/h; ...
+ Start speed of driven vehicle (VUT)
+DEFINE_PARAMETER VUT_START_STATION = 0; m; VUT start station
+#ENDMYellow
+
+PARSFILE Generic\Links\GenLink_c7add83a-53dc-442d-b7fb-24d2b8014a3f.par
+#BlueLink0 Generic Group of Links`PG: Straight Road, Two Lanes` Generic Proving Ground` , Miscellaneous`GenLink_c7add83a-53dc-442d-b7fb-24d2b8014a3f
+
+PARSFILE Sensors_Traffic\Traffic\TMotion_d45b615b-3956-463a-9b9f-f56ef125b432.par
+#BlueLink1 Multiple Moving Objects`Global Vehicle Target (GVT) for AEB` Euro NCAP` , Miscellaneous`TMotion_d45b615b-3956-463a-9b9f-f56ef125b432
+
+PARSFILE Generic\VS_commands\GenVS_1692d098-e49f-458e-8ae5-c6d8653e46dc.par
+#BlueLink2 Generic VS Commands`Euro NCAP: CCRm,s AEB Setup, Scoring` ADAS Support` , Miscellaneous`GenVS_1692d098-e49f-458e-8ae5-c6d8653e46dc
+
+PARSFILE Events\Events_f799ca2f-1cad-44ab-a98b-6e24b205fd5d.par
+#BlueLink3 Events`AEB CCRm,s A. Wait for AEB to Intervene` Euro NCAP AEB Testing` , Miscellaneous`Events_f799ca2f-1cad-44ab-a98b-6e24b205fd5d
+
+PARSFILE Plot\Setup\Plot_fc47e7de-e40f-4a76-ac75-28ddf27ac362.par
+#BlueLink9 Plot: Setup`Longit. Accel. of CG's vs. Time (m/s^2)` Vehicle Motion` , Plot`Plot_fc47e7de-e40f-4a76-ac75-28ddf27ac362
+
+PARSFILE Plot\Setup\Plot_dafae624-d48a-4548-93eb-fa73d080e21a.par
+#BlueLink10 Plot: Setup`Brake Control: M/C Pressure` Braking` , Plot`Plot_dafae624-d48a-4548-93eb-fa73d080e21a
+
+PARSFILE Plot\Setup\Plot_06150ef4-15e0-4019-ba8d-3cb46f38fa95.par
+#BlueLink11 Plot: Setup`AEB: Booleans` ADAS and AEB Alerts and Commands` , Plot`Plot_06150ef4-15e0-4019-ba8d-3cb46f38fa95
+
+PARSFILE Plot\Setup\Plot_57592fbc-0ecb-40bc-8190-dc2f6162700d.par
+#BlueLink12 Plot: Setup`Distance for Closest Object` ADAS Sensor Detections` , Plot`Plot_57592fbc-0ecb-40bc-8190-dc2f6162700d
+
+PARSFILE Plot\Setup\Plot_7e3ea4e2-d549-4687-b106-3f1bacbc7a48.par
+#BlueLink13 Plot: Setup`AEB: Longitudinal Speeds` ADAS and AEB Alerts and Commands` , Plot`Plot_7e3ea4e2-d549-4687-b106-3f1bacbc7a48
+
+
+#EMBEDDED_NOTES
+#AEB : Autonomous Emergency Braking
+#GVT : Global Vehicle Target
+#VUT : Vehicle Under Test
+#FCW : Forward Collision Warning
+#CCRm : Car-to-Car Rear, Moving EVT
+#CCRs : Car-to-Car Rear, Stationary  EVT
+#
+#This procedure is based on a test scenario published by Euro NCAP for AEB systems. Here, a target is moving at 50 km/h and decelerates. The VUT is trailing with a distance that is specified with a parameter Start_Distance.
+#
+#The first Generic Group defines the target vehicle, towing vehicle, AEB Sensor, and VS Commands for the FCW HUD and the AEB control.
+#
+#The other blue links are specific to the CCRs and CCRm series of tests.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Procedures; { AEB: Automated Emergency Braking } AEB Test Series: CCRm
+#Library : Procedures
+#DataSet : AEB Test Series: CCRm
+#Category: AEB: Automated Emergency Braking
+#FileID  : Proc_2c38cf91-c976-48ff-bfd1-cc4b87e35ecb
+#Modified: 09-29-2021 13:39:50
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Procedure
+
+END

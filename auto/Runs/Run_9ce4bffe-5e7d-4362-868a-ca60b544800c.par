@@ -1,0 +1,108 @@
+PARSFILE
+#FullDataName CarSim Run Control`Z = Sin(X), Custom Init`Imported Ground Elevation
+#VEHICLECODE Ind_Ind
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_9ce4bffe-5e7d-4362-868a-ca60b544800c
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Models\Simulink\Simlink_381a29b9-968a-4686-b2fb-7c2c445f6d42.par
+#BlueLink12 Models: Simulink`Sinusoidal Ground Z, 1 SF, Custom Init` External Ground Elevation` , Models`Simlink_381a29b9-968a-4686-b2fb-7c2c445f6d42
+
+PARSFILE Animator\Cameras\Camera_32ea6678-907c-4a10-af4b-b9431e3d2f8a.par
+#BlueLink0 Animator: Camera Setup`13 Azm, 9 El, 18 m, No Yaw` Vehicle Reference` , Animator camera`Camera_32ea6678-907c-4a10-af4b-b9431e3d2f8a
+
+#CheckBox0 1    
+#CheckBox1 1    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 1    
+#CheckBox5 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox8 1    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+#CheckBox12 0    
+
+#RingCtrl0 0
+#RingCtrl1 0
+#RingCtrl2 3
+#RingCtrl3 0
+#RingCtrl6 6
+#RingCtrl7 -1
+*RUN_COLOR 0 0.6 1
+SET_RUN_COLOR 0 0.6 1
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Vehicles\Assembly\Vehicle_9db9b98a-6725-424b-9635-e1ca6e15979d.par
+#BlueLink2 Vehicle: Assembly`C-Class, Hatchback` C-Class` , Math Model`Vehicle_9db9b98a-6725-424b-9635-e1ca6e15979d
+
+PARSFILE Procedures\Proc_3ae0353d-bd7c-43a3-9da4-150b6952a10e.par
+#BlueLink28 Procedures`DLC @ 120 km/h (Quick Start)` Handling Testing` , Procedure`Proc_3ae0353d-bd7c-43a3-9da4-150b6952a10e
+
+PARSFILE Sensors_Traffic\Traffic\TMotion_685c5b22-b555-4300-90e6-7f354600c8d8.par
+#BlueLink9 Multiple Moving Objects`1 Driver Preview Point` Points of Interest` , Miscellaneous`TMotion_685c5b22-b555-4300-90e6-7f354600c8d8
+
+*TSTOP 1
+*TSTART 0
+PARSFILE Plot\Setup\Plot_77698eda-4c1b-4f17-af87-a7d7b92a8161.par
+#BlueLink15 Plot: Setup`Z vs X for tires` Ground` , Plot`Plot_77698eda-4c1b-4f17-af87-a7d7b92a8161
+
+PARSFILE Plot\Setup\Plot_0b848622-b920-4d41-a985-8181f9d9d74b.par
+#BlueLink16 Plot: Setup`Tire CTC dZ/dX` Ground` , Plot`Plot_0b848622-b920-4d41-a985-8181f9d9d74b
+
+PARSFILE Plot\Setup\Plot_a146934a-339c-4983-9664-0f9749a0dfd6.par
+#BlueLink17 Plot: Setup`Vertical Forces` Tire Forces and Moments` , Plot`Plot_a146934a-339c-4983-9664-0f9749a0dfd6
+
+PARSFILE Plot\Setup\Plot_4e5f03b6-bc24-46a8-9679-7ba999344a05.par
+#BlueLink18 Plot: Setup`Vertical Accel. of Sprung Mass CG's` Vehicle Motion` , Plot`Plot_4e5f03b6-bc24-46a8-9679-7ba999344a05
+
+PARSFILE Plot\Setup\Plot_9993948a-2e88-4fb9-a7af-f2b08f482749.par
+#BlueLink19 Plot: Setup`Jounce` Suspension Motion` , Plot`Plot_9993948a-2e88-4fb9-a7af-f2b08f482749
+
+
+SPECIAL_PARSFILE Runs\Run_3358c48f-c8a6-4563-8a60-398e982f181b.par
+#BlueLink23 CarSim Run Control`Z = Sin(X), VS Commands` Imported Ground Elevation` , Overlay run or ERD file`Run_3358c48f-c8a6-4563-8a60-398e982f181b
+
+
+*IMAGE_TYPE DEFAULT
+WRITE_SENSOR_DETECT
+Title Z = Sin(X), Custom Init <Imported Ground Elevation>
+CATEGORY Imported Ground Elevation 
+DATASET_TITLE Z = Sin(X), Custom Init
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#Z gnd Calculated in Simulink using Sin(Xctc) along with dZ/dX and dZ/dY.
+#
+#This uses the basic initialization method but sets custom values for the Zgnd imports to be 1 m.
+#
+#The initialization is approximate, and has a transient motion because the Zgnd = 1 settings are not right for the rear wheels.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { Imported Ground Elevation } Z = Sin(X), Custom Init
+#Library : CarSim Run Control
+#DataSet : Z = Sin(X), Custom Init
+#Category: Imported Ground Elevation
+#FileID  : Run_9ce4bffe-5e7d-4362-868a-ca60b544800c
+#Created : 10-18-2023 14:00:50
+#Modified: 01-23-2024 12:11:05
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Run
+
+END

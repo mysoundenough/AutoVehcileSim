@@ -29,12 +29,12 @@ def main() -> None:
     )
 
     # 1. 修改 前悬架空气弹簧刚度
-    par_path = r"C:\Srs\SrsAutoCarSim\auto\Suspensions\Compliance\CmpInd_6a0a169e-9f67-48f4-8f46-0512eb1a3093.par"
+    par_path = r"C:\Carsim2024.1\Data\auto\Suspensions\Compliance\CmpInd_6a0a169e-9f67-48f4-8f46-0512eb1a3093.par"
     cm.set_vehicle_param(par_path=par_path, front_spring_rate=25)  # N/m
     # 2. 修改 转向
     # 3. 修改 阻尼
-    par_path = r"C:\Srs\SrsAutoCarSim\auto\Suspensions\Shocks\Shock_06339072-ca43-46c4-af82-ec3bf59d6ffc.par"
-    cm.set_vehicle_param(par_path=par_path, shock_force_rate=0.9)  # *k 变化倍数
+    par_path = r"C:\Carsim2024.1\Data\auto\Suspensions\Shocks\Shock_06339072-ca43-46c4-af82-ec3bf59d6ffc.par"
+    cm.set_vehicle_param(par_path=par_path, shock_force_rate=10/9)  # *k 变化倍数
     # 4. 修改 动力
     # # 修改目标车速（单位：km/h）
     # cm.set_vehicle_param(user_speed=50.0)  # km/h

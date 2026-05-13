@@ -1,0 +1,55 @@
+PARSFILE
+#FullDataName Plot: Setup`ACC Validation Outputs 2`Obstacle Avoidance
+
+ADD_ENTITY Plot
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS Vxz_Fwd, Time
+PLOTCHANNELS VxTarget, Time
+PLOTCHANNELS sumVxFwdMinRelSpd, Time
+PLOTCHANNELS speedLimitOut, Time
+PLOTCHANNELS ssACC_MovingSpd, Time
+PLOTCHANNELS minRelSpeed, Time
+PLOTCHANNELS THR_ENG, Time
+PLOTCHANNELS PBK_CON, Time
+PLOTCHANNELS minRelDist, Time
+PLOTCHANNELS minDistExceeded, Time
+PLOTCHANNELS leadVehSpeed, Time
+PLOTCHANNELS desiredSpeed, Time
+PLOTCHANNELS desiredVsActualDistGain, Time
+PLOTCHANNELS desiredSpdGain, Time
+PLOTCHANNELS minRelCriteriaGain, Time
+PLOTCHANNELS trafficStopGain, Time
+PLOTCHANNELS minACC_Gain, Time
+PLOTCHANNELS speedTargetGainOut, Time
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE ACC Validation Outputs 2
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Obstacle Avoidance } ACC Validation Outputs 2
+#Library : Plot: Setup
+#DataSet : ACC Validation Outputs 2
+#Category: Obstacle Avoidance
+#FileID  : Plot_7f4eac0a-ab05-4060-9ccf-a5db4e2d3b53
+#Created : 05-03-2021 09:41:53
+#Modified: 10-11-2021 14:39:41
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Plot Setup
+
+END

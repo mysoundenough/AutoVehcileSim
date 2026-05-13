@@ -1,0 +1,38 @@
+PARSFILE
+#FullDataName Plot: Setup`Wheel Yaw`Steering
+
+ADD_ENTITY Plot
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS Yaw_l1, time
+PLOTCHANNELS Yaw_r1, time
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Wheel Yaw
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Steering } Wheel Yaw
+#Library : Plot: Setup
+#DataSet : Wheel Yaw
+#Category: Steering
+#FileID  : Plot_f2b39307-86d5-4ffd-8203-4aa53df88a7f
+#Modified: 05-28-2021 14:59:44
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Plot Setup
+
+END

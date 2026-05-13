@@ -1,0 +1,42 @@
+PARSFILE
+#FullDataName Control: Clutch Shifting Timelines (Closed Loop)`Baseline`Basic Shift Timelines
+
+opt_clutch_mode 1
+T_CL_START 0
+T_CL_DISENGAGE 0.2
+T_CL_PRESS_TOTAL 0.3
+T_CL_HALF_HOLD 0.1
+T_CL_RE_ENGAGE 0.5
+T_TH_START 0
+T_TH_ZERO 0.2
+T_TH_ZERO_TOTAL 0.3
+T_TH_RETURNED 0.4
+T_GEAR_LAG 0.25
+VLOW_CLUTCH 5
+
+*T_TH_ZERO_HOLD 0.3 - 0.2
+*T_TH_RETURN 0.4 - 0.3
+*T_CL_PRESS_HOLD 0.3 - 0.2
+*T_CL_HALF_TOTAL 0.5 - 0.3
+
+#EMBEDDED_NOTES
+#This dataset contains a simple shift timeline.  Many of the values match the default parameters used by the CarSim solver.
+#
+#The following parameters are not at the default values in order to make a comparison to other shift timelines clearer:
+#-T_CL_DISENGAGE
+#-T_TH_ZERO
+#-T_GEAR_LAG
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Control: Clutch Shifting Timelines (Closed Loop); { Basic Shift Timelines } Baseline
+#Library : Control: Clutch Shifting Timelines (Closed Loop)
+#DataSet : Baseline
+#Category: Basic Shift Timelines
+#FileID  : ClTime_379751df-d5eb-41de-82b5-38ae4e7c2739
+#Created : 05-24-2022 10:59:37
+#Modified: 08-26-2022 10:01:05
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shifting Times (Alt)
+
+END

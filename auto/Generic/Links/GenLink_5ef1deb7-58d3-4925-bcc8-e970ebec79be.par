@@ -1,0 +1,29 @@
+PARSFILE
+#FullDataName Generic Group of Links`Wheel Restraints, Car 1`Vehicle Hauling
+#VehCode Generic Links
+PARSFILE Output\Points\RefPt_f21508b7-bd08-441a-9bed-c01809906f54.par
+#BlueLink0 Custom Forces and Reference Points`Wheel Contact Points` Vehicle Hauling` , Miscellaneous`RefPt_f21508b7-bd08-441a-9bed-c01809906f54
+
+PARSFILE Output\Points\RefPt_7ebc2218-e3bb-4144-b7c4-2e64dca9ee30.par
+#BlueLink1 Custom Forces and Reference Points`Wheel Restraint Points, Car 1` Vehicle Hauling` , Miscellaneous`RefPt_7ebc2218-e3bb-4144-b7c4-2e64dca9ee30
+
+PARSFILE Output\Sensors\MoSen_b6a7a640-5518-49e7-81a2-eb0cae26c79e.par
+#BlueLink2 Positions, Velocities, and Accelerations`Wheel Restraint Sensors, Car 1` Vehicle Hauling` , Miscellaneous`MoSen_b6a7a640-5518-49e7-81a2-eb0cae26c79e
+
+
+#EMBEDDED_NOTES
+#Custom Force and Motion Sensor points are set at the locations of the wheel contacts and wheel restraints to set up the Vehicle Hauler configuration.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic Group of Links; { Vehicle Hauling } Wheel Restraints, Car 1
+#Library : Generic Group of Links
+#DataSet : Wheel Restraints, Car 1
+#Category: Vehicle Hauling
+#FileID  : GenLink_5ef1deb7-58d3-4925-bcc8-e970ebec79be
+#Created : 01-11-2023 13:05:58
+#Modified: 01-11-2023 13:17:52
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Generic Links
+
+END

@@ -1,0 +1,117 @@
+PARSFILE
+#FullDataName CarSim Run Control`Clutch Ctrl, Stop Sign, No ADAS Sensors`Powertrain: ICE
+#VEHICLECODE Ind_Ind
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_595bbb13-3492-4aea-8df5-7c36c41989b0
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Animator\Cameras\Camera_b3a6a2e3-3f98-4f6a-92de-c1f9cbe5cd9b.par
+#BlueLink0 Animator: Camera Setup`175 Azm, 5 El, 20 m` Vehicle Reference` , Animator camera`Camera_b3a6a2e3-3f98-4f6a-92de-c1f9cbe5cd9b
+
+#CheckBox0 0    
+#CheckBox1 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 0    
+#CheckBox5 0    
+#CheckBox6 1    
+#CheckBox7 1    
+#CheckBox8 1    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+#CheckBox12 0    
+
+#RingCtrl0 4
+#RingCtrl1 1
+#RingCtrl2 3
+#RingCtrl3 0
+#RingCtrl6 6
+#RingCtrl7 -1
+*RUN_COLOR 1 1 1
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Vehicles\Loaded\VehLoad_ef56f697-9de3-4246-bd91-aa7d6c9d0915.par
+#BlueLink2 Vehicle with Loads, Sensors, Trailer, etc.`C-Class Hatchback, MT, No Sensors` C-Class` , Math Model`VehLoad_ef56f697-9de3-4246-bd91-aa7d6c9d0915
+
+PARSFILE Procedures\Proc_c72d0cce-ed6e-4eac-ad34-6a3fdaee2e69.par
+#BlueLink28 Procedures`Intersection, 3-Way, Curbs, Clutch` Road Networks` , Procedure`Proc_c72d0cce-ed6e-4eac-ad34-6a3fdaee2e69
+
+PARSFILE Sensors_Traffic\Targets\Target_09b9d091-9202-4e08-95aa-623865ce85ec.par
+#BlueLink9 Single Moving Object (Custom)`Stop Sign` Traffic Signs and Lights` , Miscellaneous`Target_09b9d091-9202-4e08-95aa-623865ce85ec
+
+PARSFILE Events\Events_5c940875-25c7-461b-8c77-06f0e61103d2.par
+#BlueLink11 Events`Initialize for Stopping Scenario` Stop Conditions` , Miscellaneous`Events_5c940875-25c7-461b-8c77-06f0e61103d2
+
+*TSTEP 0.0005
+*FREQ_MODEL 2000
+*TSTEP_OUT 0.01
+*FREQ_OUT 100
+tstep 0.0005
+iprint 20
+*TSTOP 26
+DELETE_PLOT_GROUP default
+PLOT_GROUP default
+PARSFILE Plot\Setup\Plot_4f67d5b7-0627-47d3-baf7-12fe88008d68.par
+#BlueLink15 Plot: Setup`Gear Selection` Powertrain` , Plot`Plot_4f67d5b7-0627-47d3-baf7-12fe88008d68
+
+PARSFILE Plot\Setup\Plot_60c40b33-9b7a-4d9f-868c-fdfcd6c5ea90.par
+#BlueLink16 Plot: Setup`Clutch: Control Input` Controls: Driver` , Plot`Plot_60c40b33-9b7a-4d9f-868c-fdfcd6c5ea90
+
+PARSFILE Plot\Setup\Plot_92c3bffb-a766-4f7d-9f5e-73059542ee31.par
+#BlueLink17 Plot: Setup`Engine RPM` Powertrain` , Plot`Plot_92c3bffb-a766-4f7d-9f5e-73059542ee31
+
+PARSFILE Plot\Setup\Plot_a243fc1c-fc6b-4404-89ac-bc8209a293be.par
+#BlueLink18 Plot: Setup`Longitudinal Speed (Vxz_Fwd) vs. Time` Vehicle Motion` , Plot`Plot_a243fc1c-fc6b-4404-89ac-bc8209a293be
+
+PARSFILE Plot\Setup\Plot_7251a722-18c9-43db-a324-bd380d275618.par
+#BlueLink19 Plot: Setup`Throttle: Control Input` Controls: Driver` , Plot`Plot_7251a722-18c9-43db-a324-bd380d275618
+
+PARSFILE Plot\Setup\Plot_59f74859-7f34-4878-a9b5-3ba45cf252ae.par
+#BlueLink20 Plot: Setup`Event Count` Event Control` , Plot`Plot_59f74859-7f34-4878-a9b5-3ba45cf252ae
+
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Vehicles\Assembly\Vehicle_4f3a7e31-6bc3-4d6e-995a-b94b4fd2dba5.png
+WRITE_SENSOR_DETECT
+Title Clutch Ctrl, Stop Sign, No ADAS Sensors <Powertrain: ICE>
+CATEGORY Powertrain: ICE 
+DATASET_TITLE Clutch Ctrl, Stop Sign, No ADAS Sensors
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#This example shows how to come to a stop and restart for a vehicle with a manual transmission. This example was made by taking an ADAS example and removing the sensor (and the requirement for a Sensor license).
+#
+#It uses Events to switch from initializing, to match a speed limit, to braking based on a target stppping point, to waiting 2s, to accelerating to a new speed limit.
+#
+#The speed controller is set to path preview (OPT_SC = 4) for the entire simulation. The target speed is changed for the different parts of the run.
+#
+#The output interval is 100 Hz to show the clutch timelines.
+#
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { Powertrain: ICE } Clutch Ctrl, Stop Sign, No ADAS Sensors
+#Library : CarSim Run Control
+#DataSet : Clutch Ctrl, Stop Sign, No ADAS Sensors
+#Category: Powertrain: ICE
+#FileID  : Run_595bbb13-3492-4aea-8df5-7c36c41989b0
+#Created : 05-31-2022 16:47:53
+#Modified: 11-21-2022 14:16:24
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Run
+
+END

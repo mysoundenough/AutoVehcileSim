@@ -1,0 +1,91 @@
+PARSFILE
+#FullDataName CarSim Run Control`Part-pedal Accel: E-Class SUV, LSD`Powertrain: ICE
+#VEHICLECODE Ind_SA
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_a39f4491-483a-437c-b1ba-4d3ce3c7154e
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Animator\Cameras\Camera_5feacfa5-2cee-4705-8aee-f5baa805e553.par
+#BlueLink0 Animator: Camera Setup`21 Azm, 5 El, 25 m` Road Reference` , Animator camera`Camera_5feacfa5-2cee-4705-8aee-f5baa805e553
+
+#CheckBox0 1    
+#CheckBox1 1    
+#CheckBox2 1    
+#CheckBox3 0    
+#CheckBox4 1    
+#CheckBox5 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox8 0    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+#CheckBox12 0    
+
+#RingCtrl0 4
+#RingCtrl1 10
+#RingCtrl2 3
+#RingCtrl3 0
+ANI_T_STAMP
+TIME_CHANNEL T_STAMP
+
+#RingCtrl6 1
+#RingCtrl7 -1
+*RUN_COLOR 1 0 0
+SET_RUN_COLOR 1 0 0
+#RingCtrl4 on
+RT_WINDOW_CLOSE on
+#RingCtrl5 1
+LIVE_SERVER_MAX_CONNECTIONS 1
+PARSFILE Vehicles\Assembly\Vehicle_14b2c01d-3166-44b1-b3cd-fc43dd376f92.par
+#BlueLink2 Vehicle: Assembly`E-Class, SUV (LSD)` E-Class` , Math Model`Vehicle_14b2c01d-3166-44b1-b3cd-fc43dd376f92
+
+PARSFILE Procedures\Proc_d400deb3-baed-4985-9dfd-827bed26e9d6.par
+#BlueLink28 Procedures`Part-Throttle Accel: 0.2 Thr, Split-Mu` Accel. and Brake Testing` , Procedure`Proc_d400deb3-baed-4985-9dfd-827bed26e9d6
+
+PARSFILE Plot\Setup\Plot_11cf3c8e-7488-4076-af41-ad110ee9db2c.par
+#BlueLink15 Plot: Setup`Central ClutchTorque` Powertrain` , Plot`Plot_11cf3c8e-7488-4076-af41-ad110ee9db2c
+
+
+SPECIAL_PARSFILE Runs\Run_69181458-cc5b-48a2-802c-020985e1a06d.par
+#BlueLink23 CarSim Run Control`Part-pedal Accel: E-Class SUV, Free Diff` Powertrain: ICE` , Overlay run or ERD file`Run_69181458-cc5b-48a2-802c-020985e1a06d
+
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Animator\Vehicles\AniVeh_6a406309-46ad-4966-bff0-ace339f3d75d.png
+WRITE_SENSOR_DETECT
+Title Part-pedal Accel: E-Class SUV, LSD <Powertrain: ICE>
+CATEGORY Powertrain: ICE 
+DATASET_TITLE Part-pedal Accel: E-Class SUV, LSD
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#This example illustrates the acceleration performance of an E-Class SUV on ice with limited-slip differentials.
+#
+#The overlay shows the same vehicle with free differentials.
+#
+#Differential properties are defined on the Powertrain: 4-Wheel Drive screen. (Libraries -> Powertrain -> Powertrain: 4-Wheel Drive)
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { Powertrain: ICE } Part-pedal Accel: E-Class SUV, LSD
+#Library : CarSim Run Control
+#DataSet : Part-pedal Accel: E-Class SUV, LSD
+#Category: Powertrain: ICE
+#FileID  : Run_a39f4491-483a-437c-b1ba-4d3ce3c7154e
+#Modified: 11-21-2022 14:16:24
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Run
+
+END

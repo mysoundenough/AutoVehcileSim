@@ -1,0 +1,66 @@
+PARSFILE
+#FullDataName Powertrain: Front-Wheel Drive`150 kW w/ Idle Controller`150 kW Powertrains
+INSTALL_POWERTRAIN 1
+OPT_PT 1
+INSTALL_ENGINE
+INSTALL_TORQUE_TRANSFER_DEVICE
+INSTALL_TRANSMISSION
+
+R_REAR_DRIVE_SC 0
+
+OPT_ENGINE_PITCH_REACTION(1) 0
+
+#RingCtrl0 1
+#RingCtrl1 1
+#RingCtrl2 2
+#RingCtrl3 1
+#RingCtrl4 1
+R_MDRIVE 1
+#RingCtrl5 0
+OPT_HEV 0
+DRIVELINE_FREQ 9
+DRIVELINE_ZETA 0.9
+#CheckBox0 0    
+
+OPT_ENGINE_INTERNAL 1
+OPT_PWR_CPL_INTERNAL 1
+OPT_TRANS_INTERNAL 1
+IDIFF 1
+OPT_DIFF_INTERNAL 1
+
+PARSFILE Powertrain\Engine\Engine_6bac3b53-0fa2-4511-b558-b46c34d1c030.par
+#BlueLink0 Powertrain: Engine`150 kW Engine w/ stall` 150 kW Engines` , Engine`Engine_6bac3b53-0fa2-4511-b558-b46c34d1c030
+
+PARSFILE Powertrain\TConv\TC_6167f7ca-1ba7-4746-98f1-f7e38f6f5f0a.par
+#BlueLink1 Powertrain: Torque Converter`Torque Converter: 150 kW Engine` Torque Converters: 150 kW to 250 kW` , Torque Conv.`TC_6167f7ca-1ba7-4746-98f1-f7e38f6f5f0a
+
+PARSFILE Powertrain\TransExt\Trans18_55b3d8ee-e987-4803-8615-8a5b5c910733.par
+#BlueLink8 Powertrain: Transmission (18 Gears or CVT)`6-Speed` 6-Speed Transmissions` , Transmission`Trans18_55b3d8ee-e987-4803-8615-8a5b5c910733
+
+
+IDIFF 1
+PARSFILE Powertrain\Frontdiff\DiffF_0e6d0a7d-5a3d-4cf9-b4d6-7adbda9605b1.par
+#BlueLink4 Powertrain: Front Differential`Open Differential: Gear Ratio 4.1:1` Open` , Differential`DiffF_0e6d0a7d-5a3d-4cf9-b4d6-7adbda9605b1
+
+PARSFILE Generic\VS_commands\GenVS_b7bd1666-be51-4b5f-a78d-2c3843014904.par
+#BlueLink11 Generic VS Commands`150 kW Engine Idle Controller` Powertrain` , Miscellaneous`GenVS_b7bd1666-be51-4b5f-a78d-2c3843014904
+
+
+#EMBEDDED_NOTES
+#Generic 150 kW powertrain with an automatic transmission. The torque converter data has been tuned to work with the 150 kW engine to give reasonable performance.
+#
+#A generic VS Commands screen installs an engine idle speed controller using the command INSTALL_IDLE_CONTROLLER that was added in version 2024.0.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Powertrain: Front-Wheel Drive; { 150 kW Powertrains } 150 kW w/ Idle Controller
+#Library : Powertrain: Front-Wheel Drive
+#DataSet : 150 kW w/ Idle Controller
+#Category: 150 kW Powertrains
+#FileID  : FWD_36cc8002-d36c-40a4-b3a0-2a882cb970e2
+#Created : 12-11-2023 15:09:00
+#Modified: 12-12-2023 10:28:42
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode FWD
+
+END

@@ -1,0 +1,41 @@
+PARSFILE
+#FullDataName Animator: Shape File Link`US: Right Curve Ahead (30''x30'')`Environment: Road Signs
+#MiscYellow3
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\Turn\Turn_Right_30x30.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
+#BlueLink2 Animator: Camera Setup`YZ-Plane, No Offsets (with Yaw)` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_668b5b9a-c74e-4fbd-b50b-c94a242b1423.png
+
+#EMBEDDED_NOTES
+#US Road Sign
+#
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Environment: Road Signs } US: Right Curve Ahead (30''x30'')
+#Library : Animator: Shape File Link
+#DataSet : US: Right Curve Ahead (30''x30'')
+#Category: Environment: Road Signs
+#FileID  : Shape_668b5b9a-c74e-4fbd-b50b-c94a242b1423
+#Created : 09-06-2022 12:16:53
+#Modified: 09-28-2022 10:27:50
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape File
+
+END

@@ -1,0 +1,21 @@
+PARSFILE
+#FullDataName Generic VS Commands`06b - Fx comp - Reduce to zero (R)`K&C Test Sequence
+#VehCode VS Commands
+
+#MiscYellow0
+! Change sign to reduce force in the braking direction
+FX_RATE = -FX_RATE
+#ENDMYellow
+
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { K&C Test Sequence } 06b - Fx comp - Reduce to zero (R)
+#Library : Generic VS Commands
+#DataSet : 06b - Fx comp - Reduce to zero (R)
+#Category: K&C Test Sequence
+#FileID  : GenVS_0e964ec0-666f-400a-997a-a7677fe1c1d2
+#Modified: 05-28-2021 15:02:26
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode VS Commands
+
+END

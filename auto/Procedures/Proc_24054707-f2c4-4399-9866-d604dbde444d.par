@@ -1,0 +1,73 @@
+PARSFILE
+#FullDataName Procedures`Part-Throttle Accel: 0.2 for Shift Timelines`Accel. and Brake Testing
+#CheckBox1 1    
+OPT_INIT_PATH 1
+
+#RingCtrl0 0
+#RingCtrl1 0
+#RingCtrl2 0
+OPT_STOP 0
+SSTART 5
+TSTART 0
+TSTART_WRITE = 0;
+TSTOP 15
+SSTOP = SSTART + 1 ;
+OPT_DIRECTION 1
+*SPEED 0
+*TSTOP 15
+*TSTART 0
+*SSTART 5
+
+OPT_SC 0
+SV_VXS 0
+PARSFILE Control\Driver\StrDM_b1b717a4-04d9-461d-8975-e1ef0b12d822.par
+#BlueLink27 Control: Steering by the Closed-loop Driver Model`0.75s Single Preview` Constant Position: No Offset` , Steering`StrDM_b1b717a4-04d9-461d-8975-e1ef0b12d822
+
+PARSFILE Control\Braking\PbkCon_bf4961f4-c4cf-4b18-a8f7-5f65e31ecd3f.par
+#BlueLink28 Control: Braking MC Pressure (Open Loop)`Constant: 0 MPa` Constant` , Braking`PbkCon_bf4961f4-c4cf-4b18-a8f7-5f65e31ecd3f
+
+PARSFILE Control\Gear_at\GearCL_98de3495-77d4-43c4-968b-58b4d98c6a21.par
+#BlueLink30 Control: Shifting (Closed Loop)`MT (All Gears) - Basic Shift Timeline` Closed-Loop Shifting` , Shifting Control`GearCL_98de3495-77d4-43c4-968b-58b4d98c6a21
+
+PARSFILE Control\Throttle\Throttle_d255ae31-e406-444e-8cfa-b0ee0e0923c1.par
+#BlueLink29 Control: Throttle (Open Loop)`Constant: 0.2` Constant` , Speed vs. time`Throttle_d255ae31-e406-444e-8cfa-b0ee0e0923c1
+
+PARSFILE Roads\3D_Road\Road_136517b4-eae7-4fb0-95a4-695bdef1dfb8.par
+#BlueLink0 Road: 3D Surface (All Properties)`1200 m, One Lane, Mu = 0.85` Straight` , Miscellaneous`Road_136517b4-eae7-4fb0-95a4-695bdef1dfb8
+
+PARSFILE Generic\VS_commands\GenVS_2006e5a4-5b15-4b13-8794-59c248b75d6f.par
+#BlueLink4 Generic VS Commands`Simulation Time Controls` Miscellaneous Custom Controls` , Miscellaneous`GenVS_2006e5a4-5b15-4b13-8794-59c248b75d6f
+
+PARSFILE Plot\Setup\Plot_6ebc9e32-f855-47aa-a7d0-c551bbeefb45.par
+#BlueLink8 Plot: Setup`Normalized Throttle at Pedal` Controls: Driver` , Plot`Plot_6ebc9e32-f855-47aa-a7d0-c551bbeefb45
+
+PARSFILE Plot\Setup\Plot_729fd2d7-9cfc-47af-9f5a-32b3741417b8.par
+#BlueLink9 Plot: Setup`Transmission Clutch: Control Input` Controls: Driver` , Plot`Plot_729fd2d7-9cfc-47af-9f5a-32b3741417b8
+
+PARSFILE Plot\Setup\Plot_efdd0b8c-4c98-4ed1-98f8-aaf6552a9104.par
+#BlueLink10 Plot: Setup`Trans Gear: Shift Trigger and Selection` Powertrain` , Plot`Plot_efdd0b8c-4c98-4ed1-98f8-aaf6552a9104
+
+PARSFILE Plot\Setup\Plot_8de1f8c2-d32f-4002-b10c-77ae2617ee4c.par
+#BlueLink11 Plot: Setup`Shift Timeline w/ Normalized Gear` Controls: Driver` , Plot`Plot_8de1f8c2-d32f-4002-b10c-77ae2617ee4c
+
+
+#EMBEDDED_NOTES
+#This procedure features the automatic control of the throttle, clutch, and gear lever during a part-throttle acceleration event.
+#
+#VS Commands are used to modify when data is written into the output files to focus on just the first gear shift.
+#
+#To write output data for the entire simulation, unlink the "Simulation Time Controls" dataset.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Procedures; { Accel. and Brake Testing } Part-Throttle Accel: 0.2 for Shift Timelines
+#Library : Procedures
+#DataSet : Part-Throttle Accel: 0.2 for Shift Timelines
+#Category: Accel. and Brake Testing
+#FileID  : Proc_24054707-f2c4-4399-9866-d604dbde444d
+#Created : 05-24-2022 10:58:04
+#Modified: 05-26-2022 14:17:12
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Procedure
+
+END

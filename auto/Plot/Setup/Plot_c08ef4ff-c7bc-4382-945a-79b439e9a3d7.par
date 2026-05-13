@@ -1,0 +1,47 @@
+PARSFILE
+#FullDataName Plot: Setup`UTM: Northing vs. Easting`
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par
+#BlueLink0 Plot: Format`Default Plot Settings` ` , Plot format`PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS UTM_North, UTM_East
+
+#ENDMYellow
+
+YAXISLABEL UTM: Northing (m)
+XAXISLABEL UTM: Easting (m)
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE UTM: Northing vs. Easting
+
+END_ENTITY Plot
+
+
+#EMBEDDED_NOTES
+#Positions in a UTM zone are denoted as Northing and Easting. Both are given in meters. The origin point of a UTM zone is the intersection of the zone's central meridian with the equator. Northing coordinates are positive above the equator, and easting coordinates are positive in the entire zone with the central merdian defined as 500,000 meters East.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Plot: Setup; UTM: Northing vs. Easting
+#Library : Plot: Setup
+#DataSet : UTM: Northing vs. Easting
+#Category: 
+#FileID  : Plot_c08ef4ff-c7bc-4382-945a-79b439e9a3d7
+#Created : 08-10-2022 09:41:29
+#Modified: 11-30-2022 13:35:10
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Plot Setup
+
+END

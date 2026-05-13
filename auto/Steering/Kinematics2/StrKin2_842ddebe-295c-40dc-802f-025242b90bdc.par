@@ -1,0 +1,115 @@
+PARSFILE
+#FullDataName Steering System: Kinematics for 2 Wheels (Recirc. Ball)`Articulated Bus`
+#CheckBox0 0    
+
+#RingCtrl0 SPLINE
+#RingCtrl1 SPLINE
+
+iside 2
+#DiagramOne0
+STEER_KIN_TABLE SPLINE
+-40, -45.301
+-38, -42.857
+-36, -40.42
+-34, -37.991
+-32, -35.574
+-30, -33.171
+-28, -30.785
+-26, -28.418
+-24, -26.071
+-22, -23.748
+-20, -21.449
+-18, -19.176
+-16, -16.93
+-14, -14.712
+-12, -12.522
+-10, -10.362
+-8, -8.231
+-6, -6.129
+-4, -4.057
+-2, -2.014
+0, 0
+2, 1.986
+4, 3.944
+6, 5.876
+8, 7.782
+10, 9.662
+12, 11.519
+14, 13.353
+16, 15.165
+18, 16.956
+20, 18.728
+22, 20.481
+24, 22.218
+26, 23.939
+28, 25.645
+30, 27.339
+32, 29.02
+34, 30.692
+36, 32.353
+38, 34.008
+40, 35.655
+ENDTABLE
+
+iside 1
+#DiagramOne1
+STEER_KIN_TABLE SPLINE
+-40, -35.655
+-38, -34.008
+-36, -32.353
+-34, -30.692
+-32, -29.02
+-30, -27.339
+-28, -25.645
+-26, -23.939
+-24, -22.218
+-22, -20.481
+-20, -18.728
+-18, -16.956
+-16, -15.165
+-14, -13.353
+-12, -11.519
+-10, -9.662
+-8, -7.782
+-6, -5.876
+-4, -3.944
+-2, -1.986
+0, 0
+2, 2.014
+4, 4.057
+6, 6.129
+8, 8.231
+10, 10.362
+12, 12.522
+14, 14.712
+16, 16.93
+18, 19.176
+20, 21.449
+22, 23.748
+24, 26.071
+26, 28.418
+28, 30.785
+30, 33.171
+32, 35.574
+34, 37.991
+36, 40.42
+38, 42.857
+40, 45.301
+ENDTABLE
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+
+
+LOG_ENTRY Used Dataset: Steering System: Kinematics for 2 Wheels (Recirc. Ball); Articulated Bus
+#Library : Steering System: Kinematics for 2 Wheels (Recirc. Ball)
+#DataSet : Articulated Bus
+#Category: 
+#FileID  : StrKin2_842ddebe-295c-40dc-802f-025242b90bdc
+#Created : 05-26-2022 09:48:56
+#Modified: 05-26-2022 09:51:45
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Steer Kinematics
+
+END

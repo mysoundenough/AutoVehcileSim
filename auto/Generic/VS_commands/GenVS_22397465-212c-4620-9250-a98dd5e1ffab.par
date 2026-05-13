@@ -1,0 +1,64 @@
+PARSFILE
+#FullDataName Generic VS Commands`Scoring and Events`Pedestrian Euro NCAP
+#VehCode VS Commands
+
+#MiscYellow0
+DEFINE_PARAMETER V_FINAL = 0; km/h; final speed at end of run
+DEFINE_PARAMETER V_IMPACT = 0; km/h; speed at which the vehicle impacts the pedestrian target
+DEFINE_PARAMETER SCORE_NEW = 0; -; score for the current run
+DEFINE_PARAMETER SCORE_OLD = 0; -; cumulative score
+DEFINE_PARAMETER SCORE_NEW_BLW40 = 0; -;  score for ego vehicle speeds up to 40 km/h
+DEFINE_PARAMETER SCORE_NEW_ABV40 = 0; - ; score for ego vehicle speeds above 40 km/h
+DEFINE_PARAMETER SPEED_REDUCTION = 0; km/h; speed reduction for the current run
+
+DEFINE_PARAMETER MIN_SPD_REDUC = 20; km/h; threshold value for the minimum speed ...
+reduction allowed to still achive points (at test speeds above 40 km/h)
+DEFINE_PARAMETER SCORE_CHG_SPD = 40; km/h; speed, above which the scoring rules change
+
+********************** Event Setup **********************
+DEFINE_PARAMETER COL_TEST_DONE = 0; -; event flag for when the intial collision test has ...
+completed, regardless of the result
+DEFINE_PARAMETER INITIAL_COL = 0; - ; event flag showing whether an initial collision between the ...
+pedestrian target and ego vehicle occured
+DEFINE_PARAMETER RESET_COMPLETE = 0; -; event flag showing when the run reset has occured, ...
+indicated when the new test can begin
+DEFINE_PARAMETER AEB_INIT_COLLIDE_DONE = 0; - ; event flag for the initial collision test has ...
+successfuly finished
+
+DEFINE_PARAMETER PREV_RUN_SPD_INCR = 0 ; km/h ;  value to increment the run speed ...
+during the run reset 
+! Note: PREV_RUN_SPD_INCR = 5 if a the vehicle did not strike the pedestrian, ...
+and PREV_RUN_SPD_INCR = -5 if they struck the pedestrian + a lower speed needs to be attempted
+
+DEFINE_PARAMETER FINAL_AEB_TEST = 0 ; - ; Boolean for final AEB run
+DEFINE_PARAMETER READY_FOR_AEB_TEST = 0; -; bool
+DEFINE_PARAMETER END_FINAL_RUN = 0; -; bool
+DEFINE_PARAMETER MIN_SPD_SUCCSS_STP = 0.5; km/h; minimum speed > 0 that deems a successful AEB stop
+DEFINE_PARAMETER AEB_ON_COLLIDE = 0; - ; bool
+
+DEFINE_OUTPUT AEB_OnTestSuccess = if( (ApplyAEB_FullStop & abs(Vxz_Fwd)<MIN_SPD_SUCCSS_STP ...
+ & Collided ==0) , 1, 0); - ; AEB_on test ends w/out ped strike
+#ENDMYellow
+
+*MODELCODE VS Commands
+PARSFILE Generic\tables\GenTab_7a114341-3cf4-4d0f-aa62-e93cc2e90a01.par
+#BlueLink0 Generic Table`Score vs. Speed` Pedestrian Euro NCAP` , Miscellaneous`GenTab_7a114341-3cf4-4d0f-aa62-e93cc2e90a01
+
+
+#EMBEDDED_NOTES
+#Specialized parameters to track the scoring for the Pedestrian Euro NCAP AEB test
+#
+#There is an embedded generic table with the same points scoring schedule as found in the Euro NCAP Assessment Protocolfor VRU AEB document, version 1002
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { Pedestrian Euro NCAP } Scoring and Events
+#Library : Generic VS Commands
+#DataSet : Scoring and Events
+#Category: Pedestrian Euro NCAP
+#FileID  : GenVS_22397465-212c-4620-9250-a98dd5e1ffab
+#Modified: 08-30-2021 17:02:32
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode VS Commands
+
+END

@@ -1,0 +1,1088 @@
+PARSFILE
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 180
+SET_OFFSET_VAR_X 0
+SET_OFFSET_VAR_Y 2
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\Arrows\Keep_Left.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 180
+SET_OFFSET_VAR_X 10
+SET_OFFSET_VAR_Y 2
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\5_Ton_Limit\5_Ton_Limit.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 180
+SET_OFFSET_VAR_X 15
+SET_OFFSET_VAR_Y 2
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\24Hr_Parking\2HR_Parking.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 180
+SET_OFFSET_VAR_X 20
+SET_OFFSET_VAR_Y 2
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\24Hr_Parking\4HR_Parking.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 180
+SET_OFFSET_VAR_X 25
+SET_OFFSET_VAR_Y 2
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\Bike_Lane\Bike_Lane_30x24.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 180
+SET_OFFSET_VAR_X 30
+SET_OFFSET_VAR_Y 2
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\Bike_Wrong_Way\Bike_Wrong_Way.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 180
+SET_OFFSET_VAR_X 35
+SET_OFFSET_VAR_Y 2
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\Chevron_Alignment\Chevron_Alignment.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 180
+SET_OFFSET_VAR_X 40
+SET_OFFSET_VAR_Y 2
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\Do_Not_Enter\Do_Not_Enter_30x30.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 180
+SET_OFFSET_VAR_X 45
+SET_OFFSET_VAR_Y 2
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\Turn\Turn_Left_30x30.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 180
+SET_OFFSET_VAR_X 50
+SET_OFFSET_VAR_Y 2
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\No_Camping\No_Camping.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 180
+SET_OFFSET_VAR_X 55
+SET_OFFSET_VAR_Y 2
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\No_Parking\No_Parking.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 180
+SET_OFFSET_VAR_X 60
+SET_OFFSET_VAR_Y 2
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\No_Parking\No_Parking_Temp.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 180
+SET_OFFSET_VAR_X 65
+SET_OFFSET_VAR_Y 2
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\No_Parking\No_Parking_Tow_Away.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 180
+SET_OFFSET_VAR_X 70
+SET_OFFSET_VAR_Y 2
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\No_Parking\No_Parking_Tow_Double_Arrow.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 180
+SET_OFFSET_VAR_X 75
+SET_OFFSET_VAR_Y 2
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\No_Parking\No_Parking_Tow_Left_Arrow.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 180
+SET_OFFSET_VAR_X 80
+SET_OFFSET_VAR_Y 2
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\No_Parking\No_Parking_Tow_Right_Arrow.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 180
+SET_OFFSET_VAR_X 85
+SET_OFFSET_VAR_Y 2
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\No_Parking\No_Stop_Stand_Left.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 180
+SET_OFFSET_VAR_X 90
+SET_OFFSET_VAR_Y 2
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\No_Parking\No_Stop_Stand_Right.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 180
+SET_OFFSET_VAR_X 95
+SET_OFFSET_VAR_Y 2
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\One_Way\One_Way_Left.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 180
+SET_OFFSET_VAR_X 100
+SET_OFFSET_VAR_Y 2
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\One_Way\One_Way_Right.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 180
+SET_OFFSET_VAR_X 105
+SET_OFFSET_VAR_Y 2
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\MCity_Shuttle\MCity_Shuttle.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 180
+SET_OFFSET_VAR_X 110
+SET_OFFSET_VAR_Y 2
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\Parallel_Parking_Only\Parallel_Parking_Only.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+
+#######################################################################################################################
+#######################################################################################################################
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 180
+SET_OFFSET_VAR_X
+SET_OFFSET_VAR_Y -2
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\Arrows\Keep_Right.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 180
+SET_OFFSET_VAR_X 10
+SET_OFFSET_VAR_Y -2
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\Pavement_Ends\Pavement_Ends_30x30.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 180
+SET_OFFSET_VAR_X 15
+SET_OFFSET_VAR_Y -2
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\Pavement_Ends\Pavement_Ends_Graffiti_30x30.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 180
+SET_OFFSET_VAR_X 20
+SET_OFFSET_VAR_Y -2
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\Crosswalk\Crosswalk30x30.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 180
+SET_OFFSET_VAR_X 25
+SET_OFFSET_VAR_Y -2
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\Crosswalk\Crosswalk_SolarFlashing.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 180
+SET_OFFSET_VAR_X 30
+SET_OFFSET_VAR_Y -2
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\Turn\Turn_Right_30x30.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 180
+SET_OFFSET_VAR_X 35
+SET_OFFSET_VAR_Y -2
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\Roundabout\Roundabout30x30.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 180
+SET_OFFSET_VAR_X 40
+SET_OFFSET_VAR_Y -2
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\School_Buses_Only\School_Buses_Only.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 180
+SET_OFFSET_VAR_X 45
+SET_OFFSET_VAR_Y -2
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\Share_The_Road\Share_The_Road.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 180
+SET_OFFSET_VAR_X 50
+SET_OFFSET_VAR_Y -2
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\Traffic_Lights\Traffic_Lights_30x30.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 180
+SET_OFFSET_VAR_X 55
+SET_OFFSET_VAR_Y -2
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\Slow_Children\Slow_Children.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 180
+SET_OFFSET_VAR_X 60
+SET_OFFSET_VAR_Y -2
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\Speed_Limit\Small_Speed_Limit_10.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 180
+SET_OFFSET_VAR_X 65
+SET_OFFSET_VAR_Y -2
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\Speed_Limit\Speed_Limit_25.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 180
+SET_OFFSET_VAR_X 70
+SET_OFFSET_VAR_Y -2
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\Speed_Limit\Speed_Limit_30.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 180
+SET_OFFSET_VAR_X 75
+SET_OFFSET_VAR_Y -2
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\Speed_Limit\Speed_Limit_35.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 180
+SET_OFFSET_VAR_X 80
+SET_OFFSET_VAR_Y -2
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\Speed_Limit\Speed_Limit_40.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 180
+SET_OFFSET_VAR_X 85
+SET_OFFSET_VAR_Y -2
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\Speed_Limit\Speed_Limit_45.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 180
+SET_OFFSET_VAR_X 90
+SET_OFFSET_VAR_Y -2
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\Stop_For_Pedestrians\Stop_For_Pedestrians.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 180
+SET_OFFSET_VAR_X 95
+SET_OFFSET_VAR_Y -2
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\S_Curve\S_Curve_30x30.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 180
+SET_OFFSET_VAR_X 100
+SET_OFFSET_VAR_Y -2
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\Yield\Yield_30x30.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 180
+SET_OFFSET_VAR_X 105
+SET_OFFSET_VAR_Y -2
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\Yield_One_Way\Yield_One_Way_Left.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 180
+SET_OFFSET_VAR_X 110
+SET_OFFSET_VAR_Y -2
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\Yield_One_Way\Yield_One_Way_Right.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+#######################################################################################################################
+#######################################################################################################################
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 180
+SET_OFFSET_VAR_X 115
+SET_OFFSET_VAR_Y 0
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\Stop\Stop_Sign_36_36.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+

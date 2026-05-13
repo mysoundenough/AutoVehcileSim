@@ -1,0 +1,266 @@
+PARSFILE
+#FullDataName Multiple Moving Objects`10 External Preview Points`Points of Interest
+#RingCtrl0 10
+DEFINE_MOVING_OBJECTS 10
+#RingCtrl1 5
+#CheckBox0 0    
+#CheckBox1 0    
+#CheckBox3 0    
+#CheckBox5 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox11 0    
+#CheckBox13 0    
+#CheckBox15 0    
+#CheckBox17 0    
+#CheckBox19 0    
+#CheckBox38 0    
+
+DZ_OBJECT 0
+#MiscYellow0
+#SYMBOL_PUSH_WEAK <<i>> 0 ! Only the first time
+#EQ_INIT ROAD_ID_OBJ(<<o>>) = CURRENT_ROAD_ID ! now
+#EQ_OUT X_Obj_<<o>> = x_ext_<<i>> ! Calculate every time step
+#EQ_OUT Y_Obj_<<o>> = y_ext_<<i>>
+#SYMBOL_ADD <<i>> 1 ! increment for each object
+#ENDMYellow
+
+*PATH_ID 0
+*ROAD_ID 0
+
+IOBJECT_INCREMENT
+symbol_add <<o>> 1
+SET_DESCRIPTION OBJECT_NAME 10 External Preview Points, Object #1
+OPT_SPEED_OBJ 0
+SYMBOL_PUSH_WEAK <<i>> 0 ! Only the first time
+EQ_INIT ROAD_ID_OBJ(<<o>>) = CURRENT_ROAD_ID ! now
+EQ_OUT X_Obj_<<o>> = x_ext_<<i>> ! Calculate every time step
+EQ_OUT Y_Obj_<<o>> = y_ext_<<i>>
+SYMBOL_ADD <<i>> 1 ! increment for each object
+#RingCtrl4 1
+PATH_ID_OBJ 0
+ROAD_ID_OBJ 0
+OPT_RECYCLE_OBJ 0
+H_OBJ = 0 ! Default for blank field
+WRITE_ADD_REFERENCE_FRAME_OBJECT
+PARSFILE Animator\STL\Shape_65911a6f-83a4-4440-88f3-e573f13be4db.par
+#BlueLink0 Animator: Shape File Link`Sphere: 0.1m Radius (Red)` Geometric Shapes` , 3D Shape for Video`Shape_65911a6f-83a4-4440-88f3-e573f13be4db
+
+MATERIAL_TYPE_OBJ 0
+REFLECT_OBJ 0
+OPT_SHAPE_OBJ 0
+
+IOBJECT_INCREMENT
+symbol_add <<o>> 1
+SET_DESCRIPTION OBJECT_NAME 10 External Preview Points, Object #2
+OPT_SPEED_OBJ 0
+SYMBOL_PUSH_WEAK <<i>> 0 ! Only the first time
+EQ_INIT ROAD_ID_OBJ(<<o>>) = CURRENT_ROAD_ID ! now
+EQ_OUT X_Obj_<<o>> = x_ext_<<i>> ! Calculate every time step
+EQ_OUT Y_Obj_<<o>> = y_ext_<<i>>
+SYMBOL_ADD <<i>> 1 ! increment for each object
+#RingCtrl4 1
+PATH_ID_OBJ 0
+ROAD_ID_OBJ 0
+OPT_RECYCLE_OBJ 0
+H_OBJ = 0 ! Default for blank field
+WRITE_ADD_REFERENCE_FRAME_OBJECT
+PARSFILE Animator\STL\Shape_65911a6f-83a4-4440-88f3-e573f13be4db.par
+#BlueLink1 Animator: Shape File Link`Sphere: 0.1m Radius (Red)` Geometric Shapes` , Traffic Vehicle Ani File`Shape_65911a6f-83a4-4440-88f3-e573f13be4db
+
+MATERIAL_TYPE_OBJ 0
+REFLECT_OBJ 0
+OPT_SHAPE_OBJ 0
+
+IOBJECT_INCREMENT
+symbol_add <<o>> 1
+SET_DESCRIPTION OBJECT_NAME 10 External Preview Points, Object #3
+OPT_SPEED_OBJ 0
+SYMBOL_PUSH_WEAK <<i>> 0 ! Only the first time
+EQ_INIT ROAD_ID_OBJ(<<o>>) = CURRENT_ROAD_ID ! now
+EQ_OUT X_Obj_<<o>> = x_ext_<<i>> ! Calculate every time step
+EQ_OUT Y_Obj_<<o>> = y_ext_<<i>>
+SYMBOL_ADD <<i>> 1 ! increment for each object
+#RingCtrl4 1
+PATH_ID_OBJ 0
+ROAD_ID_OBJ 0
+OPT_RECYCLE_OBJ 0
+H_OBJ = 0 ! Default for blank field
+WRITE_ADD_REFERENCE_FRAME_OBJECT
+PARSFILE Animator\STL\Shape_65911a6f-83a4-4440-88f3-e573f13be4db.par
+#BlueLink2 Animator: Shape File Link`Sphere: 0.1m Radius (Red)` Geometric Shapes` , Traffic Vehicle Ani File`Shape_65911a6f-83a4-4440-88f3-e573f13be4db
+
+MATERIAL_TYPE_OBJ 0
+REFLECT_OBJ 0
+OPT_SHAPE_OBJ 0
+
+IOBJECT_INCREMENT
+symbol_add <<o>> 1
+SET_DESCRIPTION OBJECT_NAME 10 External Preview Points, Object #4
+OPT_SPEED_OBJ 0
+SYMBOL_PUSH_WEAK <<i>> 0 ! Only the first time
+EQ_INIT ROAD_ID_OBJ(<<o>>) = CURRENT_ROAD_ID ! now
+EQ_OUT X_Obj_<<o>> = x_ext_<<i>> ! Calculate every time step
+EQ_OUT Y_Obj_<<o>> = y_ext_<<i>>
+SYMBOL_ADD <<i>> 1 ! increment for each object
+#RingCtrl4 1
+PATH_ID_OBJ 0
+ROAD_ID_OBJ 0
+OPT_RECYCLE_OBJ 0
+H_OBJ = 0 ! Default for blank field
+WRITE_ADD_REFERENCE_FRAME_OBJECT
+PARSFILE Animator\STL\Shape_65911a6f-83a4-4440-88f3-e573f13be4db.par
+#BlueLink3 Animator: Shape File Link`Sphere: 0.1m Radius (Red)` Geometric Shapes` , Traffic Vehicle Ani File`Shape_65911a6f-83a4-4440-88f3-e573f13be4db
+
+MATERIAL_TYPE_OBJ 0
+REFLECT_OBJ 0
+OPT_SHAPE_OBJ 0
+
+IOBJECT_INCREMENT
+symbol_add <<o>> 1
+SET_DESCRIPTION OBJECT_NAME 10 External Preview Points, Object #5
+OPT_SPEED_OBJ 0
+SYMBOL_PUSH_WEAK <<i>> 0 ! Only the first time
+EQ_INIT ROAD_ID_OBJ(<<o>>) = CURRENT_ROAD_ID ! now
+EQ_OUT X_Obj_<<o>> = x_ext_<<i>> ! Calculate every time step
+EQ_OUT Y_Obj_<<o>> = y_ext_<<i>>
+SYMBOL_ADD <<i>> 1 ! increment for each object
+#RingCtrl4 1
+PATH_ID_OBJ 0
+ROAD_ID_OBJ 0
+OPT_RECYCLE_OBJ 0
+H_OBJ = 0 ! Default for blank field
+WRITE_ADD_REFERENCE_FRAME_OBJECT
+PARSFILE Animator\STL\Shape_65911a6f-83a4-4440-88f3-e573f13be4db.par
+#BlueLink4 Animator: Shape File Link`Sphere: 0.1m Radius (Red)` Geometric Shapes` , Traffic Vehicle Ani File`Shape_65911a6f-83a4-4440-88f3-e573f13be4db
+
+MATERIAL_TYPE_OBJ 0
+REFLECT_OBJ 0
+OPT_SHAPE_OBJ 0
+
+IOBJECT_INCREMENT
+symbol_add <<o>> 1
+SET_DESCRIPTION OBJECT_NAME 10 External Preview Points, Object #6
+OPT_SPEED_OBJ 0
+SYMBOL_PUSH_WEAK <<i>> 0 ! Only the first time
+EQ_INIT ROAD_ID_OBJ(<<o>>) = CURRENT_ROAD_ID ! now
+EQ_OUT X_Obj_<<o>> = x_ext_<<i>> ! Calculate every time step
+EQ_OUT Y_Obj_<<o>> = y_ext_<<i>>
+SYMBOL_ADD <<i>> 1 ! increment for each object
+#RingCtrl4 1
+PATH_ID_OBJ 0
+ROAD_ID_OBJ 0
+OPT_RECYCLE_OBJ 0
+H_OBJ = 0 ! Default for blank field
+WRITE_ADD_REFERENCE_FRAME_OBJECT
+PARSFILE Animator\STL\Shape_65911a6f-83a4-4440-88f3-e573f13be4db.par
+#BlueLink5 Animator: Shape File Link`Sphere: 0.1m Radius (Red)` Geometric Shapes` , Traffic Vehicle Ani File`Shape_65911a6f-83a4-4440-88f3-e573f13be4db
+
+MATERIAL_TYPE_OBJ 0
+REFLECT_OBJ 0
+OPT_SHAPE_OBJ 0
+
+IOBJECT_INCREMENT
+symbol_add <<o>> 1
+SET_DESCRIPTION OBJECT_NAME 10 External Preview Points, Object #7
+OPT_SPEED_OBJ 0
+SYMBOL_PUSH_WEAK <<i>> 0 ! Only the first time
+EQ_INIT ROAD_ID_OBJ(<<o>>) = CURRENT_ROAD_ID ! now
+EQ_OUT X_Obj_<<o>> = x_ext_<<i>> ! Calculate every time step
+EQ_OUT Y_Obj_<<o>> = y_ext_<<i>>
+SYMBOL_ADD <<i>> 1 ! increment for each object
+#RingCtrl4 1
+PATH_ID_OBJ 0
+ROAD_ID_OBJ 0
+OPT_RECYCLE_OBJ 0
+H_OBJ = 0 ! Default for blank field
+WRITE_ADD_REFERENCE_FRAME_OBJECT
+PARSFILE Animator\STL\Shape_65911a6f-83a4-4440-88f3-e573f13be4db.par
+#BlueLink6 Animator: Shape File Link`Sphere: 0.1m Radius (Red)` Geometric Shapes` , Traffic Vehicle Ani File`Shape_65911a6f-83a4-4440-88f3-e573f13be4db
+
+MATERIAL_TYPE_OBJ 0
+REFLECT_OBJ 0
+OPT_SHAPE_OBJ 0
+
+IOBJECT_INCREMENT
+symbol_add <<o>> 1
+SET_DESCRIPTION OBJECT_NAME 10 External Preview Points, Object #8
+OPT_SPEED_OBJ 0
+SYMBOL_PUSH_WEAK <<i>> 0 ! Only the first time
+EQ_INIT ROAD_ID_OBJ(<<o>>) = CURRENT_ROAD_ID ! now
+EQ_OUT X_Obj_<<o>> = x_ext_<<i>> ! Calculate every time step
+EQ_OUT Y_Obj_<<o>> = y_ext_<<i>>
+SYMBOL_ADD <<i>> 1 ! increment for each object
+#RingCtrl4 1
+PATH_ID_OBJ 0
+ROAD_ID_OBJ 0
+OPT_RECYCLE_OBJ 0
+H_OBJ = 0 ! Default for blank field
+WRITE_ADD_REFERENCE_FRAME_OBJECT
+PARSFILE Animator\STL\Shape_65911a6f-83a4-4440-88f3-e573f13be4db.par
+#BlueLink7 Animator: Shape File Link`Sphere: 0.1m Radius (Red)` Geometric Shapes` , Traffic Vehicle Ani File`Shape_65911a6f-83a4-4440-88f3-e573f13be4db
+
+MATERIAL_TYPE_OBJ 0
+REFLECT_OBJ 0
+OPT_SHAPE_OBJ 0
+
+IOBJECT_INCREMENT
+symbol_add <<o>> 1
+SET_DESCRIPTION OBJECT_NAME 10 External Preview Points, Object #9
+OPT_SPEED_OBJ 0
+SYMBOL_PUSH_WEAK <<i>> 0 ! Only the first time
+EQ_INIT ROAD_ID_OBJ(<<o>>) = CURRENT_ROAD_ID ! now
+EQ_OUT X_Obj_<<o>> = x_ext_<<i>> ! Calculate every time step
+EQ_OUT Y_Obj_<<o>> = y_ext_<<i>>
+SYMBOL_ADD <<i>> 1 ! increment for each object
+#RingCtrl4 1
+PATH_ID_OBJ 0
+ROAD_ID_OBJ 0
+OPT_RECYCLE_OBJ 0
+H_OBJ = 0 ! Default for blank field
+WRITE_ADD_REFERENCE_FRAME_OBJECT
+PARSFILE Animator\STL\Shape_65911a6f-83a4-4440-88f3-e573f13be4db.par
+#BlueLink8 Animator: Shape File Link`Sphere: 0.1m Radius (Red)` Geometric Shapes` , Traffic Vehicle Ani File`Shape_65911a6f-83a4-4440-88f3-e573f13be4db
+
+MATERIAL_TYPE_OBJ 0
+REFLECT_OBJ 0
+OPT_SHAPE_OBJ 0
+
+IOBJECT_INCREMENT
+symbol_add <<o>> 1
+SET_DESCRIPTION OBJECT_NAME 10 External Preview Points, Object #10
+OPT_SPEED_OBJ 0
+SYMBOL_PUSH_WEAK <<i>> 0 ! Only the first time
+EQ_INIT ROAD_ID_OBJ(<<o>>) = CURRENT_ROAD_ID ! now
+EQ_OUT X_Obj_<<o>> = x_ext_<<i>> ! Calculate every time step
+EQ_OUT Y_Obj_<<o>> = y_ext_<<i>>
+SYMBOL_ADD <<i>> 1 ! increment for each object
+#RingCtrl4 1
+PATH_ID_OBJ 0
+ROAD_ID_OBJ 0
+OPT_RECYCLE_OBJ 0
+H_OBJ = 0 ! Default for blank field
+WRITE_ADD_REFERENCE_FRAME_OBJECT
+PARSFILE Animator\STL\Shape_65911a6f-83a4-4440-88f3-e573f13be4db.par
+#BlueLink9 Animator: Shape File Link`Sphere: 0.1m Radius (Red)` Geometric Shapes` , Traffic Vehicle Ani File`Shape_65911a6f-83a4-4440-88f3-e573f13be4db
+
+MATERIAL_TYPE_OBJ 0
+REFLECT_OBJ 0
+OPT_SHAPE_OBJ 0
+
+#EMBEDDED_NOTES
+#The outputs X_Ext_0, Y_Ext_0, etc. are those of the external preview path feature which is activated with the VS Command INSTALL_PATH_IMPORT.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Multiple Moving Objects; { Points of Interest } 10 External Preview Points
+#Library : Multiple Moving Objects
+#DataSet : 10 External Preview Points
+#Category: Points of Interest
+#FileID  : TMotion_1ce96015-6f92-4fd8-922b-aeeb648330bf
+#Created : 11-08-2022 18:12:37
+#Modified: 11-17-2022 08:10:31
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Multiple Objects
+
+END

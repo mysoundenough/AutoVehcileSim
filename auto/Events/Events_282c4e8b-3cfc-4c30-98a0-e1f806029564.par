@@ -1,0 +1,44 @@
+PARSFILE
+#FullDataName Events`AEB CCRb D. Pause before ending`Euro NCAP ACC Testing
+#CheckBox1 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 >
+#RingCtrl10 1
+#RingCtrl11 4
+*NAME1 T_EVENT
+*NAME2 Contact
+*VALUE1 SCORE_PAUSE_TIME
+*VALUE2 0
+#MiscYellow0
+TSTART_T_EVENT = T ;
+#ENDMYellow
+
+PARSFILE Control\Braking\PbkCon_05647622-c054-491d-a2fc-d34f9f2f273d.par
+#BlueLink10 Control: Braking MC Pressure (Open Loop)`Constant: 10 MPa` Constant` , Miscellaneous`PbkCon_05647622-c054-491d-a2fc-d34f9f2f273d
+
+MAKE_EVENT T_EVENT > SCORE_PAUSE_TIME ; Events\Events_b5af09b5-d8ad-4e81-ae24-eebce691780e.par
+#BlueLink0 Events`End Events` ` , Events`Events_b5af09b5-d8ad-4e81-ae24-eebce691780e
+
+SET_EVENT_ID 0 ! reset to default
+
+#EMBEDDED_NOTES
+#Come to compelte stop a and wait some time to see final score, before ending
+#
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Events; { Euro NCAP ACC Testing } AEB CCRb D. Pause before ending
+#Library : Events
+#DataSet : AEB CCRb D. Pause before ending
+#Category: Euro NCAP ACC Testing
+#FileID  : Events_282c4e8b-3cfc-4c30-98a0-e1f806029564
+#Created : 05-20-2021 11:18:26
+#Modified: 09-09-2021 16:38:21
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

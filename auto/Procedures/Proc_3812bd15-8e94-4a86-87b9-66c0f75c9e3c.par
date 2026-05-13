@@ -1,0 +1,69 @@
+PARSFILE
+#FullDataName Procedures`04a - Steer - kinematics`K&C Test Sequence
+#CheckBox1 1    
+OPT_INIT_PATH 1
+
+#RingCtrl0 4
+#RingCtrl1 -1
+#RingCtrl2 0
+OPT_STOP -1
+SSTART 0
+TSTART 0
+TSTART_WRITE = 0;
+SSTOP = SSTART + 1 ;
+OPT_DIRECTION 1
+TSTOP -1
+*SPEED 0
+*TSTOP 700
+*TSTART 0
+*SSTART 0
+*SSTOP 210
+
+PARSFILE Generic\VS_commands\GenVS_1ef102b9-0329-4bb7-8e56-d480987803ac.par
+#BlueLink0 Generic VS Commands`04a - Steer kinematics setup` K&C Test Sequence` , Miscellaneous`GenVS_1ef102b9-0329-4bb7-8e56-d480987803ac
+
+PARSFILE Events\Events_2702b9ab-a715-4b7c-8d9c-08a67479522a.par
+#BlueLink1 Events`04a - Steer: Move to min (max R)` K&C Test Sequence` , Miscellaneous`Events_2702b9ab-a715-4b7c-8d9c-08a67479522a
+
+PARSFILE Plot\Setup\Plot_076736e1-2cdd-49d5-8a36-d55940b011f0.par
+#BlueLink8 Plot: Setup`Steering: Handwheel Angle` Steering` , Plot`Plot_076736e1-2cdd-49d5-8a36-d55940b011f0
+
+PARSFILE Plot\Setup\Plot_6bb14d6c-a68f-4d3b-a1c7-683c8b2f437a.par
+#BlueLink9 Plot: Setup`Steering Wheel Angular Rate` Steering` , Plot`Plot_6bb14d6c-a68f-4d3b-a1c7-683c8b2f437a
+
+PARSFILE Plot\Setup\Plot_f3951e73-cdb8-4845-9810-48c2fe76ca6e.par
+#BlueLink10 Plot: Setup`Road Wheel vs Handwheel Steer - Front` Steering` , Plot`Plot_f3951e73-cdb8-4845-9810-48c2fe76ca6e
+
+PARSFILE Plot\Setup\Plot_598226ab-49c7-4e75-ae02-b0c13fe2a895.par
+#BlueLink11 Plot: Setup`Road Wheel vs Handwheel Steer - Rear` Steering` , Plot`Plot_598226ab-49c7-4e75-ae02-b0c13fe2a895
+
+PARSFILE Plot\Setup\Plot_4f8a215c-74be-4992-b023-9753d2d5cd61.par
+#BlueLink12 Plot: Setup`Kingpin Torque vs Steering Wheel Angle` Steering` , Plot`Plot_4f8a215c-74be-4992-b023-9753d2d5cd61
+
+PARSFILE Plot\Setup\Plot_aff91df0-74c6-4ce9-adbb-a60597a39884.par
+#BlueLink14 Plot: Setup`Driver input steer torque vs. steer angle` Steering` , Plot`Plot_aff91df0-74c6-4ce9-adbb-a60597a39884
+
+PARSFILE Plot\Setup\Plot_a146934a-339c-4983-9664-0f9749a0dfd6.par
+#BlueLink15 Plot: Setup`Vertical Forces` Tire Forces and Moments` , Plot`Plot_a146934a-339c-4983-9664-0f9749a0dfd6
+
+PARSFILE Plot\Setup\Plot_de4e6a27-917e-471f-aa74-ebc5d58ad279.par
+#BlueLink16 Plot: Setup`Rack Force from Tie Rods` Steering` , Plot`Plot_de4e6a27-917e-471f-aa74-ebc5d58ad279
+
+PARSFILE Plot\Setup\Plot_264b7f01-f5fd-4a05-9ab6-a86908b431e5.par
+#BlueLink17 Plot: Setup`Test Steer and Normal Steer` Steering` , Plot`Plot_264b7f01-f5fd-4a05-9ab6-a86908b431e5
+
+PARSFILE Plot\Setup\Plot_f2b39307-86d5-4ffd-8203-4aa53df88a7f.par
+#BlueLink19 Plot: Setup`Wheel Yaw` Steering` , Plot`Plot_f2b39307-86d5-4ffd-8203-4aa53df88a7f
+
+
+LOG_ENTRY Used Dataset: Procedures; { K&C Test Sequence } 04a - Steer - kinematics
+#Library : Procedures
+#DataSet : 04a - Steer - kinematics
+#Category: K&C Test Sequence
+#FileID  : Proc_3812bd15-8e94-4a86-87b9-66c0f75c9e3c
+#Modified: 05-28-2021 14:59:20
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Procedure
+
+END

@@ -1,0 +1,44 @@
+PARSFILE
+#FullDataName Animator: Shape Assembly`VDA: Maneuver Signs and Shadows`Generic Proving Ground
+*ANGLE_Z 0
+*OFFSET_Z .45
+*X_REF_LENGTH 3344
+*Y_REF_LENGTH 2490
+*Z_REF_LENGTH 1757
+#CheckBox0 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 0    
+#CheckBox5 0    
+
+#RingCtrl1 2
+#RingCtrl2 2
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL_Groups\ShpGrp_19831f08-3aad-4d96-b47d-269b15808ac5.png
+PARSFILE Animator\STL\Shape_d0b9948a-72af-4a5b-8748-79fcb3e0af7e.par
+#BlueLink0 Animator: Shape File Link`VDA: Maneuver Signs` Generic Proving Ground: Signs` , Shape File`Shape_d0b9948a-72af-4a5b-8748-79fcb3e0af7e
+
+#MiscYellow0
+translucent_fix on
+#ENDMYellow
+
+PARSFILE Animator\STL\Shape_437923c4-69b7-4295-804c-70bd1343f990.par
+#BlueLink1 Animator: Shape File Link`VDA: Shadows of Maneuver Signs` Generic Proving Ground: Signs` , Shape File`Shape_437923c4-69b7-4295-804c-70bd1343f990
+
+translucent_fix on
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_33b67ee8-3864-4ecd-9184-4b42ee5fc75f.par
+#BlueLink17 Animator: Camera Setup`Vehicle Pictures` Shape Preview` , Video Camera`Camera_33b67ee8-3864-4ecd-9184-4b42ee5fc75f
+
+
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Generic Proving Ground } VDA: Maneuver Signs and Shadows
+#Library : Animator: Shape Assembly
+#DataSet : VDA: Maneuver Signs and Shadows
+#Category: Generic Proving Ground
+#FileID  : ShpGrp_19831f08-3aad-4d96-b47d-269b15808ac5
+#Modified: 05-28-2021 15:02:59
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape Assembly
+
+END

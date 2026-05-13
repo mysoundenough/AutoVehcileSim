@@ -1,0 +1,23 @@
+PARSFILE
+#FullDataName I/O Channels: Ports`Yaw Rate Export`Quick Start 4SFs
+#RingCtrl0 0
+#RingCtrl1 1
+#CheckBox0 0    
+
+IPORT_EXP 1
+PARSFILE IO_Channels\O_Channels\Export_5229c422-e63c-4219-9959-5038f2b57f83.par
+#BlueLink20 I/O Channels: Export`Yaw Rate Export` 4 SF examples` , Library for factor B`Export_5229c422-e63c-4219-9959-5038f2b57f83
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Ports; { Quick Start 4SFs } Yaw Rate Export
+#Library : I/O Channels: Ports
+#DataSet : Yaw Rate Export
+#Category: Quick Start 4SFs
+#FileID  : Port_9d467a45-94ba-49d7-834a-f9d2802ff138
+#Created : 10-18-2022 13:50:49
+#Modified: 10-19-2022 10:07:27
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode I/O Ports
+
+END

@@ -1,0 +1,52 @@
+PARSFILE
+#FullDataName Animator: Shape File Link`Artic Bus: pitch axis`Artic Bus
+#MiscYellow3
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Cylinders\cylinder_1m_radius_1m_long.obj
+#ENDMYellow
+
+SET_COLOR 0.502 0.502 0.502
+SET_SCALE_X 0.6
+SET_SCALE_Y 0.05
+SET_SCALE_Z 0.05
+SET_ANGLE_Z 90
+SET_ANGLE_Y 0
+SET_ANGLE_X 0
+SET_OFFSET_X 0
+SET_OFFSET_Y 0
+SET_OFFSET_Z 0
+X_REF_LENGTH 1
+Y_REF_LENGTH 1
+Z_REF_LENGTH 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+vsv_enable_shadows_recursive
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_5f245a76-02e8-4402-ad4f-d68e6778dc25.par
+#BlueLink2 Animator: Camera Setup`Isometric View - Medium Objects` Shape Preview` , Video Camera`Camera_5f245a76-02e8-4402-ad4f-d68e6778dc25
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_9e6194ae-37a6-43e7-a69f-f141b54c6150.png
+
+#EMBEDDED_NOTES
+#Cylinder
+#1m along Y-Axis
+#(0,0,0) at Center
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Artic Bus } Artic Bus: pitch axis
+#Library : Animator: Shape File Link
+#DataSet : Artic Bus: pitch axis
+#Category: Artic Bus
+#FileID  : Shape_9e6194ae-37a6-43e7-a69f-f141b54c6150
+#Created : 04-18-2022 14:04:04
+#Modified: 05-26-2022 22:43:08
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape File
+
+END

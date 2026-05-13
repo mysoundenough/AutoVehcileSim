@@ -1,0 +1,51 @@
+PARSFILE
+#FullDataName Plot: Setup`Steering Wheel Angular Rate (Import)`Steering
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par
+#BlueLink0 Plot: Format`Default Plot Settings` ` , Plot format`PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862
+
+#BlueLink1 ` , Discontinued` , Discontinued` , Discontinued`
+
+#CheckBox1 0    
+
+
+#MiscYellow1
+define_output steer_av; deg/s
+eq_out steer_av differentiate(steer_sw)
+#ENDMYellow
+
+#MiscYellow0
+PLOTCHANNELS steer_av
+
+#ENDMYellow
+
+YMAX 1500
+YMIN -1500
+
+#RingCtrl2 Manual
+YMaxmin Manual
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+YAXIS -1500, 1500
+
+PTITLE Steering Wheel Angular Rate (Import)
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Steering } Steering Wheel Angular Rate (Import)
+#Library : Plot: Setup
+#DataSet : Steering Wheel Angular Rate (Import)
+#Category: Steering
+#FileID  : Plot_8ab0454a-0c16-4cba-b280-35e4f7405d7b
+#Created : 05-12-2023 11:26:19
+#Modified: 05-12-2023 13:01:01
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Plot Setup
+
+END

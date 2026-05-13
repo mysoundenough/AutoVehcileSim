@@ -1,0 +1,53 @@
+PARSFILE
+#FullDataName Plot: Setup`Shift Timeline w/ Normalized Gear`Controls: Driver
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_e1ca8356-b0e5-44e5-837e-d58fe5c50236.par
+#BlueLink0 Plot: Format`Default Plot Settings` Artic Bus` , Plot format`PlotFmt_e1ca8356-b0e5-44e5-837e-d58fe5c50236
+
+#CheckBox1 0    
+
+
+#MiscYellow1
+define_output nrml_GearStat = GearStat / NGEARS; units = -; Normalized commanded gear
+define_output nrml_Gear_Del = Gear_Del / NGEARS; units = -; Normalized current gear
+#ENDMYellow
+
+#MiscYellow0
+PLOTCHANNELS Throttle, Time
+PLOTCHANNELS ClutchTr, Time
+PLOTCHANNELS nrml_GearStat, Time
+PLOTCHANNELS nrml_Gear_Del, Time
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Shift Timeline w/ Normalized Gear
+
+END_ENTITY Plot
+
+
+#EMBEDDED_NOTES
+#This dataset contains the outputs for all the controls active when using the Control: Clutch Shifting Timelines library.  The gear related variables are normalized to the number of gears in the transmission for plot resolution purposes.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Controls: Driver } Shift Timeline w/ Normalized Gear
+#Library : Plot: Setup
+#DataSet : Shift Timeline w/ Normalized Gear
+#Category: Controls: Driver
+#FileID  : Plot_8de1f8c2-d32f-4002-b10c-77ae2617ee4c
+#Created : 05-24-2022 14:58:08
+#Modified: 05-24-2022 16:51:17
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Plot Setup
+
+END

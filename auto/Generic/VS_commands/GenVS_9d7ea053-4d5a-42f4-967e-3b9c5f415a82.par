@@ -1,0 +1,101 @@
+PARSFILE
+#FullDataName Generic VS Commands`1. Create 10 Example Points`Import Path Preview
+#VehCode Import Path Preview
+
+#MiscYellow0
+! First construct 10 preview points in global coords, along PATH_ID_DM and LTARG_ID_DM,
+! starting at vehicle origin and having spacing DS. DS is based on speed controller parameter
+! preview distance, SPEED_PREVIEW, which is typically further ahead than that needed by just the
+! steering controller.
+
+define_parameter ds = speed_preview/9; m
+
+define_output s0 = station; m
+define_output s1 = station + ds; m
+define_output s2 = station + 2*ds; m
+define_output s3 = station + 3*ds; m
+define_output s4 = station + 4*ds; m
+define_output s5 = station + 5*ds; m
+define_output s6 = station + 6*ds; m
+define_output s7 = station + 7*ds; m
+define_output s8 = station + 8*ds; m
+define_output s9 = station + 9*ds; m
+
+define_output lat0 = ltarg(0, s0, ltarg_id_dm);
+define_output lat1 = ltarg(0, s1, ltarg_id_dm);
+define_output lat2 = ltarg(0, s2, ltarg_id_dm);
+define_output lat3 = ltarg(0, s3, ltarg_id_dm);
+define_output lat4 = ltarg(0, s4, ltarg_id_dm);
+define_output lat5 = ltarg(0, s5, ltarg_id_dm);
+define_output lat6 = ltarg(0, s6, ltarg_id_dm);
+define_output lat7 = ltarg(0, s7, ltarg_id_dm);
+define_output lat8 = ltarg(0, s8, ltarg_id_dm);
+define_output lat9 = ltarg(0, s9, ltarg_id_dm);
+
+define_output x_custom_0 = path_x_id(s0, lat0, path_id_dm, 1); m
+define_output x_custom_1 = path_x_id(s1, lat1, path_id_dm, 1); m
+define_output x_custom_2 = path_x_id(s2, lat2, path_id_dm, 1); m
+define_output x_custom_3 = path_x_id(s3, lat3, path_id_dm, 1); m
+define_output x_custom_4 = path_x_id(s4, lat4, path_id_dm, 1); m
+define_output x_custom_5 = path_x_id(s5, lat5, path_id_dm, 1); m
+define_output x_custom_6 = path_x_id(s6, lat6, path_id_dm, 1); m
+define_output x_custom_7 = path_x_id(s7, lat7, path_id_dm, 1); m
+define_output x_custom_8 = path_x_id(s8, lat8, path_id_dm, 1); m
+define_output x_custom_9 = path_x_id(s9, lat9, path_id_dm, 1); m
+
+define_output y_custom_0 = path_y_id(s0, lat0, path_id_dm, 1); m
+define_output y_custom_1 = path_y_id(s1, lat1, path_id_dm, 1); m
+define_output y_custom_2 = path_y_id(s2, lat2, path_id_dm, 1); m
+define_output y_custom_3 = path_y_id(s3, lat3, path_id_dm, 1); m
+define_output y_custom_4 = path_y_id(s4, lat4, path_id_dm, 1); m
+define_output y_custom_5 = path_y_id(s5, lat5, path_id_dm, 1); m
+define_output y_custom_6 = path_y_id(s6, lat6, path_id_dm, 1); m
+define_output y_custom_7 = path_y_id(s7, lat7, path_id_dm, 1); m
+define_output y_custom_8 = path_y_id(s8, lat8, path_id_dm, 1); m
+define_output y_custom_9 = path_y_id(s9, lat9, path_id_dm, 1); m
+
+! Now convert global coords to vehicle coords (to match format of imports)
+! (If you are importing the preview points from external software, they may already be in vehicle
+! coordinates.)
+
+define_output x_targ_0 = (x_custom_0-xo)*cos(yaw) + (y_custom_0-yo)*sin(yaw); m
+define_output x_targ_1 = (x_custom_1-xo)*cos(yaw) + (y_custom_1-yo)*sin(yaw); m
+define_output x_targ_2 = (x_custom_2-xo)*cos(yaw) + (y_custom_2-yo)*sin(yaw); m
+define_output x_targ_3 = (x_custom_3-xo)*cos(yaw) + (y_custom_3-yo)*sin(yaw); m
+define_output x_targ_4 = (x_custom_4-xo)*cos(yaw) + (y_custom_4-yo)*sin(yaw); m
+define_output x_targ_5 = (x_custom_5-xo)*cos(yaw) + (y_custom_5-yo)*sin(yaw); m
+define_output x_targ_6 = (x_custom_6-xo)*cos(yaw) + (y_custom_6-yo)*sin(yaw); m
+define_output x_targ_7 = (x_custom_7-xo)*cos(yaw) + (y_custom_7-yo)*sin(yaw); m
+define_output x_targ_8 = (x_custom_8-xo)*cos(yaw) + (y_custom_8-yo)*sin(yaw); m
+define_output x_targ_9 = (x_custom_9-xo)*cos(yaw) + (y_custom_9-yo)*sin(yaw); m
+
+define_output y_targ_0 = (y_custom_0-yo)*cos(yaw) - (x_custom_0-xo)*sin(yaw); m
+define_output y_targ_1 = (y_custom_1-yo)*cos(yaw) - (x_custom_1-xo)*sin(yaw); m
+define_output y_targ_2 = (y_custom_2-yo)*cos(yaw) - (x_custom_2-xo)*sin(yaw); m
+define_output y_targ_3 = (y_custom_3-yo)*cos(yaw) - (x_custom_3-xo)*sin(yaw); m
+define_output y_targ_4 = (y_custom_4-yo)*cos(yaw) - (x_custom_4-xo)*sin(yaw); m
+define_output y_targ_5 = (y_custom_5-yo)*cos(yaw) - (x_custom_5-xo)*sin(yaw); m
+define_output y_targ_6 = (y_custom_6-yo)*cos(yaw) - (x_custom_6-xo)*sin(yaw); m
+define_output y_targ_7 = (y_custom_7-yo)*cos(yaw) - (x_custom_7-xo)*sin(yaw); m
+define_output y_targ_8 = (y_custom_8-yo)*cos(yaw) - (x_custom_8-xo)*sin(yaw); m
+define_output y_targ_9 = (y_custom_9-yo)*cos(yaw) - (x_custom_9-xo)*sin(yaw); m
+#ENDMYellow
+
+*MODELCODE Import Path Preview
+
+#EMBEDDED_NOTES
+#This dataset is not needed in general when using the option to import the preview path (preview point X-Y values would come from software other than CarSim). As such, this dataset exists just as a way of generating 10 preview points, in order to demonstrate the path preview import variables.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { Import Path Preview } 1. Create 10 Example Points
+#Library : Generic VS Commands
+#DataSet : 1. Create 10 Example Points
+#Category: Import Path Preview
+#FileID  : GenVS_9d7ea053-4d5a-42f4-967e-3b9c5f415a82
+#Created : 11-08-2022 18:03:40
+#Modified: 11-16-2022 17:21:26
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Import Path Preview
+
+END

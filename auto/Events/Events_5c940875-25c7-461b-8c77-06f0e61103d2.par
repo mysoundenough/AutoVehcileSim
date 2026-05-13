@@ -1,0 +1,36 @@
+PARSFILE
+#FullDataName Events`Initialize for Stopping Scenario`Stop Conditions
+#CheckBox1 1    
+*CLEAR
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 >
+#RingCtrl10 1
+#RingCtrl11 4
+RESET_EVENTS
+*NAME1 Station
+*VALUE1 -100
+MAKE_EVENT Station > -100 ; Events\Events_565b2e59-b11d-4e16-90ce-25f03cd80b10.par
+#BlueLink0 Events`Stop at Stop Sign` Stop Conditions` , Events`Events_565b2e59-b11d-4e16-90ce-25f03cd80b10
+
+SET_EVENT_ID 0 ! reset to default
+
+#EMBEDDED_NOTES
+#This sets a station to start braking for a designated stopping point.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Events; { Stop Conditions } Initialize for Stopping Scenario
+#Library : Events
+#DataSet : Initialize for Stopping Scenario
+#Category: Stop Conditions
+#FileID  : Events_5c940875-25c7-461b-8c77-06f0e61103d2
+#Created : 05-31-2022 16:51:56
+#Modified: 05-31-2022 16:57:44
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

@@ -1,0 +1,43 @@
+PARSFILE
+#FullDataName Events`AEB CCRb A1. Wait for GVT Decel.`Euro NCAP AEB Testing
+#CheckBox1 1    
+*CLEAR
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 >
+#RingCtrl10 1
+#RingCtrl11 4
+RESET_EVENTS
+*NAME1 T_EVENT
+*VALUE1 T_BK
+#MiscYellow0
+TSTART_T_EVENT = T ;
+#ENDMYellow
+
+#BlueLink10 ` , Miscellaneous` , Miscellaneous` , Miscellaneous`
+
+MAKE_EVENT T_EVENT > T_BK ; Events\Events_49bc5c79-6a14-497e-954a-814c8763c302.par
+#BlueLink0 Events`AEB CCRb A2. Wait for AEB to Intervene` Euro NCAP AEB Testing` , Events`Events_49bc5c79-6a14-497e-954a-814c8763c302
+
+SET_EVENT_ID 0 ! reset to default
+
+#EMBEDDED_NOTES
+#Wait until T_BK to check AEB outputs
+#- T_BK represents when the lead vehicle/(GVT) brakes
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Events; { Euro NCAP AEB Testing } AEB CCRb A1. Wait for GVT Decel.
+#Library : Events
+#DataSet : AEB CCRb A1. Wait for GVT Decel.
+#Category: Euro NCAP AEB Testing
+#FileID  : Events_69b9682d-45f7-402c-a7be-691a6d4fc8a0
+#Created : 09-07-2021 15:11:37
+#Modified: 09-09-2021 16:11:53
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

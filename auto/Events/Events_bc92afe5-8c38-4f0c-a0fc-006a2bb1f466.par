@@ -1,0 +1,44 @@
+PARSFILE
+#FullDataName Events`B. Initialize AEB On Test, 50%, Child`Pedestrian Euro NCAP
+#CheckBox1 1    
+*CLEAR
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 >=
+#RingCtrl10 1
+#RingCtrl11 4
+RESET_EVENTS
+*NAME1 READY_FOR_AEB_TEST
+*VALUE1 1
+#MiscYellow0
+READY_FOR_AEB_TEST = ...
+if(RESET_COMPLETE & AEB_On, 1, 0)
+END_FINAL_RUN = if ( (FINAL_AEB_TEST & AEB_OnTestSuccess) | (FINAL_AEB_TEST & AEB_ON_COLLIDE), 1, 0)
+#ENDMYellow
+
+MAKE_EVENT READY_FOR_AEB_TEST >= 1 ; Events\Events_90e98a22-aa1d-4879-b46e-8c0db865525f.par
+#BlueLink0 Events`Start AEB Run, 50%, Child` Pedestrian Euro NCAP` , Events`Events_90e98a22-aa1d-4879-b46e-8c0db865525f
+
+SET_EVENT_ID 0 ! reset to default
+
+#EMBEDDED_NOTES
+#The initial vehicle-to-pedestrian collision test has completed
+#- A final check should occur to determine if it is okay to proceed with the first AEB on test
+#- The event flag indicating whether the final run has ended, should also be updated
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Events; { Pedestrian Euro NCAP } B. Initialize AEB On Test, 50%, Child
+#Library : Events
+#DataSet : B. Initialize AEB On Test, 50%, Child
+#Category: Pedestrian Euro NCAP
+#FileID  : Events_bc92afe5-8c38-4f0c-a0fc-006a2bb1f466
+#Created : 08-18-2021 16:49:53
+#Modified: 08-30-2021 17:04:08
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

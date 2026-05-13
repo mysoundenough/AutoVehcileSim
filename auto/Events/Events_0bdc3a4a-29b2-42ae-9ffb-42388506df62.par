@@ -1,0 +1,44 @@
+PARSFILE
+#FullDataName Events`Delayed Initialization`Initialization
+#CheckBox1 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 ZERO ~=
+#RingCtrl10 1
+#RingCtrl11 4
+*NAME1 T
+*VALUE1 1
+#MiscYellow0
+! TSTART_WRITE to TSTEP
+#ENDMYellow
+
+#MiscYellow1
+OPT_DELAY_INIT 0 ! turn off for this demo
+#ENDMYellow
+
+DEFINE_EVENT 1 ; Events\Events_71e84b6a-1157-4197-9498-e0238f1a8e8c.par
+#BlueLink0 Events`INIT vehicle` Initialization` , Events`Events_71e84b6a-1157-4197-9498-e0238f1a8e8c
+
+SET_EVENT_ID 0 ! reset to default
+
+#EMBEDDED_NOTES
+#The Event is triggered at the end of the first time step, and the linked Parsfile triggers a second initialization.
+#
+#The initial state can be hidden by setting TSTART_WRITE to TSTEP: to do this, removed the comment !
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Events; { Initialization } Delayed Initialization
+#Library : Events
+#DataSet : Delayed Initialization
+#Category: Initialization
+#FileID  : Events_0bdc3a4a-29b2-42ae-9ffb-42388506df62
+#Created : 09-28-2023 14:08:18
+#Modified: 10-23-2023 15:21:38
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

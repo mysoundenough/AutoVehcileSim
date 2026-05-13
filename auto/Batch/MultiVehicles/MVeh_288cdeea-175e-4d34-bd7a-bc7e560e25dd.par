@@ -1,0 +1,37 @@
+PARSFILE
+#FullDataName Parallel VS Math Models`Pickup Hauling Car: DLC`Vehicle Hauling
+PARSFILE Runs\Run_e8d254bc-1169-4bc1-b964-53a785de3a21.par
+#BlueLink0 CarSim Run Control`Pickup Hauler - Car 1: DLC` Multiple Vehicles, Parallel Solvers` , Vehicle 1:`Run_e8d254bc-1169-4bc1-b964-53a785de3a21
+
+PARSFILE Runs\Run_f25743f3-86a3-466f-80bd-079c64ff56c0.par
+#BlueLink1 CarSim Run Control`Hauled Car - Car 2: DLC` Multiple Vehicles, Parallel Solvers` , Vehicle 2:`Run_f25743f3-86a3-466f-80bd-079c64ff56c0
+
+#RingCtrl0 0
+*RUN_PLATFORM 0
+#RingCtrl1 2
+*SHOW_LINK 2
+
+#EMBEDDED_NOTES
+#To run this example in Windows:
+#1) click Open Model or Generate FMU
+#2) in Simulink, click the run button
+#3) review results from the last vehicle
+#
+#V: Video
+#P: Plot
+#
+#Each vehicle in the Vehicle Hauler configuration uses a shared simulink model that leverages parallel solvers to simulate the vehicles across multiple CarSim Runs.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Parallel VS Math Models; { Vehicle Hauling } Pickup Hauling Car: DLC
+#Library : Parallel VS Math Models
+#DataSet : Pickup Hauling Car: DLC
+#Category: Vehicle Hauling
+#FileID  : MVeh_288cdeea-175e-4d34-bd7a-bc7e560e25dd
+#Created : 01-11-2023 13:03:31
+#Modified: 06-20-2023 11:00:01
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode mVeh
+
+END

@@ -1,0 +1,37 @@
+PARSFILE
+#FullDataName Events`B. Switch to CL Shift Control`MT Acceleration
+#CheckBox1 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 >
+#RingCtrl10 1
+#RingCtrl11 4
+*NAME1 vx
+*VALUE1 300
+#MiscYellow0
+CLUTCH_TORQUE_GAIN = 1; ! Do not allow for clutch slip
+#ENDMYellow
+
+PARSFILE Control\Gear_at\GearCL_a4dbdbca-1045-4771-aac4-bdce4d60af42.par
+#BlueLink10 Control: Shifting (Closed Loop)`NGEARS, Clutch Act 0.5s, Gear 0.1s` Closed-Loop Shifting` , Miscellaneous`GearCL_a4dbdbca-1045-4771-aac4-bdce4d60af42
+
+MAKE_EVENT vx > 300 ; Events\Events_b5af09b5-d8ad-4e81-ae24-eebce691780e.par
+#BlueLink0 Events`End Events` ` , Events`Events_b5af09b5-d8ad-4e81-ae24-eebce691780e
+
+SET_EVENT_ID 0 ! reset to default
+
+LOG_ENTRY Used Dataset: Events; { MT Acceleration } B. Switch to CL Shift Control
+#Library : Events
+#DataSet : B. Switch to CL Shift Control
+#Category: MT Acceleration
+#FileID  : Events_8ef0ee62-41e3-4fee-a317-5647e1778d2f
+#Created : 04-14-2021 08:50:13
+#Modified: 05-28-2021 14:59:29
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

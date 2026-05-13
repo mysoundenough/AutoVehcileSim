@@ -1,0 +1,64 @@
+PARSFILE
+#FullDataName Animator: Shape Assembly`Exotic Car (Trans.)`Passenger Cars
+*COLOR .36 .117 .117
+*OFFSET_X 0
+*OFFSET_Y 0
+*OFFSET_Z 0.35
+*X_REF_LENGTH 2650
+*Y_REF_LENGTH 2064
+*Z_REF_LENGTH 1158
+*IMAGE_FIT_MODE 1
+#CheckBox0 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 0    
+#CheckBox5 1    
+
+#RingCtrl1 0
+#RingCtrl2 2
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL_Groups\ShpGrp_e53fe3bd-3b5d-434d-b21a-a68d3bac8ff5.png
+PARSFILE Animator\STL\Shape_ce308a19-1eaf-4866-ba95-1f8905a822e3.par
+#BlueLink0 Animator: Shape File Link`Sports Car: Body (Trans.)` Cars: Exotic` , Shape File`Shape_ce308a19-1eaf-4866-ba95-1f8905a822e3
+
+set_lighting on
+PARSFILE Animator\STL\Shape_b2f31386-03f7-44f2-a95f-84cf96e8a6db.par
+#BlueLink1 Animator: Shape File Link`Sports Car: Details (Trans.)` Cars: Exotic` , Shape File`Shape_b2f31386-03f7-44f2-a95f-84cf96e8a6db
+
+set_lighting on
+PARSFILE Animator\STL\Shape_1e88d0e8-191f-4d9e-aa05-785dc8f1118a.par
+#BlueLink2 Animator: Shape File Link`Sports Car: Windows` Cars: Exotic` , Shape File`Shape_1e88d0e8-191f-4d9e-aa05-785dc8f1118a
+
+set_lighting on
+PARSFILE Animator\STL\Shape_6c3911fe-1a45-4404-80ec-f645ed1b3cc1.par
+#BlueLink3 Animator: Shape File Link`Sports Car: Brake Lights (Off)` Cars: Exotic` , Shape File`Shape_6c3911fe-1a45-4404-80ec-f645ed1b3cc1
+
+set_lighting on
+PARSFILE Animator\STL\Shape_e1b03680-8dd5-4393-b889-7cd0861bfe6c.par
+#BlueLink4 Animator: Shape File Link`Sports Car: Driver (Caucasian Male)` Cars: Exotic` , Shape File`Shape_e1b03680-8dd5-4393-b889-7cd0861bfe6c
+
+set_lighting on
+PARSFILE Animator\STL\Shape_ef7e7762-67c5-4dc0-bcf8-e3b23538d47a.par
+#BlueLink5 Animator: Shape File Link`Front independent motor` Common Vehicle Assets` , Shape File`Shape_ef7e7762-67c5-4dc0-bcf8-e3b23538d47a
+
+set_lighting on
+x_ref_length 2650
+y_ref_length 2064
+z_ref_length 1158
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
+#BlueLink17 Animator: Camera Setup`YZ-Plane, No Offsets (with Yaw)` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+
+
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Passenger Cars } Exotic Car (Trans.)
+#Library : Animator: Shape Assembly
+#DataSet : Exotic Car (Trans.)
+#Category: Passenger Cars
+#FileID  : ShpGrp_e53fe3bd-3b5d-434d-b21a-a68d3bac8ff5
+#Created : 05-21-2021 15:50:34
+#Modified: 05-28-2021 15:03:00
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape Assembly
+
+END

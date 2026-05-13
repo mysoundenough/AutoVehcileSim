@@ -1,0 +1,46 @@
+PARSFILE
+#FullDataName Animator: Shape Assembly`Ride Road: Signs`Generic Proving Ground
+*ANGLE_Z 0
+*OFFSET_Z .45
+*X_REF_LENGTH 3344
+*Y_REF_LENGTH 2490
+*Z_REF_LENGTH 1757
+#CheckBox0 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 0    
+#CheckBox5 0    
+
+#RingCtrl1 1
+#RingCtrl2 2
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL_Groups\ShpGrp_df55b391-5342-4bd3-809e-3ca9b2ae87c8.png
+PARSFILE Animator\STL\Shape_d10666a2-7396-4f2d-a09a-7d674c95f69d.par
+#BlueLink0 Animator: Shape File Link`Ride Road: Signals and Directions` Generic Proving Ground: Signs` , Shape File`Shape_d10666a2-7396-4f2d-a09a-7d674c95f69d
+
+#MiscYellow0
+translucent_fix on
+#ENDMYellow
+
+set_lighting off
+PARSFILE Animator\STL\Shape_ea98dff8-500c-44fb-a9ee-1e63f2d7c4dc.par
+#BlueLink1 Animator: Shape File Link`Ride Road: Entrance` Generic Proving Ground: Signs` , Shape File`Shape_ea98dff8-500c-44fb-a9ee-1e63f2d7c4dc
+
+translucent_fix on
+set_lighting off
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_8a740db8-6c99-446b-a4f7-d41004065c5b.par
+#BlueLink17 Animator: Camera Setup`Proving Grounds: Ride Road Entrance` Scene Specific Preview` , Video Camera`Camera_8a740db8-6c99-446b-a4f7-d41004065c5b
+
+
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Generic Proving Ground } Ride Road: Signs
+#Library : Animator: Shape Assembly
+#DataSet : Ride Road: Signs
+#Category: Generic Proving Ground
+#FileID  : ShpGrp_df55b391-5342-4bd3-809e-3ca9b2ae87c8
+#Modified: 05-28-2021 15:02:59
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape Assembly
+
+END

@@ -1,0 +1,35 @@
+PARSFILE
+#FullDataName Generic VS Commands`01 - Capture Ground Z, Delete Eq's`K&C Test Sequence
+#VehCode VS Commands
+
+#MiscYellow0
+! Save the values of ground z at design load for possible use in continued runs
+GND_Z_AT_DESIGN_L1 = IMP_ZGND_L1;
+GND_Z_AT_DESIGN_R1 = IMP_ZGND_R1;
+GND_Z_AT_DESIGN_L2 = IMP_ZGND_L2;
+GND_Z_AT_DESIGN_R2 = IMP_ZGND_R2;
+
+! remove equations for ground, so no more adjustment takes place in continued run
+DELETE_EQS_IN IMP_ZGND_L1
+DELETE_EQS_IN IMP_ZGND_R1
+DELETE_EQS_IN IMP_ZGND_L2
+DELETE_EQS_IN IMP_ZGND_R2
+#ENDMYellow
+
+
+#EMBEDDED_NOTES
+#This dataset sets the values of some outputs
+#defined only for the K&C test of the Design Load Condition
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { K&C Test Sequence } 01 - Capture Ground Z, Delete Eq's
+#Library : Generic VS Commands
+#DataSet : 01 - Capture Ground Z, Delete Eq's
+#Category: K&C Test Sequence
+#FileID  : GenVS_e606d51f-0b91-4321-841a-0d2b6d905375
+#Modified: 05-28-2021 15:02:26
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode VS Commands
+
+END

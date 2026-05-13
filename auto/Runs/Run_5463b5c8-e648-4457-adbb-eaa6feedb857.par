@@ -1,0 +1,82 @@
+PARSFILE
+#FullDataName CarSim Run Control`TBC: Reverse DLC`Driver Model
+#VEHICLECODE Ind_SA + SS
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_5463b5c8-e648-4457-adbb-eaa6feedb857
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Animator\Cameras\Camera_e35ca4da-dd8b-4473-b0d2-e0943831e7a9.par
+#BlueLink0 Animator: Camera Setup`10 Azm, 9 El, 30 m, No Yaw` Vehicle Reference` , Animator camera`Camera_e35ca4da-dd8b-4473-b0d2-e0943831e7a9
+
+#CheckBox0 1    
+#CheckBox1 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 0    
+#CheckBox5 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox8 0    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+#CheckBox12 0    
+
+#RingCtrl0 4
+#RingCtrl1 3
+#RingCtrl2 3
+#RingCtrl3 0
+ANI_T_STAMP
+TIME_CHANNEL T_STAMP
+
+#RingCtrl6 0
+#RingCtrl7 -1
+#RingCtrl4 on
+RT_WINDOW_CLOSE on
+#RingCtrl5 1
+LIVE_SERVER_MAX_CONNECTIONS 1
+PARSFILE Vehicles\Loaded\VehLoad_ef888e3b-53f4-4d12-9194-35ca1ac6a497.par
+#BlueLink2 Vehicle with Loads, Sensors, Trailer, etc.`Pickup, Full Size, 2A Gooseneck Trailer` Pickup, Full Size` , Math Model`VehLoad_ef888e3b-53f4-4d12-9194-35ca1ac6a497
+
+PARSFILE Procedures\Proc_6f2de6a1-ed4a-4a32-902e-1dfeba98ee73.par
+#BlueLink28 Procedures`TBC: DLC @ -5 km/h` Driver Controls` , Procedure`Proc_6f2de6a1-ed4a-4a32-902e-1dfeba98ee73
+
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Animator\Vehicles\AniVeh_6ba13624-c527-4355-b1e1-654631d3017e.png
+WRITE_SENSOR_DETECT
+Title TBC: Reverse DLC <Driver Model>
+CATEGORY Driver Model 
+DATASET_TITLE TBC: Reverse DLC
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#In this example, a pickup towing a trailer executes a low-speed "double lane change" maneuver in reverse. This shows straight line as well as offset backing performance.
+#
+#Steering control is closed loop, using the built-in trailer backing controller (TBC), introduced in CarSim 2022.1.
+#
+#NOTE: The CarSim Trailers license is required to run this example. You may still view video and plots without it.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { Driver Model } TBC: Reverse DLC
+#Library : CarSim Run Control
+#DataSet : TBC: Reverse DLC
+#Category: Driver Model
+#FileID  : Run_5463b5c8-e648-4457-adbb-eaa6feedb857
+#Modified: 11-21-2022 14:16:19
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Run
+
+END

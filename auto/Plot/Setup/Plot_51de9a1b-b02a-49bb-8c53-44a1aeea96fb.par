@@ -1,0 +1,41 @@
+PARSFILE
+#FullDataName Plot: Setup`Spring Forces (External) L1`Suspension Forces and Moments
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par
+#BlueLink0 Plot: Format`Default Plot Settings` ` , Plot format`PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS FsExt_L1, Time
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Spring Forces (External) L1
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Suspension Forces and Moments } Spring Forces (External) L1
+#Library : Plot: Setup
+#DataSet : Spring Forces (External) L1
+#Category: Suspension Forces and Moments
+#FileID  : Plot_51de9a1b-b02a-49bb-8c53-44a1aeea96fb
+#Created : 11-12-2022 12:16:21
+#Modified: 11-21-2022 14:12:57
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Plot Setup
+
+END

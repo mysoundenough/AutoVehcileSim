@@ -1,0 +1,121 @@
+PARSFILE
+#FullDataName Generic Data Group`Ext 7-spd Trans w/ Internal Shift Tables`Powertrain
+#VehCode External Transmission / Internal Shift Schedule
+#MiscYellow0
+! Specify that the transmission is external:
+OPT_TRANS_INTERNAL = 0
+
+! Specify that the shift schedule tables 
+!   are internal
+OPT_SHIFT_INTERNAL = 1
+#ENDMYellow
+
+
+#MiscYellow1
+! Tables for shifting from:
+!    1st Gear to 2nd Gear
+!    2nd Gear to 1st Gear
+
+IGEAR = 1
+#ENDMYellow
+
+PARSFILE Powertrain\Shift\Shift_06bc0559-9dd5-400c-9143-8fd189cf8f64.par
+#BlueLink1 Powertrain: Shift Schedule`Shift Table: 1-2 Upshift, 2-1 Downshift` Ext. Transmission` , Link 2`Shift_06bc0559-9dd5-400c-9143-8fd189cf8f64
+
+
+#MiscYellow2
+! Tables for shifting from:
+!    2nd Gear to 3rd Gear
+!    3rd Gear to 2nd Gear
+
+IGEAR = 2
+#ENDMYellow
+
+PARSFILE Powertrain\Shift\Shift_588426cc-c917-4b66-afb1-347807263840.par
+#BlueLink2 Powertrain: Shift Schedule`Shift Table: 2-3 Upshift, 3-2 Downshift` Ext. Transmission` , Link 3`Shift_588426cc-c917-4b66-afb1-347807263840
+
+
+#MiscYellow3
+! Tables for shifting from:
+!    3rd Gear to 4th Gear
+!    4th Gear to 3rd Gear
+
+IGEAR = 3
+#ENDMYellow
+
+PARSFILE Powertrain\Shift\Shift_a0e1a26a-7612-428d-8e58-ab9c5949de19.par
+#BlueLink3 Powertrain: Shift Schedule`Shift Table: 3-4 Upshift, 4-3 Downshift` Ext. Transmission` , Link 4`Shift_a0e1a26a-7612-428d-8e58-ab9c5949de19
+
+
+#MiscYellow4
+! Tables for shifting from:
+!    4th Gear to 5th Gear
+!    5th Gear to 4th Gear
+
+IGEAR = 4
+#ENDMYellow
+
+PARSFILE Powertrain\Shift\Shift_aed975d3-5250-45e1-824b-bb9dba69f1a0.par
+#BlueLink4 Powertrain: Shift Schedule`Shift Table: 4-5 Upshift, 5-4 Downshift` Ext. Transmission` , Link 5`Shift_aed975d3-5250-45e1-824b-bb9dba69f1a0
+
+
+#MiscYellow5
+! Tables for shifting from:
+!    5th Gear to 6th Gear
+!    6th Gear to 5th Gear
+
+IGEAR = 5
+#ENDMYellow
+
+PARSFILE Powertrain\Shift\Shift_f72e98a4-cf2f-4776-ab22-775251b3f187.par
+#BlueLink5 Powertrain: Shift Schedule`Shift Table: 5-6 Upshift, 6-5 Downshift` Ext. Transmission` , Link 6`Shift_f72e98a4-cf2f-4776-ab22-775251b3f187
+
+
+#MiscYellow6
+
+
+! Tables for shifting from:
+!    6th Gear to 7th Gear
+!    7th Gear to 6th Gear
+
+IGEAR = 6
+#ENDMYellow
+
+PARSFILE Powertrain\Shift\Shift_6a4b7a6f-23c9-4b22-9d2d-042ec6e8310e.par
+#BlueLink6 Powertrain: Shift Schedule`Shift Table: 6-7 Upshift, 7-6 Downshift` Ext. Transmission` , Link 7`Shift_6a4b7a6f-23c9-4b22-9d2d-042ec6e8310e
+
+
+
+#MiscYellow8
+
+
+! If more than 8 shift tables are needed,
+!   the link below may be used to link to 
+!   another Generic dataset with more links.
+#ENDMYellow
+
+
+*MODELCODE External Transmission / Internal Shift Schedule
+
+#EMBEDDED_NOTES
+#This dataset enables the use of the CarSim internal automatic shift control logic with an external transmission.
+#
+#When linked into a powertran dataset it will overwrite some of the OPT parameters related to the transmission, and then links to the appropriate upshift and downshift tables.
+#
+#igear is used to specify which gear the shift tables are used for, and then the blue links connects to a paired set of Upshift and Downshift tables for that gear.
+#
+#To use this dataset, link it to the Miscelaneous link on the powertrain assembly dataset.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic Data Group; { Powertrain } Ext 7-spd Trans w/ Internal Shift Tables
+#Library : Generic Data Group
+#DataSet : Ext 7-spd Trans w/ Internal Shift Tables
+#Category: Powertrain
+#FileID  : GenGrp_3e8b2c32-b9f5-45f3-a299-1e9681d9a9e4
+#Created : 12-06-2022 11:49:59
+#Modified: 12-06-2022 12:28:54
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode External Transmission / Internal Shift Schedule
+
+END

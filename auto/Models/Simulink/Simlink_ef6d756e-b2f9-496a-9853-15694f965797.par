@@ -1,0 +1,55 @@
+PARSFILE
+#FullDataName Models: Simulink`Batch Iteration, Simulink`Batch Iteration
+#RunMdlFile Extensions\Simulink\batch_iteration\batch_iteration_SL.mdl
+SIMULINK_MODEL_FILE Extensions\Simulink\batch_iteration\batch_iteration_SL.mdl
+#RingCtrl0 -1
+#RingCtrl2 0
+*MULTI_SOLVERS 0
+*MULTI_S_WRAPPER 0
+#CheckBox0 1    
+*USE_ALT_DIR 1
+#CheckBox1 0    
+*USE_DIFF_SOLVERS 0
+#CheckBox3 1    
+#CheckBox5 0    
+#RingCtrl1 0
+OPT_INT_METHOD 0
+#CheckBox4 1    
+OPT_IO_SYNC_FM 1
+*TSTEP 0.0005
+*FREQ_MODEL 2000
+*TSTEP_OUT 0.025
+*FREQ_OUT 40
+tstep 0.0005
+iprint 50
+#AltPath Extensions\Simulink\batch_iteration
+*ALTERNATE_PATH Extensions\Simulink\batch_iteration
+PARSFILE IO_Channels\I_Channels\Import_6da16c02-4828-4f99-9a07-b82aff11128b.par
+#BlueLink0 I/O Channels: Import`Target Speed` Driver Model` , Import`Import_6da16c02-4828-4f99-9a07-b82aff11128b
+
+#BlueLink3 I/O Channels: Ports` ` , vs_ctl Ports` , vs_state Ports`
+
+#BlueLink4 I/O Channels: Ports` ` , vs_kin Ports` , vs_ctl Ports`
+
+#BlueLink5 I/O Channels: Ports` ` , vs_dyn Ports` , vs_kin Ports`
+
+#BlueLink6 I/O Channels: Ports` ` , vs_dyn Ports` , vs_dyn Ports`
+
+#MiscYellow1
+*CPAR_INCLUDE  Extensions\Simulink\batch_iteration
+#ENDMYellow
+
+LIVE_SERVER_UPDATE_FREQ_MAX 60
+
+LOG_ENTRY Used Dataset: Models: Simulink; { Batch Iteration } Batch Iteration, Simulink
+#Library : Models: Simulink
+#DataSet : Batch Iteration, Simulink
+#Category: Batch Iteration
+#FileID  : Simlink_ef6d756e-b2f9-496a-9853-15694f965797
+#Created : 05-18-2023 14:41:56
+#Modified: 05-25-2023 11:48:37
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode 
+
+END

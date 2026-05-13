@@ -1,0 +1,42 @@
+PARSFILE
+#FullDataName Animator: Shape Assembly`Tractor, Articulated (Front)`Utility Vehicles
+*OFFSET_X 0
+*OFFSET_Y 0
+*OFFSET_Z 0.55
+*X_REF_LENGTH 2050
+*Y_REF_LENGTH 2240
+*Z_REF_LENGTH 1944
+*IMAGE_FIT_MODE 1
+#CheckBox0 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 0    
+#CheckBox5 1    
+
+#RingCtrl1 2
+#RingCtrl2 2
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL_Groups\ShpGrp_8e338cbf-0485-4125-a9fb-64f15a983f73.png
+PARSFILE Animator\STL\Shape_0106a79e-f64c-4040-9529-9effdf85799a.par
+#BlueLink0 Animator: Shape File Link`Tractor: Body (Front)` Cars: Other Vehicles` , Shape File`Shape_0106a79e-f64c-4040-9529-9effdf85799a
+
+x_ref_length 2050
+y_ref_length 2240
+z_ref_length 1944
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_e6e4b5e2-348e-42ad-ab7c-62eacd66bb44.par
+#BlueLink17 Animator: Camera Setup`Vehicles and Drivers - Trucks` Shape Preview` , Video Camera`Camera_e6e4b5e2-348e-42ad-ab7c-62eacd66bb44
+
+
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Utility Vehicles } Tractor, Articulated (Front)
+#Library : Animator: Shape Assembly
+#DataSet : Tractor, Articulated (Front)
+#Category: Utility Vehicles
+#FileID  : ShpGrp_8e338cbf-0485-4125-a9fb-64f15a983f73
+#Created : 05-23-2023 15:01:42
+#Modified: 09-21-2023 10:54:48
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape Assembly
+
+END

@@ -1,0 +1,37 @@
+PARSFILE
+#FullDataName Animator: Shape File Link`Box Trailer, 53-ft: TruckSim Logo`Common Vehicle Assets
+#MiscYellow3
+add_obj Animator\3D_Shape_Files\Trailers\Box_Trailer\Box_Trailer53_logos.osg
+#ENDMYellow
+
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+vsv_enable_shadows_recursive
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_af7c7c91-f09a-4493-9104-5b2725e3cf03.par
+#BlueLink2 Animator: Camera Setup`Isometric View - Small Objects` Shape Preview` , Video Camera`Camera_af7c7c91-f09a-4493-9104-5b2725e3cf03
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_8d4a6e28-fe3d-4e50-9422-7e14afa8decc.png
+
+#EMBEDDED_NOTES
+#
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Common Vehicle Assets } Box Trailer, 53-ft: TruckSim Logo
+#Library : Animator: Shape File Link
+#DataSet : Box Trailer, 53-ft: TruckSim Logo
+#Category: Common Vehicle Assets
+#FileID  : Shape_8d4a6e28-fe3d-4e50-9422-7e14afa8decc
+#Created : 12-08-2021 12:03:49
+#Modified: 01-17-2022 09:38:18
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape File
+
+END

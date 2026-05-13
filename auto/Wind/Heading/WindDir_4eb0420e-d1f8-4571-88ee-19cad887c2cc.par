@@ -1,0 +1,29 @@
+PARSFILE
+#FullDataName Wind Heading`Constant: -180 deg`Constant
+#CheckBox0 0    
+
+#RingCtrl0 CONSTANT
+#RingCtrl1 CONSTANT
+#RingCtrl2 ADD
+WIND_HEADING_COMBINE ADD
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+WIND_HEADING_CONSTANT -180
+WIND_HEADING_S_CONSTANT 0
+*SCALAR -180
+*SCALAR2 0
+
+
+LOG_ENTRY Used Dataset: Wind Heading; { Constant } Constant: -180 deg
+#Library : Wind Heading
+#DataSet : Constant: -180 deg
+#Category: Constant
+#FileID  : WindDir_4eb0420e-d1f8-4571-88ee-19cad887c2cc
+#Created : 10-06-2022 10:55:42
+#Modified: 10-06-2022 10:55:53
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Wind Heading
+
+END

@@ -1,0 +1,45 @@
+PARSFILE
+#FullDataName Plot: Setup`Pitch Coeff: Measured vs Input`Virtual Wind Tunnel
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par
+#BlueLink0 Plot: Format`Default Plot Settings` ` , Plot format`PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS Cp_VWT, Time, Car (Meas.)
+PLOTCHANNELS Cp_Input, Time, Car (Input)
+PLOTCHANNELS Cp_VWT_2, Time, Trailer (Meas.)
+PLOTCHANNELS Cp_Input_2, Time, Trailer (Input)
+PLOTCHANNELS Cp_Total, Time, Combo (Meas.)
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Pitch Coeff: Measured vs Input
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Virtual Wind Tunnel } Pitch Coeff: Measured vs Input
+#Library : Plot: Setup
+#DataSet : Pitch Coeff: Measured vs Input
+#Category: Virtual Wind Tunnel
+#FileID  : Plot_cdacb3dd-d020-4e59-a556-db58b976630b
+#Created : 10-06-2022 11:55:37
+#Modified: 10-06-2022 15:38:44
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Plot Setup
+
+END

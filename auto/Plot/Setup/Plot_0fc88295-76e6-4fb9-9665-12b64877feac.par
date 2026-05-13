@@ -1,0 +1,43 @@
+PARSFILE
+#FullDataName Plot: Setup`INVERSE`User-Defined Variables
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par
+#BlueLink0 Plot: Format`Default Plot Settings` ` , Plot format`PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS CmpS_L2, Time
+PLOTCHANNELS Fd_L2, Time
+PLOTCHANNELS spring_comp, Time
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE INVERSE
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { User-Defined Variables } INVERSE
+#Library : Plot: Setup
+#DataSet : INVERSE
+#Category: User-Defined Variables
+#FileID  : Plot_0fc88295-76e6-4fb9-9665-12b64877feac
+#Created : 05-19-2022 13:55:35
+#Modified: 05-26-2022 14:11:01
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Plot Setup
+
+END

@@ -1,0 +1,35 @@
+PARSFILE
+#FullDataName Steering: Parking Torque for 2 Wheels`Articulated Bus`
+#CheckBox0 0    
+
+#RingCtrl0 CONSTANT
+#RingCtrl1 CONSTANT
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+*A_MZ_BETA_R 0.1
+*A_MZ_BETA_L 0.1
+*SCALAR 0
+*SCALAR2 0
+
+
+iside 2
+A_MZ_BETA 0.1
+MZ_PARKING_STEER_CONSTANT 0
+
+iside 1
+A_MZ_BETA 0.1
+MZ_PARKING_STEER_CONSTANT 0
+
+LOG_ENTRY Used Dataset: Steering: Parking Torque for 2 Wheels; Articulated Bus
+#Library : Steering: Parking Torque for 2 Wheels
+#DataSet : Articulated Bus
+#Category: 
+#FileID  : TqPark2_da263d9a-af4c-4f45-b565-baeec6a50531
+#Created : 05-26-2022 10:00:21
+#Modified: 05-26-2022 10:01:05
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Parking Torque
+
+END

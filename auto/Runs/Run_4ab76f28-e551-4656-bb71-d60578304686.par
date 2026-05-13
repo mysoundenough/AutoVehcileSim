@@ -1,0 +1,79 @@
+PARSFILE
+#FullDataName CarSim Run Control`Hitch-mounted Rack`VS Visualizer Examples
+#VEHICLECODE Ind_SA
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_4ab76f28-e551-4656-bb71-d60578304686
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Animator\Cameras\Camera_b9fa7972-0bfa-43d1-9ff3-033711663214.par
+#BlueLink0 Animator: Camera Setup`165 deg. Azimuth, Veh. Ref. (No Yaw)` Vehicle Reference` , Animator camera`Camera_b9fa7972-0bfa-43d1-9ff3-033711663214
+
+#CheckBox0 1    
+#CheckBox1 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 0    
+#CheckBox5 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox8 1    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+#CheckBox12 0    
+
+#RingCtrl0 0
+#RingCtrl1 1
+#RingCtrl2 3
+#RingCtrl3 0
+#RingCtrl6 0
+#RingCtrl7 -1
+*RUN_COLOR 1 1 1
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Vehicles\Loaded\VehLoad_1b1346ef-04ee-48fc-a20b-440446c18028.par
+#BlueLink2 Vehicle with Loads, Sensors, Trailer, etc.`SUV, Full Size, Hitch Bike Rack` Utility Vehicles` , Math Model`VehLoad_1b1346ef-04ee-48fc-a20b-440446c18028
+
+PARSFILE Procedures\Proc_3ae0353d-bd7c-43a3-9da4-150b6952a10e.par
+#BlueLink28 Procedures`DLC @ 120 km/h (Quick Start)` Handling Testing` , Procedure`Proc_3ae0353d-bd7c-43a3-9da4-150b6952a10e
+
+PARSFILE Sensors_Traffic\Traffic\TMotion_685c5b22-b555-4300-90e6-7f354600c8d8.par
+#BlueLink9 Multiple Moving Objects`1 Driver Preview Point` Points of Interest` , Miscellaneous`TMotion_685c5b22-b555-4300-90e6-7f354600c8d8
+
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Vehicles\Assembly\Vehicle_ae739799-e1e6-4392-8847-b92b6c833931.png
+WRITE_SENSOR_DETECT
+Title Hitch-mounted Rack <VS Visualizer Examples>
+CATEGORY VS Visualizer Examples 
+DATASET_TITLE Hitch-mounted Rack
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#An SUV with a hitch-mounted rack and two hanging bicycles animation shapes is demonstrated in this example
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { VS Visualizer Examples } Hitch-mounted Rack
+#Library : CarSim Run Control
+#DataSet : Hitch-mounted Rack
+#Category: VS Visualizer Examples
+#FileID  : Run_4ab76f28-e551-4656-bb71-d60578304686
+#Modified: 07-17-2023 13:14:09
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Run
+
+END

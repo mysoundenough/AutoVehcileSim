@@ -1,0 +1,41 @@
+PARSFILE
+#FullDataName Events`03 - Roll - Move to max roll`K&C Test Sequence
+#CheckBox1 0    
+#CheckBox6 0    
+#CheckBox7 1    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 ZERO ~=
+#RingCtrl1 ZERO ~=
+#RingCtrl10 2
+#RingCtrl11 4
+*VALUE1 at_max_1
+*VALUE2 at_max_2
+#MiscYellow0
+! Enable writing
+OPT_WRITE 1
+#ENDMYellow
+
+PARSFILE Generic\VS_commands\GenVS_202b5f5f-cc79-4682-9b12-4484656358e1.par
+#BlueLink10 Generic VS Commands`03 - Roll - Move to max roll` K&C Test Sequence` , Miscellaneous`GenVS_202b5f5f-cc79-4682-9b12-4484656358e1
+
+DEFINE_EVENT at_max_1 ; Events\Events_27d483bf-8593-4eac-9477-33b09244b16a.par
+#BlueLink0 Events`03 - Roll - Front is at max roll` K&C Test Sequence` , Events`Events_27d483bf-8593-4eac-9477-33b09244b16a
+
+DEFINE_EVENT at_max_2 ; Events\Events_2d43d795-9dbb-4bec-9a3d-861e802ebd56.par
+#BlueLink1 Events`03 - Roll - Rear is at max roll` K&C Test Sequence` , Events`Events_2d43d795-9dbb-4bec-9a3d-861e802ebd56
+
+SET_EVENT_ID 0 ! reset to default
+
+LOG_ENTRY Used Dataset: Events; { K&C Test Sequence } 03 - Roll - Move to max roll
+#Library : Events
+#DataSet : 03 - Roll - Move to max roll
+#Category: K&C Test Sequence
+#FileID  : Events_9e694a39-782a-41e5-a961-80599134c797
+#Modified: 05-28-2021 14:59:28
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

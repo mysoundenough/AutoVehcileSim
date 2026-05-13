@@ -1,0 +1,30 @@
+PARSFILE
+#FullDataName I/O Channels: Export`Tire CTC XY, R2`Tire Ground
+#RingCtrl0 0
+#RingCtrl1 1
+*README_FILE Results\Run_13dabb50-a55c-49ab-9194-5f395f3637e2\Run_out_tab.txt
+
+
+EXPORT Xctc_R2
+EXPORT Yctc_R2
+#MiscYellow0
+#Number of Selected Channels: 2
+#CHN_NAME: Xctc_R2
+#CHN_NAME: Yctc_R2
+#ENDMYellow
+
+#BlueLink0 CarSim Run Control`Z = Sin(X), OPT_DELAY_INIT` Imported Ground Elevation` , example run`Run_13dabb50-a55c-49ab-9194-5f395f3637e2
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Export; { Tire Ground } Tire CTC XY, R2
+#Library : I/O Channels: Export
+#DataSet : Tire CTC XY, R2
+#Category: Tire Ground
+#FileID  : Export_10abd597-82a1-42b3-a0b3-a8e9ab0cad72
+#Created : 10-05-2023 10:39:08
+#Modified: 10-18-2023 15:01:09
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Export Channels
+
+END

@@ -1,0 +1,73 @@
+PARSFILE
+#FullDataName Multiple Moving Objects`1 Veh., ACC Euro NCAP: Cut-In`Traffic Vehicles (Forward)
+#RingCtrl0 1
+DEFINE_MOVING_OBJECTS 1
+#RingCtrl1 2
+#RingCtrl2 1
+#RingCtrl4 1
+#CheckBox0 0    
+#CheckBox1 0    
+#CheckBox2 1    
+#CheckBox25 0    
+#CheckBox26 0    
+#CheckBox38 1    
+#CheckBox39 0    
+
+DZ_OBJECT 0
+*L CUT_IN_LTARG_PROF
+*LEAD 900
+*TRAIL 0
+*HIDE 20
+*PATH_ID CURRENT_PATH_ID
+*ROAD_ID CURRENT_ROAD_ID
+*V CUT_IN_SPD_PROF
+
+IOBJECT_INCREMENT
+symbol_add <<o>> 1
+SET_DESCRIPTION OBJECT_NAME 1 Veh., ACC Euro NCAP: Cut-In
+OPT_SPEED_OBJ 1
+OPT_DIR_OBJ 1
+
+EQ_INIT HEADO_<<o>> = 0
+#RingCtrl4 1
+PATH_ID_OBJ CURRENT_PATH_ID
+ROAD_ID_OBJ CURRENT_ROAD_ID
+OPT_RECYCLE_OBJ 0
+*SINIT_1 CUT_IN_VEHSSTART
+EQ_INIT S_OBJ_<<o>> = CUT_IN_VEHSSTART
+SPEED_ID_OBJ = CUT_IN_SPD_PROF
+LTARG_ID_OBJ = CUT_IN_LTARG_PROF
+*H_TARGET_1 0.7153
+H_OBJ 0.7153
+PARSFILE Animator\Vehicles\AniVeh_82ed71e5-70de-4c6c-b062-4db7bcc64cae.par
+#BlueLink0 Animator: Vehicles and Sensor Targets`Euro NCAP GVT` ADAS and AV Safety Tests` , 3D Shape for Video`AniVeh_82ed71e5-70de-4c6c-b062-4db7bcc64cae
+
+OPT_SHAPE_OBJ 1
+SHAPE_TYPE_OBJ 1
+DZ_OBJECT 0
+*SIZE_1 4.1
+LENGTH_OBJ 4.1
+*WIDTH_1 1.85
+WIDTH_OBJ 1.85
+*LX_FRONT_1 0.75
+LX_FRONT_OBJ 0.75
+*REFLECT_1 2
+MATERIAL_TYPE_OBJ 0
+REFLECT_OBJ 2
+
+#EMBEDDED_NOTES
+#These vehicles go at a specified speed on path IPATH.
+#
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Multiple Moving Objects; { Traffic Vehicles (Forward) } 1 Veh., ACC Euro NCAP: Cut-In
+#Library : Multiple Moving Objects
+#DataSet : 1 Veh., ACC Euro NCAP: Cut-In
+#Category: Traffic Vehicles (Forward)
+#FileID  : TMotion_957057fd-180d-42f8-bdae-a2d14c28c7a1
+#Modified: 09-23-2021 14:42:55
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Multiple Objects
+
+END

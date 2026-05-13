@@ -1,0 +1,46 @@
+PARSFILE
+#FullDataName Generic VS Commands`Reload Key Parameters, 50%, Bicyclist`Pedestrian Euro NCAP
+#VehCode VS Commands
+
+#MiscYellow0
+VEH_SPD_INIT = VEH_SPD_INIT+ PREV_RUN_SPD_INCR; km/h;
+
+********** updated depeding on percentage of vehicle to stike the pedestrian **********
+TARG_STRIKE = 50; %; 
+STRIKE_THRESH = 2; %; 
+
+! The pedestrian target starts in the same position each time, so the time to collision spot does not
+! change from the intial value
+VEH_DIST_INIT = VEH_SPD_INIT*T_PED_PROTO - ...
+(TARG_STRIKE + VEH_STRIKE_OFFSET)*VEH_WID+ LX_F_SM; m;
+
+VEH_S_START = PED_S_START - VEH_DIST_INIT; m;
+SIM_TIME_BUFFER = 5; s;
+TOT_SIM_TIME = VEH_DIST_INIT/VEH_SPD_INIT + SIM_TIME_BUFFER; s;
+
+PED_L_START = PED_L_PROTO + LTARG_CONSTANT;m ;
+
+********************** Update Procedure Initial Conditions **********************
+SSTART = VEH_S_START; m;
+TSTOP = TSTOP+ TOT_SIM_TIME; s;
+SPEED_TARGET_CONSTANT = VEH_SPD_INIT; s;
+#ENDMYellow
+
+
+#EMBEDDED_NOTES
+#Modify the first five parameters, based on the test being run.
+#- The rest of the values remain unchanged
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { Pedestrian Euro NCAP } Reload Key Parameters, 50%, Bicyclist
+#Library : Generic VS Commands
+#DataSet : Reload Key Parameters, 50%, Bicyclist
+#Category: Pedestrian Euro NCAP
+#FileID  : GenVS_cc2793b5-f630-42fb-a734-f28f972dcf66
+#Created : 08-17-2021 13:38:05
+#Modified: 08-30-2021 17:01:30
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode VS Commands
+
+END

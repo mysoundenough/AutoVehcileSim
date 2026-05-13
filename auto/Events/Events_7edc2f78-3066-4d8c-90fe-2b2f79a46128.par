@@ -1,0 +1,50 @@
+PARSFILE
+#FullDataName Events`CCRb C2: Contact Occured, Add Score`Euro NCAP ACC Testing
+#CheckBox1 1    
+*CLEAR
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 ZERO ~=
+#RingCtrl10 1
+#RingCtrl11 4
+RESET_EVENTS
+*NAME1 t
+*VALUE1 1
+#MiscYellow0
+Crashed = 1
+V_IMPACT = abs(minRelSpeed)
+SPEED_REDUCTION = VUT_START_SPEED - V_IMPACT
+
+!check if speed reduction was >5km/h, yes 0.5 pts. no, 0 pts.
+! Check if ACC met speed reduction test requirement, during collision event
+SCORE_NEW = if(SPEED_REDUCTION >= MIN_SPD_REDUC, SCORE_OLD + 0.5, SCORE_OLD)
+SCORE_OLD = SCORE_NEW
+#ENDMYellow
+
+DEFINE_EVENT 1 ; Events\Events_282c4e8b-3cfc-4c30-98a0-e1f806029564.par
+#BlueLink0 Events`AEB CCRb D. Pause before ending` Euro NCAP ACC Testing` , Events`Events_282c4e8b-3cfc-4c30-98a0-e1f806029564
+
+SET_EVENT_ID 0 ! reset to default
+
+#EMBEDDED_NOTES
+#Impact with the target object occured. The variable Crashed is set to 1.
+#If the speed was reduced by the threshold value of 5 km/h award 0.5 points for the test run, if not, award zero points.
+#
+#Reduce the test speed by 5 km/h and try again.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Events; { Euro NCAP ACC Testing } CCRb C2: Contact Occured, Add Score
+#Library : Events
+#DataSet : CCRb C2: Contact Occured, Add Score
+#Category: Euro NCAP ACC Testing
+#FileID  : Events_7edc2f78-3066-4d8c-90fe-2b2f79a46128
+#Created : 05-20-2021 11:23:00
+#Modified: 09-15-2021 10:52:06
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

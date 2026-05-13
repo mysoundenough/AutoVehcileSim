@@ -1,0 +1,39 @@
+PARSFILE
+#FullDataName Road: Animator Repeated Object`Virtual Wind Tunnel Fans`Large Structures
+#RingCtrl0 1
+#RingCtrl1 0
+#DiagramOne0
+*POINTS_TABLE
+10, -8
+10, -6
+10, -4
+10, -2
+10, 0
+10, 2
+10, 4
+10, 6
+10, 8
+ENDTABLE
+#RadioCtrl0 0    
+
+#CheckBox0 0    
+
+*ANGLE_OFFSET 0
+
+
+SPECIAL_PARSFILE Animator\STL_Groups\ShpGrp_1af34e92-5ac3-48c5-a813-6056249095f7.par
+#BlueLink0 Animator: Shape Assembly`Floor Fan` Props and Environmental Objects (Animated)` , 3D Object`ShpGrp_1af34e92-5ac3-48c5-a813-6056249095f7
+
+
+LOG_ENTRY Used Dataset: Road: Animator Repeated Object; { Large Structures } Virtual Wind Tunnel Fans
+#Library : Road: Animator Repeated Object
+#DataSet : Virtual Wind Tunnel Fans
+#Category: Large Structures
+#FileID  : AniRep_6b11debd-a35c-4dc8-a051-d4d09eed745a
+#Created : 10-06-2022 10:59:02
+#Modified: 10-06-2022 10:59:19
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Repeated Object
+
+END

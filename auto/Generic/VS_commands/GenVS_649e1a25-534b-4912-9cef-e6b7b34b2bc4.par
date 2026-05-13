@@ -1,0 +1,36 @@
+PARSFILE
+#FullDataName Generic VS Commands`General ADAS Hwy Setup`ADAS Support
+#VehCode VS Commands
+
+#MiscYellow0
+! ACC set speed
+DEFINE_PARAMETER EGO_SPEED = 120; km/h; ego vehicle speed
+! set speed controller target to pre-defined VUT start speed
+EQ_PRE_INIT  SPEED_TARGET_CONSTANT(1) = EGO_SPEED;
+
+define_output addBrkPress =PBK_CON_OFFSET; - ;  added brk press. from AEB stop
+
+! create output that indicates when ACC should be resumed after AEB application
+define_output speedTargetCheck  = if(AEB_On & minACC_Gain ==1 & ApplyAEB_FullStop ==1, 1, 0);-; speed target update check
+#ENDMYellow
+
+PARSFILE Plot\Setup\Plot_bcfa8024-003b-47d9-bb43-c7e5ccea40e8.par
+#BlueLink3 Plot: Setup`Check Additional Pressure` Obstacle Avoidance` , Plot`Plot_bcfa8024-003b-47d9-bb43-c7e5ccea40e8
+
+
+#EMBEDDED_NOTES
+#This VS Commands Dataset is used to set the ACC speed setpoint and determine if the vehicle should resume ACC after an AEB stop.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { ADAS Support } General ADAS Hwy Setup
+#Library : Generic VS Commands
+#DataSet : General ADAS Hwy Setup
+#Category: ADAS Support
+#FileID  : GenVS_649e1a25-534b-4912-9cef-e6b7b34b2bc4
+#Created : 11-02-2021 16:24:30
+#Modified: 11-05-2021 10:56:48
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode VS Commands
+
+END

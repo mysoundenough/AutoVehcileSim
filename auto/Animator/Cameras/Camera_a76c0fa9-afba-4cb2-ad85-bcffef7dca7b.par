@@ -1,0 +1,41 @@
+PARSFILE
+#FullDataName Animator: Camera Setup`180 Azm, 15 El, 55 m, No Yaw`Vehicle Reference
+#RingCtrl1 0
+
+#CheckBox1 0    
+#CheckBox2 0    
+#CheckBox3 0    
+
+SET_CAMERA_REFERENCE_FRAME Frame_d2b5165c-cec2-4d4b-a319-0d7cf12b8f0d
+PARSFILE Animator\Frames\Frame_d2b5165c-cec2-4d4b-a319-0d7cf12b8f0d.par
+#BlueLink0 Animator: Reference Frame`Vehicle X-Y-Z` Tracking: Vehicle` , Reference frame for outside camera`Frame_d2b5165c-cec2-4d4b-a319-0d7cf12b8f0d
+
+SET_LOOKPOINT_REFERENCE_FRAME Frame_d2b5165c-cec2-4d4b-a319-0d7cf12b8f0d
+SET_LOOKPOINT_X 0
+SET_LOOKPOINT_Y 0
+SET_LOOKPOINT_Z 1
+SET_AZIMUTH 180
+SET_ELEVATION 15
+SET_DISTANCE 55
+SET_CAMERAMAN_NAME External camera
+*SET_LOOKPOINT_X 0
+*SET_LOOKPOINT_Y 0
+*SET_LOOKPOINT_Z 1
+*SET_AZIMUTH 180
+*SET_ELEVATION 15
+*SET_DISTANCE 55
+FOG_SCALE 0
+SET_FIELD_OF_VIEW 55
+
+LOG_ENTRY Used Dataset: Animator: Camera Setup; { Vehicle Reference } 180 Azm, 15 El, 55 m, No Yaw
+#Library : Animator: Camera Setup
+#DataSet : 180 Azm, 15 El, 55 m, No Yaw
+#Category: Vehicle Reference
+#FileID  : Camera_a76c0fa9-afba-4cb2-ad85-bcffef7dca7b
+#Created : 05-12-2023 10:04:36
+#Modified: 05-12-2023 10:04:47
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Camera
+
+END

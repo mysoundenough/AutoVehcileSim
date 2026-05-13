@@ -1,0 +1,91 @@
+PARSFILE
+#FullDataName Procedures`Virtual Wind Tunnel (Incl. Trailer)`Aerodynamics
+#CheckBox1 0    
+OPT_INIT_PATH 0
+
+#RingCtrl0 5
+#RingCtrl1 0
+#RingCtrl2 0
+OPT_STOP 0
+TSTART 0
+TSTART_WRITE = 0;
+TSTOP 15
+OPT_DIRECTION 1
+*TSTOP 15
+*TSTART 0
+
+OPT_SC 0
+PARSFILE Control\Steer\StrSW_d02d6236-3489-4162-b8b9-953cdc586f4c.par
+#BlueLink27 Control: Steering (Open Loop)`Constant: 0 deg.` Constant` , Steering`StrSW_d02d6236-3489-4162-b8b9-953cdc586f4c
+
+PARSFILE Control\Braking\PbkCon_05647622-c054-491d-a2fc-d34f9f2f273d.par
+#BlueLink28 Control: Braking MC Pressure (Open Loop)`Constant: 10 MPa` Constant` , Braking`PbkCon_05647622-c054-491d-a2fc-d34f9f2f273d
+
+PARSFILE Control\Gear_at\GearCL_395374af-90fa-4fef-80e1-a8df607bfbef.par
+#BlueLink30 Control: Shifting (Closed Loop)`Neutral` ` , Shifting Control`GearCL_395374af-90fa-4fef-80e1-a8df607bfbef
+
+PARSFILE Control\Throttle\Throttle_768d3744-c109-4ff7-a65b-3b0bea560117.par
+#BlueLink29 Control: Throttle (Open Loop)`Constant: 0` Constant` , Speed vs. time`Throttle_768d3744-c109-4ff7-a65b-3b0bea560117
+
+PARSFILE Roads\3D_Road\Road_b759d034-92e8-44f6-af1d-31feef24f1b7.par
+#BlueLink0 Road: 3D Surface (All Properties)`Virtual Wind Tunnel` Test Facilities` , Miscellaneous`Road_b759d034-92e8-44f6-af1d-31feef24f1b7
+
+PARSFILE Generic\Group\GenGrp_dcc6a149-4a2e-4e5e-9cea-a8f455081118.par
+#BlueLink1 Generic Data Group`Headwind: 120 km/h` Wind and Environment` , Miscellaneous`GenGrp_dcc6a149-4a2e-4e5e-9cea-a8f455081118
+
+PARSFILE Generic\Group\GenGrp_2f482a6d-b973-4f1f-8775-0718a8c85b8a.par
+#BlueLink2 Generic Data Group`3 Axle - Fx, Fy, Fz` Tire Force Arrows` , Miscellaneous`GenGrp_2f482a6d-b973-4f1f-8775-0718a8c85b8a
+
+PARSFILE Output\Sensors\MoSen_2dd7c7d1-e431-415b-b31d-77016d931ad2.par
+#BlueLink4 Positions, Velocities, and Accelerations`Aero Reference Point (Incl. Trailer)` ` , Miscellaneous`MoSen_2dd7c7d1-e431-415b-b31d-77016d931ad2
+
+PARSFILE Animator\Groups\Group_5df11fca-68d2-4d1e-bd7f-71f60b3b28c3.par
+#BlueLink5 Animator: Group`Aero Force and Moment Arrows` Aerodynamics` , Miscellaneous`Group_5df11fca-68d2-4d1e-bd7f-71f60b3b28c3
+
+PARSFILE Animator\Groups\Group_3f4520b1-e574-4101-a85a-9fb304b89c3e.par
+#BlueLink6 Animator: Group`Aero Force Moment Arrows (Trailer)` Aerodynamics` , Miscellaneous`Group_3f4520b1-e574-4101-a85a-9fb304b89c3e
+
+#MiscYellow1
+! desired aero sideslip angle
+define_parameter beta_req = 20; deg
+eq_init sv_yaw = -beta_req
+#ENDMYellow
+
+PARSFILE Plot\Setup\Plot_80fe95a6-7b78-462a-bcfd-a273a731568d.par
+#BlueLink8 Plot: Setup`Aerodynamic Slip Angle` Aerodynamics and Wind` , Plot`Plot_80fe95a6-7b78-462a-bcfd-a273a731568d
+
+PARSFILE Plot\Setup\Plot_3f15c9c3-0af9-463a-9ef0-afdf4ae9de1c.par
+#BlueLink9 Plot: Setup`Aerodynamic Forces` Aerodynamics and Wind` , Plot`Plot_3f15c9c3-0af9-463a-9ef0-afdf4ae9de1c
+
+PARSFILE Plot\Setup\Plot_34caacf4-52e7-465b-bdb5-0b98adddeaab.par
+#BlueLink10 Plot: Setup`Aerodynamic Moments` Aerodynamics and Wind` , Plot`Plot_34caacf4-52e7-465b-bdb5-0b98adddeaab
+
+PARSFILE Plot\Setup\Plot_737158a3-cc88-4356-a7f8-b76259ff593e.par
+#BlueLink11 Plot: Setup`Wind Speed` Aerodynamics and Wind` , Plot`Plot_737158a3-cc88-4356-a7f8-b76259ff593e
+
+PARSFILE Plot\Setup\Plot_66ece9f6-0732-41bc-9234-593ef1088e26.par
+#BlueLink12 Plot: Setup`Wind Heading` Aerodynamics and Wind` , Plot`Plot_66ece9f6-0732-41bc-9234-593ef1088e26
+
+PARSFILE Plot\Setup\Plot_3a6d6056-066a-4473-b080-21b43ed5d9de.par
+#BlueLink13 Plot: Setup`Hitch Articulation Angle` Hitch` , Plot`Plot_3a6d6056-066a-4473-b080-21b43ed5d9de
+
+PARSFILE Generic\VS_commands\GenVS_6b92c0b5-79ff-406d-8d50-ee114adc33e5.par
+#BlueLink18 Generic VS Commands`Measured Aero Coeff. (Incl. Trailer)` Virtual Wind Tunnel` , Plot`GenVS_6b92c0b5-79ff-406d-8d50-ee114adc33e5
+
+
+#EMBEDDED_NOTES
+#This test procedure is set up to consider a vehicle with a single axle trailer.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Procedures; { Aerodynamics } Virtual Wind Tunnel (Incl. Trailer)
+#Library : Procedures
+#DataSet : Virtual Wind Tunnel (Incl. Trailer)
+#Category: Aerodynamics
+#FileID  : Proc_7b9432c4-ed65-45ca-a22e-4fec9e7b24ef
+#Created : 10-06-2022 13:35:04
+#Modified: 10-06-2022 14:05:47
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Procedure
+
+END

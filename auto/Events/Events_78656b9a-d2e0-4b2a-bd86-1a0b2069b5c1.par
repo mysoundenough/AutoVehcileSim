@@ -1,0 +1,41 @@
+PARSFILE
+#FullDataName Events`02 - Jounce: Move to full rebound`K&C Test Sequence
+#CheckBox1 0    
+#CheckBox6 0    
+#CheckBox7 1    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 ZERO ~=
+#RingCtrl1 ZERO ~=
+#RingCtrl10 2
+#RingCtrl11 4
+*VALUE1 at_min_l1 | at_min_r1
+*VALUE2 at_min_l2 | at_min_r2
+#MiscYellow0
+! Disable writing during move
+OPT_WRITE 0
+#ENDMYellow
+
+PARSFILE Generic\VS_commands\GenVS_61474a91-16b6-48cf-b8f6-4068fcb4c7c1.par
+#BlueLink10 Generic VS Commands`02 - Jounce - Move to full rebound` K&C Test Sequence` , Miscellaneous`GenVS_61474a91-16b6-48cf-b8f6-4068fcb4c7c1
+
+DEFINE_EVENT at_min_l1 | at_min_r1 ; Events\Events_1f8cac62-dad9-4f28-864b-5396bda372d3.par
+#BlueLink0 Events`02 - Jounce - Front at full rebound` K&C Test Sequence` , Events`Events_1f8cac62-dad9-4f28-864b-5396bda372d3
+
+DEFINE_EVENT at_min_l2 | at_min_r2 ; Events\Events_57185f95-2a1a-4bba-9063-ab78035bad83.par
+#BlueLink1 Events`02 - Jounce - Rear is at full rebound` K&C Test Sequence` , Events`Events_57185f95-2a1a-4bba-9063-ab78035bad83
+
+SET_EVENT_ID 0 ! reset to default
+
+LOG_ENTRY Used Dataset: Events; { K&C Test Sequence } 02 - Jounce: Move to full rebound
+#Library : Events
+#DataSet : 02 - Jounce: Move to full rebound
+#Category: K&C Test Sequence
+#FileID  : Events_78656b9a-d2e0-4b2a-bd86-1a0b2069b5c1
+#Modified: 05-28-2021 14:59:27
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

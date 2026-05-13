@@ -1,0 +1,31 @@
+PARSFILE
+#FullDataName Events`Resume Speed After AEB`ADAS Detection
+#CheckBox1 1    
+*CLEAR
+#CheckBox6 0    
+#CheckBox7 1    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl10 0
+#RingCtrl11 4
+RESET_EVENTS
+#MiscYellow0
+OPT_SC = 3
+SPEED_TARGET_CONSTANT(1) = EGO_SPEED;
+#ENDMYellow
+
+SET_EVENT_ID 0 ! reset to default
+
+LOG_ENTRY Used Dataset: Events; { ADAS Detection } Resume Speed After AEB
+#Library : Events
+#DataSet : Resume Speed After AEB
+#Category: ADAS Detection
+#FileID  : Events_40875343-6726-42bd-a7d1-cd2fb51d77bb
+#Created : 11-04-2021 16:44:51
+#Modified: 11-04-2021 16:48:25
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

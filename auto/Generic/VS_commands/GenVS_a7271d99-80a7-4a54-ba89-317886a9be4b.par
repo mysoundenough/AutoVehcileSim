@@ -1,0 +1,46 @@
+PARSFILE
+#FullDataName Generic VS Commands`Steering Control, VS Commands`Custom Steering Controls
+#VehCode VS Commands
+
+#MiscYellow0
+! Define new units for control parameter
+DEFINE_UNITS deg/m DR
+
+! Define 3 new parameters
+DEFINE_PARAMETER L_FORWARD 15; m; Distance to preview point
+DEFINE_PARAMETER LAT_TRACK -1.6; m; Distance preview point is left of target
+DEFINE_PARAMETER GAIN_PATH_CTRL 10; deg/m; Control gain
+
+! Define 2 new outputs
+DEFINE_OUTPUT Xpreview = 0; m ; X coordinate of preview point
+DEFINE_OUTPUT Ypreview =0; m ; Y coordinate of preview point
+
+! Activate the existing steering import
+IMPORT IMP_STEER_SW replace
+
+! Add equations used to prepare steering for the vehicle
+EQ_IN Xpreview = Xo + L_FORWARD*cos(Yaw)
+EQ_IN Ypreview = Yo + L_FORWARD*sin(Yaw)
+EQ_IN IMP_STEER_SW = IF(T > TSTART, GAIN_PATH_CTRL* ...
+    (LAT_TRACK -ROAD_L_ID(Xpreview, Ypreview, CURRENT_ROAD_ID, 1)) , 0) ;
+#ENDMYellow
+
+
+#EMBEDDED_NOTES
+#These VS commands are for the example steer controller described in the tech memo "Example: Extending a Model with VS commands and the API."
+#
+#Changed original example for 2023.0 to use Xo and Yo as vehicle points, and to calculate the steering earlier in the time step with EQ_IN.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { Custom Steering Controls } Steering Control, VS Commands
+#Library : Generic VS Commands
+#DataSet : Steering Control, VS Commands
+#Category: Custom Steering Controls
+#FileID  : GenVS_a7271d99-80a7-4a54-ba89-317886a9be4b
+#Created : 11-19-2022 10:47:15
+#Modified: 05-23-2023 12:53:25
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode VS Commands
+
+END

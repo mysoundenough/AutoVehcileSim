@@ -1,0 +1,1132 @@
+PARSFILE
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 0
+SET_OFFSET_VAR_X 100
+SET_OFFSET_VAR_Y 5
+SET_OFFSET_VAR_Z .085
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\Speed_Limit\Speed_Limit_25_var3.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 0
+SET_OFFSET_VAR_X 50
+SET_OFFSET_VAR_Y 5
+SET_OFFSET_VAR_Z .085
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\Traffic_Lights\Traffic_Lights_30x30_Var3.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 90
+SET_OFFSET_VAR_X 2
+SET_OFFSET_VAR_Y -6.6
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\Do_Not_Enter\Do_Not_Enter_var3.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 90
+SET_OFFSET_VAR_X -2
+SET_OFFSET_VAR_Y -6.6
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\Do_Not_Enter\Do_Not_Enter_var3.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 90
+SET_OFFSET_VAR_X -5
+SET_OFFSET_VAR_Y 35
+SET_OFFSET_VAR_Z .085
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\Traffic_Lights\Traffic_Lights_30x30_Var3.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 90
+SET_OFFSET_VAR_X -5
+SET_OFFSET_VAR_Y 50
+SET_OFFSET_VAR_Z .085
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\Speed_Limit\Speed_Limit_35_var3.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 90
+SET_OFFSET_VAR_X -5
+SET_OFFSET_VAR_Y -35
+SET_OFFSET_VAR_Z .085
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\Speed_Limit\Speed_Limit_45_var3.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME -90
+SET_OFFSET_VAR_X 5
+SET_OFFSET_VAR_Y 45
+SET_OFFSET_VAR_Z .085
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\Speed_Limit\Speed_Limit_45_var3.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME -90
+SET_OFFSET_VAR_X 5
+SET_OFFSET_VAR_Y -50
+SET_OFFSET_VAR_Z .085
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\Speed_Limit\Speed_Limit_45_var3.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME -90
+SET_OFFSET_VAR_X 5
+SET_OFFSET_VAR_Y -35
+SET_OFFSET_VAR_Z .085
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\Traffic_Lights\Traffic_Lights_30x30_Var3.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 0
+SET_OFFSET_VAR_X -6
+SET_OFFSET_VAR_Y 2
+
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\Traffic_Arrows\Sign_Arrows_48_24_Var3.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+################################################################################################
+
+################################################################################################
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME -90
+SET_OFFSET_VAR_X 11
+SET_OFFSET_VAR_Y -39
+
+add_obj Animator\3D_Shape_Files\Environment\Trees\3D_Trees\Oak_Summer.OSG
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME -90
+SET_OFFSET_VAR_X -18
+SET_OFFSET_VAR_Y -21
+
+add_obj Animator\3D_Shape_Files\Environment\Trees\3D_Trees\Elm_Large_Summer_A.OSG
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME -40
+SET_OFFSET_VAR_X -11
+SET_OFFSET_VAR_Y 22
+
+add_obj Animator\3D_Shape_Files\Environment\Trees\3D_Trees\Elm_Small_Summer_A.OSG
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME -60
+SET_OFFSET_VAR_X 88
+SET_OFFSET_VAR_Y -13
+
+add_obj Animator\3D_Shape_Files\Environment\Trees\3D_Trees\Elm_Small_Summer_A.OSG
+#ENDMYellow
+
+SET_COLOR .8 .8 .8
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME -60
+SET_OFFSET_VAR_X 76
+SET_OFFSET_VAR_Y -18
+
+add_obj Animator\3D_Shape_Files\Environment\Trees\3D_Trees\Small_Tree_Summer_A.OSG
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME -60
+SET_OFFSET_VAR_X 37
+SET_OFFSET_VAR_Y -21
+
+add_obj Animator\3D_Shape_Files\Environment\Trees\3D_Trees\Small_Tree_Summer_A.OSG
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME -60
+SET_OFFSET_VAR_X -31
+SET_OFFSET_VAR_Y 17
+
+add_obj Animator\3D_Shape_Files\Environment\Trees\3D_Trees\Small_Tree_Summer_A.OSG
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 60
+SET_OFFSET_VAR_X 74
+SET_OFFSET_VAR_Y 8
+
+add_obj Animator\3D_Shape_Files\Environment\Trees\3D_Trees\Small_Tree_Summer_A.OSG
+#ENDMYellow
+
+SET_COLOR .8 .8 .8
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 30
+SET_OFFSET_VAR_X 24
+SET_OFFSET_VAR_Y 12
+
+add_obj Animator\3D_Shape_Files\Environment\Trees\3D_Trees\Small_Tree_Summer_A.OSG
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME -25
+SET_OFFSET_VAR_X 42
+SET_OFFSET_VAR_Y -30
+
+add_obj Animator\3D_Shape_Files\Environment\Trees\3D_Trees\Elm_Small_Summer_A.OSG
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME -95
+SET_OFFSET_VAR_X -38
+SET_OFFSET_VAR_Y -20
+
+add_obj Animator\3D_Shape_Files\Environment\Trees\3D_Trees\Pine_Summer.OSG
+#ENDMYellow
+
+SET_COLOR .8 .8 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME -50
+SET_OFFSET_VAR_X -25
+SET_OFFSET_VAR_Y 55
+
+add_obj Animator\3D_Shape_Files\Environment\Trees\3D_Trees\Elm_Large_Summer_A.OSG
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME -50
+SET_OFFSET_VAR_X -35
+SET_OFFSET_VAR_Y 8
+
+add_obj Animator\3D_Shape_Files\Environment\Trees\3D_Trees\Pine_Summer.OSG
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 0
+SET_OFFSET_VAR_X 64
+SET_OFFSET_VAR_Y -40
+
+add_obj Animator\3D_Shape_Files\Environment\Trees\3D_Trees\Pine_Summer.OSG
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+
+################################################################################################
+
+################################################################################################
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME -50
+SET_OFFSET_VAR_X 7
+SET_OFFSET_VAR_Y 55
+
+add_obj Animator\3D_Shape_Files\Environment\Shrubbery\3D_Shrubbery\Shrub_B.OSG
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME -40
+SET_OFFSET_VAR_X 37
+SET_OFFSET_VAR_Y -9
+
+add_obj Animator\3D_Shape_Files\Environment\Shrubbery\3D_Shrubbery\Shrub_B.OSG
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME -10
+SET_OFFSET_VAR_X 64
+SET_OFFSET_VAR_Y -14
+
+add_obj Animator\3D_Shape_Files\Environment\Shrubbery\3D_Shrubbery\Shrub_G.OSG
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME -80
+SET_OFFSET_VAR_X 6
+SET_OFFSET_VAR_Y 29
+
+add_obj Animator\3D_Shape_Files\Environment\Shrubbery\3D_Shrubbery\Shrub_G.OSG
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME -40
+SET_OFFSET_VAR_X -17
+SET_OFFSET_VAR_Y 34
+
+add_obj Animator\3D_Shape_Files\Environment\Shrubbery\3D_Shrubbery\Shrub_G.OSG
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME -80
+SET_OFFSET_VAR_X 12
+SET_OFFSET_VAR_Y 9
+
+add_obj Animator\3D_Shape_Files\Environment\Shrubbery\3D_Shrubbery\Shrub_D.OSG
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME -40
+SET_OFFSET_VAR_X -23
+SET_OFFSET_VAR_Y 0
+
+add_obj Animator\3D_Shape_Files\Environment\Shrubbery\3D_Shrubbery\Shrub_D.OSG
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME -50
+SET_OFFSET_VAR_X -7
+SET_OFFSET_VAR_Y -5
+
+add_obj Animator\3D_Shape_Files\Environment\Shrubbery\3D_Shrubbery\Shrub_E.OSG
+#ENDMYellow
+
+SET_COLOR .8 .8 .8
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME -20
+SET_OFFSET_VAR_X 18
+SET_OFFSET_VAR_Y -20
+
+add_obj Animator\3D_Shape_Files\Environment\Shrubbery\3D_Shrubbery\Shrub_E.OSG
+#ENDMYellow
+
+SET_COLOR .9 .9 .9
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME -90
+SET_OFFSET_VAR_X -16
+SET_OFFSET_VAR_Y 59
+
+add_obj Animator\3D_Shape_Files\Environment\Shrubbery\3D_Shrubbery\Shrub_E.OSG
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME -60
+SET_OFFSET_VAR_X 9
+SET_OFFSET_VAR_Y 11
+
+add_obj Animator\3D_Shape_Files\Environment\Shrubbery\3D_Shrubbery\Shrub_H.OSG
+#ENDMYellow
+
+SET_COLOR .6 .6 .6
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME -30
+SET_OFFSET_VAR_X 7
+SET_OFFSET_VAR_Y -12
+
+add_obj Animator\3D_Shape_Files\Environment\Shrubbery\3D_Shrubbery\Shrub_H.OSG
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 0
+SET_OFFSET_VAR_X 24
+SET_OFFSET_VAR_Y -34
+
+add_obj Animator\3D_Shape_Files\Environment\Shrubbery\3D_Shrubbery\Shrub_H.OSG
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 70
+SET_OFFSET_VAR_X 49
+SET_OFFSET_VAR_Y 5.5
+
+add_obj Animator\3D_Shape_Files\Environment\Shrubbery\3D_Shrubbery\Shrub_H.OSG
+#ENDMYellow
+
+SET_COLOR .8 .8 .8
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME -30
+SET_OFFSET_VAR_X -17
+SET_OFFSET_VAR_Y  5
+
+add_obj Animator\3D_Shape_Files\Environment\Shrubbery\3D_Shrubbery\Shrub_A.OSG
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1 
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME -70
+SET_OFFSET_VAR_X -14
+SET_OFFSET_VAR_Y  -44
+
+add_obj Animator\3D_Shape_Files\Environment\Shrubbery\3D_Shrubbery\Shrub_A.OSG
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1 
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+
+################################################################################################
+
+################################################################################################
+
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 180
+SET_OFFSET_VAR_X .25
+SET_OFFSET_VAR_Y -9.5
+
+add_obj Animator\3D_Shape_Files\Environment\Props\Barriers\Concrete_Barrier.OSG
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 180
+SET_OFFSET_VAR_X -1
+SET_OFFSET_VAR_Y -7.5
+
+add_obj Animator\3D_Shape_Files\Environment\Props\Traffic_Barrels\Traffic_Barrel.obj
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 180
+SET_OFFSET_VAR_X -3
+SET_OFFSET_VAR_Y -7.5
+
+add_obj Animator\3D_Shape_Files\Environment\Props\Traffic_Barrels\Traffic_Barrel.obj
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 180
+SET_OFFSET_VAR_X 1
+SET_OFFSET_VAR_Y -7.5
+
+add_obj Animator\3D_Shape_Files\Environment\Props\Traffic_Barrels\Traffic_Barrel.obj
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+ADD_REFERENCE_FRAME
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME 180
+SET_OFFSET_VAR_X 3
+SET_OFFSET_VAR_Y -7.5
+
+add_obj Animator\3D_Shape_Files\Environment\Props\Traffic_Barrels\Traffic_Barrel.obj
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+WRT_180
+ANI_180
+
+END PARSFILE
+

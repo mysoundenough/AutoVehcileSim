@@ -1,0 +1,57 @@
+PARSFILE
+#FullDataName Events`Handoff to PID Torque Controller`Driver Model Handoff
+#CheckBox1 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 0    
+#CheckBox5 1    
+#CheckBox6 1    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 ==
+#RingCtrl10 1
+#RingCtrl11 4
+*NAME1 intersect_dm
+*VALUE1 1
+OPT_INIT_CONFIG 0
+OPT_INIT_PATH 0
+OPT_INIT_SPEED 0
+#MiscYellow0
+set_import_mode imp_steer_sw add
+set_import_mode imp_steer_t_in replace
+opt_str_by_trq 1
+eq_in imp_steer_t_in = PID_CONTROLLER(steer_sw, steer_dm, 0.6, 4, 1.5, 1)
+#ENDMYellow
+
+
+! Reset all open-loop control clocks by setting parameters to current time
+TSTART_T_EVENT = T ;
+TSTART_STEER_TQ = T ;
+TSTART_F_BRAKE_PEDAL = T ;
+TSTART_PBK_CON = T ;
+TSTART_CLUTCH = T ;
+TSTART_GEAR = T ;
+TSTART_SPEED_TARGET = T ;
+TSTART_STEER = T ;
+TSTART_THROTTLE = T ;
+TSTART_TRANS = T ;
+TSTART_WIND = T ;
+MAKE_EVENT intersect_dm == 1 ; Events\Events_6ea51f52-2670-4815-8ed2-1c8de0d4ce43.par
+#BlueLink0 Events`Switch to Driver Model (Torque)` Driver Model Handoff` , Events`Events_6ea51f52-2670-4815-8ed2-1c8de0d4ce43
+
+SET_EVENT_ID 0 ! reset to default
+
+LOG_ENTRY Used Dataset: Events; { Driver Model Handoff } Handoff to PID Torque Controller
+#Library : Events
+#DataSet : Handoff to PID Torque Controller
+#Category: Driver Model Handoff
+#FileID  : Events_cb590939-0fed-447f-bee9-06310818c2c8
+#Created : 05-10-2023 14:07:10
+#Modified: 06-05-2023 09:08:22
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

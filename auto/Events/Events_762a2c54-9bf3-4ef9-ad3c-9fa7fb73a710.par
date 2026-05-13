@@ -1,0 +1,32 @@
+PARSFILE
+#FullDataName Events`06d - Min PT`K&C Test Sequence
+#CheckBox1 0    
+#CheckBox6 0    
+#CheckBox7 1    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 >
+#RingCtrl10 1
+#RingCtrl11 4
+*NAME1 fx_ground
+*VALUE1 FX_RANGE
+PARSFILE Generic\VS_commands\GenVS_d192a391-9f21-43c9-878b-8a69771cd2cd.par
+#BlueLink10 Generic VS Commands`06d - Min PT Lock d/s, apply Fx` K&C Test Sequence` , Miscellaneous`GenVS_d192a391-9f21-43c9-878b-8a69771cd2cd
+
+MAKE_EVENT fx_ground > FX_RANGE ; Events\Events_31a4bd91-06f7-48e1-a042-4ce490653913.par
+#BlueLink0 Events`06d - Reduce to zero and end` K&C Test Sequence` , Events`Events_31a4bd91-06f7-48e1-a042-4ce490653913
+
+SET_EVENT_ID 0 ! reset to default
+
+LOG_ENTRY Used Dataset: Events; { K&C Test Sequence } 06d - Min PT
+#Library : Events
+#DataSet : 06d - Min PT
+#Category: K&C Test Sequence
+#FileID  : Events_762a2c54-9bf3-4ef9-ad3c-9fa7fb73a710
+#Modified: 05-28-2021 14:59:28
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

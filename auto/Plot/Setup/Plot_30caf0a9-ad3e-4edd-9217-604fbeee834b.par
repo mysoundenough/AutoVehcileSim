@@ -1,0 +1,37 @@
+PARSFILE
+#FullDataName Plot: Setup`Simple Counter`User-Defined Variables
+
+ADD_ENTITY Plot
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS counterResult, Time
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Simple Counter
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { User-Defined Variables } Simple Counter
+#Library : Plot: Setup
+#DataSet : Simple Counter
+#Category: User-Defined Variables
+#FileID  : Plot_30caf0a9-ad3e-4edd-9217-604fbeee834b
+#Modified: 09-07-2023 14:25:48
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Plot Setup
+
+END

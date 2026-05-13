@@ -1,0 +1,96 @@
+PARSFILE
+#FullDataName CarSim Run Control`Clutch Ctrl, Shift Time: Delay Clutch`Powertrain: ICE
+#VEHICLECODE Ind_Ind
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_ab7f20a0-6908-4229-b309-5b21718f8273
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Animator\Cameras\Camera_32ea6678-907c-4a10-af4b-b9431e3d2f8a.par
+#BlueLink0 Animator: Camera Setup`13 Azm, 9 El, 18 m, No Yaw` Vehicle Reference` , Animator camera`Camera_32ea6678-907c-4a10-af4b-b9431e3d2f8a
+
+#CheckBox0 1    
+#CheckBox1 1    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 1    
+#CheckBox5 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox8 1    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+#CheckBox12 0    
+
+#RingCtrl0 0
+#RingCtrl1 17
+#RingCtrl2 3
+#RingCtrl3 0
+#RingCtrl6 0
+#RingCtrl7 -1
+*RUN_COLOR 0 0.6 0
+SET_RUN_COLOR 0 0.6 0
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Vehicles\Assembly\Vehicle_4f3a7e31-6bc3-4d6e-995a-b94b4fd2dba5.par
+#BlueLink2 Vehicle: Assembly`C-Class, Hatchback (6-speed MT)` C-Class` , Math Model`Vehicle_4f3a7e31-6bc3-4d6e-995a-b94b4fd2dba5
+
+PARSFILE Procedures\Proc_24054707-f2c4-4399-9866-d604dbde444d.par
+#BlueLink28 Procedures`Part-Throttle Accel: 0.2 for Shift Timelines` Accel. and Brake Testing` , Procedure`Proc_24054707-f2c4-4399-9866-d604dbde444d
+
+PARSFILE Sensors_Traffic\Traffic\TMotion_685c5b22-b555-4300-90e6-7f354600c8d8.par
+#BlueLink9 Multiple Moving Objects`1 Driver Preview Point` Points of Interest` , Miscellaneous`TMotion_685c5b22-b555-4300-90e6-7f354600c8d8
+
+PARSFILE Animator\HUD\HUD_ce21d6ea-73a6-4297-93d2-ebb98b8e52c5.par
+#BlueLink10 Animator: HUD`Throttle, Brakes, Speedo w/ Gear, Tach` Vehicle Status Indicators` , Miscellaneous`HUD_ce21d6ea-73a6-4297-93d2-ebb98b8e52c5
+
+PARSFILE Control\Int_Shift\ClTime_9774dc8c-9931-428d-b8e4-09a822634b00.par
+#BlueLink11 Control: Clutch Shifting Timelines (Closed Loop)`Delay Start of Clutch Disengagement` Basic Shift Timelines` , Miscellaneous`ClTime_9774dc8c-9931-428d-b8e4-09a822634b00
+
+
+SPECIAL_PARSFILE Runs\Run_365662f6-6207-4d89-a120-33a84528d67c.par
+#BlueLink23 CarSim Run Control`Clutch Ctrl, Shift Time: Baseline` Powertrain: ICE` , Overlay run or ERD file`Run_365662f6-6207-4d89-a120-33a84528d67c
+
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Vehicles\Assembly\Vehicle_4f3a7e31-6bc3-4d6e-995a-b94b4fd2dba5.png
+WRITE_SENSOR_DETECT
+Title Clutch Ctrl, Shift Time: Delay Clutch <Powertrain: ICE>
+CATEGORY Powertrain: ICE 
+DATASET_TITLE Clutch Ctrl, Shift Time: Delay Clutch
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#This simulation features a manual transmission vehicle using the closed-loop shifting controller.
+#
+#During a gear change, the throttle, clutch, and gear lever are controled using a Control: Clutch Shifting Timelines library.
+#
+#In this example, the clutch disengagement does not begin right when the shift command is given.  Instead, it is delayed by 0.1 seconds.
+#
+#VS Commands are used to control when data is written into the output files in order to focus on the control behavior during the shift.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { Powertrain: ICE } Clutch Ctrl, Shift Time: Delay Clutch
+#Library : CarSim Run Control
+#DataSet : Clutch Ctrl, Shift Time: Delay Clutch
+#Category: Powertrain: ICE
+#FileID  : Run_ab7f20a0-6908-4229-b309-5b21718f8273
+#Modified: 11-21-2022 14:16:24
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Run
+
+END

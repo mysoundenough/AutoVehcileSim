@@ -1,0 +1,110 @@
+PARSFILE
+#FullDataName CarSim Run Control`Two Flat Tires (User-defined 2D Arrays)`Extended Models
+#VEHICLECODE Ind_Ind
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_fa6ee0b3-8831-41ba-b35b-291a9a1b7d7a
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Animator\Cameras\Camera_32ea6678-907c-4a10-af4b-b9431e3d2f8a.par
+#BlueLink0 Animator: Camera Setup`13 Azm, 9 El, 18 m, No Yaw` Vehicle Reference` , Animator camera`Camera_32ea6678-907c-4a10-af4b-b9431e3d2f8a
+
+#CheckBox0 1    
+#CheckBox1 1    
+#CheckBox2 1    
+#CheckBox3 0    
+#CheckBox4 1    
+#CheckBox5 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox8 1    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+#CheckBox12 0    
+
+#RingCtrl0 0
+#RingCtrl1 0
+#RingCtrl2 3
+#RingCtrl3 0
+#RingCtrl6 0
+#RingCtrl7 -1
+*RUN_COLOR 0.8 0 0
+SET_RUN_COLOR 0.8 0 0
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Vehicles\Assembly\Vehicle_9db9b98a-6725-424b-9635-e1ca6e15979d.par
+#BlueLink2 Vehicle: Assembly`C-Class, Hatchback` C-Class` , Math Model`Vehicle_9db9b98a-6725-424b-9635-e1ca6e15979d
+
+PARSFILE Procedures\Proc_3ae0353d-bd7c-43a3-9da4-150b6952a10e.par
+#BlueLink28 Procedures`DLC @ 120 km/h (Quick Start)` Handling Testing` , Procedure`Proc_3ae0353d-bd7c-43a3-9da4-150b6952a10e
+
+PARSFILE Sensors_Traffic\Traffic\TMotion_685c5b22-b555-4300-90e6-7f354600c8d8.par
+#BlueLink9 Multiple Moving Objects`1 Driver Preview Point` Points of Interest` , Miscellaneous`TMotion_685c5b22-b555-4300-90e6-7f354600c8d8
+
+
+SPECIAL_PARSFILE Runs\Run_6cb07365-85a3-4a3b-95f9-c5c844687601.par
+#BlueLink23 CarSim Run Control`Baseline` * * Quick Start Guide Example` , Overlay run or ERD file`Run_6cb07365-85a3-4a3b-95f9-c5c844687601
+
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Vehicles\Assembly\Vehicle_9db9b98a-6725-424b-9635-e1ca6e15979d.png
+WRITE_SENSOR_DETECT
+Title Two Flat Tires (User-defined 2D Arrays) <Extended Models>
+CATEGORY Extended Models 
+DATASET_TITLE Two Flat Tires (User-defined 2D Arrays)
+#MiscYellow0
+define_variable TIRE_PRESSURE(2,2)
+eq_init TIRE_PRESSURE(1,2) = 268000
+eq_init TIRE_PRESSURE(2,1) = 268000
+eq_init TIRE_PRESSURE(1,1) = 268000
+eq_init TIRE_PRESSURE(2,2) = 268000
+
+BEGIN_FUNCTION update_tire_pressure(t, begt, endt )
+define_local retval = 0 
+retval = if(t<begt,268000,(268000-(t*70000)))
+retval = if(retval < 30000,30000,retval)
+return retval
+END_FUNCTION
+
+eq_dyn TIRE_PRESSURE(1,1) = update_tire_pressure(t,1,5)
+eq_dyn TIRE_PRESSURE(2,1) = update_tire_pressure(t,1,5)
+eq_dyn FZ_TIRE_COEFFICIENT(1,1) = TIRE_PRESSURE(1,1)
+eq_dyn FZ_TIRE_COEFFICIENT(1,2) = TIRE_PRESSURE(1,2)
+eq_dyn FZ_TIRE_COEFFICIENT(2,1) = TIRE_PRESSURE(2,1)
+eq_dyn FZ_TIRE_COEFFICIENT(2,2) = TIRE_PRESSURE(2,2)
+#ENDMYellow
+
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#This example simulates two flat tires, which begin to lose pressure after one second.  It makes use of a user-defined two-dimensional
+#array.
+#
+#The result is compared with the baseline example used in the CarSim Quick Start Guide (see Help -> Guides and Tutorials).
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { Extended Models } Two Flat Tires (User-defined 2D Arrays)
+#Library : CarSim Run Control
+#DataSet : Two Flat Tires (User-defined 2D Arrays)
+#Category: Extended Models
+#FileID  : Run_fa6ee0b3-8831-41ba-b35b-291a9a1b7d7a
+#Created : 10-24-2022 08:56:20
+#Modified: 01-24-2023 10:11:28
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Run
+
+END

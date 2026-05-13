@@ -1,0 +1,62 @@
+PARSFILE
+#FullDataName Generic Table`23 Inch Tire, Soft Soil`VS TMRW
+#RingCtrl0 STEP
+#CheckBox0 0    
+
+#DiagramOne0
+STI_TYPARR_TABLE STEP
+0, 292
+1, 175
+2, 10
+3, 0.5
+4, 0.8
+5, 16.5
+6, 911
+7, 3.71
+8, 25.6
+9, 2.1
+10, 15.7
+11, 0.43
+12, 0.32
+13, -1
+14, 0
+15, 0
+16, 0.1178
+17, 0.1672
+18, 0.0348
+19, 0
+20, 0
+21, 0.05
+22, 1
+23, 1
+24, 1
+25, 1
+26, 1
+27, 5
+28, 5
+29, 0
+ENDTABLE
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+*KEYWORD STI_TYPARR
+*X_LABEL Property number
+*Y_LABEL Property value
+
+
+#EMBEDDED_NOTES
+#For the meaning of these input data, see Help > Tires > Terramechanics Models > Input Data.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic Table; { VS TMRW } 23 Inch Tire, Soft Soil
+#Library : Generic Table
+#DataSet : 23 Inch Tire, Soft Soil
+#Category: VS TMRW
+#FileID  : GenTab_cbe0c257-e823-40cb-a11a-0c5476644190
+#Created : 11-29-2022 15:16:51
+#Modified: 03-02-2023 13:47:16
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode table
+
+END

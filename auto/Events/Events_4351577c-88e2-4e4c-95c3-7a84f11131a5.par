@@ -1,0 +1,41 @@
+PARSFILE
+#FullDataName Events`02 - Jounce: Return to full rebound`K&C Test Sequence
+#CheckBox1 0    
+#CheckBox6 0    
+#CheckBox7 1    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 ZERO ~=
+#RingCtrl1 ZERO ~=
+#RingCtrl10 2
+#RingCtrl11 4
+*VALUE1 at_min_l1 | at_min_r1
+*VALUE2 at_min_l2 | at_min_r2
+#MiscYellow0
+! Enable writing during move
+OPT_WRITE 1
+#ENDMYellow
+
+PARSFILE Generic\VS_commands\GenVS_d7a1a3ee-bbe4-4c35-93f0-a738ce972a02.par
+#BlueLink10 Generic VS Commands`02 - Jounce - Return to full rebound` K&C Test Sequence` , Miscellaneous`GenVS_d7a1a3ee-bbe4-4c35-93f0-a738ce972a02
+
+DEFINE_EVENT at_min_l1 | at_min_r1 ; Events\Events_d086048a-5382-4460-b81b-3b5aba6eafa0.par
+#BlueLink0 Events`02 - Jounce - Front back to full rebound` K&C Test Sequence` , Events`Events_d086048a-5382-4460-b81b-3b5aba6eafa0
+
+DEFINE_EVENT at_min_l2 | at_min_r2 ; Events\Events_47c9e3fc-1bf1-49ff-a764-cedde491a8f2.par
+#BlueLink1 Events`02 - Jounce - Rear back to full rebound` K&C Test Sequence` , Events`Events_47c9e3fc-1bf1-49ff-a764-cedde491a8f2
+
+SET_EVENT_ID 0 ! reset to default
+
+LOG_ENTRY Used Dataset: Events; { K&C Test Sequence } 02 - Jounce: Return to full rebound
+#Library : Events
+#DataSet : 02 - Jounce: Return to full rebound
+#Category: K&C Test Sequence
+#FileID  : Events_4351577c-88e2-4e4c-95c3-7a84f11131a5
+#Modified: 05-28-2021 14:59:28
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

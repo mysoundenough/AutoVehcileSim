@@ -1,0 +1,303 @@
+PARSFILE
+#FullDataName Road: 3D Surface (All Properties)`Alley Dock Test Pad (Small)`Flat Test Pads
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Roads\3D_Road\Road_7fc69f66-41f1-4da4-abc9-35486642ef36.png
+#RingCtrl0 1
+#CheckBox0 0    
+
+SET_IROAD_FOR_ID 0
+CURRENT_ROAD_ID = ROAD_ID
+set_description road_id Alley Dock Test Pad (Small)
+PARSFILE Roads\BuilderSegment\RoadSeg_299f5dd8-31b0-44f2-9251-eaaf215df33c.par
+#BlueLink0 Path: Segment Builder`Straight East` Straight` , Reference Path`RoadSeg_299f5dd8-31b0-44f2-9251-eaaf215df33c
+
+ROAD_PATH_ID = PATH_ID
+
+set_description road_path_id PATH_ID for: Straight East
+#BlueLink1 ` , Path Elevation` , Path Elevation` , Path Elevation`
+
+#BlueLink2 ` , Miscellaneous` , Miscellaneous` , Miscellaneous`
+
+PARSFILE Roads\Friction\RdMu_25e73395-9471-44b9-9c60-27bd9cc24921.par
+#BlueLink3 Road: Friction Map, S-L Grid`Constant: 0.85` Constant` , Friction`RdMu_25e73395-9471-44b9-9c60-27bd9cc24921
+
+PARSFILE Roads\Shapes\RdShape_4058acf0-6e14-4af6-a5b0-660d3c6188e7.par
+#BlueLink4 Road: Animator Surface Shapes`1 km Square` Roads` , Road shape definitions`RdShape_4058acf0-6e14-4af6-a5b0-660d3c6188e7
+
+#BlueLink10 ` , Miscellaneous` , Miscellaneous` , Miscellaneous`
+
+RR_SURF_CONSTANT 1
+L_CAMERA_FRONT 0.5
+L_CAMERA_REAR 0.5
+add_reference_frame road_stuff_6_Partly_Cloudy_Sky_with_Light_Grass
+reference_frame_ghosts off
+PARSFILE Animator\Groups\Group_4ccae742-4649-427a-8871-7b3629a730a2.par
+#BlueLink6 Animator: Group`Partly Cloudy Sky with Light Grass` Environment Spheres` , 3D Shapes`Group_4ccae742-4649-427a-8871-7b3629a730a2
+
+add_reference_frame road_stuff_7_Horizontal_Lines
+reference_frame_ghosts off
+PARSFILE Roads\AniGroup\AniRep_6638c831-28ee-4100-82b7-4519ae345b78.par
+#BlueLink7 Road: Animator Repeated Object`Horizontal Lines` Alley Dock` , 3D Shapes`AniRep_6638c831-28ee-4100-82b7-4519ae345b78
+
+add_reference_frame road_stuff_8_Vertical_Lines
+reference_frame_ghosts off
+PARSFILE Roads\AniGroup\AniRep_462d40b5-bdce-42a9-b3dc-a1f04ebbe695.par
+#BlueLink8 Road: Animator Repeated Object`Vertical Lines` Alley Dock` , 3D Shapes`AniRep_462d40b5-bdce-42a9-b3dc-a1f04ebbe695
+
+add_reference_frame road_stuff_9_Flatbed_Trailer
+reference_frame_ghosts off
+PARSFILE Sensors_Traffic\Targets\Target_d19b5ad9-d80c-4c1c-9e60-ccdad4be5719.par
+#BlueLink9 Single Moving Object (Custom)`Flatbed Trailer` For Alley Dock Test Pad (Small)` , 3D Shapes`Target_d19b5ad9-d80c-4c1c-9e60-ccdad4be5719
+
+add_reference_frame road_stuff_12_Rental_Trailer
+reference_frame_ghosts off
+PARSFILE Sensors_Traffic\Targets\Target_fd29a30c-1055-48a0-bc69-7bc841a40597.par
+#BlueLink12 Single Moving Object (Custom)`Rental Trailer` For Alley Dock Test Pad (Small)` , 3D Shapes`Target_fd29a30c-1055-48a0-bc69-7bc841a40597
+
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36b2ee7b-54ec-4c39-9781-51b289ab39c0.par
+#BlueLink5 Animator: Camera Setup`180 Azm, 5 El, 49 m` Road Reference` , Camera`Camera_36b2ee7b-54ec-4c39-9781-51b289ab39c0
+
+parsfile Roads\3D_Road\Road_7fc69f66-41f1-4da4-abc9-35486642ef36.ani
+
+add_reference_frame road_stuff_1_2_Rectangle_for_Road_Stripe_(Small)
+reference_frame_ghosts off
+set_offset_var_yaw 0
+set_offset_var_x 0
+set_offset_var_y 0
+set_offset_var_z 0
+parsfile Animator\STL\Shape_7162a9d6-dea6-4b7b-af09-a7d2b1a69b2b.par
+
+
+add_reference_frame road_stuff_2_2_Rectangle_for_Road_Stripe_(Small)
+reference_frame_ghosts off
+set_offset_var_yaw 0
+set_offset_var_x 0
+set_offset_var_y 2.7432
+set_offset_var_z 0
+parsfile Animator\STL\Shape_7162a9d6-dea6-4b7b-af09-a7d2b1a69b2b.par
+
+
+add_reference_frame road_stuff_3_2_Rectangle_for_Road_Stripe_(Small)
+reference_frame_ghosts off
+set_offset_var_yaw 0
+set_offset_var_x 1.3716
+set_offset_var_y 0
+set_offset_var_z 0
+parsfile Animator\STL\Shape_7162a9d6-dea6-4b7b-af09-a7d2b1a69b2b.par
+
+
+add_reference_frame road_stuff_4_2_Rectangle_for_Road_Stripe_(Small)
+reference_frame_ghosts off
+set_offset_var_yaw 0
+set_offset_var_x 1.3716
+set_offset_var_y 2.7432
+set_offset_var_z 0
+parsfile Animator\STL\Shape_7162a9d6-dea6-4b7b-af09-a7d2b1a69b2b.par
+
+
+add_reference_frame road_stuff_5_2_Rectangle_for_Road_Stripe_(Small)
+reference_frame_ghosts off
+set_offset_var_yaw 0
+set_offset_var_x 2.7432
+set_offset_var_y 0
+set_offset_var_z 0
+parsfile Animator\STL\Shape_7162a9d6-dea6-4b7b-af09-a7d2b1a69b2b.par
+
+
+add_reference_frame road_stuff_6_2_Rectangle_for_Road_Stripe_(Small)
+reference_frame_ghosts off
+set_offset_var_yaw 0
+set_offset_var_x 2.7432
+set_offset_var_y 2.7432
+set_offset_var_z 0
+parsfile Animator\STL\Shape_7162a9d6-dea6-4b7b-af09-a7d2b1a69b2b.par
+
+
+add_reference_frame road_stuff_7_2_Rectangle_for_Road_Stripe_(Small)
+reference_frame_ghosts off
+set_offset_var_yaw 0
+set_offset_var_x 4.1148
+set_offset_var_y 0
+set_offset_var_z 0
+parsfile Animator\STL\Shape_7162a9d6-dea6-4b7b-af09-a7d2b1a69b2b.par
+
+
+add_reference_frame road_stuff_8_2_Rectangle_for_Road_Stripe_(Small)
+reference_frame_ghosts off
+set_offset_var_yaw 0
+set_offset_var_x 4.1148
+set_offset_var_y 2.7432
+set_offset_var_z 0
+parsfile Animator\STL\Shape_7162a9d6-dea6-4b7b-af09-a7d2b1a69b2b.par
+
+
+add_reference_frame road_stuff_1_3_Rectangle_for_Road_Stripe_(Small)
+reference_frame_ghosts off
+set_offset_var_yaw 90
+set_offset_var_x 0
+set_offset_var_y 0
+set_offset_var_z 0
+parsfile Animator\STL\Shape_7162a9d6-dea6-4b7b-af09-a7d2b1a69b2b.par
+
+
+add_reference_frame road_stuff_2_3_Rectangle_for_Road_Stripe_(Small)
+reference_frame_ghosts off
+set_offset_var_yaw 90
+set_offset_var_x 0
+set_offset_var_y 0.9144
+set_offset_var_z 0
+parsfile Animator\STL\Shape_7162a9d6-dea6-4b7b-af09-a7d2b1a69b2b.par
+
+
+add_reference_frame road_stuff_3_3_Rectangle_for_Road_Stripe_(Small)
+reference_frame_ghosts off
+set_offset_var_yaw 90
+set_offset_var_x 12.8016
+set_offset_var_y 0
+set_offset_var_z 0
+parsfile Animator\STL\Shape_7162a9d6-dea6-4b7b-af09-a7d2b1a69b2b.par
+
+
+add_reference_frame road_stuff_4_3_Rectangle_for_Road_Stripe_(Small)
+reference_frame_ghosts off
+set_offset_var_yaw 90
+set_offset_var_x 12.8016
+set_offset_var_y 0.9144
+set_offset_var_z 0
+parsfile Animator\STL\Shape_7162a9d6-dea6-4b7b-af09-a7d2b1a69b2b.par
+
+
+add_reference_frame road_stuff_5_3_Rectangle_for_Road_Stripe_(Small)
+reference_frame_ghosts off
+set_offset_var_yaw 90
+set_offset_var_x 12.8016
+set_offset_var_y 1.8288
+set_offset_var_z 0
+parsfile Animator\STL\Shape_7162a9d6-dea6-4b7b-af09-a7d2b1a69b2b.par
+
+
+add_reference_frame road_stuff_6_3_Rectangle_for_Road_Stripe_(Small)
+reference_frame_ghosts off
+set_offset_var_yaw 90
+set_offset_var_x 12.8016
+set_offset_var_y 2.7432
+set_offset_var_z 0
+parsfile Animator\STL\Shape_7162a9d6-dea6-4b7b-af09-a7d2b1a69b2b.par
+
+
+add_reference_frame road_stuff_7_3_Rectangle_for_Road_Stripe_(Small)
+reference_frame_ghosts off
+set_offset_var_yaw 90
+set_offset_var_x 12.8016
+set_offset_var_y 3.6576
+set_offset_var_z 0
+parsfile Animator\STL\Shape_7162a9d6-dea6-4b7b-af09-a7d2b1a69b2b.par
+
+
+add_reference_frame road_stuff_8_3_Rectangle_for_Road_Stripe_(Small)
+reference_frame_ghosts off
+set_offset_var_yaw 90
+set_offset_var_x 12.8016
+set_offset_var_y 4.572
+set_offset_var_z 0
+parsfile Animator\STL\Shape_7162a9d6-dea6-4b7b-af09-a7d2b1a69b2b.par
+
+
+add_reference_frame road_stuff_9_3_Rectangle_for_Road_Stripe_(Small)
+reference_frame_ghosts off
+set_offset_var_yaw 90
+set_offset_var_x 12.8016
+set_offset_var_y 5.4864
+set_offset_var_z 0
+parsfile Animator\STL\Shape_7162a9d6-dea6-4b7b-af09-a7d2b1a69b2b.par
+
+
+add_reference_frame road_stuff_10_3_Rectangle_for_Road_Stripe_(Small)
+reference_frame_ghosts off
+set_offset_var_yaw 90
+set_offset_var_x 12.8016
+set_offset_var_y 6.4008
+set_offset_var_z 0
+parsfile Animator\STL\Shape_7162a9d6-dea6-4b7b-af09-a7d2b1a69b2b.par
+
+
+add_reference_frame road_stuff_11_3_Rectangle_for_Road_Stripe_(Small)
+reference_frame_ghosts off
+set_offset_var_yaw 90
+set_offset_var_x 12.8016
+set_offset_var_y 7.3152
+set_offset_var_z 0
+parsfile Animator\STL\Shape_7162a9d6-dea6-4b7b-af09-a7d2b1a69b2b.par
+
+
+add_reference_frame road_stuff_12_3_Rectangle_for_Road_Stripe_(Small)
+reference_frame_ghosts off
+set_offset_var_yaw 90
+set_offset_var_x 12.8016
+set_offset_var_y 8.2296
+set_offset_var_z 0
+parsfile Animator\STL\Shape_7162a9d6-dea6-4b7b-af09-a7d2b1a69b2b.par
+
+
+add_reference_frame road_stuff_13_3_Rectangle_for_Road_Stripe_(Small)
+reference_frame_ghosts off
+set_offset_var_yaw 90
+set_offset_var_x 12.8016
+set_offset_var_y 9.144
+set_offset_var_z 0
+parsfile Animator\STL\Shape_7162a9d6-dea6-4b7b-af09-a7d2b1a69b2b.par
+
+
+add_reference_frame road_stuff_14_3_Rectangle_for_Road_Stripe_(Small)
+reference_frame_ghosts off
+set_offset_var_yaw 90
+set_offset_var_x 12.8016
+set_offset_var_y 10.0584
+set_offset_var_z 0
+parsfile Animator\STL\Shape_7162a9d6-dea6-4b7b-af09-a7d2b1a69b2b.par
+
+
+add_reference_frame road_stuff_15_3_Rectangle_for_Road_Stripe_(Small)
+reference_frame_ghosts off
+set_offset_var_yaw 90
+set_offset_var_x 12.8016
+set_offset_var_y 10.9728
+set_offset_var_z 0
+parsfile Animator\STL\Shape_7162a9d6-dea6-4b7b-af09-a7d2b1a69b2b.par
+
+
+add_reference_frame road_stuff_16_3_Rectangle_for_Road_Stripe_(Small)
+reference_frame_ghosts off
+set_offset_var_yaw 90
+set_offset_var_x 12.8016
+set_offset_var_y 11.8872
+set_offset_var_z 0
+parsfile Animator\STL\Shape_7162a9d6-dea6-4b7b-af09-a7d2b1a69b2b.par
+
+
+add_reference_frame road_stuff_17_3_Rectangle_for_Road_Stripe_(Small)
+reference_frame_ghosts off
+set_offset_var_yaw 90
+set_offset_var_x 12.8016
+set_offset_var_y 12.8016
+set_offset_var_z 0
+parsfile Animator\STL\Shape_7162a9d6-dea6-4b7b-af09-a7d2b1a69b2b.par
+
+
+#EMBEDDED_NOTES
+#A small "alley dock" environment: 18x9 ft parking space and 24 ft aisle.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Road: 3D Surface (All Properties); { Flat Test Pads } Alley Dock Test Pad (Small)
+#Library : Road: 3D Surface (All Properties)
+#DataSet : Alley Dock Test Pad (Small)
+#Category: Flat Test Pads
+#FileID  : Road_7fc69f66-41f1-4da4-abc9-35486642ef36
+#Created : 10-06-2021 14:00:31
+#Modified: 01-21-2022 13:48:28
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode 3D Road
+
+END

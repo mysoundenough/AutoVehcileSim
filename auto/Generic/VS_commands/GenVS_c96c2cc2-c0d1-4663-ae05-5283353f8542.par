@@ -1,0 +1,30 @@
+PARSFILE
+#FullDataName Generic VS Commands`Articulated Bus Steering`
+#VehCode Articulated Bus Steering
+
+#MiscYellow0
+OPT_CS(1,1) 1
+CS_MZ_ROD(1,1) 0.0006
+CS_MZ_SHAFT(1,1) 0.0001
+#ENDMYellow
+
+*MODELCODE Articulated Bus Steering
+
+#EMBEDDED_NOTES
+#The OPT_CS(1,1) keyword sets the compliance steer option.  Setting the compliance steer option for the first axle on the first unit to 1 or 2 defines an asymmetric steering system.  If the compliance steer option is set to 1, the steer angle of the left wheel is a function of the output of the steering gear with the right wheel steered by the tie rod.
+#
+#The CS_MZ_ROD(1,1) keyword sets steer due to the compliance in the tie rod.  The CS_MZ_SHAFT(1,1) keyword sets steer due to compliance in the steering shaft.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic VS Commands; Articulated Bus Steering
+#Library : Generic VS Commands
+#DataSet : Articulated Bus Steering
+#Category: 
+#FileID  : GenVS_c96c2cc2-c0d1-4663-ae05-5283353f8542
+#Created : 05-26-2022 09:58:20
+#Modified: 11-30-2022 13:10:43
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Articulated Bus Steering
+
+END

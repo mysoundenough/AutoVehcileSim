@@ -1,0 +1,32 @@
+PARSFILE
+#FullDataName Generic Table`Battery Max Capacity (External)`Powertrain (HEV)
+#RingCtrl0 CONSTANT
+#CheckBox0 0    
+
+CAP_BATTERY_MAX_CONSTANT 0
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+*KEYWORD CAP_BATTERY_MAX
+*X_LABEL Temperature (C)
+*Y_LABEL Capacity (A-h)
+*SCALAR 0
+*X_LABEL_2 Temperature (C)
+
+
+#EMBEDDED_NOTES
+#This dataset is used for an external battery model.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic Table; { Powertrain (HEV) } Battery Max Capacity (External)
+#Library : Generic Table
+#DataSet : Battery Max Capacity (External)
+#Category: Powertrain (HEV)
+#FileID  : GenTab_9c40f3dd-8c55-4a58-a7a2-95bb569d1e6a
+#Created : 03-23-2023 14:12:17
+#Modified: 04-04-2023 13:18:38
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode table
+
+END

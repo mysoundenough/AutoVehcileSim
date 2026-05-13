@@ -1,0 +1,68 @@
+PARSFILE
+#FullDataName Models: Simulink`Differential Controller - EV`External Powertrain
+#RunMdlFile Extensions\Simulink\Differential_CS9.mdl
+SIMULINK_MODEL_FILE Extensions\Simulink\Differential_CS9.mdl
+#RingCtrl0 -1
+#RingCtrl2 0
+*MULTI_SOLVERS 0
+*MULTI_S_WRAPPER 0
+#CheckBox0 0    
+*USE_ALT_DIR 0
+#CheckBox1 0    
+*USE_DIFF_SOLVERS 0
+#CheckBox3 1    
+#CheckBox5 0    
+#RingCtrl1 0
+OPT_INT_METHOD 0
+#CheckBox4 1    
+OPT_IO_SYNC_FM 1
+*TSTEP 0.0005
+*FREQ_MODEL 2000
+*TSTEP_OUT 0.025
+*FREQ_OUT 40
+tstep 0.0005
+iprint 50
+PARSFILE IO_Channels\I_Channels\Import_80e1efd8-fd7a-4d60-9a92-8db55ee8f193.par
+#BlueLink0 I/O Channels: Import`Differential Clutch Control (4WD)` Powertrain Control and Ext. Models` , Import`Import_80e1efd8-fd7a-4d60-9a92-8db55ee8f193
+
+PARSFILE IO_Channels\O_Channels\Export_8888d812-1e43-4bb8-b3f1-5988bf76dcc3.par
+#BlueLink1 I/O Channels: Export`External Differentials (EV): Export` Powertrain Control and Ext. Models` , Import/Export`Export_8888d812-1e43-4bb8-b3f1-5988bf76dcc3
+
+#BlueLink3 I/O Channels: Ports` ` , vs_ctl Ports` , vs_state Ports`
+
+#BlueLink4 I/O Channels: Ports` ` , vs_kin Ports` , vs_ctl Ports`
+
+#BlueLink5 I/O Channels: Ports` ` , vs_dyn Ports` , vs_kin Ports`
+
+#BlueLink6 I/O Channels: Ports` ` , vs_dyn Ports` , vs_dyn Ports`
+
+#MiscYellow1
+*CPAR_INCLUDE  Extensions\Simulink
+#ENDMYellow
+
+LIVE_SERVER_UPDATE_FREQ_MAX 60
+
+#EMBEDDED_NOTES
+#This dataset specifies a Simulink model that is used for the Active Transfer Case Control and Twin Clutch Control examples.
+#
+#The Simulink model exports control positions for the differential clutches, twin-clutches, and all differential torques that are used in 2-axle driven powertrain systems. The model simply varies the clutch control position sinusoidally. Therefore, the simulation results should show some sinusoidal control responses.
+#
+#The CarSim powertrain model involves some detailed interactions between variables, so the option to Add, Replace, or Multiply the Simulink imported variables with their corresponding variables in CarSim is not available for most powertrain variables.
+#
+#Instead, Add is the only import mode available for most powertrain import variables, and it is necessary to specify that certain components are handled with an external model on the powertrain library screen.
+#
+#Output variables are arranged for electrified powertrain.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Models: Simulink; { External Powertrain } Differential Controller - EV
+#Library : Models: Simulink
+#DataSet : Differential Controller - EV
+#Category: External Powertrain
+#FileID  : Simlink_0709db82-944b-47a9-b88e-2e0ce37340a4
+#Created : 07-01-2022 15:24:09
+#Modified: 12-08-2022 10:46:50
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode 
+
+END

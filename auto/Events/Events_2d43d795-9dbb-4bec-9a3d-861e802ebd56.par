@@ -1,0 +1,31 @@
+PARSFILE
+#FullDataName Events`03 - Roll - Rear is at max roll`K&C Test Sequence
+#CheckBox1 0    
+#CheckBox6 0    
+#CheckBox7 1    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 ZERO ~=
+#RingCtrl10 1
+#RingCtrl11 4
+*VALUE1 at_max_1 & at_max_2
+PARSFILE Generic\VS_commands\GenVS_46b1e278-e31b-4744-ba8b-a9da025279d4.par
+#BlueLink10 Generic VS Commands`03 - Roll - Record max - Rr` K&C Test Sequence` , Miscellaneous`GenVS_46b1e278-e31b-4744-ba8b-a9da025279d4
+
+DEFINE_EVENT at_max_1 & at_max_2 ; Events\Events_23fb4cd7-c0f8-4b0f-aeda-4360d7160386.par
+#BlueLink0 Events`03 - Roll: Return to min roll` K&C Test Sequence` , Events`Events_23fb4cd7-c0f8-4b0f-aeda-4360d7160386
+
+SET_EVENT_ID 0 ! reset to default
+
+LOG_ENTRY Used Dataset: Events; { K&C Test Sequence } 03 - Roll - Rear is at max roll
+#Library : Events
+#DataSet : 03 - Roll - Rear is at max roll
+#Category: K&C Test Sequence
+#FileID  : Events_2d43d795-9dbb-4bec-9a3d-861e802ebd56
+#Modified: 05-28-2021 14:59:28
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

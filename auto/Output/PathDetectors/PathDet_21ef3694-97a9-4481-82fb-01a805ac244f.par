@@ -1,0 +1,45 @@
+PARSFILE
+#FullDataName Path Detectors for External Driver Control`Central Lane Curvature Detect`
+#RingCtrl0 1
+INSTALL_PATH_DETECTOR 1
+
+IDETECTOR 1
+symbol_push  <<detector>> 1
+X_DETECTOR_SM(1) 0
+Y_DETECTOR_SM(1) 0
+#CheckBox0 0    
+OPT_PATH_PD(1) 1
+PATH_ID_PD(1) 1
+PARSFILE Control\Driver\StrDM_fda8b3d7-c471-4d2c-a0d1-777765cc3dc0.par
+#BlueLink0 Control: Steering by the Closed-loop Driver Model`Center of Lane` Path Detections` , lateral target`StrDM_fda8b3d7-c471-4d2c-a0d1-777765cc3dc0
+
+LTARG_ID_PD(1) = LTARG_ID
+PARSFILE Sensors_Traffic\Traffic\TMotion_9e2b27ed-6a5a-454f-bd3f-78755d115310.par
+#BlueLink5 Multiple Moving Objects`Detected Path Visual (Green)` Path Detection` , multiple moving objects`TMotion_9e2b27ed-6a5a-454f-bd3f-78755d115310
+
+#MiscYellow0
+EQ_IN L_PVW_PD(1) = Vxz_Fwd*3 ! Center Lane Marker Path Detector Preview Distance, based on speed
+#ENDMYellow
+
+PARSFILE Generic\Links\GenLink_7fb0bf7d-263b-4e3b-ab51-4c468187e231.par
+#BlueLink16 Generic Group of Links`Path Detector Plots` Path Detectors` , Miscellaneous`GenLink_7fb0bf7d-263b-4e3b-ab51-4c468187e231
+
+
+#EMBEDDED_NOTES
+#One instance of the Path Detector is installed
+#
+#The calculated preview distances are proportional to the vehicle speed
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Path Detectors for External Driver Control; Central Lane Curvature Detect
+#Library : Path Detectors for External Driver Control
+#DataSet : Central Lane Curvature Detect
+#Category: 
+#FileID  : PathDet_21ef3694-97a9-4481-82fb-01a805ac244f
+#Created : 10-07-2021 09:58:46
+#Modified: 10-07-2021 14:55:18
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Path Detectors
+
+END

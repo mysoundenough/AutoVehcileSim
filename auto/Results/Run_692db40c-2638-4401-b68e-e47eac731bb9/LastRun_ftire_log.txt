@@ -1,0 +1,157 @@
+cosin/FTire: !
+cosin/FTire: ! COSIN PROLOG
+cosin/FTire: !----------------------------------------------------------------------!
+cosin/FTire: !                                                                      !
+cosin/FTire: !      @@@@@@ @@@@@@@@@@@@@@ @@@@                                      !
+cosin/FTire: !   @@@@@@@@@ @@@@@@@@@@@@@@ @@@@                                      !
+cosin/FTire: !  @@@@            @@@@      @@@@                                      !
+cosin/FTire: !  @@@             @@@@      @@@@      cosin Tire and Road Interface   !
+cosin/FTire: !  @@@@            @@@@      @@@@           connecting FTire and RGR   !
+cosin/FTire: !   @@@@@@@@@@     @@@@      @@@@                             2023-4   !
+cosin/FTire: !     @@@@@@@@@@   @@@@      @@@@                 r28834, 2023-10-30   !
+cosin/FTire: !                                                                      !
+cosin/FTire: !                                                                      !
+cosin/FTire: !  installation directory:                                  C:\cosin   !
+cosin/FTire: !  license agreement:        www.cosin.eu/contact/license-terms-eula   !
+cosin/FTire: !  documentation and software updates:                  www.cosin.eu   !
+cosin/FTire: !  in any support case, please read:       Help -> Support checklist   !
+cosin/FTire: !                                                                      !
+cosin/FTire: !  (c) 1997-2024       cosin scientific software AG, Munich, Germany   !
+cosin/FTire: !                                                                      !
+cosin/FTire: !----------------------------------------------------------------------!
+cosin/FTire:  
+cosin/FTire: ! FTIRE CO-SIMULATION DRIVEN BY CTI
+cosin/FTire: ! started at March 26, 2024, 11:33:51, on platform win64
+cosin/FTire: ! cosin software will use status of version 2023-4 at March 26, 2024
+cosin/FTire: !
+cosin/FTire: ! CALLING SOLVER
+cosin/FTire: ! Mechanical Simulation CarSim/TruckSim/BikeSim
+cosin/FTire: !
+cosin/FTire: ! RESTRICTED USE OF COSIN LICENSE FEATURE ftire
+cosin/FTire: ! for 3rd-party interface development only.
+cosin/FTire: ! Must not be used for any other purposes!
+cosin/FTire: !
+cosin/FTire: ! TIRE MODEL MESSAGES: PASSENGER_CAR.TIR
+cosin/FTire: ! opening tire data file passenger_car.tir
+cosin/FTire: ! model type FTire, file format TeimOrbit
+cosin/FTire: !
+cosin/FTire: ! FTIRE RUN-TIME CONFIGURATION: PASSENGER_CAR.TIR
+cosin/FTire: ! - standard speed mode, set by run_time_mode in section [MODEL] of tir-file
+cosin/FTire: !   note: this speed mode might be changed under CTI control at run-time
+cosin/FTire: ! - using latest FTire version available at day of execution
+cosin/FTire: ! BTW: probably, a new cosin software version is available; upgrade recommended
+cosin/FTire: ! data are to be pre-processed. Reason:
+cosin/FTire: ! pre-processed data inconsistent for unknown reasons
+cosin/FTire: !
+cosin/FTire: ! FTIRE MODEL DATA PRE-PROCESSING
+cosin/FTire: ! f6_out_of_plane_bend specified but not used (1. pressure)
+cosin/FTire: ! pre-processing completed in 1.1 s, result OK
+cosin/FTire: ! pre-processed data appended to original data file
+cosin/FTire: !
+cosin/FTire: ! MASS AND INERTIA CORRECTION IN MBS MODEL
+cosin/FTire: ! Either *add* the following mass properties to the *rim* in your suspension model ('rim-fixed' 
+cosin/FTire: ! tire parts which are not accounted for in the tire model):
+cosin/FTire: !   m =           4.662 kg
+cosin/FTire: !   Ixx = Izz =   0.145 kgm^2
+cosin/FTire: !   Iyy =         0.227 kgm^2  (y-axis = wheel spin axis)
+cosin/FTire: !
+cosin/FTire: ! or *subtract* the following mass properties from the *wheel* (=rim+tire) in your suspension model 
+cosin/FTire: ! ('free' tire parts which are accounted for in the tire model):
+cosin/FTire: !   m =           4.738 kg
+cosin/FTire: !   Ixx = Izz =   0.220 kgm^2
+cosin/FTire: !   Iyy =         0.439 kgm^2  (y-axis = wheel spin axis)
+cosin/FTire: !
+cosin/FTire: ! Estimated wheel moment of inertia about spin axis is 1.035 kgm^2.
+cosin/FTire: !
+cosin/FTire: ! If this value differs from the respective value in your MBS model, adjust the rim moment of 
+cosin/FTire: ! inertia in the tire data file accordingly. This is only necessary in real-time mode, to ensure 
+cosin/FTire: ! numerical stability.
+cosin/FTire: !
+cosin/FTire: ! FTIRE ANIMATION CONFIGURATION
+cosin/FTire: ! priority of animation settings source:
+cosin/FTire: ! animation settings from animation settings file, else settings from tire file
+cosin/FTire: ! animation settings actually taken from:
+cosin/FTire: ! tire file D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Extensions\FTire\passenger_car.tir
+cosin/FTire: ! animation, if any, beginning at t = 0 s until simulation ends, with step size 2 ms
+cosin/FTire: !
+cosin/FTire: ! ROAD MODEL MESSAGES
+cosin/FTire: ! road model type User-Defined
+cosin/FTire: !
+cosin/FTire: ! CTI AND FTIRE STATISTICS
+cosin/FTire: ! statistics tire 1
+cosin/FTire: ! number of tire initializations: 1
+cosin/FTire: ! number of steps: 1214
+cosin/FTire: ! number of repeated steps: 1
+cosin/FTire: ! number of state array saves: 0
+cosin/FTire: ! number of state array retrieves: 0
+cosin/FTire: ! number of resets: 0
+cosin/FTire: ! net CPU time for dynamics 6.602 s
+cosin/FTire: ! no recognized issues with input signals
+cosin/FTire: !
+cosin/FTire: ! statistics tire 2
+cosin/FTire: ! number of tire initializations: 1
+cosin/FTire: ! number of steps: 1214
+cosin/FTire: ! number of repeated steps: 1
+cosin/FTire: ! number of state array saves: 0
+cosin/FTire: ! number of state array retrieves: 0
+cosin/FTire: ! number of resets: 0
+cosin/FTire: ! net CPU time for dynamics 6.586 s
+cosin/FTire: ! no recognized issues with input signals
+cosin/FTire: !
+cosin/FTire: ! statistics tire 3
+cosin/FTire: ! number of tire initializations: 1
+cosin/FTire: ! number of steps: 1208
+cosin/FTire: ! number of repeated steps: 1
+cosin/FTire: ! number of state array saves: 0
+cosin/FTire: ! number of state array retrieves: 0
+cosin/FTire: ! number of resets: 0
+cosin/FTire: ! net CPU time for dynamics 6.462 s
+cosin/FTire: ! no recognized issues with input signals
+cosin/FTire: !
+cosin/FTire: ! statistics tire 4
+cosin/FTire: ! number of tire initializations: 1
+cosin/FTire: ! number of steps: 1208
+cosin/FTire: ! number of repeated steps: 1
+cosin/FTire: ! number of state array saves: 0
+cosin/FTire: ! number of state array retrieves: 0
+cosin/FTire: ! number of resets: 0
+cosin/FTire: ! net CPU time for dynamics 6.497 s
+cosin/FTire: ! no recognized issues with input signals
+cosin/FTire: !
+cosin/FTire: ! last speed mode of all tires: 0
+cosin/FTire: ! total elapsed time: 8.877 s
+cosin/FTire: ! average real-time factor FTire alone: 9.336
+cosin/FTire: ! real-time factor vehicle model + FTire: 10.374
+cosin/FTire: ! number of road evaluations: 32.7 mio (exactly: 32705050)
+cosin/FTire: !
+cosin/FTire: ! WARNING AND ERROR MESSAGES
+cosin/FTire: ! none
+cosin/FTire: !
+cosin/FTire: ! FILES
+cosin/FTire: ! (i)nput  (o)utput  (a)ppend  (r)esource  (l)ibrary  (s)cript  (e)xecutable  (f)older
+cosin/FTire: !
+cosin/FTire: ! in cosin installation directory
+cosin/FTire: ! C:\cosin
+cosin/FTire: ! (l) cosin library ........................ lib\win64\cti.dll
+cosin/FTire: !
+cosin/FTire: ! in private data folder
+cosin/FTire: ! D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data
+cosin/FTire: ! (i) FTire data file ...................... Extensions\FTire\passenger_car.tir
+cosin/FTire: ! (o) diagnosis file ....................... ftire_diagnosis.txt
+cosin/FTire: ! (o) log file ............................. ftire.log
+cosin/FTire: !
+cosin/FTire: ! in home directory
+cosin/FTire: ! C:\Users\mkhan
+cosin/FTire: ! (r) cosin ini file ....................... cosin.ini
+cosin/FTire: !
+cosin/FTire: ! RESOURCES
+cosin/FTire: ! optio(n)  en(v)var  (p)arameter
+cosin/FTire: ! (e) calling solver ....................... D:\product_dev\trunk\Image\CarSim\Core\CarSim_Prog\
+cosin/FTire: !                                            CarSim_64.exe
+cosin/FTire: ! (n) cosin license server ................. licenses:80 (defined by CL option -lmserver)
+cosin/FTire: ! (p) parameter set at run time ............ spm
+cosin/FTire: !
+cosin/FTire: ! COSIN EPILOG
+cosin/FTire: ! all cosin licenses returned, if used any. Bye.
+cosin/FTire: !
+cosin/FTire: ! END MESSAGE LIST

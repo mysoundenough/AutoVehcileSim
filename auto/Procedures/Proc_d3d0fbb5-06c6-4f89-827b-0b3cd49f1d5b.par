@@ -1,0 +1,61 @@
+PARSFILE
+#FullDataName Procedures`05d - Fy compliance (right)`K&C Test Sequence
+#CheckBox1 1    
+OPT_INIT_PATH 1
+
+#RingCtrl0 4
+#RingCtrl1 -1
+#RingCtrl2 0
+OPT_STOP -1
+SSTART 0
+TSTART 0
+TSTART_WRITE = 0;
+SSTOP = SSTART + 1 ;
+OPT_DIRECTION 1
+TSTOP -1
+*TSTOP 250
+*TSTART 0
+*SSTART 0
+
+PARSFILE Generic\VS_commands\GenVS_38945d01-ba84-435b-a943-333bc1a75dc7.par
+#BlueLink0 Generic VS Commands`05d - Fy compliance (R)` K&C Test Sequence` , Miscellaneous`GenVS_38945d01-ba84-435b-a943-333bc1a75dc7
+
+PARSFILE Events\Events_91e65844-68f4-434c-895c-3922380a9412.par
+#BlueLink1 Events`05d - Increase to max neg force (R)` K&C Test Sequence` , Miscellaneous`Events_91e65844-68f4-434c-895c-3922380a9412
+
+PARSFILE Plot\Setup\Plot_6730f051-4aa5-430a-88f3-a90502411652.par
+#BlueLink8 Plot: Setup`Camber vs Fy_R` K&C Test Results` , Plot`Plot_6730f051-4aa5-430a-88f3-a90502411652
+
+PARSFILE Plot\Setup\Plot_87a94cc4-8578-462a-92db-5060edc4c0d9.par
+#BlueLink9 Plot: Setup`Steer vs Fy_R` K&C Test Results` , Plot`Plot_87a94cc4-8578-462a-92db-5060edc4c0d9
+
+PARSFILE Plot\Setup\Plot_0773e087-151d-42db-a308-f02b7b6ee48d.par
+#BlueLink10 Plot: Setup`Lateral Forces` Tire Forces and Moments` , Plot`Plot_0773e087-151d-42db-a308-f02b7b6ee48d
+
+PARSFILE Plot\Setup\Plot_a146934a-339c-4983-9664-0f9749a0dfd6.par
+#BlueLink11 Plot: Setup`Vertical Forces` Tire Forces and Moments` , Plot`Plot_a146934a-339c-4983-9664-0f9749a0dfd6
+
+PARSFILE Plot\Setup\Plot_2865bd77-14b2-4e51-9c7f-3484aa98e979.par
+#BlueLink12 Plot: Setup`Roll Angle of Sprung Masses vs. Time` Vehicle Motion` , Plot`Plot_2865bd77-14b2-4e51-9c7f-3484aa98e979
+
+PARSFILE Plot\Setup\Plot_a2e79e45-9404-44ab-8bb8-8909198c6f8d.par
+#BlueLink13 Plot: Setup`Jounce - Front vs Fy_R` K&C Test Results` , Plot`Plot_a2e79e45-9404-44ab-8bb8-8909198c6f8d
+
+PARSFILE Plot\Setup\Plot_ea771c36-edfe-46ee-8043-9c3e28b3149d.par
+#BlueLink14 Plot: Setup`Jounce - Rear vs Fy_R` K&C Test Results` , Plot`Plot_ea771c36-edfe-46ee-8043-9c3e28b3149d
+
+PARSFILE Plot\Setup\Plot_0773e087-151d-42db-a308-f02b7b6ee48d.par
+#BlueLink15 Plot: Setup`Lateral Forces` Tire Forces and Moments` , Plot`Plot_0773e087-151d-42db-a308-f02b7b6ee48d
+
+
+LOG_ENTRY Used Dataset: Procedures; { K&C Test Sequence } 05d - Fy compliance (right)
+#Library : Procedures
+#DataSet : 05d - Fy compliance (right)
+#Category: K&C Test Sequence
+#FileID  : Proc_d3d0fbb5-06c6-4f89-827b-0b3cd49f1d5b
+#Modified: 05-28-2021 14:59:20
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Procedure
+
+END

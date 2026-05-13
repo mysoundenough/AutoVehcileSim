@@ -1,0 +1,32 @@
+PARSFILE
+#FullDataName Animator: Shape File Link`GVT Platform`ADAS and AV Safety Test Assets
+#MiscYellow3
+add_obj Animator\3D_Shape_Files\Other_Vehicles\Euro_NCAP\Euro_NCAP_base.OSG
+#ENDMYellow
+
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 0    
+
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_9cc2ba49-3f6e-4c5c-9b44-55695dd364b5.par
+#BlueLink2 Animator: Camera Setup`XZ Plane, No Offsets - Large Objects` Shape Preview` , Video Camera`Camera_9cc2ba49-3f6e-4c5c-9b44-55695dd364b5
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_673cd329-e973-4446-8021-515dd75a1d60.png
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { ADAS and AV Safety Test Assets } GVT Platform
+#Library : Animator: Shape File Link
+#DataSet : GVT Platform
+#Category: ADAS and AV Safety Test Assets
+#FileID  : Shape_673cd329-e973-4446-8021-515dd75a1d60
+#Created : 07-23-2021 18:20:42
+#Modified: 07-23-2021 18:55:35
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape File
+
+END

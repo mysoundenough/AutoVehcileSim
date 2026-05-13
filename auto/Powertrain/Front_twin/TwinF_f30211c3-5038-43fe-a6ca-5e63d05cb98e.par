@@ -1,0 +1,60 @@
+PARSFILE
+#FullDataName Powertrain: Front Twin-Clutch Differential`EV Twin Clutch: External Control`Electric Motor Drive (20 kW)
+
+IDIFF 1
+opt_twin_clutch 1
+
+
+#RingCtrl0 0
+*EV_CONTROL 0
+R_GEAR_FD 3.905
+R_EFF_F_FD 0.99
+R_EFF_R_FD 0.99
+LOCKED_FD_DAMP 0.8
+LOCKED_FD_K 80
+IDS_F 0.013
+IHS_L1 0.009
+IHS_R1 0.009
+
+R_GEAR_DIFF 3.905
+R_EFF_F_DIFF 0.99
+R_EFF_R_DIFF 0.99
+LOCKED_DIFF_DAMP 0.8
+LOCKED_DIFF_K 80
+IDS 0.013
+IHS_L 0.009
+IHS_R 0.009
+
+iside 1
+PARSFILE Powertrain\Cl_Visc\ClVisc_18c9e10f-c1a2-436f-91fa-7ac2e9f945c6.par
+#BlueLink0 Powertrain: Clutch with Viscous Differential`External Control` ` , Clutch Left`ClVisc_18c9e10f-c1a2-436f-91fa-7ac2e9f945c6
+
+OPT_MOTOR_ON_WHEEL 0
+
+PARSFILE Powertrain\Motor\MMotor_4421345e-54e3-46f9-91d4-073aaadaf229.par
+#BlueLink2 Powertrain: Electric Motor Torque`Max. Output 152.5 N-m` Electric Motor` , Electric Motor Center`MMotor_4421345e-54e3-46f9-91d4-073aaadaf229
+
+
+iside 2
+PARSFILE Powertrain\Cl_Visc\ClVisc_18c9e10f-c1a2-436f-91fa-7ac2e9f945c6.par
+#BlueLink1 Powertrain: Clutch with Viscous Differential`External Control` ` , Clutch Right`ClVisc_18c9e10f-c1a2-436f-91fa-7ac2e9f945c6
+
+
+#EMBEDDED_NOTES
+#This is an example of an externally controlled twin clutch type differential.  The clutch control signals are supplied from an external source (such as Simulink, C-Code, etc.).
+#
+#This twin clutch equips a 20 kW electric motor on center drive shaft.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Powertrain: Front Twin-Clutch Differential; { Electric Motor Drive (20 kW) } EV Twin Clutch: External Control
+#Library : Powertrain: Front Twin-Clutch Differential
+#DataSet : EV Twin Clutch: External Control
+#Category: Electric Motor Drive (20 kW)
+#FileID  : TwinF_f30211c3-5038-43fe-a6ca-5e63d05cb98e
+#Created : 07-01-2022 15:09:21
+#Modified: 07-01-2022 15:46:11
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Twin Clutches
+
+END

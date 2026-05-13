@@ -1,0 +1,109 @@
+PARSFILE
+#FullDataName Vehicle: Trailer with 2 Axles`2A Large Rental Trailer`
+#VehCode SS
+IUNIT_INCREMENT
+NAXLES 2
+IOBJECT_SAVE
+symbol_add  <<unit>> 1
+#CheckBox2 0    
+#CheckBox3 0    
+#RingCtrl0 3
+#RingCtrl1 3
+#RingCtrl2 0
+
+* Trailer front suspension
+symbol_add  <<axle>> 1
+iaxle 1
+WRITE_ADD_REFERENCE_FRAME_AXLE
+
+PARSFILE Suspensions\Compliance_SA\CmpSA_5c19ba2c-6b7b-47bf-9af0-46650f4961eb.par
+#BlueLink10 Suspension: Solid Axle Compliance, Springs, and Dampers`Susp. Compliance: Rental Trailer (2A)` Trailers` , Compliance`CmpSA_5c19ba2c-6b7b-47bf-9af0-46650f4961eb
+
+PARSFILE Suspensions\Kin_Solid\KinSA_d1e1bf76-1e54-4051-acd9-79e4cfac03ad.par
+#BlueLink15 Suspension: Solid Axle System Kinematics`Susp. Kinematics: Lg 2A Rental Trailer` Trailers` , Kinematics`KinSA_d1e1bf76-1e54-4051-acd9-79e4cfac03ad
+
+
+* Trailer rear suspension
+symbol_add  <<axle>> 1
+iaxle 2
+WRITE_ADD_REFERENCE_FRAME_AXLE
+
+PARSFILE Suspensions\Compliance_SA\CmpSA_5c19ba2c-6b7b-47bf-9af0-46650f4961eb.par
+#BlueLink14 Suspension: Solid Axle Compliance, Springs, and Dampers`Susp. Compliance: Rental Trailer (2A)` Trailers` , Compliance`CmpSA_5c19ba2c-6b7b-47bf-9af0-46650f4961eb
+
+PARSFILE Suspensions\Kin_Solid\KinSA_d1e1bf76-1e54-4051-acd9-79e4cfac03ad.par
+#BlueLink16 Suspension: Solid Axle System Kinematics`Susp. Kinematics: Lg 2A Rental Trailer` Trailers` , Kinematics`KinSA_d1e1bf76-1e54-4051-acd9-79e4cfac03ad
+
+itire 1 ! just in case
+
+* LF tire
+iaxle 1
+iside 1
+WRITE_ADD_REFERENCE_FRAME_WHEEL
+symbol_add  <<axle>> -1
+symbol_push  <<tire>> L<<axle>>
+PARSFILE Tires\Tire\Tire_d4b58623-61c9-4fd6-9d6b-d19fdbbbd93f.par
+#BlueLink9 Tire`175/65 R14` Touring Tires` , Tire`Tire_d4b58623-61c9-4fd6-9d6b-d19fdbbbd93f
+
+
+* RF tire
+iside 2
+WRITE_ADD_REFERENCE_FRAME_WHEEL
+symbol_push  <<tire>> R<<axle>>
+PARSFILE Tires\Tire\Tire_d4b58623-61c9-4fd6-9d6b-d19fdbbbd93f.par
+#BlueLink9 Tire`175/65 R14` Touring Tires` , Tire`Tire_d4b58623-61c9-4fd6-9d6b-d19fdbbbd93f
+
+
+* LR tire
+iaxle 2
+iside 1
+symbol_add  <<axle>> 1
+WRITE_ADD_REFERENCE_FRAME_WHEEL
+symbol_push  <<tire>> L<<axle>>
+PARSFILE Tires\Tire\Tire_d4b58623-61c9-4fd6-9d6b-d19fdbbbd93f.par
+#BlueLink9 Tire`175/65 R14` Touring Tires` , Tire`Tire_d4b58623-61c9-4fd6-9d6b-d19fdbbbd93f
+
+
+* RR tire
+iside 2
+WRITE_ADD_REFERENCE_FRAME_WHEEL
+symbol_push  <<tire>> R<<axle>>
+PARSFILE Tires\Tire\Tire_d4b58623-61c9-4fd6-9d6b-d19fdbbbd93f.par
+#BlueLink9 Tire`175/65 R14` Touring Tires` , Tire`Tire_d4b58623-61c9-4fd6-9d6b-d19fdbbbd93f
+
+
+* sprung mass data
+WRITE_ADD_REFERENCE_FRAME_BODY
+PARSFILE Vehicles\Trl_Sprung_Mass\TrlSprM_52500061-fb21-4124-a252-ddce9f47d5b3.par
+#BlueLink0 Vehicle: Trailer Sprung Mass`Large Rental Trailer (2A)` Rental (box)` , Sprung mass`TrlSprM_52500061-fb21-4124-a252-ddce9f47d5b3
+
+PARSFILE Aerodynamics\Aero_Main\Aero_3479bdf1-b57e-4404-97d9-41c21f83ddb4.par
+#BlueLink1 Aerodynamics: Basic`No Aerodynamics` Generic Aerodynamic Properties` , Aerodynamics`Aero_3479bdf1-b57e-4404-97d9-41c21f83ddb4
+
+PARSFILE Animator\Vehicles\AniVeh_9605a120-5595-434a-9101-10669efbe488.par
+#BlueLink2 Animator: Vehicles and Sensor Targets`Large Rental Trailer (2A)` Trailers` , Trailer 3D Shape`AniVeh_9605a120-5595-434a-9101-10669efbe488
+
+PARSFILE Brakes\4W_System\Brk4W_eed6147d-3340-4846-b7a5-e1b637c17333.par
+#BlueLink4 Brakes: Four-Wheel System`Trailer (2A): MC Press, No ABS` Trailers` , Brakes`Brk4W_eed6147d-3340-4846-b7a5-e1b637c17333
+
+IUNIT_DECREMENT
+IUNIT_INCREMENT
+IOBJECT_RESTORE
+R_TANDEM 0.5
+CFZ_MY_TAND 0
+R_TAND_TRAIL_STATIC 0.5
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Vehicles\Trailer_2A\Trl_2a_707a2a5c-cec8-4633-b746-d8a1d5b6c2a1.png
+
+LOG_ENTRY Used Dataset: Vehicle: Trailer with 2 Axles; 2A Large Rental Trailer
+#Library : Vehicle: Trailer with 2 Axles
+#DataSet : 2A Large Rental Trailer
+#Category: 
+#FileID  : Trl_2a_707a2a5c-cec8-4633-b746-d8a1d5b6c2a1
+#Created : 12-13-2021 13:41:38
+#Modified: 08-18-2023 16:50:15
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode SS
+
+END

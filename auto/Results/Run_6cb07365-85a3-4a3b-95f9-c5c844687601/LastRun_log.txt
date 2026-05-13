@@ -1,0 +1,8 @@
+Run made by CarSim 2024.1 at 14:45 on May 08, 2026.
+Revision 222209, March 18, 2024
+Started with simfile: C:\Carsim2024.1\Carsim2024.1_Data\simfile.sim
+
+
+The run stopped at T = 0 because there was a problem opening PARSFILE "Results\Run_6cb07365-85a3-4a3b-95f9-c5c844687601\Run_all.par".
+No such file or directory.
+

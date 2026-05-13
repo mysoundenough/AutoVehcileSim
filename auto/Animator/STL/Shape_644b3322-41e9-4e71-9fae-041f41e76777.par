@@ -1,0 +1,44 @@
+PARSFILE
+#FullDataName Animator: Shape File Link`Skid-Steer Loader: Body`Cars: Other Vehicles
+#MiscYellow3
+add_obj Animator\3D_Shape_Files\Other_Vehicles\Skid_Steer\Skid_Steer.osg
+#ENDMYellow
+
+SET_COLOR 0.69 0.69 0.69
+SET_SCALE_X 0.73
+SET_SCALE_Y 0.73
+SET_SCALE_Z 0.73
+*SPECULAR 0.5
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 1    
+USE_RUN_COLOR
+#CheckBox4 1    
+
+SET_SPECULAR 0.5 0.5 0.5
+vsv_enable_shadows_recursive
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_33b67ee8-3864-4ecd-9184-4b42ee5fc75f.par
+#BlueLink2 Animator: Camera Setup`Vehicle Pictures` Shape Preview` , Video Camera`Camera_33b67ee8-3864-4ecd-9184-4b42ee5fc75f
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_644b3322-41e9-4e71-9fae-041f41e76777.png
+
+#EMBEDDED_NOTES
+#Scale factor of 0.73 is based on converting the art shape from a 1644 mm wheelbase to a 1200 mm wheelbase.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Cars: Other Vehicles } Skid-Steer Loader: Body
+#Library : Animator: Shape File Link
+#DataSet : Skid-Steer Loader: Body
+#Category: Cars: Other Vehicles
+#FileID  : Shape_644b3322-41e9-4e71-9fae-041f41e76777
+#Created : 03-02-2023 13:21:45
+#Modified: 03-02-2023 16:14:26
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape File
+
+END

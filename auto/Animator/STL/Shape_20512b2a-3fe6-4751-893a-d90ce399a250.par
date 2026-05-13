@@ -1,0 +1,39 @@
+PARSFILE
+#FullDataName Animator: Shape File Link`Rental Trl (2A): Solid Axle, Leaf Springs`Trailers
+#MiscYellow3
+add_obj Animator\3D_Shape_Files\Trailers\Rental_Trailer_2A\rental_trailer_2A.osg
+#ENDMYellow
+
+SET_COLOR 0.753 0.753 0.753
+*IMAGE_FIT_MODE 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+vsv_enable_shadows_recursive
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_67cc4229-fee5-4589-bc48-0f75aae5753d.par
+#BlueLink2 Animator: Camera Setup`Vehicles - Trailers` Shape Preview` , Video Camera`Camera_67cc4229-fee5-4589-bc48-0f75aae5753d
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_20512b2a-3fe6-4751-893a-d90ce399a250.png
+
+#EMBEDDED_NOTES
+#2A Rental Trailer Details
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Trailers } Rental Trl (2A): Solid Axle, Leaf Springs
+#Library : Animator: Shape File Link
+#DataSet : Rental Trl (2A): Solid Axle, Leaf Springs
+#Category: Trailers
+#FileID  : Shape_20512b2a-3fe6-4751-893a-d90ce399a250
+#Created : 12-13-2021 13:55:03
+#Modified: 02-03-2022 18:20:14
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape File
+
+END

@@ -1,0 +1,91 @@
+PARSFILE
+#FullDataName Generic VS Commands`Wheel Restraint Forces`Vehicle Hauling
+#VehCode VS Commands
+
+#MiscYellow0
+! Define Restraint Parameters
+DEFINE_UNITS N/mm 0.001
+DEFINE_UNITS N-s/mm 0.001
+DEFINE_PARAMETER K_FIXTURE_XY = 100000; N/mm; Stiffness of chassis clamps
+DEFINE_PARAMETER C_FIXTURE_XY = 100; N-s/mm; Damping of chassis clamps
+DEFINE_PARAMETER K_FIXTURE_Z = 100000; N/mm; Stiffness of chassis clamps
+DEFINE_PARAMETER C_FIXTURE_Z = 100; N-s/mm; Damping of chassis clamps
+eq_in K_FIXTURE_XY if(t>10, 100000, 0)
+eq_in C_FIXTURE_XY if(t>10, 100, 0)
+eq_in K_FIXTURE_Z if(t>10, 100000, 0)
+eq_in C_FIXTURE_Z if(t>10, 100, 0)
+
+! Import Restraint X,Y,Z Forces
+IMPORT IMP_FX_RP_1 VS_REPLACE 0
+IMPORT IMP_FX_RP_2 VS_REPLACE 0
+IMPORT IMP_FX_RP_3 VS_REPLACE 0
+IMPORT IMP_FX_RP_4 VS_REPLACE 0
+IMPORT IMP_FY_RP_1 VS_REPLACE 0
+IMPORT IMP_FY_RP_2 VS_REPLACE 0
+IMPORT IMP_FY_RP_3 VS_REPLACE 0
+IMPORT IMP_FY_RP_4 VS_REPLACE 0
+IMPORT IMP_FZ_RP_1 VS_REPLACE 0
+IMPORT IMP_FZ_RP_2 VS_REPLACE 0
+IMPORT IMP_FZ_RP_3 VS_REPLACE 0
+IMPORT IMP_FZ_RP_4 VS_REPLACE 0
+
+! Calculate Spring Forces for Restraints
+define_output x_l1_err x_rp1-imp_restrain_l1_x
+define_output x_r1_err x_rp2-imp_restrain_r1_x
+define_output x_l2_err x_rp3-imp_restrain_l2_x
+define_output x_r2_err x_rp4-imp_restrain_r2_x
+
+define_output vx_l1_err VX_S1-imp_restrain_l1_vx
+define_output vx_r1_err VX_S2-imp_restrain_r1_vx
+define_output vx_l2_err VX_S3-imp_restrain_l2_vx
+define_output vx_r2_err VX_S4-imp_restrain_r2_vx
+
+eq_in IMP_Fx_RP_1 -K_FIXTURE_XY*x_l1_err -C_FIXTURE_XY*vx_l1_err
+eq_in IMP_Fx_RP_2 -K_FIXTURE_XY*x_r1_err -C_FIXTURE_XY*vx_r1_err
+eq_in IMP_Fx_RP_3 -K_FIXTURE_XY*x_l2_err -C_FIXTURE_XY*vx_l2_err
+eq_in IMP_Fx_RP_4 -K_FIXTURE_XY*x_r2_err -C_FIXTURE_XY*vx_r2_err
+
+define_output y_l1_err y_rp1-imp_restrain_l1_y
+define_output y_r1_err y_rp2-imp_restrain_r1_y
+define_output y_l2_err y_rp3-imp_restrain_l2_y
+define_output y_r2_err y_rp4-imp_restrain_r2_y
+
+define_output vy_l1_err Vy_S1-imp_restrain_l1_vy
+define_output vy_r1_err Vy_S2-imp_restrain_r1_vy
+define_output vy_l2_err Vy_S3-imp_restrain_l2_vy
+define_output vy_r2_err Vy_S4-imp_restrain_r2_vy
+
+eq_in IMP_Fy_RP_1 -K_FIXTURE_XY*y_l1_err -C_FIXTURE_XY*vy_l1_err
+eq_in IMP_Fy_RP_2 -K_FIXTURE_XY*y_r1_err -C_FIXTURE_XY*vy_r1_err
+eq_in IMP_Fy_RP_3 -K_FIXTURE_XY*y_l2_err -C_FIXTURE_XY*vy_l2_err
+eq_in IMP_Fy_RP_4 -K_FIXTURE_XY*y_r2_err -C_FIXTURE_XY*vy_r2_err
+
+define_output z_l1_err z_rp1-imp_restrain_l1_z
+define_output z_r1_err z_rp2-imp_restrain_r1_z
+define_output z_l2_err z_rp3-imp_restrain_l2_z
+define_output z_r2_err z_rp4-imp_restrain_r2_z
+
+define_output vz_l1_err Vz_S1-imp_restrain_l1_vz
+define_output vz_r1_err Vz_S2-imp_restrain_r1_vz
+define_output vz_l2_err Vz_S3-imp_restrain_l2_vz
+define_output vz_r2_err Vz_S4-imp_restrain_r2_vz
+
+eq_in IMP_FZ_RP_1 -K_FIXTURE_Z*z_l1_err -C_FIXTURE_Z*vz_l1_err
+eq_in IMP_FZ_RP_2 -K_FIXTURE_Z*z_r1_err -C_FIXTURE_Z*vz_r1_err
+eq_in IMP_FZ_RP_3 -K_FIXTURE_Z*z_l2_err -C_FIXTURE_Z*vz_l2_err
+eq_in IMP_FZ_RP_4 -K_FIXTURE_Z*z_r2_err -C_FIXTURE_Z*vz_r2_err
+#ENDMYellow
+
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { Vehicle Hauling } Wheel Restraint Forces
+#Library : Generic VS Commands
+#DataSet : Wheel Restraint Forces
+#Category: Vehicle Hauling
+#FileID  : GenVS_05850d9e-71eb-4b1c-b431-74e63ec39400
+#Created : 01-11-2023 13:38:04
+#Modified: 01-11-2023 14:07:48
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode VS Commands
+
+END

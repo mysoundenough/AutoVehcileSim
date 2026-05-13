@@ -1,0 +1,41 @@
+PARSFILE
+#FullDataName Animator: Shape File Link`Sedan: Body`Cars: E-Class
+#MiscYellow3
+add_obj Animator\3D_Shape_Files\Cars\E_Class_Sedan\E_Class.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 1    
+USE_RUN_COLOR
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_ce79f9d3-c1b1-4415-a79e-94afe44d159e.par
+#BlueLink2 Animator: Camera Setup`YZ-Plane, No Offsets - Medium Objects` Shape Preview` , Video Camera`Camera_ce79f9d3-c1b1-4415-a79e-94afe44d159e
+
+*IMAGE_TYPE CUSTOM
+*IMAGE_FILE Animator\STL_Groups\ShpGrp_c89027b2-5e11-4c5e-ad01-aa0bd908feb7.png
+
+#EMBEDDED_NOTES
+#E-Class sedan Body
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Cars: E-Class } Sedan: Body
+#Library : Animator: Shape File Link
+#DataSet : Sedan: Body
+#Category: Cars: E-Class
+#FileID  : Shape_9afcd680-4098-4678-ae7b-370498023e6e
+#Created : 03-23-2023 09:41:56
+#Modified: 07-05-2023 14:24:29
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape File
+
+END

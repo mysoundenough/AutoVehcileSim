@@ -1,0 +1,80 @@
+PARSFILE
+#FullDataName Generic VS Commands`04c - Steer torque`K&C Test Sequence
+#VehCode VS Commands
+
+#MiscYellow0
+! A steering test with torque input applies torque to the handwheel
+OPT_DM 0 ! driver model is turned OFF (open loop control)
+OPT_STR_BY_TRQ 1 ! steer input is torque
+
+! Steer stops should always be used when steer input is by torque.
+! The model default is -45 deg for the left, +45 deg for the right.
+! The default stiffness is zero, allowing them to be disabled.
+! They are given a stiffness here to enable the limits in the VS Events
+! to sense that steer stops have been reached. Note that this 
+! overrides any value set in the steering system, but the actual value
+! isn't very important as the stop torque is only used to trigger an Event.
+K_STR_STOP_L = 1000;
+K_STR_STOP_R = 1000;
+
+! Set user parameters for range of (+/-) moments to be used
+DEFINE_PARAMETER M_STR_RANGE 5; N-m; Range of steering wheel torque
+DEFINE_PARAMETER END_AFTER_EVENT 0; -; Switch to end run
+
+! Set the target max (left) and min (right) steer for the steering wheel
+DEFINE_PARAMETER SW_MAX = 540; deg; Max steering wheel angle
+DEFINE_PARAMETER SW_MIN = -540; deg; Min steering wheel angle
+
+! Set the target max (left) and min (right) steer for each road wheel
+DEFINE_PARAMETER RW_MAX_L1 = 40; deg; Max road wheel steer angle
+DEFINE_PARAMETER RW_MIN_L1 = -40; deg; Min road wheel steer angle
+DEFINE_PARAMETER RW_MAX_R1 = 40; deg; Max road wheel steer angle
+DEFINE_PARAMETER RW_MIN_R1 = -40; deg; Min road wheel steer angle
+
+! Four-wheel steer is possible
+! These are only used to record the range of steer.
+
+! Rear steer is typically under some sort of servo control, which is often
+! variable with vehicle speed. This test is conducted at zero speed, and
+! the rear steer is recorded for reference only.
+! The value of maximum rear steer is defined as the steer angle when the maximum front
+! steer is reached, and vice versa for minimum rear steer.
+DEFINE_PARAMETER RW_MAX_L2 = 0; deg; Max road wheel steer angle
+DEFINE_PARAMETER RW_MIN_L2 = 0; deg; Min road wheel steer angle
+DEFINE_PARAMETER RW_MAX_R2 = 0; deg; Max road wheel steer angle
+DEFINE_PARAMETER RW_MIN_R2 = 0; deg; Min road wheel steer angle
+
+! Set the rate of change of moment
+! define units for the moment rate of change
+DEFINE_UNITS N-m/s 1; 
+DEFINE_PARAMETER M_STR_RATE = 0.1; N-m/s; Steer torque rate of change
+
+! Activate the import variable for steer torque
+IMPORT imp_steer_t_in VS_REPLACE
+
+! differential equation to smoothly change moments
+DEFINE_OUTPUT m_str_applied 0; N-m; Applied steer torque
+EQ_DIFFERENTIAL m_str_applied = m_str_rate;
+
+EQ_IN imp_steer_t_in = m_str_applied;
+
+! Steer may be limited by torque or steer angle
+DEFINE_OUTPUT at_min = 0; -; 1/0 At/Not at min steer limit
+DEFINE_OUTPUT at_max = 0; -; 1/0 At/Not at max steer limit
+
+! Disable writing for first half-cycle
+OPT_WRITE 0
+#ENDMYellow
+
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { K&C Test Sequence } 04c - Steer torque
+#Library : Generic VS Commands
+#DataSet : 04c - Steer torque
+#Category: K&C Test Sequence
+#FileID  : GenVS_acbda493-31cf-4e82-8e99-c2e65147c988
+#Modified: 05-28-2021 15:02:26
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode VS Commands
+
+END

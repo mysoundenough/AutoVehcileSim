@@ -1,0 +1,83 @@
+PARSFILE
+#FullDataName CarSim Run Control`Traffic Signs`VS Visualizer Examples
+#VEHICLECODE Ind_Ind
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_f0a9d219-20d5-4fb1-b5c3-f67c734c04f7
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Animator\Cameras\Camera_60b80fb3-7727-497c-b28a-db3fb078ce59.par
+#BlueLink0 Animator: Camera Setup`180 Azm, 3 El, 20 m` Vehicle Reference` , Animator camera`Camera_60b80fb3-7727-497c-b28a-db3fb078ce59
+
+#CheckBox0 1    
+#CheckBox1 0    
+#CheckBox2 1    
+#CheckBox3 0    
+#CheckBox4 0    
+#CheckBox5 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox8 1    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+#CheckBox12 0    
+
+#RingCtrl0 0
+#RingCtrl1 0
+#RingCtrl2 3
+#RingCtrl3 0
+#RingCtrl6 0
+#RingCtrl7 -1
+*RUN_COLOR 0.8 0 0
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Vehicles\Assembly\Vehicle_9db9b98a-6725-424b-9635-e1ca6e15979d.par
+#BlueLink2 Vehicle: Assembly`C-Class, Hatchback` C-Class` , Math Model`Vehicle_9db9b98a-6725-424b-9635-e1ca6e15979d
+
+PARSFILE Procedures\Proc_0379d3e9-9f8d-479b-9fad-3d51489cca92.par
+#BlueLink28 Procedures`Speed = 20kmh, No Offset` Driver Controls` , Procedure`Proc_0379d3e9-9f8d-479b-9fad-3d51489cca92
+
+PARSFILE Generic\External\GenExt_56b750fd-1fff-4128-aeb8-c93fc7605a35.par
+#BlueLink9 External Parsfile`2023.0 New Signs` Environments` , Miscellaneous`GenExt_56b750fd-1fff-4128-aeb8-c93fc7605a35
+
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Vehicles\Assembly\Vehicle_9db9b98a-6725-424b-9635-e1ca6e15979d.png
+WRITE_SENSOR_DETECT
+Title Traffic Signs <VS Visualizer Examples>
+CATEGORY VS Visualizer Examples 
+DATASET_TITLE Traffic Signs
+#MiscYellow0
+eq_out pbk_con_constant if (station>105, 3000000, 0)
+#ENDMYellow
+
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#New Signs for 2023.0 Release.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { VS Visualizer Examples } Traffic Signs
+#Library : CarSim Run Control
+#DataSet : Traffic Signs
+#Category: VS Visualizer Examples
+#FileID  : Run_f0a9d219-20d5-4fb1-b5c3-f67c734c04f7
+#Modified: 01-24-2023 10:13:38
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Run
+
+END

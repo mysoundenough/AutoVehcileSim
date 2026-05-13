@@ -1,0 +1,29 @@
+PARSFILE
+#FullDataName Control: Braking MC Pressure (Open Loop)`10 MPa @ 15 s`Step
+#CheckBox0 0    
+
+#RingCtrl0 STEP
+#RadioCtrl0 0    
+
+#DiagramOne0
+PBK_CON_TABLE STEP
+0, 0
+15, 0
+15.5, 10
+20, 10
+ENDTABLE
+VLOW_STOP -1
+
+
+LOG_ENTRY Used Dataset: Control: Braking MC Pressure (Open Loop); { Step } 10 MPa @ 15 s
+#Library : Control: Braking MC Pressure (Open Loop)
+#DataSet : 10 MPa @ 15 s
+#Category: Step
+#FileID  : PbkCon_658abf62-0318-40b2-9b6d-c6619686d802
+#Created : 11-29-2022 16:20:22
+#Modified: 11-29-2022 16:20:40
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Brake Control
+
+END

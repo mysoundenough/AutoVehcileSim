@@ -1,0 +1,58 @@
+PARSFILE
+#FullDataName Procedures`07b - Mz compliance (opposed)`K&C Test Sequence
+#CheckBox1 1    
+OPT_INIT_PATH 1
+
+#RingCtrl0 4
+#RingCtrl1 -1
+#RingCtrl2 0
+OPT_STOP -1
+SSTART 0
+TSTART 0
+TSTART_WRITE = 0;
+SSTOP = SSTART + 1 ;
+OPT_DIRECTION 1
+TSTOP -1
+*TSTOP 300
+*TSTART 0
+*SSTART 0
+
+PARSFILE Generic\VS_commands\GenVS_12c1392e-dfb7-4dd1-882c-deaa5d045347.par
+#BlueLink0 Generic VS Commands`07b - Mz compliance (opposed)` K&C Test Sequence` , Miscellaneous`GenVS_12c1392e-dfb7-4dd1-882c-deaa5d045347
+
+PARSFILE Events\Events_a055a4e1-6649-4220-a1e5-3d6d814a59d4.par
+#BlueLink1 Events`07a,b,c,d - Mz comp - reduce to min` K&C Test Sequence` , Miscellaneous`Events_a055a4e1-6649-4220-a1e5-3d6d814a59d4
+
+PARSFILE Plot\Setup\Plot_4167991f-7081-4ce5-84ea-81e0989c59a6.par
+#BlueLink8 Plot: Setup`Camber vs Fx` K&C Test Results` , Plot`Plot_4167991f-7081-4ce5-84ea-81e0989c59a6
+
+PARSFILE Plot\Setup\Plot_047009a3-95a8-4164-a1fe-6defe2887249.par
+#BlueLink9 Plot: Setup`Steer vs Fx` K&C Test Results` , Plot`Plot_047009a3-95a8-4164-a1fe-6defe2887249
+
+PARSFILE Plot\Setup\Plot_0773e087-151d-42db-a308-f02b7b6ee48d.par
+#BlueLink10 Plot: Setup`Lateral Forces` Tire Forces and Moments` , Plot`Plot_0773e087-151d-42db-a308-f02b7b6ee48d
+
+PARSFILE Plot\Setup\Plot_a146934a-339c-4983-9664-0f9749a0dfd6.par
+#BlueLink11 Plot: Setup`Vertical Forces` Tire Forces and Moments` , Plot`Plot_a146934a-339c-4983-9664-0f9749a0dfd6
+
+PARSFILE Plot\Setup\Plot_4afcfd81-6dcf-4e54-8380-ebf573f22214.par
+#BlueLink12 Plot: Setup`Jounce - Front vs Mz` K&C Test Results` , Plot`Plot_4afcfd81-6dcf-4e54-8380-ebf573f22214
+
+PARSFILE Plot\Setup\Plot_84eec363-1496-453e-a4d7-50b2e7330a9f.par
+#BlueLink13 Plot: Setup`Jounce - Rear vs Mz` K&C Test Results` , Plot`Plot_84eec363-1496-453e-a4d7-50b2e7330a9f
+
+PARSFILE Plot\Setup\Plot_a5884b30-2228-44f6-afe5-eb3fd414c1c3.par
+#BlueLink14 Plot: Setup`Aligning Moments` Tire Forces and Moments` , Plot`Plot_a5884b30-2228-44f6-afe5-eb3fd414c1c3
+
+
+LOG_ENTRY Used Dataset: Procedures; { K&C Test Sequence } 07b - Mz compliance (opposed)
+#Library : Procedures
+#DataSet : 07b - Mz compliance (opposed)
+#Category: K&C Test Sequence
+#FileID  : Proc_3a275f6b-79b9-4bb5-8aab-aea1a2a42ebf
+#Modified: 05-28-2021 14:59:20
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Procedure
+
+END

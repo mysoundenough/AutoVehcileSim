@@ -1,0 +1,32 @@
+PARSFILE
+#FullDataName Events`Reset Integral #1`PID Control
+#CheckBox1 1    
+*CLEAR
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl10 0
+#RingCtrl11 4
+RESET_EVENTS
+*NAME1 1
+*VALUE1 1
+#MiscYellow0
+RESET_INTEGRAL 1
+#ENDMYellow
+
+SET_EVENT_ID 0 ! reset to default
+
+LOG_ENTRY Used Dataset: Events; { PID Control } Reset Integral #1
+#Library : Events
+#DataSet : Reset Integral #1
+#Category: PID Control
+#FileID  : Events_800aed4b-d1be-4efb-80b0-965280dff020
+#Created : 06-05-2023 09:43:24
+#Modified: 06-05-2023 09:58:30
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

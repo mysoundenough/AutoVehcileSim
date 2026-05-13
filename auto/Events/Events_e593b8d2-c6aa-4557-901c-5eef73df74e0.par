@@ -1,0 +1,50 @@
+PARSFILE
+#FullDataName Events`AEB CCRb C2: Contact, Add Score`Euro NCAP AEB Testing
+#CheckBox1 1    
+*CLEAR
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 ZERO ~=
+#RingCtrl10 1
+#RingCtrl11 4
+RESET_EVENTS
+*NAME1 t
+*VALUE1 1
+#MiscYellow0
+Crashed = 1
+V_IMPACT = abs(RelSpeedOk)
+SPEED_REDUCTION = VUT_START - V_IMPACT
+
+!check if speed reduction was >20 km/h, yes 0.5 pts. no, 0 pts.
+! Check if AEB met speed reduction test requirement, during collision event
+SCORE_NEW = if(SPEED_REDUCTION >= MIN_SPD_REDUC, SCORE_OLD + 0.5, SCORE_OLD)
+SCORE_OLD = SCORE_NEW
+#ENDMYellow
+
+DEFINE_EVENT 1 ; Events\Events_0161458c-8c51-461d-9ec0-7c3546615367.par
+#BlueLink0 Events`AEB CCRb D. Pause before ending AEB` Euro NCAP AEB Testing` , Events`Events_0161458c-8c51-461d-9ec0-7c3546615367
+
+SET_EVENT_ID 0 ! reset to default
+
+#EMBEDDED_NOTES
+#Impact with the target object occured. The variable Crashed is set to 1.
+#If the speed was reduced by the threshold value of 5 km/h award 0.5 points for the test run, if not, award zero points.
+#
+#Reduce the test speed by 5 km/h and try again.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Events; { Euro NCAP AEB Testing } AEB CCRb C2: Contact, Add Score
+#Library : Events
+#DataSet : AEB CCRb C2: Contact, Add Score
+#Category: Euro NCAP AEB Testing
+#FileID  : Events_e593b8d2-c6aa-4557-901c-5eef73df74e0
+#Created : 09-07-2021 15:22:01
+#Modified: 09-09-2021 16:25:38
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

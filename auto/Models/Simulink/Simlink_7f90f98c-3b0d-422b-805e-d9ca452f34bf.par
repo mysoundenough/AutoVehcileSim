@@ -1,0 +1,59 @@
+PARSFILE
+#FullDataName Models: Simulink`Sinusoidal Ground Z, 1 SF`External Ground Elevation
+#RunMdlFile Extensions\Simulink\Ground_Z_from_XY_Preview.slx
+SIMULINK_MODEL_FILE Extensions\Simulink\Ground_Z_from_XY_Preview.slx
+#RingCtrl0 -1
+#RingCtrl2 0
+*MULTI_SOLVERS 0
+*MULTI_S_WRAPPER 0
+#CheckBox0 0    
+*USE_ALT_DIR 0
+#CheckBox1 0    
+*USE_DIFF_SOLVERS 0
+#CheckBox3 1    
+#CheckBox5 0    
+#RingCtrl1 0
+OPT_INT_METHOD 0
+#CheckBox4 1    
+OPT_IO_SYNC_FM 1
+*TSTEP 0.0005
+*FREQ_MODEL 2000
+*TSTEP_OUT 0.025
+*FREQ_OUT 40
+tstep 0.0005
+iprint 50
+PARSFILE IO_Channels\Ports\Port_1661529b-73bd-4e8e-9f13-473b9509ced5.par
+#BlueLink0 I/O Channels: Ports`Z, dZdX, dZ/dY for 4 tires` Ground Z for 4 Tires` , Import`Port_1661529b-73bd-4e8e-9f13-473b9509ced5
+
+PARSFILE IO_Channels\Ports\Port_ae875c5c-9f67-494d-a439-233482f3d966.par
+#BlueLink1 I/O Channels: Ports`Export CTC XY for 4 Tires` Ground Z for 4 Tires` , Import/Export`Port_ae875c5c-9f67-494d-a439-233482f3d966
+
+#BlueLink3 I/O Channels: Ports` ` , vs_state Ports` , vs_state Ports`
+
+#BlueLink4 I/O Channels: Ports` ` , vs_ctl Ports` , vs_ctl Ports`
+
+#BlueLink5 I/O Channels: Ports`Export CTC XY for 4 Tires` Ground Z for 4 Tires` , vs_kin Ports`Port_ae875c5c-9f67-494d-a439-233482f3d966
+
+#BlueLink6 I/O Channels: Ports`Z, dZdX, dZ/dY for 4 tires` Ground Z for 4 Tires` , vs_dyn Ports`Port_1661529b-73bd-4e8e-9f13-473b9509ced5
+
+#MiscYellow1
+OPT_DELAY_INIT 1
+#ENDMYellow
+
+
+#EMBEDDED_NOTES
+#This uses the Sync checkbox because the Imports are used in the Dyn stage and the exports are used in the earlier Kin stage.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Models: Simulink; { External Ground Elevation } Sinusoidal Ground Z, 1 SF
+#Library : Models: Simulink
+#DataSet : Sinusoidal Ground Z, 1 SF
+#Category: External Ground Elevation
+#FileID  : Simlink_7f90f98c-3b0d-422b-805e-d9ca452f34bf
+#Created : 10-05-2023 15:29:55
+#Modified: 10-23-2023 15:13:45
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode 
+
+END

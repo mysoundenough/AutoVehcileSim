@@ -1,0 +1,58 @@
+PARSFILE
+#FullDataName Events`06d - Select procedure for PT`K&C Test Sequence
+#CheckBox1 0    
+#CheckBox6 0    
+#CheckBox7 1    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 ZERO ~=
+#RingCtrl1 ZERO ~=
+#RingCtrl2 ZERO ~=
+#RingCtrl3 ZERO ~=
+#RingCtrl4 ZERO ~=
+#RingCtrl10 5
+#RingCtrl11 4
+*NAME1 OPT_PT
+*NAME2 OPT_PT
+*NAME3 OPT_PT
+*NAME4 OPT_PT
+*VALUE1 INSTALL_POWERTRAIN == 0
+*VALUE2 INSTALL_POWERTRAIN == 1
+*VALUE3 INSTALL_POWERTRAIN == 2
+*VALUE4 INSTALL_POWERTRAIN == 3
+*VALUE5 INSTALL_POWERTRAIN > 3
+#MiscYellow0
+! Valid powertrains are INSTALL_POWERTRAIN = 0,1,2,or 3
+! External powertrains or powertrain
+! components are not supported
+#ENDMYellow
+
+DEFINE_EVENT INSTALL_POWERTRAIN == 0 ; Events\Events_762a2c54-9bf3-4ef9-ad3c-9fa7fb73a710.par
+#BlueLink0 Events`06d - Min PT` K&C Test Sequence` , Events`Events_762a2c54-9bf3-4ef9-ad3c-9fa7fb73a710
+
+DEFINE_EVENT INSTALL_POWERTRAIN == 1 ; Events\Events_b0dce5c8-cac2-4c47-8579-bf42d5c5431f.par
+#BlueLink1 Events`06d - FWD` K&C Test Sequence` , Events`Events_b0dce5c8-cac2-4c47-8579-bf42d5c5431f
+
+DEFINE_EVENT INSTALL_POWERTRAIN == 2 ; Events\Events_282a72e4-07d6-425f-adfb-60ba6444d6f0.par
+#BlueLink2 Events`06d - RWD` K&C Test Sequence` , Events`Events_282a72e4-07d6-425f-adfb-60ba6444d6f0
+
+DEFINE_EVENT INSTALL_POWERTRAIN == 3 ; Events\Events_cee9042d-0ad5-4724-8fed-f3916a10b5b1.par
+#BlueLink3 Events`06d - AWD` K&C Test Sequence` , Events`Events_cee9042d-0ad5-4724-8fed-f3916a10b5b1
+
+DEFINE_EVENT INSTALL_POWERTRAIN > 3 ; Events\Events_b5af09b5-d8ad-4e81-ae24-eebce691780e.par
+#BlueLink4 Events`End Events` ` , Events`Events_b5af09b5-d8ad-4e81-ae24-eebce691780e
+
+SET_EVENT_ID 0 ! reset to default
+
+LOG_ENTRY Used Dataset: Events; { K&C Test Sequence } 06d - Select procedure for PT
+#Library : Events
+#DataSet : 06d - Select procedure for PT
+#Category: K&C Test Sequence
+#FileID  : Events_9b1b57f2-bcfe-49d9-b6f5-45a20a5e956a
+#Modified: 06-20-2023 15:47:23
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

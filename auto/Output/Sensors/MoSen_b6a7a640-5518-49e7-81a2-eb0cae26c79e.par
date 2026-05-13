@@ -1,0 +1,82 @@
+PARSFILE
+#FullDataName Positions, Velocities, and Accelerations`Wheel Restraint Sensors, Car 1`Vehicle Hauling
+#RingCtrl0 0
+#RingCtrl2 4
+#RingCtrl3 1
+#RingCtrl4 1
+#RingCtrl5 3
+#RingCtrl6 1
+#RingCtrl7 3
+#RingCtrl8 1
+#RingCtrl9 3
+#RingCtrl10 1
+#RingCtrl11 3
+*BODY_ID_1 2
+*X_S1 -4470
+*Y_S1 775
+*Z_S1 811
+*BODY_ID_2 2
+*X_S2 -4470
+*Y_S2 -775
+*Z_S2 811
+*BODY_ID_3 2
+*X_S3 -7336
+*Y_S3 775
+*Z_S3 812
+*BODY_ID_4 2
+*X_S4 -7336
+*Y_S4 -775
+*Z_S4 812
+
+ISENSOR_M = 1
+DEFINE_MOTION_SENSORS 4 + ISENSOR_M -1 -NSENSOR_M
+
+OPT_S_BODY_TYPE 1
+OPT_S_OUTPUT 3
+OPT_S_BODY_ID 2
+X_S -4470
+Y_S 775
+Z_S 811
+SET_DESCRIPTION MOTION_SENSOR_NAME Sensor 1: Wheel Restraint Sensors, Car 1
+
+ISENSOR_M = ISENSOR_M + 1
+OPT_S_BODY_TYPE 1
+OPT_S_OUTPUT 3
+OPT_S_BODY_ID 2
+X_S -4470
+Y_S -775
+Z_S 811
+SET_DESCRIPTION MOTION_SENSOR_NAME Sensor 2: Wheel Restraint Sensors, Car 1
+
+ISENSOR_M = ISENSOR_M + 1
+OPT_S_BODY_TYPE 1
+OPT_S_OUTPUT 3
+OPT_S_BODY_ID 2
+X_S -7336
+Y_S 775
+Z_S 812
+SET_DESCRIPTION MOTION_SENSOR_NAME Sensor 3: Wheel Restraint Sensors, Car 1
+
+ISENSOR_M = ISENSOR_M + 1
+OPT_S_BODY_TYPE 1
+OPT_S_OUTPUT 3
+OPT_S_BODY_ID 2
+X_S -7336
+Y_S -775
+Z_S 812
+SET_DESCRIPTION MOTION_SENSOR_NAME Sensor 4: Wheel Restraint Sensors, Car 1
+
+MAKE_MOTION_SENSOR_OUTPUTS
+
+LOG_ENTRY Used Dataset: Positions, Velocities, and Accelerations; { Vehicle Hauling } Wheel Restraint Sensors, Car 1
+#Library : Positions, Velocities, and Accelerations
+#DataSet : Wheel Restraint Sensors, Car 1
+#Category: Vehicle Hauling
+#FileID  : MoSen_b6a7a640-5518-49e7-81a2-eb0cae26c79e
+#Created : 01-11-2023 13:16:17
+#Modified: 01-11-2023 15:48:20
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Motion Sensors
+
+END

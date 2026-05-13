@@ -1,0 +1,88 @@
+PARSFILE
+#FullDataName Generic Data Group`C-Class hatch. AEB/ACC Sensors, Cent.`Obstacle Avoidance
+#VehCode Generic Group
+PARSFILE Generic\VS_commands\GenVS_373878b8-ccdf-48b9-9d9e-7204242a89cf.par
+#BlueLink0 Generic VS Commands`Obstacle Parameters` Obstacle Avoidance` , Link 1`GenVS_373878b8-ccdf-48b9-9d9e-7204242a89cf
+
+
+PARSFILE Sensors_Traffic\Radar\Radar_2ed5a2e9-17eb-462a-a97d-4068ea6f56a6.par
+#BlueLink1 ADAS Sensors for Range and Tracking`Pedestrian Camera General AEB` Forward Facing Sensors: FCW and ACC` , Link 2`Radar_2ed5a2e9-17eb-462a-a97d-4068ea6f56a6
+
+
+#MiscYellow2
+! the first sensor is the vehicle camera
+DEFINE_PARAMETER ID_CAM = ISENSOR; - ; ...
+number assigned to the camera sensor
+define_output LxBumper =  LX_F_SM - X_SENSOR ; ...
+  m; Bumper dist from camera
+#ENDMYellow
+
+PARSFILE Generic\VS_commands\GenVS_8c7df0b7-29e3-44c8-9dcd-60620566a645.par
+#BlueLink2 Generic VS Commands`General FCW-AEB Tuning Params.` Pedestrian Euro NCAP` , Link 3`GenVS_8c7df0b7-29e3-44c8-9dcd-60620566a645
+
+
+PARSFILE Animator\HUD\HUD_d5c1f4a2-2908-4243-b965-c255b4cb39ec.par
+#BlueLink3 Animator: HUD`FCW Alert (small) rt. side, high)` ADAS Alerts` , Link 4`HUD_d5c1f4a2-2908-4243-b965-c255b4cb39ec
+
+
+#MiscYellow4
+! note: N_MIN_DETECTIONS is needed to 
+! access sensed objects > 1, for any sensor 
+! logic which initializes before the first time step
+N_MIN_DETECTIONS = 2
+#ENDMYellow
+
+PARSFILE Sensors_Traffic\Radar\Radar_86d30ef4-b0ca-44a7-86dd-12547c653f7b.par
+#BlueLink4 ADAS Sensors for Range and Tracking`ACC: Range,Sensitivity by EQN` Forward Facing Sensors: FCW and ACC` , Link 5`Radar_86d30ef4-b0ca-44a7-86dd-12547c653f7b
+
+
+#MiscYellow5
+define_output LxBumperRadar =  LX_F_SM - X_SENSOR ; ...
+  m; Bumper dist from camera
+#ENDMYellow
+
+PARSFILE Sensors_Traffic\Type_Map\TypeMap_8f925db1-d08f-44ac-b963-a832ea28e916.par
+#BlueLink5 Sensor Reflectiveness Map`2 Sensor Types, 2 Material Types` ` , Link 6`TypeMap_8f925db1-d08f-44ac-b963-a832ea28e916
+
+
+#MiscYellow6
+!Set ACC desired speed
+DEFINE_PARAMETER SPEED_LIMIT = 55; km/h ; Top speed limit for ACC
+EQ_INIT SPEED_LIMIT = speed_target(station,t,1);
+define_output speedLimitOut = SPEED_LIMIT; km/h; ACC set speed
+
+DEFINE_PARAMETER LANE_WIDTH = 4; m; defined lane width
+#ENDMYellow
+
+PARSFILE Output\PathDetectors\PathDet_98978f75-dc30-4180-ae59-0225306385a9.par
+#BlueLink6 Path Detectors for External Driver Control`3 Detected Paths, Curvature Est., Cent. Ln.` ` , Link 7`PathDet_98978f75-dc30-4180-ae59-0225306385a9
+
+
+PARSFILE Generic\VS_commands\GenVS_33d948be-2b51-41cb-be5e-c418b864a8ce.par
+#BlueLink7 Generic VS Commands`Vehicle In-Lane Detection, 4 Paths` ADAS Support` , Link 8`GenVS_33d948be-2b51-41cb-be5e-c418b864a8ce
+
+
+PARSFILE Generic\VS_commands\GenVS_8a9df5fd-9794-4e6c-9efa-5f5dc2143a52.par
+#BlueLink8 Generic VS Commands`ACC Logic: w/HUD, in-lane calc` ADAS Support` , Link 9`GenVS_8a9df5fd-9794-4e6c-9efa-5f5dc2143a52
+
+
+
+#EMBEDDED_NOTES
+#For this ADAS setup AEB parameters and logic are included, but AEB is deactivated with a single parameter: AEB_On = 0. This is to help review ACC performance only.
+#- There is some overlap of AEB and ACC performance, which must not occur for the Euro NCAP test. This overlap should be resolved by the user.
+#
+#The ACC sensor logic reflects a decision-based method, and is located in the ACC Logic Dataset
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic Data Group; { Obstacle Avoidance } C-Class hatch. AEB/ACC Sensors, Cent.
+#Library : Generic Data Group
+#DataSet : C-Class hatch. AEB/ACC Sensors, Cent.
+#Category: Obstacle Avoidance
+#FileID  : GenGrp_a18b046c-0a54-46bb-af2d-47799d4d4eb4
+#Created : 10-11-2021 14:58:16
+#Modified: 10-11-2021 16:47:10
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Generic Group
+
+END

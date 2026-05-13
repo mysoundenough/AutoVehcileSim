@@ -1,0 +1,51 @@
+PARSFILE
+#FullDataName I/O Channels: Write`Handling Analysis (MAT File)`
+#CheckBox1 1    
+
+#RingCtrl1 1
+#RingCtrl2 0
+#RingCtrl3 0
+#RingCtrl4 1
+
+#MiscYellow0
+#AVz
+#Ay
+#Steer_SW
+#M_SW
+#ENDMYellow
+
+#MiscYellow1
+! Include the FFT MATLAB scripts for analyzing the output data
+*CPAR_INCLUDE Extensions\FFT\spectrum_steer.m
+*CPAR_INCLUDE Extensions\FFT\spectrum_steerT.m
+#ENDMYellow
+
+OPT_AUXOUT_CSV 0
+OPT_AUXOUT_MAT 1
+OPT_AUXOUT_ALL_WRITE_MAT 0
+WRT_AVz
+WRTAUX AVz
+WRT_Ay
+WRTAUX Ay
+WRT_Steer_SW
+WRTAUX Steer_SW
+WRT_M_SW
+WRTAUX M_SW
+
+#EMBEDDED_NOTES
+#This dataset is set up to write 4 channels of output variables in a MAT file for use in MATLAB.
+#
+#The CPAR_INCLUDE statements make sure the matlab files used for the analysis are included in the consolidated parsfile for these examples.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: I/O Channels: Write; Handling Analysis (MAT File)
+#Library : I/O Channels: Write
+#DataSet : Handling Analysis (MAT File)
+#Category: 
+#FileID  : Write_dc8bc2e0-07f2-4e4f-ba78-a2a662821bf1
+#Modified: 05-20-2022 17:08:35
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Write Channels
+
+END

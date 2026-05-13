@@ -1,0 +1,41 @@
+PARSFILE
+#FullDataName Plot: Setup`Lateral Target vs. Station`Tracking
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d.par
+#BlueLink0 Plot: Format`Lines without Symbols` ` , Plot format`PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS Lat_Targ, Station
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Lateral Target vs. Station
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Tracking } Lateral Target vs. Station
+#Library : Plot: Setup
+#DataSet : Lateral Target vs. Station
+#Category: Tracking
+#FileID  : Plot_92fd4997-826f-46e1-92ad-380b7b9bc848
+#Created : 05-26-2022 13:58:34
+#Modified: 05-26-2022 13:59:11
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Plot Setup
+
+END

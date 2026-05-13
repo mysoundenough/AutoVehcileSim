@@ -1,0 +1,43 @@
+PARSFILE
+#FullDataName Generic VS Commands`ACC/AEB Cut-In Params, 120 km/h`Obstacle Avoidance
+#VehCode ADAS Euro NCAP Tests
+
+#MiscYellow0
+DEFINE_PARAMETER LEAD_LTARG_INIT= -1.65; m; init. lead veh. LTARG
+DEFINE_PARAMETER CUT_IN_LTARG_INIT= 1.65; m; init. lead veh. LTARG
+
+DEFINE_PARAMETER LEAD_VEH_SSTART= 85; m; lead veh. start + ego station
+DEFINE_PARAMETER LEAD_VEH_SPD_PROF= 2111; -; lead veh. speed profile
+DEFINE_PARAMETER LEAD_VEH_LTARG_PROF= 2111; -; cut-in LTARG profile
+
+! Station at which the Cut-In vehicle starts in the example
+! Lowering this makes the TTC larger for the ego vehicle  = more severe
+DEFINE_PARAMETER CUT_IN_VEHSSTART= -338; m; init. station of cut-in veh.
+! Station at which the Cut-In vehicle begins it's Cut-In Maneuver: making this larger decreases TTC
+! for the ego vehicle = more severe
+DEFINE_PARAMETER CUT_IN_SSTART_LTARG= CUT_IN_VEHSSTART + 20; m; station at start of Cut-In
+
+DEFINE_PARAMETER CUT_IN_SPD_PROF= 2112; -; cut-in speed profile ID
+DEFINE_PARAMETER CUT_IN_LTARG_PROF= 2112; -; cut-in LTARG profile ID
+
+! X-scaling factor for the Cut-In maneuver (this will be multiplied by two, in the maneuver profile)
+! length of maneuver should be 60m  = 30*2
+DEFINE_PARAMETER CUT_IN_SSCALE_LTARG= 30; m; cut-in long. dist scale value
+! Y-scaling factor for the Cut-In maneuver (this will be multiplied by two, in the maneuver profile)
+! lateral distance of maneuver should be 3.5m = 1.75*2
+DEFINE_PARAMETER CUT_IN_LTARG_GAIN= 1.75; m; cut-in lat. dist scale value
+#ENDMYellow
+
+*MODELCODE ADAS Euro NCAP Tests
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { Obstacle Avoidance } ACC/AEB Cut-In Params, 120 km/h
+#Library : Generic VS Commands
+#DataSet : ACC/AEB Cut-In Params, 120 km/h
+#Category: Obstacle Avoidance
+#FileID  : GenVS_6b8108d7-f75d-45d6-95d6-44b6b4520a7a
+#Modified: 10-08-2021 11:12:13
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode ADAS Euro NCAP Tests
+
+END

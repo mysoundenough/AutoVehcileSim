@@ -1,0 +1,28 @@
+PARSFILE
+#FullDataName Control: Braking MC Pressure (Open Loop)`Constant: AEB_MAX_BK_REQ`Constant
+#CheckBox0 0    
+
+#RingCtrl0 CONSTANT
+#RadioCtrl0 0    
+
+PBK_CON_CONSTANT AEB_MAX_BK_REQ
+VLOW_STOP -1
+*SCALAR AEB_MAX_BK_REQ
+
+
+#EMBEDDED_NOTES
+#AEB_MAX_BK_REQ is defined in the Vehicle AEB logic
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Control: Braking MC Pressure (Open Loop); { Constant } Constant: AEB_MAX_BK_REQ
+#Library : Control: Braking MC Pressure (Open Loop)
+#DataSet : Constant: AEB_MAX_BK_REQ
+#Category: Constant
+#FileID  : PbkCon_39a32bf1-a003-4e04-a2a4-699c74763690
+#Created : 09-29-2021 13:46:46
+#Modified: 09-29-2021 13:47:26
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Brake Control
+
+END

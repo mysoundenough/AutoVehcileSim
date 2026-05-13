@@ -1,0 +1,24 @@
+PARSFILE
+#FullDataName I/O Channels: Export`Yaw Rate Export`4 SF examples
+#RingCtrl1 1
+
+
+EXPORT AVz
+#MiscYellow0
+#Number of Selected Channels: 1
+#CHN_NAME: AVz
+#ENDMYellow
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Export; { 4 SF examples } Yaw Rate Export
+#Library : I/O Channels: Export
+#DataSet : Yaw Rate Export
+#Category: 4 SF examples
+#FileID  : Export_5229c422-e63c-4219-9959-5038f2b57f83
+#Created : 10-19-2022 10:04:41
+#Modified: 10-19-2022 10:06:35
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Export Channels
+
+END

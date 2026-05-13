@@ -1,0 +1,36 @@
+PARSFILE
+#FullDataName Events`05a - Increase to max neg force`K&C Test Sequence
+#CheckBox1 0    
+#CheckBox6 0    
+#CheckBox7 1    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 ZERO ~=
+#RingCtrl1 ZERO ~=
+#RingCtrl10 2
+#RingCtrl11 4
+*VALUE1 (fy_ground <= -FY_RANGE) & END_AFTER_EVENT
+*VALUE2 fy_ground <= -FY_RANGE
+PARSFILE Generic\VS_commands\GenVS_6c0f83d5-98d6-4a24-91ec-eb2ffc8fd256.par
+#BlueLink10 Generic VS Commands`05a - Fy compliance - move to max R` K&C Test Sequence` , Miscellaneous`GenVS_6c0f83d5-98d6-4a24-91ec-eb2ffc8fd256
+
+DEFINE_EVENT (fy_ground <= -FY_RANGE) & END_AFTER_EVENT ; Events\Events_b5af09b5-d8ad-4e81-ae24-eebce691780e.par
+#BlueLink0 Events`End Events` ` , Events`Events_b5af09b5-d8ad-4e81-ae24-eebce691780e
+
+DEFINE_EVENT fy_ground <= -FY_RANGE ; Events\Events_22562314-e3cc-4170-b162-eebfaf3c561a.par
+#BlueLink1 Events`05a - Increase to max pos force` K&C Test Sequence` , Events`Events_22562314-e3cc-4170-b162-eebfaf3c561a
+
+SET_EVENT_ID 0 ! reset to default
+
+LOG_ENTRY Used Dataset: Events; { K&C Test Sequence } 05a - Increase to max neg force
+#Library : Events
+#DataSet : 05a - Increase to max neg force
+#Category: K&C Test Sequence
+#FileID  : Events_823d57c7-548b-4ca0-9664-5c877cdbd03f
+#Modified: 05-28-2021 14:59:28
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

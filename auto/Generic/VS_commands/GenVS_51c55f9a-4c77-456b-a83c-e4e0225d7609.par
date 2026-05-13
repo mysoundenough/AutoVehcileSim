@@ -1,0 +1,21 @@
+PARSFILE
+#FullDataName Generic VS Commands`07a,b,c,d - Mz comp - Increase to max`K&C Test Sequence
+#VehCode VS Commands
+
+#MiscYellow0
+!  Change sign to increase the moment
+MZ_RATE = -MZ_RATE
+#ENDMYellow
+
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { K&C Test Sequence } 07a,b,c,d - Mz comp - Increase to max
+#Library : Generic VS Commands
+#DataSet : 07a,b,c,d - Mz comp - Increase to max
+#Category: K&C Test Sequence
+#FileID  : GenVS_51c55f9a-4c77-456b-a83c-e4e0225d7609
+#Modified: 05-28-2021 15:02:27
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode VS Commands
+
+END

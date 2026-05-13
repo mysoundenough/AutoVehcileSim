@@ -1,0 +1,28 @@
+PARSFILE
+#FullDataName Generic VS Commands`150 kW Engine Idle Controller`Powertrain
+#VehCode VS Commands
+
+#MiscYellow0
+INSTALL_IDLE_CONTROLLER
+IDLE_KP 0.01
+IDLE_KI 0.001
+IDLE_KD 0.0
+#ENDMYellow
+
+
+#EMBEDDED_NOTES
+#The command INSTALL_IDLE_CONTROLLER was added for version 2024.0. This dataset adds the controller and sets values for the three PID coefficients.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { Powertrain } 150 kW Engine Idle Controller
+#Library : Generic VS Commands
+#DataSet : 150 kW Engine Idle Controller
+#Category: Powertrain
+#FileID  : GenVS_b7bd1666-be51-4b5f-a78d-2c3843014904
+#Created : 12-11-2023 15:14:32
+#Modified: 12-12-2023 11:38:37
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode VS Commands
+
+END

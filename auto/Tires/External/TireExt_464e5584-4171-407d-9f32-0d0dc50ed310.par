@@ -1,0 +1,53 @@
+PARSFILE
+#FullDataName Tire (External)`205/55 R16 (FTire)`
+FZ_REF 30000
+Y_LENGTH 205
+#CheckBox2 0    
+#CheckBox3 1    
+#CheckBox4 1    
+
+#RingCtrl0 10
+OPT_TIRE_MODEL 9
+
+X_LENGTH 316
+Z_LENGTH 316
+PARSFILE Animator\STL_Groups\ShpGrp_d5b55623-3c6f-43ea-b7a0-880a3303d1d2.par
+#BlueLink0 Animator: Shape Assembly`195/45 R16` Tires` , Animator`ShpGrp_d5b55623-3c6f-43ea-b7a0-880a3303d1d2
+
+WRITE_WHEEL_OFFSET
+*SET_THICKNESS 205
+*SET_RADIUS 316
+KY_TIRE 1000
+OPT_TIRE_INERTIA_EXTERNAL 1
+IT 1.2
+M_TIRE 19
+
+#External API information
+EXTERNAL_TIRE_MODULE_DLL FTireWrapper.dll
+INSTALL_EXTERNAL_TIRE_API
+
+#COSIN Tire Interface (FTire) setting data
+FTIRE_DATA Extensions\FTire\passenger_car.tir
+FTIRE_INIT
+
+#EMBEDDED_NOTES
+#This example uses the COSIN / FTire model.
+#
+#CarSim does not support FTire to run on real-time or faster.
+#
+#CarSim is only tested with the latest version of the COSIN / FTire model at the release.
+#
+#FTire solftware as well as its tire program file (CTI.DLL) should be installed separately. CarSim automatically detects the FTire solver installation and loads the tire program solver. A separate license from COSIN for FTire is required to run.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Tire (External); 205/55 R16 (FTire)
+#Library : Tire (External)
+#DataSet : 205/55 R16 (FTire)
+#Category: 
+#FileID  : TireExt_464e5584-4171-407d-9f32-0d0dc50ed310
+#Modified: 11-30-2022 13:11:20
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Tire (External)
+
+END

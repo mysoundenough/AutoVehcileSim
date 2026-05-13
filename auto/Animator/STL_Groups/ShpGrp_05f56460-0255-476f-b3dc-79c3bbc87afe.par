@@ -1,0 +1,50 @@
+PARSFILE
+#FullDataName Animator: Shape Assembly`Large Rental Trailer (2A)`Trailers
+*OFFSET_X 0
+*OFFSET_Y 0
+*OFFSET_Z 0.565
+*X_REF_LENGTH 3650
+*Y_REF_LENGTH 2450
+*Z_REF_LENGTH 2030
+#CheckBox0 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 1    
+#CheckBox5 1    
+
+#RingCtrl1 2
+#RingCtrl2 2
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL_Groups\ShpGrp_05f56460-0255-476f-b3dc-79c3bbc87afe.png
+PARSFILE Animator\STL\Shape_20512b2a-3fe6-4751-893a-d90ce399a250.par
+#BlueLink0 Animator: Shape File Link`Rental Trl (2A): Solid Axle, Leaf Springs` Trailers` , Shape File`Shape_20512b2a-3fe6-4751-893a-d90ce399a250
+
+set_offset_x 0
+set_offset_y 0
+set_offset_z 0.565
+x_ref_length 3650
+y_ref_length 2450
+z_ref_length 2030
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
+#BlueLink17 Animator: Camera Setup`YZ-Plane, No Offsets (with Yaw)` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+
+
+#EMBEDDED_NOTES
+#Z-Offset of 0.565m required to place the origin of the shape at the hitch location instead of at the trailer sprung mass origin.
+#
+#No other scaling, rotation, or offsets are required.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Trailers } Large Rental Trailer (2A)
+#Library : Animator: Shape Assembly
+#DataSet : Large Rental Trailer (2A)
+#Category: Trailers
+#FileID  : ShpGrp_05f56460-0255-476f-b3dc-79c3bbc87afe
+#Created : 12-13-2021 13:51:03
+#Modified: 02-03-2022 15:52:40
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape Assembly
+
+END

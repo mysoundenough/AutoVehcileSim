@@ -1,0 +1,30 @@
+PARSFILE
+#FullDataName Control: Speed (Closed Loop) Using Target Speed`Constant: 120 km/h, no DM Cntl`Constant
+SET_ISPEED_FOR_ID LEAD_VEH_SPD_PROF
+set_description SPEED_TARGET_ID Constant: 120 km/h, no DM Cntl
+#CheckBox2 0    
+#CheckBox3 0    
+*SCALAR 120
+*SCALAR2 0
+#RingCtrl0 CONSTANT
+#RingCtrl1 CONSTANT
+#RingCtrl2 ADD
+SPEED_TARGET_COMBINE ADD
+#RingCtrl3 2
+#RadioCtrl0 1    
+#RadioCtrl1 0    
+
+SPEED_TARGET_CONSTANT 120
+SPEED_TARGET_S_CONSTANT 0
+
+LOG_ENTRY Used Dataset: Control: Speed (Closed Loop) Using Target Speed; { Constant } Constant: 120 km/h, no DM Cntl
+#Library : Control: Speed (Closed Loop) Using Target Speed
+#DataSet : Constant: 120 km/h, no DM Cntl
+#Category: Constant
+#FileID  : SpdTime_57379011-b235-4984-a541-a012f15325e1
+#Modified: 05-28-2021 15:02:37
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Target Speed
+
+END

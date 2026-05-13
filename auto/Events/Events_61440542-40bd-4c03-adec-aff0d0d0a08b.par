@@ -1,0 +1,36 @@
+PARSFILE
+#FullDataName Events`Restart and Go to Speed Limit`Stop Conditions
+#CheckBox1 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl10 0
+#RingCtrl11 4
+#MiscYellow0
+speed_target_constant = 55;mi/h; ! new target speed
+speed_target_gain = 1
+#ENDMYellow
+
+PARSFILE Control\Braking\PbkCon_bf4961f4-c4cf-4b18-a8f7-5f65e31ecd3f.par
+#BlueLink10 Control: Braking MC Pressure (Open Loop)`Constant: 0 MPa` Constant` , Miscellaneous`PbkCon_bf4961f4-c4cf-4b18-a8f7-5f65e31ecd3f
+
+SET_EVENT_ID 0 ! reset to default
+
+#EMBEDDED_NOTES
+#Change the speed limit to a constant  55 mi/h and continue.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Events; { Stop Conditions } Restart and Go to Speed Limit
+#Library : Events
+#DataSet : Restart and Go to Speed Limit
+#Category: Stop Conditions
+#FileID  : Events_61440542-40bd-4c03-adec-aff0d0d0a08b
+#Created : 05-31-2022 16:55:52
+#Modified: 05-31-2022 18:07:57
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

@@ -1,0 +1,38 @@
+PARSFILE
+#FullDataName Plot: Setup`Custom Steering Wheel Rate`User-Defined Variables
+
+ADD_ENTITY Plot
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS Custom_StrAV, Time
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Custom Steering Wheel Rate
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { User-Defined Variables } Custom Steering Wheel Rate
+#Library : Plot: Setup
+#DataSet : Custom Steering Wheel Rate
+#Category: User-Defined Variables
+#FileID  : Plot_f704a22c-f159-4499-9f30-95a17962dd16
+#Created : 05-19-2023 09:39:20
+#Modified: 05-19-2023 09:39:28
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Plot Setup
+
+END

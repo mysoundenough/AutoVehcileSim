@@ -1,0 +1,39 @@
+PARSFILE
+#FullDataName Powertrain: Shift Schedule`Shift Table: 1-2 Upshift, 2-1 Downshift`Ext. Transmission
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+
+#DiagramOne0
+UPSHIFT_TRANS_TABLE
+0, 629
+0.2, 629
+0.8, 1233
+1, 1233
+ENDTABLE
+#DiagramOne1
+DOWNSHIFT_TRANS_TABLE
+0, 503
+0.4, 503
+0.8, 925
+1, 925
+ENDTABLE
+
+#EMBEDDED_NOTES
+#Shift lines for 1-2 Upshift and 2-1 Downshift
+#
+#Data is for an external 7 speed transmission that uses the internal CarSim shift logic.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Powertrain: Shift Schedule; { Ext. Transmission } Shift Table: 1-2 Upshift, 2-1 Downshift
+#Library : Powertrain: Shift Schedule
+#DataSet : Shift Table: 1-2 Upshift, 2-1 Downshift
+#Category: Ext. Transmission
+#FileID  : Shift_06bc0559-9dd5-400c-9143-8fd189cf8f64
+#Created : 12-06-2022 12:01:53
+#Modified: 12-06-2022 12:04:48
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shift Schedule
+
+END

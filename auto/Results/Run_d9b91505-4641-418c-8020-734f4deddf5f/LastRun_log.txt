@@ -1,0 +1,61 @@
+Run made by CarSim 2024.1 at 14:46 on March 25, 2024.
+Revision 222209, March 18, 2024
+Started with simfile: simfile.sim
+
+Include PARSFILE "Results\Run_d9b91505-4641-418c-8020-734f4deddf5f\Run_all.par"
+Used Dataset: Animator: Reference Frame; { Tracking: Vehicle } Vehicle X-Y
+Used Dataset: Animator: Camera Setup; { K & C } K & C View
+Installed keywords into VS Solver for MODEL_LAYOUT I_I
+ 01 - K & C: Design Load Condition <K & C Tests - Complete sequence>
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Tire Forces and Moments } Vertical Forces
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Suspension Forces and Moments } Spring Forces
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Suspension Motion } Jounce - Front
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Suspension Motion } Jounce - Rear
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Tracking } Sprung Mass Origin Vertical Position
+Used Dataset: Plot: Format; Lines without Symbols
+Used Dataset: Plot: Setup; { Vehicle Motion } Pitch Angle of Sprung Masses vs. Time
+Used Dataset: Plot: Format; Lines without Symbols
+Used Dataset: Plot: Setup; { Vehicle Motion } Roll Angle of Sprung Masses vs. Time
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Vehicle Motion } Z Coord.: Wheel Centers
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Ground } Ground Elevation
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Suspension Motion } Spring Compression
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Steering } Road Wheel Steer Angles
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Tire Kinematics } Tire Compression
+Used Dataset: Procedures; { K&C Test Sequence } 01a - K & C Continuity check
+ 01a - Continuity check <K & C Tests - Complete sequence>
+Used Dataset: CarSim Run Control; { K & C Tests - Complete sequence } 01a - Continuity check
+
+Time to read input = 0.079872
+Function FY_TIRE_CARPET(1,1) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function MZ_TIRE_CARPET(1,1) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function FY_TIRE_CARPET(1,2) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function MZ_TIRE_CARPET(1,2) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function FY_TIRE_CARPET(2,1) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function MZ_TIRE_CARPET(2,1) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function FY_TIRE_CARPET(2,2) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function MZ_TIRE_CARPET(2,2) extrapolated (out of range HIGH) for X = 90 deg at T = 0
+Function F_REB_STOP_TABLE(1,1) extrapolated (out of range HIGH) for X = 1.84255e-05 mm at T = 0
+Function F_JNC_STOP_TABLE(1,1) extrapolated (out of range LOW) for X = 1.84255e-05 mm at T = 0
+Function F_REB_STOP_TABLE(1,2) extrapolated (out of range HIGH) for X = 1.84255e-05 mm at T = 0
+Function F_JNC_STOP_TABLE(1,2) extrapolated (out of range LOW) for X = 1.84255e-05 mm at T = 0
+Function F_REB_STOP_TABLE(2,1) extrapolated (out of range HIGH) for X = -6.6871e-07 mm at T = 0
+Function F_JNC_STOP_TABLE(2,1) extrapolated (out of range LOW) for X = -6.6871e-07 mm at T = 0
+Function F_REB_STOP_TABLE(2,2) extrapolated (out of range HIGH) for X = -6.6871e-07 mm at T = 0
+Function F_JNC_STOP_TABLE(2,2) extrapolated (out of range LOW) for X = -6.6871e-07 mm at T = 0
+
+Run started: VS output file = Results\Run_d9b91505-4641-418c-8020-734f4deddf5f\LastRun.vsb
+
+Run stopped at t = 5. Stop time reached.
+
+Computational time ratio: RTIME = 0.119744 (real time)/(simulation time)
+

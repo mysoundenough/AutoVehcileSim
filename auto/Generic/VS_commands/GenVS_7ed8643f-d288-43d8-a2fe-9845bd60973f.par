@@ -1,0 +1,24 @@
+PARSFILE
+#FullDataName Generic VS Commands`03 - Roll - Delete eqs - Fr`K&C Test Sequence
+#VehCode VS Commands
+
+#MiscYellow0
+DELETE_EQS_OUT at_min_1
+DELETE_EQS_OUT roll_err_1
+
+DELETE_EQS_IN imp_zgnd_l1
+DELETE_EQS_IN imp_zgnd_r1
+#ENDMYellow
+
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { K&C Test Sequence } 03 - Roll - Delete eqs - Fr
+#Library : Generic VS Commands
+#DataSet : 03 - Roll - Delete eqs - Fr
+#Category: K&C Test Sequence
+#FileID  : GenVS_7ed8643f-d288-43d8-a2fe-9845bd60973f
+#Modified: 05-28-2021 15:02:26
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode VS Commands
+
+END

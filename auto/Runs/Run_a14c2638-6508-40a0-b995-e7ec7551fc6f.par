@@ -1,0 +1,92 @@
+PARSFILE
+#FullDataName CarSim Run Control`ACC: Cut-In (no AEB), 50km/h`ACC: Euro NCAP Tests
+#VEHICLECODE Ind_Ind
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_a14c2638-6508-40a0-b995-e7ec7551fc6f
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Animator\Cameras\Camera_27cfa3aa-bcd7-4b05-b522-6516bf0a17ae.par
+#BlueLink0 Animator: Camera Setup`200 Azm, 10 El, 25 m, No Yaw` Vehicle Reference` , Animator camera`Camera_27cfa3aa-bcd7-4b05-b522-6516bf0a17ae
+
+#CheckBox0 1    
+#CheckBox1 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 1    
+#CheckBox5 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox8 1    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+#CheckBox12 0    
+
+#RingCtrl0 4
+#RingCtrl1 0
+#RingCtrl2 3
+#RingCtrl3 0
+#RingCtrl6 0
+#RingCtrl7 -1
+*RUN_COLOR 0 0.604 0.004
+SET_RUN_COLOR 0 0.604 0.004
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Vehicles\Loaded\VehLoad_ad0e07c0-ecbe-4414-93df-dd582664fb45.par
+#BlueLink2 Vehicle with Loads, Sensors, Trailer, etc.`C-Class ACC, FCW,LKAS, (AEB off)` C-Class` , Math Model`VehLoad_ad0e07c0-ecbe-4414-93df-dd582664fb45
+
+PARSFILE Procedures\Proc_e4e7be41-c027-45cb-bdf8-3c1feddb3583.par
+#BlueLink28 Procedures`Euro NCAP ACC Cut-In Test, 50 km/h` ACC: Automatic Cruise Control` , Procedure`Proc_e4e7be41-c027-45cb-bdf8-3c1feddb3583
+
+PARSFILE Animator\HUD\HUD_40d1b654-f3e1-45a6-a0c2-5bef9fd47a5c.par
+#BlueLink9 Animator: HUD`Cut-In Label: VUT 50 km/h` Euro NCAP` , Miscellaneous`HUD_40d1b654-f3e1-45a6-a0c2-5bef9fd47a5c
+
+PARSFILE Animator\HUD\HUD_28cddbb9-94c6-4e76-a06f-7737ba30c08f.par
+#BlueLink10 Animator: HUD`Throttle and Speed, L. Side, 19% Up` Vehicle Status Indicators` , Miscellaneous`HUD_28cddbb9-94c6-4e76-a06f-7737ba30c08f
+
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Vehicles\Assembly\Vehicle_02f34599-fa67-4a2d-b9f1-ec46601f2987.png
+WRITE_SENSOR_DETECT
+Title ACC: Cut-In (no AEB), 50km/h <ACC: Euro NCAP Tests>
+CATEGORY ACC: Euro NCAP Tests 
+DATASET_TITLE ACC: Cut-In (no AEB), 50km/h
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#AEB: Autonomous Emergency Braking
+#ACC: Automatic Cruise Control
+#GVT: Global Vehicle Target
+#VUT: Vehicle Under Test (ego vehicle)
+#FCW: Forward Collision Warning
+#LKAS: Lane-Keeping Assistance System
+#
+#This ACC example is unique to ACC testing in the Euro NCAP spec. It involves a vehicle cutting in front of the ego vehicle
+#- The cut-in vehicle is traveling at 10 km/h
+#- The ego is traveling at 50 km/h
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { ACC: Euro NCAP Tests } ACC: Cut-In (no AEB), 50km/h
+#Library : CarSim Run Control
+#DataSet : ACC: Cut-In (no AEB), 50km/h
+#Category: ACC: Euro NCAP Tests
+#FileID  : Run_a14c2638-6508-40a0-b995-e7ec7551fc6f
+#Modified: 11-21-2022 14:16:14
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Run
+
+END

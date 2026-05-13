@@ -1,0 +1,94 @@
+PARSFILE
+#FullDataName CarSim Run Control`MF-Tyre, Sym.: DLC`Tire Models
+#VEHICLECODE Ind_Ind
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_313ed064-0068-4715-8778-afaae6752996
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Animator\Cameras\Camera_f672fe6b-6162-4c2f-8df7-54285c2c5a0f.par
+#BlueLink0 Animator: Camera Setup`0 Azm, 1 El, 37 m` Vehicle Reference` , Animator camera`Camera_f672fe6b-6162-4c2f-8df7-54285c2c5a0f
+
+#CheckBox0 1    
+#CheckBox1 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 1    
+#CheckBox5 0    
+#CheckBox6 1    
+#CheckBox7 0    
+#CheckBox8 1    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+#CheckBox12 0    
+
+#RingCtrl0 4
+#RingCtrl1 1
+#RingCtrl2 3
+#RingCtrl3 0
+#RingCtrl6 3
+#RingCtrl7 -1
+*RUN_COLOR 1 1 0
+SET_RUN_COLOR 1 1 0
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Vehicles\Assembly\Vehicle_7d447581-8789-4845-b01e-f15232620372.par
+#BlueLink2 Vehicle: Assembly`E-Class, Sedan: MF-Tyre, Sym.` External Tire Models` , Math Model`Vehicle_7d447581-8789-4845-b01e-f15232620372
+
+PARSFILE Procedures\Proc_3ae0353d-bd7c-43a3-9da4-150b6952a10e.par
+#BlueLink28 Procedures`DLC @ 120 km/h (Quick Start)` Handling Testing` , Procedure`Proc_3ae0353d-bd7c-43a3-9da4-150b6952a10e
+
+*TSTEP 0.0005
+*FREQ_MODEL 2000
+*TSTEP_OUT 0.001
+*FREQ_OUT 1000
+tstep 0.0005
+iprint 2
+PARSFILE Plot\Setup\Plot_986ce074-9acb-4be0-8bd7-ac8e03eb16ab.par
+#BlueLink15 Plot: Setup`Steer Torque` Steering` , Plot`Plot_986ce074-9acb-4be0-8bd7-ac8e03eb16ab
+
+PARSFILE Plot\Setup\Plot_a5884b30-2228-44f6-afe5-eb3fd414c1c3.par
+#BlueLink16 Plot: Setup`Aligning Moments` Tire Forces and Moments` , Plot`Plot_a5884b30-2228-44f6-afe5-eb3fd414c1c3
+
+PARSFILE Plot\Setup\Plot_64cb3336-8c32-4bee-ac86-7a1aead2adec.par
+#BlueLink17 Plot: Setup`Overturning Moments` Tire Forces and Moments` , Plot`Plot_64cb3336-8c32-4bee-ac86-7a1aead2adec
+
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Animator\Vehicles\AniVeh_e52a21a6-9bb5-4010-a060-992aa1911e27.png
+WRITE_SENSOR_DETECT
+Title MF-Tyre, Sym.: DLC <Tire Models>
+CATEGORY Tire Models 
+DATASET_TITLE MF-Tyre, Sym.: DLC
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#An E-Class Sedan using the MF-Tyre model with Symmetric tire properties performs a double lane change maneuver at 120 km/h.
+#
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { Tire Models } MF-Tyre, Sym.: DLC
+#Library : CarSim Run Control
+#DataSet : MF-Tyre, Sym.: DLC
+#Category: Tire Models
+#FileID  : Run_313ed064-0068-4715-8778-afaae6752996
+#Created : 03-01-2023 13:03:14
+#Modified: 07-06-2023 11:58:13
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Run
+
+END

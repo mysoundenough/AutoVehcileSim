@@ -1,0 +1,55 @@
+PARSFILE
+#FullDataName I/O Channels: Ports`MF-Tyre/MF-Swift Multi-Ports I/O`External Tires
+#RingCtrl0 4
+#RingCtrl1 4
+#CheckBox0 0    
+
+IPORT_IMP 1
+PARSFILE IO_Channels\I_Channels\Import_2bc081b8-a46a-4baf-87c6-8a23141c5dd3.par
+#BlueLink0 I/O Channels: Import`Tire F&M at WC and CTC, L1` Tire Forces and Moments` , Library for factor A`Import_2bc081b8-a46a-4baf-87c6-8a23141c5dd3
+
+IPORT_IMP 2
+PARSFILE IO_Channels\I_Channels\Import_96d51015-7884-48d2-9ce6-c982ca2669e6.par
+#BlueLink1 I/O Channels: Import`Tire F&M at WC and CTC, R1` Tire Forces and Moments` , Baseline run`Import_96d51015-7884-48d2-9ce6-c982ca2669e6
+
+IPORT_IMP 3
+PARSFILE IO_Channels\I_Channels\Import_92016fb0-8112-4721-b331-f3f0529e63e3.par
+#BlueLink2 I/O Channels: Import`Tire F&M at WC and CTC, L2` Tire Forces and Moments` , Baseline run`Import_92016fb0-8112-4721-b331-f3f0529e63e3
+
+IPORT_IMP 4
+PARSFILE IO_Channels\I_Channels\Import_4537ea4f-1899-4954-886b-2154d8f07a2b.par
+#BlueLink3 I/O Channels: Import`Tire F&M at WC and CTC, R2` Tire Forces and Moments` , Baseline run`Import_4537ea4f-1899-4954-886b-2154d8f07a2b
+
+IPORT_EXP 1
+PARSFILE IO_Channels\O_Channels\Export_ff31fac2-b3b0-4255-821f-b24f81e9acb6.par
+#BlueLink20 I/O Channels: Export`MF-Tyre/MF-Swift Kinematics, L1` Tire Kinematics` , Library for factor B`Export_ff31fac2-b3b0-4255-821f-b24f81e9acb6
+
+IPORT_EXP 2
+PARSFILE IO_Channels\O_Channels\Export_2a14c4d4-25c2-4534-9df8-82b15a6abde2.par
+#BlueLink21 I/O Channels: Export`MF-Tyre/MF-Swift Kinematics, R1` Tire Kinematics` , Baseline run`Export_2a14c4d4-25c2-4534-9df8-82b15a6abde2
+
+IPORT_EXP 3
+PARSFILE IO_Channels\O_Channels\Export_b1cfb3c6-6216-4b6f-8396-254d0877cd03.par
+#BlueLink22 I/O Channels: Export`MF-Tyre/MF-Swift Kinematics, L2` Tire Kinematics` , Baseline run`Export_b1cfb3c6-6216-4b6f-8396-254d0877cd03
+
+IPORT_EXP 4
+PARSFILE IO_Channels\O_Channels\Export_a8f95946-3c6a-4971-975a-7b9154eda069.par
+#BlueLink23 I/O Channels: Export`MF-Tyre/MF-Swift Kinematics, R2` Tire Kinematics` , Baseline run`Export_a8f95946-3c6a-4971-975a-7b9154eda069
+
+
+#EMBEDDED_NOTES
+#Import tire forces and moments at WC (wheel center) and CTC (central tire contact); and export kinematics variables of location coordinates, velocities, orientation angles, angular speeds, road height/Mu, etc. of each tire.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: I/O Channels: Ports; { External Tires } MF-Tyre/MF-Swift Multi-Ports I/O
+#Library : I/O Channels: Ports
+#DataSet : MF-Tyre/MF-Swift Multi-Ports I/O
+#Category: External Tires
+#FileID  : Port_99721e27-7811-4051-9b02-6784ebbef50e
+#Created : 10-13-2022 20:12:34
+#Modified: 10-18-2022 14:47:33
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode I/O Ports
+
+END

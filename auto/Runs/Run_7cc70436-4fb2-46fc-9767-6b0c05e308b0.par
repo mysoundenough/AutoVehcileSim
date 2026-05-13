@@ -1,0 +1,96 @@
+PARSFILE
+#FullDataName CarSim Run Control`Crosswind, Low Mu, w/ Trailer`Aerodynamics
+#VEHICLECODE Ind_Ind + S
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_7cc70436-4fb2-46fc-9767-6b0c05e308b0
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Animator\Cameras\Camera_dc48416e-5207-488c-ac1e-befb81183b3f.par
+#BlueLink0 Animator: Camera Setup`180 Azm, 15 El, 30 m` Vehicle Reference` , Animator camera`Camera_dc48416e-5207-488c-ac1e-befb81183b3f
+
+#CheckBox0 1    
+#CheckBox1 1    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 0    
+#CheckBox5 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox8 1    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+#CheckBox12 0    
+
+#RingCtrl0 4
+#RingCtrl1 0
+#RingCtrl2 3
+#RingCtrl3 0
+#RingCtrl6 0
+#RingCtrl7 -1
+*RUN_COLOR 0.6 1 0.2
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Vehicles\Loaded\VehLoad_97df67ac-f3ab-408d-b704-2220cdec428b.par
+#BlueLink2 Vehicle with Loads, Sensors, Trailer, etc.`Sedan + Trailer (Transparent)` D-Class` , Math Model`VehLoad_97df67ac-f3ab-408d-b704-2220cdec428b
+
+PARSFILE Procedures\Proc_ac80c3c7-723a-4a34-ad4a-bb4b66186f0a.par
+#BlueLink28 Procedures`Crosswind Test` Aerodynamics` , Procedure`Proc_ac80c3c7-723a-4a34-ad4a-bb4b66186f0a
+
+PARSFILE Output\Sensors\MoSen_2dd7c7d1-e431-415b-b31d-77016d931ad2.par
+#BlueLink9 Positions, Velocities, and Accelerations`Aero Reference Point (Incl. Trailer)` ` , Miscellaneous`MoSen_2dd7c7d1-e431-415b-b31d-77016d931ad2
+
+PARSFILE Animator\Groups\Group_5df11fca-68d2-4d1e-bd7f-71f60b3b28c3.par
+#BlueLink10 Animator: Group`Aero Force and Moment Arrows` Aerodynamics` , Miscellaneous`Group_5df11fca-68d2-4d1e-bd7f-71f60b3b28c3
+
+PARSFILE Animator\Groups\Group_3f4520b1-e574-4101-a85a-9fb304b89c3e.par
+#BlueLink11 Animator: Group`Aero Force Moment Arrows (Trailer)` Aerodynamics` , Miscellaneous`Group_3f4520b1-e574-4101-a85a-9fb304b89c3e
+
+*TSTOP 8
+*TSTART 0
+*SSTART 5
+*SSTOP 200
+
+SPECIAL_PARSFILE Runs\Run_ff7b2997-7b93-45ce-9dea-bc7a18e57a85.par
+#BlueLink23 CarSim Run Control`Crosswind, Low Mu` Aerodynamics` , Overlay run or ERD file`Run_ff7b2997-7b93-45ce-9dea-bc7a18e57a85
+
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Vehicles\Loaded\VehLoad_97df67ac-f3ab-408d-b704-2220cdec428b.png
+WRITE_SENSOR_DETECT
+Title Crosswind, Low Mu, w/ Trailer <Aerodynamics>
+CATEGORY Aerodynamics 
+DATASET_TITLE Crosswind, Low Mu, w/ Trailer
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#A sedan with trailer is subjected to two sets of crosswind inputs while driving on a low-mu road surface.
+#
+#See the linked, overlaid run for more details.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { Aerodynamics } Crosswind, Low Mu, w/ Trailer
+#Library : CarSim Run Control
+#DataSet : Crosswind, Low Mu, w/ Trailer
+#Category: Aerodynamics
+#FileID  : Run_7cc70436-4fb2-46fc-9767-6b0c05e308b0
+#Created : 10-06-2022 16:00:54
+#Modified: 01-24-2023 10:01:41
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Run
+
+END

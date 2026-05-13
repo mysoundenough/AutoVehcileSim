@@ -1,0 +1,44 @@
+PARSFILE
+#FullDataName Plot: Setup`Vertical Force (WC)`Wheel Center Forces
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d.par
+#BlueLink0 Plot: Format`Lines without Symbols` ` , Plot format`PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS Fz_WC_L1
+PLOTCHANNELS Fz_WC_R1
+PLOTCHANNELS Fz_WC_L2
+PLOTCHANNELS Fz_WC_R2
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Vertical Force (WC)
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Wheel Center Forces } Vertical Force (WC)
+#Library : Plot: Setup
+#DataSet : Vertical Force (WC)
+#Category: Wheel Center Forces
+#FileID  : Plot_0a4fcb3b-4498-4d31-a12d-ee2fdb24f238
+#Created : 11-29-2022 15:23:11
+#Modified: 11-29-2022 15:24:17
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Plot Setup
+
+END

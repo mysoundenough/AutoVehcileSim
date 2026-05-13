@@ -1,0 +1,45 @@
+PARSFILE
+#FullDataName Plot: Setup`Camber vs Fx`K&C Test Results
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d.par
+#BlueLink0 Plot: Format`Lines without Symbols` ` , Plot format`PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d
+
+#BlueLink1 ` , Discontinued` , Discontinued` , Discontinued`
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS CamberL1, Fx_L1
+PLOTCHANNELS CamberR1, Fx_R1
+PLOTCHANNELS CamberL2, Fx_L2
+PLOTCHANNELS CamberR2, Fx_R2
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Camber vs Fx
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { K&C Test Results } Camber vs Fx
+#Library : Plot: Setup
+#DataSet : Camber vs Fx
+#Category: K&C Test Results
+#FileID  : Plot_4167991f-7081-4ce5-84ea-81e0989c59a6
+#Modified: 05-28-2021 14:59:41
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Plot Setup
+
+END

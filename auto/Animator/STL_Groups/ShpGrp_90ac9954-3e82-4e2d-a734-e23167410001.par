@@ -1,0 +1,33 @@
+PARSFILE
+#FullDataName Animator: Shape Assembly`Euro NCAP GVT and Platform`Euro NCAP
+#CheckBox0 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 0    
+#CheckBox5 0    
+
+#RingCtrl1 2
+#RingCtrl2 2
+PARSFILE Animator\STL\Shape_12e5de7d-123a-43b1-838d-c5f50e2990be.par
+#BlueLink0 Animator: Shape File Link`Euro NCAP GVT Body` ADAS and AV Safety Test Assets` , Shape File`Shape_12e5de7d-123a-43b1-838d-c5f50e2990be
+
+PARSFILE Animator\STL\Shape_673cd329-e973-4446-8021-515dd75a1d60.par
+#BlueLink1 Animator: Shape File Link`GVT Platform` ADAS and AV Safety Test Assets` , Shape File`Shape_673cd329-e973-4446-8021-515dd75a1d60
+
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_b2ab63fa-d1da-4d77-9636-cab2dd90c166.par
+#BlueLink17 Animator: Camera Setup`XZ Plane, No Offsets - Medium Objects` Shape Preview` , Video Camera`Camera_b2ab63fa-d1da-4d77-9636-cab2dd90c166
+
+
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Euro NCAP } Euro NCAP GVT and Platform
+#Library : Animator: Shape Assembly
+#DataSet : Euro NCAP GVT and Platform
+#Category: Euro NCAP
+#FileID  : ShpGrp_90ac9954-3e82-4e2d-a734-e23167410001
+#Created : 07-23-2021 18:20:08
+#Modified: 08-02-2021 16:19:14
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape Assembly
+
+END

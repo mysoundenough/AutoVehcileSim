@@ -1,0 +1,45 @@
+PARSFILE
+#FullDataName Events`End Initial Collision Run, 50%, Bicyclist`Pedestrian Euro NCAP
+#CheckBox1 1    
+*CLEAR
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 >=
+#RingCtrl10 1
+#RingCtrl11 4
+RESET_EVENTS
+*NAME1 t_event
+*VALUE1 T_WAIT
+#MiscYellow0
+TSTART_T_EVENT = T
+DEFINE_PARAMETER T_WAIT = 0.5; s; wait a ...
+a little before moving to the next event
+COL_TEST_DONE = 1
+INITIAL_COL = if(StrikePercentDiff < STRIKE_THRESH ,1, 0);
+#ENDMYellow
+
+MAKE_EVENT t_event >= T_WAIT ; Events\Events_95877603-44dc-488b-9e27-bee897f095eb.par
+#BlueLink0 Events`Check 50% Collision, Bicyclist` Pedestrian Euro NCAP` , Events`Events_95877603-44dc-488b-9e27-bee897f095eb
+
+SET_EVENT_ID 0 ! reset to default
+
+#EMBEDDED_NOTES
+#The initial vehicle-to-pedetrian collision check has completed
+#- Next a calculation that determines at what percent of the ego vehicle's front bumper, did the pedestrian strike
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Events; { Pedestrian Euro NCAP } End Initial Collision Run, 50%, Bicyclist
+#Library : Events
+#DataSet : End Initial Collision Run, 50%, Bicyclist
+#Category: Pedestrian Euro NCAP
+#FileID  : Events_b0a13f26-dc5b-4743-909b-c15e665adbb3
+#Created : 08-17-2021 13:36:41
+#Modified: 08-18-2021 17:00:09
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

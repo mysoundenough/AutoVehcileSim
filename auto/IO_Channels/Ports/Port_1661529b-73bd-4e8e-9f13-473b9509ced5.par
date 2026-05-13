@@ -1,0 +1,35 @@
+PARSFILE
+#FullDataName I/O Channels: Ports`Z, dZdX, dZ/dY for 4 tires`Ground Z for 4 Tires
+#RingCtrl0 4
+#RingCtrl1 0
+#CheckBox0 0    
+
+IPORT_IMP 1
+PARSFILE IO_Channels\I_Channels\Import_30352862-6dbc-4c6c-972c-7077edeb931d.par
+#BlueLink0 I/O Channels: Import`Tire Z, dZ/dX, dZ/dY, Tire L1` Tire Ground` , Library for factor A`Import_30352862-6dbc-4c6c-972c-7077edeb931d
+
+IPORT_IMP 2
+PARSFILE IO_Channels\I_Channels\Import_c66616d5-0be0-47ee-abc4-797818510791.par
+#BlueLink1 I/O Channels: Import`Tire Z, dZ/dX, dZ/dY, Tire R1` Tire Ground` , Baseline run`Import_c66616d5-0be0-47ee-abc4-797818510791
+
+IPORT_IMP 3
+PARSFILE IO_Channels\I_Channels\Import_45e9fdd4-0c92-4099-84e1-11e6ad97f392.par
+#BlueLink2 I/O Channels: Import`Tire Z, dZ/dX, dZ/dY, Tire L2` Tire Ground` , Baseline run`Import_45e9fdd4-0c92-4099-84e1-11e6ad97f392
+
+IPORT_IMP 4
+PARSFILE IO_Channels\I_Channels\Import_c21aca33-e4ed-40ec-bc92-0ddda5ff99f4.par
+#BlueLink3 I/O Channels: Import`Tire Z, dZ/dX, dZ/dY, Tire R2` Tire Ground` , Baseline run`Import_c21aca33-e4ed-40ec-bc92-0ddda5ff99f4
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Ports; { Ground Z for 4 Tires } Z, dZdX, dZ/dY for 4 tires
+#Library : I/O Channels: Ports
+#DataSet : Z, dZdX, dZ/dY for 4 tires
+#Category: Ground Z for 4 Tires
+#FileID  : Port_1661529b-73bd-4e8e-9f13-473b9509ced5
+#Created : 10-05-2023 10:29:52
+#Modified: 10-05-2023 10:56:07
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode I/O Ports
+
+END

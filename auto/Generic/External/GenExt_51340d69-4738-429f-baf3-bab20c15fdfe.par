@@ -1,0 +1,22 @@
+PARSFILE
+#FullDataName External Parsfile`2023.0 Damaged Signs, Level 0`Environments
+#VehCode External file
+#MiscYellow0
+PARSFILE Generic\2023.0_Damaged_Signs_0.par
+#ENDMYellow
+*CPAR_INCLUDE Generic\2023.0_Damaged_Signs_0.par
+
+#RingCtrl0 0
+
+LOG_ENTRY Used Dataset: External Parsfile; { Environments } 2023.0 Damaged Signs, Level 0
+#Library : External Parsfile
+#DataSet : 2023.0 Damaged Signs, Level 0
+#Category: Environments
+#FileID  : GenExt_51340d69-4738-429f-baf3-bab20c15fdfe
+#Created : 10-10-2022 15:25:58
+#Modified: 10-11-2022 13:59:54
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode External file
+
+END

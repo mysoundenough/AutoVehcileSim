@@ -1,0 +1,40 @@
+PARSFILE
+#FullDataName Generic VS Commands`TBC: Target Accel`Miscellaneous Custom Controls
+#VehCode VS Commands
+
+#MiscYellow0
+OPT_SC 5 ! Enables acceleration control option
+
+DEFINE_OUTPUT Target_Speed
+EQ_OUT Target_Speed = (-2/3)*X_A3 + 5/3 ; km/h
+
+OPT_BK_SC 1 ! Use braking with acceleration control
+
+OPT_SC_ENGINE_BRAKING 1 ! Use engine braking with acceleration control
+
+ACCEL_KP_SC = 5 ! Proportional gain for acceleration control [-]
+
+BK_PERF_SC = 0.09 ! Approximate brake system performance [g/MPa]
+
+PBK_CON_MAX_SC = 20  ! Max. brake master cylinder pressure available to controller [MPa]
+
+EQ_IN SV_AX_SC = 0.1*(Target_Speed - Vx)
+#ENDMYellow
+
+
+#EMBEDDED_NOTES
+#This set of VS Commands enables acceleration control and defines the target acceleration using a Generic Table.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { Miscellaneous Custom Controls } TBC: Target Accel
+#Library : Generic VS Commands
+#DataSet : TBC: Target Accel
+#Category: Miscellaneous Custom Controls
+#FileID  : GenVS_18cd396f-7c3b-4697-ad6a-48c2171fe39d
+#Created : 10-05-2023 10:21:05
+#Modified: 02-21-2024 10:10:49
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode VS Commands
+
+END

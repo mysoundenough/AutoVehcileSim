@@ -1,0 +1,32 @@
+PARSFILE
+#FullDataName Events`01 - End Design Load Run`K&C Test Sequence
+#CheckBox1 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 ZERO ~=
+#RingCtrl10 1
+#RingCtrl11 4
+*VALUE1 (err_l1<H_TOL)&(err_r1<H_TOL)&(err_l2<H_TOL)&(err_r2<H_TOL)
+#MiscYellow0
+! Check for all wheels within error tolerance before continuing
+#ENDMYellow
+
+DEFINE_EVENT (err_l1<H_TOL)&(err_r1<H_TOL)&(err_l2<H_TOL)&(err_r2<H_TOL) ; Events\Events_97d8bfab-2f3a-4e8b-bf0a-09518d4de111.par
+#BlueLink0 Events`01 - Delete EQ's and End` K&C Test Sequence` , Events`Events_97d8bfab-2f3a-4e8b-bf0a-09518d4de111
+
+SET_EVENT_ID 0 ! reset to default
+
+LOG_ENTRY Used Dataset: Events; { K&C Test Sequence } 01 - End Design Load Run
+#Library : Events
+#DataSet : 01 - End Design Load Run
+#Category: K&C Test Sequence
+#FileID  : Events_2b242984-cef9-4097-bd21-47811f9b7c03
+#Modified: 05-28-2021 14:59:27
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

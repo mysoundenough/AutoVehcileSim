@@ -1,0 +1,42 @@
+PARSFILE
+#FullDataName Animator: Shape File Link`Rectangle for Road Stripe (Yellow)`Geometric Shapes
+#MiscYellow3
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Squares\square.obj
+#ENDMYellow
+
+SET_COLOR 1 0.718 0.110
+SET_SCALE_X 0.1
+SET_SCALE_Y 8
+SET_SCALE_Z 1
+SET_OFFSET_Z 0.005
+#CheckBox0 1    
+set_lighting off
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+vsv_enable_shadows_recursive
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_af7c7c91-f09a-4493-9104-5b2725e3cf03.par
+#BlueLink2 Animator: Camera Setup`Isometric View - Small Objects` Shape Preview` , Video Camera`Camera_af7c7c91-f09a-4493-9104-5b2725e3cf03
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_d5e23124-26a8-4792-adfd-edaef6025f30.png
+
+#EMBEDDED_NOTES
+#
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes } Rectangle for Road Stripe (Yellow)
+#Library : Animator: Shape File Link
+#DataSet : Rectangle for Road Stripe (Yellow)
+#Category: Geometric Shapes
+#FileID  : Shape_d5e23124-26a8-4792-adfd-edaef6025f30
+#Created : 08-24-2022 15:51:33
+#Modified: 08-24-2022 16:30:55
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape File
+
+END

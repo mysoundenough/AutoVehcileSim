@@ -1,0 +1,21 @@
+PARSFILE
+#FullDataName Generic VS Commands`05b - Fy compliance - move to max In`K&C Test Sequence
+#VehCode VS Commands
+
+#MiscYellow0
+! Change sign to direct force inward
+FY_RATE = -FY_RATE
+#ENDMYellow
+
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { K&C Test Sequence } 05b - Fy compliance - move to max In
+#Library : Generic VS Commands
+#DataSet : 05b - Fy compliance - move to max In
+#Category: K&C Test Sequence
+#FileID  : GenVS_cad3cdbe-6dab-422d-9948-ca2b26c843c0
+#Modified: 05-28-2021 15:02:26
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode VS Commands
+
+END

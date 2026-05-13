@@ -1,0 +1,64 @@
+PARSFILE
+#FullDataName Procedures`Double Lane Change`VS TMRW
+#CheckBox1 1    
+OPT_INIT_PATH 1
+#CheckBox4 1    
+
+#RingCtrl0 1
+#RingCtrl1 1
+OPT_STOP 1
+SSTART 0
+TSTART 0
+TSTART_WRITE = 0;
+TSTOP 60
+SSTOP 150
+OPT_DIRECTION 0
+*SPEED 60
+*TSTOP 60
+*TSTART 0
+*SSTART 0
+*SSTOP 150
+
+INSTALL_SPEED_CONTROLLER
+OPT_SC 3
+SET_ISPEED_FOR_ID 0
+SPEED_ID_SC = SPEED_TARGET_ID
+SPEED_TARGET_COMBINE ADD
+SPEED_TARGET_S_CONSTANT 0
+set_description SPEED_TARGET_ID Procedure: Double Lane Change
+SPEED_TARGET_CONSTANT 60
+OPT_SC_ENGINE_BRAKING 1
+PARSFILE Control\Driver\StrDM_3fc8dc10-355b-4533-9f63-f5a41c3c5a19.par
+#BlueLink27 Control: Steering by the Closed-loop Driver Model`DLC (Ten Point Preview)` Vehicle Dynamics Tests` , Steering`StrDM_3fc8dc10-355b-4533-9f63-f5a41c3c5a19
+
+PARSFILE Control\Braking\PbkCon_bf4961f4-c4cf-4b18-a8f7-5f65e31ecd3f.par
+#BlueLink28 Control: Braking MC Pressure (Open Loop)`Constant: 0 MPa` Constant` , Braking`PbkCon_bf4961f4-c4cf-4b18-a8f7-5f65e31ecd3f
+
+PARSFILE Control\Gear_at\GearCL_3f60e7d2-b8c4-4d68-a9c4-d897bb3e2a86.par
+#BlueLink30 Control: Shifting (Closed Loop)`AT (All Available Gears)` Closed-Loop Shifting` , Shifting Control`GearCL_3f60e7d2-b8c4-4d68-a9c4-d897bb3e2a86
+
+PARSFILE Roads\3D_Road\Road_986e17e2-fa3a-4687-b222-d202e999e960.par
+#BlueLink0 Road: 3D Surface (All Properties)`River Bed` Off-Road` , Miscellaneous`Road_986e17e2-fa3a-4687-b222-d202e999e960
+
+PARSFILE Generic\Group\GenGrp_35fa67a8-ecb6-40f6-a1bb-f355e58f92e6.par
+#BlueLink1 Generic Data Group`2 Axle - Wheel-center Fx, Fy, Fz` Tire Force Arrows` , Miscellaneous`GenGrp_35fa67a8-ecb6-40f6-a1bb-f355e58f92e6
+
+PARSFILE Sensors_Traffic\Traffic\TMotion_7eebfaf2-736d-4fc8-8710-ce4ecdfcfa7a.par
+#BlueLink2 Multiple Moving Objects`10 Driver Preview Points` Points of Interest` , Miscellaneous`TMotion_7eebfaf2-736d-4fc8-8710-ce4ecdfcfa7a
+
+PARSFILE Generic\VS_commands\GenVS_31580ac4-ca37-472f-bb67-f033dd4c24e2.par
+#BlueLink8 Generic VS Commands`VS TMRW Plot Group` Plot Groups` , Plot`GenVS_31580ac4-ca37-472f-bb67-f033dd4c24e2
+
+
+LOG_ENTRY Used Dataset: Procedures; { VS TMRW } Double Lane Change
+#Library : Procedures
+#DataSet : Double Lane Change
+#Category: VS TMRW
+#FileID  : Proc_04372deb-b57b-4640-b2f8-1a8d22e1eac5
+#Created : 11-29-2022 16:31:02
+#Modified: 11-30-2022 10:26:39
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Procedure
+
+END

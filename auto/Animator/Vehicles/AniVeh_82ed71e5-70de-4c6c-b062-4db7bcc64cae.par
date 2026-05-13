@@ -1,0 +1,56 @@
+PARSFILE
+#FullDataName Animator: Vehicles and Sensor Targets`Euro NCAP GVT`ADAS and AV Safety Tests
+
+#CheckBox0 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 0    
+#CheckBox6 0    
+#CheckBox8 0    
+
+#RingCtrl1 0
+OPT_TRAILER_REF_FRAME 0
+OBJ_X_LENGTH 4023
+OBJ_Y_LENGTH 1798
+OBJ_Z_LENGTH 1427
+*DZ_V 0
+*LAT_WC 1250
+*LAT_WC_2 1250
+*HWC 200
+*WHEEL_RATIO 0.75
+*LAXLE_1 -1200
+*LAXLE_2 -200
+*IMAGE_FIT_MODE 1
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\Vehicles\AniVeh_82ed71e5-70de-4c6c-b062-4db7bcc64cae.png
+DZ_OBJECT 0
+WRITE_ADD_REFERENCE_FRAME_OBJECT
+PARSFILE Animator\STL_Groups\ShpGrp_90ac9954-3e82-4e2d-a734-e23167410001.par
+#BlueLink1 Animator: Shape Assembly`Euro NCAP GVT and Platform` Euro NCAP` , Vehicle Body`ShpGrp_90ac9954-3e82-4e2d-a734-e23167410001
+
+WRITE_REFERENCE_FRAME_SIZE
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_aad9f5dd-7a61-4319-88b3-b90a1214f577.par
+#BlueLink5 Animator: Camera Setup`Vehicles and Drivers - Cars` Shape Preview` , Video Camera`Camera_aad9f5dd-7a61-4319-88b3-b90a1214f577
+
+
+#EMBEDDED_NOTES
+#Global Vehicle Target (GVT) used in modern Euro NCAP tests, and can be used for other safety tests as well
+#- has radar reflectivity
+#- moves on a remote controlled and programmable flat platform/robot
+#- the GVT breaks apart and can be reassembed if it is hit by another vehicle
+#- the motorized flat platform can be run over, and still function
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Animator: Vehicles and Sensor Targets; { ADAS and AV Safety Tests } Euro NCAP GVT
+#Library : Animator: Vehicles and Sensor Targets
+#DataSet : Euro NCAP GVT
+#Category: ADAS and AV Safety Tests
+#FileID  : AniVeh_82ed71e5-70de-4c6c-b062-4db7bcc64cae
+#Created : 06-08-2021 17:18:17
+#Modified: 04-18-2022 12:33:00
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Vehicle Shape
+
+END

@@ -1,0 +1,23 @@
+PARSFILE
+#FullDataName I/O Channels: Ports`Exports for wheel speeds, M/C pressure`ABS, 2 SFs
+#RingCtrl0 0
+#RingCtrl1 1
+#CheckBox0 0    
+
+IPORT_EXP 1
+PARSFILE IO_Channels\O_Channels\Export_df421d7e-0823-442a-b07c-0057573f0076.par
+#BlueLink20 I/O Channels: Export`ABS: Vehicle Speed, M/C Pressure` Brake System Control` , Library for factor B`Export_df421d7e-0823-442a-b07c-0057573f0076
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Ports; { ABS, 2 SFs } Exports for wheel speeds, M/C pressure
+#Library : I/O Channels: Ports
+#DataSet : Exports for wheel speeds, M/C pressure
+#Category: ABS, 2 SFs
+#FileID  : Port_8345f9f3-4eee-44aa-9e9f-d00a4d413d68
+#Created : 09-27-2022 14:22:50
+#Modified: 12-07-2022 11:22:58
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode I/O Ports
+
+END

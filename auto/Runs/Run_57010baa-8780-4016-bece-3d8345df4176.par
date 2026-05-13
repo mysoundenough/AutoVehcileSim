@@ -1,0 +1,97 @@
+PARSFILE
+#FullDataName CarSim Run Control`ACC: CCRb -6 m/s2, 12 m`ACC: Euro NCAP Tests
+#VEHICLECODE Ind_Ind
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_57010baa-8780-4016-bece-3d8345df4176
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Animator\Cameras\Camera_a9a29c8e-4050-45dd-a1b0-68322cea8073.par
+#BlueLink0 Animator: Camera Setup`150 Azm, 10 El, 6.25 m` Vehicle Reference` , Animator camera`Camera_a9a29c8e-4050-45dd-a1b0-68322cea8073
+
+#CheckBox0 1    
+#CheckBox1 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 0    
+#CheckBox5 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox8 1    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+#CheckBox12 0    
+
+#RingCtrl0 4
+#RingCtrl1 0
+#RingCtrl2 3
+#RingCtrl3 0
+#RingCtrl6 0
+#RingCtrl7 -1
+*RUN_COLOR 0.8 0 0
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Vehicles\Loaded\VehLoad_ad0e07c0-ecbe-4414-93df-dd582664fb45.par
+#BlueLink2 Vehicle with Loads, Sensors, Trailer, etc.`C-Class ACC, FCW,LKAS, (AEB off)` C-Class` , Math Model`VehLoad_ad0e07c0-ecbe-4414-93df-dd582664fb45
+
+PARSFILE Procedures\Proc_efe59881-f2b9-4154-bc9b-b0b78a20ff7d.par
+#BlueLink28 Procedures`ACC Single Test: CCRb, 12m` ACC: Automatic Cruise Control` , Procedure`Proc_efe59881-f2b9-4154-bc9b-b0b78a20ff7d
+
+PARSFILE Control\Speed_t\SpdTime_b7cd51a8-6fc2-4526-9b81-86e5a75affeb.par
+#BlueLink9 Control: Speed (Closed Loop) Using Target Speed`50 to 0, -6 m/s/s, ISPEED = 2` AEB CCRb Target Speed` , Miscellaneous`SpdTime_b7cd51a8-6fc2-4526-9b81-86e5a75affeb
+
+PARSFILE Animator\HUD\HUD_7f96b84d-20a3-4c75-bda3-d2799c9591c0.par
+#BlueLink10 Animator: HUD`CCRb Label: -6m/s2, 12m` Euro NCAP` , Miscellaneous`HUD_7f96b84d-20a3-4c75-bda3-d2799c9591c0
+
+PARSFILE Animator\HUD\HUD_28cddbb9-94c6-4e76-a06f-7737ba30c08f.par
+#BlueLink11 Animator: HUD`Throttle and Speed, L. Side, 19% Up` Vehicle Status Indicators` , Miscellaneous`HUD_28cddbb9-94c6-4e76-a06f-7737ba30c08f
+
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Vehicles\Assembly\Vehicle_02f34599-fa67-4a2d-b9f1-ec46601f2987.png
+WRITE_SENSOR_DETECT
+Title ACC: CCRb -6 m/s2, 12 m <ACC: Euro NCAP Tests>
+CATEGORY ACC: Euro NCAP Tests 
+DATASET_TITLE ACC: CCRb -6 m/s2, 12 m
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#AEB: Autonomous Emergency Braking
+#ACC: Automatic Cruise Control
+#GVT: Global Vehicle Target
+#VUT: Vehicle Under Test (ego vehicle)
+#FCW: Forward Collision Warning
+#LKAS: Lane-Keeping Assistance System
+#CCRb: Car-to-Car Rear, Braking GVT
+#
+#This ACC example is based on a test scenario published by Euro NCAP for AEB systems with modified conditions. A target is moving at 50 km/h and decelerates at 6 m/s^2. The VUT is trailing with a distance of 12 m.
+#- No steering controller is used, as LKAS is keeping the vehicle within it's lane, per the Euro NCAP spec.
+#- The GVT speed is defined with an output parameter Vx_GVT that can be set as a constant or managed with an equation.
+#
+#Set START_DISTANCE in the Misc. yellow field on the Run Control screen.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { ACC: Euro NCAP Tests } ACC: CCRb -6 m/s2, 12 m
+#Library : CarSim Run Control
+#DataSet : ACC: CCRb -6 m/s2, 12 m
+#Category: ACC: Euro NCAP Tests
+#FileID  : Run_57010baa-8780-4016-bece-3d8345df4176
+#Modified: 11-21-2022 14:16:14
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Run
+
+END

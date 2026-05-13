@@ -1,0 +1,44 @@
+PARSFILE
+#FullDataName Plot: Setup`Lateral Force (WC)`Wheel Center Forces
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d.par
+#BlueLink0 Plot: Format`Lines without Symbols` ` , Plot format`PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS Fy_WC_L1
+PLOTCHANNELS Fy_WC_R1
+PLOTCHANNELS Fy_WC_L2
+PLOTCHANNELS Fy_WC_R2
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Lateral Force (WC)
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Wheel Center Forces } Lateral Force (WC)
+#Library : Plot: Setup
+#DataSet : Lateral Force (WC)
+#Category: Wheel Center Forces
+#FileID  : Plot_ad14a8a7-2620-4106-a9f6-4d35ae6b2b52
+#Created : 11-29-2022 15:22:57
+#Modified: 11-29-2022 15:24:08
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Plot Setup
+
+END

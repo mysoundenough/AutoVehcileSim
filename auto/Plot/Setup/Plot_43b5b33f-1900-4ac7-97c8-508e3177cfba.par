@@ -1,0 +1,39 @@
+PARSFILE
+#FullDataName Plot: Setup`Vehicle Start Vxz`Pedestrian Euro NCAP
+
+ADD_ENTITY Plot
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS Vxz_Fwd, Time
+PLOTCHANNELS RelSpeedOk , Time
+PLOTCHANNELS SpeedReduction, Time
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Vehicle Start Vxz
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Pedestrian Euro NCAP } Vehicle Start Vxz
+#Library : Plot: Setup
+#DataSet : Vehicle Start Vxz
+#Category: Pedestrian Euro NCAP
+#FileID  : Plot_43b5b33f-1900-4ac7-97c8-508e3177cfba
+#Modified: 08-18-2021 16:02:01
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Plot Setup
+
+END

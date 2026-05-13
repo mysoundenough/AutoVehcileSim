@@ -1,0 +1,51 @@
+PARSFILE
+#FullDataName Plot: Setup`ACC Validation - SC Gain Check`Obstacle Avoidance
+
+ADD_ENTITY Plot
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS accDesiredDist, Time
+PLOTCHANNELS tUnderBrk, Time
+PLOTCHANNELS estStopDist, Time
+PLOTCHANNELS stopDistFactor, Time
+PLOTCHANNELS leadVehSlowStopFlag, Time
+PLOTCHANNELS stopDistGainOn, Time
+PLOTCHANNELS minRelDist, Time
+PLOTCHANNELS desiredSpdGain, Time
+PLOTCHANNELS desiredSpdGainAdj, Time
+PLOTCHANNELS desiredVsActualDistGain, Time
+PLOTCHANNELS minRelCriteriaGain, Time
+PLOTCHANNELS accSpdStopGain, Time
+PLOTCHANNELS minACC_Gain, Time
+PLOTCHANNELS Vxz_Fwd, Time
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE ACC Validation - SC Gain Check
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Obstacle Avoidance } ACC Validation - SC Gain Check
+#Library : Plot: Setup
+#DataSet : ACC Validation - SC Gain Check
+#Category: Obstacle Avoidance
+#FileID  : Plot_3f12d389-b9fd-4248-b898-a691d41502c4
+#Created : 05-27-2021 17:15:39
+#Modified: 06-03-2021 12:28:50
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Plot Setup
+
+END

@@ -1,0 +1,47 @@
+PARSFILE
+#FullDataName Events`A. Initial Non-AEB Test, 50%, Bicyclist`Pedestrian Euro NCAP
+#CheckBox1 1    
+*CLEAR
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 >
+#RingCtrl1 <
+#RingCtrl10 2
+#RingCtrl11 4
+RESET_EVENTS
+*NAME1 Collided
+*NAME2 RelDistFrontBump
+*VALUE1 0
+*VALUE2 0
+#MiscYellow0
+AEB_On = 0
+#ENDMYellow
+
+MAKE_EVENT Collided > 0 ; Events\Events_b0a13f26-dc5b-4743-909b-c15e665adbb3.par
+#BlueLink0 Events`End Initial Collision Run, 50%, Bicyclist` Pedestrian Euro NCAP` , Events`Events_b0a13f26-dc5b-4743-909b-c15e665adbb3
+
+MAKE_EVENT RelDistFrontBump < 0 ; Events\Events_bc9092bf-4dad-4c86-85f9-86d692e4ca5d.par
+#BlueLink1 Events`Wait for Initial Event to End` Pedestrian Euro NCAP` , Events`Events_bc9092bf-4dad-4c86-85f9-86d692e4ca5d
+
+SET_EVENT_ID 0 ! reset to default
+
+#EMBEDDED_NOTES
+#Initial test to confirm the ego vehicle will strike the pedestrian when AEB is not engaged.
+#- the ego vehicle should strike the pedestrian target at the prescribed percentage of the entire vehicle's width, when the pedestrian is approaching from either the Near side (right) or Far side (left)
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Events; { Pedestrian Euro NCAP } A. Initial Non-AEB Test, 50%, Bicyclist
+#Library : Events
+#DataSet : A. Initial Non-AEB Test, 50%, Bicyclist
+#Category: Pedestrian Euro NCAP
+#FileID  : Events_95fe8117-c573-4240-a5ba-c920ad0a3381
+#Created : 08-17-2021 13:36:24
+#Modified: 08-18-2021 16:59:55
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

@@ -1,0 +1,31 @@
+PARSFILE
+#FullDataName Events`INIT vehicle`Initialization
+#CheckBox1 0    
+#CheckBox2 1    
+#CheckBox3 1    
+#CheckBox4 1    
+#CheckBox5 0    
+#CheckBox6 1    
+#CheckBox7 1    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl10 0
+#RingCtrl11 4
+OPT_INIT_CONFIG 1
+OPT_INIT_PATH 1
+OPT_INIT_SPEED 1
+SET_EVENT_ID 0 ! reset to default
+
+LOG_ENTRY Used Dataset: Events; { Initialization } INIT vehicle
+#Library : Events
+#DataSet : INIT vehicle
+#Category: Initialization
+#FileID  : Events_71e84b6a-1157-4197-9498-e0238f1a8e8c
+#Created : 09-28-2023 14:09:38
+#Modified: 10-05-2023 16:30:05
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

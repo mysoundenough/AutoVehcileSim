@@ -1,0 +1,41 @@
+PARSFILE
+#FullDataName Animator: Shape Assembly`Artic Bus: Unit 1 hitch`Artic Bus
+#CheckBox0 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 0    
+#CheckBox5 0    
+
+#RingCtrl1 2
+#RingCtrl2 2
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL_Groups\ShpGrp_0ccd4484-61e9-4b68-b6a2-925510e01e8d.png
+PARSFILE Animator\STL\Shape_9e6194ae-37a6-43e7-a69f-f141b54c6150.par
+#BlueLink0 Animator: Shape File Link`Artic Bus: pitch axis` Artic Bus` , Shape File`Shape_9e6194ae-37a6-43e7-a69f-f141b54c6150
+
+PARSFILE Animator\STL\Shape_6721bb13-50d3-48d1-8a70-3e3946aa9401.par
+#BlueLink1 Animator: Shape File Link`Cylinder: Artic Bus Unit 1` Artic Bus` , Shape File`Shape_6721bb13-50d3-48d1-8a70-3e3946aa9401
+
+PARSFILE Animator\STL\Shape_74a9ae55-6cf1-44e5-91d8-85690ec57aed.par
+#BlueLink2 Animator: Shape File Link`Cube: Artic Bus Unit 1 stripe` Artic Bus` , Shape File`Shape_74a9ae55-6cf1-44e5-91d8-85690ec57aed
+
+PARSFILE Animator\STL\Shape_0ef1b10c-22ef-4acc-ada0-59203d33a631.par
+#BlueLink3 Animator: Shape File Link`Cube: Artic Bus Unit 1 hitch` Artic Bus` , Shape File`Shape_0ef1b10c-22ef-4acc-ada0-59203d33a631
+
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_5f245a76-02e8-4402-ad4f-d68e6778dc25.par
+#BlueLink17 Animator: Camera Setup`Isometric View - Medium Objects` Shape Preview` , Video Camera`Camera_5f245a76-02e8-4402-ad4f-d68e6778dc25
+
+
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Artic Bus } Artic Bus: Unit 1 hitch
+#Library : Animator: Shape Assembly
+#DataSet : Artic Bus: Unit 1 hitch
+#Category: Artic Bus
+#FileID  : ShpGrp_0ccd4484-61e9-4b68-b6a2-925510e01e8d
+#Created : 04-18-2022 14:01:58
+#Modified: 06-06-2022 10:04:49
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape Assembly
+
+END

@@ -1,0 +1,44 @@
+PARSFILE
+#FullDataName Plot: Setup`Axle Loads`Tire Forces and Moments
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par
+#BlueLink0 Plot: Format`Default Plot Settings` ` , Plot format`PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS Fz_A1, Time
+PLOTCHANNELS Fz_A2, Time
+PLOTCHANNELS Fz_A3, Time
+PLOTCHANNELS Fz_A4, Time
+PLOTCHANNELS Fz_A5, Time
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Axle Loads
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Tire Forces and Moments } Axle Loads
+#Library : Plot: Setup
+#DataSet : Axle Loads
+#Category: Tire Forces and Moments
+#FileID  : Plot_5bc2dc08-1fca-4f30-a51c-ff085f442b96
+#Modified: 09-07-2023 13:46:38
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Plot Setup
+
+END

@@ -1,0 +1,37 @@
+PARSFILE
+#FullDataName Generic Group of Links`PG: Curved Road, Two Lanes`Generic Proving Ground
+#VehCode Generic Links
+PARSFILE Roads\3D_Road\Road_5d6cdd3d-8a35-45fc-af70-7677ff846e8a.par
+#BlueLink0 Road: 3D Surface (All Properties)`999: 1 km Sq. Proving Ground, 0.9 mu` Intersection, 3D Roads with Curbs` , Miscellaneous`Road_5d6cdd3d-8a35-45fc-af70-7677ff846e8a
+
+PARSFILE Roads\3D_Road\Road_9014e3c2-a314-43b8-a974-423bea0d67ee.par
+#BlueLink1 Road: 3D Surface (All Properties)`1001: 1 km, Two Lanes, Mu=0.90, Curved` Misc. Curved Roads` , Miscellaneous`Road_9014e3c2-a314-43b8-a974-423bea0d67ee
+
+#MiscYellow0
+! set road id to the layer with painted lines
+! desired Path in Road Dataset needs to match
+! road id
+EQ_PRE_INIT CURRENT_ROAD_ID = 1001
+DEFINE_PARAMETER CURRENT_PATH_ID = 1001; - ;
+#ENDMYellow
+
+#MiscYellow1
+PATH_ID_PD(1) = CURRENT_PATH_ID
+PATH_ID_PD(2) = CURRENT_PATH_ID
+PATH_ID_PD(3) = CURRENT_PATH_ID
+PATH_ID_PD(4) = CURRENT_PATH_ID
+#ENDMYellow
+
+
+LOG_ENTRY Used Dataset: Generic Group of Links; { Generic Proving Ground } PG: Curved Road, Two Lanes
+#Library : Generic Group of Links
+#DataSet : PG: Curved Road, Two Lanes
+#Category: Generic Proving Ground
+#FileID  : GenLink_7be418d9-a47e-41c2-8803-95e9106f2fb7
+#Created : 09-21-2021 15:43:27
+#Modified: 10-08-2021 15:48:24
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Generic Links
+
+END

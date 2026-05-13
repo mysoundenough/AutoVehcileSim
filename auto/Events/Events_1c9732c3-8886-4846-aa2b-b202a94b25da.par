@@ -1,0 +1,43 @@
+PARSFILE
+#FullDataName Events`Pre-Reset, 50%, Bicyclist`Pedestrian Euro NCAP
+#CheckBox1 1    
+*CLEAR
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 ZERO ~=
+#RingCtrl10 1
+#RingCtrl11 4
+RESET_EVENTS
+*NAME1 FINAL_AEB_TEST
+*NAME2 FINAL_AEB_TEST
+*VALUE1 1
+*VALUE2 1
+*SPEED VEHSTARTSPEED
+PARSFILE Generic\VS_commands\GenVS_cc2793b5-f630-42fb-a734-f28f972dcf66.par
+#BlueLink10 Generic VS Commands`Reload Key Parameters, 50%, Bicyclist` Pedestrian Euro NCAP` , Miscellaneous`GenVS_cc2793b5-f630-42fb-a734-f28f972dcf66
+
+DEFINE_EVENT 1 ; Events\Events_23798db7-d5a3-4283-adb9-c0a83ae3f28b.par
+#BlueLink0 Events`Reset Positions, 50%, Bicyclist` Pedestrian Euro NCAP` , Events`Events_23798db7-d5a3-4283-adb9-c0a83ae3f28b
+
+SET_EVENT_ID 0 ! reset to default
+
+#EMBEDDED_NOTES
+#Certain test parameter values need to be reset (in the Reload Key Parameters Dataset)
+#- This is to prepare the vehicle speed and positioning for the next test run, and before initialization.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Events; { Pedestrian Euro NCAP } Pre-Reset, 50%, Bicyclist
+#Library : Events
+#DataSet : Pre-Reset, 50%, Bicyclist
+#Category: Pedestrian Euro NCAP
+#FileID  : Events_1c9732c3-8886-4846-aa2b-b202a94b25da
+#Created : 08-17-2021 14:00:21
+#Modified: 08-18-2021 17:05:09
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

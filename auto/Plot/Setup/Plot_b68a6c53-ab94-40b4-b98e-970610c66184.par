@@ -1,0 +1,53 @@
+PARSFILE
+#FullDataName Plot: Setup`Object Offset Outputs, 4 PDs`Obstacle Avoidance
+
+ADD_ENTITY Plot
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS ypdtarg3_4, Time
+PLOTCHANNELS ypdtarg2_4, Time
+PLOTCHANNELS ypdtarg3_3, Time
+PLOTCHANNELS ypdtarg2_3, Time
+PLOTCHANNELS obj1LatSpeed, Time
+PLOTCHANNELS obj2LatSpeed, Time
+PLOTCHANNELS obj3LatSpeed, Time
+PLOTCHANNELS objRadCurvOffset1_max, Time
+PLOTCHANNELS objRadCurvOffset1_mid, Time
+PLOTCHANNELS objRadCurvOffset1, Time
+PLOTCHANNELS objRadCurvOffset2, Time
+PLOTCHANNELS objRadCurvOffset3, Time
+PLOTCHANNELS vehObjInLane1, Time
+PLOTCHANNELS vehObjInLane2, Time
+PLOTCHANNELS vehObjInLane3, Time
+PLOTCHANNELS vehObjInLane, Time
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Object Offset Outputs, 4 PDs
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Obstacle Avoidance } Object Offset Outputs, 4 PDs
+#Library : Plot: Setup
+#DataSet : Object Offset Outputs, 4 PDs
+#Category: Obstacle Avoidance
+#FileID  : Plot_b68a6c53-ab94-40b4-b98e-970610c66184
+#Created : 10-08-2021 11:14:15
+#Modified: 10-08-2021 11:41:20
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Plot Setup
+
+END

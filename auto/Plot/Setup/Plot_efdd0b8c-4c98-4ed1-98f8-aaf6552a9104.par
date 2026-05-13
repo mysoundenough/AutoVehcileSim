@@ -1,0 +1,42 @@
+PARSFILE
+#FullDataName Plot: Setup`Trans Gear: Shift Trigger and Selection`Powertrain
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par
+#BlueLink0 Plot: Format`Default Plot Settings` ` , Plot format`PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS GearStat, Time
+PLOTCHANNELS Gear_Del, Time
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Trans Gear: Shift Trigger and Selection
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Powertrain } Trans Gear: Shift Trigger and Selection
+#Library : Plot: Setup
+#DataSet : Trans Gear: Shift Trigger and Selection
+#Category: Powertrain
+#FileID  : Plot_efdd0b8c-4c98-4ed1-98f8-aaf6552a9104
+#Created : 05-24-2022 14:55:45
+#Modified: 05-24-2022 16:55:03
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Plot Setup
+
+END

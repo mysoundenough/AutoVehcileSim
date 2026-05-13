@@ -1,0 +1,42 @@
+PARSFILE
+#FullDataName Plot: Setup`ACC Events Validation`ADAS Sensor Detections
+
+ADD_ENTITY Plot
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS acc_TTC, Time
+PLOTCHANNELS time_gap, Time
+PLOTCHANNELS targetSpdMatched, Time
+PLOTCHANNELS timeGapMatched, Time
+PLOTCHANNELS detectOnSpeedMatch, Time
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE ACC Events Validation
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { ADAS Sensor Detections } ACC Events Validation
+#Library : Plot: Setup
+#DataSet : ACC Events Validation
+#Category: ADAS Sensor Detections
+#FileID  : Plot_36388c17-57b5-40ef-affe-6a1fb6bf51ea
+#Created : 05-28-2021 12:48:09
+#Modified: 10-11-2021 14:41:31
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Plot Setup
+
+END

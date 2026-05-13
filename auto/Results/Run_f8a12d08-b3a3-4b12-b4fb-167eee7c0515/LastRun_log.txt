@@ -1,0 +1,29 @@
+Run made by CarSim 2024.1 at 15:08 on March 25, 2024.
+Revision 222209, March 18, 2024
+Started with simfile: simfile.sim
+
+Include PARSFILE "Results\Run_f8a12d08-b3a3-4b12-b4fb-167eee7c0515\Run_all.par"
+Installed keywords into VS Solver for MODEL_LAYOUT I_I
+Used Dataset: Animator: Reference Frame; { Tracking: Vehicle } Vehicle X-Y-Z
+Used Dataset: Animator: Camera Setup; { Vehicle Reference } 13 Azm, 9 El, 18 m, No Yaw
+ A. QS DLC stop @ 3s <Advanced: Restore State, Linearize, Gravity>
+ B. QS DLC continue <Advanced: Restore State, Linearize, Gravity>
+Used Dataset: CarSim Run Control; { Advanced: Restore State, Linearize, Gravity } B. QS DLC continue
+
+Time to read input = 0.0529896
+Function F_REB_STOP_TABLE(1,1) extrapolated (out of range HIGH) for X = 33.569 mm at T = 3
+Function F_JNC_STOP_TABLE(1,1) extrapolated (out of range LOW) for X = 33.569 mm at T = 3
+Function F_REB_STOP_TABLE(1,2) extrapolated (out of range HIGH) for X = -22.8625 mm at T = 3
+Function F_JNC_STOP_TABLE(1,2) extrapolated (out of range LOW) for X = -22.8625 mm at T = 3
+Function F_REB_STOP_TABLE(2,1) extrapolated (out of range HIGH) for X = 32.1524 mm at T = 3
+Function F_JNC_STOP_TABLE(2,1) extrapolated (out of range LOW) for X = 32.1524 mm at T = 3
+Function F_REB_STOP_TABLE(2,2) extrapolated (out of range HIGH) for X = -15.196 mm at T = 3
+Function F_JNC_STOP_TABLE(2,2) extrapolated (out of range LOW) for X = -15.196 mm at T = 3
+
+Run started: ERD output file = Results\Run_f8a12d08-b3a3-4b12-b4fb-167eee7c0515\LastRun.bin
+Function L_RELAX_X_FZ_TABLE(1,2) extrapolated (out of range HIGH) for X = 1.00006 N at T = 4.448
+
+Run stopped at t = 10. Stop time reached.
+
+Computational time ratio: RTIME = 0.0410093 (real time)/(simulation time)
+

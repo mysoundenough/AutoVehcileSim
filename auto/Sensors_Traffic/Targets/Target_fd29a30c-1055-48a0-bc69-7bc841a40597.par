@@ -1,0 +1,38 @@
+PARSFILE
+#FullDataName Single Moving Object (Custom)`Rental Trailer`For Alley Dock Test Pad (Small)
+DEFINE_MOVING_OBJECTS 1
+IOBJECT_INCREMENT
+symbol_add <<o>> 1
+SET_DESCRIPTION OBJECT_NAME Rental Trailer
+OPT_SPEED_OBJ 0
+
+OPT_ROAD_OBJ 0 ! Legacy pre-9
+PATH_ID_OBJ 0
+ROAD_ID_OBJ 0
+#CheckBox8 0    
+
+#RingCtrl0 5
+H_OBJ 0
+*S_INIT 6
+*L_INIT -1.5
+MATERIAL_TYPE_OBJ 0
+REFLECT_OBJ 0
+OPT_SHAPE_OBJ 0
+PARSFILE Animator\Vehicles\AniVeh_9605a120-5595-434a-9101-10669efbe488.par
+#BlueLink0 Animator: Vehicles and Sensor Targets`Large Rental Trailer (2A)` Trailers` , 3D Shape for Video`AniVeh_9605a120-5595-434a-9101-10669efbe488
+
+EQ_INIT X_Obj_<<o>> 6
+EQ_INIT Y_Obj_<<o>> -1.5
+
+LOG_ENTRY Used Dataset: Single Moving Object (Custom); { For Alley Dock Test Pad (Small) } Rental Trailer
+#Library : Single Moving Object (Custom)
+#DataSet : Rental Trailer
+#Category: For Alley Dock Test Pad (Small)
+#FileID  : Target_fd29a30c-1055-48a0-bc69-7bc841a40597
+#Created : 10-21-2021 12:29:30
+#Modified: 11-21-2022 14:16:08
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Moving Object (Custom)
+
+END

@@ -1,0 +1,45 @@
+PARSFILE
+#FullDataName Plot: Setup`Transmission Clutch: Control Input`Controls: Driver
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par
+#BlueLink0 Plot: Format`Default Plot Settings` ` , Plot format`PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS ClutchTr, Time
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Transmission Clutch: Control Input
+
+END_ENTITY Plot
+
+
+#EMBEDDED_NOTES
+#
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Controls: Driver } Transmission Clutch: Control Input
+#Library : Plot: Setup
+#DataSet : Transmission Clutch: Control Input
+#Category: Controls: Driver
+#FileID  : Plot_729fd2d7-9cfc-47af-9f5a-32b3741417b8
+#Created : 05-24-2022 14:25:13
+#Modified: 05-24-2022 14:25:28
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Plot Setup
+
+END

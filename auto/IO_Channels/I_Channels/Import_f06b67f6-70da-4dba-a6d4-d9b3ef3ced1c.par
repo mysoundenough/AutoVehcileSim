@@ -1,0 +1,23 @@
+PARSFILE
+#FullDataName I/O Channels: Import`EV Battery Plot Import`Powertrain Control and Ext. Models
+#RingCtrl1 1
+
+#MiscYellow0
+IMP_VOC_BTTRY Replace 0.0! 1
+IMP_V_BTTRY Replace 0.0! 1
+IMP_A_BTTRY Replace 0.0! 1
+#ENDMYellow
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Import; { Powertrain Control and Ext. Models } EV Battery Plot Import
+#Library : I/O Channels: Import
+#DataSet : EV Battery Plot Import
+#Category: Powertrain Control and Ext. Models
+#FileID  : Import_f06b67f6-70da-4dba-a6d4-d9b3ef3ced1c
+#Created : 03-22-2023 14:05:47
+#Modified: 04-19-2023 15:38:03
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Import Channels
+
+END

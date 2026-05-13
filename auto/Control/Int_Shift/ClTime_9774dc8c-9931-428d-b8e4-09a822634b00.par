@@ -1,0 +1,37 @@
+PARSFILE
+#FullDataName Control: Clutch Shifting Timelines (Closed Loop)`Delay Start of Clutch Disengagement`Basic Shift Timelines
+
+opt_clutch_mode 1
+T_CL_START 0.1
+T_CL_DISENGAGE 0.2
+T_CL_PRESS_TOTAL 0.3
+T_CL_HALF_HOLD 0.1
+T_CL_RE_ENGAGE 0.5
+T_TH_START 0
+T_TH_ZERO 0.2
+T_TH_ZERO_TOTAL 0.3
+T_TH_RETURNED 0.4
+T_GEAR_LAG 0.25
+VLOW_CLUTCH 5
+
+*T_TH_ZERO_HOLD 0.3 - 0.2
+*T_TH_RETURN 0.4 - 0.3
+*T_CL_PRESS_HOLD 0.3 - 0.2
+*T_CL_HALF_TOTAL 0.5 - 0.3
+
+#EMBEDDED_NOTES
+#In this shifting timeline, the clutch disengagement does not begin right when the shift command is given.  Instead, it is delayed by 0.1 seconds.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Control: Clutch Shifting Timelines (Closed Loop); { Basic Shift Timelines } Delay Start of Clutch Disengagement
+#Library : Control: Clutch Shifting Timelines (Closed Loop)
+#DataSet : Delay Start of Clutch Disengagement
+#Category: Basic Shift Timelines
+#FileID  : ClTime_9774dc8c-9931-428d-b8e4-09a822634b00
+#Created : 05-24-2022 16:39:19
+#Modified: 06-06-2022 11:12:34
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shifting Times (Alt)
+
+END

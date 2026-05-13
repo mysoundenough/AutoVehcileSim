@@ -1,0 +1,61 @@
+PARSFILE
+#FullDataName Models: Simulink`External EV Battery`External Powertrain
+#RunMdlFile Extensions\Simulink\ev_battery\ev_battery.mdl
+SIMULINK_MODEL_FILE Extensions\Simulink\ev_battery\ev_battery.mdl
+#RingCtrl0 -1
+#RingCtrl2 0
+*MULTI_SOLVERS 0
+*MULTI_S_WRAPPER 0
+#CheckBox0 0    
+*USE_ALT_DIR 0
+#CheckBox1 0    
+*USE_DIFF_SOLVERS 0
+#CheckBox3 1    
+#CheckBox5 0    
+#RingCtrl1 0
+OPT_INT_METHOD 0
+#CheckBox4 1    
+OPT_IO_SYNC_FM 1
+*TSTEP 0.0005
+*FREQ_MODEL 2000
+*TSTEP_OUT 0.025
+*FREQ_OUT 40
+tstep 0.0005
+iprint 50
+*ALTERNATE_PATH Programs\Simulink_MDL
+PARSFILE IO_Channels\Ports\Port_b91084f5-b117-45cb-8a08-7c6cf0348553.par
+#BlueLink0 I/O Channels: Ports`External EV Battery` Powertrain` , Import`Port_b91084f5-b117-45cb-8a08-7c6cf0348553
+
+#BlueLink3 I/O Channels: Ports` ` , vs_ctl Ports` , vs_state Ports`
+
+#BlueLink4 I/O Channels: Ports` ` , vs_kin Ports` , vs_ctl Ports`
+
+#BlueLink5 I/O Channels: Ports` ` , vs_dyn Ports` , vs_kin Ports`
+
+#BlueLink6 I/O Channels: Ports` ` , vs_dyn Ports` , vs_dyn Ports`
+
+#MiscYellow1
+! Include folder containing supporting .m files for Simulink EV battery model
+*cpar_include Extensions\Simulink\ev_battery
+#ENDMYellow
+
+LIVE_SERVER_UPDATE_FREQ_MAX 60
+
+#EMBEDDED_NOTES
+#This "Models: Simulink" dataset links to a Simulink model of an electric battery, which replaces an existing internal battery model of electrified powertrain system of CarSim.
+#
+#The time step is set to 0.0005 sec. (2000 Hz), the method is AB-2, and the option is checked to synchronize the CarSim kinematical exports with force imports.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Models: Simulink; { External Powertrain } External EV Battery
+#Library : Models: Simulink
+#DataSet : External EV Battery
+#Category: External Powertrain
+#FileID  : Simlink_9531b18e-378f-4ba7-8840-b2ac3a75a776
+#Created : 03-22-2023 14:03:04
+#Modified: 04-07-2023 16:13:49
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode 
+
+END

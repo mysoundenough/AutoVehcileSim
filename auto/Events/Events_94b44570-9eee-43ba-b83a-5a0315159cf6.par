@@ -1,0 +1,36 @@
+PARSFILE
+#FullDataName Events`Countdown Time After AEB`ADAS Detection
+#CheckBox1 1    
+*CLEAR
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 >
+#RingCtrl10 1
+#RingCtrl11 4
+RESET_EVENTS
+*NAME1 T_EVENT
+*VALUE1 AEB_WAIT_TIME
+#MiscYellow0
+TSTART_T_EVENT = T ;
+#ENDMYellow
+
+MAKE_EVENT T_EVENT > AEB_WAIT_TIME ; Events\Events_40875343-6726-42bd-a7d1-cd2fb51d77bb.par
+#BlueLink0 Events`Resume Speed After AEB` ADAS Detection` , Events`Events_40875343-6726-42bd-a7d1-cd2fb51d77bb
+
+SET_EVENT_ID 0 ! reset to default
+
+LOG_ENTRY Used Dataset: Events; { ADAS Detection } Countdown Time After AEB
+#Library : Events
+#DataSet : Countdown Time After AEB
+#Category: ADAS Detection
+#FileID  : Events_94b44570-9eee-43ba-b83a-5a0315159cf6
+#Created : 11-04-2021 16:39:51
+#Modified: 11-04-2021 16:46:29
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

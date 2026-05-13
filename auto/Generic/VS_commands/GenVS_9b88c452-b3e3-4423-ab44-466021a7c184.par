@@ -1,0 +1,77 @@
+PARSFILE
+#FullDataName Generic VS Commands`02 - Jounce - moving wheel pads setup`K&C Test Sequence
+#VehCode VS Commands
+
+#MiscYellow0
+! Setup and test parameters ----------------------------------------------------
+! Jounce is defined as the Z displacement of the wheel center from some reference zero.
+
+! By convention, upward displacement is called "Jounce", downward displacement is called
+! "Rebound" or "Negative Jounce"
+
+! Jounce is defined to be "In phase" which implies left and right wheels move by equal
+! amounts, and movement is limited when either wheel reaches the end of its range.
+
+! Different amounts of motion are actually the sum of an "in phase" part and an 
+! "out of phase" part.
+
+! Set the target max and min jounce for each wheel
+DEFINE_PARAMETER JNC_MAX_L1 = 300; mm; Upper limit on jounce
+DEFINE_PARAMETER JNC_MIN_L1 = -300; mm; Lower limit on jounce (rebound)
+
+DEFINE_PARAMETER JNC_MAX_R1 = JNC_MAX_L1; mm; Upper limit on jounce
+DEFINE_PARAMETER JNC_MIN_R1 = JNC_MIN_L1; mm; Lower limit on jounce (rebound)
+
+DEFINE_PARAMETER JNC_MAX_L2 = 300; mm; Upper limit on jounce
+DEFINE_PARAMETER JNC_MIN_L2 = -300; mm; Lower limit on jounce (rebound)
+
+DEFINE_PARAMETER JNC_MAX_R2 = JNC_MAX_L2; mm; Upper limit on jounce
+DEFINE_PARAMETER JNC_MIN_R2 = JNC_MIN_L2; mm; Lower limit on jounce (rebound)
+
+! Jounce rate for test. The test must be slow enough to minimize inertia and damping effects
+! Fo rebound, the rate is negative
+DEFINE_PARAMETER JNC_RATE = 2; mm/s; Jounce rate
+
+! position errors for each wheel's jounce. equations wil be added in events
+! initialize with a large value so the run doesnt quit immediately
+DEFINE_OUTPUT jnc_err_l1 = 10; mm; Position error to target jounce value
+DEFINE_OUTPUT jnc_err_r1 = 10; mm; Position error to target jounce value
+DEFINE_OUTPUT jnc_err_l2 = 10; mm; Position error to target jounce value
+DEFINE_OUTPUT jnc_err_r2 = 10; mm; Position error to target jounce value
+
+! tolerances for the settings
+DEFINE_PARAMETER jnc_tol = 0.01; mm; Tolerance on jounce position control
+
+! things needed to control the test --------------------------------------------
+! initially z_targ is the same as the ground z. Later an event will change it.
+DEFINE_OUTPUT z_targ_l1 = zgnd_l1; m; Target value for ground Z
+DEFINE_OUTPUT z_targ_r1 = zgnd_r1; m; Target value for ground Z
+DEFINE_OUTPUT z_targ_l2 = zgnd_l2; m; Target value for ground Z
+DEFINE_OUTPUT z_targ_r2 = zgnd_r2; m; Target value for ground Z
+
+! Expressions to test jounce is within tolerance to target
+DEFINE_OUTPUT at_min_l1 = ABS(jnc_err_l1)<=jnc_tol | fz_l1<0.001; -; 1/0 At min/Not at min jounce
+DEFINE_OUTPUT at_min_r1 = ABS(jnc_err_r1)<=jnc_tol | fz_r1<0.001; -; 1/0 At min/Not at min jounce
+DEFINE_OUTPUT at_min_l2 = ABS(jnc_err_l2)<=jnc_tol | fz_l2<0.001; -; 1/0 At min/Not at min jounce
+DEFINE_OUTPUT at_min_r2 = ABS(jnc_err_r2)<=jnc_tol | fz_r2<0.001; -; 1/0 At min/Not at min jounce
+
+DEFINE_OUTPUT at_max_l1 = jnc_l1>=jnc_max_l1 | fjst_l1>0.0; -; 1/0 At max/Not at max jounce
+DEFINE_OUTPUT at_max_r1 = jnc_r1>=jnc_max_r1 | fjst_r1>0.0; -; 1/0 At max/Not at max jounce
+DEFINE_OUTPUT at_max_l2 = jnc_l2>=jnc_max_l2 | fjst_l2>0.0; -; 1/0 At max/Not at max jounce
+DEFINE_OUTPUT at_max_r2 = jnc_r2>=jnc_max_r2 | fjst_r2>0.0; -; 1/0 At max/Not at max jounce
+
+!
+#ENDMYellow
+
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { K&C Test Sequence } 02 - Jounce - moving wheel pads setup
+#Library : Generic VS Commands
+#DataSet : 02 - Jounce - moving wheel pads setup
+#Category: K&C Test Sequence
+#FileID  : GenVS_9b88c452-b3e3-4423-ab44-466021a7c184
+#Modified: 05-28-2021 15:02:26
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode VS Commands
+
+END

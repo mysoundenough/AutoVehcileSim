@@ -1,0 +1,35 @@
+PARSFILE
+#FullDataName Generic Table`Ext. Batt. discharged resis. (0 milliohms)`Powertrain (HEV)
+#RingCtrl0 CONSTANT
+#RingCtrl1 MULTIPLY
+#RingCtrl2 CONSTANT
+#CheckBox0 1    
+
+R_DIS_BATTERY_COMBINE MULTIPLY
+R_DIS_BATTERY_CONSTANT 0
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+*KEYWORD R_DIS_BATTERY
+*X_LABEL State of charged (-)
+*Y_LABEL Resistance (V2/W)
+*SCALAR 0
+*X_LABEL_2 Temperature (C)
+
+
+#EMBEDDED_NOTES
+#This dataset is used for an external battery model.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic Table; { Powertrain (HEV) } Ext. Batt. discharged resis. (0 milliohms)
+#Library : Generic Table
+#DataSet : Ext. Batt. discharged resis. (0 milliohms)
+#Category: Powertrain (HEV)
+#FileID  : GenTab_0717f060-3fda-40e0-ae41-6953951be20d
+#Created : 03-23-2023 14:12:10
+#Modified: 04-04-2023 13:17:31
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode table
+
+END

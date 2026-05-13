@@ -1,0 +1,100 @@
+PARSFILE
+#FullDataName Animator: Vehicles and Sensor Targets`Large Rental Trailer (2A)`Trailers
+
+#CheckBox0 1    
+#CheckBox1 1    
+#CheckBox2 1    
+#CheckBox3 0    
+#CheckBox4 0    
+#CheckBox5 0    
+#CheckBox6 0    
+#CheckBox8 0    
+
+#RingCtrl0 2
+#RingCtrl1 0
+OPT_TRAILER_REF_FRAME 0
+OBJ_X_LENGTH 3672
+OBJ_Y_LENGTH 2450
+OBJ_Z_LENGTH 2030
+*DZ_V -65
+*LAT_WC 2200
+*LAT_WC_2 2200
+*HWC 290
+*WHEEL_RATIO 1.2
+*LAXLE_1 2878
+*LAXLE_2 3672
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\Vehicles\AniVeh_9605a120-5595-434a-9101-10669efbe488.png
+DZ_OBJECT 0
+WRITE_ADD_REFERENCE_FRAME_OBJECT
+TIRE_ANI_PARSFILE Animator\STL\Shape_a42c3474-8a83-4edf-b890-a781be4fbdd4.par
+SET_SCALE_X 1.2
+SET_SCALE_Y 1.2
+SET_SCALE_Z 1.2
+SET_OFFSET_X -2.878
+SET_OFFSET_Y 1.1
+SET_OFFSET_Z 0.2755
+TIRE_ANI_PARSFILE Animator\STL\Shape_a42c3474-8a83-4edf-b890-a781be4fbdd4.par
+SET_SCALE_X 1.2
+SET_SCALE_Y 1.2
+SET_SCALE_Z 1.2
+SET_ANGLE_X 180
+SET_OFFSET_X -2.878
+SET_OFFSET_Y -1.1
+SET_OFFSET_Z 0.2755
+TIRE_ANI_PARSFILE Animator\STL\Shape_a42c3474-8a83-4edf-b890-a781be4fbdd4.par
+SET_SCALE_X 1.2
+SET_SCALE_Y 1.2
+SET_SCALE_Z 1.2
+SET_OFFSET_X -3.672
+SET_OFFSET_Y 1.1
+SET_OFFSET_Z 0.2755
+TIRE_ANI_PARSFILE Animator\STL\Shape_a42c3474-8a83-4edf-b890-a781be4fbdd4.par
+SET_SCALE_X 1.2
+SET_SCALE_Y 1.2
+SET_SCALE_Z 1.2
+SET_ANGLE_X 180
+SET_OFFSET_X -3.672
+SET_OFFSET_Y -1.1
+SET_OFFSET_Z 0.2755
+DZ_OBJECT -0.065
+WRITE_ADD_REFERENCE_FRAME_OBJECT
+PARSFILE Animator\STL_Groups\ShpGrp_05f56460-0255-476f-b3dc-79c3bbc87afe.par
+#BlueLink1 Animator: Shape Assembly`Large Rental Trailer (2A)` Trailers` , Vehicle Body`ShpGrp_05f56460-0255-476f-b3dc-79c3bbc87afe
+
+WRITE_REFERENCE_FRAME_SIZE
+WRITE_ADD_REFERENCE_FRAME_BRAKES
+PARSFILE Animator\STL\Shape_7d211695-8904-43f4-8f1d-70f7c9005074.par
+#BlueLink3 Animator: Shape File Link`Rental Trailer (2A): Brake Lights` Trailers` , Brake Lights`Shape_7d211695-8904-43f4-8f1d-70f7c9005074
+
+set_lighting on
+set_fogging on
+WRITE_REFERENCE_FRAME_SIZE
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_b2ab63fa-d1da-4d77-9636-cab2dd90c166.par
+#BlueLink5 Animator: Camera Setup`XZ Plane, No Offsets - Medium Objects` Shape Preview` , Video Camera`Camera_b2ab63fa-d1da-4d77-9636-cab2dd90c166
+
+EXPORT_PARSFILE Animator\STL\Shape_a42c3474-8a83-4edf-b890-a781be4fbdd4.par
+#BlueLink2 Animator: Shape File Link`Blurred Tire: Car` Common Vehicle Assets: Tires` , Tire for traffic vehicle`Shape_a42c3474-8a83-4edf-b890-a781be4fbdd4
+
+
+#EMBEDDED_NOTES
+#The vertical offset of -200 mm configures this trailer for use with an ego vehicle hitch height of 475 mm
+#
+#The tire scale is the free radius of the tire on the ego vehicle version of the trailer divided by the radius of the blurred tire.  Check the embedded notes on the blurred tire to find the radius.
+#
+#In the current configuration, there is no scaling on the animation shape.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Animator: Vehicles and Sensor Targets; { Trailers } Large Rental Trailer (2A)
+#Library : Animator: Vehicles and Sensor Targets
+#DataSet : Large Rental Trailer (2A)
+#Category: Trailers
+#FileID  : AniVeh_9605a120-5595-434a-9101-10669efbe488
+#Created : 12-13-2021 13:45:54
+#Modified: 04-18-2022 12:33:03
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Vehicle Shape
+
+END

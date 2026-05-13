@@ -1,0 +1,105 @@
+PARSFILE
+#FullDataName CarSim Run Control`Ext. ABS: Split Mu, Change Import Mode`Change Import Mode
+#VEHICLECODE Ind_Ind
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_bcabc916-3ce6-4e98-a37e-583139b7cace
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Models\Simulink\Simlink_5cb4e00a-3a07-422d-9f8d-3b6c97cd7479.par
+#BlueLink12 Models: Simulink`ABS Controller Available` Braking Controls` , Models`Simlink_5cb4e00a-3a07-422d-9f8d-3b6c97cd7479
+
+PARSFILE Animator\Cameras\Camera_8f7a3057-cb7d-444e-8cf2-c6f46989b6a4.par
+#BlueLink0 Animator: Camera Setup`0 Azm, 5 El, 27 m` Road Reference` , Animator camera`Camera_8f7a3057-cb7d-444e-8cf2-c6f46989b6a4
+
+#CheckBox0 1    
+#CheckBox1 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 1    
+#CheckBox5 0    
+#CheckBox6 0    
+#CheckBox7 1    
+#CheckBox8 1    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+#CheckBox12 0    
+
+#RingCtrl0 4
+#RingCtrl1 3
+#RingCtrl2 3
+#RingCtrl3 0
+#RingCtrl6 5
+#RingCtrl7 -1
+*RUN_COLOR 1 0.6 0.004
+SET_RUN_COLOR 1 0.6 0.004
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Vehicles\Assembly\Vehicle_d43acacb-0c00-4a31-955e-f74d6aa2cddf.par
+#BlueLink2 Vehicle: Assembly`B-Class, Hatchback, No ABS` B-Class` , Math Model`Vehicle_d43acacb-0c00-4a31-955e-f74d6aa2cddf
+
+PARSFILE Procedures\Proc_af7b7a9d-340b-49a4-ae1a-008e5c2b5b38.par
+#BlueLink28 Procedures`Split Mu from 65 km/h` Accel. and Brake Testing` , Procedure`Proc_af7b7a9d-340b-49a4-ae1a-008e5c2b5b38
+
+PARSFILE Events\Events_bd5238af-cc94-4988-9cee-dda7d77d02c3.par
+#BlueLink9 Events`Test SET_IMPORT_MODE` Braking` , Miscellaneous`Events_bd5238af-cc94-4988-9cee-dda7d77d02c3
+
+DELETE_PLOT_GROUP default
+PLOT_GROUP default
+PARSFILE Plot\Setup\Plot_d356451c-b511-4676-bbfd-4f62ecce85fe.par
+#BlueLink15 Plot: Setup`Wheel Cylinder Pressure L1` Braking` , Plot`Plot_d356451c-b511-4676-bbfd-4f62ecce85fe
+
+PARSFILE Plot\Setup\Plot_2109be29-240d-4c11-b60e-823b8aa93f2b.par
+#BlueLink16 Plot: Setup`Wheel Drive Torques - Front` Powertrain` , Plot`Plot_2109be29-240d-4c11-b60e-823b8aa93f2b
+
+PARSFILE Plot\Setup\Plot_6f0c0125-1c0c-4b0a-a06b-529aada16a53.par
+#BlueLink17 Plot: Setup`Brake Torque` Braking` , Plot`Plot_6f0c0125-1c0c-4b0a-a06b-529aada16a53
+
+PARSFILE Plot\Setup\Plot_98eadcd4-fdee-4dc9-b1a0-537e80c706ea.par
+#BlueLink18 Plot: Setup`Longitudinal Forces (Axle 1)` Tire Forces and Moments` , Plot`Plot_98eadcd4-fdee-4dc9-b1a0-537e80c706ea
+
+PARSFILE Plot\Setup\Plot_9aab2c4b-b147-4817-b3fc-a3c1941cf112.par
+#BlueLink19 Plot: Setup`Wheel Speeds (Axle 1)` Braking` , Plot`Plot_9aab2c4b-b147-4817-b3fc-a3c1941cf112
+
+#BlueLink23 CarSim Run Control`Braking - Split Mu: No ABS` Brake Tests` , Overlay run or ERD file`Run_5b3d86e9-3bdc-4863-b51d-fa00438bded3
+
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Vehicles\Assembly\Vehicle_d43acacb-0c00-4a31-955e-f74d6aa2cddf.png
+WRITE_SENSOR_DETECT
+Title Ext. ABS: Split Mu, Change Import Mode <Change Import Mode>
+CATEGORY Change Import Mode 
+DATASET_TITLE Ext. ABS: Split Mu, Change Import Mode
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#This example demonstrates the command SET_IMPORT_MODE that changes the mode of an import variable during a run. It starts with four imports being set for use in Simulink with IMPORT, but setting the mode to AVAILABLE. The connection to Simulink has an array with four signals, but the imported variables are not used in the VS Math Model at the start of the run.
+#
+#An Event is used to read a Parsfile dataset if either left wheel is close to lockup. The Event Parsfile changes the modes for the four Import variables from AVAILABLE to REPLACE, indicating to the VS Math Model that they should be used.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { Change Import Mode } Ext. ABS: Split Mu, Change Import Mode
+#Library : CarSim Run Control
+#DataSet : Ext. ABS: Split Mu, Change Import Mode
+#Category: Change Import Mode
+#FileID  : Run_bcabc916-3ce6-4e98-a37e-583139b7cace
+#Created : 04-04-2023 10:42:59
+#Modified: 07-17-2023 14:10:22
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Run
+
+END

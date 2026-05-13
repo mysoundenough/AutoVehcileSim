@@ -1,0 +1,34 @@
+PARSFILE
+#FullDataName Animator: Shape File Link`Road Course: Entrance`Generic Proving Ground: Signs
+#MiscYellow3
+add_obj Animator\3D_shape_files_DS\proving_ground\entrance_signs\road_course_sign.obj
+#ENDMYellow
+
+SET_COLOR 0.878 0.878 0.878
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 0    
+
+SET_SPECULAR 1 1 1
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_ed79f493-c2ab-44c3-b747-053c314c42e3.par
+#BlueLink2 Animator: Camera Setup`Proving Grounds: Road Course Entrance` Scene Specific Preview` , Video Camera`Camera_ed79f493-c2ab-44c3-b747-053c314c42e3
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_b013cf93-2070-499e-8114-92f2f22f8f34.png
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Generic Proving Ground: Signs } Road Course: Entrance
+#Library : Animator: Shape File Link
+#DataSet : Road Course: Entrance
+#Category: Generic Proving Ground: Signs
+#FileID  : Shape_b013cf93-2070-499e-8114-92f2f22f8f34
+#Modified: 05-28-2021 15:03:15
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape File
+
+END

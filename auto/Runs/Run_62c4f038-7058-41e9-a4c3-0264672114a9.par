@@ -1,0 +1,107 @@
+PARSFILE
+#FullDataName CarSim Run Control`Reproduce Run from Echo File`Echo File Options
+#VEHICLECODE i_i
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_62c4f038-7058-41e9-a4c3-0264672114a9
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Animator\Cameras\Camera_32ea6678-907c-4a10-af4b-b9431e3d2f8a.par
+#BlueLink0 Animator: Camera Setup`13 Azm, 9 El, 18 m, No Yaw` Vehicle Reference` , Animator camera`Camera_32ea6678-907c-4a10-af4b-b9431e3d2f8a
+
+#CheckBox0 1    
+#CheckBox1 1    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 0    
+#CheckBox5 0    
+#CheckBox6 0    
+#CheckBox7 1    
+#CheckBox8 1    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+#CheckBox12 0    
+
+#RingCtrl0 0
+#RingCtrl1 0
+#RingCtrl2 3
+#RingCtrl3 0
+#RingCtrl6 8
+#RingCtrl7 -1
+*RUN_COLOR 0.8 0 0
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Generic\External\GenExt_fe983991-2bfb-4deb-b980-606e61ad2c14.par
+#BlueLink2 External Parsfile`Echo File for Baseline Run` Run fom Echo Files` , Math Model`GenExt_fe983991-2bfb-4deb-b980-606e61ad2c14
+
+DELETE_PLOT_GROUP default
+PLOT_GROUP default
+PARSFILE Plot\Setup\Plot_315ea46e-b7b6-40d8-84de-a7ef2624a470.par
+#BlueLink15 Plot: Setup`Lateral Tracking vs. Station` Tracking` , Plot`Plot_315ea46e-b7b6-40d8-84de-a7ef2624a470
+
+PARSFILE Plot\Setup\Plot_076736e1-2cdd-49d5-8a36-d55940b011f0.par
+#BlueLink16 Plot: Setup`Steering: Handwheel Angle` Steering` , Plot`Plot_076736e1-2cdd-49d5-8a36-d55940b011f0
+
+PARSFILE Plot\Setup\Plot_57fbe53b-9356-4cb1-9fd0-29f3e70d3894.par
+#BlueLink17 Plot: Setup`Road Wheel Steer Angle - Front` Steering` , Plot`Plot_57fbe53b-9356-4cb1-9fd0-29f3e70d3894
+
+PARSFILE Plot\Setup\Plot_8b22f20a-1297-43cf-9e59-a0b1d530d136.par
+#BlueLink18 Plot: Setup`Lateral Accel. of CG's vs. Time` Vehicle Motion` , Plot`Plot_8b22f20a-1297-43cf-9e59-a0b1d530d136
+
+PARSFILE Plot\Setup\Plot_881b430b-dfba-4afc-a6ce-ff0d76b1c26c.par
+#BlueLink19 Plot: Setup`Pitch Angle of Sprung Masses vs. Time` Vehicle Motion` , Plot`Plot_881b430b-dfba-4afc-a6ce-ff0d76b1c26c
+
+PARSFILE Plot\Setup\Plot_310b0189-b08d-49fc-a484-ee359eb89744.par
+#BlueLink20 Plot: Setup`Yaw Rate of Sprung Masses vs. Time` Vehicle Motion` , Plot`Plot_310b0189-b08d-49fc-a484-ee359eb89744
+
+PARSFILE Plot\Setup\Plot_a146934a-339c-4983-9664-0f9749a0dfd6.par
+#BlueLink21 Plot: Setup`Vertical Forces` Tire Forces and Moments` , Plot`Plot_a146934a-339c-4983-9664-0f9749a0dfd6
+
+PARSFILE Plot\Setup\Plot_a243fc1c-fc6b-4404-89ac-bc8209a293be.par
+#BlueLink22 Plot: Setup`Longitudinal Speed (Vxz_Fwd) vs. Time` Vehicle Motion` , Plot`Plot_a243fc1c-fc6b-4404-89ac-bc8209a293be
+
+
+SPECIAL_PARSFILE Runs\Run_1a548dd6-6d7e-4561-905e-c3bb1a6e098b.par
+#BlueLink23 CarSim Run Control`Do Not Show [D], Echo WRITE` Echo File Options` , Overlay run or ERD file`Run_1a548dd6-6d7e-4561-905e-c3bb1a6e098b
+
+
+*IMAGE_TYPE PASS_THROUGH
+WRITE_SENSOR_DETECT
+Title Reproduce Run from Echo File <Echo File Options>
+CATEGORY Echo File Options 
+DATASET_TITLE Reproduce Run from Echo File
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#This shows that an Echo file works as an input for the VS Math Model, preproducing the Quick Start Guide example.
+#
+#The Echo file does not have any animator support files, so the VS Math Model outputs can be plotted or exported, but no used for an animation.
+#
+#The Echo file used for this examples was made with no [D] indicators but with all WRITE commands to generate outputs.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { Echo File Options } Reproduce Run from Echo File
+#Library : CarSim Run Control
+#DataSet : Reproduce Run from Echo File
+#Category: Echo File Options
+#FileID  : Run_62c4f038-7058-41e9-a4c3-0264672114a9
+#Created : 11-20-2023 10:48:43
+#Modified: 12-12-2023 09:54:02
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Run
+
+END

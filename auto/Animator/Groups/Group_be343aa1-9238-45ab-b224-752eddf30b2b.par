@@ -1,0 +1,31 @@
+PARSFILE
+#FullDataName Animator: Group`UNREAL_Test_Scene_Shapes`Roads and Environment
+PARSFILE Animator\STL\Shape_49ec2b67-c69f-4050-83c8-c2af7ba422b8.par
+#BlueLink0 Animator: Shape File Link`UNREAL_Test_Scene_Environment` Self-Contained Scenes` , Miscellaneous`Shape_49ec2b67-c69f-4050-83c8-c2af7ba422b8
+
+PARSFILE Animator\STL\Shape_c78edb1e-55e2-408b-90e3-2b098b8b2e25.par
+#BlueLink1 Animator: Shape File Link`UNREAL_Test_Scene_Background` Self-Contained Scenes` , Miscellaneous`Shape_c78edb1e-55e2-408b-90e3-2b098b8b2e25
+
+PARSFILE Animator\STL\Shape_532b3959-ba52-4e9b-b19e-686832f1403c.par
+#BlueLink2 Animator: Shape File Link`UNREAL_Test_Scene_Roads` Self-Contained Scenes` , Miscellaneous`Shape_532b3959-ba52-4e9b-b19e-686832f1403c
+
+
+#CheckBox0 0    
+
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_9080781f-cafb-4524-9f90-b976961c41a3.par
+#BlueLink20 Animator: Camera Setup`Isometric View - Scene Objects` Shape Preview` , Video Camera`Camera_9080781f-cafb-4524-9f90-b976961c41a3
+
+
+LOG_ENTRY Used Dataset: Animator: Group; { Roads and Environment } UNREAL_Test_Scene_Shapes
+#Library : Animator: Group
+#DataSet : UNREAL_Test_Scene_Shapes
+#Category: Roads and Environment
+#FileID  : Group_be343aa1-9238-45ab-b224-752eddf30b2b
+#Created : 05-09-2023 08:18:07
+#Modified: 05-09-2023 13:47:49
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Animator Group
+
+END

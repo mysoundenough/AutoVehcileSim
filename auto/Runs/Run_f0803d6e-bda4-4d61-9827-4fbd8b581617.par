@@ -1,0 +1,92 @@
+PARSFILE
+#FullDataName CarSim Run Control`04b - Steer kinematics - engine off`K & C Tests - Complete sequence
+#VEHICLECODE ignore
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_f0803d6e-bda4-4d61-9827-4fbd8b581617
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Animator\Cameras\Camera_78646c82-3c25-4eef-b153-d76a910f00fb.par
+#BlueLink0 Animator: Camera Setup`K & C View` K & C` , Animator camera`Camera_78646c82-3c25-4eef-b153-d76a910f00fb
+
+
+SPECIAL_PARSFILE Runs\Run_d9be42a4-e12e-4991-bab7-2410138b9a40.par
+#BlueLink1 CarSim Run Control`01 - K & C: Design Load (no plots)` K & C Tests - Complete sequence` , Continue`Run_d9be42a4-e12e-4991-bab7-2410138b9a40
+
+PARSFILE Results\Run_d9be42a4-e12e-4991-bab7-2410138b9a40\LastRun_END.PAR
+#CheckBox0 1    
+#CheckBox1 1    
+#CheckBox2 1    
+#CheckBox3 0    
+#CheckBox4 0    
+#CheckBox5 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox8 1    
+#CheckBox9 0    
+#CheckBox10 1    
+#CheckBox11 0    
+#CheckBox12 0    
+
+#RingCtrl0 4
+#RingCtrl1 2
+#RingCtrl2 3
+#RingCtrl3 0
+#RingCtrl6 0
+#RingCtrl7 -1
+*RUN_COLOR 1 0 0
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Procedures\Proc_3812bd15-8e94-4a86-87b9-66c0f75c9e3c.par
+#BlueLink28 Procedures`04a - Steer - kinematics` K&C Test Sequence` , Procedure`Proc_3812bd15-8e94-4a86-87b9-66c0f75c9e3c
+
+
+SPECIAL_PARSFILE Runs\Run_3880d438-d2c7-4034-b073-51b0fcc6df44.par
+#BlueLink23 CarSim Run Control`04a - Steer kinematics - engine on` K & C Tests - Complete sequence` , Overlay run or ERD file`Run_3880d438-d2c7-4034-b073-51b0fcc6df44
+
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Animator\Vehicles\AniVeh_4ce91de0-b4f4-4075-a4a9-d4fc5b973de3.png
+WRITE_SENSOR_DETECT
+Title 04b - Steer kinematics - engine off <K & C Tests - Complete sequence>
+CATEGORY K & C Tests - Complete sequence 
+DATASET_TITLE 04b - Steer kinematics - engine off
+#MiscYellow0
+! Enable/disable boost for a rack and pnion
+F_BOOST_R_GAIN 0
+! Enable/disable boost for recirculating ball
+! or column assist
+M_BOOST_G_GAIN 0
+#ENDMYellow
+
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#This steering test represents the "engine off" case for power steering systems.
+#
+#In CarSim, the only characteristic that is affected by engine on/off status is the existence of power steering assist (boost), so boost is disabled for this test.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { K & C Tests - Complete sequence } 04b - Steer kinematics - engine off
+#Library : CarSim Run Control
+#DataSet : 04b - Steer kinematics - engine off
+#Category: K & C Tests - Complete sequence
+#FileID  : Run_f0803d6e-bda4-4d61-9827-4fbd8b581617
+#Modified: 03-25-2024 14:47:20
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Run
+
+END

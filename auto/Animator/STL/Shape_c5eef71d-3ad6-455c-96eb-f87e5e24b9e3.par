@@ -1,0 +1,41 @@
+PARSFILE
+#FullDataName Animator: Shape File Link`MCity: Shuttle Stop`Environment: Road Signs
+#MiscYellow3
+add_obj Animator\3D_Shape_Files\Environment\Road_Signs\United_States\MCity_Shuttle\MCity_Shuttle.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
+#BlueLink2 Animator: Camera Setup`YZ-Plane, No Offsets (with Yaw)` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_c5eef71d-3ad6-455c-96eb-f87e5e24b9e3.png
+
+#EMBEDDED_NOTES
+#US Road Sign
+#No U-Turn
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Environment: Road Signs } MCity: Shuttle Stop
+#Library : Animator: Shape File Link
+#DataSet : MCity: Shuttle Stop
+#Category: Environment: Road Signs
+#FileID  : Shape_c5eef71d-3ad6-455c-96eb-f87e5e24b9e3
+#Created : 09-27-2022 12:41:28
+#Modified: 09-27-2022 14:39:03
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape File
+
+END

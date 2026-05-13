@@ -1,0 +1,38 @@
+PARSFILE
+#FullDataName Events`04c - Steer torque - reduce to min`K&C Test Sequence
+#CheckBox1 1    
+*CLEAR
+#CheckBox6 0    
+#CheckBox7 1    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 ZERO ~=
+#RingCtrl1 ZERO ~=
+#RingCtrl10 2
+#RingCtrl11 4
+RESET_EVENTS
+*VALUE1 at_min & END_AFTER_EVENT
+*VALUE2 at_min
+PARSFILE Generic\VS_commands\GenVS_becc8888-1739-4a89-a8e2-1cf4e8dc3901.par
+#BlueLink10 Generic VS Commands`04c - Steer torque - reduce to min` K&C Test Sequence` , Miscellaneous`GenVS_becc8888-1739-4a89-a8e2-1cf4e8dc3901
+
+DEFINE_EVENT at_min & END_AFTER_EVENT ; Events\Events_b5af09b5-d8ad-4e81-ae24-eebce691780e.par
+#BlueLink0 Events`End Events` ` , Events`Events_b5af09b5-d8ad-4e81-ae24-eebce691780e
+
+DEFINE_EVENT at_min ; Events\Events_285b48d2-0c89-49ed-8ab2-89427aa6b5e6.par
+#BlueLink1 Events`04c - Steer torque - increase to max` K&C Test Sequence` , Events`Events_285b48d2-0c89-49ed-8ab2-89427aa6b5e6
+
+SET_EVENT_ID 0 ! reset to default
+
+LOG_ENTRY Used Dataset: Events; { K&C Test Sequence } 04c - Steer torque - reduce to min
+#Library : Events
+#DataSet : 04c - Steer torque - reduce to min
+#Category: K&C Test Sequence
+#FileID  : Events_77682088-be12-4899-b9c9-6624ce5bda40
+#Modified: 05-28-2021 14:59:28
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

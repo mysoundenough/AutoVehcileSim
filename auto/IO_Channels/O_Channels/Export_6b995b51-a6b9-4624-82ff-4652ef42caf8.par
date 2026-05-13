@@ -1,0 +1,24 @@
+PARSFILE
+#FullDataName I/O Channels: Export`Speed`4 SF examples
+#RingCtrl1 1
+
+
+EXPORT Vxz_Fwd
+#MiscYellow0
+#Number of Selected Channels: 1
+#CHN_NAME: Vxz_Fwd
+#ENDMYellow
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Export; { 4 SF examples } Speed
+#Library : I/O Channels: Export
+#DataSet : Speed
+#Category: 4 SF examples
+#FileID  : Export_6b995b51-a6b9-4624-82ff-4652ef42caf8
+#Created : 09-28-2022 08:18:54
+#Modified: 10-19-2022 10:05:18
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Export Channels
+
+END

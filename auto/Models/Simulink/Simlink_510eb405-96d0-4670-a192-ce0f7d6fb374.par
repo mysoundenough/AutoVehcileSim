@@ -1,0 +1,73 @@
+PARSFILE
+#FullDataName Models: Simulink`Vehicle Hauling - Car 1`Parallel Solvers
+#RunMdlFile Extensions\Simulink\Parallel_Solver\Vehicle_Hauling.mdl
+SIMULINK_MODEL_FILE Extensions\Simulink\Parallel_Solver\Vehicle_Hauling.mdl
+#RingCtrl0 -1
+#RingCtrl2 1
+*MULTI_SOLVERS 1
+*MULTI_S_WRAPPER 0
+#CheckBox0 1    
+*USE_ALT_DIR 1
+#CheckBox1 0    
+*USE_DIFF_SOLVERS 0
+#CheckBox3 1    
+#CheckBox5 0    
+#RingCtrl1 2
+OPT_INT_METHOD 2
+#CheckBox2 0    
+OPT_IO_UPDATE 0
+*TSTEP 0.001
+*FREQ_MODEL 1000
+*TSTEP_OUT 0.025
+*FREQ_OUT 40
+tstep 0.001
+iprint 25
+#AltPath Extensions\Simulink\Parallel_Solver
+*ALTERNATE_PATH Extensions\Simulink\Parallel_Solver
+PARSFILE IO_Channels\I_Channels\Import_012cd409-820d-4620-9406-0f28a4f4d21f.par
+#BlueLink0 I/O Channels: Import`Restrained Vehicle Forces` Parallel Solvers` , Import`Import_012cd409-820d-4620-9406-0f28a4f4d21f
+
+PARSFILE IO_Channels\O_Channels\Export_f6fd6f27-65de-4632-bcd4-aa8a57227544.par
+#BlueLink1 I/O Channels: Export`Restraint Point Positions and Velocities` Parallel Solvers` , Import/Export`Export_f6fd6f27-65de-4632-bcd4-aa8a57227544
+
+#BlueLink3 I/O Channels: Ports` ` , vs_ctl Ports` , vs_state Ports`
+
+#BlueLink4 I/O Channels: Ports` ` , vs_kin Ports` , vs_ctl Ports`
+
+#BlueLink5 I/O Channels: Ports` ` , vs_dyn Ports` , vs_kin Ports`
+
+#BlueLink6 I/O Channels: Ports` ` , vs_dyn Ports` , vs_dyn Ports`
+
+#MiscYellow1
+! Include Parallel Models datasets for vehicle hauling
+*CPAR_INCLUDE Batch\MultiVehicles\MVeh_4da9db6e-8605-4c24-8b5d-5b655cf39ed4.par
+*CPAR_INCLUDE Batch\MultiVehicles\MVeh_288cdeea-175e-4d34-bd7a-bc7e560e25dd.par
+#ENDMYellow
+
+LIVE_SERVER_UPDATE_FREQ_MAX 60
+
+#EMBEDDED_NOTES
+#Models: Simulink dataset for use with the Parallel Solvers example: Vehicle Hauling.
+#
+# -When using the Parallel Solvers library for this example the Models: Simulink dataset attached to each vehicle must:
+#  a) use the same Simulink model file,
+#  b) use identical settings for the working directory (which should also contain the Simulink .mdl or .slx file), and
+#  c) adhere to the following Import/Export configuration guidelines:
+#     - The Lead vehicle exports the restraint positions and velocities
+#     - The Lead vehicle imports the restrained vehicle reation forces
+#     - The hauled vehicle exports restraint reaction forces and vertical tire forces
+#
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Models: Simulink; { Parallel Solvers } Vehicle Hauling - Car 1
+#Library : Models: Simulink
+#DataSet : Vehicle Hauling - Car 1
+#Category: Parallel Solvers
+#FileID  : Simlink_510eb405-96d0-4670-a192-ce0f7d6fb374
+#Created : 01-11-2023 13:34:09
+#Modified: 06-20-2023 10:57:53
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode 
+
+END

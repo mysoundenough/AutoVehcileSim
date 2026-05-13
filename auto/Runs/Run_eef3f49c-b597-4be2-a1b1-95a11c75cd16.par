@@ -1,0 +1,96 @@
+PARSFILE
+#FullDataName CarSim Run Control`AEB CBNA_50`AEB: Euro NCAP Tests
+#VEHICLECODE Ind_Ind
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_eef3f49c-b597-4be2-a1b1-95a11c75cd16
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Animator\Cameras\Camera_a9e4c717-826f-442b-967d-33b4745d2855.par
+#BlueLink0 Animator: Camera Setup`165 Azm, 20 El, 16.5 m` Vehicle Reference` , Animator camera`Camera_a9e4c717-826f-442b-967d-33b4745d2855
+
+#CheckBox0 1    
+#CheckBox1 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 1    
+#CheckBox5 0    
+#CheckBox6 1    
+#CheckBox7 0    
+#CheckBox8 1    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+#CheckBox12 0    
+
+#RingCtrl0 4
+#RingCtrl1 0
+#RingCtrl2 3
+#RingCtrl3 0
+#RingCtrl6 0
+#RingCtrl7 -1
+*RUN_COLOR 0.878 0.878 0.878
+SET_RUN_COLOR 0.878 0.878 0.878
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Vehicles\Assembly\Vehicle_90ecfa3c-add9-47ee-a728-94f9dcfb4c44.par
+#BlueLink2 Vehicle: Assembly`C-Class, Hatch Euro NCAP Bicyclist` Euro NCAP AEB` , Math Model`Vehicle_90ecfa3c-add9-47ee-a728-94f9dcfb4c44
+
+PARSFILE Procedures\Proc_d9e62ae7-9df4-47bb-a3be-d916c4c012c0.par
+#BlueLink28 Procedures`CBNA: VDA 4-Way Inter.` Pedestrian Euro NCAP` , Procedure`Proc_d9e62ae7-9df4-47bb-a3be-d916c4c012c0
+
+PARSFILE Generic\VS_commands\GenVS_a98d50ef-9d49-4e2a-ac9d-f8d07b284f25.par
+#BlueLink9 Generic VS Commands`Plot and HUD Outputs for Occlusion Test` Pedestrian Euro NCAP` , Miscellaneous`GenVS_a98d50ef-9d49-4e2a-ac9d-f8d07b284f25
+
+PARSFILE Animator\HUD\HUD_50b5cbe1-33aa-41fb-8024-a59af62ac220.par
+#BlueLink10 Animator: HUD`CBNA 50 Label` Euro NCAP` , Miscellaneous`HUD_50b5cbe1-33aa-41fb-8024-a59af62ac220
+
+*TSTEP 0.0005
+*FREQ_MODEL 2000
+*TSTEP_OUT 0.01
+*FREQ_OUT 100
+tstep 0.0005
+iprint 20
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Vehicles\Assembly\Vehicle_90ecfa3c-add9-47ee-a728-94f9dcfb4c44.png
+WRITE_SENSOR_DETECT
+Title AEB CBNA_50 <AEB: Euro NCAP Tests>
+CATEGORY AEB: Euro NCAP Tests 
+DATASET_TITLE AEB CBNA_50
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#This example mimics the Car-to-Pedestrian Nearside Bicyclist 50 test from the Euro NCAP Vulnerable Road User (VRU) AEB test
+#
+#In this test the objective is to avoid hitting the crossing bicyclist target (patially blocked by occlusion vehicles), with use of Autonomous Emergency Braking (AEB) - at speeds from 10-60 km/h
+#
+#There is a camera sensor mounted on the ego vehicle, and a sensor within the bicyclist moving object which senses the ego vehicle front bumper.
+#
+#A score is tabulated during the run, using the Euro NCAP VRU AEB points schedule for CBNA 50, located in a Generic Table
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { AEB: Euro NCAP Tests } AEB CBNA_50
+#Library : CarSim Run Control
+#DataSet : AEB CBNA_50
+#Category: AEB: Euro NCAP Tests
+#FileID  : Run_eef3f49c-b597-4be2-a1b1-95a11c75cd16
+#Created : 08-06-2021 17:21:38
+#Modified: 11-21-2022 14:16:15
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Run
+
+END

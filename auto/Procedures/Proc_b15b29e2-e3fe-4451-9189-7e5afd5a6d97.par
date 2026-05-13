@@ -1,0 +1,55 @@
+PARSFILE
+#FullDataName Procedures`05a - Fy compliance (parallel)`K&C Test Sequence
+#CheckBox1 1    
+OPT_INIT_PATH 1
+
+#RingCtrl0 4
+#RingCtrl1 -1
+#RingCtrl2 0
+OPT_STOP -1
+SSTART 0
+TSTART 0
+TSTART_WRITE = 0;
+SSTOP = SSTART + 1 ;
+OPT_DIRECTION 1
+TSTOP -1
+*TSTOP 250
+*TSTART 0
+*SSTART 0
+
+PARSFILE Generic\VS_commands\GenVS_1bd06cf0-4e33-4a88-94a7-131a74433ac5.par
+#BlueLink0 Generic VS Commands`05a - Fy compliance (parallel)` K&C Test Sequence` , Miscellaneous`GenVS_1bd06cf0-4e33-4a88-94a7-131a74433ac5
+
+PARSFILE Events\Events_823d57c7-548b-4ca0-9664-5c877cdbd03f.par
+#BlueLink1 Events`05a - Increase to max neg force` K&C Test Sequence` , Miscellaneous`Events_823d57c7-548b-4ca0-9664-5c877cdbd03f
+
+PARSFILE Plot\Setup\Plot_03ea5614-9c63-4a14-b58a-86da54c9e732.par
+#BlueLink8 Plot: Setup`Camber vs Fy` K&C Test Results` , Plot`Plot_03ea5614-9c63-4a14-b58a-86da54c9e732
+
+PARSFILE Plot\Setup\Plot_b95da2cb-0067-4f9d-b9fe-4dadffcd7a44.par
+#BlueLink9 Plot: Setup`Steer vs Fy` K&C Test Results` , Plot`Plot_b95da2cb-0067-4f9d-b9fe-4dadffcd7a44
+
+PARSFILE Plot\Setup\Plot_0773e087-151d-42db-a308-f02b7b6ee48d.par
+#BlueLink10 Plot: Setup`Lateral Forces` Tire Forces and Moments` , Plot`Plot_0773e087-151d-42db-a308-f02b7b6ee48d
+
+PARSFILE Plot\Setup\Plot_a146934a-339c-4983-9664-0f9749a0dfd6.par
+#BlueLink11 Plot: Setup`Vertical Forces` Tire Forces and Moments` , Plot`Plot_a146934a-339c-4983-9664-0f9749a0dfd6
+
+PARSFILE Plot\Setup\Plot_ef35c81f-c710-4a6c-b123-19c7b8cbdfd2.par
+#BlueLink12 Plot: Setup`Jounce - Front vs Fy` K&C Test Results` , Plot`Plot_ef35c81f-c710-4a6c-b123-19c7b8cbdfd2
+
+PARSFILE Plot\Setup\Plot_32dd1ec8-9b9b-4e02-b880-b8f332714c53.par
+#BlueLink13 Plot: Setup`Jounce - Rear vs Fy` K&C Test Results` , Plot`Plot_32dd1ec8-9b9b-4e02-b880-b8f332714c53
+
+
+LOG_ENTRY Used Dataset: Procedures; { K&C Test Sequence } 05a - Fy compliance (parallel)
+#Library : Procedures
+#DataSet : 05a - Fy compliance (parallel)
+#Category: K&C Test Sequence
+#FileID  : Proc_b15b29e2-e3fe-4451-9189-7e5afd5a6d97
+#Modified: 05-28-2021 14:59:20
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Procedure
+
+END

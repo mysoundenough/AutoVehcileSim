@@ -1,0 +1,24 @@
+PARSFILE
+#FullDataName I/O Channels: Ports`Spring Forces (Dynamics)`External Springs
+#RingCtrl0 1
+#RingCtrl1 1
+#CheckBox0 0    
+
+IPORT_IMP 1
+PARSFILE IO_Channels\I_Channels\Import_82d4371e-1b4d-468f-b43d-70ba9e137245.par
+#BlueLink0 I/O Channels: Import`Spring Forces` Suspension and Ride Control` , Library for factor A`Import_82d4371e-1b4d-468f-b43d-70ba9e137245
+
+IPORT_EXP 1
+
+LOG_ENTRY Used Dataset: I/O Channels: Ports; { External Springs } Spring Forces (Dynamics)
+#Library : I/O Channels: Ports
+#DataSet : Spring Forces (Dynamics)
+#Category: External Springs
+#FileID  : Port_af8e4c5c-597b-429c-b40f-bb4240821986
+#Created : 11-10-2022 13:47:45
+#Modified: 11-16-2022 12:44:17
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode I/O Ports
+
+END

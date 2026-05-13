@@ -1,0 +1,23 @@
+PARSFILE
+#FullDataName I/O Channels: Ports`Brake Actuator Pressures, Import`ABS, 2 SFs
+#RingCtrl0 1
+#RingCtrl1 0
+#CheckBox0 0    
+
+IPORT_IMP 1
+PARSFILE IO_Channels\I_Channels\Import_a34dca41-ec1d-4d68-a2fe-4aa68169657e.par
+#BlueLink0 I/O Channels: Import`ABS: Wheel Cylinder Pressures` Brake System Control` , Library for factor A`Import_a34dca41-ec1d-4d68-a2fe-4aa68169657e
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Ports; { ABS, 2 SFs } Brake Actuator Pressures, Import
+#Library : I/O Channels: Ports
+#DataSet : Brake Actuator Pressures, Import
+#Category: ABS, 2 SFs
+#FileID  : Port_fa87e3cb-4af4-48d9-bfb4-0ba93b17c9ef
+#Created : 09-27-2022 14:25:17
+#Modified: 12-07-2022 14:04:28
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode I/O Ports
+
+END

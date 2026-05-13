@@ -1,0 +1,88 @@
+PARSFILE
+#FullDataName CarSim Run Control`Hill Climb w/ Idle Controller`Powertrain: ICE
+#VEHICLECODE Ind_Ind
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_fad54650-a083-4453-a1bb-4a9e9a4d4d1f
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Animator\Cameras\Camera_de93188e-85a0-4e48-a39b-ef07b4e54be0.par
+#BlueLink0 Animator: Camera Setup`175 Azm, 5 El, 20 m, No Yaw` Vehicle Reference` , Animator camera`Camera_de93188e-85a0-4e48-a39b-ef07b4e54be0
+
+#CheckBox0 1    
+#CheckBox1 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 0    
+#CheckBox5 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox8 1    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+#CheckBox12 0    
+
+#RingCtrl0 4
+#RingCtrl1 0
+#RingCtrl2 3
+#RingCtrl3 0
+ANI_T_STAMP
+TIME_CHANNEL T_STAMP
+
+#RingCtrl6 2
+#RingCtrl7 -1
+*RUN_COLOR 0.8 0 0
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 1
+LIVE_SERVER_MAX_CONNECTIONS 1
+PARSFILE Vehicles\Assembly\Vehicle_f2942588-c5f3-40d2-bb38-793078dfee19.par
+#BlueLink2 Vehicle: Assembly`D-Class Sedan w/ Idle Control` D-Class` , Math Model`Vehicle_f2942588-c5f3-40d2-bb38-793078dfee19
+
+PARSFILE Procedures\Proc_61498300-aec8-42aa-b908-00c6257717ef.par
+#BlueLink28 Procedures`Hill Climb w/ Idle Controller` Accel. and Brake Testing` , Procedure`Proc_61498300-aec8-42aa-b908-00c6257717ef
+
+PARSFILE Plot\Setup\Plot_c5c7ec86-771e-40eb-8fab-48dd5a041dbc.par
+#BlueLink15 Plot: Setup`Throttle: After Idle Control` Controls: Driver` , Plot`Plot_c5c7ec86-771e-40eb-8fab-48dd5a041dbc
+
+PARSFILE Plot\Setup\Plot_2cd77a14-4a29-44d1-a8e0-03a81f9c74cf.par
+#BlueLink16 Plot: Setup`Torques in Powertrain` Powertrain` , Plot`Plot_2cd77a14-4a29-44d1-a8e0-03a81f9c74cf
+
+#BlueLink23 CarSim Run Control`DLC, Preview Speed Control` Driver Model` , Overlay run or ERD file`Run_3c0b0556-bee4-4b58-b62a-723cb72a4e75
+
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Animator\Vehicles\AniVeh_4ce91de0-b4f4-4075-a4a9-d4fc5b973de3.png
+WRITE_SENSOR_DETECT
+Title Hill Climb w/ Idle Controller <Powertrain: ICE>
+CATEGORY Powertrain: ICE 
+DATASET_TITLE Hill Climb w/ Idle Controller
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#A D-Class Sedan with an engine idle speed controller installed performs a hill climb, with the controller attempting to keep the engine at or above 750 RPM.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { Powertrain: ICE } Hill Climb w/ Idle Controller
+#Library : CarSim Run Control
+#DataSet : Hill Climb w/ Idle Controller
+#Category: Powertrain: ICE
+#FileID  : Run_fad54650-a083-4453-a1bb-4a9e9a4d4d1f
+#Created : 12-11-2023 15:11:05
+#Modified: 01-23-2024 12:10:10
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Run
+
+END

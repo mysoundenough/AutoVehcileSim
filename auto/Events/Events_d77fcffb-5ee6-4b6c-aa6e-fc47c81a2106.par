@@ -1,0 +1,62 @@
+PARSFILE
+#FullDataName Events`CCRm,s F1: ACC New Test, Decrease Spd`Euro NCAP ACC Testing
+#CheckBox1 1    
+*CLEAR
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 ZERO ~=
+#RingCtrl10 1
+#RingCtrl11 4
+RESET_EVENTS
+*NAME1 t
+*VALUE1 1
+#MiscYellow0
+Crashed = 1
+V_IMPACT = abs(minRelSpeed)
+SPEED_REDUCTION = VUT_START - V_IMPACT
+! slow down
+VUT_START = VUT_START - (5/3.6);
+! update ACC speed limit
+speed_limit = VUT_START
+VUT_GVT_GAP = VUT_START*INIT_TTC
+START_DISTANCE = VUT_GVT_GAP+LEN_GVT
+!Initial location of VUT
+VUT_START_STATION = SSTART_GVT - START_DISTANCE - X_Sensor
+!Set VUT speed
+SPEED_TARGET_CONSTANT(1) = VUT_START
+
+!check if speed reduction was >5km/h, yes 0.5 pts. no, 0 pts.
+! Check if ACC met speed reduction test requirement, during collision event
+SCORE_NEW = if(SPEED_REDUCTION >= MIN_SPD_REDUC, SCORE_OLD + 0.5, SCORE_OLD)
+SCORE_OLD = SCORE_NEW
+#ENDMYellow
+
+DEFINE_EVENT 1 ; Events\Events_1c952d90-0586-43be-a9fa-d7b824c328f0.par
+#BlueLink0 Events`CCRm,s F2. Reset Veh. and Targets, ACC` Euro NCAP ACC Testing` , Events`Events_1c952d90-0586-43be-a9fa-d7b824c328f0
+
+SET_EVENT_ID 0 ! reset to default
+
+#EMBEDDED_NOTES
+#Impact with the target object occured. The variable Crashed is set to 1.
+#
+#Reduce the speed by 5 km/h and try again.
+#
+#If the speed was reduced by the threshold value of 5 km/h award 0.5 points for the test run, if not, award zero points.
+#
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Events; { Euro NCAP ACC Testing } CCRm,s F1: ACC New Test, Decrease Spd
+#Library : Events
+#DataSet : CCRm,s F1: ACC New Test, Decrease Spd
+#Category: Euro NCAP ACC Testing
+#FileID  : Events_d77fcffb-5ee6-4b6c-aa6e-fc47c81a2106
+#Created : 05-05-2021 12:19:53
+#Modified: 10-12-2021 13:46:46
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

@@ -1,0 +1,41 @@
+PARSFILE
+#FullDataName Animator: Shape File Link`Box Trailer, 53-ft: Mudflaps`Trailers
+#MiscYellow3
+add_obj Animator\3D_Shape_Files\Common_Vehicle_Assets\Mudflaps\mudflap_V2.osg
+#ENDMYellow
+
+SET_COLOR 1 1 1
+SET_OFFSET_X -13.8
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_9cfa1033-fce4-4d22-8928-0bfc456f9467.par
+#BlueLink2 Animator: Camera Setup`Vehicles - Trailers (Heavy)` Shape Preview` , Video Camera`Camera_9cfa1033-fce4-4d22-8928-0bfc456f9467
+
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL\Shape_be80868a-90c6-4a8d-8f38-1874e2abee64.png
+
+#EMBEDDED_NOTES
+#
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Trailers } Box Trailer, 53-ft: Mudflaps
+#Library : Animator: Shape File Link
+#DataSet : Box Trailer, 53-ft: Mudflaps
+#Category: Trailers
+#FileID  : Shape_be80868a-90c6-4a8d-8f38-1874e2abee64
+#Created : 12-08-2021 12:03:10
+#Modified: 12-08-2021 12:06:21
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape File
+
+END

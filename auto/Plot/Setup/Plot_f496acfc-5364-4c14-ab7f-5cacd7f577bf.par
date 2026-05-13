@@ -1,0 +1,44 @@
+PARSFILE
+#FullDataName Plot: Setup`Fz Components (VS TMRW)`VS TMRW
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d.par
+#BlueLink0 Plot: Format`Lines without Symbols` ` , Plot format`PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS FzWSI_L1
+PLOTCHANNELS FzBDL_L1
+PLOTCHANNELS FzBDR_L1
+PLOTCHANNELS FzAux_L1
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Fz Components (VS TMRW)
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { VS TMRW } Fz Components (VS TMRW)
+#Library : Plot: Setup
+#DataSet : Fz Components (VS TMRW)
+#Category: VS TMRW
+#FileID  : Plot_f496acfc-5364-4c14-ab7f-5cacd7f577bf
+#Created : 11-30-2022 09:39:28
+#Modified: 11-30-2022 09:45:38
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Plot Setup
+
+END

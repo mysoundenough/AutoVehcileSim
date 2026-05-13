@@ -1,0 +1,37 @@
+PARSFILE
+#FullDataName Payload: Custom`Bike Rack for SUV`
+DEFINE_PAYLOADS 1
+ILOAD = NLOAD
+OPT_PL_BODY_ID = IUNIT
+IOBJECT_SAVE
+SET_DESCRIPTION PAYLOAD_NAME Bike Rack for SUV
+Z_CG_PL 411
+X_CG_PL 4300
+Y_CG_PL 0
+M_PL 40
+IXX_PL 6.8
+IYY_PL 739.6
+IZZ_PL 739.6
+IXZ_PL 0
+IXY_PL 0
+IYZ_PL 0
+*RX 0.412
+*RY 4.300
+*RZ 4.300
+
+#RingCtrl0 0
+OPT_TRAILER_REF_FRAME 0
+IOBJECT_RESTORE
+
+LOG_ENTRY Used Dataset: Payload: Custom; Bike Rack for SUV
+#Library : Payload: Custom
+#DataSet : Bike Rack for SUV
+#Category: 
+#FileID  : Custom_dbccd9b5-a5e8-4d03-a108-e688a517ef15
+#Created : 03-06-2023 13:58:58
+#Modified: 03-07-2023 13:46:29
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Payload: Custom
+
+END

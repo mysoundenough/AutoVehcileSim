@@ -1,0 +1,80 @@
+PARSFILE
+#FullDataName CarSim Run Control`Variable Width Lanes: Trough Wander`Roads and Intersections
+#VEHICLECODE Ind_SA
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_38149b60-2975-4b55-a2c1-5a1409c4d1da
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Animator\Cameras\Camera_32ea6678-907c-4a10-af4b-b9431e3d2f8a.par
+#BlueLink0 Animator: Camera Setup`13 Azm, 9 El, 18 m, No Yaw` Vehicle Reference` , Animator camera`Camera_32ea6678-907c-4a10-af4b-b9431e3d2f8a
+
+#CheckBox0 1    
+#CheckBox1 0    
+#CheckBox2 1    
+#CheckBox3 0    
+#CheckBox4 0    
+#CheckBox5 0    
+#CheckBox6 1    
+#CheckBox7 0    
+#CheckBox8 0    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+#CheckBox12 0    
+
+#RingCtrl0 4
+#RingCtrl1 0
+#RingCtrl2 3
+#RingCtrl3 0
+ANI_T_STAMP
+TIME_CHANNEL T_STAMP
+
+#RingCtrl6 0
+#RingCtrl7 -1
+#RingCtrl4 on
+RT_WINDOW_CLOSE on
+#RingCtrl5 1
+LIVE_SERVER_MAX_CONNECTIONS 1
+PARSFILE Vehicles\Assembly\Vehicle_1b5706dc-31e1-42c4-8598-c83e6b95d5ef.par
+#BlueLink2 Vehicle: Assembly`Pickup, Midsize: Part-Time 4WD (in 2WD)` Pickup Trucks` , Math Model`Vehicle_1b5706dc-31e1-42c4-8598-c83e6b95d5ef
+
+PARSFILE Procedures\Proc_36b5ba90-4b50-4b58-bd84-476a1d968e85.par
+#BlueLink28 Procedures`Trough Wander` Driving` , Procedure`Proc_36b5ba90-4b50-4b58-bd84-476a1d968e85
+
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Vehicles\Assembly\Vehicle_1b5706dc-31e1-42c4-8598-c83e6b95d5ef.png
+WRITE_SENSOR_DETECT
+Title Variable Width Lanes: Trough Wander <Roads and Intersections>
+CATEGORY Roads and Intersections 
+DATASET_TITLE Variable Width Lanes: Trough Wander
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#This example shows a midsize pickup truck driving down an aged 2-lane asphalt road.
+#
+#The road elevation is defined using variable-width lanes, creating a profile that replicates the wear grooves in a heavily-traveled road.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { Roads and Intersections } Variable Width Lanes: Trough Wander
+#Library : CarSim Run Control
+#DataSet : Variable Width Lanes: Trough Wander
+#Category: Roads and Intersections
+#FileID  : Run_38149b60-2975-4b55-a2c1-5a1409c4d1da
+#Modified: 11-21-2022 14:16:27
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Run
+
+END

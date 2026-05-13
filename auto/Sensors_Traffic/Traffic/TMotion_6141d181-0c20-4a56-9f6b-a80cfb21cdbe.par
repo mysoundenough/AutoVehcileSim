@@ -1,0 +1,57 @@
+PARSFILE
+#FullDataName Multiple Moving Objects`Expected Vehicle Location, Closest`Points of Interest
+#RingCtrl0 1
+DEFINE_MOVING_OBJECTS 1
+#RingCtrl1 5
+#CheckBox0 0    
+#CheckBox1 0    
+#CheckBox38 0    
+
+DZ_OBJECT 0
+#MiscYellow0
+#! INSTALL_DM_OUTPUTS ! Need outputs from the driver model
+#EQ_INIT ROAD_ID_OBJ(<<o>>) = CURRENT_ROAD_ID ! now
+#EQ_OUT X_Obj_<<o>> = xObjLocatGlob1 ! Calculate every time step
+#EQ_OUT Y_Obj_<<o>> = yObjLocatGlob1 ! Calculate every time step
+#ENDMYellow
+
+*PATH_ID 0
+*ROAD_ID 0
+
+IOBJECT_INCREMENT
+symbol_add <<o>> 1
+SET_DESCRIPTION OBJECT_NAME Expected Vehicle Location, Closest
+OPT_SPEED_OBJ 0
+! INSTALL_DM_OUTPUTS ! Need outputs from the driver model
+EQ_INIT ROAD_ID_OBJ(<<o>>) = CURRENT_ROAD_ID ! now
+EQ_OUT X_Obj_<<o>> = xObjLocatGlob1 ! Calculate every time step
+EQ_OUT Y_Obj_<<o>> = yObjLocatGlob1 ! Calculate every time step
+#RingCtrl4 1
+PATH_ID_OBJ 0
+ROAD_ID_OBJ 0
+OPT_RECYCLE_OBJ 0
+H_OBJ = 0 ! Default for blank field
+WRITE_ADD_REFERENCE_FRAME_OBJECT
+PARSFILE Animator\STL\Shape_c8a8c764-5b8c-43ec-a833-43074a7878ab.par
+#BlueLink0 Animator: Shape File Link`Sphere: 0.1m Radius (Orange)` Geometric Shapes` , 3D Shape for Video`Shape_c8a8c764-5b8c-43ec-a833-43074a7878ab
+
+MATERIAL_TYPE_OBJ 0
+REFLECT_OBJ 0
+OPT_SHAPE_OBJ 0
+
+#EMBEDDED_NOTES
+#This moving object location marks the expected lane position of the closest vehicle ahead
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Multiple Moving Objects; { Points of Interest } Expected Vehicle Location, Closest
+#Library : Multiple Moving Objects
+#DataSet : Expected Vehicle Location, Closest
+#Category: Points of Interest
+#FileID  : TMotion_6141d181-0c20-4a56-9f6b-a80cfb21cdbe
+#Created : 10-04-2021 10:25:19
+#Modified: 10-08-2021 10:42:31
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Multiple Objects
+
+END

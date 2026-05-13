@@ -1,0 +1,30 @@
+PARSFILE
+#FullDataName Wind Speed`Constant: 120 km/h`Constant
+#CheckBox0 0    
+
+#RingCtrl0 CONSTANT
+#RingCtrl1 CONSTANT
+#RingCtrl2 ADD
+WIND_SPEED_COMBINE ADD
+WIND_SPEED_CONSTANT 120
+WIND_SPEED_S_CONSTANT 0
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+*SCALAR 120
+*SCALAR2 0
+D_AIR 1.206
+
+
+LOG_ENTRY Used Dataset: Wind Speed; { Constant } Constant: 120 km/h
+#Library : Wind Speed
+#DataSet : Constant: 120 km/h
+#Category: Constant
+#FileID  : Wind_6ccad2e5-8eb6-4c82-a840-76bdc3d08bf7
+#Created : 10-06-2022 11:05:12
+#Modified: 10-06-2022 11:05:21
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Wind Speed
+
+END

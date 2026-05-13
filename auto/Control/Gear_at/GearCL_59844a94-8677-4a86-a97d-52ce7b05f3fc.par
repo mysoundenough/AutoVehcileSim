@@ -1,0 +1,22 @@
+PARSFILE
+#FullDataName Control: Shifting (Closed Loop)`AT 1st Gear`Closed-Loop Shifting
+#CheckBox0 0    
+
+#RingCtrl0 CONSTANT
+MODE_TRANS_CONSTANT 1
+#RadioCtrl0 0    
+
+*SCALAR 1
+
+
+LOG_ENTRY Used Dataset: Control: Shifting (Closed Loop); { Closed-Loop Shifting } AT 1st Gear
+#Library : Control: Shifting (Closed Loop)
+#DataSet : AT 1st Gear
+#Category: Closed-Loop Shifting
+#FileID  : GearCL_59844a94-8677-4a86-a97d-52ce7b05f3fc
+#Modified: 05-28-2021 15:02:39
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Closed-Loop Shift Control
+
+END

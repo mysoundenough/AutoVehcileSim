@@ -1,0 +1,21 @@
+PARSFILE
+#FullDataName I/O Channels: Import`Steering Target Point (X-Y)`Parallel Solvers
+#RingCtrl1 1
+
+#MiscYellow0
+IMP_X_DM Replace 0.0! 1
+IMP_Y_DM Replace 0.0! 1
+#ENDMYellow
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Import; { Parallel Solvers } Steering Target Point (X-Y)
+#Library : I/O Channels: Import
+#DataSet : Steering Target Point (X-Y)
+#Category: Parallel Solvers
+#FileID  : Import_988a8402-933a-4f86-8f68-042aa9c08d1c
+#Modified: 08-03-2021 10:14:07
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Import Channels
+
+END

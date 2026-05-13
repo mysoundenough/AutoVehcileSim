@@ -1,0 +1,37 @@
+PARSFILE
+#FullDataName Plot: Setup`Pitman Arm Rotation`Steering
+
+ADD_ENTITY Plot
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS A_Gear1, time
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Pitman Arm Rotation
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Steering } Pitman Arm Rotation
+#Library : Plot: Setup
+#DataSet : Pitman Arm Rotation
+#Category: Steering
+#FileID  : Plot_6d9237a7-3bb1-4b2d-aea2-80d5887aec20
+#Modified: 05-28-2021 14:59:43
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Plot Setup
+
+END

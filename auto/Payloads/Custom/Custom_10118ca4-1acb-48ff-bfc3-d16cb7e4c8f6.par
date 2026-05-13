@@ -1,0 +1,34 @@
+PARSFILE
+#FullDataName Payload: Custom`Artic Bus: Passengers - Unit 1 Simple`
+DEFINE_PAYLOADS 1
+ILOAD = NLOAD
+OPT_PL_BODY_ID = IUNIT
+IOBJECT_SAVE
+SET_DESCRIPTION PAYLOAD_NAME Artic Bus: Passengers - Unit 1 Simple
+Z_CG_PL 2000
+X_CG_PL 2600
+Y_CG_PL 0
+M_PL 4951
+IXX_PL 2914
+IYY_PL 23857
+IZZ_PL 24243
+*RX 0.767
+*RY 2.195
+*RZ 2.213
+
+#RingCtrl0 0
+OPT_TRAILER_REF_FRAME 0
+IOBJECT_RESTORE
+
+LOG_ENTRY Used Dataset: Payload: Custom; Artic Bus: Passengers - Unit 1 Simple
+#Library : Payload: Custom
+#DataSet : Artic Bus: Passengers - Unit 1 Simple
+#Category: 
+#FileID  : Custom_10118ca4-1acb-48ff-bfc3-d16cb7e4c8f6
+#Created : 05-26-2022 22:29:21
+#Modified: 02-22-2023 13:19:23
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Payload: Custom
+
+END

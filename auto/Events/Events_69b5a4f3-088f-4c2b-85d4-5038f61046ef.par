@@ -1,0 +1,37 @@
+PARSFILE
+#FullDataName Events`Activate Brake Pressure Imports`Braking
+#CheckBox1 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl10 0
+#RingCtrl11 4
+#MiscYellow0
+set_import_mode imp_pbk_l1 replace
+set_import_mode imp_pbk_r1 replace
+set_import_mode imp_pbk_l2 replace
+set_import_mode imp_pbk_r2 replace
+#ENDMYellow
+
+SET_EVENT_ID 0 ! reset to default
+
+#EMBEDDED_NOTES
+#Activate the replacement of brake pressure with values imported from Simluink.
+#
+#For this to work, the four import variables had to have been specified before the run started. They would typically be specified using the AVAILABLE mode.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Events; { Braking } Activate Brake Pressure Imports
+#Library : Events
+#DataSet : Activate Brake Pressure Imports
+#Category: Braking
+#FileID  : Events_69b5a4f3-088f-4c2b-85d4-5038f61046ef
+#Created : 04-05-2023 09:31:34
+#Modified: 04-07-2023 10:54:41
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

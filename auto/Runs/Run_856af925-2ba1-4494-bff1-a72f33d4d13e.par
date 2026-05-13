@@ -1,0 +1,102 @@
+PARSFILE
+#FullDataName CarSim Run Control`ACC: CCRm Test Series, GVT 60 km/h`ACC: Euro NCAP Tests
+#VEHICLECODE Ind_Ind
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_856af925-2ba1-4494-bff1-a72f33d4d13e
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Animator\Cameras\Camera_a9a29c8e-4050-45dd-a1b0-68322cea8073.par
+#BlueLink0 Animator: Camera Setup`150 Azm, 10 El, 6.25 m` Vehicle Reference` , Animator camera`Camera_a9a29c8e-4050-45dd-a1b0-68322cea8073
+
+#CheckBox0 1    
+#CheckBox1 0    
+#CheckBox2 1    
+#CheckBox3 0    
+#CheckBox4 1    
+#CheckBox5 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox8 1    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+#CheckBox12 0    
+
+#RingCtrl0 4
+#RingCtrl1 0
+#RingCtrl2 3
+#RingCtrl3 0
+#RingCtrl6 0
+#RingCtrl7 -1
+*RUN_COLOR 0 0.8 1
+SET_RUN_COLOR 0 0.8 1
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Vehicles\Loaded\VehLoad_ad0e07c0-ecbe-4414-93df-dd582664fb45.par
+#BlueLink2 Vehicle with Loads, Sensors, Trailer, etc.`C-Class ACC, FCW,LKAS, (AEB off)` C-Class` , Math Model`VehLoad_ad0e07c0-ecbe-4414-93df-dd582664fb45
+
+PARSFILE Procedures\Proc_285b9aa9-f0d7-43a1-8742-8a5b46318ba1.par
+#BlueLink28 Procedures`ACC Test Series: CCRm, GVT 60 km/h` ACC: Automatic Cruise Control` , Procedure`Proc_285b9aa9-f0d7-43a1-8742-8a5b46318ba1
+
+PARSFILE Animator\HUD\HUD_28cddbb9-94c6-4e76-a06f-7737ba30c08f.par
+#BlueLink9 Animator: HUD`Throttle and Speed, L. Side, 19% Up` Vehicle Status Indicators` , Miscellaneous`HUD_28cddbb9-94c6-4e76-a06f-7737ba30c08f
+
+PARSFILE Animator\HUD\HUD_b7ba69fa-4ea4-4309-9e2a-2fbfc723ee62.par
+#BlueLink10 Animator: HUD`CCRm Label, GVT 60 km/h` Euro NCAP` , Miscellaneous`HUD_b7ba69fa-4ea4-4309-9e2a-2fbfc723ee62
+
+*TSTOP 6
+*TSTART 0
+*SSTART 0
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Vehicles\Assembly\Vehicle_02f34599-fa67-4a2d-b9f1-ec46601f2987.png
+WRITE_SENSOR_DETECT
+Title ACC: CCRm Test Series, GVT 60 km/h <ACC: Euro NCAP Tests>
+CATEGORY ACC: Euro NCAP Tests 
+DATASET_TITLE ACC: CCRm Test Series, GVT 60 km/h
+#MiscYellow0
+! Adjust the start speed of the GVT ahead of
+! the ego vehilce (instantiated in Procedure)
+Vx_GVT = 60 ; km/h
+#ENDMYellow
+
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#AEB: Autonomous Emergency Braking
+#ACC: Automatic Cruise Control
+#GVT: Global Vehicle Target
+#VUT: Vehicle Under Test (ego vehicle)
+#FCW: Forward Collision Warning
+#LKAS: Lane-Keeping Assistance System
+#CCRm: Car-to-Car Rear, Moving GVT
+#
+#This ACC example is based on a test scenario published by Euro NCAP for AEB systems with modified conditions. A target is moving at 60 km/h and a variety of speeds are simulated for the vehicle with ACC:
+#- No steering controller is used, as LKAS is keeping the vehicle within it's lane, per the Euro NCAP spec.
+#- The GVT speed is defined with an output parameter Vx_GVT that can be set as a constant or managed with an equation.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { ACC: Euro NCAP Tests } ACC: CCRm Test Series, GVT 60 km/h
+#Library : CarSim Run Control
+#DataSet : ACC: CCRm Test Series, GVT 60 km/h
+#Category: ACC: Euro NCAP Tests
+#FileID  : Run_856af925-2ba1-4494-bff1-a72f33d4d13e
+#Modified: 11-21-2022 14:16:14
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Run
+
+END

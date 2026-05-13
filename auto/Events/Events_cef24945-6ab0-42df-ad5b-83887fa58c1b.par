@@ -1,0 +1,33 @@
+PARSFILE
+#FullDataName Events`02 - Jounce - Front at full jounce`K&C Test Sequence
+#CheckBox1 1    
+*CLEAR
+#CheckBox6 0    
+#CheckBox7 1    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 ZERO ~=
+#RingCtrl10 1
+#RingCtrl11 4
+RESET_EVENTS
+*VALUE1 (at_max_l1 | at_max_r1) & (at_max_l2 | at_max_r2)
+PARSFILE Generic\VS_commands\GenVS_94981df3-144b-4534-8f68-be674fbf6d91.par
+#BlueLink10 Generic VS Commands`02 - Jounce - Record max- Fr` K&C Test Sequence` , Miscellaneous`GenVS_94981df3-144b-4534-8f68-be674fbf6d91
+
+DEFINE_EVENT (at_max_l1 | at_max_r1) & (at_max_l2 | at_max_r2) ; Events\Events_4351577c-88e2-4e4c-95c3-7a84f11131a5.par
+#BlueLink0 Events`02 - Jounce: Return to full rebound` K&C Test Sequence` , Events`Events_4351577c-88e2-4e4c-95c3-7a84f11131a5
+
+SET_EVENT_ID 0 ! reset to default
+
+LOG_ENTRY Used Dataset: Events; { K&C Test Sequence } 02 - Jounce - Front at full jounce
+#Library : Events
+#DataSet : 02 - Jounce - Front at full jounce
+#Category: K&C Test Sequence
+#FileID  : Events_cef24945-6ab0-42df-ad5b-83887fa58c1b
+#Modified: 05-28-2021 14:59:27
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

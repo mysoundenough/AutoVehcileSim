@@ -1,0 +1,49 @@
+PARSFILE
+#FullDataName Plot: Setup`Spring Forces`Suspension Forces and Moments
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par
+#BlueLink0 Plot: Format`Default Plot Settings` ` , Plot format`PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS Fs_L1, Time
+PLOTCHANNELS Fs_R1, Time
+PLOTCHANNELS Fs_L2, Time
+PLOTCHANNELS Fs_R2, Time
+PLOTCHANNELS Fs_L3, Time
+PLOTCHANNELS Fs_R3, Time
+PLOTCHANNELS Fs_L4, Time
+PLOTCHANNELS Fs_R4, Time
+PLOTCHANNELS Fs_L5, Time
+PLOTCHANNELS Fs_R5, Time
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Spring Forces
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Suspension Forces and Moments } Spring Forces
+#Library : Plot: Setup
+#DataSet : Spring Forces
+#Category: Suspension Forces and Moments
+#FileID  : Plot_54f319fb-1aa2-48dc-9260-eda2669b08b3
+#Modified: 09-07-2023 14:17:42
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Plot Setup
+
+END

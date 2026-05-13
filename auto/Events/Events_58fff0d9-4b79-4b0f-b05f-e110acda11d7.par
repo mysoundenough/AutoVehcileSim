@@ -1,0 +1,48 @@
+PARSFILE
+#FullDataName Events`Activate AEB, 50%, Bicyclist`Pedestrian Euro NCAP
+#CheckBox1 1    
+*CLEAR
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 ZERO ~=
+#RingCtrl10 1
+#RingCtrl11 4
+RESET_EVENTS
+*NAME1 0
+*VALUE1 1
+#MiscYellow0
+AEB_On = 1 ! need to do this before resetting conditions, before the ...
+next run
+
+!after the non-AEB run, we will run the same setup with AEB on, ...
+so no need to increment speed
+PREV_RUN_SPD_INCR = 0 ! indicates no speed increment
+#ENDMYellow
+
+PARSFILE Generic\VS_commands\GenVS_cc2793b5-f630-42fb-a734-f28f972dcf66.par
+#BlueLink10 Generic VS Commands`Reload Key Parameters, 50%, Bicyclist` Pedestrian Euro NCAP` , Miscellaneous`GenVS_cc2793b5-f630-42fb-a734-f28f972dcf66
+
+DEFINE_EVENT 1 ; Events\Events_23798db7-d5a3-4283-adb9-c0a83ae3f28b.par
+#BlueLink0 Events`Reset Positions, 50%, Bicyclist` Pedestrian Euro NCAP` , Events`Events_23798db7-d5a3-4283-adb9-c0a83ae3f28b
+
+SET_EVENT_ID 0 ! reset to default
+
+#EMBEDDED_NOTES
+#Take one time step to prepare for the resest
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Events; { Pedestrian Euro NCAP } Activate AEB, 50%, Bicyclist
+#Library : Events
+#DataSet : Activate AEB, 50%, Bicyclist
+#Category: Pedestrian Euro NCAP
+#FileID  : Events_58fff0d9-4b79-4b0f-b05f-e110acda11d7
+#Created : 08-17-2021 13:37:44
+#Modified: 08-30-2021 11:00:59
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Events
+
+END

@@ -1,0 +1,64 @@
+PARSFILE
+#FullDataName Vehicle with Loads, Sensors, Trailer, etc.`SUV, Full Size, Hitch Bike Rack`Utility Vehicles
+#VehCode Ind_SA
+#CheckBox0 0    
+#CheckBox1 0    
+
+symbol_push <<hitch_x>> 0
+symbol_push <<hitch_y>> 0
+symbol_push <<hitch_z>> 0
+PARSFILE Vehicles\Assembly\Vehicle_ae739799-e1e6-4392-8847-b92b6c833931.par
+#BlueLink0 Vehicle: Assembly`SUV, Full Size` Utility Vehicles` , Lead Unit`Vehicle_ae739799-e1e6-4392-8847-b92b6c833931
+
+ADD_REFERENCE_FRAME LeadUnitPayloads
+SET_EULER_ANGLES YAW_PITCH_ROLL
+SET_X_NAME Xo
+WRT_Xo
+ANI_Xo
+SET_Y_NAME Yo
+WRT_Yo
+ANI_Yo
+SET_Z_NAME Zo
+WRT_Zo
+ANI_Zo
+SET_YAW_NAME Yaw
+WRT_Yaw
+ANI_Yaw
+SET_PITCH_NAME Pitch
+WRT_Pitch
+ANI_Pitch
+SET_ROLL_NAME Roll_E
+WRT_Roll_E
+ANI_Roll_E
+PARSFILE Payloads\Box\Box_6f76af2d-e684-49e5-9ea8-a767720c9583.par
+#BlueLink1 Payload: Box Shape`Driver - Front Left Seat` Passengers` , Miscellaneous`Box_6f76af2d-e684-49e5-9ea8-a767720c9583
+
+PARSFILE Output\Sensors\MoSen_372602c7-6b30-40f5-9017-977a02868a38.par
+#BlueLink2 Positions, Velocities, and Accelerations`Accelerometers at SM and USM CGs` SM and USM CGs` , Miscellaneous`MoSen_372602c7-6b30-40f5-9017-977a02868a38
+
+PARSFILE Animator\STL_Groups\ShpGrp_87edf80c-187d-46ca-929f-6db5abea5de2.par
+#BlueLink3 Animator: Shape Assembly`Hitch Bike Rack` ` , Miscellaneous`ShpGrp_87edf80c-187d-46ca-929f-6db5abea5de2
+
+PARSFILE Payloads\Custom\Custom_dbccd9b5-a5e8-4d03-a108-e688a517ef15.par
+#BlueLink4 Payload: Custom`Bike Rack for SUV` ` , Miscellaneous`Custom_dbccd9b5-a5e8-4d03-a108-e688a517ef15
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Vehicles\Assembly\Vehicle_ae739799-e1e6-4392-8847-b92b6c833931.png
+
+#EMBEDDED_NOTES
+#This version of the full size SUV only carries its driver and two bikes on hitch rack
+#
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Vehicle with Loads, Sensors, Trailer, etc.; { Utility Vehicles } SUV, Full Size, Hitch Bike Rack
+#Library : Vehicle with Loads, Sensors, Trailer, etc.
+#DataSet : SUV, Full Size, Hitch Bike Rack
+#Category: Utility Vehicles
+#FileID  : VehLoad_1b1346ef-04ee-48fc-a20b-440446c18028
+#Created : 03-07-2023 12:31:57
+#Modified: 03-07-2023 13:44:43
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Ind_SA
+
+END

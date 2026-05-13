@@ -1,0 +1,77 @@
+PARSFILE
+#FullDataName Generic Data Group`Traffic: ACC Cut-Out, 50 km/h`ADAS: Traffic for ACC & FCW
+#VehCode Generic Group
+PARSFILE Generic\VS_commands\GenVS_50272494-fdc6-4e0b-a584-241f68912c56.par
+#BlueLink0 Generic VS Commands`ACC/AEB Cut-Out Params 50 km/h` Obstacle Avoidance` , Link 1`GenVS_50272494-fdc6-4e0b-a584-241f68912c56
+
+
+#MiscYellow1
+!below are values for the Cut-Out vehicle
+#ENDMYellow
+
+PARSFILE Control\Speed_t\SpdTime_e59153a3-1d78-46a6-bf4c-47a0e667d38a.par
+#BlueLink1 Control: Speed (Closed Loop) Using Target Speed`50 km/h: Euro NCAP ACC Cut-Out` Constant` , Link 2`SpdTime_e59153a3-1d78-46a6-bf4c-47a0e667d38a
+
+
+#MiscYellow2
+SET_ILTARG_FOR_ID CUT_OUT_LTARG_PROF
+ltarg_constant = CUT_OUT_VEH_LTARG_INIT
+set_description ltarg_id ...
+  Lateral target for right lane
+#ENDMYellow
+
+PARSFILE Control\Driver\StrDM_92769897-85ef-4c7c-b8bb-7224d29e55cb.par
+#BlueLink2 Control: Steering by the Closed-loop Driver Model`Go to Left 1 m, dS = 2 m, Cut-Out` Normalized Path Changes` , Link 3`StrDM_92769897-85ef-4c7c-b8bb-7224d29e55cb
+
+
+#MiscYellow3
+!Apply scaling parameters for Cut-Out veh.
+SSTART_LTARG CUT_OUT_SSTART_LTARG2
+SSCALE_LTARG CUT_OUT_SSCALE_LTARG
+LTARG_GAIN CUT_OUT_LTARG_GAIN
+
+Below are values for the Stoped veh.
+#ENDMYellow
+
+PARSFILE Sensors_Traffic\Traffic\TMotion_c81ae2d8-9e6f-4bc2-8dfa-4f3d86f4e90c.par
+#BlueLink3 Multiple Moving Objects`1 Veh., ACC Euro NCAP: Cut-Out` Traffic Vehicles (Forward)` , Link 4`TMotion_c81ae2d8-9e6f-4bc2-8dfa-4f3d86f4e90c
+
+
+
+#MiscYellow5
+SET_ILTARG_FOR_ID STOPPED_LTARG_PROF
+ltarg_constant = CUT_OUT_STOPPED_LTARG_INIT
+set_description ltarg_id ...
+  Lateral target for right lane
+#ENDMYellow
+
+PARSFILE Sensors_Traffic\Traffic\TMotion_dfeaed58-b113-465f-b7ee-2eff121a6c4c.par
+#BlueLink5 Multiple Moving Objects`1 Vehicle, Stopped On Hwy` Traffic Vehicles (Forward)` , Link 6`TMotion_dfeaed58-b113-465f-b7ee-2eff121a6c4c
+
+
+
+
+
+
+#EMBEDDED_NOTES
+#This dataset assembles some traffic vehicles in two lanes.
+#
+#The moving objects from link 1 lead the ego vehicle. Their positions are based on the position of the vehicle station.
+#
+#The moving objects from link 2 have speed proportional to that of the vehicle: Vx.
+#
+#The lateral positions of the moving objects are set using the LTARG function, with datasets specified with ILTARG. Descriptions are specified that will appear in the Echo file. A new command SET_ILTARG_FOR_ID adds LTARG datasets.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic Data Group; { ADAS: Traffic for ACC & FCW } Traffic: ACC Cut-Out, 50 km/h
+#Library : Generic Data Group
+#DataSet : Traffic: ACC Cut-Out, 50 km/h
+#Category: ADAS: Traffic for ACC & FCW
+#FileID  : GenGrp_47bbf2e8-26ee-4ed3-8fac-b4899ed16220
+#Created : 05-03-2021 16:00:21
+#Modified: 08-16-2021 10:39:27
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Generic Group
+
+END

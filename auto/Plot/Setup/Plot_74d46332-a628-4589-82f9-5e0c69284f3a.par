@@ -1,0 +1,41 @@
+PARSFILE
+#FullDataName Plot: Setup`Axle relative roll`K&C Test Results
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par
+#BlueLink0 Plot: Format`Default Plot Settings` ` , Plot format`PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS Roll_A1r, time
+PLOTCHANNELS Roll_A2r, time
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Axle relative roll
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { K&C Test Results } Axle relative roll
+#Library : Plot: Setup
+#DataSet : Axle relative roll
+#Category: K&C Test Results
+#FileID  : Plot_74d46332-a628-4589-82f9-5e0c69284f3a
+#Modified: 05-28-2021 14:59:40
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Plot Setup
+
+END

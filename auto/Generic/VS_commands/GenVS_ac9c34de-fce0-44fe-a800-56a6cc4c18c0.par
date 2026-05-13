@@ -1,0 +1,93 @@
+PARSFILE
+#FullDataName Generic VS Commands`2. Import 10 Preview Points`Import Path Preview
+#VehCode Import Path Preview
+
+#MiscYellow0
+! Install the preview path import variables using the VS Command INSTALL_PATH_IMPORT.
+! To simplify initialization requirements, the "Use 3D road geometry" option is disabled, which is
+! done by setting OPT_SC_3D=0 to overwrite any previous setting. The initial preview length is set
+! to match that used by the speed controller. The initial location of the vehicle (Xo-Yo-Yaw) is also
+! handled here.
+
+opt_init_path 0
+opt_sc_3d 0
+install_path_import
+lprev_path_import speed_preview
+xo_path_import 1
+yo_path_import 2
+yaw_path_import 105
+
+! Like any import variable, the preview path import variables must be activated with the IMPORT
+! command. Do this 20 times for all X-Y values. All of the variables must be imported in order for 
+! the external path to be used; otherwise, the imported X-Y values will be ignored. The mode of 
+! import (such as ADD or REPLACE) is not meaningful here, as these import variables are not
+! associated with any built-in signals. The initial value set with an IMPORT command is ignored by
+! default; search an Echo file for OPT_INIT_PATH_IMPORT for more information.
+
+import imp_path_x0
+import imp_path_x1
+import imp_path_x2
+import imp_path_x3
+import imp_path_x4
+import imp_path_x5
+import imp_path_x6
+import imp_path_x7
+import imp_path_x8
+import imp_path_x9
+import imp_path_y0
+import imp_path_y1
+import imp_path_y2
+import imp_path_y3
+import imp_path_y4
+import imp_path_y5
+import imp_path_y6
+import imp_path_y7
+import imp_path_y8
+import imp_path_y9
+
+! Now set the import variables using the 10 example preview points:
+
+eq_in imp_path_x0 = x_targ_0
+eq_in imp_path_x1 = x_targ_1
+eq_in imp_path_x2 = x_targ_2
+eq_in imp_path_x3 = x_targ_3
+eq_in imp_path_x4 = x_targ_4
+eq_in imp_path_x5 = x_targ_5
+eq_in imp_path_x6 = x_targ_6
+eq_in imp_path_x7 = x_targ_7
+eq_in imp_path_x8 = x_targ_8
+eq_in imp_path_x9 = x_targ_9
+
+eq_in imp_path_y0 = y_targ_0
+eq_in imp_path_y1 = y_targ_1
+eq_in imp_path_y2 = y_targ_2
+eq_in imp_path_y3 = y_targ_3
+eq_in imp_path_y4 = y_targ_4
+eq_in imp_path_y5 = y_targ_5
+eq_in imp_path_y6 = y_targ_6
+eq_in imp_path_y7 = y_targ_7
+eq_in imp_path_y8 = y_targ_8
+eq_in imp_path_y9 = y_targ_9
+#ENDMYellow
+
+*MODELCODE Import Path Preview
+PARSFILE Sensors_Traffic\Traffic\TMotion_1ce96015-6f92-4fd8-922b-aeeb648330bf.par
+#BlueLink0 Multiple Moving Objects`10 External Preview Points` Points of Interest` , Miscellaneous`TMotion_1ce96015-6f92-4fd8-922b-aeeb648330bf
+
+
+#EMBEDDED_NOTES
+#The 10 preview points are animated using the linked Multiple Moving Objects dataset.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { Import Path Preview } 2. Import 10 Preview Points
+#Library : Generic VS Commands
+#DataSet : 2. Import 10 Preview Points
+#Category: Import Path Preview
+#FileID  : GenVS_ac9c34de-fce0-44fe-a800-56a6cc4c18c0
+#Created : 11-08-2022 18:05:05
+#Modified: 11-17-2022 08:08:39
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Import Path Preview
+
+END

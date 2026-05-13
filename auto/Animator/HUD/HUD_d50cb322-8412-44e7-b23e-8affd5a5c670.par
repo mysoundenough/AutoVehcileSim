@@ -1,0 +1,81 @@
+PARSFILE
+#FullDataName Animator: HUD`Speed Output Text with Background`Vehicle Status Indicators
+#CheckBox1 1    
+#CheckBox2 1    
+
+#RingCtrl0 1
+#RingCtrl1 18
+#RingCtrl2 0
+#RingCtrl3 2
+#RingCtrl4 2
+*TITLE_1 Vehicle Speed (km/h)
+*LOCX_1 5
+*LOCY_1 40
+*VAR_NAME_1 Vxz_Fwd
+*COLOR_1 1 1 1 1
+*LOCX_3 5
+*LOCY_3 32
+
+
+#MiscYellow0
+! Use VSV HUD Commands
+!  to add a bounding box
+ADD_ENTITY hud_image Text_BG_Outer
+  align_x left
+  align_y bottom
+  size_mode absolute
+  place_mode absolute
+  location 85 385 385 59
+  red 0
+  green 0
+  blue 0
+  opacity .5
+END_ENTITY hud_image Text_BG_Outer
+
+ADD_ENTITY hud_image Text_BG_Inner
+  align_x left
+  align_y bottom
+  size_mode absolute
+  place_mode absolute
+  location 90 390 375 49
+  red 0
+  green 0
+  blue 0
+  opacity .25
+END_ENTITY hud_image Text_BG_Inner
+#ENDMYellow
+
+#Selection 18 for Icon 0
+#Selection_1 18 for Icon
+#Selection_2 Title: Vehicle Speed (km/h) AlX 0 AlY 2
+#Selection_3 Scale 1.333333 locX 80 locY 320
+#Selection_4 Fixed: 1 VarName: Vxz_Fwd  ColorStr: 1 1 1 1
+#Selection_5 ImgName: 
+ANI_Vxz_Fwd
+WRT_Vxz_Fwd
+ADD_ENTITY hud_text Text Output
+location 80 320 24 24
+align_x left
+align_y bottom
+size_mode absolute
+place_mode absolute
+# var name is Vxz_Fwd
+prefix Vehicle Speed (km/h)
+min_width_prefix 20
+value Vxz_Fwd
+precision 0
+color 1 1 1 1.0
+END_ENTITY hud_text Text Output
+
+LOG_ENTRY Used Dataset: Animator: HUD; { Vehicle Status Indicators } Speed Output Text with Background
+#Library : Animator: HUD
+#DataSet : Speed Output Text with Background
+#Category: Vehicle Status Indicators
+#FileID  : HUD_d50cb322-8412-44e7-b23e-8affd5a5c670
+#Created : 06-09-2021 09:56:38
+#Modified: 03-29-2022 16:14:43
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode HUD
+
+END
