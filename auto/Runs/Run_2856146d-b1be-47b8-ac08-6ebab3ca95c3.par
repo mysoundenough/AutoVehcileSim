@@ -36,7 +36,7 @@ PARSFILE Animator\Cameras\Camera_8f7a3057-cb7d-444e-8cf2-c6f46989b6a4.par
 #RingCtrl2 3
 #RingCtrl3 0
 #RingCtrl6 0
-#RingCtrl7 -1
+#RingCtrl7 4
 #RingCtrl4 off
 RT_WINDOW_CLOSE off
 #RingCtrl5 0
@@ -47,6 +47,7 @@ PARSFILE Vehicles\Assembly\Vehicle_9db9b98a-6725-424b-9635-e1ca6e15979d.par
 PARSFILE Procedures\Proc_38b53763-4ae2-4178-9faa-9b74ba426016.par
 #BlueLink28 Procedures`DLC @ 120 km/h (no tire force arrows)` Handling Testing` , Procedure`Proc_38b53763-4ae2-4178-9faa-9b74ba426016
 
+OPT_VS_FILETYPE 4
 
 SPECIAL_PARSFILE Runs\Run_60ed91d9-d198-4454-aa7a-bbf27fe3b517.par
 #BlueLink23 CarSim Run Control`Yaw Control Diff., DLC w/ Low Mu` Simulink Models` , Overlay run or ERD file`Run_60ed91d9-d198-4454-aa7a-bbf27fe3b517
@@ -60,8 +61,8 @@ WRITE_SENSOR_DETECT
 Title Double Lane Change, Low Mu <Handling and Stability Tests>
 CATEGORY Handling and Stability Tests 
 DATASET_TITLE Double Lane Change, Low Mu
-#RingCtrl8 1
-NUM_CACHED_RUNS 1
+#RingCtrl8 50
+NUM_CACHED_RUNS 50
 #RingCtrl9 
 
 #EMBEDDED_NOTES
@@ -77,7 +78,7 @@ LOG_ENTRY Used Dataset: CarSim Run Control; { Handling and Stability Tests } Dou
 #DataSet : Double Lane Change, Low Mu
 #Category: Handling and Stability Tests
 #FileID  : Run_2856146d-b1be-47b8-ac08-6ebab3ca95c3
-#Modified: 05-13-2026 23:37:37
+#Modified: 05-14-2026 13:22:32
 #Product : CarSim 2024.1
 #DataVer : 2024.1
 #VehCode Run
