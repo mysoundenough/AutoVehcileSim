@@ -39,6 +39,13 @@ def main() -> None:
 
     # # 修改目标车速（单位：km/h）
     # cm.set_vehicle_param(user_speed=50.0)  # km/h
+    try:
+        cm.close()
+        cm.run_all()
+    except KeyboardInterrupt:
+        logger.warn("Process interrupted with Ctrl + C. ")
+    except Exception as err_msg:
+        logger.error(err_msg)
 
 
     # set simulation params
@@ -47,7 +54,7 @@ def main() -> None:
     total_sim_step = total_sim_time // onestep_delta_time
 
     # run simulation steps
-    try:
+    # try:
         # for _ in track(range(total_sim_step), description="Running simulation..."):
 
         #     # prepare operational signals
@@ -69,12 +76,10 @@ def main() -> None:
         #         logger.info("Termination flag is True. End of simulation.")
         #         break
 
-        cm.run_all()
-
-    except KeyboardInterrupt:
-        logger.warn("Process interrupted with Ctrl + C. ")
-    except Exception as err_msg:
-        logger.error(err_msg)
+    # except KeyboardInterrupt:
+    #     logger.warn("Process interrupted with Ctrl + C. ")
+    # except Exception as err_msg:
+    #     logger.error(err_msg)
 
     # close carsim
     cm.close()
