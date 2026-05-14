@@ -28,30 +28,33 @@ def main() -> None:
         vehicle_type=VEHICLE_TYPE,
     )
 
-    # # 1. 修改 前悬架空气弹簧刚度
-    # par_path = r"C:\Srs\SrsAutoCarSim\auto\Suspensions\Compliance\CmpInd_6a0a169e-9f67-48f4-8f46-0512eb1a3093.par"
-    # cm.set_vehicle_param(par_path=par_path, front_spring_rate=29)  # N/m
-    # # 2. 修改 转向
-    # # 3. 修改 阻尼
-    # par_path = r"C:\Srs\SrsAutoCarSim\auto\Suspensions\Shocks\Shock_06339072-ca43-46c4-af82-ec3bf59d6ffc.par"
-    # cm.set_vehicle_param(par_path=par_path, shock_force_rate=0.9)  # *k 变化倍数
+    # 1. 修改 前悬架空气弹簧刚度
+    par_path = r"C:\Srs\SrsAutoCarSim\auto\Suspensions\Compliance\CmpInd_6a0a169e-9f67-48f4-8f46-0512eb1a3093.par"
+    cm.set_vehicle_param(par_path=par_path, front_spring_rate=20)  # N/m
+    # 2. 修改 转向
+    # 3. 修改 阻尼
+    par_path = r"C:\Srs\SrsAutoCarSim\auto\Suspensions\Shocks\Shock_06339072-ca43-46c4-af82-ec3bf59d6ffc.par"
+    cm.set_vehicle_param(par_path=par_path, shock_force_rate=10000)  # *k 变化倍数
     # 4. 修改 动力
 
     # # 修改目标车速（单位：km/h）
     # cm.set_vehicle_param(user_speed=50.0)  # km/h
+
     try:
+        # cm.print_sim_parameters()
         cm.close()
+        # cm._init_carsim()
         cm.run_all()
     except KeyboardInterrupt:
         logger.warn("Process interrupted with Ctrl + C. ")
     except Exception as err_msg:
-        logger.error(err_msg)
+        logger.error("Once Run:" + err_msg)
 
 
     # set simulation params
-    onestep_delta_time = timedelta(seconds=0.1)
-    total_sim_time = timedelta(minutes=0.5)
-    total_sim_step = total_sim_time // onestep_delta_time
+    # onestep_delta_time = timedelta(seconds=0.1)
+    # total_sim_time = timedelta(minutes=0.5)
+    # total_sim_step = total_sim_time // onestep_delta_time
 
     # run simulation steps
     # try:

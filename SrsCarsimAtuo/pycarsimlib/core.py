@@ -141,6 +141,7 @@ class CarsimManager:
         """ run all simulation steps at once """
         error_occurred = 1
         logger.info("##### Run all simulation steps #####")
+        logger.info("simfile_path:" + self.simfile_path)
         error_occurred = self.solver_api.run(
             self.simfile_path.replace('\\\\', '\\')
         )
@@ -179,19 +180,17 @@ class CarsimManager:
         shutil.copytree(_source_dir, _target_dir, dirs_exist_ok=True)
         logger.info("Successfully saved results.")
 
-    def  set_vehicle_param(self,
+    def set_vehicle_param(self,
                           par_path,
                           front_spring_rate: float = None,
                           shock_force_rate: float = None,
                           user_speed: float = None):
-        self.close()
-
+        
         if front_spring_rate is not None:
             self.modify_spring_rate(par_path, "FRONT_SPRING_RATE", front_spring_rate)
         if shock_force_rate is not None:
             self.modify_shock_force(par_path, "FD_TABLE SPLINE", shock_force_rate)
-        
-        self._init_carsim()
+
         logger.info("vehicle param change done ---")
     
     def modify_spring_rate(self, par_path: str, param_name: str, value: float):
@@ -273,3 +272,69 @@ class CarsimManager:
         except Exception as e:
             logger.error(f"修改减震器失败: {str(e)}")
             raise FileNotFoundError("Simfile not found.")
+        
+    
+    def print_sim_parameters(self):
+        """
+        读取 CarSim .sim 文件，并打印所有重要超参数
+        """
+        params = {}
+
+        with open(self.simfile_path, 'r', encoding='utf-8') as f:
+            lines = f.readlines()
+
+        for line in lines:
+            line = line.strip()
+            if not line:
+                continue
+
+            # 提取 ROOT_FILE_NAME (Run ID)
+            if line.startswith('SET_MACRO $(ROOT_FILE_NAME)$'):
+                params['Run ID'] = line.split()[-1]
+
+            # 提取输出路径
+            elif line.startswith('SET_MACRO $(OUTPUT_PATH)$'):
+                params['输出文件夹'] = line.split()[-1]
+
+            # 提取工作目录
+            elif line.startswith('SET_MACRO $(WORK_DIR)$'):
+                params['工作目录'] = line.split()[-1]
+
+            # 提取输出前缀
+            elif line.startswith('SET_MACRO $(OUTPUT_FILE_PREFIX)$'):
+                params['输出文件前缀'] = line.split('=', 1)[-1].strip()
+
+            # 提取 CarSim 安装目录
+            elif line.startswith('PROGDIR'):
+                params['CarSim安装路径'] = line.split(maxsplit=1)[-1]
+
+            # 提取数据目录
+            elif line.startswith('DATADIR'):
+                params['项目数据路径'] = line.split(maxsplit=1)[-1]
+
+            # 提取产品版本
+            elif line.startswith('PRODUCT_VER'):
+                params['CarSim版本'] = line.split()[-1]
+
+            # 提取车辆代码
+            elif line.startswith('VEHICLE_CODE'):
+                params['悬架类型'] = line.split()[-1]
+
+            # 提取仿真步长
+            elif line.startswith('EXT_MODEL_STEP'):
+                params['仿真步长(s)'] = line.split()[-1]
+
+            # 提取求解器 DLL
+            elif line.startswith('DLLFILE'):
+                params['求解器DLL'] = line.split(maxsplit=1)[-1]
+
+        # ===================== 打印结果 =====================
+        print("=" * 60)
+        print("          CarSim .sim 文件超参数一览")
+        print("=" * 60)
+
+        for key, value in params.items():
+            print(f"{key:<15} : {value}")
+
+        print("=" * 60)
+        return params
