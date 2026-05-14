@@ -153,7 +153,7 @@ class CarsimManager:
     def close(self):
         """ close carsim solver normally"""
         self.solver_api.terminate_run(self.t_current)
-        logger.info("Carsim solver terminated normally.")
+        logger.info("run close, Carsim solver terminated normally.")
 
     def save_results_into_carsimdb(self, results_source_dir="", results_target_dir=""):
         """ copy latest results dir into carsimdb location """
@@ -179,7 +179,7 @@ class CarsimManager:
         shutil.copytree(_source_dir, _target_dir, dirs_exist_ok=True)
         logger.info("Successfully saved results.")
 
-    def set_vehicle_param(self,
+    def  set_vehicle_param(self,
                           par_path,
                           front_spring_rate: float = None,
                           shock_force_rate: float = None,
@@ -268,8 +268,8 @@ class CarsimManager:
             with open(par_path, 'w', encoding='utf-8') as f:
                 f.write(new_content)
 
-            self.logger.info(f"减震器阻尼修改成功: {par_path}, 缩放比例 = {value}")
+            logger.info(f"减震器阻尼修改成功: {par_path}, 缩放比例 = {value}")
 
         except Exception as e:
-            self.logger.error(f"修改减震器失败: {str(e)}")
+            logger.error(f"修改减震器失败: {str(e)}")
             raise FileNotFoundError("Simfile not found.")

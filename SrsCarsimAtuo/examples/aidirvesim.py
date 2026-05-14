@@ -28,13 +28,13 @@ def main() -> None:
         vehicle_type=VEHICLE_TYPE,
     )
 
-    # 1. 修改 前悬架空气弹簧刚度
-    par_path = r"C:\Srs\SrsAutoCarSim\auto\Suspensions\Compliance\CmpInd_6a0a169e-9f67-48f4-8f46-0512eb1a3093.par"
-    cm.set_vehicle_param(par_path=par_path, front_spring_rate=29)  # N/m
-    # 2. 修改 转向
-    # 3. 修改 阻尼
+    # # 1. 修改 前悬架空气弹簧刚度
+    # par_path = r"C:\Srs\SrsAutoCarSim\auto\Suspensions\Compliance\CmpInd_6a0a169e-9f67-48f4-8f46-0512eb1a3093.par"
+    # cm.set_vehicle_param(par_path=par_path, front_spring_rate=29)  # N/m
+    # # 2. 修改 转向
+    # # 3. 修改 阻尼
     # par_path = r"C:\Srs\SrsAutoCarSim\auto\Suspensions\Shocks\Shock_06339072-ca43-46c4-af82-ec3bf59d6ffc.par"
-    # cm.set_vehicle_param(par_path=par_path, shock_force_rate=10/9)  # *k 变化倍数
+    # cm.set_vehicle_param(par_path=par_path, shock_force_rate=0.9)  # *k 变化倍数
     # 4. 修改 动力
 
     # # 修改目标车速（单位：km/h）
@@ -48,26 +48,28 @@ def main() -> None:
 
     # run simulation steps
     try:
-        for _ in track(range(total_sim_step), description="Running simulation..."):
+        # for _ in track(range(total_sim_step), description="Running simulation..."):
 
-            # prepare operational signals
-            control_inputs = {
-                "IMP_STEER_SW": 3.0,
-                "IMP_FBK_PDL": 0.0,
-                "IMP_THROTTLE_ENGINE": 15.0
-            }
+        #     # prepare operational signals
+        #     control_inputs = {
+        #         "IMP_STEER_SW": 3.0,
+        #         "IMP_FBK_PDL": 0.0,
+        #         "IMP_THROTTLE_ENGINE": 15.0
+        #     }
 
-            # update vehicle states
-            observed, terminated, updated_time_sec = cm.step(action=control_inputs, delta_time=onestep_delta_time)
+        #     # update vehicle states
+        #     observed, terminated, updated_time_sec = cm.step(action=control_inputs, delta_time=onestep_delta_time)
 
-            # output log
-            # logger.info(f"T = {updated_time_sec:.2f} [s]")
-            # logger.info(observed)
+        #     # output log
+        #     # logger.info(f"T = {updated_time_sec:.2f} [s]")
+        #     # logger.info(observed)
 
-            # check termination flag
-            if terminated:
-                logger.info("Termination flag is True. End of simulation.")
-                break
+        #     # check termination flag
+        #     if terminated:
+        #         logger.info("Termination flag is True. End of simulation.")
+        #         break
+
+        cm.run_all()
 
     except KeyboardInterrupt:
         logger.warn("Process interrupted with Ctrl + C. ")

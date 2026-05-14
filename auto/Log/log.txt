@@ -8,4 +8,18 @@
 2026-05-14T00:05:51 (Info):    -
 2026-05-14T00:05:51 (Info):    OS Version:        6.2 (build 9200)
 2026-05-14T00:05:51 (Info):    CPU Architecture:  x64
-2026-05-14
+2026-05-14T00:05:51 (Info):    CPU Count:         2
+2026-05-14T00:05:51 (Info):    CPU Level/Rev:     15/1034
+2026-05-14T00:05:51 (Info):    Start Mem Total:   4090 MB
+2026-05-14T00:05:51 (Info):    Start Mem Used:    86%
+2026-05-14T00:05:51 (Info):    -
+2026-05-14T00:05:51 (Info):    Loaded dataset index cache in 0.33s, 27.0 megabytes.
+2026-05-14T00:05:51 (Info):    Error: A license manager is already running.
+2026-05-14T00:05:52 (Info):    License check took 0.56 seconds.
+2026-05-14T00:05:52 (Info):    No install ID found at regkey "Software\Mechanical Simulation Corp\CarSim 2024.1".
+2026-05-14T00:05:52 (Info):    No install ID found at regkey "Software\Mechanical Simulation Corp\CarSim 2024.1".
+2026-05-14T00:05:55 (Info):    Initial setup took 3.17 seconds.
+2026-05-14T00:05:55 (Info):    Auto updates took 0.00 seconds.
+2026-05-14T00:05:58 (Info):    Loaded last screen in 1.67 seconds.
+2026-05-14T00:05:58 (Info):    Total init time 7.11 seconds.
+2026-05-14T12:33:13 (Info):    Running math model for: { Handling and St
