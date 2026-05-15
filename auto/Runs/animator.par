@@ -1,32 +1,18 @@
 PARSFILE
 search_path_append .
-search_path_append C:\Srs\SrsAutoCarSim\auto\\
-search_path_append C:\Carsim2024.1\Carsim2024.1_Prog\\Resources\
-search_path_append C:\Carsim2024.1\Carsim2024.1_Prog\\
-search_path_append C:\Carsim2024.1\Carsim2024.1_Prog\\Resources\Animator\Deprecated_Assets\
-SEARCH_PATH_ALIAS_PREPEND "Resources/Tilesets/Rural/Mesh/Vsv" "Resources/Tilesets/Rural/Mesh/VsV"
-SEARCH_PATH_ALIAS_PREPEND "Resources/Tilesets/Standalone/Mesh/Vsv" "Resources/Tilesets/Standalone/Mesh/VsV"
-SEARCH_PATH_ALIAS_PREPEND "Resources/Tilesets/Urban/Mesh/Vsv" "Resources/Tilesets/Urban/Mesh/VsV"
-SEARCH_PATH_ALIAS_PREPEND "Resources/Tilesets/Highway/Mesh/Vsv" "Resources/Tilesets/Highway/Mesh/VsV"
-SEARCH_PATH_ALIAS_PREPEND "Resources/Props/Road_Signs/US/Stop01/Mesh/VsV" "Resources/Props/Road_Signs/US/Stop01/Mesh/Vsv"
-SEARCH_PATH_ALIAS_PREPEND "Resources/Props/Animated/Wind_Turbine/Mesh/VsV" "Resources/Props/Animated/Wind_Turbine/Mesh/Vsv"
-SEARCH_PATH_ALIAS_PREPEND "Resources/Props/Animated/Wind_Mill/Mesh/VsV" "Resources/Props/Animated/Wind_Mill/Mesh/Vsv"
-SEARCH_PATH_ALIAS_PREPEND "Resources/Props/Animated/PumpJack/Mesh/VsV" "Resources/Props/Animated/PumpJack/Mesh/Vsv"
-SEARCH_PATH_ALIAS_PREPEND "Resources/Props/Animated/People/Mesh/VsV" "Resources/Props/Animated/People/Mesh/Vsv"
-SEARCH_PATH_ALIAS_PREPEND "Resources/Props/Animated/Floor_Fan/Mesh/VsV" "Resources/Props/Animated/Floor_Fan/Mesh/Vsv"
-SEARCH_PATH_ALIAS_PREPEND "Resources/Props/Animated/Deer/Mesh/VsV" "Resources/Props/Animated/Deer/Mesh/Vsv"
-SEARCH_PATH_ALIAS_PREPEND "Resources/Props/Traffic_Barriers/Traffic_Barrels/Mesh/VsV" "Resources/Props/Traffic_Barriers/Traffic_Barrels/Mesh/Vsv"
-SEARCH_PATH_ALIAS_PREPEND "Resources/Props/Traffic_Barriers/TireWall/Mesh/VsV" "Resources/Props/Traffic_Barriers/TireWall/Mesh/Vsv"
-SEARCH_PATH_ALIAS_PREPEND "Resources/Props/Traffic_Barriers/Cone_01/Mesh/VsV" "Resources/Props/Traffic_Barriers/Cone_01/Mesh/Vsv"
-SEARCH_PATH_ALIAS_PREPEND "Resources/Props/Traffic_Barriers/Concrete_Barrier/Mesh/VsV" "Resources/Props/Traffic_Barriers/Concrete_Barrier/Mesh/Vsv"
-SEARCH_PATH_ALIAS_PREPEND "Resources/Animator/2D_HUD_Icons/Stability_Control/ESC_Off.png" "Resources/Animator/2D_HUD_Icons/Stability_Control/ESC_OFF.png"
-SEARCH_PATH_ALIAS_PREPEND "Resources/Animator/2D_HUD_Icons/Blind_Spot/Left_Blind_Spot.png" "Resources/Animator/2D_HUD_Icons/Blind_Spot/Left_Blind_spot.png"
-SEARCH_PATH_ALIAS_PREPEND "Resources/Animator/Road_Materials/Hard_Surfaces/IceTile_di.dds" "Resources/Animator/Road_Materials/Hard_Surfaces/icetile_di.dds"
-SEARCH_PATH_ALIAS_PREPEND "Resources/Animator/3D_Shape_Files/Trucks/Cabs/LCF_Cab/Windows_di.dds" "Resources/Animator/3D_Shape_Files/Trucks/Cabs/LCF_Cab/windows_di.dds"
-SEARCH_PATH_ALIAS_PREPEND "Resources/Animator/3D_Shape_Files/Trucks/Chassis/LCF_Van/mudflaps.dds" "Resources/Animator/3D_Shape_Files/Trucks/Chassis/LCF_Van/MUDFLAPS.dds"
+search_path_append C:\Srs\SrsAutoCarSim\auto\
+search_path_append C:\Carsim2024.1\Carsim2024.1_Prog\Resources\
+search_path_append C:\Carsim2024.1\Carsim2024.1_Prog\
+search_path_append C:\Carsim2024.1\Carsim2024.1_Prog\Resources\Animator\Deprecated_Assets\
 set_run_slot 0
-DATASET Results\Run_2856146d-b1be-47b8-ac08-6ebab3ca95c3\2026-05-15_02.27.56.csv
-PARSFILE Results\Run_2856146d-b1be-47b8-ac08-6ebab3ca95c3\Run_all.par
+DATASET C:\Srs\SrsAutoCarSim\auto\Results\Run_60ed91d9-d198-4454-aa7a-bbf27fe3b517\LastRun.vs
+PARSFILE C:\Srs\SrsAutoCarSim\auto\Results\Run_60ed91d9-d198-4454-aa7a-bbf27fe3b517\LastRun_all.par
+LIVE_SERVER_REMOVE_ALL
+SET_PATH_COLOR 1 1 1
+DISPLAY OFF
+set_run_slot 1
+DATASET C:\Srs\SrsAutoCarSim\auto\Results\Run_2856146d-b1be-47b8-ac08-6ebab3ca95c3\Run.csv
+PARSFILE C:\Srs\SrsAutoCarSim\auto\Results\Run_2856146d-b1be-47b8-ac08-6ebab3ca95c3\Run_all.par
 LIVE_SERVER_REMOVE_ALL
 SET_PATH_COLOR 1 1 1
 DISPLAY OFF

@@ -21,12 +21,15 @@ class CarsimManager:
         self,
         carsim_db_dir: str,
         vehicle_type: str,
+        run_all_dir: str,
         **kwargs
     ) -> None:
 
         # set simfile path
         self.carsimdb_dir = carsim_db_dir
+        self.run_all_dir = run_all_dir
         self.simfile_path = os.path.join(self.carsimdb_dir, "simfile.sim")
+        self.run_all_path = os.path.join(self.run_all_dir, "Run_all.par")
         logger.info(f"simfile path : {self.simfile_path}")
 
         # select vehicle models
@@ -216,20 +219,33 @@ class CarsimManager:
         if not os.path.exists(par_path):
             logger.error("Simfile not found.")
             raise FileNotFoundError
-        
         # 读取源文件并替换
         with open(par_path, "r", encoding="utf-8") as f:
             content = f.read()
-
         # 替换 *KSPRING_L 后面的数字
-        new_content = content.replace("*KSPRING_L 27", f"*KSPRING_L {value}")
-
+        new_content = content
+        new_content = re.sub(r'\**KSPRING_L\s+[\d.-]+', f"*KSPRING_L {value}", new_content)
+        new_content = re.sub(r'^\s*FS_COMP_COEFFICIENT\s+[\d.-]+\s*$', f'FS_COMP_COEFFICIENT {value}', new_content, flags=re.MULTILINE)
+        new_content = re.sub(r'^\s*FS_EXT_COEFFICIENT\s+[\d.-]+\s*$', f'FS_EXT_COEFFICIENT {value}', new_content, flags=re.MULTILINE)
         # 保存新文件
         with open(par_path, "w", encoding="utf-8") as f:
             f.write(new_content)
 
         # 修改run_all文件
-        
+        logger.info(self.run_all_path)
+        if not os.path.exists(self.run_all_path):
+            logger.error("run_all file not found.")
+            raise FileNotFoundError
+        # 读取源文件并替换
+        with open(self.run_all_path, "r", encoding="utf-8") as f:
+            content = f.read()
+        # 替换 FS_COMP_COEFFICIENT FS_EXT_COEFFICIENT 后面的数字
+        new_content = re.sub(r'^\s*FS_COMP_COEFFICIENT\s+[\d.-]+\s*$', f'FS_COMP_COEFFICIENT {value}', content, flags=re.MULTILINE)
+        new_content = re.sub(r'^\s*FS_EXT_COEFFICIENT\s+[\d.-]+\s*$', f'FS_EXT_COEFFICIENT {value}', new_content, flags=re.MULTILINE)
+        # 保存新文件
+        with open(self.run_all_path, "w", encoding="utf-8") as f:
+            f.write(new_content)
+
     
     def modify_shock_force(self, par_path: str, param_name: str, value: float):
         """
