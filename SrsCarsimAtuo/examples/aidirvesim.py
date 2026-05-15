@@ -37,9 +37,6 @@ def main() -> None:
     cm.set_vehicle_param(par_path=par_path, shock_force_rate=1)  # *k 变化倍数
     # 4. 修改 动力
 
-    # # 修改目标车速（单位：km/h）
-    # cm.set_vehicle_param(user_speed=50.0)  # km/h
-
     try:
         # cm.print_sim_parameters()
         # cm.vs_setdef_and_read()
@@ -50,40 +47,6 @@ def main() -> None:
         logger.warn("Process interrupted with Ctrl + C. ")
     except Exception as err_msg:
         logger.error("Once Run:" + err_msg)
-
-
-    # set simulation params
-    # onestep_delta_time = timedelta(seconds=0.1)
-    # total_sim_time = timedelta(minutes=0.5)
-    # total_sim_step = total_sim_time // onestep_delta_time
-
-    # run simulation steps
-    # try:
-        # for _ in track(range(total_sim_step), description="Running simulation..."):
-
-        #     # prepare operational signals
-        #     control_inputs = {
-        #         "IMP_STEER_SW": 3.0,
-        #         "IMP_FBK_PDL": 0.0,
-        #         "IMP_THROTTLE_ENGINE": 15.0
-        #     }
-
-        #     # update vehicle states
-        #     observed, terminated, updated_time_sec = cm.step(action=control_inputs, delta_time=onestep_delta_time)
-
-        #     # output log
-        #     # logger.info(f"T = {updated_time_sec:.2f} [s]")
-        #     # logger.info(observed)
-
-        #     # check termination flag
-        #     if terminated:
-        #         logger.info("Termination flag is True. End of simulation.")
-        #         break
-
-    # except KeyboardInterrupt:
-    #     logger.warn("Process interrupted with Ctrl + C. ")
-    # except Exception as err_msg:
-    #     logger.error(err_msg)
 
     # close carsim
     cm.close()

@@ -4151,7 +4151,7 @@ SPEED_ID_SC = SPEED_TARGET_ID
 SPEED_TARGET_COMBINE ADD
 SPEED_TARGET_S_CONSTANT 0
 set_description SPEED_TARGET_ID Procedure: DLC @ 120 km/h (no tire force arrows)
-SPEED_TARGET_CONSTANT 100
+SPEED_TARGET_CONSTANT 120
 OPT_SC_ENGINE_BRAKING 0
 ENTER_PARSFILE Control\Driver\StrDM_8597394d-a68f-46f7-992e-beb4bd86bc2e.par
 #FullDataName Control: Steering by the Closed-loop Driver Model`Double Lane Change (Quick Start)`Vehicle Dynamics Tests
