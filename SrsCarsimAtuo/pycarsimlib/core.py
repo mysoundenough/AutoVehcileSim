@@ -309,69 +309,60 @@ class CarsimManager:
         except Exception as e:
             logger.error(f"修改减震器失败: {str(e)}")
             raise FileNotFoundError("Simfile not found.")
+
+        try:
+            # 1. 读取文件
+            with open(self.run_all_path, 'r', encoding='utf-8') as f:
+                content = f.read()
+
+            # 2. 匹配阻尼表格区域
+            pattern = re.compile(
+                r"(FD_TABLE SPLINE\n)(.*?)(\nENDTABLE)",
+                re.DOTALL
+            )
+
+            match = pattern.search(content)
+            if not match:
+                raise ValueError("未找到 FD_TABLE SPLINE 减震数据")
+
+            # 3. 逐行修改阻尼力
+            table_lines = match.group(2).strip().splitlines()
+            new_lines = []
+
+            for line in table_lines:
+                line = line.strip()
+                if not line or ',' not in line:
+                    new_lines.append(line)
+                    continue
+
+                # 拆分速度、力
+                vel_str, force_str = line.split(',', 1)
+                vel = vel_str.strip()
+                force = float(force_str.strip())
+
+                # 按比例缩放
+                new_force = force * value
+
+                # 保持格式（整数/小数都兼容）
+                if new_force.is_integer():
+                    new_force = int(new_force)
+
+                new_lines.append(f"{vel}, {new_force}")
+
+            # 4. 替换回文件内容
+            new_table = "\n".join(new_lines)
+            new_content = pattern.sub(
+                rf"\1{new_table}\n\3",
+                content
+            )
+
+            # 5. 保存文件
+            with open(self.run_all_path, 'w', encoding='utf-8') as f:
+                f.write(new_content)
+
+            logger.info(f"减震器阻尼修改成功: {self.run_all_path}, 缩放比例 = {value}")
+
+        except Exception as e:
+            logger.error(f"修改减震器失败: {str(e)}")
+            raise FileNotFoundError("Simfile not found.")
         
-    
-    def print_sim_parameters(self):
-        """
-        读取 CarSim .sim 文件，并打印所有重要超参数
-        """
-        params = {}
-
-        with open(self.simfile_path, 'r', encoding='utf-8') as f:
-            lines = f.readlines()
-
-        for line in lines:
-            line = line.strip()
-            if not line:
-                continue
-
-            # 提取 ROOT_FILE_NAME (Run ID)
-            if line.startswith('SET_MACRO $(ROOT_FILE_NAME)$'):
-                params['Run ID'] = line.split()[-1]
-
-            # 提取输出路径
-            elif line.startswith('SET_MACRO $(OUTPUT_PATH)$'):
-                params['输出文件夹'] = line.split()[-1]
-
-            # 提取工作目录
-            elif line.startswith('SET_MACRO $(WORK_DIR)$'):
-                params['工作目录'] = line.split()[-1]
-
-            # 提取输出前缀
-            elif line.startswith('SET_MACRO $(OUTPUT_FILE_PREFIX)$'):
-                params['输出文件前缀'] = line.split('=', 1)[-1].strip()
-
-            # 提取 CarSim 安装目录
-            elif line.startswith('PROGDIR'):
-                params['CarSim安装路径'] = line.split(maxsplit=1)[-1]
-
-            # 提取数据目录
-            elif line.startswith('DATADIR'):
-                params['项目数据路径'] = line.split(maxsplit=1)[-1]
-
-            # 提取产品版本
-            elif line.startswith('PRODUCT_VER'):
-                params['CarSim版本'] = line.split()[-1]
-
-            # 提取车辆代码
-            elif line.startswith('VEHICLE_CODE'):
-                params['悬架类型'] = line.split()[-1]
-
-            # 提取仿真步长
-            elif line.startswith('EXT_MODEL_STEP'):
-                params['仿真步长(s)'] = line.split()[-1]
-
-            # 提取求解器 DLL
-            elif line.startswith('DLLFILE'):
-                params['求解器DLL'] = line.split(maxsplit=1)[-1]
-
-        # ===================== 打印结果 =====================
-        print("=" * 60)
-        print("          CarSim .sim 文件超参数一览")
-        print("=" * 60)
-
-        for key, value in params.items():
-            print(f"{key:<15} : {value}")
-
-        print("=" * 60)
-        return params
