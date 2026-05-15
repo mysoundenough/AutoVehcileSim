@@ -1,80 +1,37 @@
-2026-05-14T00:05:51 Logfile initialized.
-2026-05-14T00:05:51 (Info):    CarSim 2024.1
-2026-05-14T00:05:51 (Info):    -
-2026-05-14T00:05:51 (Info):    command-line: 
-2026-05-14T00:05:51 (Info):    -
-2026-05-14T00:05:51 (Info):    Working Dir: C:\Srs\SrsAutoCarSim\auto\
-2026-05-14T00:05:51 (Info):    Program Dir: C:\Carsim2024.1\Carsim2024.1_Prog\
-2026-05-14T00:05:51 (Info):    -
-2026-05-14T00:05:51 (Info):    OS Version:        6.2 (build 9200)
-2026-05-14T00:05:51 (Info):    CPU Architecture:  x64
-2026-05-14T00:05:51 (Info):    CPU Count:         2
-2026-05-14T00:05:51 (Info):    CPU Level/Rev:     15/1034
-2026-05-14T00:05:51 (Info):    Start Mem Total:   4090 MB
-2026-05-14T00:05:51 (Info):    Start Mem Used:    86%
-2026-05-14T00:05:51 (Info):    -
-2026-05-14T00:05:51 (Info):    Loaded dataset index cache in 0.33s, 27.0 megabytes.
-2026-05-14T00:05:51 (Info):    Error: A license manager is already running.
-2026-05-14T00:05:52 (Info):    License check took 0.56 seconds.
-2026-05-14T00:05:52 (Info):    No install ID found at regkey "Software\Mechanical Simulation Corp\CarSim 2024.1".
-2026-05-14T00:05:52 (Info):    No install ID found at regkey "Software\Mechanical Simulation Corp\CarSim 2024.1".
-2026-05-14T00:05:55 (Info):    Initial setup took 3.17 seconds.
-2026-05-14T00:05:55 (Info):    Auto updates took 0.00 seconds.
-2026-05-14T00:05:58 (Info):    Loaded last screen in 1.67 seconds.
-2026-05-14T00:05:58 (Info):    Total init time 7.11 seconds.
-2026-05-14T12:33:13 (Info):    Running math model for: { Handling and Stability Tests } Double Lane Change, Low Mu
-2026-05-14T12:33:16 (Info):    Math model run completed.
-2026-05-14T12:33:20 (Info):    Assembling animation...
-2026-05-14T12:33:47 (Info):    Assembling animation...
-2026-05-14T13:21:48 (Info):    Assembling animation...
-2026-05-14T14:38:51 (Info):    Running math model for: { Handling and Stability Tests } Double Lane Change, Low Mu
-2026-05-14T14:38:52 (Info):    Math model run completed.
-2026-05-14T15:19:01 (Info):    Assembling animation...
-2026-05-14T15:19:43 (Info):    Assembling animation...
-2026-05-14T15:20:01 (Info):    Running math model for: { Handling and Stability Tests } Double Lane Change, Low Mu
-2026-05-14T15:20:01 (Info):    Math model run completed.
-2026-05-14T15:20:09 (Info):    Assembling animation...
-2026-05-14T15:21:17 (Info):    Assembling animation...
-2026-05-14T15:21:21 (Info):    Animation assembly finished.
-2026-05-14T15:22:30 (Info):    Assembling animation...
-2026-05-14T15:24:17 (Info):    Assembling animation...
-2026-05-14T15:25:33 (Info):    Running math model for: { Handling and Stability Tests } Double Lane Change, Low Mu
-2026-05-14T15:25:36 (Error):   Error trying to open PARSFILE Suspensions\Shocks\Shock_06339072-ca43-46c4-af82-ec3bf59d6ffc.par.
-2026-05-14T15:25:40 (Info):    Running math model for: { Handling and Stability Tests } Double Lane Change, Low Mu
-2026-05-14T15:25:42 (Error):   Error trying to open PARSFILE Suspensions\Shocks\Shock_06339072-ca43-46c4-af82-ec3bf59d6ffc.par.
-2026-05-14T16:18:51 (Info):    Assembling animation...
-2026-05-14T16:19:04 (Info):    Running math model for: { Handling and Stability Tests } Double Lane Change, Low Mu
-2026-05-14T16:19:04 (Info):    Math model run completed.
-2026-05-14T16:19:08 (Info):    Assembling animation...
-2026-05-14T16:21:26 (Info):    Running math model for: { Handling and Stability Tests } Double Lane Change, Low Mu
-2026-05-14T16:21:27 (Info):    Math model run completed.
-2026-05-14T16:31:00 (Info):    Assembling animation...
-2026-05-14T16:32:07 (Info):    Assembling animation...
-2026-05-14T16:33:18 (Info):    Assembling animation...
-2026-05-14T16:33:24 (Error):   Error trying to open PARSFILE Suspensions\Shocks\Shock_06339072-ca43-46c4-af82-ec3bf59d6ffc.par.
-2026-05-14T17:10:24 (Info):    Assembling animation...
-2026-05-14T17:10:37 (Info):    Running math model for: { Handling and Stability Tests } Double Lane Change, Low Mu
-2026-05-14T17:10:38 (Info):    Math model run completed.
-2026-05-14T17:10:50 (Info):    Assembling animation...
-2026-05-14T17:11:13 (Info):    Assembling animation...
-2026-05-14T17:14:28 (Info):    Assembling animation...
-2026-05-14T17:14:51 (Info):    Assembling animation...
-2026-05-14T17:15:14 (Info):    Assembling animation...
-2026-05-14T17:15:33 (Info):    Assembling animation...
-2026-05-14T17:16:48 (Info):    Running math model for: { Handling and Stability Tests } Double Lane Change, Low Mu
-2026-05-14T17:16:49 (Info):    Math model run completed.
-2026-05-14T17:16:57 (Info):    Assembling animation...
-2026-05-14T17:19:30 (Info):    Assembling animation...
-2026-05-14T17:20:40 (Info):    Assembling animation...
-2026-05-14T17:22:00 (Info):    Assembling animation...
-2026-05-14T17:24:00 (Info):    Assembling animation...
-2026-05-14T17:28:25 (Info):    Running math model for: { Handling and Stability Tests } Double Lane Change, Low Mu
-2026-05-14T17:28:26 (Info):    Math model run completed.
-2026-05-14T17:28:30 (Info):    Running math model for: { Handling and Stability Tests } Double Lane Change, Low Mu
-2026-05-14T17:28:31 (Info):    Math model run completed.
-2026-05-14T17:28:34 (Info):    Running math model for: { Handling and Stability Tests } Double Lane Change, Low Mu
-2026-05-14T17:28:34 (Info):    Math model run completed.
-2026-05-14T17:28:36 (Info):    Running math model for: { Handling and Stability Tests } Double Lane Change, Low Mu
-2026-05-14T17:28:36 (Info):    Math model run completed.
-2026-05-14T17:28:53 (Info):    Running math model for: { Handling and Stability Tests } Double Lane Change, Low Mu
-2026-05-14T17:28:54 (Info):    Math model run completed.
+2026-05-15T01:56:22 Logfile initialized.
+2026-05-15T01:56:22 (Info):    CarSim 2024.1
+2026-05-15T01:56:22 (Info):    -
+2026-05-15T01:56:22 (Info):    command-line: 
+2026-05-15T01:56:22 (Info):    -
+2026-05-15T01:56:22 (Info):    Working Dir: C:\Srs\SrsAutoCarSim\auto\
+2026-05-15T01:56:22 (Info):    Program Dir: C:\Carsim2024.1\Carsim2024.1_Prog\
+2026-05-15T01:56:22 (Info):    -
+2026-05-15T01:56:22 (Info):    OS Version:        6.2 (build 9200)
+2026-05-15T01:56:22 (Info):    CPU Architecture:  x64
+2026-05-15T01:56:22 (Info):    CPU Count:         2
+2026-05-15T01:56:22 (Info):    CPU Level/Rev:     15/1034
+2026-05-15T01:56:22 (Info):    Start Mem Total:   4090 MB
+2026-05-15T01:56:22 (Info):    Start Mem Used:    84%
+2026-05-15T01:56:22 (Info):    -
+2026-05-15T01:56:22 (Info):    Loaded dataset index cache in 0.20s, 27.0 megabytes.
+2026-05-15T01:56:23 (Info):    Error: A license manager is already running.
+2026-05-15T01:56:23 (Info):    License check took 0.48 seconds.
+2026-05-15T01:56:23 (Info):    No install ID found at regkey "Software\Mechanical Simulation Corp\CarSim 2024.1".
+2026-05-15T01:56:23 (Info):    No install ID found at regkey "Software\Mechanical Simulation Corp\CarSim 2024.1".
+2026-05-15T01:56:29 (Info):    Initial setup took 5.80 seconds.
+2026-05-15T01:56:29 (Info):    Auto updates took 0.00 seconds.
+2026-05-15T01:56:32 (Info):    Loaded last screen in 2.27 seconds.
+2026-05-15T01:56:32 (Info):    Total init time 9.86 seconds.
+2026-05-15T01:56:39 (Info):    Running math model for: { Handling and Stability Tests } Double Lane Change, Low Mu
+2026-05-15T01:56:40 (Info):    Math model run completed.
+2026-05-15T02:51:51 (Info):    Running math model for: { Handling and Stability Tests } Double Lane Change, Low Mu
+2026-05-15T02:51:51 (Info):    Math model run completed.
+2026-05-15T03:23:52 (Info):    Running math model for: { Handling and Stability Tests } Double Lane Change, Low Mu
+2026-05-15T03:23:53 (Info):    Math model run completed.
+2026-05-15T03:40:48 (Info):    Running math model for: { Handling and Stability Tests } Double Lane Change, Low Mu
+2026-05-15T03:40:49 (Info):    Math model run completed.
+2026-05-15T03:42:06 (Info):    Running math model for: { Handling and Stability Tests } Double Lane Change, Low Mu
+2026-05-15T03:42:07 (Info):    Math model run completed.
+2026-05-15T03:44:06 (Info):    Running math model for: { Handling and Stability Tests } Double Lane Change, Low Mu
+2026-05-15T03:44:07 (Info):    Math model run completed.
+2026-05-15T03:46:12 (Info):    Running math model for: { Handlin

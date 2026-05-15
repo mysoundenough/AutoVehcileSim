@@ -22,6 +22,7 @@ class vs_solver:
 
         if dll_handle.vs_run is not None and \
                         dll_handle.vs_initialize is not None and \
+                        dll_handle.vs_setdef_and_read is not None and \
                         dll_handle.vs_read_configuration is not None and \
                         dll_handle.vs_integrate_io is not None and \
                         dll_handle.vs_copy_export_vars is not None and \
@@ -192,3 +193,12 @@ class vs_solver:
     def terminate_run(self, t):
         t_c_double = ctypes.c_double(t)
         self.dll_handle.vs_terminate_run(t_c_double)
+
+    def vs_setdef_and_read(self, path_to_sim_file):
+        error_occurred = 1
+        path_to_sim_file_ptr = self.get_char_pointer(path_to_sim_file)
+
+        if path_to_sim_file_ptr is not None:
+            error_occurred = self.dll_handle.vs_setdef_and_read(path_to_sim_file_ptr)
+
+        return error_occurred

@@ -13,7 +13,7 @@ TSTART_WRITE = 0;
 TSTOP 10
 SSTOP 210
 OPT_DIRECTION 0
-*SPEED 100
+*SPEED 120
 *TSTOP 10
 *TSTART 0
 *SSTART 0
@@ -26,7 +26,7 @@ SPEED_ID_SC = SPEED_TARGET_ID
 SPEED_TARGET_COMBINE ADD
 SPEED_TARGET_S_CONSTANT 0
 set_description SPEED_TARGET_ID Procedure: DLC @ 120 km/h (no tire force arrows)
-SPEED_TARGET_CONSTANT 100
+SPEED_TARGET_CONSTANT 120
 OPT_SC_ENGINE_BRAKING 0
 PARSFILE Control\Driver\StrDM_8597394d-a68f-46f7-992e-beb4bd86bc2e.par
 #BlueLink27 Control: Steering by the Closed-loop Driver Model`Double Lane Change (Quick Start)` Vehicle Dynamics Tests` , Steering`StrDM_8597394d-a68f-46f7-992e-beb4bd86bc2e
@@ -72,7 +72,7 @@ LOG_ENTRY Used Dataset: Procedures; { Handling Testing } DLC @ 120 km/h (no tire
 #DataSet : DLC @ 120 km/h (no tire force arrows)
 #Category: Handling Testing
 #FileID  : Proc_38b53763-4ae2-4178-9faa-9b74ba426016
-#Modified: 05-11-2026 16:38:54
+#Modified: 05-15-2026 03:46:01
 #Product : CarSim 2024.1
 #DataVer : 2024.1
 #VehCode Procedure

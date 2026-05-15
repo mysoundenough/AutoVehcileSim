@@ -150,6 +150,24 @@ class CarsimManager:
             self.solver_api.print_error()
             sys.exit(error_occurred)
         logger.info("##### End of simulation #####")
+    
+    def read_configuration(self):
+
+        self.solver_api.read_configuration(self.simfile_path)
+
+    def vs_setdef_and_read(self):
+        error_occurred = 1
+        logger.info("##### vs_setdef_and_read #####")
+        logger.info("simfile_path:" + self.simfile_path)
+        error_occurred = self.solver_api.vs_setdef_and_read(
+            self.simfile_path.replace('\\\\', '\\')
+        )
+        if error_occurred != 0:
+            print("ERROR OCCURRED:  ")
+            self.solver_api.print_error()
+            sys.exit(error_occurred)
+        logger.info("##### End of vs_setdef_and_read #####")
+
 
     def close(self):
         """ close carsim solver normally"""
@@ -209,6 +227,9 @@ class CarsimManager:
         # 保存新文件
         with open(par_path, "w", encoding="utf-8") as f:
             f.write(new_content)
+
+        # 修改run_all文件
+        
     
     def modify_shock_force(self, par_path: str, param_name: str, value: float):
         """

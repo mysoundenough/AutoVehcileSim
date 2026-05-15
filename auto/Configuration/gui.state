@@ -47,7 +47,7 @@ LastDS Control: Braking Pedal Force (Open Loop)`FbkCon_a19a202c-186d-4e2d-a905-f
 LastDS Control: Clutch (Open Loop)`ClCon_c3bda42a-2285-442e-a9d7-d87d06d6b5de
 LastDS Control: Clutch Shifting Timelines (Closed Loop)`ClTime_7a6dd3f6-fcb6-4af6-939e-9f2c45956440
 LastDS Control: Electronic Stability (ESC)`ESC_7c83e406-8fbe-4de3-8a54-cf7a2e0c5ea3
-LastDS Control: Shifting (Closed Loop)`GearCL_395374af-90fa-4fef-80e1-a8df607bfbef
+LastDS Control: Shifting (Closed Loop)`GearCL_3f60e7d2-b8c4-4d68-a9c4-d897bb3e2a86
 LastDS Control: Shifting (Open Loop)`GearOL_0c1bc042-7f28-45be-9a4c-6317fbe6ee6f
 LastDS Control: Speed (Closed Loop) Using Path Preview`SpdPath_108bdc4f-b575-4a8e-8b6d-d06501ea7043
 LastDS Control: Speed (Closed Loop) Using Target Speed`SpdTime_d0416e8a-956a-459b-918e-0dc16c204214
@@ -203,4 +203,4 @@ LastDS Vehicle: Trailer with 3 Axles`Trl_3a_6c189aac-d4f0-4b9f-91b0-e75200b1be75
 LastDS Wind Speed`Wind_6ccad2e5-8eb6-4c82-a840-76bdc3d08bf7
 LastDS Wind Heading`WindDir_00d792b9-c449-4be8-80eb-3282122ed26a
 LastDS Preferences`pref_a9da94e2-90cd-46fc-a780-bb613a55ea92
-LastScreen CarSim Run Control
+LastScreen Procedures
