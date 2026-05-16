@@ -31,14 +31,14 @@ def main() -> None:
 
     # 1. 修改 前悬架空气弹簧刚度
     par_path = r"C:\Srs\SrsAutoCarSim\auto\Suspensions\Compliance\CmpInd_6a0a169e-9f67-48f4-8f46-0512eb1a3093.par"
-    cm.set_vehicle_param(par_path=par_path, front_spring_rate=26)  # N/m
+    cm.set_vehicle_param(par_path=par_path, front_spring_rate=27)  # N/m
     # 2. 修改 转向
     # 3. 修改 阻尼
     par_path = r"C:\Srs\SrsAutoCarSim\auto\Suspensions\Shocks\Shock_06339072-ca43-46c4-af82-ec3bf59d6ffc.par"
-    cm.set_vehicle_param(par_path=par_path, shock_force_rate=1)  # *k 变化倍数
+    cm.set_vehicle_param(par_path=par_path, shock_force_rate=1.1)  # *k 变化倍数
     # 4. 修改 动力响应
     par_path = r"C:\Srs\SrsAutoCarSim\auto\Generic\tables\GenTab_90d23e81-2c53-435f-8e2c-d6503354f720.par"
-    cm.set_vehicle_param(par_path=par_path, power_tao_rate=1)  # *k 变化倍数
+    cm.set_vehicle_param(par_path=par_path, power_tao_rate=1.1)  # *k 变化倍数
 
     try:
         # cm.print_sim_parameters()
