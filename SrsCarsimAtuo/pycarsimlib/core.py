@@ -205,14 +205,133 @@ class CarsimManager:
                           par_path,
                           front_spring_rate: float = None,
                           shock_force_rate: float = None,
+                          power_tao_rate: float = None,
                           user_speed: float = None):
         
         if front_spring_rate is not None:
             self.modify_spring_rate(par_path, "FRONT_SPRING_RATE", front_spring_rate)
         if shock_force_rate is not None:
             self.modify_shock_force(par_path, "FD_TABLE SPLINE", shock_force_rate)
+        if power_tao_rate is not None:
+            self.modify_power_tao(par_path, "", power_tao_rate)
 
         logger.info("vehicle param change done ---")
+    
+    def modify_power_tao(self, par_path: str, param_name: str, value: float):
+        logger.info("change power file:" + par_path)
+        # 修改底层文件
+        try:
+            # 1. 读取文件
+            with open(par_path, 'r', encoding='utf-8') as f:
+                content = f.read()
+
+            # 2. 匹配扭矩表格区域
+            pattern = re.compile(
+                r"(PWR_DRV_THROTTLE_TABLE LINEAR\n)(.*?)(\ENDTABLE)",
+                re.DOTALL
+            )
+
+            match = pattern.search(content)
+            if not match:
+                raise ValueError("未找到 PWR_DRV_THROTTLE_TABLE LINEAR 动力响应表格数据")
+
+            # 3. 逐行修改动力响应
+            table_lines = match.group(2).strip().splitlines()
+            new_lines = []
+
+            for line in table_lines:
+                line = line.strip()
+                if not line or ',' not in line:
+                    new_lines.append(line)
+                    continue
+
+                # 拆分开度、扭矩
+                vel_str, force_str = line.split(',', 1)
+                vel = vel_str.strip()
+                force = float(force_str.strip())
+
+                # 按比例缩放
+                new_force = force * value
+
+                # 保持格式（整数/小数都兼容）
+                if new_force.is_integer():
+                    new_force = int(new_force)
+
+                new_lines.append(f"{vel}, {new_force}")
+
+            # 4. 替换回文件内容
+            new_table = "\n".join(new_lines)
+            new_content = pattern.sub(
+                rf"\1{new_table}\n\3",
+                content
+            )
+
+            # 5. 保存文件
+            with open(par_path, 'w', encoding='utf-8') as f:
+                f.write(new_content)
+
+            logger.info(f"动力响应修改成功: {par_path}, 缩放比例 = {value}")
+
+        except Exception as e:
+            logger.error(f"修改动力响应失败: {str(e)}")
+            raise FileNotFoundError("Simfile not found.")
+        
+        # 修改run_all文件
+        try:
+            # 1. 读取文件
+            with open(self.run_all_path, 'r', encoding='utf-8') as f:
+                content = f.read()
+
+            # 2. 匹配扭矩表格区域
+            pattern = re.compile(
+                r"(PWR_DRV_THROTTLE_TABLE LINEAR\n)(.*?)(\nENDTABLE)",
+                re.DOTALL
+            )
+
+            match = pattern.search(content)
+            if not match:
+                raise ValueError("未找到 FD_TABLE SPLINE 减震数据")
+
+            # 3. 逐行修改动力响应扭矩
+            table_lines = match.group(2).strip().splitlines()
+            new_lines = []
+
+            for line in table_lines:
+                line = line.strip()
+                if not line or ',' not in line:
+                    new_lines.append(line)
+                    continue
+
+                # 拆分开度、扭矩
+                vel_str, force_str = line.split(',', 1)
+                vel = vel_str.strip()
+                force = float(force_str.strip())
+
+                # 按比例缩放
+                new_force = force * value
+
+                # 保持格式（整数/小数都兼容）
+                if new_force.is_integer():
+                    new_force = int(new_force)
+
+                new_lines.append(f"{vel}, {new_force}")
+
+            # 4. 替换回文件内容
+            new_table = "\n".join(new_lines)
+            new_content = pattern.sub(
+                rf"\1{new_table}\n\3",
+                content
+            )
+
+            # 5. 保存文件
+            with open(self.run_all_path, 'w', encoding='utf-8') as f:
+                f.write(new_content)
+
+            logger.info(f"动力响应修改成功: {self.run_all_path}, 缩放比例 = {value}")
+
+        except Exception as e:
+            logger.error(f"修改动力响应失败: {str(e)}")
+            raise FileNotFoundError("Simfile not found.")
     
     def modify_spring_rate(self, par_path: str, param_name: str, value: float):
         logger.info(par_path)
