@@ -3602,7 +3602,7 @@ ENTER_PARSFILE Generic\tables\GenTab_90d23e81-2c53-435f-8e2c-d6503354f720.par
 #FullDataName Generic Table`Driver Demand Power: Full Load 165 kW`Powertrain (HEV)
 PWR_DRV_THROTTLE_TABLE LINEAR
 0, 0
-1, 330
+1, 165
 ENDTABLE
 LOG_ENTRY Used Dataset: Generic Table; { Powertrain (HEV) } Driver Demand Power: Full Load 165 kW
 EXIT_PARSFILE Generic\tables\GenTab_90d23e81-2c53-435f-8e2c-d6503354f720.par

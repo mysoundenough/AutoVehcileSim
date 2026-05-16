@@ -38,7 +38,7 @@ def main() -> None:
     cm.set_vehicle_param(par_path=par_path, shock_force_rate=1)  # *k 变化倍数
     # 4. 修改 动力响应
     par_path = r"C:\Srs\SrsAutoCarSim\auto\Generic\tables\GenTab_90d23e81-2c53-435f-8e2c-d6503354f720.par"
-    cm.set_vehicle_param(par_path=par_path, power_tao_rate=2)  # *k 变化倍数
+    cm.set_vehicle_param(par_path=par_path, power_tao_rate=1)  # *k 变化倍数
 
     try:
         # cm.print_sim_parameters()
