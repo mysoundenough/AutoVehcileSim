@@ -3602,7 +3602,7 @@ ENTER_PARSFILE Generic\tables\GenTab_90d23e81-2c53-435f-8e2c-d6503354f720.par
 #FullDataName Generic Table`Driver Demand Power: Full Load 165 kW`Powertrain (HEV)
 PWR_DRV_THROTTLE_TABLE LINEAR
 0, 0
-1, 165
+1, 12
 ENDTABLE
 LOG_ENTRY Used Dataset: Generic Table; { Powertrain (HEV) } Driver Demand Power: Full Load 165 kW
 EXIT_PARSFILE Generic\tables\GenTab_90d23e81-2c53-435f-8e2c-d6503354f720.par
@@ -4134,8 +4134,8 @@ IOBJECT_RESTORE
 LOG_ENTRY Used Dataset: Vehicle: Assembly; { C-Class } C-Class, Hatchback
 EXIT_PARSFILE Vehicles\Assembly\Vehicle_9db9b98a-6725-424b-9635-e1ca6e15979d.par
 
-ENTER_PARSFILE Procedures\Proc_38b53763-4ae2-4178-9faa-9b74ba426016.par
-#FullDataName Procedures`DLC @ 120 km/h (no tire force arrows)`Handling Testing
+ENTER_PARSFILE Procedures\Proc_6d512924-f6a9-45e1-af10-e839d3980fe9.par
+#FullDataName Procedures`DLC @ 120 km/h (Low Mu Surface)`Handling Testing
 OPT_INIT_PATH 1
 OPT_STOP 1
 SSTART 0
@@ -4144,7 +4144,15 @@ TSTART_WRITE = 0;
 TSTOP 10
 SSTOP 210
 OPT_DIRECTION 0
-OPT_SC 0
+INSTALL_SPEED_CONTROLLER
+OPT_SC 3
+SET_ISPEED_FOR_ID 0
+SPEED_ID_SC = SPEED_TARGET_ID
+SPEED_TARGET_COMBINE ADD
+SPEED_TARGET_S_CONSTANT 0
+set_description SPEED_TARGET_ID Procedure: DLC @ 120 km/h (Low Mu Surface)
+SPEED_TARGET_CONSTANT 120
+OPT_SC_ENGINE_BRAKING 0
 ENTER_PARSFILE Control\Driver\StrDM_8597394d-a68f-46f7-992e-beb4bd86bc2e.par
 #FullDataName Control: Steering by the Closed-loop Driver Model`Double Lane Change (Quick Start)`Vehicle Dynamics Tests
 SET_ILTARG_FOR_ID 0
@@ -4198,11 +4206,11 @@ MODE_TRANS_CONSTANT NGEARS
 LOG_ENTRY Used Dataset: Control: Shifting (Closed Loop); { Closed-Loop Shifting } AT (All Available Gears)
 EXIT_PARSFILE Control\Gear_at\GearCL_3f60e7d2-b8c4-4d68-a9c4-d897bb3e2a86.par
 
-ENTER_PARSFILE Roads\3D_Road\Road_c76ab0d9-60d9-4781-bd32-84e57bf8316e.par
-#FullDataName Road: 3D Surface (All Properties)`DLC, Mu = 0.85`Flat Test Pads
+ENTER_PARSFILE Roads\3D_Road\Road_20acdffb-81f3-4ae3-9c6f-cdbfe0db69fc.par
+#FullDataName Road: 3D Surface (All Properties)`DLC, Mu = 0.5`Flat Test Pads
 SET_IROAD_FOR_ID 0
 CURRENT_ROAD_ID = ROAD_ID
-set_description road_id DLC, Mu = 0.85
+set_description road_id DLC, Mu = 0.5
 ENTER_PARSFILE Roads\BuilderSegment\RoadSeg_299f5dd8-31b0-44f2-9251-eaaf215df33c.par
 #FullDataName Path: Segment Builder`Straight East`Straight
 SET_IPATH_FOR_ID 0
@@ -4221,17 +4229,20 @@ EXIT_PARSFILE Roads\BuilderSegment\RoadSeg_299f5dd8-31b0-44f2-9251-eaaf215df33c.
 
 ROAD_PATH_ID = PATH_ID
 set_description road_path_id PATH_ID for: Straight East
-ENTER_PARSFILE Roads\Friction\RdMu_25e73395-9471-44b9-9c60-27bd9cc24921.par
-#FullDataName Road: Friction Map, S-L Grid`Constant: 0.85`Constant
-MU_ROAD_COMBINE ADD
-MU_ROAD_CONSTANT 0.85
-MU_ROAD_L_CONSTANT 0
-LOG_ENTRY Used Dataset: Road: Friction Map, S-L Grid; { Constant } Constant: 0.85
-EXIT_PARSFILE Roads\Friction\RdMu_25e73395-9471-44b9-9c60-27bd9cc24921.par
+ENTER_PARSFILE Roads\Friction\RdMu_c76da67c-023e-4846-8c8d-53dcbf5d90e0.par
+#FullDataName Road: Friction Map, S-L Grid`Mu = 0.5 Test Pad; 0.85 Everywhere Else`Split Mu
+MU_ROAD_CARPET 2D_STEP
+0, -10, -9, 9, 10
+-200, 0.85, 0.85, 0.85, 0.85
+-100, 0.85, 0.5, 0.85, 0.85
+400, 0.85, 0.85, 0.85, 0.85
+ENDTABLE
+LOG_ENTRY Used Dataset: Road: Friction Map, S-L Grid; { Split Mu } Mu = 0.5 Test Pad; 0.85 Everywhere Else
+EXIT_PARSFILE Roads\Friction\RdMu_c76da67c-023e-4846-8c8d-53dcbf5d90e0.par
 
-ENTER_PARSFILE Roads\Shapes\RdShape_8c8a59c7-01ef-42eb-8aa5-a5c0c0605130.par
-#FullDataName Road: Animator Surface Shapes`DLC Road`Roads
-NLANES 5
+ENTER_PARSFILE Roads\Shapes\RdShape_2f5b6258-9f6b-4935-81c9-67d5b8071680.par
+#FullDataName Road: Animator Surface Shapes`DLC Road (Low Mu Surface)`Roads
+NLANES 6
 MIRROR 0
 COLOR(1) 1 1 1
 MATERIAL(1) Grass (Light)
@@ -4260,7 +4271,7 @@ AUTODETAIL(2) Foliage
 COLOR(3) 1 1 1
 MATERIAL(3) Road (No Centerline)
 SPECULAR(3) 1
-SCALE(3) 10
+SCALE(3) 20
 LTILES(3) 1
 LIN(3) 10
 LINUNITS(3) m
@@ -4293,9 +4304,23 @@ LOUTUNITS(5) m
 S_START(5) -100
 S_STOP(5) 400
 AUTODETAIL(5) Foliage
+COLOR(6) 1 1 1
+MATERIAL(6) Tile Ice
+SPECULAR(6) 1
+SCALE(6) 10
+LTILES(6) 2
+LIN(6) -9
+LINUNITS(6) m
+LOUT(6) 9
+LOUTUNITS(6) m
+S_START(6) -100
+S_STOP(6) 400
+SINT(6) 5
+DZ(6) 0.02
+AUTODETAIL(6) Random
 MTL_FILE Animator\Road_Materials\road.mtl
-LOG_ENTRY Used Dataset: Road: Animator Surface Shapes; { Roads } DLC Road
-EXIT_PARSFILE Roads\Shapes\RdShape_8c8a59c7-01ef-42eb-8aa5-a5c0c0605130.par
+LOG_ENTRY Used Dataset: Road: Animator Surface Shapes; { Roads } DLC Road (Low Mu Surface)
+EXIT_PARSFILE Roads\Shapes\RdShape_2f5b6258-9f6b-4935-81c9-67d5b8071680.par
 
 RR_SURF_CONSTANT 1
 L_CAMERA_FRONT 0.5
@@ -4443,45 +4468,52 @@ ENDTABLE
 LOG_ENTRY Used Dataset: Road: Animator Repeated Object; { Trees } Trees (-100, 400)
 EXIT_PARSFILE Roads\AniGroup\AniRep_4d17b50f-122e-4db4-984d-68640daf38b7.par
 
-ENTER_PARSFILE Roads\3D_Road\Road_c76ab0d9-60d9-4781-bd32-84e57bf8316e.ani
+ENTER_PARSFILE Roads\3D_Road\Road_20acdffb-81f3-4ae3-9c6f-cdbfe0db69fc.ani
 add_reference_frame The Road
 reference_frame_ghosts off
-add_obj Roads\3D_Road\Road_c76ab0d9-60d9-4781-bd32-84e57bf8316e_1.obj
+add_obj Roads\3D_Road\Road_20acdffb-81f3-4ae3-9c6f-cdbfe0db69fc_1.obj
 set_color 1 1 1
 show_front on
 show_back off
 compute_normals on
 set_specular 1 1 1
 set_auto_detail_type Foliage
-add_obj Roads\3D_Road\Road_c76ab0d9-60d9-4781-bd32-84e57bf8316e_2.obj
+add_obj Roads\3D_Road\Road_20acdffb-81f3-4ae3-9c6f-cdbfe0db69fc_2.obj
 set_color 1 1 1
 show_front on
 show_back off
 compute_normals on
 set_specular 1 1 1
 set_auto_detail_type Foliage
-add_obj Roads\3D_Road\Road_c76ab0d9-60d9-4781-bd32-84e57bf8316e_3.obj
+add_obj Roads\3D_Road\Road_20acdffb-81f3-4ae3-9c6f-cdbfe0db69fc_3.obj
 set_color 1 1 1
 show_front on
 show_back off
 compute_normals on
 set_specular 1 1 1
 set_auto_detail_type Road
-add_obj Roads\3D_Road\Road_c76ab0d9-60d9-4781-bd32-84e57bf8316e_4.obj
+add_obj Roads\3D_Road\Road_20acdffb-81f3-4ae3-9c6f-cdbfe0db69fc_4.obj
 set_color 1 1 1
 show_front on
 show_back off
 compute_normals on
 set_specular 1 1 1
 set_auto_detail_type Foliage
-add_obj Roads\3D_Road\Road_c76ab0d9-60d9-4781-bd32-84e57bf8316e_5.obj
+add_obj Roads\3D_Road\Road_20acdffb-81f3-4ae3-9c6f-cdbfe0db69fc_5.obj
 set_color 1 1 1
 show_front on
 show_back off
 compute_normals on
 set_specular 1 1 1
 set_auto_detail_type Foliage
-EXIT_PARSFILE Roads\3D_Road\Road_c76ab0d9-60d9-4781-bd32-84e57bf8316e.ani
+add_obj Roads\3D_Road\Road_20acdffb-81f3-4ae3-9c6f-cdbfe0db69fc_6.obj
+set_color 1 1 1
+show_front on
+show_back off
+compute_normals on
+set_specular 1 1 1
+set_auto_detail_type Random
+EXIT_PARSFILE Roads\3D_Road\Road_20acdffb-81f3-4ae3-9c6f-cdbfe0db69fc.ani
 
 add_reference_frame road_stuff_1_2_Traffic_Cone
 reference_frame_ghosts off
@@ -5656,8 +5688,610 @@ vsv_enable_shadows_recursive
 LOG_ENTRY Used Dataset: Animator: Shape File Link; { Environment: Trees } Elm: Summer, Small
 EXIT_PARSFILE Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
 
-LOG_ENTRY Used Dataset: Road: 3D Surface (All Properties); { Flat Test Pads } DLC, Mu = 0.85
-EXIT_PARSFILE Roads\3D_Road\Road_c76ab0d9-60d9-4781-bd32-84e57bf8316e.par
+LOG_ENTRY Used Dataset: Road: 3D Surface (All Properties); { Flat Test Pads } DLC, Mu = 0.5
+EXIT_PARSFILE Roads\3D_Road\Road_20acdffb-81f3-4ae3-9c6f-cdbfe0db69fc.par
+
+ENTER_PARSFILE Generic\Group\GenGrp_c11e4bbe-5e3a-4498-91a5-6c42d1db378a.par
+#FullDataName Generic Data Group`2 Axle - Fx, Fy, Fz`Tire Force Arrows
+ENTER_PARSFILE Animator\Arrows\Arrows_4e3feb5a-68cd-4d99-b6af-c725ceea66fe.par
+#FullDataName Animator: Wheel Arrows and Other Indicators`2A - Fx Tire Force Arrows`Tire Force Arrows (2 Axles)
+ADD_REFERENCE_FRAME wheel L1 indicator: 2A - Fx Tire Force Arrows
+ENTER_PARSFILE Animator\STL\Shape_121d1f5b-e0e1-4397-b1a3-9459bdc4d022.par
+#FullDataName Animator: Shape File Link`3D Pyramid: Tail Org (X-Axis)`Geometric Shapes: Arrows
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\3D_Arrow_Pyramid\arrow_3D.OSG
+SET_COLOR 1 1 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.15
+SET_ANGLE_Z -90
+SET_ANGLE_Y 0
+SET_ANGLE_X 0
+SET_OFFSET_X 0.5
+SET_OFFSET_Y 0
+SET_OFFSET_Z 0.02
+X_REF_LENGTH 2000
+set_lighting on
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 3D Pyramid: Tail Org (X-Axis)
+EXIT_PARSFILE Animator\STL\Shape_121d1f5b-e0e1-4397-b1a3-9459bdc4d022.par
+
+SET_EULER_ANGLES yaw_pitch_roll
+SET_X_NAME Xctc_L1
+WRT_Xctc_L1
+ANI_Xctc_L1
+SET_Y_NAME Yctc_L1
+WRT_Yctc_L1
+ANI_Yctc_L1
+SET_Z_NAME Zgnd_L1
+WRT_Zgnd_L1
+ANI_Zgnd_L1
+SET_PITCH_NAME PitchGL1
+WRT_PitchGL1
+ANI_PitchGL1
+SET_ROLL_NAME RollGL1
+WRT_RollGL1
+ANI_RollGL1
+SET_YAW_NAME Yaw_L1
+WRT_Yaw_L1
+ANI_Yaw_L1
+SET_FRAME_SCALE_X_NAME Fx_L1
+WRT_Fx_L1
+ANI_Fx_L1
+X_REF_LENGTH 2000
+X_LENGTH 1
+Y_LENGTH 1
+Z_LENGTH 1
+SET_OFFSET_VAR_Z 0
+ADD_REFERENCE_FRAME wheel L2 indicator: 2A - Fx Tire Force Arrows
+ENTER_PARSFILE Animator\STL\Shape_121d1f5b-e0e1-4397-b1a3-9459bdc4d022.par
+#FullDataName Animator: Shape File Link`3D Pyramid: Tail Org (X-Axis)`Geometric Shapes: Arrows
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\3D_Arrow_Pyramid\arrow_3D.OSG
+SET_COLOR 1 1 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.15
+SET_ANGLE_Z -90
+SET_ANGLE_Y 0
+SET_ANGLE_X 0
+SET_OFFSET_X 0.5
+SET_OFFSET_Y 0
+SET_OFFSET_Z 0.02
+X_REF_LENGTH 2000
+set_lighting on
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 3D Pyramid: Tail Org (X-Axis)
+EXIT_PARSFILE Animator\STL\Shape_121d1f5b-e0e1-4397-b1a3-9459bdc4d022.par
+
+SET_EULER_ANGLES yaw_pitch_roll
+SET_X_NAME Xctc_L2
+WRT_Xctc_L2
+ANI_Xctc_L2
+SET_Y_NAME Yctc_L2
+WRT_Yctc_L2
+ANI_Yctc_L2
+SET_Z_NAME Zgnd_L2
+WRT_Zgnd_L2
+ANI_Zgnd_L2
+SET_PITCH_NAME PitchGL2
+WRT_PitchGL2
+ANI_PitchGL2
+SET_ROLL_NAME RollGL2
+WRT_RollGL2
+ANI_RollGL2
+SET_YAW_NAME Yaw_L2
+WRT_Yaw_L2
+ANI_Yaw_L2
+SET_FRAME_SCALE_X_NAME Fx_L2
+WRT_Fx_L2
+ANI_Fx_L2
+X_REF_LENGTH 2000
+X_LENGTH 1
+Y_LENGTH 1
+Z_LENGTH 1
+SET_OFFSET_VAR_Z 0
+ADD_REFERENCE_FRAME wheel R1 indicator: 2A - Fx Tire Force Arrows
+ENTER_PARSFILE Animator\STL\Shape_121d1f5b-e0e1-4397-b1a3-9459bdc4d022.par
+#FullDataName Animator: Shape File Link`3D Pyramid: Tail Org (X-Axis)`Geometric Shapes: Arrows
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\3D_Arrow_Pyramid\arrow_3D.OSG
+SET_COLOR 1 1 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.15
+SET_ANGLE_Z -90
+SET_ANGLE_Y 0
+SET_ANGLE_X 0
+SET_OFFSET_X 0.5
+SET_OFFSET_Y 0
+SET_OFFSET_Z 0.02
+X_REF_LENGTH 2000
+set_lighting on
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 3D Pyramid: Tail Org (X-Axis)
+EXIT_PARSFILE Animator\STL\Shape_121d1f5b-e0e1-4397-b1a3-9459bdc4d022.par
+
+SET_EULER_ANGLES yaw_pitch_roll
+SET_X_NAME Xctc_R1
+WRT_Xctc_R1
+ANI_Xctc_R1
+SET_Y_NAME Yctc_R1
+WRT_Yctc_R1
+ANI_Yctc_R1
+SET_Z_NAME Zgnd_R1
+WRT_Zgnd_R1
+ANI_Zgnd_R1
+SET_PITCH_NAME PitchGR1
+WRT_PitchGR1
+ANI_PitchGR1
+SET_ROLL_NAME RollGR1
+WRT_RollGR1
+ANI_RollGR1
+SET_YAW_NAME Yaw_R1
+WRT_Yaw_R1
+ANI_Yaw_R1
+SET_FRAME_SCALE_X_NAME Fx_R1
+WRT_Fx_R1
+ANI_Fx_R1
+X_REF_LENGTH 2000
+X_LENGTH 1
+Y_LENGTH 1
+Z_LENGTH 1
+SET_OFFSET_VAR_Z 0
+ADD_REFERENCE_FRAME wheel R2 indicator: 2A - Fx Tire Force Arrows
+ENTER_PARSFILE Animator\STL\Shape_121d1f5b-e0e1-4397-b1a3-9459bdc4d022.par
+#FullDataName Animator: Shape File Link`3D Pyramid: Tail Org (X-Axis)`Geometric Shapes: Arrows
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\3D_Arrow_Pyramid\arrow_3D.OSG
+SET_COLOR 1 1 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.15
+SET_ANGLE_Z -90
+SET_ANGLE_Y 0
+SET_ANGLE_X 0
+SET_OFFSET_X 0.5
+SET_OFFSET_Y 0
+SET_OFFSET_Z 0.02
+X_REF_LENGTH 2000
+set_lighting on
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 3D Pyramid: Tail Org (X-Axis)
+EXIT_PARSFILE Animator\STL\Shape_121d1f5b-e0e1-4397-b1a3-9459bdc4d022.par
+
+SET_EULER_ANGLES yaw_pitch_roll
+SET_X_NAME Xctc_R2
+WRT_Xctc_R2
+ANI_Xctc_R2
+SET_Y_NAME Yctc_R2
+WRT_Yctc_R2
+ANI_Yctc_R2
+SET_Z_NAME Zgnd_R2
+WRT_Zgnd_R2
+ANI_Zgnd_R2
+SET_PITCH_NAME PitchGR2
+WRT_PitchGR2
+ANI_PitchGR2
+SET_ROLL_NAME RollGR2
+WRT_RollGR2
+ANI_RollGR2
+SET_YAW_NAME Yaw_R2
+WRT_Yaw_R2
+ANI_Yaw_R2
+SET_FRAME_SCALE_X_NAME Fx_R2
+WRT_Fx_R2
+ANI_Fx_R2
+X_REF_LENGTH 2000
+X_LENGTH 1
+Y_LENGTH 1
+Z_LENGTH 1
+SET_OFFSET_VAR_Z 0
+LOG_ENTRY Used Dataset: Animator: Wheel Arrows and Other Indicators; { Tire Force Arrows (2 Axles) } 2A - Fx Tire Force Arrows
+EXIT_PARSFILE Animator\Arrows\Arrows_4e3feb5a-68cd-4d99-b6af-c725ceea66fe.par
+
+ENTER_PARSFILE Animator\Arrows\Arrows_94aef88b-f22e-4c93-b17a-72a15e42b3fb.par
+#FullDataName Animator: Wheel Arrows and Other Indicators`2A - Fy Tire Force Arrows`Tire Force Arrows (2 Axles)
+ADD_REFERENCE_FRAME wheel L1 indicator: 2A - Fy Tire Force Arrows
+ENTER_PARSFILE Animator\STL\Shape_adff5bc7-5cc6-40c6-8119-03dd91486a9c.par
+#FullDataName Animator: Shape File Link`3D Pyramid: Tail Org (Y-Axis)`Geometric Shapes: Arrows
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\3D_Arrow_Pyramid\arrow_3D.OSG
+SET_COLOR 1 1 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.15
+SET_ANGLE_Z 0
+SET_ANGLE_Y 0
+SET_ANGLE_X 0
+SET_OFFSET_X 0
+SET_OFFSET_Y 0.5
+SET_OFFSET_Z 0.02
+Y_REF_LENGTH 2000
+set_lighting on
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 3D Pyramid: Tail Org (Y-Axis)
+EXIT_PARSFILE Animator\STL\Shape_adff5bc7-5cc6-40c6-8119-03dd91486a9c.par
+
+SET_EULER_ANGLES yaw_pitch_roll
+SET_X_NAME Xctc_L1
+WRT_Xctc_L1
+ANI_Xctc_L1
+SET_Y_NAME Yctc_L1
+WRT_Yctc_L1
+ANI_Yctc_L1
+SET_Z_NAME Zgnd_L1
+WRT_Zgnd_L1
+ANI_Zgnd_L1
+SET_PITCH_NAME PitchGL1
+WRT_PitchGL1
+ANI_PitchGL1
+SET_ROLL_NAME RollGL1
+WRT_RollGL1
+ANI_RollGL1
+SET_YAW_NAME Yaw_L1
+WRT_Yaw_L1
+ANI_Yaw_L1
+SET_FRAME_SCALE_Y_NAME Fy_L1
+WRT_Fy_L1
+ANI_Fy_L1
+Y_REF_LENGTH 2000
+X_LENGTH 1
+Y_LENGTH 1
+Z_LENGTH 1
+SET_OFFSET_VAR_Z 0
+ADD_REFERENCE_FRAME wheel L2 indicator: 2A - Fy Tire Force Arrows
+ENTER_PARSFILE Animator\STL\Shape_adff5bc7-5cc6-40c6-8119-03dd91486a9c.par
+#FullDataName Animator: Shape File Link`3D Pyramid: Tail Org (Y-Axis)`Geometric Shapes: Arrows
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\3D_Arrow_Pyramid\arrow_3D.OSG
+SET_COLOR 1 1 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.15
+SET_ANGLE_Z 0
+SET_ANGLE_Y 0
+SET_ANGLE_X 0
+SET_OFFSET_X 0
+SET_OFFSET_Y 0.5
+SET_OFFSET_Z 0.02
+Y_REF_LENGTH 2000
+set_lighting on
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 3D Pyramid: Tail Org (Y-Axis)
+EXIT_PARSFILE Animator\STL\Shape_adff5bc7-5cc6-40c6-8119-03dd91486a9c.par
+
+SET_EULER_ANGLES yaw_pitch_roll
+SET_X_NAME Xctc_L2
+WRT_Xctc_L2
+ANI_Xctc_L2
+SET_Y_NAME Yctc_L2
+WRT_Yctc_L2
+ANI_Yctc_L2
+SET_Z_NAME Zgnd_L2
+WRT_Zgnd_L2
+ANI_Zgnd_L2
+SET_PITCH_NAME PitchGL2
+WRT_PitchGL2
+ANI_PitchGL2
+SET_ROLL_NAME RollGL2
+WRT_RollGL2
+ANI_RollGL2
+SET_YAW_NAME Yaw_L2
+WRT_Yaw_L2
+ANI_Yaw_L2
+SET_FRAME_SCALE_Y_NAME Fy_L2
+WRT_Fy_L2
+ANI_Fy_L2
+Y_REF_LENGTH 2000
+X_LENGTH 1
+Y_LENGTH 1
+Z_LENGTH 1
+SET_OFFSET_VAR_Z 0
+ADD_REFERENCE_FRAME wheel R1 indicator: 2A - Fy Tire Force Arrows
+ENTER_PARSFILE Animator\STL\Shape_adff5bc7-5cc6-40c6-8119-03dd91486a9c.par
+#FullDataName Animator: Shape File Link`3D Pyramid: Tail Org (Y-Axis)`Geometric Shapes: Arrows
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\3D_Arrow_Pyramid\arrow_3D.OSG
+SET_COLOR 1 1 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.15
+SET_ANGLE_Z 0
+SET_ANGLE_Y 0
+SET_ANGLE_X 0
+SET_OFFSET_X 0
+SET_OFFSET_Y 0.5
+SET_OFFSET_Z 0.02
+Y_REF_LENGTH 2000
+set_lighting on
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 3D Pyramid: Tail Org (Y-Axis)
+EXIT_PARSFILE Animator\STL\Shape_adff5bc7-5cc6-40c6-8119-03dd91486a9c.par
+
+SET_EULER_ANGLES yaw_pitch_roll
+SET_X_NAME Xctc_R1
+WRT_Xctc_R1
+ANI_Xctc_R1
+SET_Y_NAME Yctc_R1
+WRT_Yctc_R1
+ANI_Yctc_R1
+SET_Z_NAME Zgnd_R1
+WRT_Zgnd_R1
+ANI_Zgnd_R1
+SET_PITCH_NAME PitchGR1
+WRT_PitchGR1
+ANI_PitchGR1
+SET_ROLL_NAME RollGR1
+WRT_RollGR1
+ANI_RollGR1
+SET_YAW_NAME Yaw_R1
+WRT_Yaw_R1
+ANI_Yaw_R1
+SET_FRAME_SCALE_Y_NAME Fy_R1
+WRT_Fy_R1
+ANI_Fy_R1
+Y_REF_LENGTH 2000
+X_LENGTH 1
+Y_LENGTH 1
+Z_LENGTH 1
+SET_OFFSET_VAR_Z 0
+ADD_REFERENCE_FRAME wheel R2 indicator: 2A - Fy Tire Force Arrows
+ENTER_PARSFILE Animator\STL\Shape_adff5bc7-5cc6-40c6-8119-03dd91486a9c.par
+#FullDataName Animator: Shape File Link`3D Pyramid: Tail Org (Y-Axis)`Geometric Shapes: Arrows
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\3D_Arrow_Pyramid\arrow_3D.OSG
+SET_COLOR 1 1 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.15
+SET_ANGLE_Z 0
+SET_ANGLE_Y 0
+SET_ANGLE_X 0
+SET_OFFSET_X 0
+SET_OFFSET_Y 0.5
+SET_OFFSET_Z 0.02
+Y_REF_LENGTH 2000
+set_lighting on
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 3D Pyramid: Tail Org (Y-Axis)
+EXIT_PARSFILE Animator\STL\Shape_adff5bc7-5cc6-40c6-8119-03dd91486a9c.par
+
+SET_EULER_ANGLES yaw_pitch_roll
+SET_X_NAME Xctc_R2
+WRT_Xctc_R2
+ANI_Xctc_R2
+SET_Y_NAME Yctc_R2
+WRT_Yctc_R2
+ANI_Yctc_R2
+SET_Z_NAME Zgnd_R2
+WRT_Zgnd_R2
+ANI_Zgnd_R2
+SET_PITCH_NAME PitchGR2
+WRT_PitchGR2
+ANI_PitchGR2
+SET_ROLL_NAME RollGR2
+WRT_RollGR2
+ANI_RollGR2
+SET_YAW_NAME Yaw_R2
+WRT_Yaw_R2
+ANI_Yaw_R2
+SET_FRAME_SCALE_Y_NAME Fy_R2
+WRT_Fy_R2
+ANI_Fy_R2
+Y_REF_LENGTH 2000
+X_LENGTH 1
+Y_LENGTH 1
+Z_LENGTH 1
+SET_OFFSET_VAR_Z 0
+LOG_ENTRY Used Dataset: Animator: Wheel Arrows and Other Indicators; { Tire Force Arrows (2 Axles) } 2A - Fy Tire Force Arrows
+EXIT_PARSFILE Animator\Arrows\Arrows_94aef88b-f22e-4c93-b17a-72a15e42b3fb.par
+
+ENTER_PARSFILE Animator\Arrows\Arrows_f2c29d4b-df79-4c67-b153-729d3f552770.par
+#FullDataName Animator: Wheel Arrows and Other Indicators`2A - Fz Tire Force Arrows`Tire Force Arrows (2 Axles)
+ADD_REFERENCE_FRAME wheel L1 indicator: 2A - Fz Tire Force Arrows
+ENTER_PARSFILE Animator\STL\Shape_252e3627-824b-46c7-8ec4-f437c8cdcf34.par
+#FullDataName Animator: Shape File Link`3D Pyramid: Tail Org (Z-Axis)`Geometric Shapes: Arrows
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\3D_Arrow_Pyramid\arrow_3D.OSG
+SET_COLOR 1 1 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.15
+SET_ANGLE_Z 0
+SET_ANGLE_Y 0
+SET_ANGLE_X 90
+SET_OFFSET_X 0
+SET_OFFSET_Y 0.5
+SET_OFFSET_Z 0.5
+Z_REF_LENGTH 2000
+set_lighting on
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 3D Pyramid: Tail Org (Z-Axis)
+EXIT_PARSFILE Animator\STL\Shape_252e3627-824b-46c7-8ec4-f437c8cdcf34.par
+
+SET_EULER_ANGLES yaw_pitch_roll
+SET_X_NAME Xctc_L1
+WRT_Xctc_L1
+ANI_Xctc_L1
+SET_Y_NAME Yctc_L1
+WRT_Yctc_L1
+ANI_Yctc_L1
+SET_Z_NAME Zgnd_L1
+WRT_Zgnd_L1
+ANI_Zgnd_L1
+SET_PITCH_NAME PitchGL1
+WRT_PitchGL1
+ANI_PitchGL1
+SET_ROLL_NAME RollGL1
+WRT_RollGL1
+ANI_RollGL1
+SET_YAW_NAME Yaw_L1
+WRT_Yaw_L1
+ANI_Yaw_L1
+SET_FRAME_SCALE_Z_NAME Fz_L1
+WRT_Fz_L1
+ANI_Fz_L1
+Z_REF_LENGTH 2000
+X_LENGTH 1
+Y_LENGTH 1
+Z_LENGTH 1
+SET_OFFSET_VAR_Z 0
+ADD_REFERENCE_FRAME wheel L2 indicator: 2A - Fz Tire Force Arrows
+ENTER_PARSFILE Animator\STL\Shape_252e3627-824b-46c7-8ec4-f437c8cdcf34.par
+#FullDataName Animator: Shape File Link`3D Pyramid: Tail Org (Z-Axis)`Geometric Shapes: Arrows
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\3D_Arrow_Pyramid\arrow_3D.OSG
+SET_COLOR 1 1 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.15
+SET_ANGLE_Z 0
+SET_ANGLE_Y 0
+SET_ANGLE_X 90
+SET_OFFSET_X 0
+SET_OFFSET_Y 0.5
+SET_OFFSET_Z 0.5
+Z_REF_LENGTH 2000
+set_lighting on
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 3D Pyramid: Tail Org (Z-Axis)
+EXIT_PARSFILE Animator\STL\Shape_252e3627-824b-46c7-8ec4-f437c8cdcf34.par
+
+SET_EULER_ANGLES yaw_pitch_roll
+SET_X_NAME Xctc_L2
+WRT_Xctc_L2
+ANI_Xctc_L2
+SET_Y_NAME Yctc_L2
+WRT_Yctc_L2
+ANI_Yctc_L2
+SET_Z_NAME Zgnd_L2
+WRT_Zgnd_L2
+ANI_Zgnd_L2
+SET_PITCH_NAME PitchGL2
+WRT_PitchGL2
+ANI_PitchGL2
+SET_ROLL_NAME RollGL2
+WRT_RollGL2
+ANI_RollGL2
+SET_YAW_NAME Yaw_L2
+WRT_Yaw_L2
+ANI_Yaw_L2
+SET_FRAME_SCALE_Z_NAME Fz_L2
+WRT_Fz_L2
+ANI_Fz_L2
+Z_REF_LENGTH 2000
+X_LENGTH 1
+Y_LENGTH 1
+Z_LENGTH 1
+SET_OFFSET_VAR_Z 0
+ADD_REFERENCE_FRAME wheel R1 indicator: 2A - Fz Tire Force Arrows
+ENTER_PARSFILE Animator\STL\Shape_252e3627-824b-46c7-8ec4-f437c8cdcf34.par
+#FullDataName Animator: Shape File Link`3D Pyramid: Tail Org (Z-Axis)`Geometric Shapes: Arrows
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\3D_Arrow_Pyramid\arrow_3D.OSG
+SET_COLOR 1 1 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.15
+SET_ANGLE_Z 0
+SET_ANGLE_Y 0
+SET_ANGLE_X 90
+SET_OFFSET_X 0
+SET_OFFSET_Y 0.5
+SET_OFFSET_Z 0.5
+Z_REF_LENGTH 2000
+set_lighting on
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 3D Pyramid: Tail Org (Z-Axis)
+EXIT_PARSFILE Animator\STL\Shape_252e3627-824b-46c7-8ec4-f437c8cdcf34.par
+
+SET_EULER_ANGLES yaw_pitch_roll
+SET_X_NAME Xctc_R1
+WRT_Xctc_R1
+ANI_Xctc_R1
+SET_Y_NAME Yctc_R1
+WRT_Yctc_R1
+ANI_Yctc_R1
+SET_Z_NAME Zgnd_R1
+WRT_Zgnd_R1
+ANI_Zgnd_R1
+SET_PITCH_NAME PitchGR1
+WRT_PitchGR1
+ANI_PitchGR1
+SET_ROLL_NAME RollGR1
+WRT_RollGR1
+ANI_RollGR1
+SET_YAW_NAME Yaw_R1
+WRT_Yaw_R1
+ANI_Yaw_R1
+SET_OFFSET_VAR_YAW 180
+SET_SCALE_VAR_ROLL -1
+SET_SCALE_VAR_PITCH -1
+SET_FRAME_SCALE_Z_NAME Fz_R1
+WRT_Fz_R1
+ANI_Fz_R1
+Z_REF_LENGTH 2000
+X_LENGTH 1
+Y_LENGTH 1
+Z_LENGTH 1
+SET_OFFSET_VAR_Z 0
+ADD_REFERENCE_FRAME wheel R2 indicator: 2A - Fz Tire Force Arrows
+ENTER_PARSFILE Animator\STL\Shape_252e3627-824b-46c7-8ec4-f437c8cdcf34.par
+#FullDataName Animator: Shape File Link`3D Pyramid: Tail Org (Z-Axis)`Geometric Shapes: Arrows
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\3D_Arrow_Pyramid\arrow_3D.OSG
+SET_COLOR 1 1 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.15
+SET_ANGLE_Z 0
+SET_ANGLE_Y 0
+SET_ANGLE_X 90
+SET_OFFSET_X 0
+SET_OFFSET_Y 0.5
+SET_OFFSET_Z 0.5
+Z_REF_LENGTH 2000
+set_lighting on
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 3D Pyramid: Tail Org (Z-Axis)
+EXIT_PARSFILE Animator\STL\Shape_252e3627-824b-46c7-8ec4-f437c8cdcf34.par
+
+SET_EULER_ANGLES yaw_pitch_roll
+SET_X_NAME Xctc_R2
+WRT_Xctc_R2
+ANI_Xctc_R2
+SET_Y_NAME Yctc_R2
+WRT_Yctc_R2
+ANI_Yctc_R2
+SET_Z_NAME Zgnd_R2
+WRT_Zgnd_R2
+ANI_Zgnd_R2
+SET_PITCH_NAME PitchGR2
+WRT_PitchGR2
+ANI_PitchGR2
+SET_ROLL_NAME RollGR2
+WRT_RollGR2
+ANI_RollGR2
+SET_YAW_NAME Yaw_R2
+WRT_Yaw_R2
+ANI_Yaw_R2
+SET_OFFSET_VAR_YAW 180
+SET_SCALE_VAR_ROLL -1
+SET_SCALE_VAR_PITCH -1
+SET_FRAME_SCALE_Z_NAME Fz_R2
+WRT_Fz_R2
+ANI_Fz_R2
+Z_REF_LENGTH 2000
+X_LENGTH 1
+Y_LENGTH 1
+Z_LENGTH 1
+SET_OFFSET_VAR_Z 0
+LOG_ENTRY Used Dataset: Animator: Wheel Arrows and Other Indicators; { Tire Force Arrows (2 Axles) } 2A - Fz Tire Force Arrows
+EXIT_PARSFILE Animator\Arrows\Arrows_f2c29d4b-df79-4c67-b153-729d3f552770.par
+
+LOG_ENTRY Used Dataset: Generic Data Group; { Tire Force Arrows } 2 Axle - Fx, Fy, Fz
+EXIT_PARSFILE Generic\Group\GenGrp_c11e4bbe-5e3a-4498-91a5-6c42d1db378a.par
 
 ENTER_PARSFILE Plot\Setup\Plot_315ea46e-b7b6-40d8-84de-a7ef2624a470.par
 #FullDataName Plot: Setup`Lateral Tracking vs. Station`Tracking
@@ -5779,6 +6413,50 @@ PTITLE Road Wheel Steer Angle - Front
 END_ENTITY Plot
 LOG_ENTRY Used Dataset: Plot: Setup; { Steering } Road Wheel Steer Angle - Front
 EXIT_PARSFILE Plot\Setup\Plot_57fbe53b-9356-4cb1-9fd0-29f3e70d3894.par
+
+ENTER_PARSFILE Plot\Setup\Plot_3c5f8bac-e2f6-4ebc-ab48-a1828a269fd4.par
+#FullDataName Plot: Setup`Slip Angles: Instant`Tire Kinematics
+ADD_ENTITY Plot
+ENTER_PARSFILE Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par
+#FullDataName Plot: Format`Default Plot Settings`
+LEGENDPERCENT 60
+TITLEFONTSIZE 10
+TITLELOCATION -1
+AXES Axes
+FRAME Frame
+GRID CourseGrid
+LEGENDDATA_1 RigidBodyName
+TITLEFONTSTYLE Regular
+TITLEFONTNAME Arial
+LEGENDFONTNAME Arial
+LEGENDFONTSIZE 10
+LEGENDFONTSTYLE Regular
+LABELFONTNAME Arial
+LABELFONTSIZE 10
+LABELFONTSTYLE Regular
+TICLABELFONTNAME Arial
+TICLABELFONTSIZE 10
+TICLABELFONTSTYLE Regular
+SYMBOLS 10,1,2,3,4,5,6,7,8,9,10,4,1,2,3,4,5,6,7,8
+LINESTYL 1,1,1,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1
+COLORS 8,2,3,11,4,0,6,14,8,7,10,8,12,13,14,6,1,2,0,4
+LOG_ENTRY Used Dataset: Plot: Format; Default Plot Settings
+EXIT_PARSFILE Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par
+
+PLOTCHANNELS Alpha_L1, Time
+WRT_ALPHA_L1
+PLOTCHANNELS Alpha_R1, Time
+WRT_ALPHA_R1
+PLOTCHANNELS Alpha_L2, Time
+WRT_ALPHA_L2
+PLOTCHANNELS Alpha_R2, Time
+WRT_ALPHA_R2
+YMaxmin Auto
+XMaxmin Auto
+PTITLE Slip Angles: Instant
+END_ENTITY Plot
+LOG_ENTRY Used Dataset: Plot: Setup; { Tire Kinematics } Slip Angles: Instant
+EXIT_PARSFILE Plot\Setup\Plot_3c5f8bac-e2f6-4ebc-ab48-a1828a269fd4.par
 
 ENTER_PARSFILE Plot\Setup\Plot_8b22f20a-1297-43cf-9e59-a0b1d530d136.par
 #FullDataName Plot: Setup`Lateral Accel. of CG's vs. Time`Vehicle Motion
@@ -5947,52 +6625,8 @@ END_ENTITY Plot
 LOG_ENTRY Used Dataset: Plot: Setup; { Tire Forces and Moments } Vertical Forces
 EXIT_PARSFILE Plot\Setup\Plot_a146934a-339c-4983-9664-0f9749a0dfd6.par
 
-ENTER_PARSFILE Plot\Setup\Plot_a243fc1c-fc6b-4404-89ac-bc8209a293be.par
-#FullDataName Plot: Setup`Longitudinal Speed (Vxz_Fwd) vs. Time`Vehicle Motion
-ADD_ENTITY Plot
-ENTER_PARSFILE Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par
-#FullDataName Plot: Format`Default Plot Settings`
-LEGENDPERCENT 60
-TITLEFONTSIZE 10
-TITLELOCATION -1
-AXES Axes
-FRAME Frame
-GRID CourseGrid
-LEGENDDATA_1 RigidBodyName
-TITLEFONTSTYLE Regular
-TITLEFONTNAME Arial
-LEGENDFONTNAME Arial
-LEGENDFONTSIZE 10
-LEGENDFONTSTYLE Regular
-LABELFONTNAME Arial
-LABELFONTSIZE 10
-LABELFONTSTYLE Regular
-TICLABELFONTNAME Arial
-TICLABELFONTSIZE 10
-TICLABELFONTSTYLE Regular
-SYMBOLS 10,1,2,3,4,5,6,7,8,9,10,4,1,2,3,4,5,6,7,8
-LINESTYL 1,1,1,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,2,1
-COLORS 8,2,3,11,4,0,6,14,8,7,10,8,12,13,14,6,1,2,0,4
-LOG_ENTRY Used Dataset: Plot: Format; Default Plot Settings
-EXIT_PARSFILE Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par
-
-PLOTCHANNELS Vx, Time
-WRT_VX
-PLOTCHANNELS Vxz_Fwd, Time
-WRT_VXZ_FWD
-PLOTCHANNELS VxTarget, Time
-WRT_VXTARGET
-PLOTCHANNELS Vx_2, Time
-WRT_VX_2
-YMaxmin Auto
-XMaxmin Auto
-PTITLE Longitudinal Speed (Vxz_Fwd) vs. Time
-END_ENTITY Plot
-LOG_ENTRY Used Dataset: Plot: Setup; { Vehicle Motion } Longitudinal Speed (Vxz_Fwd) vs. Time
-EXIT_PARSFILE Plot\Setup\Plot_a243fc1c-fc6b-4404-89ac-bc8209a293be.par
-
-LOG_ENTRY Used Dataset: Procedures; { Handling Testing } DLC @ 120 km/h (no tire force arrows)
-EXIT_PARSFILE Procedures\Proc_38b53763-4ae2-4178-9faa-9b74ba426016.par
+LOG_ENTRY Used Dataset: Procedures; { Handling Testing } DLC @ 120 km/h (Low Mu Surface)
+EXIT_PARSFILE Procedures\Proc_6d512924-f6a9-45e1-af10-e839d3980fe9.par
 
 OPT_VS_FILETYPE 4
 OPT_ALL_WRITE 1

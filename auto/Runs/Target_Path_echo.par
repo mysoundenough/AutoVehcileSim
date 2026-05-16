@@ -8,7 +8,7 @@ CATEGORY Handling and Stability Tests
 TITLE Double Lane Change, Low Mu <Handling and Stability Tests>
 
 ! Echo: Runs\Target_Path_echo.par
-! This run was made 19:01 on May 14, 2026.
+! This run was made 03:33 on May 17, 2026.
 
 !------------------------------------------------------------------------------------
 ! SYSTEM PARAMETERS (SIMULATION OPTIONS)
@@ -137,9 +137,14 @@ ENDTABLE
 ! MU_ROAD: 2D function that calculates MU as a function of lateral position and
 ! station
 
-MU_ROAD_CONSTANT(1) 0.85 ; - ! MU component due to station
-MU_ROAD_COMBINE(1) ADD ! How to combine the two components
-MU_ROAD_L_CONSTANT(1) 0 ; - ! MU component due to lateral position
+! Row 1 has "0" (place holder) followed by 4 values of lateral position (m). Other
+! rows have station (m) followed by 4 values of MU (-).
+MU_ROAD_CARPET(1) 2D_STEP
+ 0, -10, -9, 9, 10
+ -200, 0.85, 0.85, 0.85, 0.85
+ -100, 0.85, 0.5, 0.85, 0.85
+ 400, 0.85, 0.85, 0.85, 0.85
+ENDTABLE
 
 ! ROAD_NEW_ID: Function that calculates ID from S
 

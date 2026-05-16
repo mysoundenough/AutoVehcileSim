@@ -44,8 +44,8 @@ LIVE_SERVER_MAX_CONNECTIONS 0
 PARSFILE Vehicles\Assembly\Vehicle_9db9b98a-6725-424b-9635-e1ca6e15979d.par
 #BlueLink2 Vehicle: Assembly`C-Class, Hatchback` C-Class` , Math Model`Vehicle_9db9b98a-6725-424b-9635-e1ca6e15979d
 
-PARSFILE Procedures\Proc_38b53763-4ae2-4178-9faa-9b74ba426016.par
-#BlueLink28 Procedures`DLC @ 120 km/h (no tire force arrows)` Handling Testing` , Procedure`Proc_38b53763-4ae2-4178-9faa-9b74ba426016
+PARSFILE Procedures\Proc_6d512924-f6a9-45e1-af10-e839d3980fe9.par
+#BlueLink28 Procedures`DLC @ 120 km/h (Low Mu Surface)` Handling Testing` , Procedure`Proc_6d512924-f6a9-45e1-af10-e839d3980fe9
 
 OPT_VS_FILETYPE 4
 
@@ -78,7 +78,7 @@ LOG_ENTRY Used Dataset: CarSim Run Control; { Handling and Stability Tests } Dou
 #DataSet : Double Lane Change, Low Mu
 #Category: Handling and Stability Tests
 #FileID  : Run_2856146d-b1be-47b8-ac08-6ebab3ca95c3
-#Modified: 05-15-2026 21:34:04
+#Modified: 05-17-2026 02:34:41
 #Product : CarSim 2024.1
 #DataVer : 2024.1
 #VehCode Run
