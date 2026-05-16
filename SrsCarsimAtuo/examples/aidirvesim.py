@@ -35,15 +35,16 @@ def main() -> None:
     # 2. 修改 转向
     # 3. 修改 阻尼
     par_path = r"C:\Srs\SrsAutoCarSim\auto\Suspensions\Shocks\Shock_06339072-ca43-46c4-af82-ec3bf59d6ffc.par"
-    cm.set_vehicle_param(par_path=par_path, shock_force_rate=1.8)  # *k 变化倍数
+    cm.set_vehicle_param(par_path=par_path, shock_force_rate=1)  # *k 变化倍数
     # 4. 修改 动力
+    
 
     try:
         # cm.print_sim_parameters()
         # cm.vs_setdef_and_read()
         cm.close()
         # cm.read_configuration()
-        # cm.run_all()
+        cm.run_all()
     except KeyboardInterrupt:
         logger.warn("Process interrupted with Ctrl + C. ")
     except Exception as err_msg:

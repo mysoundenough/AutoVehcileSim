@@ -2,9 +2,8 @@ PARSFILE
 #FullDataName Procedures`DLC @ 120 km/h (no tire force arrows)`Handling Testing
 #CheckBox1 1    
 OPT_INIT_PATH 1
-#CheckBox4 0    
 
-#RingCtrl0 1
+#RingCtrl0 5
 #RingCtrl1 1
 OPT_STOP 1
 SSTART 0
@@ -19,15 +18,7 @@ OPT_DIRECTION 0
 *SSTART 0
 *SSTOP 210
 
-INSTALL_SPEED_CONTROLLER
-OPT_SC 3
-SET_ISPEED_FOR_ID 0
-SPEED_ID_SC = SPEED_TARGET_ID
-SPEED_TARGET_COMBINE ADD
-SPEED_TARGET_S_CONSTANT 0
-set_description SPEED_TARGET_ID Procedure: DLC @ 120 km/h (no tire force arrows)
-SPEED_TARGET_CONSTANT 120
-OPT_SC_ENGINE_BRAKING 0
+OPT_SC 0
 PARSFILE Control\Driver\StrDM_8597394d-a68f-46f7-992e-beb4bd86bc2e.par
 #BlueLink27 Control: Steering by the Closed-loop Driver Model`Double Lane Change (Quick Start)` Vehicle Dynamics Tests` , Steering`StrDM_8597394d-a68f-46f7-992e-beb4bd86bc2e
 
@@ -72,7 +63,7 @@ LOG_ENTRY Used Dataset: Procedures; { Handling Testing } DLC @ 120 km/h (no tire
 #DataSet : DLC @ 120 km/h (no tire force arrows)
 #Category: Handling Testing
 #FileID  : Proc_38b53763-4ae2-4178-9faa-9b74ba426016
-#Modified: 05-16-2026 01:00:15
+#Modified: 05-16-2026 14:42:06
 #Product : CarSim 2024.1
 #DataVer : 2024.1
 #VehCode Procedure

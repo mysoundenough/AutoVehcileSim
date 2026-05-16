@@ -30,8 +30,8 @@ OPT_DIFF_INTERNAL 1
 PARSFILE Powertrain\HEV\HEV_d85b4cba-5206-4048-9418-d11f80dfd1d3.par
 #BlueLink11 Powertrain: Hybrid/Electric System`Electric Motors on Axles Powertrain Assy` ` , Hybrid system`HEV_d85b4cba-5206-4048-9418-d11f80dfd1d3
 
-PARSFILE Powertrain\HEV_PMC\PMC_6ae01742-2231-4526-8745-21786d28d0c8.par
-#BlueLink12 Powertrain: Hybrid/Electric Power Management Control`Electric Power Manage.: Full Load 165kW` ` , Transmission`PMC_6ae01742-2231-4526-8745-21786d28d0c8
+PARSFILE Powertrain\HEV_PMC\PMC_a65582f0-a085-4bc8-9606-1a4f75f80775.par
+#BlueLink12 Powertrain: Hybrid/Electric Power Management Control`Power Management: Full Load 165kW` ` , Transmission`PMC_a65582f0-a085-4bc8-9606-1a4f75f80775
 
 
 IDIFF 3
@@ -60,7 +60,7 @@ LOG_ENTRY Used Dataset: Powertrain: 4-Wheel Drive; { Electric: 20kW x2 (2 Motors
 #DataSet : 20kW x2, Electric AWD Hi-Pw, 3.905 Ratio
 #Category: Electric: 20kW x2 (2 Motors)
 #FileID  : 4WD_fcbe76ba-5f74-4a6b-a964-67d3d4319066
-#Modified: 02-09-2022 16:11:04
+#Modified: 05-16-2026 16:50:33
 #Product : CarSim 2024.1
 #DataVer : 2024.1
 #VehCode 4WD

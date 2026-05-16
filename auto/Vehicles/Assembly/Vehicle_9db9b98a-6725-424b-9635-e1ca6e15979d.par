@@ -11,7 +11,7 @@ symbol_add  <<unit>> 1
 #CheckBox1 0    
 #CheckBox2 0    
 
-#RingCtrl0 1
+#RingCtrl0 3
 #RingCtrl1 1
 #RingCtrl2 1
 #RingCtrl3 0
@@ -80,8 +80,8 @@ PARSFILE Vehicles\Sprung_Mass\SprMass_a5a1d49d-aa34-4fe2-ab41-d0b0aa798874.par
 PARSFILE Aerodynamics\Aero_Main\Aero_41a1ac67-ebf1-4758-bf0f-e6dfd9d55c1c.par
 #BlueLink1 Aerodynamics: Basic`C-Class, Hatchback Aero` C-Class` , Aerodynamics`Aero_41a1ac67-ebf1-4758-bf0f-e6dfd9d55c1c
 
-PARSFILE Powertrain\Fwd\FWD_91f1f768-3a4c-4639-af6f-63bbabf63dd5.par
-#BlueLink3 Powertrain: Front-Wheel Drive`125 kW, 6-spd., 4.1 Ratio w/ Visc. Diff.` 75 kW - 125 kW Powertrains` , Powertrain`FWD_91f1f768-3a4c-4639-af6f-63bbabf63dd5
+PARSFILE Powertrain\4wd\4WD_fcbe76ba-5f74-4a6b-a964-67d3d4319066.par
+#BlueLink5 Powertrain: 4-Wheel Drive`20kW x2, Electric AWD Hi-Pw, 3.905 Ratio` Electric: 20kW x2 (2 Motors)` , Powertrain`4WD_fcbe76ba-5f74-4a6b-a964-67d3d4319066
 
 PARSFILE Brakes\4W_System\Brk4W_7010e125-fc4f-4800-bece-1508ff70a6d8.par
 #BlueLink6 Brakes: Four-Wheel System`Hatchback: M/C Press, ABS` C-Class` , Brake System`Brk4W_7010e125-fc4f-4800-bece-1508ff70a6d8
@@ -107,7 +107,7 @@ LOG_ENTRY Used Dataset: Vehicle: Assembly; { C-Class } C-Class, Hatchback
 #DataSet : C-Class, Hatchback
 #Category: C-Class
 #FileID  : Vehicle_9db9b98a-6725-424b-9635-e1ca6e15979d
-#Modified: 05-12-2026 09:30:48
+#Modified: 05-16-2026 16:28:26
 #Product : CarSim 2024.1
 #DataVer : 2024.1
 #VehCode Ind_Ind
