@@ -6,7 +6,7 @@ PARSFILE
 #DiagramOne0
 PWR_DRV_THROTTLE_TABLE LINEAR
 0, 0
-1, 165
+1, 330
 ENDTABLE
 #RadioCtrl0 0    
 #RadioCtrl1 0    

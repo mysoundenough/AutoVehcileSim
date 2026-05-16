@@ -227,7 +227,7 @@ class CarsimManager:
 
             # 2. 匹配扭矩表格区域
             pattern = re.compile(
-                r"(PWR_DRV_THROTTLE_TABLE LINEAR\n)(.*?)(\ENDTABLE)",
+                r"(PWR_DRV_THROTTLE_TABLE LINEAR\n)(.*?)(ENDTABLE)",
                 re.DOTALL
             )
 
@@ -261,10 +261,11 @@ class CarsimManager:
 
             # 4. 替换回文件内容
             new_table = "\n".join(new_lines)
-            new_content = pattern.sub(
-                rf"\1{new_table}\n\3",
-                content
-            )
+            # new_content = pattern.sub(
+            #     rf"\1{new_table}\n\3",
+            #     content
+            # )
+            new_content = pattern.sub(r"\g<1>" + new_table + r"\n\g<3>", content)
 
             # 5. 保存文件
             with open(par_path, 'w', encoding='utf-8') as f:
@@ -284,13 +285,13 @@ class CarsimManager:
 
             # 2. 匹配扭矩表格区域
             pattern = re.compile(
-                r"(PWR_DRV_THROTTLE_TABLE LINEAR\n)(.*?)(\nENDTABLE)",
+                r"(PWR_DRV_THROTTLE_TABLE LINEAR\n)(.*?)(ENDTABLE)",
                 re.DOTALL
             )
 
             match = pattern.search(content)
             if not match:
-                raise ValueError("未找到 FD_TABLE SPLINE 减震数据")
+                raise ValueError("未找到 PWR_DRV_THROTTLE_TABLE LINEAR 动力响应表格数据")
 
             # 3. 逐行修改动力响应扭矩
             table_lines = match.group(2).strip().splitlines()
@@ -318,10 +319,11 @@ class CarsimManager:
 
             # 4. 替换回文件内容
             new_table = "\n".join(new_lines)
-            new_content = pattern.sub(
-                rf"\1{new_table}\n\3",
-                content
-            )
+            # new_content = pattern.sub(
+            #     rf"\1{new_table}\n\3",
+            #     content
+            # )
+            new_content = pattern.sub(r"\g<1>" + new_table + r"\n\g<3>", content)
 
             # 5. 保存文件
             with open(self.run_all_path, 'w', encoding='utf-8') as f:
@@ -380,7 +382,7 @@ class CarsimManager:
 
             # 2. 匹配阻尼表格区域
             pattern = re.compile(
-                r"(FD_TABLE SPLINE\n)(.*?)(\nENDTABLE)",
+                r"(FD_TABLE SPLINE\n)(.*?)(ENDTABLE)",
                 re.DOTALL
             )
 
@@ -436,7 +438,7 @@ class CarsimManager:
 
             # 2. 匹配阻尼表格区域
             pattern = re.compile(
-                r"(FD_TABLE SPLINE\n)(.*?)(\nENDTABLE)",
+                r"(FD_TABLE SPLINE\n)(.*?)(ENDTABLE)",
                 re.DOTALL
             )
 
