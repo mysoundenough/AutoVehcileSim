@@ -205,6 +205,7 @@ class CarsimManager:
                           par_path,
                           front_spring_rate: float = None,
                           shock_force_rate: float = None,
+                          power_delay_rate: float = None,
                           power_tao_rate: float = None,
                           user_speed: float = None):
         
@@ -214,9 +215,39 @@ class CarsimManager:
             self.modify_shock_force(par_path, "FD_TABLE SPLINE", shock_force_rate)
         if power_tao_rate is not None:
             self.modify_power_tao(par_path, "", power_tao_rate)
+        if power_delay_rate is not None:
+            self.modify_power_delay(par_path, "", power_delay_rate)
 
         logger.info("vehicle param change done ---")
     
+    def modify_power_delay(self, par_path: str, param_name: str, value: float):
+        logger.info(par_path)
+        if not os.path.exists(par_path):
+            logger.error("Simfile not found.")
+            raise FileNotFoundError
+        # 读取源文件并替换
+        with open(par_path, "r", encoding="utf-8") as f:
+            content = f.read()
+        # 替换 TC_PWR_HYBRID_AV 后面的数字
+        new_content = content
+        new_content = re.sub(r'^\s*TC_PWR_HYBRID_AV\s+[\d.-]+\s*$', f'TC_PWR_HYBRID_AV {value}', content, flags=re.MULTILINE)
+        # 保存新文件
+        with open(par_path, "w", encoding="utf-8") as f:
+            f.write(new_content)
+
+        # 修改run_all文件
+        logger.info(self.run_all_path)
+        if not os.path.exists(self.run_all_path):
+            logger.error("run_all file not found.")
+            raise FileNotFoundError
+        # 读取源文件并替换
+        with open(self.run_all_path, "r", encoding="utf-8") as f:
+            content = f.read()
+        # 替换  后面的数字
+        new_content = re.sub(r'^\s*TC_PWR_HYBRID_AV\s+[\d.-]+\s*$', f'TC_PWR_HYBRID_AV {value}', content, flags=re.MULTILINE) # 保存新文件
+        with open(self.run_all_path, "w", encoding="utf-8") as f:
+            f.write(new_content)
+
     def modify_power_tao(self, par_path: str, param_name: str, value: float):
         logger.info("change power file:" + par_path)
         # 修改底层文件
