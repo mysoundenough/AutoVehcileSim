@@ -1,18 +1,46 @@
 {
   "VsChannelGroup" : {
-    "Category" : "Steering Tests",
-    "Dataset" : "On-Center Steer Test, D-Class Sedan",
-    "Input File" : "Results\\Run_6f6dddbf-6f3d-45dd-95c6-f5662819b1e8\\LastRun.vs",
-    "Model" : "Vehicle Configuration: I_S",
+    "Category" : "My Simulink",
+    "Dataset" : "Sim_Power_Pedmap",
+    "Input File" : "Results\\Run_353dd288-31ca-4b64-ad3b-96b097a50a6a\\LastRun.vs",
+    "Model" : "Vehicle Configuration: I_I",
     "Product" : "CarSim 2024.1",
-    "Timestamp" : "14:31 on June 03, 2026",
-    "Title" : "On-Center Steer Test, D-Class Sedan <Steering Tests>",
+    "Timestamp" : "14:09 on June 03, 2026",
+    "Title" : "Sim_Power_Pedmap <My Simulink>",
     "Version" : 2,
     "XLabel" : "Time",
     "XStart" : 0,
     "XStep" : 0.025000000000000001388,
     "XUnits" : "s",
     "Channels" : [ {
+        "Name Aliases" : [ "Alpha_L1" ],
+        "Generic Name" : "Angle",
+        "Long Name" : "Lateral slip angle, tire L1",
+        "Rigid Body" : "Tire L1 lateral slip",
+        "Units" : "deg",
+        "Version" : 2
+      }, {
+        "Name Aliases" : [ "Alpha_L2" ],
+        "Generic Name" : "Angle",
+        "Long Name" : "Lateral slip angle, tire L2",
+        "Rigid Body" : "Tire L2 lateral slip",
+        "Units" : "deg",
+        "Version" : 2
+      }, {
+        "Name Aliases" : [ "Alpha_R1" ],
+        "Generic Name" : "Angle",
+        "Long Name" : "Lateral slip angle, tire R1",
+        "Rigid Body" : "Tire R1 lateral slip",
+        "Units" : "deg",
+        "Version" : 2
+      }, {
+        "Name Aliases" : [ "Alpha_R2" ],
+        "Generic Name" : "Angle",
+        "Long Name" : "Lateral slip angle, tire R2",
+        "Rigid Body" : "Tire R2 lateral slip",
+        "Units" : "deg",
+        "Version" : 2
+      }, {
         "Name Aliases" : [ "AVz" ],
         "Generic Name" : "Angular rate",
         "Long Name" : "Yaw rate (body-fixed), vehicle",
@@ -34,10 +62,31 @@
         "Units" : "-",
         "Version" : 2
       }, {
-        "Name Aliases" : [ "FRackTot" ],
-        "Generic Name" : "FRackTot",
-        "Long Name" : "Total rack force",
-        "Rigid Body" : "FRackTot",
+        "Name Aliases" : [ "Fx_L1" ],
+        "Generic Name" : "Force",
+        "Long Name" : "Longitudinal force, tire L1",
+        "Rigid Body" : "Tire L1 longitudinal",
+        "Units" : "N",
+        "Version" : 2
+      }, {
+        "Name Aliases" : [ "Fx_L2" ],
+        "Generic Name" : "Force",
+        "Long Name" : "Longitudinal force, tire L2",
+        "Rigid Body" : "Tire L2 longitudinal",
+        "Units" : "N",
+        "Version" : 2
+      }, {
+        "Name Aliases" : [ "Fx_R1" ],
+        "Generic Name" : "Force",
+        "Long Name" : "Longitudinal force, tire R1",
+        "Rigid Body" : "Tire R1 longitudinal",
+        "Units" : "N",
+        "Version" : 2
+      }, {
+        "Name Aliases" : [ "Fx_R2" ],
+        "Generic Name" : "Force",
+        "Long Name" : "Longitudinal force, tire R2",
+        "Rigid Body" : "Tire R2 longitudinal",
         "Units" : "N",
         "Version" : 2
       }, {
@@ -104,66 +153,45 @@
         "Units" : "-",
         "Version" : 2
       }, {
-        "Name Aliases" : [ "Mz_KP_L1" ],
+        "Name Aliases" : [ "Lat_Targ" ],
+        "Generic Name" : "Lateral distance to path",
+        "Long Name" : "Target lateral offset from path",
+        "Rigid Body" : "Target",
+        "Units" : "m",
+        "Version" : 2
+      }, {
+        "Name Aliases" : [ "Lat_Veh" ],
+        "Generic Name" : "Lateral distance to path",
+        "Long Name" : "Vehicle lateral distance to path",
+        "Rigid Body" : "Vehicle",
+        "Units" : "m",
+        "Version" : 2
+      }, {
+        "Name Aliases" : [ "My_Dr_L1" ],
         "Generic Name" : "Moment",
-        "Long Name" : "Steer moment about kingpin L1",
-        "Rigid Body" : "Kingpin L1 steer moment",
+        "Long Name" : "Total drive moment for wheel L1",
+        "Rigid Body" : "Drive wheel L1",
         "Units" : "N-m",
         "Version" : 2
       }, {
-        "Name Aliases" : [ "Mz_KP_L2" ],
+        "Name Aliases" : [ "My_Dr_L2" ],
         "Generic Name" : "Moment",
-        "Long Name" : "Steer moment about kingpin L2",
-        "Rigid Body" : "Kingpin L2 steer moment",
+        "Long Name" : "Total drive moment for wheel L2",
+        "Rigid Body" : "Drive wheel L2",
         "Units" : "N-m",
         "Version" : 2
       }, {
-        "Name Aliases" : [ "Mz_KP_R1" ],
+        "Name Aliases" : [ "My_Dr_R1" ],
         "Generic Name" : "Moment",
-        "Long Name" : "Steer moment about kingpin R1",
-        "Rigid Body" : "Kingpin R1 steer moment",
+        "Long Name" : "Total drive moment for wheel R1",
+        "Rigid Body" : "Drive wheel R1",
         "Units" : "N-m",
         "Version" : 2
       }, {
-        "Name Aliases" : [ "Mz_KP_R2" ],
+        "Name Aliases" : [ "My_Dr_R2" ],
         "Generic Name" : "Moment",
-        "Long Name" : "Steer moment about kingpin R2",
-        "Rigid Body" : "Kingpin R2 steer moment",
-        "Units" : "N-m",
-        "Version" : 2
-      }, {
-        "Name Aliases" : [ "Mz_L1" ],
-        "Generic Name" : "Moment",
-        "Long Name" : "Aligning moment, tire L1",
-        "Rigid Body" : "Tire L1 aligning",
-        "Units" : "N-m",
-        "Version" : 2
-      }, {
-        "Name Aliases" : [ "Mz_L2" ],
-        "Generic Name" : "Moment",
-        "Long Name" : "Aligning moment, tire L2",
-        "Rigid Body" : "Tire L2 aligning",
-        "Units" : "N-m",
-        "Version" : 2
-      }, {
-        "Name Aliases" : [ "Mz_R1" ],
-        "Generic Name" : "Moment",
-        "Long Name" : "Aligning moment, tire R1",
-        "Rigid Body" : "Tire R1 aligning",
-        "Units" : "N-m",
-        "Version" : 2
-      }, {
-        "Name Aliases" : [ "Mz_R2" ],
-        "Generic Name" : "Moment",
-        "Long Name" : "Aligning moment, tire R2",
-        "Rigid Body" : "Tire R2 aligning",
-        "Units" : "N-m",
-        "Version" : 2
-      }, {
-        "Name Aliases" : [ "M_SW" ],
-        "Generic Name" : "Torque",
-        "Long Name" : "Steering wheel torque",
-        "Rigid Body" : "Steering wheel",
+        "Long Name" : "Total drive moment for wheel R2",
+        "Rigid Body" : "Drive wheel R2",
         "Units" : "N-m",
         "Version" : 2
       }, {
@@ -174,10 +202,31 @@
         "Units" : "deg",
         "Version" : 2
       }, {
-        "Name Aliases" : [ "Pitch_A2" ],
+        "Name Aliases" : [ "PitchGL1" ],
         "Generic Name" : "Angle",
-        "Long Name" : "Axle 2 pitch",
-        "Rigid Body" : "Axle 2 pitch",
+        "Long Name" : "Pitch of ground, wheel L1",
+        "Rigid Body" : "Pitch of ground, wheel L1",
+        "Units" : "deg",
+        "Version" : 2
+      }, {
+        "Name Aliases" : [ "PitchGL2" ],
+        "Generic Name" : "Angle",
+        "Long Name" : "Pitch of ground, wheel L2",
+        "Rigid Body" : "Pitch of ground, wheel L2",
+        "Units" : "deg",
+        "Version" : 2
+      }, {
+        "Name Aliases" : [ "PitchGR1" ],
+        "Generic Name" : "Angle",
+        "Long Name" : "Pitch of ground, wheel R1",
+        "Rigid Body" : "Pitch of ground, wheel R1",
+        "Units" : "deg",
+        "Version" : 2
+      }, {
+        "Name Aliases" : [ "PitchGR2" ],
+        "Generic Name" : "Angle",
+        "Long Name" : "Pitch of ground, wheel R2",
+        "Rigid Body" : "Pitch of ground, wheel R2",
         "Units" : "deg",
         "Version" : 2
       }, {
@@ -188,10 +237,31 @@
         "Units" : "deg",
         "Version" : 2
       }, {
-        "Name Aliases" : [ "Roll_A2" ],
+        "Name Aliases" : [ "RollGL1" ],
         "Generic Name" : "Angle",
-        "Long Name" : "Axle 2 Euler roll",
-        "Rigid Body" : "Axle 2",
+        "Long Name" : "Roll of ground, wheel L1",
+        "Rigid Body" : "Roll of ground, wheel L1",
+        "Units" : "deg",
+        "Version" : 2
+      }, {
+        "Name Aliases" : [ "RollGL2" ],
+        "Generic Name" : "Angle",
+        "Long Name" : "Roll of ground, wheel L2",
+        "Rigid Body" : "Roll of ground, wheel L2",
+        "Units" : "deg",
+        "Version" : 2
+      }, {
+        "Name Aliases" : [ "RollGR1" ],
+        "Generic Name" : "Angle",
+        "Long Name" : "Roll of ground, wheel R1",
+        "Rigid Body" : "Roll of ground, wheel R1",
+        "Units" : "deg",
+        "Version" : 2
+      }, {
+        "Name Aliases" : [ "RollGR2" ],
+        "Generic Name" : "Angle",
+        "Long Name" : "Roll of ground, wheel R2",
+        "Rigid Body" : "Roll of ground, wheel R2",
         "Units" : "deg",
         "Version" : 2
       }, {
@@ -258,6 +328,13 @@
         "Units" : "rev",
         "Version" : 2
       }, {
+        "Name Aliases" : [ "Station" ],
+        "Generic Name" : "Longitudinal distance",
+        "Long Name" : "Station (path) at vehicle origin",
+        "Rigid Body" : "Path station at vehicle origin",
+        "Units" : "m",
+        "Version" : 2
+      }, {
         "Name Aliases" : [ "Steer_L1" ],
         "Generic Name" : "Angle",
         "Long Name" : "Wheel steer L1",
@@ -279,17 +356,59 @@
         "Units" : "deg",
         "Version" : 2
       }, {
+        "Name Aliases" : [ "Vx" ],
+        "Generic Name" : "Longitudinal speed",
+        "Long Name" : "Long. speed, inst. CG, vehicle",
+        "Rigid Body" : "Instant CG, vehicle",
+        "Units" : "km/h",
+        "Version" : 2
+      }, {
+        "Name Aliases" : [ "VxTarget" ],
+        "Generic Name" : "Longitudinal speed",
+        "Long Name" : "Target speed",
+        "Rigid Body" : "Target speed",
+        "Units" : "km/h",
+        "Version" : 2
+      }, {
+        "Name Aliases" : [ "Vxz_Fwd" ],
+        "Generic Name" : "Longitudinal speed",
+        "Long Name" : "Longitudinal speed in XZ plane",
+        "Rigid Body" : "Vehicle forward in XZ plane",
+        "Units" : "km/h",
+        "Version" : 2
+      }, {
+        "Name Aliases" : [ "Xctc_L1" ],
+        "Generic Name" : "Global X coordinate",
+        "Long Name" : "X coordinate, tire CTC L1",
+        "Rigid Body" : "Center of tire contact L1",
+        "Units" : "m",
+        "Version" : 2
+      }, {
+        "Name Aliases" : [ "Xctc_L2" ],
+        "Generic Name" : "Global X coordinate",
+        "Long Name" : "X coordinate, tire CTC L2",
+        "Rigid Body" : "Center of tire contact L2",
+        "Units" : "m",
+        "Version" : 2
+      }, {
+        "Name Aliases" : [ "Xctc_R1" ],
+        "Generic Name" : "Global X coordinate",
+        "Long Name" : "X coordinate, tire CTC R1",
+        "Rigid Body" : "Center of tire contact R1",
+        "Units" : "m",
+        "Version" : 2
+      }, {
+        "Name Aliases" : [ "Xctc_R2" ],
+        "Generic Name" : "Global X coordinate",
+        "Long Name" : "X coordinate, tire CTC R2",
+        "Rigid Body" : "Center of tire contact R2",
+        "Units" : "m",
+        "Version" : 2
+      }, {
         "Name Aliases" : [ "Xo" ],
         "Generic Name" : "Global X coordinate",
         "Long Name" : "X coordinate, vehicle origin",
         "Rigid Body" : "Vehicle",
-        "Units" : "m",
-        "Version" : 2
-      }, {
-        "Name Aliases" : [ "X_A2" ],
-        "Generic Name" : "Global X coordinate",
-        "Long Name" : "X coordinate, axle 2",
-        "Rigid Body" : "Axle 2",
         "Units" : "m",
         "Version" : 2
       }, {
@@ -370,17 +489,38 @@
         "Units" : "deg",
         "Version" : 2
       }, {
+        "Name Aliases" : [ "Yctc_L1" ],
+        "Generic Name" : "Global Y coordinate",
+        "Long Name" : "Y coordinate, tire CTC L1",
+        "Rigid Body" : "Center of tire contact L1",
+        "Units" : "m",
+        "Version" : 2
+      }, {
+        "Name Aliases" : [ "Yctc_L2" ],
+        "Generic Name" : "Global Y coordinate",
+        "Long Name" : "Y coordinate, tire CTC L2",
+        "Rigid Body" : "Center of tire contact L2",
+        "Units" : "m",
+        "Version" : 2
+      }, {
+        "Name Aliases" : [ "Yctc_R1" ],
+        "Generic Name" : "Global Y coordinate",
+        "Long Name" : "Y coordinate, tire CTC R1",
+        "Rigid Body" : "Center of tire contact R1",
+        "Units" : "m",
+        "Version" : 2
+      }, {
+        "Name Aliases" : [ "Yctc_R2" ],
+        "Generic Name" : "Global Y coordinate",
+        "Long Name" : "Y coordinate, tire CTC R2",
+        "Rigid Body" : "Center of tire contact R2",
+        "Units" : "m",
+        "Version" : 2
+      }, {
         "Name Aliases" : [ "Yo" ],
         "Generic Name" : "Global Y coordinate",
         "Long Name" : "Y coordinate, vehicle origin",
         "Rigid Body" : "Vehicle",
-        "Units" : "m",
-        "Version" : 2
-      }, {
-        "Name Aliases" : [ "Y_A2" ],
-        "Generic Name" : "Global Y coordinate",
-        "Long Name" : "Y coordinate, axle 2",
-        "Rigid Body" : "Axle 2",
         "Units" : "m",
         "Version" : 2
       }, {
@@ -419,17 +559,38 @@
         "Units" : "m",
         "Version" : 2
       }, {
+        "Name Aliases" : [ "Zgnd_L1" ],
+        "Generic Name" : "Global Z coordinate",
+        "Long Name" : "Ground Z coord under tire L1",
+        "Rigid Body" : "Ground under tire L1",
+        "Units" : "m",
+        "Version" : 2
+      }, {
+        "Name Aliases" : [ "Zgnd_L2" ],
+        "Generic Name" : "Global Z coordinate",
+        "Long Name" : "Ground Z coord under tire L2",
+        "Rigid Body" : "Ground under tire L2",
+        "Units" : "m",
+        "Version" : 2
+      }, {
+        "Name Aliases" : [ "Zgnd_R1" ],
+        "Generic Name" : "Global Z coordinate",
+        "Long Name" : "Ground Z coord under tire R1",
+        "Rigid Body" : "Ground under tire R1",
+        "Units" : "m",
+        "Version" : 2
+      }, {
+        "Name Aliases" : [ "Zgnd_R2" ],
+        "Generic Name" : "Global Z coordinate",
+        "Long Name" : "Ground Z coord under tire R2",
+        "Rigid Body" : "Ground under tire R2",
+        "Units" : "m",
+        "Version" : 2
+      }, {
         "Name Aliases" : [ "Zo" ],
         "Generic Name" : "Global Z coordinate",
         "Long Name" : "Z coordinate, vehicle origin",
         "Rigid Body" : "Vehicle",
-        "Units" : "m",
-        "Version" : 2
-      }, {
-        "Name Aliases" : [ "Z_A2" ],
-        "Generic Name" : "Global Z coordinate",
-        "Long Name" : "Z coordinate, axle 2",
-        "Rigid Body" : "Axle 2",
         "Units" : "m",
         "Version" : 2
       }, {

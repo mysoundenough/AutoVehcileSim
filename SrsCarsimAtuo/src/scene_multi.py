@@ -298,7 +298,7 @@ if __name__ == "__main__":
     cm.set_vehicle_param(par_path=F_CmpInd_path, front_spring_rate=27)  # N/m
     # 后悬
     print("R_CmpInd_path", R_CmpInd_path)
-    cm.set_vehicle_param(par_path=R_CmpInd_path, front_spring_rate=28)  # N/m
+    cm.set_vehicle_param(par_path=R_CmpInd_path, front_spring_rate=26)  # N/m
 
     # 2. 修改 转向
     

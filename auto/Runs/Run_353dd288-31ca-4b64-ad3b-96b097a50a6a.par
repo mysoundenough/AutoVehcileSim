@@ -71,7 +71,7 @@ CATEGORY My Simulink
 DATASET_TITLE Sim_Power_Pedmap
 #RingCtrl8 1
 NUM_CACHED_RUNS 1
-#RingCtrl9 1
+#RingCtrl9 
 
 #EMBEDDED_NOTES
 #This example demonstrates a Semi-Active Suspension Controller modeled in Simulink. (Libraries > Models > Models: Simulink)
@@ -88,7 +88,7 @@ LOG_ENTRY Used Dataset: CarSim Run Control; { My Simulink } Sim_Power_Pedmap
 #DataSet : Sim_Power_Pedmap
 #Category: My Simulink
 #FileID  : Run_353dd288-31ca-4b64-ad3b-96b097a50a6a
-#Modified: 06-02-2026 19:07:11
+#Modified: 06-03-2026 14:09:21
 #Product : CarSim 2024.1
 #DataVer : 2024.1
 #VehCode Run
