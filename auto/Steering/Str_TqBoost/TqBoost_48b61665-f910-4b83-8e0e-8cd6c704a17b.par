@@ -133,7 +133,7 @@ LOG_ENTRY Used Dataset: Steering: Power Assist Torque; { Gear Assist Torque } D-
 #DataSet : D-Class SUV
 #Category: Gear Assist Torque
 #FileID  : TqBoost_48b61665-f910-4b83-8e0e-8cd6c704a17b
-#Modified: 05-28-2021 14:59:14
+#Modified: 06-02-2026 19:08:54
 #Product : CarSim 2024.1
 #DataVer : 2024.1
 #VehCode Power Assist Torque

@@ -1,37 +1,19 @@
-2026-05-15T01:56:22 Logfile initialized.
-2026-05-15T01:56:22 (Info):    CarSim 2024.1
-2026-05-15T01:56:22 (Info):    -
-2026-05-15T01:56:22 (Info):    command-line: 
-2026-05-15T01:56:22 (Info):    -
-2026-05-15T01:56:22 (Info):    Working Dir: C:\Srs\SrsAutoCarSim\auto\
-2026-05-15T01:56:22 (Info):    Program Dir: C:\Carsim2024.1\Carsim2024.1_Prog\
-2026-05-15T01:56:22 (Info):    -
-2026-05-15T01:56:22 (Info):    OS Version:        6.2 (build 9200)
-2026-05-15T01:56:22 (Info):    CPU Architecture:  x64
-2026-05-15T01:56:22 (Info):    CPU Count:         2
-2026-05-15T01:56:22 (Info):    CPU Level/Rev:     15/1034
-2026-05-15T01:56:22 (Info):    Start Mem Total:   4090 MB
-2026-05-15T01:56:22 (Info):    Start Mem Used:    84%
-2026-05-15T01:56:22 (Info):    -
-2026-05-15T01:56:22 (Info):    Loaded dataset index cache in 0.20s, 27.0 megabytes.
-2026-05-15T01:56:23 (Info):    Error: A license manager is already running.
-2026-05-15T01:56:23 (Info):    License check took 0.48 seconds.
-2026-05-15T01:56:23 (Info):    No install ID found at regkey "Software\Mechanical Simulation Corp\CarSim 2024.1".
-2026-05-15T01:56:23 (Info):    No install ID found at regkey "Software\Mechanical Simulation Corp\CarSim 2024.1".
-2026-05-15T01:56:29 (Info):    Initial setup took 5.80 seconds.
-2026-05-15T01:56:29 (Info):    Auto updates took 0.00 seconds.
-2026-05-15T01:56:32 (Info):    Loaded last screen in 2.27 seconds.
-2026-05-15T01:56:32 (Info):    Total init time 9.86 seconds.
-2026-05-15T01:56:39 (Info):    Running math model for: { Handling and Stability Tests } Double Lane Change, Low Mu
-2026-05-15T01:56:40 (Info):    Math model run completed.
-2026-05-15T02:51:51 (Info):    Running math model for: { Handling and Stability Tests } Double Lane Change, Low Mu
-2026-05-15T02:51:51 (Info):    Math model run completed.
-2026-05-15T03:23:52 (Info):    Running math model for: { Handling and Stability Tests } Double Lane Change, Low Mu
-2026-05-15T03:23:53 (Info):    Math model run completed.
-2026-05-15T03:40:48 (Info):    Running math model for: { Handling and Stability Tests } Double Lane Change, Low Mu
-2026-05-15T03:40:49 (Info):    Math model run completed.
-2026-05-15T03:42:06 (Info):    Running math model for: { Handling and Stability Tests } Double Lane Change, Low Mu
-2026-05-15T03:42:07 (Info):    Math model run completed.
-2026-05-15T03:44:06 (Info):    Running math model for: { Handling and Stability Tests } Double Lane Change, Low Mu
-2026-05-15T03:44:07 (Info):    Math model run completed.
-2026-05-15T03:46:12 (Info):    Running math model for: { Handlin
+2026-06-03T11:07:27 Logfile initialized.
+2026-06-03T11:07:27 (Info):    CarSim 2024.1
+2026-06-03T11:07:27 (Info):    -
+2026-06-03T11:07:27 (Info):    command-line: 
+2026-06-03T11:07:27 (Info):    -
+2026-06-03T11:07:27 (Info):    Working Dir: C:\workspace\AutoVehcileSim\auto\
+2026-06-03T11:07:27 (Info):    Program Dir: C:\Program Files (x86)\CarSim2024.1_Prog\
+2026-06-03T11:07:27 (Info):    -
+2026-06-03T11:07:27 (Info):    OS Version:        6.2 (build 9200)
+2026-06-03T11:07:27 (Info):    CPU Architecture:  x64
+2026-06-03T11:07:27 (Info):    CPU Count:         2
+2026-06-03T11:07:27 (Info):    CPU Level/Rev:     21/1
+2026-06-03T11:07:27 (Info):    Start Mem Total:   4090 MB
+2026-06-03T11:07:27 (Info):    Start Mem Used:    87%
+2026-06-03T11:07:27 (Info):    -
+2026-06-03T11:07:27 (Info):    Loaded dataset index cache in 0.17s, 27.2 megabytes.
+2026-06-03T11:07:27 (Info):    Error: A license manager is already running.
+2026-06-03T11:07:27 (Info):    License check took 0.39 seconds.
+2026-06-03T11:07:28 (Info):    N

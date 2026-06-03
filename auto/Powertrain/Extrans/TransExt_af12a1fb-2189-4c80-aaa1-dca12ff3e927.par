@@ -1,0 +1,18 @@
+PARSFILE
+#FullDataName Powertrain: Transmission (External, Deprecated)`External Shift Schedule`
+#RingCtrl0 0
+OPT_SHIFT_INTERNAL 0
+#CheckBox0 0    
+
+
+LOG_ENTRY Used Dataset: Powertrain: Transmission (External, Deprecated); External Shift Schedule
+#Library : Powertrain: Transmission (External, Deprecated)
+#DataSet : External Shift Schedule
+#Category: 
+#FileID  : TransExt_af12a1fb-2189-4c80-aaa1-dca12ff3e927
+#Modified: 06-02-2026 19:08:23
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Transmission (External)
+
+END

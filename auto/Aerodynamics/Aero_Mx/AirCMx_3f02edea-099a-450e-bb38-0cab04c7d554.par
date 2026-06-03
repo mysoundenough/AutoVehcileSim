@@ -25,7 +25,7 @@ LOG_ENTRY Used Dataset: Aerodynamics: Mx (Roll Moment) Coef. vs. Aero Slip; { Sp
 #DataSet : Spline: 0.3 at 90 deg.
 #Category: Spline Interpolation
 #FileID  : AirCMx_3f02edea-099a-450e-bb38-0cab04c7d554
-#Modified: 05-28-2021 15:03:30
+#Modified: 06-02-2026 19:08:24
 #Product : CarSim 2024.1
 #DataVer : 2024.1
 #VehCode Mx vs. Aero Slip

@@ -1,5 +1,5 @@
 PARSFILE
-#FullDataName Animator: Camera Setup`Vehicles and Drivers - Cars`Shape Preview
+#FullDataName Animator: Camera Setup`Vehicle Pictures #1`Shape Preview
 #RingCtrl1 0
 
 #CheckBox1 0    
@@ -11,17 +11,17 @@ PARSFILE Animator\Frames\Frame_02b47476-96e6-474b-919e-07d03b43f1ec.par
 #BlueLink0 Animator: Reference Frame`Yaw for Shape Preview` Shape Preview: Generic` , Reference frame for outside camera`Frame_02b47476-96e6-474b-919e-07d03b43f1ec
 
 SET_LOOKPOINT_REFERENCE_FRAME Frame_02b47476-96e6-474b-919e-07d03b43f1ec
-SET_LOOKPOINT_X -1.25
+SET_LOOKPOINT_X 1
 SET_LOOKPOINT_Y 0
-SET_LOOKPOINT_Z 0.75
-SET_AZIMUTH 50
+SET_LOOKPOINT_Z 0.5
+SET_AZIMUTH 230
 SET_ELEVATION 6
 SET_DISTANCE 12
 SET_CAMERAMAN_NAME External camera
-*SET_LOOKPOINT_X -1.25
+*SET_LOOKPOINT_X 1
 *SET_LOOKPOINT_Y 0
-*SET_LOOKPOINT_Z 0.75
-*SET_AZIMUTH 50
+*SET_LOOKPOINT_Z 0.5
+*SET_AZIMUTH 230
 *SET_ELEVATION 6
 *SET_DISTANCE 12
 FOG_SCALE 0
@@ -31,12 +31,12 @@ SET_FIELD_OF_VIEW 21.1
 #Pause the animation at the very start and center the vehicle in the animator to take a picture for the Animator: Vehicle screen.
 #END_EMBEDDED_NOTES
 
-LOG_ENTRY Used Dataset: Animator: Camera Setup; { Shape Preview } Vehicles and Drivers - Cars
+LOG_ENTRY Used Dataset: Animator: Camera Setup; { Shape Preview } Vehicle Pictures #1
 #Library : Animator: Camera Setup
-#DataSet : Vehicles and Drivers - Cars
+#DataSet : Vehicle Pictures #1
 #Category: Shape Preview
 #FileID  : Camera_aad9f5dd-7a61-4319-88b3-b90a1214f577
-#Modified: 05-28-2021 15:03:29
+#Modified: 06-02-2026 19:07:49
 #Product : CarSim 2024.1
 #DataVer : 2024.1
 #VehCode Camera

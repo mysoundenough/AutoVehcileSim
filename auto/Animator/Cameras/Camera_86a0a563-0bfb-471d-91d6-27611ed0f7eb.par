@@ -1,5 +1,5 @@
 PARSFILE
-#FullDataName Animator: Camera Setup`XY Plane, No Offsets - Medium Objects`Shape Preview
+#FullDataName Animator: Camera Setup`Shape Preview (XY Plane, No Offsets)`Shape Preview
 #RingCtrl1 0
 
 #CheckBox1 0    
@@ -16,23 +16,23 @@ SET_LOOKPOINT_Y 0
 SET_LOOKPOINT_Z 0
 SET_AZIMUTH 0
 SET_ELEVATION 90
-SET_DISTANCE 25
+SET_DISTANCE 35
 SET_CAMERAMAN_NAME External camera
 *SET_LOOKPOINT_X 0
 *SET_LOOKPOINT_Y 0
 *SET_LOOKPOINT_Z 0
 *SET_AZIMUTH 0
 *SET_ELEVATION 90
-*SET_DISTANCE 25
+*SET_DISTANCE 35
 FOG_SCALE 0
 SET_FIELD_OF_VIEW 21.1
 
-LOG_ENTRY Used Dataset: Animator: Camera Setup; { Shape Preview } XY Plane, No Offsets - Medium Objects
+LOG_ENTRY Used Dataset: Animator: Camera Setup; { Shape Preview } Shape Preview (XY Plane, No Offsets)
 #Library : Animator: Camera Setup
-#DataSet : XY Plane, No Offsets - Medium Objects
+#DataSet : Shape Preview (XY Plane, No Offsets)
 #Category: Shape Preview
 #FileID  : Camera_86a0a563-0bfb-471d-91d6-27611ed0f7eb
-#Modified: 05-28-2021 15:03:29
+#Modified: 06-02-2026 19:07:16
 #Product : CarSim 2024.1
 #DataVer : 2024.1
 #VehCode Camera

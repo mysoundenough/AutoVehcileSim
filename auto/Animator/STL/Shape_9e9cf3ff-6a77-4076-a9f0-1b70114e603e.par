@@ -22,16 +22,12 @@ SPECIAL_PARSFILE Animator\Cameras\Camera_af7c7c91-f09a-4493-9104-5b2725e3cf03.pa
 *IMAGE_TYPE PASTED
 *IMAGE_PASTED Animator\STL\Shape_9e9cf3ff-6a77-4076-a9f0-1b70114e603e.png
 
-#EMBEDDED_NOTES
-#195/45 R16 Tire
-#END_EMBEDDED_NOTES
-
 LOG_ENTRY Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Tire
 #Library : Animator: Shape File Link
 #DataSet : 195/45 R16: Tire
 #Category: Common Vehicle Assets: Tires
 #FileID  : Shape_9e9cf3ff-6a77-4076-a9f0-1b70114e603e
-#Modified: 05-28-2021 15:03:08
+#Modified: 06-02-2026 19:07:21
 #Product : CarSim 2024.1
 #DataVer : 2024.1
 #VehCode Shape File

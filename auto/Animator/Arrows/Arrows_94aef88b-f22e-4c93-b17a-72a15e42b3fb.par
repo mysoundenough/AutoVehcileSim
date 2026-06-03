@@ -13,10 +13,10 @@ PARSFILE
 *OFFSET_Z 0
 *ID_AXLE 1
 
-#BlueLink0 Animator: Shape File Link`3D Pyramid: Tail Org (Y-Axis)` Geometric Shapes: Arrows` , Animator Shape(s)`Shape_adff5bc7-5cc6-40c6-8119-03dd91486a9c
+#BlueLink0 Animator: Shape Assembly`Fy 3D Arrow (Tail Origin)` Arrows` , Animator Shape(s)`ShpGrp_7db2d468-7dc0-4e22-9d2b-810bf37e9021
 
 ADD_REFERENCE_FRAME wheel L1 indicator: 2A - Fy Tire Force Arrows
-PARSFILE Animator\STL\Shape_adff5bc7-5cc6-40c6-8119-03dd91486a9c.par
+PARSFILE Animator\STL_Groups\ShpGrp_7db2d468-7dc0-4e22-9d2b-810bf37e9021.par
 SET_EULER_ANGLES yaw_pitch_roll
 SET_X_NAME Xctc_L1
 WRT_Xctc_L1
@@ -46,7 +46,7 @@ Z_LENGTH 1
 SET_OFFSET_VAR_Z 0
 
 ADD_REFERENCE_FRAME wheel L2 indicator: 2A - Fy Tire Force Arrows
-PARSFILE Animator\STL\Shape_adff5bc7-5cc6-40c6-8119-03dd91486a9c.par
+PARSFILE Animator\STL_Groups\ShpGrp_7db2d468-7dc0-4e22-9d2b-810bf37e9021.par
 SET_EULER_ANGLES yaw_pitch_roll
 SET_X_NAME Xctc_L2
 WRT_Xctc_L2
@@ -76,7 +76,7 @@ Z_LENGTH 1
 SET_OFFSET_VAR_Z 0
 
 ADD_REFERENCE_FRAME wheel R1 indicator: 2A - Fy Tire Force Arrows
-PARSFILE Animator\STL\Shape_adff5bc7-5cc6-40c6-8119-03dd91486a9c.par
+PARSFILE Animator\STL_Groups\ShpGrp_7db2d468-7dc0-4e22-9d2b-810bf37e9021.par
 SET_EULER_ANGLES yaw_pitch_roll
 SET_X_NAME Xctc_R1
 WRT_Xctc_R1
@@ -106,7 +106,7 @@ Z_LENGTH 1
 SET_OFFSET_VAR_Z 0
 
 ADD_REFERENCE_FRAME wheel R2 indicator: 2A - Fy Tire Force Arrows
-PARSFILE Animator\STL\Shape_adff5bc7-5cc6-40c6-8119-03dd91486a9c.par
+PARSFILE Animator\STL_Groups\ShpGrp_7db2d468-7dc0-4e22-9d2b-810bf37e9021.par
 SET_EULER_ANGLES yaw_pitch_roll
 SET_X_NAME Xctc_R2
 WRT_Xctc_R2
@@ -141,7 +141,7 @@ LOG_ENTRY Used Dataset: Animator: Wheel Arrows and Other Indicators; { Tire Forc
 #DataSet : 2A - Fy Tire Force Arrows
 #Category: Tire Force Arrows (2 Axles)
 #FileID  : Arrows_94aef88b-f22e-4c93-b17a-72a15e42b3fb
-#Modified: 05-28-2021 15:02:44
+#Modified: 06-02-2026 19:07:22
 #Product : CarSim 2024.1
 #DataVer : 2024.1
 #VehCode Wheel Indicators

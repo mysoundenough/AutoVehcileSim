@@ -1,0 +1,34 @@
+PARSFILE
+#FullDataName Suspension: Shock Absorber`SERES_E68_DW_MIN`SIm_Power_Pedmap
+#CheckBox0 0    
+
+#RingCtrl0 SPLINE
+#RadioCtrl0 0    
+
+#DiagramOne0
+FD_TABLE SPLINE
+-1050, -645
+-520, -335
+-260, -202
+-130, -130
+-50, -75
+0, 0
+50, 61
+130, 102
+260, 135
+520, 202
+1050, 372
+ENDTABLE
+
+
+LOG_ENTRY Used Dataset: Suspension: Shock Absorber; { SIm_Power_Pedmap } SERES_E68_DW_MIN
+#Library : Suspension: Shock Absorber
+#DataSet : SERES_E68_DW_MIN
+#Category: SIm_Power_Pedmap
+#FileID  : Shock_ecffa141-5460-43cd-a513-2775f2959037
+#Modified: 06-02-2026 19:08:52
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shock Absorber
+
+END

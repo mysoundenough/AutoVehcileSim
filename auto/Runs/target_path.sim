@@ -1,4 +1,4 @@
 SIMFILE
-INPUT Runs\Run_60ed91d9-d198-4454-aa7a-bbf27fe3b517_all.par
+INPUT Results\Run_6f6dddbf-6f3d-45dd-95c6-f5662819b1e8\LastRun_all.par
 ECHO Runs\Target_Path_echo.par
 END

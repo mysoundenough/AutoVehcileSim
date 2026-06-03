@@ -16,22 +16,18 @@ set_fogging on
 SET_SPECULAR 0.75 0.75 0.75
 vsv_enable_shadows_recursive
 
-SPECIAL_PARSFILE Animator\Cameras\Camera_af7c7c91-f09a-4493-9104-5b2725e3cf03.par
-#BlueLink2 Animator: Camera Setup`Isometric View - Small Objects` Shape Preview` , Video Camera`Camera_af7c7c91-f09a-4493-9104-5b2725e3cf03
+SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
+#BlueLink2 Animator: Camera Setup`Shape Preview (Side) #1` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
 
 *IMAGE_TYPE PASTED
 *IMAGE_PASTED Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.png
-
-#EMBEDDED_NOTES
-#Traffic Cone
-#END_EMBEDDED_NOTES
 
 LOG_ENTRY Used Dataset: Animator: Shape File Link; { Environment: Props (2 of 2) } Traffic Cone
 #Library : Animator: Shape File Link
 #DataSet : Traffic Cone
 #Category: Environment: Props (2 of 2)
 #FileID  : Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79
-#Modified: 05-28-2021 15:03:11
+#Modified: 06-02-2026 19:07:22
 #Product : CarSim 2024.1
 #DataVer : 2024.1
 #VehCode Shape File

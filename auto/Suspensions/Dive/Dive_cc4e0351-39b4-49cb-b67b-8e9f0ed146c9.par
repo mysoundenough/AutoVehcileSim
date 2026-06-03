@@ -1,0 +1,47 @@
+PARSFILE
+#FullDataName Suspension: Dive Angle (Caster Change)`SERES_E68_DW,RRH`Sim_Power_Pedmap
+#CheckBox0 0    
+
+#RingCtrl0 SPLINE
+#RingCtrl1 CONSTANT
+#RingCtrl2 ADD
+SUSP_DIVE_COMBINE ADD
+
+#DiagramOne0
+SUSP_DIVE_TABLE SPLINE
+-80, -4.080719
+-70, -3.505078
+-60, -2.945821
+-50, -2.409348
+-40, -1.889624
+-30, -1.380017
+-20, -0.89101
+-10, -0.430307
+0, 0.021088
+10, 0.458663
+20, 0.862087
+30, 1.259817
+40, 1.632048
+50, 1.986409
+60, 2.327131
+70, 2.636405
+80, 2.927075
+90, 3.19982
+100, 3.435095
+110, 3.558512
+ENDTABLE
+#RadioCtrl0 1    
+#RadioCtrl1 0    
+
+
+LOG_ENTRY Used Dataset: Suspension: Dive Angle (Caster Change); { Sim_Power_Pedmap } SERES_E68_DW,RRH
+#Library : Suspension: Dive Angle (Caster Change)
+#DataSet : SERES_E68_DW,RRH
+#Category: Sim_Power_Pedmap
+#FileID  : Dive_cc4e0351-39b4-49cb-b67b-8e9f0ed146c9
+#Modified: 06-02-2026 19:08:25
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Dive
+
+END

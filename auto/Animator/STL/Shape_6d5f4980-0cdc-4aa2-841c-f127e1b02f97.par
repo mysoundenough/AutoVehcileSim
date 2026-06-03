@@ -31,7 +31,7 @@ ENV_MAP_ZNEG Animator\3D_Shape_Files\Environment\Sky_Boxes\Partly_Cloudy_Sky\cub
 
 
 SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
-#BlueLink2 Animator: Camera Setup`YZ-Plane, No Offsets (with Yaw)` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+#BlueLink2 Animator: Camera Setup`Shape Preview (Side) #1` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
 
 *IMAGE_TYPE PASTED
 *IMAGE_PASTED Animator\STL\Shape_6d5f4980-0cdc-4aa2-841c-f127e1b02f97.png
@@ -45,7 +45,7 @@ LOG_ENTRY Used Dataset: Animator: Shape File Link; { Environment: Sky Boxes } Pa
 #DataSet : Partly Cloudy Sky
 #Category: Environment: Sky Boxes
 #FileID  : Shape_6d5f4980-0cdc-4aa2-841c-f127e1b02f97
-#Modified: 05-28-2021 15:03:13
+#Modified: 06-02-2026 19:07:19
 #Product : CarSim 2024.1
 #DataVer : 2024.1
 #VehCode Shape File

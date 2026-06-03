@@ -1,0 +1,118 @@
+PARSFILE
+#FullDataName Vehicle: Assembly`Sim Power Pedmap Car AWD`D-Class
+#VehCode Ind_Ind
+IUNIT_INCREMENT
+IVEHICLE = IVEHICLE + 1
+NAXLES 2
+IOBJECT_SAVE
+symbol_add  <<vehicle>> 1
+symbol_add  <<unit>> 1
+#CheckBox0 0    
+#CheckBox1 0    
+#CheckBox2 1    
+INSTALL_SPEED_CONTROLLER
+
+#RingCtrl0 3
+#RingCtrl1 1
+#RingCtrl2 1
+#RingCtrl3 0
+PARSFILE Steering\System2\StrSys2_64ffa9d1-b87b-4da1-94c4-81269337c3d3.par
+#BlueLink7 Steering`D-Class, SUV: Power, Recirc. Ball` CS D-Class` , Steering System`StrSys2_64ffa9d1-b87b-4da1-94c4-81269337c3d3
+
+
+* Front components
+iaxle 1
+symbol_add  <<axle>> 1
+PARSFILE Suspensions\Kin_Indy\KinInd_2bdce8df-63ad-4eb0-9064-7c3a20fb5dbe.par
+#BlueLink19 Suspension: Independent System Kinematics`SERES_E68_DW, Front` Sim_Power_Pedmap` , Kinematics`KinInd_2bdce8df-63ad-4eb0-9064-7c3a20fb5dbe
+
+PARSFILE Suspensions\Compliance\CmpInd_71178357-9172-4ba4-90bf-437dff14f7d5.par
+#BlueLink16 Suspension: Independent Compliance, Springs, and Dampers`SERES_E68_DW, Front` SIm_Power_Pedmap` , Compliance`CmpInd_71178357-9172-4ba4-90bf-437dff14f7d5
+
+
+OPT_ALL_FOUR_TIRES_ALIKE 1
+itire 1 ! just in case
+
+* LF tire
+iside 1
+WRITE_ADD_REFERENCE_FRAME_WHEEL
+symbol_push  <<tire>> L<<axle>>
+PARSFILE Tires\Tire\Tire_31394125-ce6e-4fd5-a170-24d55dceaa1c.par
+#BlueLink999 Tire`255/45 R18` Performance Tires` , Tire`Tire_31394125-ce6e-4fd5-a170-24d55dceaa1c
+
+
+* RF tire
+iside 2
+WRITE_ADD_REFERENCE_FRAME_WHEEL
+symbol_push  <<tire>> R<<axle>>
+PARSFILE Tires\Tire\Tire_31394125-ce6e-4fd5-a170-24d55dceaa1c.par
+#BlueLink10 Tire`255/45 R18` Performance Tires` , Tire`Tire_31394125-ce6e-4fd5-a170-24d55dceaa1c
+
+* Rear components
+iaxle 2
+symbol_add  <<axle>> 1
+PARSFILE Suspensions\Kin_Indy\KinInd_011f4620-9dc4-409a-a9f0-5ec02ea74d6b.par
+#BlueLink20 Suspension: Independent System Kinematics`SERES_E68_DW, Rear` Sim_Power_Pedmap` , Kinematics`KinInd_011f4620-9dc4-409a-a9f0-5ec02ea74d6b
+
+PARSFILE Suspensions\Compliance\CmpInd_1669b39d-1e93-40ef-8e76-d88987563be5.par
+#BlueLink17 Suspension: Independent Compliance, Springs, and Dampers`SERES_E68_DW, Rear` SIm_Power_Pedmap` , Compliance`CmpInd_1669b39d-1e93-40ef-8e76-d88987563be5
+
+
+* LR tire
+iside 1
+WRITE_ADD_REFERENCE_FRAME_WHEEL
+symbol_push  <<tire>> L<<axle>>
+PARSFILE Tires\Tire\Tire_31394125-ce6e-4fd5-a170-24d55dceaa1c.par
+#BlueLink999 Tire`255/45 R18` Performance Tires` , Tire`Tire_31394125-ce6e-4fd5-a170-24d55dceaa1c
+
+
+* RR tire
+iside 2
+WRITE_ADD_REFERENCE_FRAME_WHEEL
+symbol_push  <<tire>> R<<axle>>
+PARSFILE Tires\Tire\Tire_31394125-ce6e-4fd5-a170-24d55dceaa1c.par
+#BlueLink999 Tire`255/45 R18` Performance Tires` , Tire`Tire_31394125-ce6e-4fd5-a170-24d55dceaa1c
+
+symbol_add  <<axle>> -1
+WRITE_ADD_REFERENCE_FRAME_BODY
+PARSFILE Vehicles\Total_Mass\TotMass_76c326af-0e9e-4233-b16d-955b0cdaced3.par
+#BlueLink0 Vehicle: Sprung Mass (from Whole Vehicle)`SERES_E68_DW` Sim_Power_Pedmap` , Sprung Mass`TotMass_76c326af-0e9e-4233-b16d-955b0cdaced3
+
+PARSFILE Aerodynamics\Aero_Main\Aero_a610d4fd-9cf5-4ffa-90af-33c3c3fe903c.par
+#BlueLink1 Aerodynamics: Basic`D-Class, Sedan Aero` D-Class` , Aerodynamics`Aero_a610d4fd-9cf5-4ffa-90af-33c3c3fe903c
+
+PARSFILE Powertrain\4wd\4WD_4972bf8d-6108-4a12-a5ed-0a4d34c44c6b.par
+#BlueLink5 Powertrain: 4-Wheel Drive`All External Powertrain Components` External Components` , Powertrain`4WD_4972bf8d-6108-4a12-a5ed-0a4d34c44c6b
+
+PARSFILE Brakes\4W_System\Brk4W_5011ad03-3228-4bdc-8aba-aebd0486c2eb.par
+#BlueLink6 Brakes: Four-Wheel System`(SUV), MC Press, No ABS` D-Class` , Brake System`Brk4W_5011ad03-3228-4bdc-8aba-aebd0486c2eb
+
+symbol_add  <<axle>> 1
+PARSFILE Animator\Vehicles\AniVeh_185d62e8-e27d-4be3-87c4-3eeed284ad17.par
+#BlueLink2 Animator: Vehicles and Sensor Targets`D-Class, SUV` D-Class` , Vehicle 3D Shape`AniVeh_185d62e8-e27d-4be3-87c4-3eeed284ad17
+
+IOBJECT_RESTORE
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Vehicles\Assembly\Vehicle_75802f40-eb2e-4e37-bcbf-3edbf9efd47a.png
+
+#EMBEDDED_NOTES
+#This example vehicle includes a new animator shape.
+#
+#Generic D-Class SUV (Mid-Size) with SLA front and Hotchkiss Solid Axle rear suspension.
+#
+#D-Class SUVs include the Ford Escape, Honda CR-V, Jeep Wrangler and Liberty, and Toyota RAV4.
+#
+#Updated for CarSim 2017:  Revised the steering system parameters.  Tested for: On-Center, Static Steer, and Free Response Stability.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Vehicle: Assembly; { D-Class } Sim Power Pedmap Car AWD
+#Library : Vehicle: Assembly
+#DataSet : Sim Power Pedmap Car AWD
+#Category: D-Class
+#FileID  : Vehicle_75802f40-eb2e-4e37-bcbf-3edbf9efd47a
+#Modified: 06-02-2026 19:09:00
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Ind_Ind
+
+END

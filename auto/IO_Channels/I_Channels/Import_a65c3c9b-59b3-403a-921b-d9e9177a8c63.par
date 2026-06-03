@@ -1,0 +1,23 @@
+PARSFILE
+#FullDataName I/O Channels: Import`Sim_power_pedmap`My_Simulink
+#RingCtrl1 1
+
+#MiscYellow0
+IMP_MY_OUT_D1_L Add 0.0! 0
+IMP_MY_OUT_D1_R Add 0.0! 0
+IMP_MY_OUT_D2_L Add 0.0! 0
+IMP_MY_OUT_D2_R Add 0.0! 0
+#ENDMYellow
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Import; { My_Simulink } Sim_power_pedmap
+#Library : I/O Channels: Import
+#DataSet : Sim_power_pedmap
+#Category: My_Simulink
+#FileID  : Import_a65c3c9b-59b3-403a-921b-d9e9177a8c63
+#Modified: 06-02-2026 19:09:00
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Import Channels
+
+END

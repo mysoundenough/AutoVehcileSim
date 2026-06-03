@@ -1,0 +1,53 @@
+PARSFILE
+#FullDataName Suspension: Longitudinal Movement`SERES_E68_DW,RLH`Sim_Power_Pedmap
+#CheckBox0 0    
+
+#RingCtrl0 SPLINE
+#RingCtrl1 CONSTANT
+#RingCtrl2 ADD
+SUSP_X_COMBINE ADD
+*SCALAR2 0
+
+#DiagramOne0
+SUSP_X_TABLE SPLINE
+-80, 11.977087
+-70, 10.277533
+-60, 8.644246
+-50, 7.05478
+-40, 5.553933
+-30, 4.101645
+-20, 2.664787
+-10, 1.257988
+0, -0.106881
+10, -1.412334
+20, -2.671744
+30, -3.863599
+40, -4.995599
+50, -6.076934
+60, -7.117081
+70, -8.077359
+80, -8.943618
+90, -9.748429
+100, -10.510933
+ENDTABLE
+SUSP_X_JNC_OTHER_SIDE_CONSTANT 0
+#RadioCtrl0 1    
+#RadioCtrl1 0    
+
+
+#EMBEDDED_NOTES
+#SLA Longitudinal Movement vs. Jounce
+#
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Suspension: Longitudinal Movement; { Sim_Power_Pedmap } SERES_E68_DW,RLH
+#Library : Suspension: Longitudinal Movement
+#DataSet : SERES_E68_DW,RLH
+#Category: Sim_Power_Pedmap
+#FileID  : SusX_c44fdc60-e598-4875-bc54-1b95059805dc
+#Modified: 06-02-2026 19:08:25
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Longitudinal Movement
+
+END

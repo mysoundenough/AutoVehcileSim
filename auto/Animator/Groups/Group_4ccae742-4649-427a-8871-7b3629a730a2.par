@@ -14,7 +14,7 @@ PARSFILE Animator\STL\Shape_8747e07e-81f8-4899-bd41-ca6921d43beb.par
 
 
 SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
-#BlueLink20 Animator: Camera Setup`YZ-Plane, No Offsets (with Yaw)` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+#BlueLink20 Animator: Camera Setup`Shape Preview (Side) #1` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
 
 
 LOG_ENTRY Used Dataset: Animator: Group; { Environment Spheres } Partly Cloudy Sky with Light Grass
@@ -22,7 +22,7 @@ LOG_ENTRY Used Dataset: Animator: Group; { Environment Spheres } Partly Cloudy S
 #DataSet : Partly Cloudy Sky with Light Grass
 #Category: Environment Spheres
 #FileID  : Group_4ccae742-4649-427a-8871-7b3629a730a2
-#Modified: 05-28-2021 15:03:27
+#Modified: 06-02-2026 19:07:23
 #Product : CarSim 2024.1
 #DataVer : 2024.1
 #VehCode Animator Group

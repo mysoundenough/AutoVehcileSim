@@ -1,0 +1,45 @@
+PARSFILE
+#FullDataName Suspension: Camber Angle`SERES_E68_DW, FRH`Sim_Power_Pedmap
+#CheckBox0 0    
+
+#RingCtrl0 SPLINE
+#RingCtrl1 CONSTANT
+#RingCtrl2 ADD
+CAMBER_COMBINE ADD
+#DiagramOne0
+CAMBER_TABLE SPLINE
+-70, 0.57
+-60, 0.52
+-50, 0.474
+-40, 0.411
+-30, 0.331
+-20, 0.236
+-10, 0.125
+0, -0.004
+10, -0.14
+20, -0.29
+30, -0.469
+40, -0.65
+50, -0.86
+60, -1.08
+70, -1.33
+80, -1.59
+90, -1.87
+100, -2.18
+ENDTABLE
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+
+
+LOG_ENTRY Used Dataset: Suspension: Camber Angle; { Sim_Power_Pedmap } SERES_E68_DW, FRH
+#Library : Suspension: Camber Angle
+#DataSet : SERES_E68_DW, FRH
+#Category: Sim_Power_Pedmap
+#FileID  : Camber_f7363e88-3bad-485a-88f3-ae5cb4b3a848
+#Modified: 06-02-2026 19:08:52
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Camber
+
+END

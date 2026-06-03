@@ -1,0 +1,52 @@
+PARSFILE
+#FullDataName Suspension: Toe Angle`SERES_E68_DW, FLH`Sim_Power_Pedmap
+#CheckBox0 0    
+
+#RingCtrl0 SPLINE
+#RingCtrl1 CONSTANT
+#RingCtrl2 ADD
+TOE_COMBINE ADD
+#DiagramOne0
+TOE_TABLE SPLINE
+-70, 0.42
+-60, 0.37
+-50, 0.31
+-40, 0.26
+-30, 0.198
+-20, 0.133
+-10, 0.06
+0, -0.009
+10, -0.088
+20, -0.171
+30, -0.254
+40, -0.342
+50, -0.436
+60, -0.532
+70, -0.63
+80, -0.73
+90, -0.84
+100, -0.945
+ENDTABLE
+SUSP_TOE_JNC_OTHER_SIDE_CONSTANT 0
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+*SCALAR2 0
+
+
+#EMBEDDED_NOTES
+#SLA Toe change vs. Jounce
+#
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Suspension: Toe Angle; { Sim_Power_Pedmap } SERES_E68_DW, FLH
+#Library : Suspension: Toe Angle
+#DataSet : SERES_E68_DW, FLH
+#Category: Sim_Power_Pedmap
+#FileID  : Toe_e7f42071-f5d4-4e56-afb7-20c0bd89ab44
+#Modified: 06-02-2026 19:08:53
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Toe
+
+END

@@ -1,5 +1,5 @@
 PARSFILE
-#FullDataName Animator: Shape File Link`2D: Point Org (Y-Axis, XY-Plane)`Geometric Shapes: Arrows
+#FullDataName Animator: Shape File Link`2D Arrow: Point Origin (Y-Axis, XY-Plane)`Geometric Shapes
 #MiscYellow3
 add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\2D_Arrow\arrow_flat.obj
 #ENDMYellow
@@ -21,25 +21,18 @@ USE_RUN_COLOR
 #CheckBox4 0    
 
 
-SPECIAL_PARSFILE Animator\Cameras\Camera_b22c9c83-52ff-415d-a48c-b080618e0e6d.par
-#BlueLink2 Animator: Camera Setup`XY Plane, No Offsets - Small Objects` Shape Preview` , Video Camera`Camera_b22c9c83-52ff-415d-a48c-b080618e0e6d
+SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
+#BlueLink2 Animator: Camera Setup`Shape Preview (Side) #1` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
 
 *IMAGE_TYPE PASTED
 *IMAGE_PASTED Animator\STL\Shape_5809a616-1039-46c8-9167-0bb7e9735084.png
 
-#EMBEDDED_NOTES
-#Single-Headed Arrow
-#XY-Plane
-#0.5m along Y-Axis
-#(0,0,0) Point Origin
-#END_EMBEDDED_NOTES
-
-LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 2D: Point Org (Y-Axis, XY-Plane)
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes } 2D Arrow: Point Origin (Y-Axis, XY-Plane)
 #Library : Animator: Shape File Link
-#DataSet : 2D: Point Org (Y-Axis, XY-Plane)
-#Category: Geometric Shapes: Arrows
+#DataSet : 2D Arrow: Point Origin (Y-Axis, XY-Plane)
+#Category: Geometric Shapes
 #FileID  : Shape_5809a616-1039-46c8-9167-0bb7e9735084
-#Modified: 05-28-2021 15:03:16
+#Modified: 06-02-2026 19:07:17
 #Product : CarSim 2024.1
 #DataVer : 2024.1
 #VehCode Shape File

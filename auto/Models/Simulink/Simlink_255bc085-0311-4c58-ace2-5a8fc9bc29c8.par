@@ -1,0 +1,53 @@
+PARSFILE
+#FullDataName Models: Simulink`Sim_power_pedmap`My_Simulink
+#RunMdlFile D:\workspace\tool\carsim2020_data\Extensions\Simulink\my_power_pedmap\Sim_power_pedmap.slx
+SIMULINK_MODEL_FILE D:\workspace\tool\carsim2020_data\Extensions\Simulink\my_power_pedmap\Sim_power_pedmap.slx
+#RingCtrl0 -1
+#RingCtrl2 0
+*MULTI_SOLVERS 0
+*MULTI_S_WRAPPER 0
+#CheckBox0 1    
+*USE_ALT_DIR 1
+#CheckBox1 0    
+*USE_DIFF_SOLVERS 0
+#CheckBox3 1    
+#CheckBox5 0    
+#RingCtrl1 0
+OPT_INT_METHOD 0
+#CheckBox4 0    
+OPT_IO_SYNC_FM 0
+*TSTEP 0.0005
+*FREQ_MODEL 2000
+*TSTEP_OUT 0.025
+*FREQ_OUT 40
+tstep 0.0005
+iprint 50
+#AltPath D:\workspace\tool\carsim2020_data\Extensions\Simulink\my_power_pedmap
+*ALTERNATE_PATH D:\workspace\tool\carsim2020_data\Extensions\Simulink\my_power_pedmap
+PARSFILE IO_Channels\I_Channels\Import_a65c3c9b-59b3-403a-921b-d9e9177a8c63.par
+#BlueLink0 I/O Channels: Import`Sim_power_pedmap` My_Simulink` , Import`Import_a65c3c9b-59b3-403a-921b-d9e9177a8c63
+
+PARSFILE IO_Channels\O_Channels\Export_2dd5db31-ec3f-4b97-a2de-6b3ee0013c23.par
+#BlueLink1 I/O Channels: Export`SIm_Powe_Pedmap #1` My_Simulink` , Import/Export`Export_2dd5db31-ec3f-4b97-a2de-6b3ee0013c23
+
+#BlueLink3 I/O Channels: Ports`` ` , vs_state Ports`
+
+#BlueLink4 I/O Channels: Ports`` ` , vs_ctl Ports`
+
+#BlueLink5 I/O Channels: Ports`` ` , vs_kin Ports`
+
+#BlueLink6 I/O Channels: Ports`` ` , vs_dyn Ports`
+
+LIVE_SERVER_UPDATE_FREQ_MAX 60
+
+LOG_ENTRY Used Dataset: Models: Simulink; { My_Simulink } Sim_power_pedmap
+#Library : Models: Simulink
+#DataSet : Sim_power_pedmap
+#Category: My_Simulink
+#FileID  : Simlink_255bc085-0311-4c58-ace2-5a8fc9bc29c8
+#Modified: 06-02-2026 19:09:00
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode 
+
+END

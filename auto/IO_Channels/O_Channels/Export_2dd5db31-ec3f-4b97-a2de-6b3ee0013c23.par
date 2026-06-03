@@ -1,0 +1,65 @@
+PARSFILE
+#FullDataName I/O Channels: Export`SIm_Powe_Pedmap #1`My_Simulink
+#RingCtrl1 1
+
+
+EXPORT Alpha_L1
+EXPORT Alpha_L2
+EXPORT Alpha_R1
+EXPORT Alpha_R2
+EXPORT Beta
+EXPORT My_Dr_L1
+EXPORT My_Dr_L2
+EXPORT My_Dr_R1
+EXPORT My_Dr_R2
+EXPORT Fx_L1
+EXPORT Fx_L2
+EXPORT Fx_R1
+EXPORT Fx_R2
+EXPORT Fz_L1
+EXPORT Fz_L2
+EXPORT Fz_R1
+EXPORT Fz_R2
+EXPORT AVy_L1
+EXPORT AVy_L2
+EXPORT AVy_R1
+EXPORT AVy_R2
+EXPORT Vx
+#MiscYellow0
+#Number of Selected Channels: 22
+#CHN_NAME: Alpha_L1
+#CHN_NAME: Alpha_L2
+#CHN_NAME: Alpha_R1
+#CHN_NAME: Alpha_R2
+#CHN_NAME: Beta
+#CHN_NAME: My_Dr_L1
+#CHN_NAME: My_Dr_L2
+#CHN_NAME: My_Dr_R1
+#CHN_NAME: My_Dr_R2
+#CHN_NAME: Fx_L1
+#CHN_NAME: Fx_L2
+#CHN_NAME: Fx_R1
+#CHN_NAME: Fx_R2
+#CHN_NAME: Fz_L1
+#CHN_NAME: Fz_L2
+#CHN_NAME: Fz_R1
+#CHN_NAME: Fz_R2
+#CHN_NAME: AVy_L1
+#CHN_NAME: AVy_L2
+#CHN_NAME: AVy_R1
+#CHN_NAME: AVy_R2
+#CHN_NAME: Vx
+#ENDMYellow
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Export; { My_Simulink } SIm_Powe_Pedmap #1
+#Library : I/O Channels: Export
+#DataSet : SIm_Powe_Pedmap #1
+#Category: My_Simulink
+#FileID  : Export_2dd5db31-ec3f-4b97-a2de-6b3ee0013c23
+#Modified: 06-02-2026 19:08:59
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Export Channels
+
+END

@@ -1,0 +1,53 @@
+PARSFILE
+#FullDataName Suspension: Dive Angle (Caster Change)`SERES_E68_DW, RLH`Sim_Power_Pedmap
+#CheckBox0 0    
+
+#RingCtrl0 SPLINE
+#RingCtrl1 CONSTANT
+#RingCtrl2 ADD
+SUSP_DIVE_COMBINE ADD
+*SCALAR2 0
+
+#DiagramOne0
+SUSP_DIVE_TABLE SPLINE
+-80, -3.968327
+-70, -3.40108
+-60, -2.853562
+-50, -2.331187
+-40, -1.825402
+-30, -1.331795
+-20, -0.858874
+-10, -0.412677
+0, 0.024123
+10, 0.44525
+20, 0.834659
+30, 1.219368
+40, 1.576257
+50, 1.917632
+60, 2.239083
+70, 2.536704
+80, 2.81217
+90, 3.069452
+100, 3.282547
+110, 3.319833
+ENDTABLE
+SUSP_DIVE_JNC_OTHER_SIDE_CONSTANT 0
+#RadioCtrl0 1    
+#RadioCtrl1 0    
+
+
+#EMBEDDED_NOTES
+#NOTE:  Sign convention of the CS 7.01b and earlier datasets was reversed and demonstrated a pro-dive suspension.  This dataset represents an anti-dive suspension.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Suspension: Dive Angle (Caster Change); { Sim_Power_Pedmap } SERES_E68_DW, RLH
+#Library : Suspension: Dive Angle (Caster Change)
+#DataSet : SERES_E68_DW, RLH
+#Category: Sim_Power_Pedmap
+#FileID  : Dive_93b54d49-f3e1-42b1-a04d-df35f7ce33b3
+#Modified: 06-02-2026 19:08:26
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Dive
+
+END

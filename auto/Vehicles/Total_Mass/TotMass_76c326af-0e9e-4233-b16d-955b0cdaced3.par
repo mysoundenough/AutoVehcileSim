@@ -1,0 +1,75 @@
+PARSFILE
+#FullDataName Vehicle: Sprung Mass (from Whole Vehicle)`SERES_E68_DW`Sim_Power_Pedmap
+#VehCode Rigid sprung mass (whole)
+#CheckBox1 1    
+#CheckBox2 1    
+symbol_push_or_set <<hitch_x>> -3.6
+symbol_push_or_set <<hitch_y>> 0
+symbol_push_or_set <<hitch_z>> 0.45
+LX_H 3600
+H_H 450
+Y_H 0
+*M_TU 2801.96
+*LX_CG_TU 1542.77
+*Y_CG_TU -3.36
+M_SU 2491.96
+LX_CG_SU 1552.29
+Y_CG_SU -3.78
+H_CG_SU 618.24
+IXX_SU 1072.44
+IYY_SU 4174.11
+IZZ_SU 4330.09
+IXY_SU 5.69
+IXZ_SU 213.97
+IYZ_SU 18.10
+L_WHEELBASE 3030.3285
+*IXX_TU 1314.9
+*IYY_TU 4930
+*IZZ_TU 5267.8
+*IXY_TU 5.6
+*IXZ_TU 222.2
+*IYZ_TU 18.4
+*H_CG_TU 590.2
+Z_LENGTH 1876
+Y_LENGTH 2189
+*HWC_LF 359.3131
+*HWC_RF 361.0728
+*HWC_LR 370.3082
+*HWC_RR 369.0134
+*W_LF 6713.1029
+*W_RF 6775.4828
+*W_LR 6971.6273
+*W_RR 7017.6722
+*M_US(1) 160
+*M_US(2) 150
+*IW(1) 6.3
+*IW(2) 6.3
+*L_TRACK(1) 1704.3051
+*L_TRACK(2) 1701.383
+X_LENGTH 3030.3285
+#RingCtrl0 0
+#RingCtrl1 0
+X_LENGTH 3030.3285
+LX_AXLE 3030.3285
+iaxle 1
+iside 1
+H_WC 359.3131
+iside 2
+H_WC 361.0728
+iaxle 2
+iside 1
+H_WC 370.3082
+iside 2
+H_WC 369.0134
+
+LOG_ENTRY Used Dataset: Vehicle: Sprung Mass (from Whole Vehicle); { Sim_Power_Pedmap } SERES_E68_DW
+#Library : Vehicle: Sprung Mass (from Whole Vehicle)
+#DataSet : SERES_E68_DW
+#Category: Sim_Power_Pedmap
+#FileID  : TotMass_76c326af-0e9e-4233-b16d-955b0cdaced3
+#Modified: 06-02-2026 19:08:58
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Rigid sprung mass (whole)
+
+END

@@ -7,7 +7,7 @@ PARSFILE
 
 #DiagramOne0
 FX_AERO_SHAPING_TABLE SPLINE_FLAT
--180, -0.3
+-180, -0.45
 -160, -0.45
 -90, 0
 -20, 0.325
@@ -15,7 +15,7 @@ FX_AERO_SHAPING_TABLE SPLINE_FLAT
 20, 0.325
 90, 0
 160, -0.45
-180, -0.3
+180, -0.45
 ENDTABLE
 
 
@@ -30,7 +30,7 @@ LOG_ENTRY Used Dataset: Aerodynamics: Fx (Drag) Coef. vs. Aero Slip; { Spline In
 #DataSet : Spline: 0.30 at 0 deg.
 #Category: Spline Interpolation
 #FileID  : AirCFx_67b7c1a5-2eb8-4548-b585-873fbb86b674
-#Modified: 05-28-2021 15:03:31
+#Modified: 06-02-2026 19:08:24
 #Product : CarSim 2024.1
 #DataVer : 2024.1
 #VehCode Drag vs. Aero Slip

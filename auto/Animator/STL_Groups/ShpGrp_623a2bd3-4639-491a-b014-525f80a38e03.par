@@ -41,7 +41,7 @@ y_ref_length 2074
 z_ref_length 1514
 
 SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
-#BlueLink17 Animator: Camera Setup`YZ-Plane, No Offsets (with Yaw)` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+#BlueLink17 Animator: Camera Setup`Shape Preview (Side) #1` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
 
 
 LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Passenger Cars } D-Class SUV V9
@@ -49,7 +49,7 @@ LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Passenger Cars } D-Class SUV
 #DataSet : D-Class SUV V9
 #Category: Passenger Cars
 #FileID  : ShpGrp_623a2bd3-4639-491a-b014-525f80a38e03
-#Modified: 05-28-2021 15:03:00
+#Modified: 06-02-2026 19:07:49
 #Product : CarSim 2024.1
 #DataVer : 2024.1
 #VehCode Shape Assembly

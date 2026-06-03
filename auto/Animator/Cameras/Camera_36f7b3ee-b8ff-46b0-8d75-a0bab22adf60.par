@@ -1,5 +1,5 @@
 PARSFILE
-#FullDataName Animator: Camera Setup`YZ-Plane, No Offsets (with Yaw)`Shape Preview
+#FullDataName Animator: Camera Setup`Shape Preview (Side) #1`Shape Preview
 #RingCtrl1 0
 
 #CheckBox1 0    
@@ -27,12 +27,12 @@ SET_CAMERAMAN_NAME External camera
 FOG_SCALE 0
 SET_FIELD_OF_VIEW 21.1
 
-LOG_ENTRY Used Dataset: Animator: Camera Setup; { Shape Preview } YZ-Plane, No Offsets (with Yaw)
+LOG_ENTRY Used Dataset: Animator: Camera Setup; { Shape Preview } Shape Preview (Side) #1
 #Library : Animator: Camera Setup
-#DataSet : YZ-Plane, No Offsets (with Yaw)
+#DataSet : Shape Preview (Side) #1
 #Category: Shape Preview
 #FileID  : Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
-#Modified: 05-28-2021 15:03:29
+#Modified: 06-02-2026 19:07:20
 #Product : CarSim 2024.1
 #DataVer : 2024.1
 #VehCode Camera

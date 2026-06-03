@@ -2,7 +2,7 @@ PARSFILE
 #FullDataName Steering`D-Class, SUV: Power, Recirc. Ball`CS D-Class
 INSTALL_STEERING
 I_COL 0.02
-I_GEAR_IN 0.0006
+I_GEAR_IN 0.000561
 D_COL 0.010
 HYS_COL 0.2
 BETA_COL 0.01
@@ -101,7 +101,7 @@ LOG_ENTRY Used Dataset: Steering; { CS D-Class } D-Class, SUV: Power, Recirc. Ba
 #DataSet : D-Class, SUV: Power, Recirc. Ball
 #Category: CS D-Class
 #FileID  : StrSys2_64ffa9d1-b87b-4da1-94c4-81269337c3d3
-#Modified: 07-31-2023 08:47:56
+#Modified: 06-02-2026 19:08:59
 #Product : CarSim 2024.1
 #DataVer : 2024.1
 #VehCode 4-Wheel Steer

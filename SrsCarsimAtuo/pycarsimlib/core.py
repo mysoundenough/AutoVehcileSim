@@ -205,6 +205,7 @@ class CarsimManager:
                           par_path,
                           front_spring_rate: float = None,
                           shock_force_rate: float = None,
+                          shock_force_data: list = None,
                           power_delay_rate: float = None,
                           power_tao_rate: float = None,
                           user_speed: float = None):
@@ -212,7 +213,8 @@ class CarsimManager:
         if front_spring_rate is not None:
             self.modify_spring_rate(par_path, "FRONT_SPRING_RATE", front_spring_rate)
         if shock_force_rate is not None:
-            self.modify_shock_force(par_path, "FD_TABLE SPLINE", shock_force_rate)
+            print(0000000000000)
+            self.modify_shock_force(par_path, shock_force_rate, shock_force_data)
         if power_tao_rate is not None:
             self.modify_power_tao(par_path, "", power_tao_rate)
         if power_delay_rate is not None:
@@ -234,6 +236,7 @@ class CarsimManager:
         # 保存新文件
         with open(par_path, "w", encoding="utf-8") as f:
             f.write(new_content)
+        f.close()
 
         # 修改run_all文件
         logger.info(self.run_all_path)
@@ -247,6 +250,7 @@ class CarsimManager:
         new_content = re.sub(r'^\s*TC_PWR_HYBRID_AV\s+[\d.-]+\s*$', f'TC_PWR_HYBRID_AV {value}', content, flags=re.MULTILINE) # 保存新文件
         with open(self.run_all_path, "w", encoding="utf-8") as f:
             f.write(new_content)
+        f.close()
 
     def modify_power_tao(self, par_path: str, param_name: str, value: float):
         logger.info("change power file:" + par_path)
@@ -301,6 +305,7 @@ class CarsimManager:
             # 5. 保存文件
             with open(par_path, 'w', encoding='utf-8') as f:
                 f.write(new_content)
+            f.close()
 
             logger.info(f"动力响应修改成功: {par_path}, 缩放比例 = {value}")
 
@@ -359,6 +364,7 @@ class CarsimManager:
             # 5. 保存文件
             with open(self.run_all_path, 'w', encoding='utf-8') as f:
                 f.write(new_content)
+            f.close()
 
             logger.info(f"动力响应修改成功: {self.run_all_path}, 缩放比例 = {value}")
 
@@ -382,6 +388,7 @@ class CarsimManager:
         # 保存新文件
         with open(par_path, "w", encoding="utf-8") as f:
             f.write(new_content)
+        f.close()
 
         # 修改run_all文件
         logger.info(self.run_all_path)
@@ -397,9 +404,10 @@ class CarsimManager:
         # 保存新文件
         with open(self.run_all_path, "w", encoding="utf-8") as f:
             f.write(new_content)
+        f.close()
 
     
-    def modify_shock_force(self, par_path: str, param_name: str, value: float):
+    def modify_shock_force(self, par_path: str, value: float, data: list):
         """
         修改 CarSim 减震器阻尼力表格（按比例缩放）
         :param par_path: 减震器 .par 文件完整路径
@@ -425,7 +433,7 @@ class CarsimManager:
             table_lines = match.group(2).strip().splitlines()
             new_lines = []
 
-            for line in table_lines:
+            for i, line in enumerate(table_lines):
                 line = line.strip()
                 if not line or ',' not in line:
                     new_lines.append(line)
@@ -437,7 +445,13 @@ class CarsimManager:
                 force = float(force_str.strip())
 
                 # 按比例缩放
-                new_force = force * value
+                if value == 1:
+                    vel = data[i][0]
+                    new_force = data[i][1]
+                    if vel.is_integer():
+                        vel = int(vel)
+                else:
+                    new_force = force * value
 
                 # 保持格式（整数/小数都兼容）
                 if new_force.is_integer():
@@ -455,6 +469,7 @@ class CarsimManager:
             # 5. 保存文件
             with open(par_path, 'w', encoding='utf-8') as f:
                 f.write(new_content)
+            f.close()
 
             logger.info(f"减震器阻尼修改成功: {par_path}, 缩放比例 = {value}")
 
@@ -481,7 +496,7 @@ class CarsimManager:
             table_lines = match.group(2).strip().splitlines()
             new_lines = []
 
-            for line in table_lines:
+            for i, line in enumerate(table_lines):
                 line = line.strip()
                 if not line or ',' not in line:
                     new_lines.append(line)
@@ -493,7 +508,13 @@ class CarsimManager:
                 force = float(force_str.strip())
 
                 # 按比例缩放
-                new_force = force * value
+                if value == 1:
+                    vel = data[i][0]
+                    new_force = data[i][1]
+                    if vel.is_integer():
+                        vel = int(vel)
+                else:
+                    new_force = force * value
 
                 # 保持格式（整数/小数都兼容）
                 if new_force.is_integer():
@@ -511,6 +532,7 @@ class CarsimManager:
             # 5. 保存文件
             with open(self.run_all_path, 'w', encoding='utf-8') as f:
                 f.write(new_content)
+            f.close()
 
             logger.info(f"减震器阻尼修改成功: {self.run_all_path}, 缩放比例 = {value}")
 

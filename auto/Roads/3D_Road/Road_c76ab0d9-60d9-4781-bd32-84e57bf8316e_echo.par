@@ -3,10 +3,10 @@ PARSFILE
 ! Utility to calculate road and path coordinates for visualization
 ! Revision 222209, March 18, 2024
 
-TITLE Straight East <Straight>
+TITLE DLC, Mu = 0.85 <Flat Test Pads>
 
 ! Echo: Roads\3D_Road\Road_c76ab0d9-60d9-4781-bd32-84e57bf8316e_echo.par
-! This run was made 16:45 on May 08, 2026.
+! This run was made 19:08 on June 02, 2026.
 
 !------------------------------------------------------------------------------------
 ! SYSTEM PARAMETERS (SIMULATION OPTIONS)
@@ -16,10 +16,6 @@ TITLE Straight East <Straight>
 
 ID_EVENT            0 ; - ! ID number that can be assigned to the current event
 ID_RUN              0 ; - ! ID number that can be assigned to a simulation run
-IPRINT              1 ! Print interval: output time step TSTEP_WRITE = TSTEP*IPRINT;
-                      ! set IPRINT = 0 for debug (TSTEP_WRITE = T_DT) [L]
-! NOUT_ANI_LIVE     3 ! Number of variables sent live to animators (read only)
-! NOUT_WRITE        3 ! Number of output variables written to file (read only)
 OPT_ALL_WRITE       0 ! Write all outputs to file? 1 -> all, 0 -> only activated
                       ! outputs
 OPT_ECHO_DEFAULT    2 ! Show values that were not set by reading from a file? 1 ->
@@ -29,9 +25,9 @@ OPT_ERROR_DIALOG    0 ! Show pop-up dialog box if fatal error occurs: 1 -> yes
                       ! (normal use), 0 -> no (for batch runs)
 OPT_WRITE           0 ; - ! Write outputs when T > TSTART_WRITE? 1 -> write, 0 ->
                       ! don't write; change this using VS Commands or Events
-TSTART           8.96 ; s ! Starting time for the simulation clock
+TSTART             12 ; s ! Starting time for the simulation clock
 TSTEP            0.04 ; s ! Time step between calculations [L]
-! TSTEP_WRITE    0.04 ; s ! CALC -- Time interval in output time-series file
+TSTOP         11.9996 ; s ! Stop when this time is reached
 ! T_DT           0.04 ; s ! CALC -- Time increment between calculations
 
 !------------------------------------------------------------------------------------
@@ -50,16 +46,44 @@ TSTEP            0.04 ; s ! Time step between calculations [L]
                       ! and moving objects (read only)
 DEFINE_PATHS        1 ! VS Command to install reference paths
 
-OPT_PATH_START(1)   0 ! Set initial heading and X-Y coordinates of the path? 0 -> no
+OPT_PATH_START(1)   1 ! Set initial heading and X-Y coordinates of the path? 0 -> no
                       ! (legacy, using table data), 1 -> yes
 OPT_PATH_LOOP(1)    0 ! Is this path looped? 0 -> no, 1 -> yes
-SPATH_START(1)      0 ; m ! Station at the start of this path
+X_PATH_START(1)  -300 ; m ! Global X coordinate at the start of this path
 
-NSEGMENTS(1)        1 ! Number of segments in this path
+NSEGMENTS(1)        5 ! Number of segments in this path
 SEGMENT_TYPE(1,1)   0 ! 0 -> straight, 1 -> table, 2 -> rho, 3 -> radius, 4 -> cloth
-SEGMENT_LENGTH(1,1) 100 ; m ! Segment length
-! S_SEGMENT_END(1,1) 100 ; m ! CALC -- Station at end of this segment
-! X_SEGMENT_END(1,1) 100 ; m ! CALC -- X coordinate at end of segment
+SEGMENT_LENGTH(1,1) 200 ; m ! Segment length
+! S_SEGMENT_END(1,1) 200 ; m ! CALC -- Station at end of this segment
+! X_SEGMENT_END(1,1) -100 ; m ! CALC -- X coordinate at end of segment
+
+SEGMENT_TYPE(1,2)   3 ! 0 -> straight, 1 -> table, 2 -> rho, 3 -> radius, 4 -> cloth
+SEGMENT_RADIUS(1,2) 100 ; m ! Radius of arc; + -> left turn
+SEGMENT_ARC(1,2)   90 ; deg ! Central angle of arc
+! S_SEGMENT_END(1,2) 357.0796327 ; m ! CALC -- Station at end of this segment
+! X_SEGMENT_END(1,2) -4.346877156e-15 ; m ! CALC -- X coordinate at end of segment
+! Y_SEGMENT_END(1,2) 100 ; m ! CALC -- Y coordinate at end of segment
+! HEADING_END(1,2) 90 ; deg ! CALC -- Heading at end of segment
+
+SEGMENT_TYPE(1,3)   0 ! 0 -> straight, 1 -> table, 2 -> rho, 3 -> radius, 4 -> cloth
+SEGMENT_LENGTH(1,3) 50 ; m ! Segment length
+! S_SEGMENT_END(1,3) 407.0796327 ; m ! CALC -- Station at end of this segment
+! X_SEGMENT_END(1,3) -3.061616998e-15 ; m ! CALC -- X coordinate at end of segment
+! Y_SEGMENT_END(1,3) 150 ; m ! CALC -- Y coordinate at end of segment
+! HEADING_END(1,3) 90 ; deg ! CALC -- Heading at end of segment
+
+SEGMENT_TYPE(1,4)   0 ! 0 -> straight, 1 -> table, 2 -> rho, 3 -> radius, 4 -> cloth
+SEGMENT_LENGTH(1,4) 50 ; m ! Segment length
+! S_SEGMENT_END(1,4) 457.0796327 ; m ! CALC -- Station at end of this segment
+! Y_SEGMENT_END(1,4) 200 ; m ! CALC -- Y coordinate at end of segment
+! HEADING_END(1,4) 90 ; deg ! CALC -- Heading at end of segment
+
+SEGMENT_TYPE(1,5)   0 ! 0 -> straight, 1 -> table, 2 -> rho, 3 -> radius, 4 -> cloth
+SEGMENT_LENGTH(1,5) 50 ; m ! Segment length
+! S_SEGMENT_END(1,5) 507.0796327 ; m ! CALC -- Station at end of this segment
+! X_SEGMENT_END(1,5) 3.061616998e-15 ; m ! CALC -- X coordinate at end of segment
+! Y_SEGMENT_END(1,5) 250 ; m ! CALC -- Y coordinate at end of segment
+! HEADING_END(1,5) 90 ; deg ! CALC -- Heading at end of segment
 
 !------------------------------------------------------------------------------------
 ! ROAD SURFACES
@@ -74,7 +98,6 @@ SEGMENT_LENGTH(1,1) 100 ; m ! Segment length
 
 ! NROAD             1 ! Number of installed road surfaces (read only)
 DEFINE_ROADS        1 ! VS Command to define road surfaces
-CURRENT_ROAD_ID     1 ! ROAD_ID for the vehicle during initialization [I]
 
 ROAD_PATH_ID(1)     1 ! PATH_ID of reference path used for this road [I]
 

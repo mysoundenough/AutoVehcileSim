@@ -2,14 +2,18 @@ PARSFILE
 #FullDataName Road: Friction Map, S-L Grid`Constant: 0.85`Constant
 #CheckBox0 0    
 
-#RingCtrl0 CONSTANT
+#RingCtrl0 LINEAR_LOOP
 #RingCtrl1 CONSTANT
 #RingCtrl2 ADD
 MU_ROAD_COMBINE ADD
 #RadioCtrl0 0    
 #RadioCtrl1 0    
 
-MU_ROAD_CONSTANT 0.85
+#DiagramOne0
+MU_ROAD_TABLE LINEAR_LOOP
+0, 0.85
+1, 0.85
+ENDTABLE
 MU_ROAD_L_CONSTANT 0
 *SCALAR 0.85
 *SCALAR2 0
@@ -20,7 +24,7 @@ LOG_ENTRY Used Dataset: Road: Friction Map, S-L Grid; { Constant } Constant: 0.8
 #DataSet : Constant: 0.85
 #Category: Constant
 #FileID  : RdMu_25e73395-9471-44b9-9c60-27bd9cc24921
-#Modified: 05-28-2021 15:00:37
+#Modified: 06-02-2026 19:07:24
 #Product : CarSim 2024.1
 #DataVer : 2024.1
 #VehCode Mu via S-L Grid

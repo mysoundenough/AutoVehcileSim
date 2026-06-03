@@ -33,7 +33,7 @@ LOG_ENTRY Used Dataset: Plot: Setup; { Vehicle Motion } Yaw Rate of Sprung Masse
 #DataSet : Yaw Rate of Sprung Masses vs. Time
 #Category: Vehicle Motion
 #FileID  : Plot_310b0189-b08d-49fc-a484-ee359eb89744
-#Modified: 05-28-2021 14:59:48
+#Modified: 06-02-2026 19:08:55
 #Product : CarSim 2024.1
 #DataVer : 2024.1
 #VehCode Plot Setup

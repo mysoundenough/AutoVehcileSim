@@ -15,14 +15,26 @@ PARSFILE
 *IMAGE_TYPE PASTED
 *IMAGE_PASTED Animator\STL_Groups\ShpGrp_7db2d468-7dc0-4e22-9d2b-810bf37e9021.png
 PARSFILE Animator\STL\Shape_adff5bc7-5cc6-40c6-8119-03dd91486a9c.par
-#BlueLink0 Animator: Shape File Link`3D Pyramid: Tail Org (Y-Axis)` Geometric Shapes: Arrows` , Shape File`Shape_adff5bc7-5cc6-40c6-8119-03dd91486a9c
+#BlueLink0 Animator: Shape File Link`3D Pyramidal Arrow: Tail Origin (Y-Axis)` Geometric Shapes` , Shape File`Shape_adff5bc7-5cc6-40c6-8119-03dd91486a9c
+
+set_offset_x 0
+set_offset_y 0.5
+set_offset_z 0.02
+PARSFILE Animator\STL\Shape_608027c7-a123-4bfe-b3bd-307975c7684b.par
+#BlueLink1 Animator: Shape File Link`2D Arrow: Point Origin (Y-Axis, YZ-Plane)` Geometric Shapes` , Shape File`Shape_608027c7-a123-4bfe-b3bd-307975c7684b
+
+set_offset_x 0
+set_offset_y 0.5
+set_offset_z 0.02
+PARSFILE Animator\STL\Shape_5809a616-1039-46c8-9167-0bb7e9735084.par
+#BlueLink2 Animator: Shape File Link`2D Arrow: Point Origin (Y-Axis, XY-Plane)` Geometric Shapes` , Shape File`Shape_5809a616-1039-46c8-9167-0bb7e9735084
 
 set_offset_x 0
 set_offset_y 0.5
 set_offset_z 0.02
 
 SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
-#BlueLink17 Animator: Camera Setup`YZ-Plane, No Offsets (with Yaw)` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+#BlueLink17 Animator: Camera Setup`Shape Preview (Side) #1` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
 
 
 LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Arrows } Fy 3D Arrow (Tail Origin)
@@ -30,7 +42,7 @@ LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Arrows } Fy 3D Arrow (Tail O
 #DataSet : Fy 3D Arrow (Tail Origin)
 #Category: Arrows
 #FileID  : ShpGrp_7db2d468-7dc0-4e22-9d2b-810bf37e9021
-#Modified: 05-28-2021 15:02:58
+#Modified: 06-02-2026 19:07:18
 #Product : CarSim 2024.1
 #DataVer : 2024.1
 #VehCode Shape Assembly

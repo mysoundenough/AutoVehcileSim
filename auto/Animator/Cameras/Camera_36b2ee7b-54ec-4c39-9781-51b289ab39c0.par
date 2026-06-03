@@ -1,5 +1,5 @@
 PARSFILE
-#FullDataName Animator: Camera Setup`180 Azm, 5 El, 49 m`Road Reference
+#FullDataName Animator: Camera Setup`Rear View, Road Ref. (Frt. Facing)`Road Reference
 #RingCtrl1 0
 
 #CheckBox1 0    
@@ -27,12 +27,12 @@ SET_CAMERAMAN_NAME External camera
 FOG_SCALE 0
 SET_FIELD_OF_VIEW 30
 
-LOG_ENTRY Used Dataset: Animator: Camera Setup; { Road Reference } 180 Azm, 5 El, 49 m
+LOG_ENTRY Used Dataset: Animator: Camera Setup; { Road Reference } Rear View, Road Ref. (Frt. Facing)
 #Library : Animator: Camera Setup
-#DataSet : 180 Azm, 5 El, 49 m
+#DataSet : Rear View, Road Ref. (Frt. Facing)
 #Category: Road Reference
 #FileID  : Camera_36b2ee7b-54ec-4c39-9781-51b289ab39c0
-#Modified: 05-28-2021 15:03:28
+#Modified: 06-02-2026 19:07:22
 #Product : CarSim 2024.1
 #DataVer : 2024.1
 #VehCode Camera

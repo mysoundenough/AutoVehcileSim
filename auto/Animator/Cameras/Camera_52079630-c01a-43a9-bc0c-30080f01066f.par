@@ -2,7 +2,7 @@ PARSFILE
 #FullDataName Animator: Camera Setup`Shape Preview (Top)`Shape Preview
 #RingCtrl1 0
 
-#CheckBox1 1    
+#CheckBox1 0    
 #CheckBox2 0    
 #CheckBox3 0    
 
@@ -26,14 +26,13 @@ SET_CAMERAMAN_NAME External camera
 *SET_DISTANCE 35
 FOG_SCALE 0
 SET_FIELD_OF_VIEW 21.1
-SUN_POSITION 10 10 100
 
 LOG_ENTRY Used Dataset: Animator: Camera Setup; { Shape Preview } Shape Preview (Top)
 #Library : Animator: Camera Setup
 #DataSet : Shape Preview (Top)
 #Category: Shape Preview
 #FileID  : Camera_52079630-c01a-43a9-bc0c-30080f01066f
-#Modified: 05-28-2021 15:03:29
+#Modified: 06-02-2026 19:07:18
 #Product : CarSim 2024.1
 #DataVer : 2024.1
 #VehCode Camera

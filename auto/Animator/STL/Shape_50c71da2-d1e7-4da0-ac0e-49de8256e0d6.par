@@ -20,21 +20,17 @@ SET_SPECULAR 1 1 1
 vsv_enable_shadows_recursive
 
 SPECIAL_PARSFILE Animator\Cameras\Camera_aad9f5dd-7a61-4319-88b3-b90a1214f577.par
-#BlueLink2 Animator: Camera Setup`Vehicles and Drivers - Cars` Shape Preview` , Video Camera`Camera_aad9f5dd-7a61-4319-88b3-b90a1214f577
+#BlueLink2 Animator: Camera Setup`Vehicle Pictures #1` Shape Preview` , Video Camera`Camera_aad9f5dd-7a61-4319-88b3-b90a1214f577
 
 *IMAGE_TYPE PASTED
 *IMAGE_PASTED Animator\STL\Shape_50c71da2-d1e7-4da0-ac0e-49de8256e0d6.png
-
-#EMBEDDED_NOTES
-#D-Class SUV Details
-#END_EMBEDDED_NOTES
 
 LOG_ENTRY Used Dataset: Animator: Shape File Link; { Cars: D-Class } SUV: Details
 #Library : Animator: Shape File Link
 #DataSet : SUV: Details
 #Category: Cars: D-Class
 #FileID  : Shape_50c71da2-d1e7-4da0-ac0e-49de8256e0d6
-#Modified: 05-28-2021 15:03:03
+#Modified: 06-02-2026 19:07:20
 #Product : CarSim 2024.1
 #DataVer : 2024.1
 #VehCode Shape File

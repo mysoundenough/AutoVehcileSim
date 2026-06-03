@@ -1,0 +1,46 @@
+PARSFILE
+#FullDataName Suspension: Toe Angle`SERES_E68_DW,RRH`Sim_Power_Pedmap
+#CheckBox0 0    
+
+#RingCtrl0 SPLINE
+#RingCtrl1 CONSTANT
+#RingCtrl2 ADD
+TOE_COMBINE ADD
+#DiagramOne0
+TOE_TABLE SPLINE
+-80, -0.281457
+-70, -0.201623
+-60, -0.138388
+-50, -0.089025
+-40, -0.052406
+-30, -0.025102
+-20, -0.007515
+-10, 0.003949
+0, 0.009109
+10, 0.009577
+20, 0.007974
+30, 0.002887
+40, -0.000627
+50, -0.003444
+60, -0.004574
+70, 0.001595
+80, 0.014383
+90, 0.034253
+100, 0.064604
+ENDTABLE
+#RadioCtrl0 1    
+#RadioCtrl1 0    
+
+
+
+LOG_ENTRY Used Dataset: Suspension: Toe Angle; { Sim_Power_Pedmap } SERES_E68_DW,RRH
+#Library : Suspension: Toe Angle
+#DataSet : SERES_E68_DW,RRH
+#Category: Sim_Power_Pedmap
+#FileID  : Toe_bd3f03b6-b177-4b8d-b471-c146c0de16e2
+#Modified: 06-02-2026 19:08:24
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Toe
+
+END

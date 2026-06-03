@@ -2,17 +2,17 @@ PARSFILE
 #FullDataName Path: Segment Builder`Straight East`Straight
 #RingCtrl0 1
 SET_IPATH_FOR_ID 0
-#CheckBox0 0    
-OPT_PATH_START 0
+#CheckBox0 1    
+OPT_PATH_START 1
 #CheckBox1 0    
 OPT_PATH_LOOP 0
 
-SPATH_START 0
+X_PATH_START -300
 PATH_ID_DM = PATH_ID
 set_description path_id Straight East
 
-NSEGMENTS 1
-*TABLEROWS 1
+NSEGMENTS 5
+*TABLEROWS 5
 
 ! Table Columns:
 !   NOTE: Label columns are not written to parsfile.
@@ -32,14 +32,39 @@ NSEGMENTS 1
 ! 12: (Text) Length of clothoid segment in meters. This will automatically generate an X-Y table that has this overall length and maintains continuity with the adjacent segments (the preceding and following rows in the table).
 ! 13: (Label) Specify the length of a clothoid segment with meters.
 #MIXTABLE0
-#NUMROWS 1
-#straight, , 100, 100, 360, deg, 0.01, 90, deg, 400
+#NUMROWS 5
+#straight, , 200, 100, 360, deg, 0.01, 90, deg, 400
+#radius, , 50, 100, 90, deg, 0.01, 90, deg, 400
+#straight, , 50, 100, 90, deg, 0.01, 90, deg, 400
+#straight, , 50, 100, 90, deg, 0.01, 90, deg, 400
+#straight, , 50, 100, 90, deg, 0.01, 90, deg, 400
 #ENDTABLE
 
 ! Segment 1, straight
 IPATHSEG 1
 SEGMENT_TYPE 0
-SEGMENT_LENGTH 100
+SEGMENT_LENGTH 200
+
+! Segment 2, radius
+IPATHSEG 2
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 100.000000
+SEGMENT_ARC 90.000000
+
+! Segment 3, straight
+IPATHSEG 3
+SEGMENT_TYPE 0
+SEGMENT_LENGTH 50
+
+! Segment 4, straight
+IPATHSEG 4
+SEGMENT_TYPE 0
+SEGMENT_LENGTH 50
+
+! Segment 5, straight
+IPATHSEG 5
+SEGMENT_TYPE 0
+SEGMENT_LENGTH 50
 
 Title Straight East <Straight>
 
@@ -52,7 +77,7 @@ LOG_ENTRY Used Dataset: Path: Segment Builder; { Straight } Straight East
 #DataSet : Straight East
 #Category: Straight
 #FileID  : RoadSeg_299f5dd8-31b0-44f2-9251-eaaf215df33c
-#Modified: 05-28-2021 15:01:00
+#Modified: 06-02-2026 19:07:48
 #Product : CarSim 2024.1
 #DataVer : 2024.1
 #VehCode Path Segment Builder

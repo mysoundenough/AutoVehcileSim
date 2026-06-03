@@ -21,18 +21,12 @@ SPECIAL_PARSFILE Animator\Cameras\Camera_82b28084-790d-4ba6-a774-1d2cd5796fec.pa
 *IMAGE_TYPE PASTED
 *IMAGE_PASTED Animator\STL\Shape_beda42da-d7c5-4163-8de3-1936475982f2.png
 
-#EMBEDDED_NOTES
-#D-Class SUV Reverse Lights
-#
-#The Animator: Vehicles and Sensor Targets library has a check box to include reverse lights. Attach this shape file dataset here to implement visibility logic for reversing.
-#END_EMBEDDED_NOTES
-
 LOG_ENTRY Used Dataset: Animator: Shape File Link; { Cars: D-Class } SUV: Reverse Lights
 #Library : Animator: Shape File Link
 #DataSet : SUV: Reverse Lights
 #Category: Cars: D-Class
 #FileID  : Shape_beda42da-d7c5-4163-8de3-1936475982f2
-#Modified: 05-28-2021 15:03:03
+#Modified: 06-02-2026 19:07:49
 #Product : CarSim 2024.1
 #DataVer : 2024.1
 #VehCode Shape File

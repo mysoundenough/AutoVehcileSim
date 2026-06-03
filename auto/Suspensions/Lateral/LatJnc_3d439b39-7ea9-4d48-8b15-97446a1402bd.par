@@ -1,0 +1,74 @@
+PARSFILE
+#FullDataName Suspension: Lateral Movement Due to Jounce`SERES_E68_DW, FLH`Sim_Power_Pedmap
+#CheckBox0 0    
+
+#RingCtrl0 SPLINE
+#RingCtrl1 CONSTANT
+#RingCtrl2 ADD
+SUSP_LAT_COMBINE ADD
+#DiagramOne0
+SUSP_LAT_TABLE SPLINE
+-70, 9.9
+-60, 7.65
+-50, 5.64
+-40, 3.94
+-30, 2.52
+-20, 1.39
+-10, 0.55
+0, 0
+10, -0.28
+20, -0.295
+30, -0.33
+40, 0.5
+50, 1.31
+60, 2.4
+70, 3.77
+80, 5.43
+90, 7.37
+100, 9.57
+ENDTABLE
+SUSP_LAT_JNC_OTHER_SIDE_CONSTANT 0
+SUSP_Y_AXLE_ROLL_COMBINE ADD ! in case this is for a solid axle
+#DiagramOne0
+SUSP_LAT_AXLE_JOUNCE_TABLE SPLINE
+-70, 9.9
+-60, 7.65
+-50, 5.64
+-40, 3.94
+-30, 2.52
+-20, 1.39
+-10, 0.55
+0, 0
+10, -0.28
+20, -0.295
+30, -0.33
+40, 0.5
+50, 1.31
+60, 2.4
+70, 3.77
+80, 5.43
+90, 7.37
+100, 9.57
+ENDTABLE
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+*SCALAR2 0
+
+
+#EMBEDDED_NOTES
+#SLA Lateral movement vs. Jounce
+#
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Suspension: Lateral Movement Due to Jounce; { Sim_Power_Pedmap } SERES_E68_DW, FLH
+#Library : Suspension: Lateral Movement Due to Jounce
+#DataSet : SERES_E68_DW, FLH
+#Category: Sim_Power_Pedmap
+#FileID  : LatJnc_3d439b39-7ea9-4d48-8b15-97446a1402bd
+#Modified: 06-02-2026 19:08:53
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Lateral Movement
+
+END

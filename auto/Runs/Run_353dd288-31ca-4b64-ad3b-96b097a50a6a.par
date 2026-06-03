@@ -1,0 +1,96 @@
+PARSFILE
+#FullDataName CarSim Run Control`Sim_Power_Pedmap`My Simulink
+#VEHICLECODE Ind_Ind
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_353dd288-31ca-4b64-ad3b-96b097a50a6a
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Models\Simulink\Simlink_255bc085-0311-4c58-ace2-5a8fc9bc29c8.par
+#BlueLink12 Models: Simulink`Sim_power_pedmap` My_Simulink` , Models`Simlink_255bc085-0311-4c58-ace2-5a8fc9bc29c8
+
+PARSFILE Animator\Cameras\Camera_09439551-c64a-4943-9211-22177923f7cf.par
+#BlueLink0 Animator: Camera Setup`90 Azm, 5 El, 23 m` Road Reference` , Animator camera`Camera_09439551-c64a-4943-9211-22177923f7cf
+
+#CheckBox0 1    
+#CheckBox1 1    
+#CheckBox2 1    
+#CheckBox3 0    
+#CheckBox4 1    
+#CheckBox5 0    
+#CheckBox6 1    
+#CheckBox7 0    
+#CheckBox8 1    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+#CheckBox12 0    
+
+#RingCtrl0 4
+#RingCtrl1 10
+#RingCtrl2 3
+#RingCtrl3 0
+#RingCtrl6 0
+#RingCtrl7 -1
+*RUN_COLOR 0 0.6 0.973
+SET_RUN_COLOR 0 0.6 0.973
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Vehicles\Assembly\Vehicle_75802f40-eb2e-4e37-bcbf-3edbf9efd47a.par
+#BlueLink2 Vehicle: Assembly`Sim Power Pedmap Car AWD` D-Class` , Math Model`Vehicle_75802f40-eb2e-4e37-bcbf-3edbf9efd47a
+
+PARSFILE Procedures\Proc_52b56441-9905-47a2-b74f-f6fd14f87b6d.par
+#BlueLink28 Procedures`DLC @ 120 km/h (Quick Start) #1` Handling Testing` , Procedure`Proc_52b56441-9905-47a2-b74f-f6fd14f87b6d
+
+*TSTEP 0.0005
+*FREQ_MODEL 2000
+*TSTEP_OUT 0.025
+*FREQ_OUT 40
+tstep 0.0005
+iprint 50
+
+SPECIAL_PARSFILE Runs\Run_353dd288-31ca-4b64-ad3b-96b097a50a6a.par
+#BlueLink23 CarSim Run Control`Sim_Power_Pedmap` My Simulink` , Overlay run or ERD file`Run_353dd288-31ca-4b64-ad3b-96b097a50a6a
+
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Vehicles\Assembly\Vehicle_75802f40-eb2e-4e37-bcbf-3edbf9efd47a.png
+WRITE_SENSOR_DETECT
+Title Sim_Power_Pedmap <My Simulink>
+CATEGORY My Simulink 
+DATASET_TITLE Sim_Power_Pedmap
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 1
+
+#EMBEDDED_NOTES
+#This example demonstrates a Semi-Active Suspension Controller modeled in Simulink. (Libraries > Models > Models: Simulink)
+#
+#Click on the blue link "Semi-Active Suspension" to see how the Simulink model is connected to CarSim, and how to define the import and export variables that allow CarSim and Simulink to communicate.
+#
+#You can choose whether to Add, Replace, or Mulitply the Simulink imported variables to their corresponding variables in CarSim.
+#
+#This example is overlaid with an equivalent D-Class Sedan that does not have a Simulink-controlled Semi-Active Suspension.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { My Simulink } Sim_Power_Pedmap
+#Library : CarSim Run Control
+#DataSet : Sim_Power_Pedmap
+#Category: My Simulink
+#FileID  : Run_353dd288-31ca-4b64-ad3b-96b097a50a6a
+#Modified: 06-02-2026 19:07:11
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Run
+
+END

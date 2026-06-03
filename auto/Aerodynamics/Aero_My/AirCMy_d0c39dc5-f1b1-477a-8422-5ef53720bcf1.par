@@ -7,7 +7,7 @@ PARSFILE
 
 #DiagramOne0
 MY_AERO_SHAPING_TABLE SPLINE_FLAT
--180, -0.17
+-180, -0.25
 -160, -0.25
 -90, 0
 -20, 0.17
@@ -15,7 +15,7 @@ MY_AERO_SHAPING_TABLE SPLINE_FLAT
 20, 0.17
 90, 0
 160, -0.25
-180, -0.17
+180, -0.25
 ENDTABLE
 
 
@@ -28,7 +28,7 @@ LOG_ENTRY Used Dataset: Aerodynamics: My (Pitch Moment) Coef. vs. Aero Slip; { S
 #DataSet : Spline: 0.15 at 0 deg.
 #Category: Spline Interpolation
 #FileID  : AirCMy_d0c39dc5-f1b1-477a-8422-5ef53720bcf1
-#Modified: 05-28-2021 15:03:30
+#Modified: 06-02-2026 19:08:24
 #Product : CarSim 2024.1
 #DataVer : 2024.1
 #VehCode My vs. Aero Slip

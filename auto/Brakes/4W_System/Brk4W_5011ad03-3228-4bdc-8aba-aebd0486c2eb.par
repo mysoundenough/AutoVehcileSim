@@ -1,5 +1,5 @@
 PARSFILE
-#FullDataName Brakes: Four-Wheel System`SUV: M/C Press, No ABS`D-Class
+#FullDataName Brakes: Four-Wheel System`(SUV), MC Press, No ABS`D-Class
 #CheckBox0 0    
 #CheckBox1 0    
 
@@ -81,12 +81,12 @@ MY_BRAKE_COEFFICIENT 150
 *MY_FRIC_L2 0.5
 MY_FRICTION 0.5
 
-LOG_ENTRY Used Dataset: Brakes: Four-Wheel System; { D-Class } SUV: M/C Press, No ABS
+LOG_ENTRY Used Dataset: Brakes: Four-Wheel System; { D-Class } (SUV), MC Press, No ABS
 #Library : Brakes: Four-Wheel System
-#DataSet : SUV: M/C Press, No ABS
+#DataSet : (SUV), MC Press, No ABS
 #Category: D-Class
 #FileID  : Brk4W_5011ad03-3228-4bdc-8aba-aebd0486c2eb
-#Modified: 02-16-2023 15:57:48
+#Modified: 06-02-2026 19:08:57
 #Product : CarSim 2024.1
 #DataVer : 2024.1
 #VehCode 4-Wheel System

@@ -1,5 +1,5 @@
 PARSFILE
-#FullDataName Animator: Shape File Link`2D: Tail Org (Z-Axis, XZ-Plane)`Geometric Shapes: Arrows
+#FullDataName Animator: Shape File Link`2D Arrow: Point Origin (Z-Axis, XZ-Plane) #1`Geometric Shapes
 #MiscYellow3
 add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\2D_Arrow\arrow_flat.obj
 #ENDMYellow
@@ -22,25 +22,18 @@ USE_RUN_COLOR
 #CheckBox4 0    
 
 
-SPECIAL_PARSFILE Animator\Cameras\Camera_23e894ad-b508-47cb-b414-3d8d5a3b1a26.par
-#BlueLink2 Animator: Camera Setup`XZ Plane, No Offsets - Small Objects` Shape Preview` , Video Camera`Camera_23e894ad-b508-47cb-b414-3d8d5a3b1a26
+SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
+#BlueLink2 Animator: Camera Setup`Shape Preview (Side) #1` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
 
 *IMAGE_TYPE PASTED
 *IMAGE_PASTED Animator\STL\Shape_856fb306-c3cb-47a7-be79-a3fee3033c14.png
 
-#EMBEDDED_NOTES
-#Single-Headed Arrow
-#XZ-Plane
-#0.5m along Z-Axis
-#(0,0,0) Tail Origin
-#END_EMBEDDED_NOTES
-
-LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 2D: Tail Org (Z-Axis, XZ-Plane)
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes } 2D Arrow: Point Origin (Z-Axis, XZ-Plane) #1
 #Library : Animator: Shape File Link
-#DataSet : 2D: Tail Org (Z-Axis, XZ-Plane)
-#Category: Geometric Shapes: Arrows
+#DataSet : 2D Arrow: Point Origin (Z-Axis, XZ-Plane) #1
+#Category: Geometric Shapes
 #FileID  : Shape_856fb306-c3cb-47a7-be79-a3fee3033c14
-#Modified: 05-28-2021 15:03:16
+#Modified: 06-02-2026 19:07:17
 #Product : CarSim 2024.1
 #DataVer : 2024.1
 #VehCode Shape File
