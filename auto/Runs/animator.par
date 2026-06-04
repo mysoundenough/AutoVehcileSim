@@ -5,7 +5,7 @@ search_path_append C:\Program Files (x86)\CarSim2024.1_Prog\Resources\
 search_path_append C:\Program Files (x86)\CarSim2024.1_Prog\
 search_path_append C:\Program Files (x86)\CarSim2024.1_Prog\Resources\Animator\Deprecated_Assets\
 set_run_slot 0
-DATASET C:\workspace\AutoVehcileSim\auto\Results\Run_6f6dddbf-6f3d-45dd-95c6-f5662819b1e8\LastRun.vs
+DATASET C:\workspace\AutoVehcileSim\auto\Results\Run_6f6dddbf-6f3d-45dd-95c6-f5662819b1e8\LastRun.csv
 PARSFILE C:\workspace\AutoVehcileSim\auto\Results\Run_6f6dddbf-6f3d-45dd-95c6-f5662819b1e8\LastRun_all.par
 LIVE_SERVER_REMOVE_ALL
 SET_PATH_COLOR 1 1 1

@@ -8,7 +8,7 @@ CATEGORY Steering Tests
 TITLE On-Center Steer Test, D-Class Sedan <Steering Tests>
 
 ! Echo: Runs\Target_Path_echo.par
-! This run was made 14:26 on June 03, 2026.
+! This run was made 15:39 on June 04, 2026.
 
 !------------------------------------------------------------------------------------
 ! SYSTEM PARAMETERS (SIMULATION OPTIONS)
@@ -32,7 +32,7 @@ OPT_ERROR_DIALOG    0 ! Show pop-up dialog box if fatal error occurs: 1 -> yes
 OPT_STOP            0 ! Option for stopping the run: 0 -> stop when T reaches TSTOP;
                       ! 1 -> stop when T reaches TSTOP or station reaches SSTOP; -1
                       ! -> run until stopped using VS Commands or external control
-OPT_VS_FILETYPE     2 ! Type of output file: 1-> 64-bit VS, 2-> 32-bit VS, 3 ->
+OPT_VS_FILETYPE     4 ! Type of output file: 1-> 64-bit VS, 2-> 32-bit VS, 3 ->
                       ! 32-bit ERD, 4 -> text CSV (no binary), 0 -> no output file
 OPT_WRITE           0 ; - ! Write outputs when T > TSTART_WRITE? 1 -> write, 0 ->
                       ! don't write; change this using VS Commands or Events

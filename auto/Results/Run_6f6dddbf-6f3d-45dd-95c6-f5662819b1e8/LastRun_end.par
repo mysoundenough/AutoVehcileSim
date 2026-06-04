@@ -9,7 +9,7 @@ CATEGORY Steering Tests
 TITLE On-Center Steer Test, D-Class Sedan <Steering Tests>
 
 ! Echo: Results\Run_6f6dddbf-6f3d-45dd-95c6-f5662819b1e8\LastRun_echo.par
-! This run was made 11:23 on June 04, 2026.
+! This run was made 16:51 on June 04, 2026.
 
 !------------------------------------------------------------------------------------
 ! SYSTEM PARAMETERS (SIMULATION OPTIONS)
@@ -45,7 +45,7 @@ OPT_ECHO_ICS        0 ! [D] Echo initial conditions? 0 -> no, 1 -> yes
 OPT_ECHO_KEYWORDS_LC 0 ! [D] Echo all keywords in lowercase? 0 -> no, 1 -> yes
 OPT_ECHO_WRITE      0 ! [D] Echo written outputs? 0 -> no, 1 -> yes
 OPT_ENABLE_PYTHON   0 ! [D] Enable access to embedded Python? 0 -> no, 1 -> yes
-OPT_ERROR_DIALOG    1 ! [D] Show pop-up dialog box if fatal error occurs: 1 -> yes
+OPT_ERROR_DIALOG    0 ! Show pop-up dialog box if fatal error occurs: 1 -> yes
                       ! (normal use), 0 -> no (for batch runs)
 OPT_ERROR_DUP_DEF   0 ! [D] Handle case where DEFINE_IMPORT, DEFINE_OUTPUT,
                       ! DEFINE_PARAMETER, or DEFINE_VARIABLE attempts to define a
@@ -78,7 +78,7 @@ OPT_VS_FILETYPE     4 ! Type of output file: 1-> 64-bit VS, 2-> 32-bit VS, 3 ->
                       ! 32-bit ERD, 4 -> text CSV (no binary), 0 -> no output file
 OPT_WRITE           1 ; - ! [D] Write outputs when T > TSTART_WRITE? 1 -> write, 0
                       ! -> don't write; change this using VS Commands or Events
-! RTIME  0.1340172379 ; - ! CALC -- Computational efficiency (sec/sim. sec)
+! RTIME   0.218939086 ; - ! CALC -- Computational efficiency (sec/sim. sec)
 TSTART           37.2 ; s ! Starting time for the simulation clock
 TSTART_T_EVENT      0 ; s ! [D] Event clock reset time: T_EVENT = T - TSTART_T_EVENT
 TSTART_WRITE     37.2 ; s ! Start writing outputs when this time is reached
@@ -128,13 +128,13 @@ STEER_MAX_TORQUE   -1 ; N-m ! [D] Maximum allowed steer torque: stop the run if
 ! Vz, Ax, Ay, and Az are based on the motion of this instant CG for the total laden
 ! (TL) unit.
 
-! H_CG_TL 619.0773374 ; mm ! CALC -- Height of TL CG
-! LX_CG_TL 1104.235832 ; mm ! CALC -- X distance TL CG is behind origin
-! Y_CG_TL 0.01787297193 ; mm ! CALC -- Y coordinate of TL CG
+! H_CG_TL 619.0521161 ; mm ! CALC -- Height of TL CG
+! LX_CG_TL 1104.241136 ; mm ! CALC -- X distance TL CG is behind origin
+! Y_CG_TL 0.006208240788 ; mm ! CALC -- Y coordinate of TL CG
 ! M_TL         2785.7 ; kg ! CALC -- TL mass
-! IXX_TL   839.236987 ; kg-m2 ! CALC -- TL roll inertia moment
-! IYY_TL  2847.301166 ; kg-m2 ! CALC -- TL pitch inertia moment
-! IZZ_TL   2925.58555 ; kg-m2 ! CALC -- TL yaw inertia moment
+! IXX_TL  839.2804968 ; kg-m2 ! CALC -- TL roll inertia moment
+! IYY_TL  2847.393768 ; kg-m2 ! CALC -- TL pitch inertia moment
+! IZZ_TL  2925.658655 ; kg-m2 ! CALC -- TL yaw inertia moment
 
 !------------------------------------------------------------------------------------
 ! SPRUNG MASS
@@ -285,8 +285,8 @@ OPT_SUSP_COMPLIANCE_METHOD(1) 1 ! [D] Subtract offset from each compliance table
                                 ! avoid double-counting kinematical offset? 1 ->
                                 ! Yes, subtract the offset, 0 -> No, use compliance
                                 ! table as is [I]
-! CMP_DESIGN(1,1) 98.96845564 ; mm ! CALC -- Compression at design load, spring L1
-! CMP_DESIGN(1,2) 98.96845564 ; mm ! CALC -- Compression at design load, spring R1
+! CMP_DESIGN(1,1) 81.6489759 ; mm ! CALC -- Compression at design load, spring L1
+! CMP_DESIGN(1,2) 81.6489759 ; mm ! CALC -- Compression at design load, spring R1
 CMP_OFFSET(1,1)     0 ; mm ! Initial compression of external spring L1 [I]
 CMP_OFFSET(1,2)     0 ; mm ! Initial compression of external spring R1 [I]
 DAUX(1)             0 ; N-m-s/deg ! Auxiliary roll damping, axle 1
@@ -300,7 +300,7 @@ FS_OFFSET(1,2)      0 ; N ! Force offset subtracted from built-in spring R1 [I]
 ! FZA_UL(1) 17363.41672 ; N ! CALC -- Static ground load, unladen, axle 1
 ! FZ_STATIC(1,1) 8681.708362 ; N ! CALC -- Static ground force, laden, wheel L1
 ! FZ_STATIC(1,2) 8681.708362 ; N ! CALC -- Static ground force, laden, wheel R1
-! KA_ROLL(1) 3390.304665 ; N-m/deg ! CALC -- Total roll stiffness, axle 1
+! KA_ROLL(1) 3988.76323 ; N-m/deg ! CALC -- Total roll stiffness, axle 1
 L_SPG_ADJ(1,1)      0 ; mm ! Upper seat height increase for spring L1 to reduce
                       ! spring compression [I]
 L_SPG_ADJ(1,2)      0 ; mm ! Upper seat height increase for spring R1 [I]
@@ -316,8 +316,8 @@ OPT_EXT_SP(2,1)     0 ! Disable built-in spring L2? 0 -> no, 1 -> yes [I]
 OPT_EXT_SP(2,2)     0 ! Disable built-in spring R2? 0 -> no, 1 -> yes [I]
 OPT_SUSP_COMPLIANCE_METHOD(2) 1 ! [D] Adjust compliance tables to avoid
                                 ! double-counting? 1 -> Adjust, 0 -> No [I]
-! CMP_DESIGN(2,1) 100.8771241 ; mm ! CALC -- Compression at design load, spring L2
-! CMP_DESIGN(2,2) 100.8771241 ; mm ! CALC -- Compression at design load, spring R2
+! CMP_DESIGN(2,1) 86.46610641 ; mm ! CALC -- Compression at design load, spring L2
+! CMP_DESIGN(2,2) 86.46610641 ; mm ! CALC -- Compression at design load, spring R2
 CMP_OFFSET(2,1)     0 ; mm ! Initial compression of external spring L2 [I]
 CMP_OFFSET(2,2)     0 ; mm ! Initial compression of external spring R2 [I]
 DAUX(2)             0 ; N-m-s/deg ! Auxiliary roll damping, axle 2
@@ -343,7 +343,7 @@ FS_OFFSET(2,2)      0 ; N ! Force offset subtracted from built-in spring R2 [I]
 ! FZA_UL(2) 9954.968182 ; N ! CALC -- Static ground load, unladen, axle 2
 ! FZ_STATIC(2,1) 4977.484091 ; N ! CALC -- Static ground force, laden, wheel L2
 ! FZ_STATIC(2,2) 4977.484091 ; N ! CALC -- Static ground force, laden, wheel R2
-! KA_ROLL(2) 446.1773465 ; N-m/deg ! CALC -- Total roll stiffness, axle 2
+! KA_ROLL(2) 520.5402375 ; N-m/deg ! CALC -- Total roll stiffness, axle 2
 L_DAMPERS(2)  1103.33 ; mm ! Distance between dampers on axle 2 [I]
 Y_DAMPERS(2)        0 ; mm ! [D] Lateral (left) offset of dampers on axle 2 [I]
 L_JNC_STOPS(2)   1100 ; mm ! Distance between jounce stops on axle 2 [I]
@@ -1473,19 +1473,19 @@ F_SCALE_C_LONG_AXLE(2) 1 ! [D] Divided into (force - F_START_C_LONG_AXLE)
 
 ! Col 1 = compression speed (mm/s), col 2 = damper force (N)
 FD_TABLE(1,1) SPLINE ! axle 1, left side
- -1030, -7031
- -520, -5502
- -390, -5094
- -260, -4604
- -130, -3251
- -50, -831
+ -1030, -2671
+ -520, -1290
+ -390, -1013
+ -260, -759
+ -130, -513
+ -50, -215
  0, 0
- 50, 374
- 130, 950
- 260, 1547
- 390, 1998
- 520, 2405
- 1030, 3668
+ 50, 302
+ 130, 464
+ 260, 721
+ 390, 917
+ 520, 1109
+ 1030, 1955
 ENDTABLE
 FD_GAIN(1,1)        1 ! [D] Multiplied with calculated value to get damper force
 FD_OFFSET(1,1)      0 ; N ! [D] Added (after gain) to get damper force
@@ -1494,19 +1494,19 @@ CMP_R_SCALE_FD(1,1) 1 ! [D] Divided into (compression speed - CMP_R_START_FD)
 
 ! Col 1 = compression speed (mm/s), col 2 = damper force (N)
 FD_TABLE(1,2) SPLINE ! axle 1, right side
- -1030, -7031
- -520, -5502
- -390, -5094
- -260, -4604
- -130, -3251
- -50, -831
+ -1030, -2671
+ -520, -1290
+ -390, -1013
+ -260, -759
+ -130, -513
+ -50, -215
  0, 0
- 50, 374
- 130, 950
- 260, 1547
- 390, 1998
- 520, 2405
- 1030, 3668
+ 50, 302
+ 130, 464
+ 260, 721
+ 390, 917
+ 520, 1109
+ 1030, 1955
 ENDTABLE
 FD_GAIN(1,2)        1 ! [D] Multiplied with calculated value to get damper force
 FD_OFFSET(1,2)      0 ; N ! [D] Added (after gain) to get damper force
@@ -1515,19 +1515,19 @@ CMP_R_SCALE_FD(1,2) 1 ! [D] Divided into (compression speed - CMP_R_START_FD)
 
 ! Col 1 = compression speed (mm/s), col 2 = damper force (N)
 FD_TABLE(2,1) SPLINE ! axle 2, left side
- -1030, -6876
- -520, -5399
- -390, -4972
- -260, -4466
- -130, -2946
- -50, -803
+ -1030, -2671
+ -520, -1290
+ -390, -1013
+ -260, -759
+ -130, -513
+ -50, -215
  0, 0
- 50, 370
- 130, 911
- 260, 1430
- 390, 1873
- 520, 2295
- 1030, 3580
+ 50, 302
+ 130, 464
+ 260, 721
+ 390, 917
+ 520, 1109
+ 1030, 1955
 ENDTABLE
 FD_GAIN(2,1)        1 ! [D] Multiplied with calculated value to get damper force
 FD_OFFSET(2,1)      0 ; N ! [D] Added (after gain) to get damper force
@@ -1536,19 +1536,19 @@ CMP_R_SCALE_FD(2,1) 1 ! [D] Divided into (compression speed - CMP_R_START_FD)
 
 ! Col 1 = compression speed (mm/s), col 2 = damper force (N)
 FD_TABLE(2,2) SPLINE ! axle 2, right side
- -1030, -6876
- -520, -5399
- -390, -4972
- -260, -4466
- -130, -2946
- -50, -803
+ -1030, -2671
+ -520, -1290
+ -390, -1013
+ -260, -759
+ -130, -513
+ -50, -215
  0, 0
- 50, 370
- 130, 911
- 260, 1430
- 390, 1873
- 520, 2295
- 1030, 3580
+ 50, 302
+ 130, 464
+ 260, 721
+ 390, 917
+ 520, 1109
+ 1030, 1955
 ENDTABLE
 FD_GAIN(2,2)        1 ! [D] Multiplied with calculated value to get damper force
 FD_OFFSET(2,2)      0 ; N ! [D] Added (after gain) to get damper force
@@ -1568,7 +1568,7 @@ CMP_R_SCALE_FD(2,2) 1 ! [D] Divided into (compression speed - CMP_R_START_FD)
 ! e.g., (1,2), the current values of the indices IAXLE and ISIDE are used to identify
 ! the dataset when reading data.
 
-FS_COMP_COEFFICIENT(1,1) 132 ! Spring force per unit spring compression (N/mm), axle
+FS_COMP_COEFFICIENT(1,1) 160 ! Spring force per unit spring compression (N/mm), axle
                              ! 1, left side
 FS_COMP_GAIN(1,1)   1 ! [D] Multiplied with calculated value to get spring force
 FS_COMP_OFFSET(1,1) 0 ; N ! Added (after gain) to get spring force
@@ -1578,7 +1578,7 @@ FS_COMP_COMBINE(1,1) MULTIPLY ! [D] How to combine the two components
 FS_COMP_FSTATIC_CONSTANT(1,1) 1 ; - ! [D] Spring force component due to static
                                 ! spring force, axle 1, left side
 
-FS_COMP_COEFFICIENT(1,2) 132 ! Spring force per unit spring compression (N/mm), axle
+FS_COMP_COEFFICIENT(1,2) 160 ! Spring force per unit spring compression (N/mm), axle
                              ! 1, right side
 FS_COMP_GAIN(1,2)   1 ! [D] Multiplied with calculated value to get spring force
 FS_COMP_OFFSET(1,2) 0 ; N ! Added (after gain) to get spring force
@@ -1588,7 +1588,7 @@ FS_COMP_COMBINE(1,2) MULTIPLY ! [D] How to combine the two components
 FS_COMP_FSTATIC_CONSTANT(1,2) 1 ; - ! [D] Spring force component due to static
                                 ! spring force, axle 1, right side
 
-FS_COMP_COEFFICIENT(2,1) 42 ! Spring force per unit spring compression (N/mm), axle
+FS_COMP_COEFFICIENT(2,1) 49 ! Spring force per unit spring compression (N/mm), axle
                             ! 2, left side
 FS_COMP_GAIN(2,1)   1 ! [D] Multiplied with calculated value to get spring force
 FS_COMP_OFFSET(2,1) 10 ; N ! Added (after gain) to get spring force
@@ -1598,7 +1598,7 @@ FS_COMP_COMBINE(2,1) MULTIPLY ! [D] How to combine the two components
 FS_COMP_FSTATIC_CONSTANT(2,1) 1 ; - ! [D] Spring force component due to static
                                 ! spring force, axle 2, left side
 
-FS_COMP_COEFFICIENT(2,2) 42 ! Spring force per unit spring compression (N/mm), axle
+FS_COMP_COEFFICIENT(2,2) 49 ! Spring force per unit spring compression (N/mm), axle
                             ! 2, right side
 FS_COMP_GAIN(2,2)   1 ! [D] Multiplied with calculated value to get spring force
 FS_COMP_OFFSET(2,2) 10 ; N ! Added (after gain) to get spring force
@@ -1621,7 +1621,7 @@ FS_COMP_FSTATIC_CONSTANT(2,2) 1 ; - ! [D] Spring force component due to static
 ! values of the indices IAXLE and ISIDE are used to identify the dataset when reading
 ! data.
 
-FS_EXT_COEFFICIENT(1,1) 132 ! Spring force per unit spring compression (N/mm), axle
+FS_EXT_COEFFICIENT(1,1) 160 ! Spring force per unit spring compression (N/mm), axle
                             ! 1, left side
 FS_EXT_GAIN(1,1)    1 ! [D] Multiplied with calculated value to get spring force
 FS_EXT_OFFSET(1,1)  0 ; N ! Added (after gain) to get spring force
@@ -1631,7 +1631,7 @@ FS_EXT_COMBINE(1,1) MULTIPLY ! [D] How to combine the two components
 FS_EXT_FSTATIC_CONSTANT(1,1) 1 ; - ! [D] Spring force component due to static spring
                                ! force, axle 1, left side
 
-FS_EXT_COEFFICIENT(1,2) 132 ! Spring force per unit spring compression (N/mm), axle
+FS_EXT_COEFFICIENT(1,2) 160 ! Spring force per unit spring compression (N/mm), axle
                             ! 1, right side
 FS_EXT_GAIN(1,2)    1 ! [D] Multiplied with calculated value to get spring force
 FS_EXT_OFFSET(1,2)  0 ; N ! Added (after gain) to get spring force
@@ -1641,7 +1641,7 @@ FS_EXT_COMBINE(1,2) MULTIPLY ! [D] How to combine the two components
 FS_EXT_FSTATIC_CONSTANT(1,2) 1 ; - ! [D] Spring force component due to static spring
                                ! force, axle 1, right side
 
-FS_EXT_COEFFICIENT(2,1) 42 ! Spring force per unit spring compression (N/mm), axle
+FS_EXT_COEFFICIENT(2,1) 49 ! Spring force per unit spring compression (N/mm), axle
                            ! 2, left side
 FS_EXT_GAIN(2,1)    1 ! [D] Multiplied with calculated value to get spring force
 FS_EXT_OFFSET(2,1) -10 ; N ! Added (after gain) to get spring force
@@ -1651,7 +1651,7 @@ FS_EXT_COMBINE(2,1) MULTIPLY ! [D] How to combine the two components
 FS_EXT_FSTATIC_CONSTANT(2,1) 1 ; - ! [D] Spring force component due to static spring
                                ! force, axle 2, left side
 
-FS_EXT_COEFFICIENT(2,2) 42 ! Spring force per unit spring compression (N/mm), axle
+FS_EXT_COEFFICIENT(2,2) 49 ! Spring force per unit spring compression (N/mm), axle
                            ! 2, right side
 FS_EXT_GAIN(2,2)    1 ! [D] Multiplied with calculated value to get spring force
 FS_EXT_OFFSET(2,2) -10 ; N ! Added (after gain) to get spring force
@@ -6009,42 +6009,42 @@ EQ_OUT FRACKTOT = F_TRDL1 + F_TRDR1;
 ! STATE VARIABLES (NEEDED FOR RESTART)
 !------------------------------------------------------------------------------------
 SV_AERO_ROAD_ID_1   1 ; - ! Road surface ID for tracked aero road point
-SV_AERO_ROAD_STA_1 852.0408537 ; m ! Road path station for tracked aero road point
+SV_AERO_ROAD_STA_1 852.5276812 ; m ! Road path station for tracked aero road point
 SV_AT_LOCKED        0 ; - ! Lock state of automatic transmission {TC_Lock}
-SV_AVX    1.498934318 ; deg/s ! ODE: Body-X roll rate of sprung-mass {AVx}
-SV_AVX_A2 -1.354177173 ; deg/s ! ODE: Roll rate of axle 2
-SV_AVY  0.02344840932 ; deg/s ! ODE: Body-Y pitch rate of sprung-mass {AVy}
-SV_AVY_L1 692.2561835 ; rpm ! ODE: Spin of wheel L1 {AVy_L1}
-SV_AVY_L1_OLD 692.2537942 ; rpm ! Spin of wheel L1 (previous time step)
-SV_AVY_L2  692.962683 ; rpm ! ODE: Spin of wheel L2 {AVy_L2}
-SV_AVY_L2_OLD 692.9602689 ; rpm ! Spin of wheel L2 (previous time step)
-SV_AVY_R1 691.2396932 ; rpm ! ODE: Spin of wheel R1 {AVy_R1}
-SV_AVY_R1_OLD 691.2357579 ; rpm ! Spin of wheel R1 (previous time step)
-SV_AVY_R2 692.0128534 ; rpm ! ODE: Spin of wheel R2 {AVy_R2}
-SV_AVY_R2_OLD 692.0090824 ; rpm ! Spin of wheel R2 (previous time step)
-SV_AVZ   -1.780165662 ; deg/s ! ODE: Body-Z yaw rate of sprung-mass {AVz}
+SV_AVX    1.284340706 ; deg/s ! ODE: Body-X roll rate of sprung-mass {AVx}
+SV_AVX_A2 -1.140340226 ; deg/s ! ODE: Roll rate of axle 2
+SV_AVY  0.02128044871 ; deg/s ! ODE: Body-Y pitch rate of sprung-mass {AVy}
+SV_AVY_L1 692.7055614 ; rpm ! ODE: Spin of wheel L1 {AVy_L1}
+SV_AVY_L1_OLD 692.7031505 ; rpm ! Spin of wheel L1 (previous time step)
+SV_AVY_L2 693.3895079 ; rpm ! ODE: Spin of wheel L2 {AVy_L2}
+SV_AVY_L2_OLD 693.3870712 ; rpm ! Spin of wheel L2 (previous time step)
+SV_AVY_R1 691.7356007 ; rpm ! ODE: Spin of wheel R1 {AVy_R1}
+SV_AVY_R1_OLD 691.731677 ; rpm ! Spin of wheel R1 (previous time step)
+SV_AVY_R2 692.5275108 ; rpm ! ODE: Spin of wheel R2 {AVy_R2}
+SV_AVY_R2_OLD 692.523749 ; rpm ! Spin of wheel R2 (previous time step)
+SV_AVZ   -1.653426322 ; deg/s ! ODE: Body-Z yaw rate of sprung-mass {AVz}
 SV_AV_CL            0 ; rpm ! Clutch relative spin, previous time step
 SV_AV_COL_CONTROL   0 ; deg/s ! ODE: Steering wheel angular rate
-SV_AV_SHAFT_L_D1 692.2827815 ; rpm ! ODE: Diff1 Left (first) output shaft speed
+SV_AV_SHAFT_L_D1 692.7199425 ; rpm ! ODE: Diff1 Left (first) output shaft speed
                              ! {AV_DS_L1}
-SV_AV_SHAFT_L_D2 692.962683 ; rpm ! ODE: Diff2 Left (first) output shaft speed
-                            ! {AV_DS_L2}
-SV_AV_SHAFT_L_D3 2701.266434 ; rpm ! ODE: Diff3 Left (first) output shaft speed 
-SV_AV_SHAFT_R_D1 691.2083497 ; rpm ! ODE: Diff1 Right (second) output shaft speed
+SV_AV_SHAFT_L_D2 693.3895079 ; rpm ! ODE: Diff2 Left (first) output shaft speed
+                             ! {AV_DS_L2}
+SV_AV_SHAFT_L_D3 2703.111022 ; rpm ! ODE: Diff3 Left (first) output shaft speed 
+SV_AV_SHAFT_R_D1 691.7159201 ; rpm ! ODE: Diff1 Right (second) output shaft speed
                              ! {AV_DS_R1}
-SV_AV_SHAFT_R_D2 692.0128534 ; rpm ! ODE: Diff2 Right (second) output shaft speed
+SV_AV_SHAFT_R_D2 692.5275108 ; rpm ! ODE: Diff2 Right (second) output shaft speed
                              ! {AV_DS_R2}
-SV_AV_SHAFT_R_D3 2704.164735 ; rpm ! ODE: Diff3 Right (second) output shaft speed 
-SV_AV_SW  28.56944787 ; deg/s ! ODE: Steering wheel angular rate {StrAV_SW}
+SV_AV_SHAFT_R_D3 2706.002979 ; rpm ! ODE: Diff3 Right (second) output shaft speed 
+SV_AV_SW  27.59381238 ; deg/s ! ODE: Steering wheel angular rate {StrAV_SW}
 SV_AV_TC            0 ; rpm ! ODE: Torque coupling output shaft spin {AV_TC}
-SV_AV_TR_OUT 2702.715584 ; rpm ! ODE: Transmission output shaft spin
+SV_AV_TR_OUT 2704.557 ; rpm ! ODE: Transmission output shaft spin
 SV_AX_SC            0 ; g ! SC acceleration command when OPT_SC = 5
 SV_A_CONTROL        0 ; deg ! ODE: Str whl angle from driver model in torque control
-SV_BATTERY_CHARGED 0.5874117402 ; - ! Electric battery state of charge {SocBttry}
-SV_BATTERY_DIS_CAP 28.05600166 ; A-h ! ODE: Electric battery discharged capacity
+SV_BATTERY_CHARGED 0.5874137539 ; - ! Electric battery state of charge {SocBttry}
+SV_BATTERY_DIS_CAP 28.05586473 ; A-h ! ODE: Electric battery discharged capacity
                                ! {CapBtrDs}
-SV_BETA  0.2394867641 ; deg ! Sideslip (ISO)
-SV_BETA_RD 0.2394867641 ; deg ! Sideslip using road axes
+SV_BETA  0.2484050889 ; deg ! Sideslip (ISO)
+SV_BETA_RD 0.2484050889 ; deg ! Sideslip using road axes
 SV_BTR_CHRG_CUTOFF  0 ; - ! Battery charging cut-off by speed
 SV_BTR_CHRG_ON_OFF  0 ; - ! Battery charging on/off old
 SV_CL_2ND_DIFF_LOCKED_1 0 ; - ! 2nd Clutch lock state, front diff, prev. time step
@@ -6063,8 +6063,8 @@ SV_CL_DIFF_LOCKED_3 0 ; - ! Clutch lock state for transfer case
 SV_CL_DIFF_SLIP_REF_1 0 ; deg ! Clutch ref. angle for front diff
 SV_CL_DIFF_SLIP_REF_2 0 ; deg ! Clutch ref. angle for rear diff
 SV_CL_DIFF_SLIP_REF_3 0 ; deg ! Clutch ref. angle for transfer case
-SV_CL_DIFF_SPIN_1 1.075959457 ; rpm ! Clutch rel. spin, front diff, prev. time step
-SV_CL_DIFF_SPIN_2 0.9511864949 ; rpm ! Clutch rel. spin, rear diff, prev. time step
+SV_CL_DIFF_SPIN_1 1.005555146 ; rpm ! Clutch rel. spin, front diff, prev. time step
+SV_CL_DIFF_SPIN_2 0.8633221849 ; rpm ! Clutch rel. spin, rear diff, prev. time step
 SV_CL_DIFF_SPIN_3   0 ; rpm ! Clutch rel. spin, transfer case, prev. time step
 SV_CL_LOCKED        1 ; - ! Clutch lockup state {Cl_Stat}
 SV_CL_TWIN_LOCKED_LF 0 ; - ! Lock state of LF twin clutch
@@ -6075,18 +6075,18 @@ SV_CL_TWIN_SPIN_LF  0 ; rpm ! Rel. spin of LF twin clutch, prev. time step
 SV_CL_TWIN_SPIN_LR  0 ; rpm ! Rel. spin of LR twin clutch, prev. time step
 SV_CL_TWIN_SPIN_RF  0 ; rpm ! Rel. spin of RF twin clutch, prev. time step
 SV_CL_TWIN_SPIN_RR  0 ; rpm ! Rel. spin of RR twin clutch, prev. time step
-SV_CMP_S_L1 102.5535421 ; mm ! Compression of ride spring L1
-SV_CMP_S_L2 112.1616031 ; mm ! Compression of ride spring L2
-SV_CMP_S_R1 91.12890877 ; mm ! Compression of ride spring R1
-SV_CMP_S_R2 96.57503437 ; mm ! Compression of ride spring R2
+SV_CMP_S_L1 84.00012428 ; mm ! Compression of ride spring L1
+SV_CMP_S_L2 94.91849956 ; mm ! Compression of ride spring L2
+SV_CMP_S_R1 75.63494825 ; mm ! Compression of ride spring R1
+SV_CMP_S_R2 83.16664479 ; mm ! Compression of ride spring R2
 SV_CONTACT_ID_L1    1 ; - ! Road surface ID for tire contact {RdID_L1}
 SV_CONTACT_ID_L2    1 ; - ! Road surface ID for tire contact {RdID_L2}
 SV_CONTACT_ID_R1    1 ; - ! Road surface ID for tire contact {RdID_R1}
 SV_CONTACT_ID_R2    1 ; - ! Road surface ID for tire contact {RdID_R2}
-SV_CONTACT_STA_L1 853.4520353 ; m ! Road path station for tire contact {S_Rd_L1}
-SV_CONTACT_STA_L2 850.4262275 ; m ! Road path station for tire contact {S_Rd_L2}
-SV_CONTACT_STA_R1 853.3647972 ; m ! Road path station for tire contact {S_Rd_R1}
-SV_CONTACT_STA_R2 850.3390904 ; m ! Road path station for tire contact {S_Rd_R2}
+SV_CONTACT_STA_L1 853.9395185 ; m ! Road path station for tire contact {S_Rd_L1}
+SV_CONTACT_STA_L2 850.9135138 ; m ! Road path station for tire contact {S_Rd_L2}
+SV_CONTACT_STA_R1 853.8511755 ; m ! Road path station for tire contact {S_Rd_R1}
+SV_CONTACT_STA_R2 850.8255785 ; m ! Road path station for tire contact {S_Rd_R2}
 SV_DZDX_GND         0 ; - ! dZ/dX of ground at vehicle aero ref. pt (saved)
 SV_DZDX_L1          0 ; - ! Ground X slope under tire L1 (saved)
 SV_DZDX_L2          0 ; - ! Ground X slope under tire L2 (saved)
@@ -6119,49 +6119,49 @@ SV_ESC_STATE        0 ; - ! State of ESC engine torque control, prev. time step
 SV_EV_MODE_ON_OFF   0 ; - ! EV mode on/off old
 SV_FBK              0 ; N ! ODE: Instant boost force (above input force)
 SV_FBOOST           0 ; N ! ODE: Delayed boost force {F_boost}
-SV_FS_L1  13537.06756 ; N ! Force from ride spring L1
-SV_FS_L2  4701.102127 ; N ! Force from ride spring L2
-SV_FS_R1  12029.01596 ; N ! Force from ride spring R1
-SV_FS_R2  4065.915749 ; N ! Force from ride spring R2
-SV_FX_SM_L1 240.7311081 ; N ! Tire force [sx] component, wheel L1
-SV_FX_SM_L2 261.8146207 ; N ! Tire force [sx] component, wheel L2
-SV_FX_SM_R1 237.3330958 ; N ! Tire force [sx] component, wheel R1
-SV_FX_SM_R2 264.8331937 ; N ! Tire force [sx] component, wheel R2
-SV_FY_SM_L1 -737.8380402 ; N ! Tire force [sy] component, wheel L1
-SV_FY_SM_L2 -633.0464662 ; N ! Tire force [sy] component, wheel L2
-SV_FY_SM_R1 -1197.886676 ; N ! Tire force [sy] component, wheel R1
-SV_FY_SM_R2 -537.024949 ; N ! Tire force [sy] component, wheel R2
-SV_FZ_SM_L1 9204.227997 ; N ! Tire force force [sz] component, wheel L1
-SV_FZ_SM_L2 5499.384049 ; N ! Tire force force [sz] component, wheel L2
-SV_FZ_SM_R1 7730.906616 ; N ! Tire force force [sz] component, wheel R1
-SV_FZ_SM_R2 4655.108615 ; N ! Tire force force [sz] component, wheel R2
+SV_FS_L1  13440.01988 ; N ! Force from ride spring L1
+SV_FS_L2  4641.292255 ; N ! Force from ride spring L2
+SV_FS_R1  12101.59172 ; N ! Force from ride spring R1
+SV_FS_R2  4084.907664 ; N ! Force from ride spring R2
+SV_FX_SM_L1 237.5333257 ; N ! Tire force [sx] component, wheel L1
+SV_FX_SM_L2 259.2143432 ; N ! Tire force [sx] component, wheel L2
+SV_FX_SM_R1 234.3455549 ; N ! Tire force [sx] component, wheel R1
+SV_FX_SM_R2 262.7697273 ; N ! Tire force [sx] component, wheel R2
+SV_FY_SM_L1 -646.9149634 ; N ! Tire force [sy] component, wheel L1
+SV_FY_SM_L2 -589.4542369 ; N ! Tire force [sy] component, wheel L2
+SV_FY_SM_R1 -1144.16269 ; N ! Tire force [sy] component, wheel R1
+SV_FY_SM_R2 -497.6445698 ; N ! Tire force [sy] component, wheel R2
+SV_FZ_SM_L1 9118.081553 ; N ! Tire force force [sz] component, wheel L1
+SV_FZ_SM_L2 5512.233396 ; N ! Tire force force [sz] component, wheel L2
+SV_FZ_SM_R1 7823.462581 ; N ! Tire force force [sz] component, wheel R1
+SV_FZ_SM_R2 4644.539615 ; N ! Tire force force [sz] component, wheel R2
 SV_F_HYS_RACK_A1    0 ; N ! Friction force at rack
 SV_F_HYS_RACK_A2    0 ; N ! Friction force at rack
 SV_HEV_DRV_OR_BRK   1 ; - ! HEV drive or brake mode
 SV_HYBRID_MODE      1 ; - ! Hybrid/Electric powertrain mode
 SV_IAVERR_GNR       0 ; deg ! ODE: Generator speed control integral error
-SV_IVERR  172.3051958 ; m ! ODE: Integral of SC speed error {Vx_IErr}
-SV_JNCR_A2 0.0003248928625 ; m/s ! ODE: Jounce rate of axle 2
-SV_JNCR_L1 -0.01679689723 ; m/s ! ODE: Jounce rate at wheel L1
-SV_JNCR_R1 0.01757956945 ; m/s ! ODE: Jounce rate at wheel R1
-SV_JNC_A2 0.003495491054 ; m ! ODE: Jounce of axle 2
-SV_JNC_L1 0.005859173258 ; m ! ODE: Jounce movement at wheel L1
-SV_JNC_R1 -0.01282189165 ; m ! ODE: Jounce movement at wheel R1
+SV_IVERR  171.8989902 ; m ! ODE: Integral of SC speed error {Vx_IErr}
+SV_JNCR_A2 0.0002077645462 ; m/s ! ODE: Jounce rate of axle 2
+SV_JNCR_L1 -0.01389489302 ; m/s ! ODE: Jounce rate at wheel L1
+SV_JNCR_R1 0.01487674243 ; m/s ! ODE: Jounce rate at wheel R1
+SV_JNC_A2 0.002579520488 ; m ! ODE: Jounce of axle 2
+SV_JNC_L1 0.003841085155 ; m ! ODE: Jounce movement at wheel L1
+SV_JNC_R1 -0.009835486381 ; m ! ODE: Jounce movement at wheel R1
 SV_LK_WHL_L1        0 ; - ! Lockup state for wheel L1
 SV_LK_WHL_L2        0 ; - ! Lockup state for wheel L2
 SV_LK_WHL_R1        0 ; - ! Lockup state for wheel R1
 SV_LK_WHL_R2        0 ; - ! Lockup state for wheel R2
 SV_LOCKED_CLUTCH_NEUTRAL 1 ; - ! Clutch locked while in neutral in previous time
                            ! step
-SV_MBOOST -91.51053496 ; N-m ! ODE: Delayed boost torque {M_boost}
-SV_MY_BRK_L1 -101.5973341 ; N-m ! Spin moment, wheel L1
-SV_MY_BRK_L2 -101.7849368 ; N-m ! Spin moment, wheel L2
-SV_MY_BRK_R1 -97.67515896 ; N-m ! Spin moment, wheel R1
-SV_MY_BRK_R2 -101.1443784 ; N-m ! Spin moment, wheel R2
-SV_MZ_WHEEL_L1 27.7771302 ; N-m ! Tire Mz, wheel L1
-SV_MZ_WHEEL_L2 25.72570953 ; N-m ! Tire Mz, wheel L2
-SV_MZ_WHEEL_R1 47.85415179 ; N-m ! Tire Mz, wheel R1
-SV_MZ_WHEEL_R2 21.87244241 ; N-m ! Tire Mz, wheel R2
+SV_MBOOST -85.71220903 ; N-m ! ODE: Delayed boost torque {M_boost}
+SV_MY_BRK_L1 -101.6660491 ; N-m ! Spin moment, wheel L1
+SV_MY_BRK_L2 -101.6844388 ; N-m ! Spin moment, wheel L2
+SV_MY_BRK_R1 -97.93252762 ; N-m ! Spin moment, wheel R1
+SV_MY_BRK_R2 -101.0623555 ; N-m ! Spin moment, wheel R2
+SV_MZ_WHEEL_L1 24.90278517 ; N-m ! Tire Mz, wheel L1
+SV_MZ_WHEEL_L2 24.45673811 ; N-m ! Tire Mz, wheel L2
+SV_MZ_WHEEL_R1 46.97794546 ; N-m ! Tire Mz, wheel R1
+SV_MZ_WHEEL_R2 20.69372379 ; N-m ! Tire Mz, wheel R2
 SV_M_CL2_CAP_FD_DYN 0 ; N-m ! ODE: 2nd Clutch capacity for front diff
 SV_M_CL2_CAP_RD_DYN 0 ; N-m ! ODE: 2nd Clutch capacity for rear diff
 SV_M_CL2_CAP_XC_DYN 0 ; N-m ! ODE: 2nd Clutch capacity for transfer case
@@ -6175,14 +6175,14 @@ SV_M_CL_RF_CAP_DYN  0 ; N-m ! ODE: Right twin clutch capacity for front diff
 SV_M_CL_RR_CAP_DYN  0 ; N-m ! ODE: Right twin clutch capacity for rear diff
 SV_M_CL_R_D3_CAP_DYN 0 ; N-m ! ODE: Right twin clutch capacity for transfer case
 SV_M_HYS_COL      0.2 ; N-m ! Steering column friction
-SV_M_HYS_GEAR_A1 44.99997745 ; N-m ! Friction torque for recirculating ball
+SV_M_HYS_GEAR_A1 44.99998363 ; N-m ! Friction torque for recirculating ball
 SV_M_HYS_GEAR_A2    0 ; N-m ! Friction torque for recirculating ball
-SV_M_KP_L1 -71.37217873 ; N-m ! Kingpin moment, wheel L1
+SV_M_KP_L1 -76.58544364 ; N-m ! Kingpin moment, wheel L1
 SV_M_KP_L2          0 ; N-m ! Kingpin moment, wheel L2
-SV_M_KP_R1 225.4378316 ; N-m ! Kingpin moment, wheel R1
+SV_M_KP_R1 224.0132273 ; N-m ! Kingpin moment, wheel R1
 SV_M_KP_R2          0 ; N-m ! Kingpin moment, wheel R2
-SV_M_MOTOR_D1 53.57488364 ; N-m ! ODE: Electric motor torque on center of diff. 1
-SV_M_MOTOR_D2 53.54664792 ; N-m ! ODE: Electric motor torque on center of diff. 2
+SV_M_MOTOR_D1 53.53945074 ; N-m ! ODE: Electric motor torque on center of diff. 1
+SV_M_MOTOR_D2 53.51129644 ; N-m ! ODE: Electric motor torque on center of diff. 2
 SV_M_PARK_L1        0 ; N-m ! Kingpin steer park torque, wheel L1
 SV_M_PARK_L2        0 ; N-m ! Kingpin steer park torque, wheel L2
 SV_M_PARK_R1        0 ; N-m ! Kingpin steer park torque, wheel R1
@@ -6193,79 +6193,80 @@ SV_PBK_L1           0 ; MPa ! ODE: Brake actuator pressure for wheel L1
 SV_PBK_L2           0 ; MPa ! ODE: Brake actuator pressure for wheel L2
 SV_PBK_R1           0 ; MPa ! ODE: Brake actuator pressure for wheel R1
 SV_PBK_R2           0 ; MPa ! ODE: Brake actuator pressure for wheel R2
-SV_PITCH -0.08917535578 ; deg ! ODE: Pitch of sprung mass {Pitch}
+SV_PITCH -0.06295559907 ; deg ! ODE: Pitch of sprung mass {Pitch}
 SV_PW_AV_HYBRID 25000 ; - ! ODE: Time delayed hybrid/electric system available power
 SV_REGEN_SOC_ON_OFF 1 ; - ! Regenerative SOC condition on/off old
 SV_REGEN_W_ON_OFF   1 ; - ! Regenerative speed condition on/off old
-SV_ROLL -0.8023261274 ; deg ! ODE: Roll (Euler) of sprung mass {Roll_E}
-SV_ROLL_A2 0.8096435882 ; deg ! ODE: Roll of axle 2
-SV_ROT_L1 387.7337892 ; rev ! ODE: Rotation of wheel L1
-SV_ROT_L2 396.5000422 ; rev ! ODE: Rotation of wheel L2
+SV_ROLL -0.6048075975 ; deg ! ODE: Roll (Euler) of sprung mass {Roll_E}
+SV_ROLL_A2 0.6103822029 ; deg ! ODE: Roll of axle 2
+SV_ROT_L1 387.9325113 ; rev ! ODE: Rotation of wheel L1
+SV_ROT_L2 396.7173682 ; rev ! ODE: Rotation of wheel L2
 SV_ROT_LK_L1        0 ; rev ! Rotation reference of wheel L1 in "locked" mode
 SV_ROT_LK_L2        0 ; rev ! Rotation reference of wheel L2 in "locked" mode
 SV_ROT_LK_R1        0 ; rev ! Rotation reference of wheel R1 in "locked" mode
 SV_ROT_LK_R2        0 ; rev ! Rotation reference of wheel R2 in "locked" mode
-SV_ROT_R1 391.0658576 ; rev ! ODE: Rotation of wheel R1
-SV_ROT_R2 396.5127669 ; rev ! ODE: Rotation of wheel R2
-SV_ROT_SHAFT_1 1520.609886 ; rev ! ODE: Front diff input shaft rotation {Rot_D3f}
-SV_ROT_SHAFT_2 1548.35751 ; rev ! ODE: Rear diff input shaft rotation {Rot_D3r}
-SV_ROT_SHAFT_3 1534.483698 ; rev ! ODE: Transfer case input shaft rotation 
-SV_ROT_SHAFT_L_D1 387.7343078 ; rev ! ODE: Diff1 Left (first) output shaft rotation
-SV_ROT_SHAFT_L_D2 396.5000422 ; rev ! ODE: Diff2 Left (first) output shaft rotation
-SV_ROT_SHAFT_L_D3 1520.609886 ; rev ! ODE: Diff3 Left (first) output shaft rotation
-SV_ROT_SHAFT_R_D1 391.0671701 ; rev ! ODE: Diff1 Right (second) output shaft
+SV_ROT_R1 391.2946731 ; rev ! ODE: Rotation of wheel R1
+SV_ROT_R2 396.7050086 ; rev ! ODE: Rotation of wheel R2
+SV_ROT_SHAFT_1 1521.443836 ; rev ! ODE: Front diff input shaft rotation {Rot_D3f}
+SV_ROT_SHAFT_2 1549.157191 ; rev ! ODE: Rear diff input shaft rotation {Rot_D3r}
+SV_ROT_SHAFT_3 1535.300514 ; rev ! ODE: Transfer case input shaft rotation 
+SV_ROT_SHAFT_L_D1 387.932976 ; rev ! ODE: Diff1 Left (first) output shaft rotation
+SV_ROT_SHAFT_L_D2 396.7173682 ; rev ! ODE: Diff2 Left (first) output shaft rotation
+SV_ROT_SHAFT_L_D3 1521.443836 ; rev ! ODE: Diff3 Left (first) output shaft rotation
+SV_ROT_SHAFT_R_D1 391.2956213 ; rev ! ODE: Diff1 Right (second) output shaft
                               ! rotation
-SV_ROT_SHAFT_R_D2 396.5127669 ; rev ! ODE: Diff2 Right (second) output shaft
+SV_ROT_SHAFT_R_D2 396.7050086 ; rev ! ODE: Diff2 Right (second) output shaft
                               ! rotation
-SV_ROT_SHAFT_R_D3 1548.35751 ; rev ! ODE: Diff3 Right (second) output shaft rotation
+SV_ROT_SHAFT_R_D3 1549.157191 ; rev ! ODE: Diff3 Right (second) output shaft
+                              ! rotation
 SV_ROT_TC           0 ; rev ! ODE: Torque coupling output shaft rotation {Rot_TC}
-SV_ROT_TR_OUT 1534.483698 ; rev ! ODE: Transmission output shaft rotation
+SV_ROT_TR_OUT 1535.300514 ; rev ! ODE: Transmission output shaft rotation
 SV_R_GEAR_TOTAL_SC  0 ; - ! Driveline total gear ratio for speed controller
-SV_R_KP_GND_L1 -1.038164238 ; - ! Kingpin steer / ground steer (-1 for vertical KP)
+SV_R_KP_GND_L1 -1.038014704 ; - ! Kingpin steer / ground steer (-1 for vertical KP)
 SV_R_KP_GND_L2      0 ; - ! Kingpin steer / ground steer (-1 for vertical KP)
-SV_R_KP_GND_R1 -1.036905667 ; - ! Kingpin steer / ground steer (-1 for vertical KP)
+SV_R_KP_GND_R1 -1.037146641 ; - ! Kingpin steer / ground steer (-1 for vertical KP)
 SV_R_KP_GND_R2      0 ; - ! Kingpin steer / ground steer (-1 for vertical KP)
-SV_R_L1  0.3383956833 ; m ! Deflected radius for tire L1 (saved)
-SV_R_L2  0.3462806013 ; m ! Deflected radius for tire L2 (saved)
-SV_R_R1  0.3415163901 ; m ! Deflected radius for tire R1 (saved)
-SV_R_R2  0.3480796069 ; m ! Deflected radius for tire R2 (saved)
-SV_SLIP_LAT_L1 0.005650194521 ; - ! ODE: Lagged tan of lateral slip, tire L1
-SV_SLIP_LAT_L2 0.008287151321 ; - ! ODE: Lagged tan of lateral slip, tire L2
-SV_SLIP_LAT_R1 0.01202658657 ; - ! ODE: Lagged tan of lateral slip, tire R1
-SV_SLIP_LAT_R2 0.008274044978 ; - ! ODE: Lagged tan of lateral slip, tire R2
-SV_SLIP_LONG_L1 0.001176340147 ; - ! ODE: Lagged long. slip, tire L1 {KappL_L1}
-SV_SLIP_LONG_L2 0.002141007205 ; - ! ODE: Lagged long. slip, tire L2 {KappL_L2}
-SV_SLIP_LONG_R1 0.001441427239 ; - ! ODE: Lagged long. slip, tire R1 {KappL_R1}
-SV_SLIP_LONG_R2 0.002559827199 ; - ! ODE: Lagged long. slip, tire R2 {KappL_R2}
-SV_SO_DIST 861.0281375 ; m ! ODE: Distance  used for tire "wandering profiles"
+SV_R_L1  0.3385858216 ; m ! Deflected radius for tire L1 (saved)
+SV_R_L2  0.3462586471 ; m ! Deflected radius for tire L2 (saved)
+SV_R_R1  0.3413290025 ; m ! Deflected radius for tire R1 (saved)
+SV_R_R2  0.3481067557 ; m ! Deflected radius for tire R2 (saved)
+SV_SLIP_LAT_L1 0.005121483816 ; - ! ODE: Lagged tan of lateral slip, tire L1
+SV_SLIP_LAT_L2 0.007898571241 ; - ! ODE: Lagged tan of lateral slip, tire L2
+SV_SLIP_LAT_R1 0.0115559054 ; - ! ODE: Lagged tan of lateral slip, tire R1
+SV_SLIP_LAT_R2 0.007883078567 ; - ! ODE: Lagged tan of lateral slip, tire R2
+SV_SLIP_LONG_L1 0.001188934875 ; - ! ODE: Lagged long. slip, tire L1 {KappL_L1}
+SV_SLIP_LONG_L2 0.002132798409 ; - ! ODE: Lagged long. slip, tire L2 {KappL_L2}
+SV_SLIP_LONG_R1 0.001421970998 ; - ! ODE: Lagged long. slip, tire R1 {KappL_R1}
+SV_SLIP_LONG_R2 0.002563606709 ; - ! ODE: Lagged long. slip, tire R2 {KappL_R2}
+SV_SO_DIST 861.4343432 ; m ! ODE: Distance  used for tire "wandering profiles"
                        ! {Sta_Prof}
 SV_SPEED_DVDS       0 ; - ! dVdS derivative for speed control
 SV_SPEED_PREVIEW_SSTART 0 ; m ! Start station in path preview array
 SV_SPEED_PREVIEW_V_TARGET 0 ; km/h ! Initial target speed in preview array
-SV_STATION 853.3693746 ; m ! Station of vehicle on driver path PATH_ID_DM {Station}
-SV_STA_ROAD 853.3693746 ; m ! Vehicle station on road CURRENT_ROAD_ID {Sta_Road}
-SV_STR_DM -0.6841820128 ; deg ! Road-wheel steer from driver model
-SV_STR_DM_OLD -0.6850222907 ; deg ! Road-wheel steer from driver model (prev. time
+SV_STATION 853.8561528 ; m ! Station of vehicle on driver path PATH_ID_DM {Station}
+SV_STA_ROAD 853.8561528 ; m ! Vehicle station on road CURRENT_ROAD_ID {Sta_Road}
+SV_STR_DM -0.6225760968 ; deg ! Road-wheel steer from driver model
+SV_STR_DM_OLD -0.6233876795 ; deg ! Road-wheel steer from driver model (prev. time
                             ! step)
-SV_STR_IN_DGR_A1 0.4693154914 ; - ! ODE: Steering gear input rate, axle 1
+SV_STR_IN_DGR_A1 0.4522350068 ; - ! ODE: Steering gear input rate, axle 1
 SV_STR_IN_DGR_A2    0 ; - ! ODE: Steering gear input rate, axle 2
-SV_STR_IN_GR_A1 -0.191687968 ; - ! ODE: Steering gear input position, axle 1
+SV_STR_IN_GR_A1 -0.173962679 ; - ! ODE: Steering gear input position, axle 1
                              ! {A_StrIn1}
 SV_STR_IN_GR_A2     0 ; - ! ODE: Steering gear input position, axle 2 {A_StrIn2}
-SV_STR_KP_L1 -0.3222502723 ; deg ! Kingpin steer angle, wheel L1
-SV_STR_KP_L1_OLD -0.3226661275 ; deg ! Kingpin steer angle, wheel L1 (previous time
+SV_STR_KP_L1 -0.2808372421 ; deg ! Kingpin steer angle, wheel L1
+SV_STR_KP_L1_OLD -0.2812348763 ; deg ! Kingpin steer angle, wheel L1 (previous time
                                ! step)
 SV_STR_KP_L2_OLD    0 ; deg ! Kingpin steer angle, wheel L2 (previous time step)
-SV_STR_KP_R1 -0.291860894 ; deg ! Kingpin steer angle, wheel R1
-SV_STR_KP_R1_OLD -0.2922854144 ; deg ! Kingpin steer angle, wheel R1 (previous time
+SV_STR_KP_R1 -0.2536034989 ; deg ! Kingpin steer angle, wheel R1
+SV_STR_KP_R1_OLD -0.2540098895 ; deg ! Kingpin steer angle, wheel R1 (previous time
                                ! step)
 SV_STR_KP_R2_OLD    0 ; deg ! Kingpin steer angle, wheel R2 (previous time step)
-SV_STR_OUT_GR_A1 -0.01128956853 ; - ! Steering gear output
+SV_STR_OUT_GR_A1 -0.01024640071 ; - ! Steering gear output
 SV_STR_OUT_GR_A2    0 ; - ! Steering gear output
-SV_SWA   -11.63109421 ; deg ! ODE: Steering wheel angle
-SV_SWA_DM -11.64537893 ; deg ! Steering wheel angle from DM
+SV_SWA   -10.58379363 ; deg ! ODE: Steering wheel angle
+SV_SWA_DM -10.59759054 ; deg ! Steering wheel angle from DM
 SV_SWA_OL           0 ; deg ! Steering wheel angle from open loop control
-SV_SWA_OLD -11.64537893 ; deg ! Steering wheel angle (previous time step)
+SV_SWA_OLD -10.59759054 ; deg ! Steering wheel angle (previous time step)
 SV_THROTTLE         1 ; - ! ODE: Time delayed engine throttle
 SV_THR_REQ          1 ; - ! Requested Throttle
 SV_TROT_L1          0 ; C ! ODE: Brake rotor L1 temperature {T_Rtr_L1}
@@ -6279,19 +6280,19 @@ SV_VBK_L1           0 ; mm3 ! ODE: Brake caliper L1 volume
 SV_VBK_L2           0 ; mm3 ! ODE: Brake caliper L2 volume
 SV_VBK_R1           0 ; mm3 ! ODE: Brake caliper R1 volume
 SV_VBK_R2           0 ; mm3 ! ODE: Brake caliper R2 volume
-SV_VERR_OLD 9.623290468 ; km/h ! Speed controller error at previous time step
-SV_VXS    90.37701644 ; km/h ! ODE: Body-X speed of laden sprung-mass CG
-SV_VYS   0.1029821828 ; m/s ! ODE: Body-Y speed of laden sprung-mass CG
-SV_VZS -0.03782993736 ; m/s ! ODE: Body-Z speed of laden sprung-mass CG
-SV_XO    -1.802471983 ; m ! ODE: Global X coord. of sprung-mass origin {Xo}
-SV_X_GND -1.865674309 ; m ! X coord, ground, vehicle aero ref. pt (saved)
-SV_YAW    87.29898922 ; deg ! ODE: Yaw of sprung mass {Yaw}
-SV_YO     596.2897419 ; m ! ODE: Global Y coord. of sprung-mass origin {Yo}
-SV_Y_GND  594.9486798 ; m ! Y coord, ground, vehicle aero ref. pt (saved)
-SV_ZO  -0.01155567432 ; m ! ODE: Global Z coord. of sprung-mass origin {Zo}
-SV_Z_CTC_L1 -5.551115123e-17 ; m ! Center of tire contact L1 {Zgnd_L1}
+SV_VERR_OLD 9.561748705 ; km/h ! Speed controller error at previous time step
+SV_VXS    90.43861043 ; km/h ! ODE: Body-X speed of laden sprung-mass CG
+SV_VYS   0.1069291342 ; m/s ! ODE: Body-Y speed of laden sprung-mass CG
+SV_VZS -0.02677228583 ; m/s ! ODE: Body-Z speed of laden sprung-mass CG
+SV_XO     -1.77803344 ; m ! ODE: Global X coord. of sprung-mass origin {Xo}
+SV_X_GND -1.842297935 ; m ! X coord, ground, vehicle aero ref. pt (saved)
+SV_YAW    87.25360303 ; deg ! ODE: Yaw of sprung mass {Yaw}
+SV_YO     596.7765201 ; m ! ODE: Global Y coord. of sprung-mass origin {Yo}
+SV_Y_GND  595.4354991 ; m ! Y coord, ground, vehicle aero ref. pt (saved)
+SV_ZO  -0.01204418188 ; m ! ODE: Global Z coord. of sprung-mass origin {Zo}
+SV_Z_CTC_L1        -0 ; m ! Center of tire contact L1 {Zgnd_L1}
 SV_Z_CTC_L2        -0 ; m ! Center of tire contact L2 {Zgnd_L2}
-SV_Z_CTC_R1 5.551115123e-17 ; m ! Center of tire contact R1 {Zgnd_R1}
+SV_Z_CTC_R1 -5.551115123e-17 ; m ! Center of tire contact R1 {Zgnd_R1}
 SV_Z_CTC_R2        -0 ; m ! Center of tire contact R2 {Zgnd_R2}
 SV_Z_GND            0 ; m ! Z coord, ground, vehicle aero ref. pt (saved)
 

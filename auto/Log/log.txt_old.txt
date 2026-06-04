@@ -1,26 +1,54 @@
-2026-06-03T10:21:49 Logfile initialized.
-2026-06-03T10:21:49 (Info):    CarSim 2024.1
-2026-06-03T10:21:49 (Info):    -
-2026-06-03T10:21:49 (Info):    command-line: 
-2026-06-03T10:21:49 (Info):    -
-2026-06-03T10:21:49 (Info):    Working Dir: C:\workspace\AutoVehcileSim\auto\
-2026-06-03T10:21:49 (Info):    Program Dir: C:\Program Files (x86)\CarSim2024.1_Prog\
-2026-06-03T10:21:49 (Info):    -
-2026-06-03T10:21:49 (Info):    OS Version:        6.2 (build 9200)
-2026-06-03T10:21:49 (Info):    CPU Architecture:  x64
-2026-06-03T10:21:49 (Info):    CPU Count:         2
-2026-06-03T10:21:49 (Info):    CPU Level/Rev:     21/1
-2026-06-03T10:21:49 (Info):    Start Mem Total:   4090 MB
-2026-06-03T10:21:49 (Info):    Start Mem Used:    77%
-2026-06-03T10:21:49 (Info):    -
-2026-06-03T10:21:50 (Info):    Loaded dataset index cache in 0.11s, 27.2 megabytes.
-2026-06-03T10:21:50 (Info):    Error: A license manager is already running.
-2026-06-03T10:21:50 (Info):    License check took 0.45 seconds.
-2026-06-03T10:21:50 (Info):    No install ID found at regkey "Software\Mechanical Simulation Corp\CarSim 2024.1".
-2026-06-03T10:21:50 (Info):    No install ID found at regkey "Software\Mechanical Simulation Corp\CarSim 2024.1".
-2026-06-03T10:21:52 (Info):    Initial setup took 1.36 seconds.
-2026-06-03T10:21:52 (Info):    Auto updates took 0.00 seconds.
-2026-06-03T10:21:52 (Info):    Loaded last screen in 0.17 seconds.
-2026-06-03T10:21:52 (Info):    Total init time 2.81 seconds.
-2026-06-03T10:52:50 (Info):    6313 index cache entries written in 0.063s
-2026-06-03T10:52:50 (Info):    Exiting application...
+2026-06-04T16:37:17 Logfile initialized.
+2026-06-04T16:37:17 (Info):    CarSim 2024.1
+2026-06-04T16:37:17 (Info):    -
+2026-06-04T16:37:17 (Info):    command-line: /Automation -Embedding
+2026-06-04T16:37:17 (Info):    -
+2026-06-04T16:37:17 (Info):    Working Dir: C:\workspace\AutoVehcileSim\auto\
+2026-06-04T16:37:17 (Info):    Program Dir: C:\Program Files (x86)\CarSim2024.1_Prog\
+2026-06-04T16:37:17 (Info):    -
+2026-06-04T16:37:17 (Info):    OS Version:        6.2 (build 9200)
+2026-06-04T16:37:17 (Info):    CPU Architecture:  x64
+2026-06-04T16:37:17 (Info):    CPU Count:         2
+2026-06-04T16:37:17 (Info):    CPU Level/Rev:     15/1034
+2026-06-04T16:37:17 (Info):    Start Mem Total:   4090 MB
+2026-06-04T16:37:17 (Info):    Start Mem Used:    82%
+2026-06-04T16:37:17 (Info):    -
+2026-06-04T16:37:17 (Info):    Loaded dataset index cache in 0.08s, 27.2 megabytes.
+2026-06-04T16:37:19 (Info):    Error: A license manager is already running.
+2026-06-04T16:37:20 (Info):    License check took 2.38 seconds.
+2026-06-04T16:37:21 (Info):    Initial setup took 1.81 seconds.
+2026-06-04T16:37:21 (Info):    Auto updates took 0.00 seconds.
+2026-06-04T16:37:24 (Info):    Loaded last screen in 2.12 seconds.
+2026-06-04T16:37:24 (Info):    Total init time 7.09 seconds.
+2026-06-04T16:37:24 (Info):    Automation triggered by command-line options (/Automation or /RegServer)
+2026-06-04T16:37:24 (Info):    COM server initialized successfully.
+2026-06-04T16:37:30 (Info):    Running math model for: { Steering Tests } On-Center Steer Test, D-Class Sedan
+2026-06-04T16:37:44 (Info):    Math model run completed.
+2026-06-04T16:37:45 (Info):    Running math model for: { Steering Tests } On-Center Steer Test, D-Class Sedan
+2026-06-04T16:37:52 (Info):    Math model run completed.
+2026-06-04T16:37:53 (Info):    Running math model for: { Steering Tests } On-Center Steer Test, D-Class Sedan
+2026-06-04T16:38:00 (Info):    Math model run completed.
+2026-06-04T16:38:01 (Info):    Running math model for: { Steering Tests } On-Center Steer Test, D-Class Sedan
+2026-06-04T16:38:11 (Info):    Math model run completed.
+2026-06-04T16:38:13 (Info):    Running math model for: { Steering Tests } On-Center Steer Test, D-Class Sedan
+2026-06-04T16:38:20 (Info):    Math model run completed.
+2026-06-04T16:38:21 (Info):    Running math model for: { Steering Tests } On-Center Steer Test, D-Class Sedan
+2026-06-04T16:38:29 (Info):    Math model run completed.
+2026-06-04T16:38:30 (Info):    Running math model for: { Steering Tests } On-Center Steer Test, D-Class Sedan
+2026-06-04T16:38:39 (Info):    Math model run completed.
+2026-06-04T16:38:40 (Info):    Running math model for: { Steering Tests } On-Center Steer Test, D-Class Sedan
+2026-06-04T16:38:48 (Info):    Math model run completed.
+2026-06-04T16:38:49 (Info):    Running math model for: { Steering Tests } On-Center Steer Test, D-Class Sedan
+2026-06-04T16:38:59 (Info):    Math model run completed.
+2026-06-04T16:39:01 (Info):    Running math model for: { Steering Tests } On-Center Steer Test, D-Class Sedan
+2026-06-04T16:39:09 (Info):    Math model run completed.
+2026-06-04T16:39:10 (Info):    Running math model for: { Steering Tests } On-Center Steer Test, D-Class Sedan
+2026-06-04T16:39:18 (Info):    Math model run completed.
+2026-06-04T16:39:20 (Info):    Running math model for: { Steering Tests } On-Center Steer Test, D-Class Sedan
+2026-06-04T16:39:27 (Info):    Math model run completed.
+2026-06-04T16:39:29 (Info):    Running math model for: { Steering Tests } On-Center Steer Test, D-Class Sedan
+2026-06-04T16:39:37 (Info):    Math model run completed.
+2026-06-04T16:39:38 (Info):    Running math model for: { Steering Tests } On-Center Steer Test, D-Class Sedan
+2026-06-04T16:39:44 (Info):    Math model run completed.
+2026-06-04T16:39:46 (Info):    6314 index cache entries written in 0.032s
+2026-06-04T16:39:46 (Info):    Exiting application...

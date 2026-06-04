@@ -11,6 +11,8 @@ import numpy as np
 
 from datetime import timedelta
 import matplotlib.pyplot as plt
+from pathlib import Path
+import shutil
 
 from pycarsimlib.core import CarsimManager
 from pycarsimlib.logger import initialize_logging
@@ -140,6 +142,20 @@ def run_simulation(cm):
 
     cm.save_results_into_carsimdb('./Results/'+f"{run_name}", Path(CARSIM_DB_DIR)/"Results"/f"{run_name}")
 
+def copy_result(name):
+    # 另存csv 按照参数变化改名
+    # 源文件路径
+    src_csv = Path(r"C:\workspace\AutoVehcileSim\auto\Results\Run_6f6dddbf-6f3d-45dd-95c6-f5662819b1e8\LastRun.csv")
+    # 目标文件夹&文件名res.csv
+    dst_folder = Path(r"./result")
+    dst_csv = dst_folder / name
+
+    # 创建result文件夹(不存在自动新建)
+    dst_folder.mkdir(exist_ok=True)
+
+    # 复制文件
+    shutil.copy2(src_csv, dst_csv)
+    print(f"文件已复制至：{dst_csv.resolve()}")
 
 if __name__ == "__main__":
     update_roughness = False
@@ -300,11 +316,9 @@ if __name__ == "__main__":
     # 1. 修改 前悬架空气弹簧刚度
     # 前悬
     F_CmpInd_path = r"C:\workspace\AutoVehcileSim\auto\Suspensions\Compliance\CmpInd_83b37c60-f193-47f3-8b2e-03d0e2ecf1f5.par" 
-    print("F_CmpInd_path", F_CmpInd_path)
     cm.set_vehicle_param(par_path=F_CmpInd_path, front_spring_rate=132)  # N/m
     # 后悬
     R_CmpInd_path = r"C:\workspace\AutoVehcileSim\auto\Suspensions\Compliance_SA\CmpSA_9166f5c2-2174-435d-8570-aa6e19302ef9.par"
-    print("R_CmpInd_path", R_CmpInd_path)
     cm.set_vehicle_param(par_path=R_CmpInd_path, front_spring_rate=42)  # N/m
 
     # 2. 修改 转向
@@ -312,13 +326,11 @@ if __name__ == "__main__":
     # 3. 修改 阻尼
     # 前悬
     F_Shock_path = r"C:\workspace\AutoVehcileSim\auto\Suspensions\Shocks\Shock_0751644e-013f-45f4-8119-29f0d1bd5cc4.par"
-    print("Shock_path", Shock_path)
     shock_force_data = f_shock_force_data_all[1]
     cm.set_vehicle_param(par_path=F_Shock_path, shock_force_rate=1, shock_force_data=shock_force_data)  # *k 变化倍数
     # 后悬
     R_Shock_path = r"C:\workspace\AutoVehcileSim\auto\Suspensions\Shocks\Shock_df9857ff-75d8-44ea-8bc2-62a47417d5d6.par"
-    print("Shock_path", Shock_path)
-    shock_force_data = r_shock_force_data_all[2]
+    shock_force_data = r_shock_force_data_all[4]
     cm.set_vehicle_param(par_path=R_Shock_path, shock_force_rate=1, shock_force_data=shock_force_data)  # *k 变化倍数
     
     # 4. 修改 动力响应
@@ -329,5 +341,10 @@ if __name__ == "__main__":
     cm.set_vehicle_param(par_path=par_path, power_tao_rate=1)  # *k 变化倍数
 
     run_simulation(cm)
+
+    # 另存csv 按照参数变化改名
+    name = f"Fshock_{1}_Rshock_{4}.csv"
+    copy_result(name)
+    
     
     print(f"\n仿真完成")

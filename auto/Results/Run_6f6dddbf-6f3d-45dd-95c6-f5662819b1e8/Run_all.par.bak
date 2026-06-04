@@ -1022,8 +1022,8 @@ ENTER_PARSFILE Suspensions\Compliance\CmpInd_83b37c60-f193-47f3-8b2e-03d0e2ecf1f
 DAUX 0
 iside 1
 OPT_EXT_SP 0
-FS_COMP_COEFFICIENT 42
-FS_EXT_COEFFICIENT 42
+FS_COMP_COEFFICIENT 132
+FS_EXT_COEFFICIENT 132
 FS_COMP_OFFSET 0
 FS_EXT_OFFSET 0
 SPRING_COMP_BETA 2
@@ -1035,19 +1035,19 @@ CMP_OFFSET 0
 ENTER_PARSFILE Suspensions\Shocks\Shock_0751644e-013f-45f4-8119-29f0d1bd5cc4.par
 #FullDataName Suspension: Shock Absorber`Big SUV`SUV and Light Truck
 FD_TABLE SPLINE
--1030, -6876
--520, -5399
--390, -4972
--260, -4466
--130, -2946
--50, -803
+-1030, -7031
+-520, -5502
+-390, -5094
+-260, -4604
+-130, -3251
+-50, -831
 0, 0
-50, 370
-130, 911
-260, 1430
-390, 1873
-520, 2295
-1030, 3580
+50, 374
+130, 950
+260, 1547
+390, 1998
+520, 2405
+1030, 3668
 ENDTABLE
 LOG_ENTRY Used Dataset: Suspension: Shock Absorber; { SUV and Light Truck } Big SUV
 EXIT_PARSFILE Suspensions\Shocks\Shock_0751644e-013f-45f4-8119-29f0d1bd5cc4.par
@@ -1081,8 +1081,8 @@ C_LAT_COEFFICIENT 1.6e-5
 CD_MY_COEFFICIENT 0
 iside 2
 OPT_EXT_SP 0
-FS_COMP_COEFFICIENT 42
-FS_EXT_COEFFICIENT 42
+FS_COMP_COEFFICIENT 132
+FS_EXT_COEFFICIENT 132
 FS_COMP_OFFSET 0
 FS_EXT_OFFSET 0
 SPRING_COMP_BETA 2
@@ -1094,19 +1094,19 @@ CMP_OFFSET 0
 ENTER_PARSFILE Suspensions\Shocks\Shock_0751644e-013f-45f4-8119-29f0d1bd5cc4.par
 #FullDataName Suspension: Shock Absorber`Big SUV`SUV and Light Truck
 FD_TABLE SPLINE
--1030, -6876
--520, -5399
--390, -4972
--260, -4466
--130, -2946
--50, -803
+-1030, -7031
+-520, -5502
+-390, -5094
+-260, -4604
+-130, -3251
+-50, -831
 0, 0
-50, 370
-130, 911
-260, 1430
-390, 1873
-520, 2295
-1030, 3580
+50, 374
+130, 950
+260, 1547
+390, 1998
+520, 2405
+1030, 3668
 ENDTABLE
 LOG_ENTRY Used Dataset: Suspension: Shock Absorber; { SUV and Light Truck } Big SUV
 EXIT_PARSFILE Suspensions\Shocks\Shock_0751644e-013f-45f4-8119-29f0d1bd5cc4.par
@@ -4033,7 +4033,7 @@ ENTER_PARSFILE Roads\3D_Road\Road_da4c0f36-c2f3-4d28-9ec7-163a8275a787.par
 SET_IROAD_FOR_ID 0
 CURRENT_ROAD_ID = ROAD_ID
 set_description road_id 1200 m, One Lane, Mu = 0.85 (No Trees)
-ENTER_PARSFILE Roads\BuilderSegment\RoadSeg_f15bcdda-6037-43c5-aaf5-b49a50b6a807.par
+ENTER_PARSFILE Roads\BuilderSegment\RoadSeg_c4f668cf-cf0d-4d52-9517-8b240929cdb3.par
 #FullDataName Path: Segment Builder`MySTurnRoad`S-Shaped Turns
 SET_IPATH_FOR_ID 0
 OPT_PATH_START 1
@@ -4083,7 +4083,7 @@ SEGMENT_TYPE 0
 SEGMENT_LENGTH 50
 Title MySTurnRoad <S-Shaped Turns>
 LOG_ENTRY Used Dataset: Path: Segment Builder; { S-Shaped Turns } MySTurnRoad
-EXIT_PARSFILE Roads\BuilderSegment\RoadSeg_f15bcdda-6037-43c5-aaf5-b49a50b6a807.par
+EXIT_PARSFILE Roads\BuilderSegment\RoadSeg_c4f668cf-cf0d-4d52-9517-8b240929cdb3.par
 
 ROAD_PATH_ID = PATH_ID
 set_description road_path_id PATH_ID for: MySTurnRoad
@@ -4775,6 +4775,7 @@ EXIT_PARSFILE Plot\Setup\Plot_57fbe53b-9356-4cb1-9fd0-29f3e70d3894.par
 LOG_ENTRY Used Dataset: Procedures; { Driver Controls } On-Center Steer Test
 EXIT_PARSFILE Procedures\Proc_07d9a19f-3ef9-44ff-9e52-f41142cc19c3.par
 
+OPT_VS_FILETYPE 4
 WRITE_SENSOR_DETECT
 Title On-Center Steer Test, D-Class Sedan <Steering Tests>
 CATEGORY Steering Tests
