@@ -328,6 +328,6 @@ if __name__ == "__main__":
     par_path = r"C:\workspace\AutoVehcileSim\auto\Generic\tables\GenTab_90d23e81-2c53-435f-8e2c-d6503354f720.par"
     cm.set_vehicle_param(par_path=par_path, power_tao_rate=1)  # *k 变化倍数
 
-    # run_simulation(cm)
+    run_simulation(cm)
     
     print(f"\n仿真完成")

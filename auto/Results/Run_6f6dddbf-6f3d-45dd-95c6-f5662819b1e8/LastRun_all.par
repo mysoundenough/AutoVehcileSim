@@ -5571,6 +5571,7 @@ EXIT_PARSFILE Plot\Setup\Plot_57fbe53b-9356-4cb1-9fd0-29f3e70d3894.par
 LOG_ENTRY Used Dataset: Procedures; { Driver Controls } On-Center Steer Test
 EXIT_PARSFILE Procedures\Proc_07d9a19f-3ef9-44ff-9e52-f41142cc19c3.par
 
+OPT_VS_FILETYPE 4
 WRITE_SENSOR_DETECT
 Title On-Center Steer Test, D-Class Sedan <Steering Tests>
 CATEGORY Steering Tests

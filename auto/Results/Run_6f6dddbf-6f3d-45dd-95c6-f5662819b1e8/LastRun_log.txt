@@ -1,4 +1,4 @@
-Run made by CarSim 2024.1 at 11:07 on June 04, 2026.
+Run made by CarSim 2024.1 at 11:23 on June 04, 2026.
 Revision 222209, March 18, 2024
 Started with simfile: simfile.sim
 
@@ -161,7 +161,7 @@ Used Dataset: Procedures; { Driver Controls } On-Center Steer Test
  On-Center Steer Test, D-Class Sedan <Steering Tests>
 Used Dataset: CarSim Run Control; { Steering Tests } On-Center Steer Test, D-Class Sedan
 
-Time to read input = 0.330281
+Time to read input = 0.399675
 Function VOC_BATTERY_CARPET extrapolated (out of range HIGH) for XCOL = 40 C at T = 0
 Function F_REB_STOP_TABLE(1,1) extrapolated (out of range HIGH) for X = 0 mm at T = 0
 Function F_JNC_STOP_TABLE(1,1) extrapolated (out of range LOW) for X = 0 mm at T = 0
@@ -172,7 +172,7 @@ Function F_REB_STOP_TABLE(2,1) extrapolated (out of range HIGH) for X = 5.73956e
 Function F_JNC_STOP_TABLE(2,2) extrapolated (out of range LOW) for X = -5.73956e-09 mm at T = 0
 Function F_REB_STOP_TABLE(2,2) extrapolated (out of range HIGH) for X = -5.73956e-09 mm at T = 0
 
-Run started: VS output file = Results\Run_6f6dddbf-6f3d-45dd-95c6-f5662819b1e8\LastRun.vsb
+Run started: CSV output file = Results\Run_6f6dddbf-6f3d-45dd-95c6-f5662819b1e8\LastRun.csv
 Function M_BOOST_G_TABLE extrapolated (out of range LOW) for X = -2.70037 N-m at T = 4.465
 Function L_RELAX_X_FZ_TABLE(1,2) extrapolated (out of range HIGH) for X = 1.00016 N at T = 7.188
 Function SUSP_X_TABLE(1,1) extrapolated (out of range LOW) for X = -70.0175 mm at T = 7.705
@@ -190,5 +190,5 @@ Function L_RELAX_X_FZ_TABLE(1,1) extrapolated (out of range HIGH) for X = 1.0002
 
 Run stopped at t = 37.2. Stop time reached.
 
-Computational time ratio: RTIME = 0.122495 (real time)/(simulation time)
+Computational time ratio: RTIME = 0.134017 (real time)/(simulation time)
 

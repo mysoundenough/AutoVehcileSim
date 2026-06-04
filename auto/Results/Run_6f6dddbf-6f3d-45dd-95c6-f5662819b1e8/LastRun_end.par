@@ -9,7 +9,7 @@ CATEGORY Steering Tests
 TITLE On-Center Steer Test, D-Class Sedan <Steering Tests>
 
 ! Echo: Results\Run_6f6dddbf-6f3d-45dd-95c6-f5662819b1e8\LastRun_echo.par
-! This run was made 11:07 on June 04, 2026.
+! This run was made 11:23 on June 04, 2026.
 
 !------------------------------------------------------------------------------------
 ! SYSTEM PARAMETERS (SIMULATION OPTIONS)
@@ -74,11 +74,11 @@ OPT_SORT_WRITE      1 ! [D] Sort written outputs? 1 -> alphabetical, 0 -> as ent
 OPT_STOP            0 ! Option for stopping the run: 0 -> stop when T reaches TSTOP;
                       ! 1 -> stop when T reaches TSTOP or station reaches SSTOP; -1
                       ! -> run until stopped using VS Commands or external control
-OPT_VS_FILETYPE     2 ! Type of output file: 1-> 64-bit VS, 2-> 32-bit VS, 3 ->
+OPT_VS_FILETYPE     4 ! Type of output file: 1-> 64-bit VS, 2-> 32-bit VS, 3 ->
                       ! 32-bit ERD, 4 -> text CSV (no binary), 0 -> no output file
 OPT_WRITE           1 ; - ! [D] Write outputs when T > TSTART_WRITE? 1 -> write, 0
                       ! -> don't write; change this using VS Commands or Events
-! RTIME  0.1224953696 ; - ! CALC -- Computational efficiency (sec/sim. sec)
+! RTIME  0.1340172379 ; - ! CALC -- Computational efficiency (sec/sim. sec)
 TSTART           37.2 ; s ! Starting time for the simulation clock
 TSTART_T_EVENT      0 ; s ! [D] Event clock reset time: T_EVENT = T - TSTART_T_EVENT
 TSTART_WRITE     37.2 ; s ! Start writing outputs when this time is reached
