@@ -313,20 +313,20 @@ if __name__ == "__main__":
     # 前悬
     F_Shock_path = r"C:\workspace\AutoVehcileSim\auto\Suspensions\Shocks\Shock_0751644e-013f-45f4-8119-29f0d1bd5cc4.par"
     print("Shock_path", Shock_path)
-    shock_force_data = f_shock_force_data_all[0]
+    shock_force_data = f_shock_force_data_all[1]
     cm.set_vehicle_param(par_path=F_Shock_path, shock_force_rate=1, shock_force_data=shock_force_data)  # *k 变化倍数
     # 后悬
     R_Shock_path = r"C:\workspace\AutoVehcileSim\auto\Suspensions\Shocks\Shock_df9857ff-75d8-44ea-8bc2-62a47417d5d6.par"
     print("Shock_path", Shock_path)
-    shock_force_data = r_shock_force_data_all[0]
+    shock_force_data = r_shock_force_data_all[2]
     cm.set_vehicle_param(par_path=R_Shock_path, shock_force_rate=1, shock_force_data=shock_force_data)  # *k 变化倍数
     
-    # # 4. 修改 动力响应
-    # par_path = r"C:\workspace\AutoVehcileSim\auto\Powertrain\HEV_PMC\PMC_a65582f0-a085-4bc8-9606-1a4f75f80775.par"
-    # cm.set_vehicle_param(par_path=par_path, power_delay_rate=1.4)  # s
-    # # 5. 修改 dirive demand power
-    # par_path = r"C:\workspace\AutoVehcileSim\auto\Generic\tables\GenTab_90d23e81-2c53-435f-8e2c-d6503354f720.par"
-    # cm.set_vehicle_param(par_path=par_path, power_tao_rate=1.1)  # *k 变化倍数
+    # 4. 修改 动力响应
+    par_path = r"C:\workspace\AutoVehcileSim\auto\Powertrain\HEV_PMC\PMC_a65582f0-a085-4bc8-9606-1a4f75f80775.par"
+    cm.set_vehicle_param(par_path=par_path, power_delay_rate=1.5)  # s
+    # 5. 修改 dirive demand power
+    par_path = r"C:\workspace\AutoVehcileSim\auto\Generic\tables\GenTab_90d23e81-2c53-435f-8e2c-d6503354f720.par"
+    cm.set_vehicle_param(par_path=par_path, power_tao_rate=1)  # *k 变化倍数
 
     # run_simulation(cm)
     

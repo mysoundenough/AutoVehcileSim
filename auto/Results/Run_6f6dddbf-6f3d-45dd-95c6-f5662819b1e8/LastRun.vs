@@ -5,7 +5,7 @@
     "Input File" : "Results\\Run_6f6dddbf-6f3d-45dd-95c6-f5662819b1e8\\LastRun.vs",
     "Model" : "Vehicle Configuration: I_S",
     "Product" : "CarSim 2024.1",
-    "Timestamp" : "10:34 on June 04, 2026",
+    "Timestamp" : "11:07 on June 04, 2026",
     "Title" : "On-Center Steer Test, D-Class Sedan <Steering Tests>",
     "Version" : 2,
     "XLabel" : "Time",
@@ -97,10 +97,10 @@
         "Units" : "N",
         "Version" : 2
       }, {
-        "Name Aliases" : [ "GearStat" ],
-        "Generic Name" : "Gear",
-        "Long Name" : "Transmission gear status",
-        "Rigid Body" : "Transmission gear status",
+        "Name Aliases" : [ "ModeTran" ],
+        "Generic Name" : "Transmission control mode",
+        "Long Name" : "Transmission control mode",
+        "Rigid Body" : "Transmission control mode",
         "Units" : "-",
         "Version" : 2
       }, {
