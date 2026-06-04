@@ -82,41 +82,45 @@ def get_parfile_name(sim_content):
             if match:
                 profile_name = match.group(1)
                 profile_path = Path(CARSIM_DB_DIR) /"Roads"/"Profiles"/f"{profile_name}"
-        pattern = r'PARSFILE\s+Vehicles\\Assembly\\([^\s]+\.par)'
-        match = re.search(pattern, run_content)
-        if match:
-            vehicle_name = match.group(1)
-            vehicle_path = Path(CARSIM_DB_DIR) /"Vehicles"/"Assembly"/f"{vehicle_name}"
-            with open(vehicle_path, 'r', encoding='utf-8') as f:
-                vehicle_content = f.read()
-            pattern = r'PARSFILE\s+Suspensions\\Compliance\\([^\s]+\.par)'
-            matchs = re.findall(pattern, vehicle_content)
-            # 前悬
-            cmpind_name = None
-            cmpind_name = matchs[0]
-            if cmpind_name:
-                F_CmpInd_path = Path(CARSIM_DB_DIR) /"Suspensions"/"Compliance"/f"{cmpind_name}"
-            with open(F_CmpInd_path, 'r', encoding='utf-8') as f:
-                cmpind_content = f.read()
-            pattern = r'PARSFILE\s+Suspensions\\Shocks\\([^\s]+\.par)'
-            match = re.search(pattern, cmpind_content)
-            shock_name = None
-            if match:
-                shock_name = match.group(1)
-                Shock_path = Path(CARSIM_DB_DIR) /"Suspensions"/"Shocks"/f"{shock_name}"
-            # 后悬
-            cmpind_name = None
-            cmpind_name = matchs[1]
-            if cmpind_name:
-                R_CmpInd_path = Path(CARSIM_DB_DIR) /"Suspensions"/"Compliance"/f"{cmpind_name}"
-            with open(R_CmpInd_path, 'r', encoding='utf-8') as f:
-                cmpind_content = f.read()
-            pattern = r'PARSFILE\s+Suspensions\\Shocks\\([^\s]+\.par)'
-            match = re.search(pattern, cmpind_content)
-            shock_name = None
-            if match:
-                shock_name = match.group(1)
-                Shock_path = Path(CARSIM_DB_DIR) /"Suspensions"/"Shocks"/f"{shock_name}"
+        
+        # 车辆参数自动寻路径
+        F_CmpInd_path, R_CmpInd_path, Shock_path = None
+        # pattern = r'PARSFILE\s+Vehicles\\Assembly\\([^\s]+\.par)'
+        # match = re.search(pattern, run_content)
+        # if match:
+        #     vehicle_name = match.group(1)
+        #     vehicle_path = Path(CARSIM_DB_DIR) /"Vehicles"/"Assembly"/f"{vehicle_name}"
+        #     with open(vehicle_path, 'r', encoding='utf-8') as f:
+        #         vehicle_content = f.read()
+        #     pattern = r'PARSFILE\s+Suspensions\\Compliance\\([^\s]+\.par)'
+        #     matchs = re.findall(pattern, vehicle_content)
+        #     print("matchs", matchs)
+        #     # 前悬
+        #     cmpind_name = None
+        #     cmpind_name = matchs[0]
+        #     if cmpind_name:
+        #         F_CmpInd_path = Path(CARSIM_DB_DIR) /"Suspensions"/"Compliance"/f"{cmpind_name}"
+        #     with open(F_CmpInd_path, 'r', encoding='utf-8') as f:
+        #         cmpind_content = f.read()
+        #     pattern = r'PARSFILE\s+Suspensions\\Shocks\\([^\s]+\.par)'
+        #     match = re.search(pattern, cmpind_content)
+        #     shock_name = None
+        #     if match:
+        #         shock_name = match.group(1)
+        #         Shock_path = Path(CARSIM_DB_DIR) /"Suspensions"/"Shocks"/f"{shock_name}"
+        #     # 后悬
+        #     cmpind_name = None
+        #     cmpind_name = matchs[1]
+        #     if cmpind_name:
+        #         R_CmpInd_path = Path(CARSIM_DB_DIR) /"Suspensions"/"Compliance"/f"{cmpind_name}"
+        #     with open(R_CmpInd_path, 'r', encoding='utf-8') as f:
+        #         cmpind_content = f.read()
+        #     pattern = r'PARSFILE\s+Suspensions\\Shocks\\([^\s]+\.par)'
+        #     match = re.search(pattern, cmpind_content)
+        #     shock_name = None
+        #     if match:
+        #         shock_name = match.group(1)
+        #         Shock_path = Path(CARSIM_DB_DIR) /"Suspensions"/"Shocks"/f"{shock_name}"
 
     return run_name, F_CmpInd_path, R_CmpInd_path, Shock_path, StrDM_path, RoadSeg_path, Friction_path, profile_path
 
@@ -293,10 +297,11 @@ if __name__ == "__main__":
     
     # 1. 修改 前悬架空气弹簧刚度
     # 前悬
-    # par_path = r"C:\workspace\AutoVehcileSim\auto\Suspensions\Compliance\CmpInd_6a0a169e-9f67-48f4-8f46-0512eb1a3093.par"
+    F_CmpInd_path = r"C:\workspace\AutoVehcileSim\auto\Suspensions\Compliance\CmpInd_83b37c60-f193-47f3-8b2e-03d0e2ecf1f5.par" 
     print("F_CmpInd_path", F_CmpInd_path)
     cm.set_vehicle_param(par_path=F_CmpInd_path, front_spring_rate=27)  # N/m
     # 后悬
+    F_CmpInd_path = r"C:\workspace\AutoVehcileSim\auto\Suspensions\Compliance_SA\CmpSA_9166f5c2-2174-435d-8570-aa6e19302ef9.par"
     print("R_CmpInd_path", R_CmpInd_path)
     cm.set_vehicle_param(par_path=R_CmpInd_path, front_spring_rate=26)  # N/m
 
@@ -305,11 +310,12 @@ if __name__ == "__main__":
     # 3. 修改 阻尼
     # 前悬
     # Shock_path = r"C:\workspace\AutoVehcileSim\auto\Suspensions\Shocks\Shock_06339072-ca43-46c4-af82-ec3bf59d6ffc.par"
-    print(Shock_path)
+    print("Shock_path", Shock_path)
     shock_force_data = f_shock_force_data_all[0]
     cm.set_vehicle_param(par_path=Shock_path, shock_force_rate=1, shock_force_data=shock_force_data)  # *k 变化倍数
     # 后悬
     # par_path = r"C:\workspace\AutoVehcileSim\auto\Suspensions\Shocks\Shock_06339072-ca43-46c4-af82-ec3bf59d6ffc.par"
+    print("Shock_path", Shock_path)
     shock_force_data = r_shock_force_data_all[0]
     cm.set_vehicle_param(par_path=Shock_path, shock_force_rate=1, shock_force_data=shock_force_data)  # *k 变化倍数
     
