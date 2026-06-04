@@ -9,7 +9,7 @@ CATEGORY Steering Tests
 TITLE On-Center Steer Test, D-Class Sedan <Steering Tests>
 
 ! Echo: Results\Run_6f6dddbf-6f3d-45dd-95c6-f5662819b1e8\LastRun_echo.par
-! This run was made 14:31 on June 03, 2026.
+! This run was made 10:34 on June 04, 2026.
 
 !------------------------------------------------------------------------------------
 ! SYSTEM PARAMETERS (SIMULATION OPTIONS)
@@ -284,8 +284,8 @@ OPT_SUSP_COMPLIANCE_METHOD(1) 1 ! [D] Subtract offset from each compliance table
                                 ! avoid double-counting kinematical offset? 1 ->
                                 ! Yes, subtract the offset, 0 -> No, use compliance
                                 ! table as is [I]
-! CMP_DESIGN(1,1) 100.4910473 ; mm ! CALC -- Compression at design load, spring L1
-! CMP_DESIGN(1,2) 100.4910473 ; mm ! CALC -- Compression at design load, spring R1
+! CMP_DESIGN(1,1) 98.96845564 ; mm ! CALC -- Compression at design load, spring L1
+! CMP_DESIGN(1,2) 98.96845564 ; mm ! CALC -- Compression at design load, spring R1
 CMP_OFFSET(1,1)     0 ; mm ! Initial compression of external spring L1 [I]
 CMP_OFFSET(1,2)     0 ; mm ! Initial compression of external spring R1 [I]
 DAUX(1)             0 ; N-m-s/deg ! Auxiliary roll damping, axle 1
@@ -299,7 +299,7 @@ FS_OFFSET(1,2)      0 ; N ! Force offset subtracted from built-in spring R1 [I]
 ! FZA_UL(1) 17363.41672 ; N ! CALC -- Static ground load, unladen, axle 1
 ! FZ_STATIC(1,1) 8681.708362 ; N ! CALC -- Static ground force, laden, wheel L1
 ! FZ_STATIC(1,2) 8681.708362 ; N ! CALC -- Static ground force, laden, wheel R1
-! KA_ROLL(1) 3347.557624 ; N-m/deg ! CALC -- Total roll stiffness, axle 1
+! KA_ROLL(1) 3390.304665 ; N-m/deg ! CALC -- Total roll stiffness, axle 1
 L_SPG_ADJ(1,1)      0 ; mm ! Upper seat height increase for spring L1 to reduce
                       ! spring compression [I]
 L_SPG_ADJ(1,2)      0 ; mm ! Upper seat height increase for spring R1 [I]
@@ -315,8 +315,8 @@ OPT_EXT_SP(2,1)     0 ! Disable built-in spring L2? 0 -> no, 1 -> yes [I]
 OPT_EXT_SP(2,2)     0 ! Disable built-in spring R2? 0 -> no, 1 -> yes [I]
 OPT_SUSP_COMPLIANCE_METHOD(2) 1 ! [D] Adjust compliance tables to avoid
                                 ! double-counting? 1 -> Adjust, 0 -> No [I]
-! CMP_DESIGN(2,1) 105.9209803 ; mm ! CALC -- Compression at design load, spring L2
-! CMP_DESIGN(2,2) 105.9209803 ; mm ! CALC -- Compression at design load, spring R2
+! CMP_DESIGN(2,1) 100.8771241 ; mm ! CALC -- Compression at design load, spring L2
+! CMP_DESIGN(2,2) 100.8771241 ; mm ! CALC -- Compression at design load, spring R2
 CMP_OFFSET(2,1)     0 ; mm ! Initial compression of external spring L2 [I]
 CMP_OFFSET(2,2)     0 ; mm ! Initial compression of external spring R2 [I]
 DAUX(2)             0 ; N-m-s/deg ! Auxiliary roll damping, axle 2
@@ -342,7 +342,7 @@ FS_OFFSET(2,2)      0 ; N ! Force offset subtracted from built-in spring R2 [I]
 ! FZA_UL(2) 9954.968182 ; N ! CALC -- Static ground load, unladen, axle 2
 ! FZ_STATIC(2,1) 4977.484091 ; N ! CALC -- Static ground force, laden, wheel L2
 ! FZ_STATIC(2,2) 4977.484091 ; N ! CALC -- Static ground force, laden, wheel R2
-! KA_ROLL(2) 424.9308062 ; N-m/deg ! CALC -- Total roll stiffness, axle 2
+! KA_ROLL(2) 446.1773465 ; N-m/deg ! CALC -- Total roll stiffness, axle 2
 L_DAMPERS(2)  1103.33 ; mm ! Distance between dampers on axle 2 [I]
 Y_DAMPERS(2)        0 ; mm ! [D] Lateral (left) offset of dampers on axle 2 [I]
 L_JNC_STOPS(2)   1100 ; mm ! Distance between jounce stops on axle 2 [I]
@@ -1610,19 +1610,19 @@ THROTTLE_SCALE_DOWNSHIFT(5) 1 ! [D] Divided into (throttle position -
 
 ! Col 1 = compression speed (mm/s), col 2 = damper force (N)
 FD_TABLE(1,1) SPLINE ! axle 1, left side
- -1410, -7316
- -720, -5019
- -390, -3395
- -210, -2618
- -90, -1472
- -20, -333
+ -1030, -7100
+ -520, -5652
+ -390, -5283
+ -260, -4822
+ -130, -3488
+ -50, -836
  0, 0
- 20, 333
- 90, 870
- 200, 1145
- 390, 1607
- 760, 2623
- 1160, 3740
+ 50, 405
+ 130, 977
+ 260, 1697
+ 390, 2157
+ 520, 2584
+ 1030, 3723
 ENDTABLE
 FD_GAIN(1,1)        1 ! [D] Multiplied with calculated value to get damper force
 FD_OFFSET(1,1)      0 ; N ! [D] Added (after gain) to get damper force
@@ -1631,19 +1631,19 @@ CMP_R_SCALE_FD(1,1) 1 ! [D] Divided into (compression speed - CMP_R_START_FD)
 
 ! Col 1 = compression speed (mm/s), col 2 = damper force (N)
 FD_TABLE(1,2) SPLINE ! axle 1, right side
- -1410, -7316
- -720, -5019
- -390, -3395
- -210, -2618
- -90, -1472
- -20, -333
+ -1030, -7100
+ -520, -5652
+ -390, -5283
+ -260, -4822
+ -130, -3488
+ -50, -836
  0, 0
- 20, 333
- 90, 870
- 200, 1145
- 390, 1607
- 760, 2623
- 1160, 3740
+ 50, 405
+ 130, 977
+ 260, 1697
+ 390, 2157
+ 520, 2584
+ 1030, 3723
 ENDTABLE
 FD_GAIN(1,2)        1 ! [D] Multiplied with calculated value to get damper force
 FD_OFFSET(1,2)      0 ; N ! [D] Added (after gain) to get damper force
@@ -1652,19 +1652,19 @@ CMP_R_SCALE_FD(1,2) 1 ! [D] Divided into (compression speed - CMP_R_START_FD)
 
 ! Col 1 = compression speed (mm/s), col 2 = damper force (N)
 FD_TABLE(2,1) SPLINE ! axle 2, left side
- -1410, -7316
- -720, -5019
- -390, -3395
- -210, -2618
- -90, -1472
- -20, -333
+ -1030, -7100
+ -520, -5652
+ -390, -5283
+ -260, -4822
+ -130, -3488
+ -50, -836
  0, 0
- 20, 333
- 90, 870
- 200, 1145
- 390, 1607
- 760, 2623
- 1160, 3740
+ 50, 405
+ 130, 977
+ 260, 1697
+ 390, 2157
+ 520, 2584
+ 1030, 3723
 ENDTABLE
 FD_GAIN(2,1)        1 ! [D] Multiplied with calculated value to get damper force
 FD_OFFSET(2,1)      0 ; N ! [D] Added (after gain) to get damper force
@@ -1673,19 +1673,19 @@ CMP_R_SCALE_FD(2,1) 1 ! [D] Divided into (compression speed - CMP_R_START_FD)
 
 ! Col 1 = compression speed (mm/s), col 2 = damper force (N)
 FD_TABLE(2,2) SPLINE ! axle 2, right side
- -1410, -7316
- -720, -5019
- -390, -3395
- -210, -2618
- -90, -1472
- -20, -333
+ -1030, -7100
+ -520, -5652
+ -390, -5283
+ -260, -4822
+ -130, -3488
+ -50, -836
  0, 0
- 20, 333
- 90, 870
- 200, 1145
- 390, 1607
- 760, 2623
- 1160, 3740
+ 50, 405
+ 130, 977
+ 260, 1697
+ 390, 2157
+ 520, 2584
+ 1030, 3723
 ENDTABLE
 FD_GAIN(2,2)        1 ! [D] Multiplied with calculated value to get damper force
 FD_OFFSET(2,2)      0 ; N ! [D] Added (after gain) to get damper force
@@ -1705,7 +1705,7 @@ CMP_R_SCALE_FD(2,2) 1 ! [D] Divided into (compression speed - CMP_R_START_FD)
 ! e.g., (1,2), the current values of the indices IAXLE and ISIDE are used to identify
 ! the dataset when reading data.
 
-FS_COMP_COEFFICIENT(1,1) 130 ! Spring force per unit spring compression (N/mm), axle
+FS_COMP_COEFFICIENT(1,1) 132 ! Spring force per unit spring compression (N/mm), axle
                              ! 1, left side
 FS_COMP_GAIN(1,1)   1 ! [D] Multiplied with calculated value to get spring force
 FS_COMP_OFFSET(1,1) 0 ; N ! Added (after gain) to get spring force
@@ -1715,7 +1715,7 @@ FS_COMP_COMBINE(1,1) MULTIPLY ! [D] How to combine the two components
 FS_COMP_FSTATIC_CONSTANT(1,1) 1 ; - ! [D] Spring force component due to static
                                 ! spring force, axle 1, left side
 
-FS_COMP_COEFFICIENT(1,2) 130 ! Spring force per unit spring compression (N/mm), axle
+FS_COMP_COEFFICIENT(1,2) 132 ! Spring force per unit spring compression (N/mm), axle
                              ! 1, right side
 FS_COMP_GAIN(1,2)   1 ! [D] Multiplied with calculated value to get spring force
 FS_COMP_OFFSET(1,2) 0 ; N ! Added (after gain) to get spring force
@@ -1725,7 +1725,7 @@ FS_COMP_COMBINE(1,2) MULTIPLY ! [D] How to combine the two components
 FS_COMP_FSTATIC_CONSTANT(1,2) 1 ; - ! [D] Spring force component due to static
                                 ! spring force, axle 1, right side
 
-FS_COMP_COEFFICIENT(2,1) 40 ! Spring force per unit spring compression (N/mm), axle
+FS_COMP_COEFFICIENT(2,1) 42 ! Spring force per unit spring compression (N/mm), axle
                             ! 2, left side
 FS_COMP_GAIN(2,1)   1 ! [D] Multiplied with calculated value to get spring force
 FS_COMP_OFFSET(2,1) 10 ; N ! Added (after gain) to get spring force
@@ -1735,7 +1735,7 @@ FS_COMP_COMBINE(2,1) MULTIPLY ! [D] How to combine the two components
 FS_COMP_FSTATIC_CONSTANT(2,1) 1 ; - ! [D] Spring force component due to static
                                 ! spring force, axle 2, left side
 
-FS_COMP_COEFFICIENT(2,2) 40 ! Spring force per unit spring compression (N/mm), axle
+FS_COMP_COEFFICIENT(2,2) 42 ! Spring force per unit spring compression (N/mm), axle
                             ! 2, right side
 FS_COMP_GAIN(2,2)   1 ! [D] Multiplied with calculated value to get spring force
 FS_COMP_OFFSET(2,2) 10 ; N ! Added (after gain) to get spring force
@@ -1758,7 +1758,7 @@ FS_COMP_FSTATIC_CONSTANT(2,2) 1 ; - ! [D] Spring force component due to static
 ! values of the indices IAXLE and ISIDE are used to identify the dataset when reading
 ! data.
 
-FS_EXT_COEFFICIENT(1,1) 130 ! Spring force per unit spring compression (N/mm), axle
+FS_EXT_COEFFICIENT(1,1) 132 ! Spring force per unit spring compression (N/mm), axle
                             ! 1, left side
 FS_EXT_GAIN(1,1)    1 ! [D] Multiplied with calculated value to get spring force
 FS_EXT_OFFSET(1,1)  0 ; N ! Added (after gain) to get spring force
@@ -1768,7 +1768,7 @@ FS_EXT_COMBINE(1,1) MULTIPLY ! [D] How to combine the two components
 FS_EXT_FSTATIC_CONSTANT(1,1) 1 ; - ! [D] Spring force component due to static spring
                                ! force, axle 1, left side
 
-FS_EXT_COEFFICIENT(1,2) 130 ! Spring force per unit spring compression (N/mm), axle
+FS_EXT_COEFFICIENT(1,2) 132 ! Spring force per unit spring compression (N/mm), axle
                             ! 1, right side
 FS_EXT_GAIN(1,2)    1 ! [D] Multiplied with calculated value to get spring force
 FS_EXT_OFFSET(1,2)  0 ; N ! Added (after gain) to get spring force
@@ -1778,7 +1778,7 @@ FS_EXT_COMBINE(1,2) MULTIPLY ! [D] How to combine the two components
 FS_EXT_FSTATIC_CONSTANT(1,2) 1 ; - ! [D] Spring force component due to static spring
                                ! force, axle 1, right side
 
-FS_EXT_COEFFICIENT(2,1) 40 ! Spring force per unit spring compression (N/mm), axle
+FS_EXT_COEFFICIENT(2,1) 42 ! Spring force per unit spring compression (N/mm), axle
                            ! 2, left side
 FS_EXT_GAIN(2,1)    1 ! [D] Multiplied with calculated value to get spring force
 FS_EXT_OFFSET(2,1) -10 ; N ! Added (after gain) to get spring force
@@ -1788,7 +1788,7 @@ FS_EXT_COMBINE(2,1) MULTIPLY ! [D] How to combine the two components
 FS_EXT_FSTATIC_CONSTANT(2,1) 1 ; - ! [D] Spring force component due to static spring
                                ! force, axle 2, left side
 
-FS_EXT_COEFFICIENT(2,2) 40 ! Spring force per unit spring compression (N/mm), axle
+FS_EXT_COEFFICIENT(2,2) 42 ! Spring force per unit spring compression (N/mm), axle
                            ! 2, right side
 FS_EXT_GAIN(2,2)    1 ! [D] Multiplied with calculated value to get spring force
 FS_EXT_OFFSET(2,2) -10 ; N ! Added (after gain) to get spring force

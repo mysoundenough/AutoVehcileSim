@@ -84,7 +84,9 @@ def get_parfile_name(sim_content):
                 profile_path = Path(CARSIM_DB_DIR) /"Roads"/"Profiles"/f"{profile_name}"
         
         # 车辆参数自动寻路径
-        F_CmpInd_path, R_CmpInd_path, Shock_path = None
+        F_CmpInd_path = None
+        R_CmpInd_path = None
+        Shock_path = None
         # pattern = r'PARSFILE\s+Vehicles\\Assembly\\([^\s]+\.par)'
         # match = re.search(pattern, run_content)
         # if match:
@@ -126,7 +128,7 @@ def get_parfile_name(sim_content):
 
 
 VEHICLE_TYPE = "normal_vehicle"
-RUN_ALL_DIR = r"C:\workspace\AutoVehcileSim\auto\Results\Run_2856146d-b1be-47b8-ac08-6ebab3ca95c3"
+RUN_ALL_DIR = r"C:\workspace\AutoVehcileSim\auto\Results\Run_6f6dddbf-6f3d-45dd-95c6-f5662819b1e8"
 
 
 def run_simulation(cm):
@@ -262,7 +264,7 @@ if __name__ == "__main__":
     cm = CarsimManager(
         carsim_db_dir=CARSIM_DB_DIR,
         vehicle_type=VEHICLE_TYPE,
-        run_all_dir=output_dir,
+        run_all_dir=RUN_ALL_DIR,
     )
 
     # 循环修改参数
@@ -299,33 +301,33 @@ if __name__ == "__main__":
     # 前悬
     F_CmpInd_path = r"C:\workspace\AutoVehcileSim\auto\Suspensions\Compliance\CmpInd_83b37c60-f193-47f3-8b2e-03d0e2ecf1f5.par" 
     print("F_CmpInd_path", F_CmpInd_path)
-    cm.set_vehicle_param(par_path=F_CmpInd_path, front_spring_rate=27)  # N/m
+    cm.set_vehicle_param(par_path=F_CmpInd_path, front_spring_rate=132)  # N/m
     # 后悬
-    F_CmpInd_path = r"C:\workspace\AutoVehcileSim\auto\Suspensions\Compliance_SA\CmpSA_9166f5c2-2174-435d-8570-aa6e19302ef9.par"
+    R_CmpInd_path = r"C:\workspace\AutoVehcileSim\auto\Suspensions\Compliance_SA\CmpSA_9166f5c2-2174-435d-8570-aa6e19302ef9.par"
     print("R_CmpInd_path", R_CmpInd_path)
-    cm.set_vehicle_param(par_path=R_CmpInd_path, front_spring_rate=26)  # N/m
+    cm.set_vehicle_param(par_path=R_CmpInd_path, front_spring_rate=42)  # N/m
 
     # 2. 修改 转向
     
     # 3. 修改 阻尼
     # 前悬
-    # Shock_path = r"C:\workspace\AutoVehcileSim\auto\Suspensions\Shocks\Shock_06339072-ca43-46c4-af82-ec3bf59d6ffc.par"
+    F_Shock_path = r"C:\workspace\AutoVehcileSim\auto\Suspensions\Shocks\Shock_0751644e-013f-45f4-8119-29f0d1bd5cc4.par"
     print("Shock_path", Shock_path)
     shock_force_data = f_shock_force_data_all[0]
-    cm.set_vehicle_param(par_path=Shock_path, shock_force_rate=1, shock_force_data=shock_force_data)  # *k 变化倍数
+    cm.set_vehicle_param(par_path=F_Shock_path, shock_force_rate=1, shock_force_data=shock_force_data)  # *k 变化倍数
     # 后悬
-    # par_path = r"C:\workspace\AutoVehcileSim\auto\Suspensions\Shocks\Shock_06339072-ca43-46c4-af82-ec3bf59d6ffc.par"
+    R_Shock_path = r"C:\workspace\AutoVehcileSim\auto\Suspensions\Shocks\Shock_df9857ff-75d8-44ea-8bc2-62a47417d5d6.par"
     print("Shock_path", Shock_path)
     shock_force_data = r_shock_force_data_all[0]
-    cm.set_vehicle_param(par_path=Shock_path, shock_force_rate=1, shock_force_data=shock_force_data)  # *k 变化倍数
+    cm.set_vehicle_param(par_path=R_Shock_path, shock_force_rate=1, shock_force_data=shock_force_data)  # *k 变化倍数
     
-    # 4. 修改 动力响应
-    par_path = r"C:\workspace\AutoVehcileSim\auto\Powertrain\HEV_PMC\PMC_a65582f0-a085-4bc8-9606-1a4f75f80775.par"
-    cm.set_vehicle_param(par_path=par_path, power_delay_rate=1.4)  # s
-    # 5. 修改 dirive demand power
-    par_path = r"C:\workspace\AutoVehcileSim\auto\Generic\tables\GenTab_90d23e81-2c53-435f-8e2c-d6503354f720.par"
-    cm.set_vehicle_param(par_path=par_path, power_tao_rate=1.1)  # *k 变化倍数
+    # # 4. 修改 动力响应
+    # par_path = r"C:\workspace\AutoVehcileSim\auto\Powertrain\HEV_PMC\PMC_a65582f0-a085-4bc8-9606-1a4f75f80775.par"
+    # cm.set_vehicle_param(par_path=par_path, power_delay_rate=1.4)  # s
+    # # 5. 修改 dirive demand power
+    # par_path = r"C:\workspace\AutoVehcileSim\auto\Generic\tables\GenTab_90d23e81-2c53-435f-8e2c-d6503354f720.par"
+    # cm.set_vehicle_param(par_path=par_path, power_tao_rate=1.1)  # *k 变化倍数
 
-    run_simulation(cm)
+    # run_simulation(cm)
     
     print(f"\n仿真完成")

@@ -12,7 +12,7 @@ PARSFILE
 #RingCtrl9 1
 #RingCtrl11 1
 #RingCtrl13 1
-*KSPRING_L 40
+*KSPRING_L 42
 *FRICTION_L 10
 *BETA_C_L 2
 *BETA_E_L 2
@@ -37,8 +37,8 @@ L_REB_STOPS 1100
 
 iside 1
 OPT_EXT_SP 0
-FS_COMP_COEFFICIENT 40
-FS_EXT_COEFFICIENT 40
+FS_COMP_COEFFICIENT 42
+FS_EXT_COEFFICIENT 42
 FS_COMP_OFFSET 10
 FS_EXT_OFFSET -10
 SPRING_COMP_BETA 2
@@ -47,8 +47,8 @@ CMP_SPR_SEAT_COEFFICIENT 0.9989
 L_SPG_ADJ 0
 FS_OFFSET 0
 CMP_OFFSET 0
-PARSFILE Suspensions\Shocks\Shock_0751644e-013f-45f4-8119-29f0d1bd5cc4.par
-#BlueLink1 Suspension: Shock Absorber`Big SUV` SUV and Light Truck` , Left damper`Shock_0751644e-013f-45f4-8119-29f0d1bd5cc4
+PARSFILE Suspensions\Shocks\Shock_df9857ff-75d8-44ea-8bc2-62a47417d5d6.par
+#BlueLink1 Suspension: Shock Absorber`Big SUV #1` SUV and Light Truck` , Left damper`Shock_df9857ff-75d8-44ea-8bc2-62a47417d5d6
 
 CMP_DAMP_COEFFICIENT 1.003
 PARSFILE Suspensions\Jounce_Rebound\JncReb_d2a52eb4-adac-45ae-9566-04f9d07f0884.par
@@ -65,8 +65,8 @@ CI_MZ_COEFFICIENT 0
 
 iside 2
 OPT_EXT_SP 0
-FS_COMP_COEFFICIENT 40
-FS_EXT_COEFFICIENT 40
+FS_COMP_COEFFICIENT 42
+FS_EXT_COEFFICIENT 42
 FS_COMP_OFFSET 10
 FS_EXT_OFFSET -10
 SPRING_COMP_BETA 2
@@ -75,8 +75,8 @@ CMP_SPR_SEAT_COEFFICIENT 0.9989
 L_SPG_ADJ 0
 FS_OFFSET 0
 CMP_OFFSET 0
-PARSFILE Suspensions\Shocks\Shock_0751644e-013f-45f4-8119-29f0d1bd5cc4.par
-#BlueLink1 Suspension: Shock Absorber`Big SUV` SUV and Light Truck` , Left damper`Shock_0751644e-013f-45f4-8119-29f0d1bd5cc4
+PARSFILE Suspensions\Shocks\Shock_df9857ff-75d8-44ea-8bc2-62a47417d5d6.par
+#BlueLink1 Suspension: Shock Absorber`Big SUV #1` SUV and Light Truck` , Left damper`Shock_df9857ff-75d8-44ea-8bc2-62a47417d5d6
 
 CMP_DAMP_COEFFICIENT 1.003
 PARSFILE Suspensions\Jounce_Rebound\JncReb_d2a52eb4-adac-45ae-9566-04f9d07f0884.par
@@ -99,7 +99,7 @@ LOG_ENTRY Used Dataset: Suspension: Solid Axle Compliance, Springs, and Dampers;
 #DataSet : D-Class, SUV - Rear
 #Category: D-Class
 #FileID  : CmpSA_9166f5c2-2174-435d-8570-aa6e19302ef9
-#Modified: 05-28-2021 14:59:11
+#Modified: 06-04-2026 10:36:31
 #Product : CarSim 2024.1
 #DataVer : 2024.1
 #VehCode Solid Axle
