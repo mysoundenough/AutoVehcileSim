@@ -213,7 +213,6 @@ class CarsimManager:
         if front_spring_rate is not None:
             self.modify_spring_rate(par_path, "FRONT_SPRING_RATE", front_spring_rate)
         if shock_force_rate is not None:
-            print(0000000000000)
             self.modify_shock_force(par_path, shock_force_rate, shock_force_data)
         if power_tao_rate is not None:
             self.modify_power_tao(par_path, "", power_tao_rate)
