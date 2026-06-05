@@ -348,48 +348,50 @@ if __name__ == "__main__":
     time.sleep(2)  # 等待CarSim完全启动
     print("✅ CarSim 已启动，全程不关闭，可反复运行")
 
-    fk = 20
-    rk = 7
-    fk_add = 10
-    rk_add = 3
+    fk = 34
+    rk = 75
+    fk_add = 2
+    rk_add = 5
 
-    for i in range(14):
-        # 1. 修改 前悬架空气弹簧刚度
-        # 前悬
-        fk += fk_add
-        rk += rk_add
-        F_CmpInd_path = r"C:\workspace\AutoVehcileSim\auto\Suspensions\Compliance\CmpInd_83b37c60-f193-47f3-8b2e-03d0e2ecf1f5.par" 
-        cm.set_vehicle_param(par_path=F_CmpInd_path, front_spring_rate=fk)  # N/m
-        # 后悬
-        R_CmpInd_path = r"C:\workspace\AutoVehcileSim\auto\Suspensions\Compliance_SA\CmpSA_9166f5c2-2174-435d-8570-aa6e19302ef9.par"
-        cm.set_vehicle_param(par_path=R_CmpInd_path, front_spring_rate=rk)  # N/m
+    for fk in range(34, 80, 2):
+        for rk in range(75, 155, 5):
+            for i in range(14):
+                for j in range(14):
+                    # 1. 修改 前悬架空气弹簧刚度
+                    # 前悬
+                    F_CmpInd_path = r"C:\workspace\AutoVehcileSim\auto\Suspensions\Compliance\CmpInd_83b37c60-f193-47f3-8b2e-03d0e2ecf1f5.par" 
+                    cm.set_vehicle_param(par_path=F_CmpInd_path, front_spring_rate=fk)  # N/m
+                    # 后悬
+                    R_CmpInd_path = r"C:\workspace\AutoVehcileSim\auto\Suspensions\Compliance_SA\CmpSA_9166f5c2-2174-435d-8570-aa6e19302ef9.par"
+                    cm.set_vehicle_param(par_path=R_CmpInd_path, front_spring_rate=rk)  # N/m
+                    fk += fk_add
+                    rk += rk_add
 
-        # 2. 修改 转向
-        
-        # 3. 修改 阻尼
-        # 前悬
-        F_Shock_path = r"C:\workspace\AutoVehcileSim\auto\Suspensions\Shocks\Shock_0751644e-013f-45f4-8119-29f0d1bd5cc4.par"
-        shock_force_data = f_shock_force_data_all[i]
-        cm.set_vehicle_param(par_path=F_Shock_path, shock_force_rate=1, shock_force_data=shock_force_data)  # *k 变化倍数
-        # 后悬
-        R_Shock_path = r"C:\workspace\AutoVehcileSim\auto\Suspensions\Shocks\Shock_df9857ff-75d8-44ea-8bc2-62a47417d5d6.par"
-        shock_force_data = r_shock_force_data_all[i]
-        cm.set_vehicle_param(par_path=R_Shock_path, shock_force_rate=1, shock_force_data=shock_force_data)  # *k 变化倍数
-        
-        # 4. 修改 动力响应
-        par_path = r"C:\workspace\AutoVehcileSim\auto\Powertrain\HEV_PMC\PMC_a65582f0-a085-4bc8-9606-1a4f75f80775.par"
-        cm.set_vehicle_param(par_path=par_path, power_delay_rate=1.5)  # s
-        # 5. 修改 dirive demand power
-        par_path = r"C:\workspace\AutoVehcileSim\auto\Generic\tables\GenTab_90d23e81-2c53-435f-8e2c-d6503354f720.par"
-        cm.set_vehicle_param(par_path=par_path, power_tao_rate=1)  # *k 变化倍数
+                    # 2. 修改 转向
+                    
+                    # 3. 修改 阻尼
+                    # 前悬
+                    F_Shock_path = r"C:\workspace\AutoVehcileSim\auto\Suspensions\Shocks\Shock_0751644e-013f-45f4-8119-29f0d1bd5cc4.par"
+                    shock_force_data = f_shock_force_data_all[i]
+                    cm.set_vehicle_param(par_path=F_Shock_path, shock_force_rate=1, shock_force_data=shock_force_data)  # *k 变化倍数
+                    # 后悬
+                    R_Shock_path = r"C:\workspace\AutoVehcileSim\auto\Suspensions\Shocks\Shock_df9857ff-75d8-44ea-8bc2-62a47417d5d6.par"
+                    shock_force_data = r_shock_force_data_all[i]
+                    cm.set_vehicle_param(par_path=R_Shock_path, shock_force_rate=1, shock_force_data=shock_force_data)  # *k 变化倍数
+                    
+                    # 4. 修改 动力响应
+                    par_path = r"C:\workspace\AutoVehcileSim\auto\Powertrain\HEV_PMC\PMC_a65582f0-a085-4bc8-9606-1a4f75f80775.par"
+                    cm.set_vehicle_param(par_path=par_path, power_delay_rate=1.5)  # s
+                    # 5. 修改 dirive demand power
+                    par_path = r"C:\workspace\AutoVehcileSim\auto\Generic\tables\GenTab_90d23e81-2c53-435f-8e2c-d6503354f720.par"
+                    cm.set_vehicle_param(par_path=par_path, power_tao_rate=1)  # *k 变化倍数
 
-        # 运行仿真
-        run_sim()
+                    # 运行仿真
+                    run_sim()
 
-        # 另存csv 按照参数变化改名
-        name = f"fk_{fk}_rk_{rk}_Fshock_{i}_Rshock_{i}.csv"
-        copy_result(name)
-    
+                    # 另存csv 按照参数变化改名
+                    name = f"fk_{fk}_rk_{rk}_Fshock_{i}_Rshock_{j}_F_{1.5}_t_{1}.csv"
+                    copy_result(name)
     
     print(f"\n仿真完成")
     

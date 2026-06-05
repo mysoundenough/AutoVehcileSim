@@ -9,7 +9,7 @@ CATEGORY Steering Tests
 TITLE On-Center Steer Test, D-Class Sedan <Steering Tests>
 
 ! Echo: Results\Run_6f6dddbf-6f3d-45dd-95c6-f5662819b1e8\LastRun_echo.par
-! This run was made 16:51 on June 04, 2026.
+! This run was made 10:37 on June 05, 2026.
 
 !------------------------------------------------------------------------------------
 ! SYSTEM PARAMETERS (SIMULATION OPTIONS)
@@ -1518,19 +1518,19 @@ CMP_R_SCALE_FD(1,2) 1 ! [D] Divided into (compression speed - CMP_R_START_FD)
 
 ! Col 1 = compression speed (mm/s), col 2 = damper force (N)
 FD_TABLE(2,1) SPLINE ! axle 2, left side
- -1030, -2671
- -520, -1290
- -390, -1013
- -260, -759
- -130, -513
- -50, -215
+ -1030, -1814
+ -520, -929
+ -390, -749
+ -260, -581
+ -130, -411
+ -50, -166
  0, 0
- 50, 302
- 130, 464
- 260, 721
- 390, 917
- 520, 1109
- 1030, 1955
+ 50, 274
+ 130, 438
+ 260, 665
+ 390, 835
+ 520, 1013
+ 1030, 1813
 ENDTABLE
 FD_GAIN(2,1)        1 ! [D] Multiplied with calculated value to get damper force
 FD_OFFSET(2,1)      0 ; N ! [D] Added (after gain) to get damper force
@@ -1539,19 +1539,19 @@ CMP_R_SCALE_FD(2,1) 1 ! [D] Divided into (compression speed - CMP_R_START_FD)
 
 ! Col 1 = compression speed (mm/s), col 2 = damper force (N)
 FD_TABLE(2,2) SPLINE ! axle 2, right side
- -1030, -2671
- -520, -1290
- -390, -1013
- -260, -759
- -130, -513
- -50, -215
+ -1030, -1814
+ -520, -929
+ -390, -749
+ -260, -581
+ -130, -411
+ -50, -166
  0, 0
- 50, 302
- 130, 464
- 260, 721
- 390, 917
- 520, 1109
- 1030, 1955
+ 50, 274
+ 130, 438
+ 260, 665
+ 390, 835
+ 520, 1013
+ 1030, 1813
 ENDTABLE
 FD_GAIN(2,2)        1 ! [D] Multiplied with calculated value to get damper force
 FD_OFFSET(2,2)      0 ; N ! [D] Added (after gain) to get damper force
