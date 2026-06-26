@@ -80,15 +80,7 @@ def copy_result(name):
     shutil.copy2(src_csv, dst_csv)
     print(f"文件已复制至：{dst_csv.resolve()}")
 
-if __name__ == "__main__":
-    
-    # ===================== 初始化 =====================
-    pythoncom.CoInitialize()
-    # 【只打开一次】
-    cs = win32com.client.Dispatch("CarSim.Application")
-    time.sleep(2)  # 等待CarSim完全启动
-    print("✅ CarSim 已启动，全程不关闭，可反复运行")
-
+def get_csv_input(start=1):
     # ===================== 1. 读取CSV参数 =====================
     SRC_ROOT = Path(__file__).parent
     CSV_PATH = SRC_ROOT / "stli" / "saltellisamples.csv"
@@ -99,8 +91,24 @@ if __name__ == "__main__":
         raise ValueError(f"CSV列数错误！要求6列，实际{df.shape[1]}列")
     if df.isna().any().any():
         raise ValueError("CSV中包含非数字内容，转换失败，请检查数据")
-    all_param_rows = df.values.tolist()[412:]
+    all_param_rows = df.values.tolist()[start:]
     print(f"✅ 共读取到 {len(all_param_rows)} 组仿真参数，开始遍历运行...")
+    return all_param_rows
+
+if __name__ == "__main__":
+
+    # ===================== 初始化 =====================
+    pythoncom.CoInitialize()
+    # 【只打开一次】
+    cs = win32com.client.Dispatch("CarSim.Application")
+    time.sleep(2)  # 等待CarSim完全启动
+    print("✅ CarSim 已启动，全程不关闭，重复运行至采样结束")
+
+    
+    # ===================== 工况切换模块 =====================
+    
+
+    all_param_rows = get_csv_input()
 
     # ===================== 2. 遍历每一组参数跑仿真 =====================
     for param_idx, param_row_str in enumerate(all_param_rows, 1):
@@ -119,7 +127,6 @@ if __name__ == "__main__":
         print(f"\n===== 第{param_idx}/{len(all_param_rows)}组仿真 =====")
         print(f"当前参数：{param_row_num}")
 
-        v = 80
         fk = param1
         rk = param2
         fc = param3
@@ -132,7 +139,7 @@ if __name__ == "__main__":
         run_sim()
 
         # 另存csv 按照参数变化改名
-        name = f"sin_v_{v}_car_fk_{fk}_rk_{rk}_fc_{i}_rc_{j}_delay_{dt}_T_{id_pf}.csv"
+        name = f"sin_car_fk_{fk}_rk_{rk}_fc_{i}_rc_{j}_delay_{dt}_T_{id_pf}.csv"
         copy_result(name)
 
     
