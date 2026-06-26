@@ -2,8 +2,10 @@ PARSFILE
 #FullDataName Powertrain: Hybrid/Electric System`Electric Motors on Axles Powertrain Assy`
 #RingCtrl0 2
 OPT_HEV 2
-#CheckBox1 1    
-OPT_MOTOR_ON_AXLE 1 
+#CheckBox1 0    
+OPT_MOTOR_ON_AXLE 0 
+IDIFF 1
+ISIDE 1
 N_BATTERY 60
 T_BATTERY_INIT 40
 BATTERY_CHARGE_INIT 0.6
@@ -12,6 +14,9 @@ V_BATTERY_MIN 6
 V_BATTERY_MAX 9
 
 INSTALL_ELECTRIC_DRIVE_MOTORS 
+
+PARSFILE Powertrain\Motor\MMotor_299ad95f-8e21-4744-9fe7-270ae97bc67a.par
+#BlueLink0 Powertrain: Electric Motor Torque`Max. Output 298 N-m` Electric Motor` , Electric Motor`MMotor_299ad95f-8e21-4744-9fe7-270ae97bc67a
 
 PARSFILE Generic\tables\GenTab_b8250707-5e01-482b-831f-ba467902ab80.par
 #BlueLink2 Generic Table`Batt. charged resis. (15 milliohms)` Powertrain (HEV)` , Charging resistance`GenTab_b8250707-5e01-482b-831f-ba467902ab80
@@ -37,7 +42,7 @@ LOG_ENTRY Used Dataset: Powertrain: Hybrid/Electric System; Electric Motors on A
 #DataSet : Electric Motors on Axles Powertrain Assy
 #Category: 
 #FileID  : HEV_d85b4cba-5206-4048-9418-d11f80dfd1d3
-#Modified: 01-20-2022 15:37:38
+#Modified: 06-26-2026 11:21:43
 #Product : CarSim 2024.1
 #DataVer : 2024.1
 #VehCode HEV

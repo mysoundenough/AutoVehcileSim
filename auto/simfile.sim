@@ -14,7 +14,7 @@ LOGFILE $(OUTPUT_FILE_PREFIX)$_log.txt
 ERDFILE $(OUTPUT_FILE_PREFIX)$.csv
 PROGDIR C:\Program Files (x86)\CarSim2024.1_Prog\
 DATADIR C:\workspace\AutoVehcileSim\auto\
-GUI_REFRESH_V CarSim_RefreshEvent_9096
+GUI_REFRESH_V CarSim_RefreshEvent_13736
 PRODUCT_ID CarSim
 PRODUCT_VER 2024.1
 VEHICLE_CODE i_s
@@ -22,5 +22,5 @@ EXT_MODEL_STEP 0.00050000
 PORTS_IMP 0
 PORTS_EXP 0
 
-DLLFILE C:\Program Files (x86)\CarSim2024.1_Prog\Programs\solvers\carsim_32.dll
+DLLFILE C:\Program Files (x86)\CarSim2024.1_Prog\Programs\solvers\carsim_64.dll
 END

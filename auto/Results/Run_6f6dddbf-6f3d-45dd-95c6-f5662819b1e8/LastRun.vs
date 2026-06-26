@@ -5,7 +5,7 @@
     "Input File" : "Results\\Run_6f6dddbf-6f3d-45dd-95c6-f5662819b1e8\\LastRun.csv",
     "Model" : "Vehicle Configuration: I_S",
     "Product" : "CarSim 2024.1",
-    "Timestamp" : "19:41 on June 16, 2026",
+    "Timestamp" : "11:21 on June 26, 2026",
     "Title" : "On-Center Steer Test, D-Class Sedan <Steering Tests>",
     "Version" : 2,
     "XLabel" : "Time",
@@ -370,31 +370,10 @@
         "Units" : "deg/s",
         "Version" : 2
       }, {
-        "Name Aliases" : [ "AV_Mt_D1_L", "AV_MtD1L" ],
+        "Name Aliases" : [ "AV_Motor" ],
         "Generic Name" : "Driveline speed",
-        "Long Name" : "Electric motor spin on left wheel of front drive axle",
-        "Rigid Body" : "Electric motor, D1, left wheel",
-        "Units" : "rpm",
-        "Version" : 2
-      }, {
-        "Name Aliases" : [ "AV_Mt_D1_R", "AV_MtD1R" ],
-        "Generic Name" : "Driveline speed",
-        "Long Name" : "Electric motor spin on right wheel of front drive axle",
-        "Rigid Body" : "Electric motor, D1, right wheel",
-        "Units" : "rpm",
-        "Version" : 2
-      }, {
-        "Name Aliases" : [ "AV_Mt_D2_L", "AV_MtD2L" ],
-        "Generic Name" : "Driveline speed",
-        "Long Name" : "Electric motor spin on left wheel of rear drive axle",
-        "Rigid Body" : "Electric motor, D2, left wheel",
-        "Units" : "rpm",
-        "Version" : 2
-      }, {
-        "Name Aliases" : [ "AV_Mt_D2_R", "AV_MtD2R" ],
-        "Generic Name" : "Driveline speed",
-        "Long Name" : "Electric motor spin on right wheel of rear drive axle",
-        "Rigid Body" : "Electric motor, D2, right wheel",
+        "Long Name" : "Electric motor ring gear spin",
+        "Rigid Body" : "Electric motor (ring gear)",
         "Units" : "rpm",
         "Version" : 2
       }, {
@@ -1077,31 +1056,10 @@
         "Units" : "-",
         "Version" : 2
       }, {
-        "Name Aliases" : [ "EffMt_D1_L", "EffMtD1L" ],
+        "Name Aliases" : [ "EffMotor" ],
         "Generic Name" : "Dimensionless ratio",
-        "Long Name" : "Electric motor efficiency on left wheel of front drive axle",
-        "Rigid Body" : "Electric motor, D1, left wheel",
-        "Units" : "-",
-        "Version" : 2
-      }, {
-        "Name Aliases" : [ "EffMt_D1_R", "EffMtD1R" ],
-        "Generic Name" : "Dimensionless ratio",
-        "Long Name" : "Electric motor efficiency on right wheel of front drive axle",
-        "Rigid Body" : "Electric motor, D1, right wheel",
-        "Units" : "-",
-        "Version" : 2
-      }, {
-        "Name Aliases" : [ "EffMt_D2_L", "EffMtD2L" ],
-        "Generic Name" : "Dimensionless ratio",
-        "Long Name" : "Electric motor efficiency on left wheel of rear drive axle",
-        "Rigid Body" : "Electric motor, D2, left wheel",
-        "Units" : "-",
-        "Version" : 2
-      }, {
-        "Name Aliases" : [ "EffMt_D2_R", "EffMtD2R" ],
-        "Generic Name" : "Dimensionless ratio",
-        "Long Name" : "Electric motor efficiency on right wheel of rear drive axle",
-        "Rigid Body" : "Electric motor, D2, right wheel",
+        "Long Name" : "Electric motor efficiency",
+        "Rigid Body" : "Motor efficiency",
         "Units" : "-",
         "Version" : 2
       }, {
@@ -2694,59 +2652,17 @@
         "Units" : "N-m",
         "Version" : 2
       }, {
-        "Name Aliases" : [ "M_MtC_D1_L", "M_MtCD1L" ],
+        "Name Aliases" : [ "M_MotCmd" ],
         "Generic Name" : "Torque",
-        "Long Name" : "Electric motor torque command on left wheel of front drive axle",
-        "Rigid Body" : "Electric motor command, D1, left wheel",
+        "Long Name" : "Electric motor torque command",
+        "Rigid Body" : "Electric motor command",
         "Units" : "N-m",
         "Version" : 2
       }, {
-        "Name Aliases" : [ "M_MtC_D1_R", "M_MtCD1R" ],
+        "Name Aliases" : [ "M_Motor" ],
         "Generic Name" : "Torque",
-        "Long Name" : "Electric motor torque command on right wheel of front drive axle",
-        "Rigid Body" : "Electric motor command, D1, right wheel",
-        "Units" : "N-m",
-        "Version" : 2
-      }, {
-        "Name Aliases" : [ "M_MtC_D2_L", "M_MtCD2L" ],
-        "Generic Name" : "Torque",
-        "Long Name" : "Electric motor torque command on left wheel of rear drive axle",
-        "Rigid Body" : "Electric motor command, D2, left wheel",
-        "Units" : "N-m",
-        "Version" : 2
-      }, {
-        "Name Aliases" : [ "M_MtC_D2_R", "M_MtCD2R" ],
-        "Generic Name" : "Torque",
-        "Long Name" : "Electric motor torque command on right wheel of rear drive axle",
-        "Rigid Body" : "Electric motor command, D2, right wheel",
-        "Units" : "N-m",
-        "Version" : 2
-      }, {
-        "Name Aliases" : [ "M_Mtr_D1_L", "M_MtrD1L" ],
-        "Generic Name" : "Torque",
-        "Long Name" : "Electric motor output torque on left wheel of front drive axle",
-        "Rigid Body" : "Electric motor, D1, left wheel",
-        "Units" : "N-m",
-        "Version" : 2
-      }, {
-        "Name Aliases" : [ "M_Mtr_D1_R", "M_MtrD1R" ],
-        "Generic Name" : "Torque",
-        "Long Name" : "Electric motor output torque on right wheel of front drive axle",
-        "Rigid Body" : "Electric motor, D1, right wheel",
-        "Units" : "N-m",
-        "Version" : 2
-      }, {
-        "Name Aliases" : [ "M_Mtr_D2_L", "M_MtrD2L" ],
-        "Generic Name" : "Torque",
-        "Long Name" : "Electric motor output torque on left wheel of rear drive axle",
-        "Rigid Body" : "Electric motor, D2, left wheel",
-        "Units" : "N-m",
-        "Version" : 2
-      }, {
-        "Name Aliases" : [ "M_Mtr_D2_R", "M_MtrD2R" ],
-        "Generic Name" : "Torque",
-        "Long Name" : "Electric motor output torque on right wheel of rear drive axle",
-        "Rigid Body" : "Electric motor, D2, right wheel",
+        "Long Name" : "Electric motor output torque",
+        "Rigid Body" : "Electric motor",
         "Units" : "N-m",
         "Version" : 2
       }, {
@@ -3065,34 +2981,6 @@
         "Units" : "deg",
         "Version" : 2
       }, {
-        "Name Aliases" : [ "PwMtC_D1_L", "PwMtCD1L" ],
-        "Generic Name" : "Power",
-        "Long Name" : "Electric motor power command on left wheel of front drive axle",
-        "Rigid Body" : "Electric motor command, D1, left wheel",
-        "Units" : "kW",
-        "Version" : 2
-      }, {
-        "Name Aliases" : [ "PwMtC_D1_R", "PwMtCD1R" ],
-        "Generic Name" : "Power",
-        "Long Name" : "Electric motor power command on right wheel of front drive axle",
-        "Rigid Body" : "Electric motor command, D1, right wheel",
-        "Units" : "kW",
-        "Version" : 2
-      }, {
-        "Name Aliases" : [ "PwMtC_D2_L", "PwMtCD2L" ],
-        "Generic Name" : "Power",
-        "Long Name" : "Electric motor power command on left wheel of rear drive axle",
-        "Rigid Body" : "Electric motor command, D2, left wheel",
-        "Units" : "kW",
-        "Version" : 2
-      }, {
-        "Name Aliases" : [ "PwMtC_D2_R", "PwMtCD2R" ],
-        "Generic Name" : "Power",
-        "Long Name" : "Electric motor power command on right wheel of rear drive axle",
-        "Rigid Body" : "Electric motor command, D2, right wheel",
-        "Units" : "kW",
-        "Version" : 2
-      }, {
         "Name Aliases" : [ "PwrBtrCh" ],
         "Generic Name" : "Power",
         "Long Name" : "Battery charged power limit",
@@ -3142,31 +3030,17 @@
         "Units" : "kW",
         "Version" : 2
       }, {
-        "Name Aliases" : [ "PwrMt_D1_L", "PwrMtD1L" ],
+        "Name Aliases" : [ "PwrMotDm" ],
         "Generic Name" : "Power",
-        "Long Name" : "Electric motor output power on left wheel of front drive axle",
-        "Rigid Body" : "Electric motor, D1, left wheel",
+        "Long Name" : "Electric motor power demand",
+        "Rigid Body" : "Electric motor demand",
         "Units" : "kW",
         "Version" : 2
       }, {
-        "Name Aliases" : [ "PwrMt_D1_R", "PwrMtD1R" ],
+        "Name Aliases" : [ "PwrMotor" ],
         "Generic Name" : "Power",
-        "Long Name" : "Electric motor output power on right wheel of front drive axle",
-        "Rigid Body" : "Electric motor, D1, right wheel",
-        "Units" : "kW",
-        "Version" : 2
-      }, {
-        "Name Aliases" : [ "PwrMt_D2_L", "PwrMtD2L" ],
-        "Generic Name" : "Power",
-        "Long Name" : "Electric motor output power on left wheel of rear drive axle",
-        "Rigid Body" : "Electric motor, D2, left wheel",
-        "Units" : "kW",
-        "Version" : 2
-      }, {
-        "Name Aliases" : [ "PwrMt_D2_R", "PwrMtD2R" ],
-        "Generic Name" : "Power",
-        "Long Name" : "Electric motor output power on right wheel of rear drive axle",
-        "Rigid Body" : "Electric motor, D2, right wheel",
+        "Long Name" : "Electric motor output power",
+        "Rigid Body" : "Electric motor",
         "Units" : "kW",
         "Version" : 2
       }, {

@@ -1,4 +1,4 @@
-Run made by CarSim 2024.1 at 19:41 on June 16, 2026.
+Run made by CarSim 2024.1 at 11:21 on June 26, 2026.
 Revision 222209, March 18, 2024
 Started with simfile: simfile.sim
 
@@ -93,6 +93,8 @@ Used Dataset: Aerodynamics: Mz (Yaw Moment) Coef. vs. Aero Slip; { Spline Interp
 Used Dataset: Aerodynamics: Basic; { D-Class } D-Class, SUV Aero
 Used Dataset: Powertrain: Fuel Consumption Rate; 300 kW Gasoline Engine
 Used Dataset: Powertrain: Engine; { 300 kW Engines } 300 kW Engine
+Used Dataset: Generic Table; { Powertrain (HEV) } Motor efficiency at wheel
+Used Dataset: Powertrain: Electric Motor Torque; { Electric Motor } Max. Output 298 N-m
 Used Dataset: Generic Table; { Powertrain (HEV) } Batt. charged resis. (15 milliohms)
 Used Dataset: Generic Table; { Powertrain (HEV) } Batt. discharged resis. (18 milliohms)
 Used Dataset: Generic Table; { Powertrain (HEV) } Battery Open-Circuit Voltage
@@ -166,7 +168,9 @@ Used Dataset: Procedures; { Driver Controls } On-Center Steer Test
  On-Center Steer Test, D-Class Sedan <Steering Tests>
 Used Dataset: CarSim Run Control; { Steering Tests } On-Center Steer Test, D-Class Sedan
 
-Time to read input = 0.363219
+Time to read input = 0.369352
+Function MMOTOR_MAX_TABLE(1,1) extrapolated (out of range HIGH) for X = 2388.09 rpm at T = 0
+Function R_EFF_MOTOR_CARPET(1,1) extrapolated (out of range HIGH) for X = 2388.09 rpm at T = 0
 Function VOC_BATTERY_CARPET extrapolated (out of range HIGH) for XCOL = 40 C at T = 0
 Function F_REB_STOP_TABLE(1,1) extrapolated (out of range HIGH) for X = -0.783533 mm at T = 0
 Function F_JNC_STOP_TABLE(1,1) extrapolated (out of range LOW) for X = -0.783533 mm at T = 0
@@ -178,9 +182,9 @@ Function F_JNC_STOP_TABLE(2,2) extrapolated (out of range LOW) for X = 0.335588 
 Function F_REB_STOP_TABLE(2,2) extrapolated (out of range HIGH) for X = 0.335588 mm at T = 0
 
 Run started: CSV output file = Results\Run_6f6dddbf-6f3d-45dd-95c6-f5662819b1e8\LastRun.csv
-Function M_BOOST_G_TABLE extrapolated (out of range LOW) for X = -2.70015 N-m at T = 6.3495
+Function M_BOOST_G_TABLE extrapolated (out of range LOW) for X = -2.70029 N-m at T = 6.56
 
-Run stopped at t = 50.9715. External control (manual or external model)
+Run stopped at t = 100. Stop time reached.
 
-Computational time ratio: RTIME = 0.321325 (real time)/(simulation time)
+Computational time ratio: RTIME = 0.137587 (real time)/(simulation time)
 
