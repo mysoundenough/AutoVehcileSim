@@ -14,7 +14,7 @@ LOGFILE $(OUTPUT_FILE_PREFIX)$_log.txt
 ERDFILE $(OUTPUT_FILE_PREFIX)$.csv
 PROGDIR C:\Program Files (x86)\CarSim2024.1_Prog\
 DATADIR C:\workspace\AutoVehcileSim\auto\
-GUI_REFRESH_V CarSim_RefreshEvent_14268
+GUI_REFRESH_V CarSim_RefreshEvent_9096
 PRODUCT_ID CarSim
 PRODUCT_VER 2024.1
 VEHICLE_CODE i_s

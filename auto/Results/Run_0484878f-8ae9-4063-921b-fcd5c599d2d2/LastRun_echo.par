@@ -8,8 +8,8 @@ DATASET_TITLE ISO Steady-State Circle, R = 30
 CATEGORY Handling and Stability Tests
 TITLE ISO Steady-State Circle, R = 30 <Handling and Stability Tests>
 
-! Echo: Results\Run_0484878f-8ae9-4063-921b-fcd5c599d2d2\Run_echo.par
-! This run was made 14:09 on March 25, 2024.
+! Echo: Results\Run_0484878f-8ae9-4063-921b-fcd5c599d2d2\LastRun_echo.par
+! This run was made 11:21 on June 16, 2026.
 
 !------------------------------------------------------------------------------------
 ! SYSTEM PARAMETERS (SIMULATION OPTIONS)
@@ -718,17 +718,17 @@ OPT_PATH_START(1)   0 ! Set initial heading and X-Y coordinates of the path? 0 -
                       ! (legacy, using table data), 1 -> yes
 OPT_PATH_LOOP(1)    1 ! Is this path looped? 0 -> no, 1 -> yes
 SPATH_START(1)      0 ; m ! Station at the start of this path
-! SPATH_LAP(1) 188.4955592 ; m ! CALC -- Lap distance for this path
+! SPATH_LAP(1) 157.0796327 ; m ! CALC -- Lap distance for this path
 ! HEADING_START(1)  0 ; deg ! Heading at the start of this path
 ! X_PATH_START(1)   0 ; m ! Global X coordinate at the start of this path
 ! Y_PATH_START(1)   0 ; m ! Global Y coordinate at the start of this path
 
 NSEGMENTS(1)        1 ! Number of segments in this path
 SEGMENT_TYPE(1,1)   3 ! 0 -> straight, 1 -> table, 2 -> rho, 3 -> radius, 4 -> cloth
-SEGMENT_RADIUS(1,1) 30 ; m ! Radius of arc; + -> left turn
+SEGMENT_RADIUS(1,1) 25 ; m ! Radius of arc; + -> left turn
 SEGMENT_ARC(1,1)  360 ; deg ! Central angle of arc
-! S_SEGMENT_END(1,1) 188.4955592 ; m ! CALC -- Station at end of this segment
-! X_SEGMENT_END(1,1) -7.347880795e-15 ; m ! CALC -- X coordinate at end of segment
+! S_SEGMENT_END(1,1) 157.0796327 ; m ! CALC -- Station at end of this segment
+! X_SEGMENT_END(1,1) -6.123233996e-15 ; m ! CALC -- X coordinate at end of segment
 ! Y_SEGMENT_END(1,1) 0 ; m ! CALC -- Y coordinate at end of segment
 ! HEADING_END(1,1) -1.40334186e-14 ; deg ! CALC -- Heading at end of segment
 
@@ -1666,19 +1666,19 @@ THROTTLE_SCALE_DOWNSHIFT(5) 1 ! [D] Divided into (throttle position -
 
 ! Col 1 = compression speed (mm/s), col 2 = damper force (N)
 FD_TABLE(1,1) SPLINE ! axle 1, left side
- -1410, -5008
- -720, -3436
- -390, -2324
- -210, -1792
- -90, -1008
- -20, -228
+ -1030, -7100
+ -520, -5652
+ -390, -5283
+ -260, -4822
+ -130, -3488
+ -50, -836
  0, 0
- 20, 228
- 90, 596
- 200, 784
- 390, 1100
- 760, 1796
- 1160, 2560
+ 50, 405
+ 130, 977
+ 260, 1697
+ 390, 2157
+ 520, 2584
+ 1030, 3723
 ENDTABLE
 FD_GAIN(1,1)        1 ! [D] Multiplied with calculated value to get damper force
 FD_OFFSET(1,1)      0 ; N ! [D] Added (after gain) to get damper force
@@ -1687,19 +1687,19 @@ CMP_R_SCALE_FD(1,1) 1 ! [D] Divided into (compression speed - CMP_R_START_FD)
 
 ! Col 1 = compression speed (mm/s), col 2 = damper force (N)
 FD_TABLE(1,2) SPLINE ! axle 1, right side
- -1410, -5008
- -720, -3436
- -390, -2324
- -210, -1792
- -90, -1008
- -20, -228
+ -1030, -7100
+ -520, -5652
+ -390, -5283
+ -260, -4822
+ -130, -3488
+ -50, -836
  0, 0
- 20, 228
- 90, 596
- 200, 784
- 390, 1100
- 760, 1796
- 1160, 2560
+ 50, 405
+ 130, 977
+ 260, 1697
+ 390, 2157
+ 520, 2584
+ 1030, 3723
 ENDTABLE
 FD_GAIN(1,2)        1 ! [D] Multiplied with calculated value to get damper force
 FD_OFFSET(1,2)      0 ; N ! [D] Added (after gain) to get damper force
@@ -1708,19 +1708,19 @@ CMP_R_SCALE_FD(1,2) 1 ! [D] Divided into (compression speed - CMP_R_START_FD)
 
 ! Col 1 = compression speed (mm/s), col 2 = damper force (N)
 FD_TABLE(2,1) SPLINE ! axle 2, left side
- -1410, -5008
- -720, -3436
- -390, -2324
- -210, -1792
- -90, -1008
- -20, -228
+ -1030, -7100
+ -520, -5652
+ -390, -5283
+ -260, -4822
+ -130, -3488
+ -50, -836
  0, 0
- 20, 228
- 90, 596
- 200, 784
- 390, 1100
- 760, 1796
- 1160, 2560
+ 50, 405
+ 130, 977
+ 260, 1697
+ 390, 2157
+ 520, 2584
+ 1030, 3723
 ENDTABLE
 FD_GAIN(2,1)        1 ! [D] Multiplied with calculated value to get damper force
 FD_OFFSET(2,1)      0 ; N ! [D] Added (after gain) to get damper force
@@ -1729,19 +1729,19 @@ CMP_R_SCALE_FD(2,1) 1 ! [D] Divided into (compression speed - CMP_R_START_FD)
 
 ! Col 1 = compression speed (mm/s), col 2 = damper force (N)
 FD_TABLE(2,2) SPLINE ! axle 2, right side
- -1410, -5008
- -720, -3436
- -390, -2324
- -210, -1792
- -90, -1008
- -20, -228
+ -1030, -7100
+ -520, -5652
+ -390, -5283
+ -260, -4822
+ -130, -3488
+ -50, -836
  0, 0
- 20, 228
- 90, 596
- 200, 784
- 390, 1100
- 760, 1796
- 1160, 2560
+ 50, 405
+ 130, 977
+ 260, 1697
+ 390, 2157
+ 520, 2584
+ 1030, 3723
 ENDTABLE
 FD_GAIN(2,2)        1 ! [D] Multiplied with calculated value to get damper force
 FD_OFFSET(2,2)      0 ; N ! [D] Added (after gain) to get damper force
@@ -1878,7 +1878,7 @@ FUEL_RATE_THROTTLE_CONSTANT 1 ; - ! [D] Fuel rate scaling due to throttle positi
 
 ! Col 1 = aerodynamic slip angle (deg), col 2 = CFX (-)
 FX_AERO_SHAPING_TABLE SPLINE_FLAT ! spline interpolation, flat-line extrapolation
- -180, -0.3
+ -180, -0.45
  -160, -0.45
  -90, 0
  -20, 0.325
@@ -1886,7 +1886,7 @@ FX_AERO_SHAPING_TABLE SPLINE_FLAT ! spline interpolation, flat-line extrapolatio
  20, 0.325
  90, 0
  160, -0.45
- 180, -0.3
+ 180, -0.45
 ENDTABLE
 FX_AERO_SHAPING_GAIN 1 ! [D] Multiplied with calculated value to get CFX
 FX_AERO_SHAPING_OFFSET 0 ; - ! [D] Added (after gain) to get CFX
@@ -2184,11 +2184,11 @@ FZ_SCALE_FX_TIRE(2,2) 1 ! [D] Divided into (Fz - FZ_START_FX_TIRE)
 ! SLIP_SCALE_FY_AERO and SLIP_START_FY_AERO.
 
 ! Col 1 = aerodynamic slip angle (deg), col 2 = CFY (-)
-FY_AERO_SHAPING_TABLE SPLINE_FLAT ! spline interpolation, flat-line extrapolation
+FY_AERO_SHAPING_TABLE SPLINE ! spline interpolation and extrapolation
  -180, 0
- -90, -2
+ -90, -0.5
  0, 0
- 90, 2
+ 90, 0.5
  180, 0
 ENDTABLE
 FY_AERO_SHAPING_GAIN 1 ! [D] Multiplied with calculated value to get CFY
@@ -3697,7 +3697,7 @@ MX_AUX_FSTATIC_CONSTANT(2) 0 ; N-m ! Auxiliary roll moment component due to stat
 
 ! Col 1 = aerodynamic slip angle (deg), col 2 = CMY (-)
 MY_AERO_SHAPING_TABLE SPLINE_FLAT ! spline interpolation, flat-line extrapolation
- -180, -0.17
+ -180, -0.25
  -160, -0.25
  -90, 0
  -20, 0.17
@@ -3705,7 +3705,7 @@ MY_AERO_SHAPING_TABLE SPLINE_FLAT ! spline interpolation, flat-line extrapolatio
  20, 0.17
  90, 0
  160, -0.25
- 180, -0.17
+ 180, -0.25
 ENDTABLE
 MY_AERO_SHAPING_GAIN 1 ! [D] Multiplied with calculated value to get CMY
 MY_AERO_SHAPING_OFFSET 0 ; - ! [D] Added (after gain) to get CMY
@@ -3777,15 +3777,11 @@ PBK_SCALE_MY_BRAKE(2,2) 1 ! [D] Divided into (wheel cylinder pressure -
 ! SLIP_SCALE_MZ_AERO and SLIP_START_MZ_AERO.
 
 ! Col 1 = aerodynamic slip angle (deg), col 2 = CMZ (-)
-MZ_AERO_SHAPING_TABLE SPLINE_FLAT ! spline interpolation, flat-line extrapolation
+MZ_AERO_SHAPING_TABLE SPLINE ! spline interpolation and extrapolation
  -180, 0
- -135, 0.2
- -75, 0
- -35, -0.2
+ -90, 0.05
  0, 0
- 35, 0.2
- 75, 0
- 135, -0.2
+ 90, -0.05
  180, 0
 ENDTABLE
 MZ_AERO_SHAPING_GAIN 1 ! [D] Multiplied with calculated value to get CMZ
@@ -5498,7 +5494,7 @@ DEFINE_PARAMETER AY_STEP = 0.02; g ; Step in Ay, used to set new Ay targets
 DEFINE_PARAMETER T_WAIT = 7; s ; Time to wait for vehicle to settle
 DEFINE_PARAMETER R = 30; m ;
 
-DEFINE_OUTPUT SteerRel = 21.7931; deg ; Steering wheel rel. to Ackermann 
+DEFINE_OUTPUT SteerRel = 26.1517; deg ; Steering wheel rel. to Ackermann 
 DEFINE_OUTPUT Steer_F = -3.72721e-17; deg ; Ave steer of front road wheels 
 DEFINE_OUTPUT StrF_Rel = -3.72721e-17; deg ; Ave str of F. whls rel. to Ackermann 
 DEFINE_OUTPUT Ay_Targ = 0; g ; Target lateral acceleration 

@@ -1,0 +1,110 @@
+import win32com.client
+
+# 绑定CarSim COM服务
+cs = win32com.client.Dispatch("CarSim.Application")
+
+# 配置目标库：切换仿真案例固定用 Run Control
+target_lib = "Run Control"
+
+# 1. 使用GetNumDatasets 获取库内数据集总数
+count_out = 0  # 提前定义输出变量接收数量
+cs.GetNumDatasets(target_lib, count_out)
+total_case = count_out
+print(f"【{target_lib}】库内总仿真案例数量：{total_case}")
+
+# 2. 循环遍历全部工况，使用GetDataSetInfoByIndex读取信息
+# print("==== 库内所有仿真案例清单 ====")
+# for idx in range(total_case):
+#     # 必须预先定义4个输出空变量，用于接收COM返回内容
+#     ds_id = ""
+#     file_path = ""
+#     cat_name = ""
+#     title_name = ""
+#     # 调用接口：库名，索引，是否完整路径，4个输出变量
+#     cs.GetDataSetInfoByIndex(
+#         target_lib,
+#         idx,
+#         1,          # 1=True 返回完整磁盘路径；0=False相对路径
+#         ds_id,
+#         file_path,
+#         cat_name,
+#         title_name
+#     )
+#     print(f"索引{idx}")
+#     print(f"  分类：{cat_name}")
+#     print(f"  工况名称：{title_name}")
+#     print(f"  数据集路径：{file_path}\n")
+
+# 3. 根据工况名称切换仿真（结合Gotolibrary接口）
+target_title = "DLC 60km/h 双移线"  # 替换你自己的工况名
+target_category = "标准测试工况"
+# 跳转指定Run仿真案例
+cs.Gotolibrary(target_lib, target_title, target_category)
+print(f"已切换至工况：{target_title}")
+
+# # 运行仿真
+# err_flag = 0
+# cs.Run_CheckError(target_lib, target_title, err_flag)
+# if err_flag == 0:
+#     print("仿真执行成功")
+# else:
+#     print("仿真执行报错")
+
+# # 5. 批量切换仿真案例示例（循环加载spec运行）
+# for case_info in test_cases:
+#     print(f"\n==== 开始执行工况：{case_info['case_name']} ====")
+#     # 清空VS杂项指令
+#     cs.MiscYellowInsert("")
+#     # 写入加载工况指令
+#     cmd = f"DEFINE_EVENT T = -1 ; {case_info['spec_full_path']}"
+#     cs.MiscYellowInsert(cmd)
+#     cs.UpdateRunParsfileRT()
+#     # 运行仿真
+#     err = cs.Run_CheckError()
+#     if err == 0:
+#         print(f"{case_info['case_name']} 仿真完成")
+#     else:
+#         print(f"{case_info['case_name']} 仿真出错，错误码：{err}")
+
+
+# import win32com.client
+
+# # 绑定CarSim COM服务
+# cs = win32com.client.Dispatch("CarSim.Application")
+# print("VSCOM连接成功")
+
+# # ========== 1. 获取当前激活数据集（该接口无参数兼容问题） ==========
+# lib_path = ""
+# ds_name = ""
+# category = ""
+# # GetCurrentLibInfo 支持Python传空字符串接收输出，不会报错
+# cs.GetCurrentLibInfo(lib_path, ds_name, category)
+# print(f"当前加载Dataset：{ds_name}")
+# print(f"数据集分类：{category}")
+# print(f"库路径：{lib_path}")
+
+# # ========== 2 切换仿真工况（唯一稳定方案：加载spec工况文件） ==========
+# def load_test_spec(cs, spec_abs_path):
+#     """
+#     写入VS指令，仿真初始化自动加载指定工况
+#     :param spec_abs_path: 导出spec文件绝对路径（英文无空格）
+#     """
+#     # 清空杂项VS指令框
+#     cs.MiscYellowInsert("")
+#     # T=-1：仿真启动瞬间加载该工况，永久生效
+#     cmd = f"DEFINE_EVENT T = -1 ; {spec_abs_path}"
+#     cs.MiscYellowInsert(cmd)
+#     print(f"写入工况加载指令：{cmd}")
+#     # 刷新Run控制配置文件
+#     cs.UpdateRunParsfileRT()
+
+# # 填入你提前导出的spec完整路径
+# spec_file = r"D:\VehicleSim\TestCases\DLC_60kmh.spec"
+# load_test_spec(cs, spec_file)
+
+# # ========== 3 启动仿真 ==========
+# err_code = cs.Run_CheckError()
+# if err_code == 0:
+#     print("仿真正常执行完成")
+# else:
+#     print(f"仿真失败，错误码：{err_code}")

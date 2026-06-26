@@ -37,8 +37,8 @@ PARSFILE Animator\Cameras\Camera_36b2ee7b-54ec-4c39-9781-51b289ab39c0.par
 #RingCtrl3 0
 #RingCtrl6 0
 #RingCtrl7 4
-*RUN_COLOR 0.878 0.878 0.878
-SET_RUN_COLOR 0.878 0.878 0.878
+*RUN_COLOR 0.875 0.875 0.882
+SET_RUN_COLOR 0.875 0.875 0.882
 #RingCtrl4 off
 RT_WINDOW_CLOSE off
 #RingCtrl5 0
@@ -76,7 +76,7 @@ LOG_ENTRY Used Dataset: CarSim Run Control; { Steering Tests } On-Center Steer T
 #DataSet : On-Center Steer Test, D-Class Sedan
 #Category: Steering Tests
 #FileID  : Run_6f6dddbf-6f3d-45dd-95c6-f5662819b1e8
-#Modified: 06-05-2026 13:53:29
+#Modified: 06-16-2026 09:46:57
 #Product : CarSim 2024.1
 #DataVer : 2024.1
 #VehCode Run

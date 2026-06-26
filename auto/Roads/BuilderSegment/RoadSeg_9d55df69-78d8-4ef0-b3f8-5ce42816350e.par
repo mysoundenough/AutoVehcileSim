@@ -33,13 +33,13 @@ NSEGMENTS 1
 ! 13: (Label) Specify the length of a clothoid segment with meters.
 #MIXTABLE0
 #NUMROWS 1
-#radius, , 50, 30, 360, deg, 0.01, 90, deg, 400
+#radius, , 50, 25, 360, deg, 0.01, 90, deg, 400
 #ENDTABLE
 
 ! Segment 1, radius
 IPATHSEG 1
 SEGMENT_TYPE 3
-SEGMENT_RADIUS 30.000000
+SEGMENT_RADIUS 25.000000
 SEGMENT_ARC 360.000000
 
 Title 30 m Radius <Circles>
@@ -49,7 +49,7 @@ LOG_ENTRY Used Dataset: Path: Segment Builder; { Circles } 30 m Radius
 #DataSet : 30 m Radius
 #Category: Circles
 #FileID  : RoadSeg_9d55df69-78d8-4ef0-b3f8-5ce42816350e
-#Modified: 05-28-2021 15:00:50
+#Modified: 06-16-2026 10:56:42
 #Product : CarSim 2024.1
 #DataVer : 2024.1
 #VehCode Path Segment Builder

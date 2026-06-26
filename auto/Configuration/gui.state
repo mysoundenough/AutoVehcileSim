@@ -6,7 +6,7 @@ LastDS Polygonal Shape Coordinates`poly_c4ace549-7050-429c-bcbf-2949dab0f1f8
 LastDS Sensor Elevation Sensitivity`SenElev_42135b79-9ed7-4eb0-89a8-d6585aac1027
 LastDS Sensor Range and Bearing Sensitivity`Range_8c144d30-f6d3-459d-9b44-b96ec54390c5
 LastDS Sensor Reflectiveness Map`TypeMap_b58c1d44-8f9a-4292-96d7-96dbb735d9f7
-LastDS Aerodynamics: Basic`Aero_a610d4fd-9cf5-4ffa-90af-33c3c3fe903c
+LastDS Aerodynamics: Basic`Aero_b684a7c8-b9a3-41b1-a1bc-6c8a48809c81
 LastDS Aerodynamics: Pitch, Bounce, Yaw`Aero2_49245b29-5b72-469f-aa10-f5799a254e38
 LastDS Aerodynamics: Fx (Drag) Coef. vs. Aero Slip`AirCFx_67b7c1a5-2eb8-4548-b585-873fbb86b674
 LastDS Aerodynamics: Fx (Drag) Coef. vs. Bounce and Pitch`AirCFx2_200424bb-befa-4980-92f5-af1e811f0c48
@@ -24,8 +24,8 @@ LastDS Animator: Camera Setup`Camera_aad9f5dd-7a61-4319-88b3-b90a1214f577
 LastDS Animator: Group`Group_4ccae742-4649-427a-8871-7b3629a730a2
 LastDS Animator: Group (More)`GroupM_a825d324-20b3-4406-bdc5-ace3825a38aa
 LastDS Animator: Reference Frame`Frame_8761c9b6-c784-4d2d-b8bc-72683578e773
-LastDS Animator: Shape File Link`Shape_252e3627-824b-46c7-8ec4-f437c8cdcf34
-LastDS Animator: Shape Assembly`ShpGrp_d5b55623-3c6f-43ea-b7a0-880a3303d1d2
+LastDS Animator: Shape File Link`Shape_36396227-6877-46a9-a8f8-e7015d7eefdc
+LastDS Animator: Shape Assembly`ShpGrp_623a2bd3-4639-491a-b014-525f80a38e03
 LastDS Animator: Sound Modifier`SndMod_83ec05bc-29ab-428d-a5ae-1e1a7ffa16f2
 LastDS Animator: Sound Sample`SndSmp_4d7e778c-2125-4ad5-be45-0168bdc47528
 LastDS Animator: HUD`HUD_8fe88881-13a6-41eb-9dd0-3ae55d233a64
@@ -51,7 +51,7 @@ LastDS Control: Shifting (Closed Loop)`GearCL_3f60e7d2-b8c4-4d68-a9c4-d897bb3e2a
 LastDS Control: Shifting (Open Loop)`GearOL_0c1bc042-7f28-45be-9a4c-6317fbe6ee6f
 LastDS Control: Speed (Closed Loop) Using Path Preview`SpdPath_108bdc4f-b575-4a8e-8b6d-d06501ea7043
 LastDS Control: Speed (Closed Loop) Using Target Speed`SpdTime_d0416e8a-956a-459b-918e-0dc16c204214
-LastDS Control: Steering by the Closed-loop Driver Model`StrDM_8597394d-a68f-46f7-992e-beb4bd86bc2e
+LastDS Control: Steering by the Closed-loop Driver Model`StrDM_a8694f5a-e834-4010-bab0-44ffb6bfa609
 LastDS Control: Steering Preview Time for the Driver Model`Tprev_bb983917-6a82-49cb-bff9-9b55d3ce762f
 LastDS Control: Steering (Open Loop)`StrSW_d02d6236-3489-4162-b8b9-953cdc586f4c
 LastDS Control: Steering Torque (Open Loop)`StrTrq_f3c7a142-84e8-4bf8-ac82-6dc3c250e7d2
@@ -81,8 +81,8 @@ LastDS Models: Export FMU/FMI`Fmu_030e4833-1a28-4a04-be00-a1e00d16dbb5
 LastDS Models: LabVIEW for Windows (VI)`LabVIEW_c73dc6ea-d5bf-4129-879d-6f5df9d34ec8
 LastDS Models: Self-Contained Solvers`Extern_58ae5add-6e3a-4ad8-98d3-b3f1902fef08
 LastDS Models: Transfer to Local Windows Directory`Local_a46aa896-fe7e-4355-9adc-1b4ea56df6a3
-LastDS Road: 3D Surface (All Properties)`Road_c76ab0d9-60d9-4781-bd32-84e57bf8316e
-LastDS Path: Segment Builder`RoadSeg_299f5dd8-31b0-44f2-9251-eaaf215df33c
+LastDS Road: 3D Surface (All Properties)`Road_0faf324d-1ca1-41ca-9752-14fc08f50f0b
+LastDS Path: Segment Builder`RoadSeg_9d55df69-78d8-4ef0-b3f8-5ce42816350e
 LastDS Path: X-Y Coordinates`PathXY_480c3b1d-b257-4782-be49-215f4b86419d
 LastDS Road: Boundaries`RdBnd_a8b2f48f-57e3-4eba-86dd-f7739efdcad6
 LastDS Path: X-Y Coordinates for Segment`XYtab_4c008d63-f59f-4bca-9da5-3a3f08d91872
@@ -107,9 +107,9 @@ LastDS Payload: Box Shape`Box_64188cb3-b456-46e4-bfe5-cae9d12b8e37
 LastDS Payload: Custom`Custom_ef7483ef-4518-47e2-91b5-fb1d518faf07
 LastDS Plot: Format`PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d
 LastDS Plot: Setup`Plot_310b0189-b08d-49fc-a484-ee359eb89744
-LastDS Powertrain: 4-Wheel Drive`4WD_fcbe76ba-5f74-4a6b-a964-67d3d4319066
+LastDS Powertrain: 4-Wheel Drive`4WD_e6cbf4dd-fb94-4478-aba0-d292b92a917e
 LastDS Powertrain: Clutch Torque`TrqCl_07454745-39f2-4228-9c43-cff89325c560
-LastDS Powertrain: Engine`Engine_5fd8cccf-3f87-4967-bf2c-05672393be86
+LastDS Powertrain: Engine`Engine_8040b1ad-5f06-4c6c-a6e6-740997750fc3
 LastDS Powertrain: Front Differential`DiffF_b5941808-7fb1-417e-9a8d-febd063d169b
 LastDS Powertrain: Front Twin-Clutch Differential`TwinF_f30211c3-5038-43fe-a6ca-5e63d05cb98e
 LastDS Powertrain: Front-Wheel Drive`FWD_36cc8002-d36c-40a4-b3a0-2a882cb970e2
@@ -121,7 +121,7 @@ LastDS Powertrain: Transfer Case`XC_934b2147-0838-4ed2-8068-8304af5a0278
 LastDS Powertrain: Transmission (18 Gears or CVT)`Trans18_55b3d8ee-e987-4803-8615-8a5b5c910733
 LastDS Powertrain: Transmission (External, Deprecated)`TransExt_af12a1fb-2189-4c80-aaa1-dca12ff3e927
 LastDS Powertrain: Hybrid/Electric System`HEV_3a33a31c-d1cf-4ec7-b62c-108429a0b5f7
-LastDS Powertrain: Hybrid/Electric Power Management Control`PMC_a65582f0-a085-4bc8-9606-1a4f75f80775
+LastDS Powertrain: Hybrid/Electric Power Management Control`PMC_6ae01742-2231-4526-8745-21786d28d0c8
 LastDS Powertrain: Electric Motor Torque`MMotor_9bd3c49a-ecdf-4f55-b1c2-c4a6b156e240
 LastDS Powertrain: AT Clutch Schedule`ClSched_6b7b439a-f0ca-4048-937e-7705d820021d
 LastDS Powertrain: Clutch with Viscous Differential`ClVisc_18c9e10f-c1a2-436f-91fa-7ac2e9f945c6
@@ -133,7 +133,7 @@ LastDS Powertrain: Limited Slip Differential for Center Case`LSD_X_29db6699-1dca
 LastDS Powertrain: Shift Schedule`Shift_b8faaefc-ee63-464f-8c2f-6bc9d4bda3b1
 LastDS Powertrain: Yaw Control Differential`DiffYC_93aaf9b6-8264-4a56-adda-41b1d3293795
 LastDS Events`Events_b5af09b5-d8ad-4e81-ae24-eebce691780e
-LastDS Procedures`Proc_52b56441-9905-47a2-b74f-f6fd14f87b6d
+LastDS Procedures`Proc_a0851ee1-9bdf-4e52-9626-6e255ef6ca84
 LastDS Tire Tester`TestTire_c40879d2-b79a-4bdb-a475-2a7fed4b67c0
 LastDS Steering`StrSys2_64ffa9d1-b87b-4da1-94c4-81269337c3d3
 LastDS Steering: Virtual Steering Axis`StrSys3_471f59d3-210b-488c-8991-8fcae5ebd02f
@@ -204,4 +204,4 @@ LastDS Vehicle: Trailer with 3 Axles`Trl_3a_6c189aac-d4f0-4b9f-91b0-e75200b1be75
 LastDS Wind Speed`Wind_6ccad2e5-8eb6-4c82-a840-76bdc3d08bf7
 LastDS Wind Heading`WindDir_00d792b9-c449-4be8-80eb-3282122ed26a
 LastDS Preferences`pref_a9da94e2-90cd-46fc-a780-bb613a55ea92
-LastScreen CarSim Run Control
+LastScreen Vehicle: Sprung Mass (from Whole Vehicle)

@@ -11,11 +11,11 @@ OPT_STOP 0
 SSTART 0
 TSTART 0
 TSTART_WRITE = 0;
-TSTOP 37.2
+TSTOP 100
 SSTOP = SSTART + 1 ;
 OPT_DIRECTION 1
-*SPEED 100
-*TSTOP 37.2
+*SPEED 80
+*TSTOP 100
 *TSTART 0
 *SSTART 0
 *SSTOP 2235
@@ -27,7 +27,7 @@ SPEED_ID_SC = SPEED_TARGET_ID
 SPEED_TARGET_COMBINE ADD
 SPEED_TARGET_S_CONSTANT 0
 set_description SPEED_TARGET_ID Procedure: On-Center Steer Test
-SPEED_TARGET_CONSTANT 100
+SPEED_TARGET_CONSTANT 80
 OPT_SC_ENGINE_BRAKING 0
 PARSFILE Control\Driver\StrDM_a8694f5a-e834-4010-bab0-44ffb6bfa609.par
 #BlueLink27 Control: Steering by the Closed-loop Driver Model`On-Center Steer Test` Vehicle Dynamics Tests` , Steering`StrDM_a8694f5a-e834-4010-bab0-44ffb6bfa609
@@ -97,7 +97,7 @@ LOG_ENTRY Used Dataset: Procedures; { Driver Controls } On-Center Steer Test
 #DataSet : On-Center Steer Test
 #Category: Driver Controls
 #FileID  : Proc_07d9a19f-3ef9-44ff-9e52-f41142cc19c3
-#Modified: 05-28-2021 14:59:18
+#Modified: 06-12-2026 18:02:47
 #Product : CarSim 2024.1
 #DataVer : 2024.1
 #VehCode Procedure

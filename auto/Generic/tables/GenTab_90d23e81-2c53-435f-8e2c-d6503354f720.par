@@ -1,12 +1,27 @@
 PARSFILE
 #FullDataName Generic Table`Driver Demand Power: Full Load 165 kW`Powertrain (HEV)
 #RingCtrl0 LINEAR
-#CheckBox0 0    
+#RingCtrl1 MULTIPLY
+#RingCtrl2 CONSTANT
+#CheckBox0 1    
 
+PWR_DRV_THROTTLE_COMBINE MULTIPLY
 #DiagramOne0
 PWR_DRV_THROTTLE_TABLE LINEAR
 0, 0
-1, 118.19679210969166
+0.05, 30
+0.1, 50
+0.15, 70
+0.2, 80
+0.25, 90
+0.3, 110
+0.4, 130
+0.5, 150
+0.6, 180
+0.7, 210
+0.8, 240
+0.9, 270
+1, 300
 ENDTABLE
 #RadioCtrl0 0    
 #RadioCtrl1 0    
@@ -14,7 +29,8 @@ ENDTABLE
 *KEYWORD PWR_DRV_THROTTLE
 *X_LABEL Throttle pedal position (-)
 *Y_LABEL Driving power (kW)
-*X_LABEL_2 Temperature (C)
+*X_LABEL_2 Vechile speed
+*KEYWORD_2 Vechile speed
 
 
 LOG_ENTRY Used Dataset: Generic Table; { Powertrain (HEV) } Driver Demand Power: Full Load 165 kW
@@ -22,7 +38,7 @@ LOG_ENTRY Used Dataset: Generic Table; { Powertrain (HEV) } Driver Demand Power:
 #DataSet : Driver Demand Power: Full Load 165 kW
 #Category: Powertrain (HEV)
 #FileID  : GenTab_90d23e81-2c53-435f-8e2c-d6503354f720
-#Modified: 05-17-2026 02:32:23
+#Modified: 06-18-2026 15:57:37
 #Product : CarSim 2024.1
 #DataVer : 2024.1
 #VehCode table

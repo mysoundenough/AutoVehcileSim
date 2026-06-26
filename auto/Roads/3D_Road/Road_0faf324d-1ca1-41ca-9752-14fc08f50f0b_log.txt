@@ -1,0 +1,33 @@
+Run made by VS Road Calculator at 10:08 on June 16, 2026.
+Utility to calculate road and path coordinates for visualization
+Started with simfile: Roads\3D_Road\simfile_road
+
+Include PARSFILE "Roads\3D_Road\Road_0faf324d-1ca1-41ca-9752-14fc08f50f0b.par"
+Include PARSFILE "Roads\BuilderSegment\RoadSeg_9d55df69-78d8-4ef0-b3f8-5ce42816350e.par"
+ 30 m Radius <Circles>
+Used Dataset: Path: Segment Builder; { Circles } 30 m Radius
+Include PARSFILE "Roads\Friction\RdMu_76157e0a-7f92-4d03-8249-7715bd43a5ba.par"
+Used Dataset: Road: Friction Map, S-L Grid; { Constant } Constant: 0.9
+Include PARSFILE "Roads\Shapes\RdShape_9d177f95-6fc2-46cf-b88c-334516f75fc9.par"
+Used Dataset: Road: Animator Surface Shapes; { Roads } Looped Road + 100 m Light Grass
+Include PARSFILE "Roads\Boundaries\RdBnd_443e1da0-3328-4cc0-a76d-7a1f7a62fc75.par"
+Used Dataset: Road: Boundaries; { Road Boundary Stop Conditions } Circle Test Boundaries
+Include PARSFILE "Animator\Groups\Group_4ccae742-4649-427a-8871-7b3629a730a2.par"
+Include PARSFILE "Animator\Frames\Frame_8761c9b6-c784-4d2d-b8bc-72683578e773.par"
+Used Dataset: Animator: Reference Frame; { Tracking: Vehicle } Skybox (Vehicle X-Y-Z)
+Include PARSFILE "Animator\STL\Shape_6d5f4980-0cdc-4aa2-841c-f127e1b02f97.par"
+Used Dataset: Animator: Shape File Link; { Environment: Sky Boxes } Partly Cloudy Sky
+Include PARSFILE "Animator\STL\Shape_8747e07e-81f8-4899-bd41-ca6921d43beb.par"
+Used Dataset: Animator: Shape File Link; { Environment: Land Bowls } Light Grass
+Used Dataset: Animator: Group; { Environment Spheres } Partly Cloudy Sky with Light Grass
+Include PARSFILE "Roads\3D_Road\Road_0faf324d-1ca1-41ca-9752-14fc08f50f0b.ani"
+Used Dataset: Road: 3D Surface (All Properties); { Circular Roads } 30-m Radius Circle, Mu = 0.9
+
+Time to read input = 0.00223471
+
+Run started: VS output file = Roads\3D_Road\Road_0faf324d-1ca1-41ca-9752-14fc08f50f0b.vsb
+
+Run stopped at t = 7.8. External control (manual or external model)
+
+Computational time ratio: RTIME = inf (real time)/(simulation time)
+

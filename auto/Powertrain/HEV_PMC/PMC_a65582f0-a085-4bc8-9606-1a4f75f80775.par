@@ -14,13 +14,13 @@ GNR_CONTROL_KP 0.0052
 GNR_CONTROL_KI 0.00003
 VLOW_BATTERY_CHARGE 15
 PWR_HEV_DRV_MAX 55
-TC_PWR_HYBRID_AV 1.5
+TC_PWR_HYBRID_AV 0.3
 KPW_PBK_HEV 16
 PWR_EV_MODE 25
 REGEN_BRK_OFF 0.8
 
-PARSFILE Generic\tables\GenTab_90d23e81-2c53-435f-8e2c-d6503354f720.par
-#BlueLink0 Generic Table`Driver Demand Power: Full Load 165 kW` Powertrain (HEV)` , Driver Demand Power`GenTab_90d23e81-2c53-435f-8e2c-d6503354f720
+PARSFILE Generic\tables\GenTab_f062c826-f523-464a-a3c1-a0aabb0c22fc.par
+#BlueLink0 Generic Table`Optimal engine speed (Hi-Power)` Powertrain (HEV)` , Driver Demand Power`GenTab_f062c826-f523-464a-a3c1-a0aabb0c22fc
 
 PARSFILE Generic\tables\GenTab_d5035bc4-acab-4be1-8329-5b5080350249.par
 #BlueLink1 Generic Table`Optimal engine speed` Powertrain (HEV)` , Engine Optimal Speed`GenTab_d5035bc4-acab-4be1-8329-5b5080350249
@@ -31,7 +31,7 @@ LOG_ENTRY Used Dataset: Powertrain: Hybrid/Electric Power Management Control; Po
 #DataSet : Power Management: Full Load 165kW
 #Category: 
 #FileID  : PMC_a65582f0-a085-4bc8-9606-1a4f75f80775
-#Modified: 01-20-2022 15:56:26
+#Modified: 06-08-2026 20:32:00
 #Product : CarSim 2024.1
 #DataVer : 2024.1
 #VehCode Power Management (HEV)

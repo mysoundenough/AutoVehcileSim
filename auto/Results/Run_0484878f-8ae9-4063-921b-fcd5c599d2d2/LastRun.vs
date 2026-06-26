@@ -2,10 +2,10 @@
   "VsChannelGroup" : {
     "Category" : "Handling and Stability Tests",
     "Dataset" : "ISO Steady-State Circle, R = 30",
-    "Input File" : "Results\\Run_0484878f-8ae9-4063-921b-fcd5c599d2d2\\Run.vs",
+    "Input File" : "Results\\Run_0484878f-8ae9-4063-921b-fcd5c599d2d2\\LastRun.vs",
     "Model" : "Vehicle Configuration: I_I",
     "Product" : "CarSim 2024.1",
-    "Timestamp" : "14:09 on March 25, 2024",
+    "Timestamp" : "11:21 on June 16, 2026",
     "Title" : "ISO Steady-State Circle, R = 30 <Handling and Stability Tests>",
     "Version" : 2,
     "XLabel" : "Time",

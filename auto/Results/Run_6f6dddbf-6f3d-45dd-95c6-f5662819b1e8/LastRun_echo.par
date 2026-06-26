@@ -9,7 +9,7 @@ CATEGORY Steering Tests
 TITLE On-Center Steer Test, D-Class Sedan <Steering Tests>
 
 ! Echo: Results\Run_6f6dddbf-6f3d-45dd-95c6-f5662819b1e8\LastRun_echo.par
-! This run was made 10:37 on June 05, 2026.
+! This run was made 19:41 on June 16, 2026.
 
 !------------------------------------------------------------------------------------
 ! SYSTEM PARAMETERS (SIMULATION OPTIONS)
@@ -24,8 +24,8 @@ IPRINT             50 ! Print interval: output time step TSTEP_WRITE = TSTEP*IPR
                       ! set IPRINT = 0 for debug (TSTEP_WRITE = T_DT) [L]
 NDIGITS_ECHO       10 ! [D] Max. no. of digits for printing floating-point numbers
 ! NOUT_ANI_LIVE    41 ! Number of variables sent live to animators (read only)
-! NOUT_WRITE       65 ! Number of output variables written to file (read only)
-OPT_ALL_WRITE       0 ! Write all outputs to file? 1 -> all, 0 -> only activated
+! NOUT_WRITE      714 ! Number of output variables written to file (read only)
+OPT_ALL_WRITE       1 ! Write all outputs to file? 1 -> all, 0 -> only activated
                       ! outputs
 OPT_BUFFER_WRITE    0 ! [D] Retain output data in memory buffer until end of run? 0
                       ! -> no, write immediately to file, 1 -> yes, buffer during
@@ -83,7 +83,7 @@ TSTART_T_EVENT      0 ; s ! [D] Event clock reset time: T_EVENT = T - TSTART_T_E
 TSTART_WRITE        0 ; s ! Start writing outputs when this time is reached
 TSTEP          0.0005 ; s ! Time step for numerical integration [L]
 ! TSTEP_WRITE   0.025 ; s ! CALC -- Time interval in output time-series file
-TSTOP            37.2 ; s ! Stop when this time is reached
+TSTOP             100 ; s ! Stop when this time is reached
 ! T_DT         0.0005 ; s ! CALC -- Time increment between calculations
 
 !------------------------------------------------------------------------------------
@@ -127,13 +127,13 @@ STEER_MAX_TORQUE   -1 ; N-m ! [D] Maximum allowed steer torque: stop the run if
 ! Vz, Ax, Ay, and Az are based on the motion of this instant CG for the total laden
 ! (TL) unit.
 
-! H_CG_TL 619.0646875 ; mm ! CALC -- Height of TL CG
-! LX_CG_TL 1104.268203 ; mm ! CALC -- X distance TL CG is behind origin
-! Y_CG_TL -0.006757774006 ; mm ! CALC -- Y coordinate of TL CG
-! M_TL         2785.7 ; kg ! CALC -- TL mass
-! IXX_TL  839.2378009 ; kg-m2 ! CALC -- TL roll inertia moment
-! IYY_TL   2847.66863 ; kg-m2 ! CALC -- TL pitch inertia moment
-! IZZ_TL  2925.961437 ; kg-m2 ! CALC -- TL yaw inertia moment
+! H_CG_TL 590.9400089 ; mm ! CALC -- Height of TL CG
+! LX_CG_TL 1553.420407 ; mm ! CALC -- X distance TL CG is behind origin
+! Y_CG_TL -3.376331899 ; mm ! CALC -- Y coordinate of TL CG
+! M_TL        2786.66 ; kg ! CALC -- TL mass
+! IXX_TL  1205.419237 ; kg-m2 ! CALC -- TL roll inertia moment
+! IYY_TL  4878.901581 ; kg-m2 ! CALC -- TL pitch inertia moment
+! IZZ_TL  5119.339318 ; kg-m2 ! CALC -- TL yaw inertia moment
 
 !------------------------------------------------------------------------------------
 ! SPRUNG MASS
@@ -143,22 +143,22 @@ STEER_MAX_TORQUE   -1 ; N-m ! [D] Maximum allowed steer torque: stop the run if
 ! properties (SU sprung mass + payloads) are also listed and designated SL (sprung
 ! mass laden).
 
-H_CG_SU           650 ; mm ! Height of CG of sprung mass, unladen (SU) [I]
-LX_CG_SU         1050 ; mm ! X distance SU CG is behind sprung mass origin [I]
-Y_CG_SU             0 ; mm ! Y coordinate of SU CG [I]
-M_SU             2491 ; kg ! Mass of unladen sprung mass (SU) [I]
-IXX_SU          700.7 ; kg-m2 ! Roll inertia for unladen sprung mass [I]
-IYY_SU         2059.2 ; kg-m2 ! Pitch inertia for SU [I]
-IZZ_SU         2059.2 ; kg-m2 ! Yaw inertia for SU [I]
-IXY_SU              0 ; kg-m2 ! XY product of inertia for SU [I]
-IXZ_SU              0 ; kg-m2 ! XZ product of inertia for SU [I]
-IYZ_SU              0 ; kg-m2 ! YZ product of inertia for SU [I]
+H_CG_SU        618.24 ; mm ! Height of CG of sprung mass, unladen (SU) [I]
+LX_CG_SU      1552.29 ; mm ! X distance SU CG is behind sprung mass origin [I]
+Y_CG_SU         -3.78 ; mm ! Y coordinate of SU CG [I]
+M_SU          2491.96 ; kg ! Mass of unladen sprung mass (SU) [I]
+IXX_SU        1072.44 ; kg-m2 ! Roll inertia for unladen sprung mass [I]
+IYY_SU        4174.11 ; kg-m2 ! Pitch inertia for SU [I]
+IZZ_SU        4330.09 ; kg-m2 ! Yaw inertia for SU [I]
+IXY_SU           5.69 ; kg-m2 ! XY product of inertia for SU [I]
+IXZ_SU         213.97 ; kg-m2 ! XZ product of inertia for SU [I]
+IYZ_SU           18.1 ; kg-m2 ! YZ product of inertia for SU [I]
 
 ! N_PAYLOADS        0 ! No. of payloads attached to this sprung mass (read only)
 
-HT_SM            1514 ; mm ! Reference height of sprung mass (maybe for target)
+HT_SM            1500 ; mm ! [D] Reference height of sprung mass (maybe for target)
 LEN_SM           4000 ; mm ! [D] Reference length of sprung mass (maybe for target)
-WID_SM           2074 ; mm ! Reference width of sprung mass (maybe for target)
+WID_SM           1600 ; mm ! [D] Reference width of sprung mass (maybe for target)
 LX_F_SM          1000 ; mm ! [D] Length from front to control pt (maybe for target)
 
 !------------------------------------------------------------------------------------
@@ -203,9 +203,9 @@ A_CAMBER(1,1)    -0.3 ; deg ! Static camber for wheel L1 [I]
 A_CAMBER(1,2)    -0.3 ; deg ! Static camber for wheel R1 [I]
 A_TOE(1,1)       -0.2 ; deg ! Static toe for wheel L1 [I]
 A_TOE(1,2)       -0.2 ; deg ! Static toe for wheel R1 [I]
-H_WC(1,1)         355 ; mm ! Reference Z coordinate of wheel center L1 (in SM
+H_WC(1,1)    359.3131 ; mm ! Reference Z coordinate of wheel center L1 (in SM
                       ! coordinate system) [I]
-H_WC(1,2)         355 ; mm ! Reference Z coordinate of wheel center R1 [I]
+H_WC(1,2)    361.0728 ; mm ! Reference Z coordinate of wheel center R1 [I]
 ! ISPIN(1,1)     2.16 ; kg-m2 ! CALC -- Spin inertia for wheel + tire L1 [I]
 ! ISPIN(1,2)     2.16 ; kg-m2 ! CALC -- Spin inertia for wheel + tire R1 [I]
 ! ISPIN_XXZZ(1,1) 1.23 ; kg-m2 ! CALC -- IXX/IZZ inertia for wheel + tire L1 [I]
@@ -237,8 +237,8 @@ A_CAMBER(2,2)       0 ; deg ! Static camber for wheel R2 [I]
 A_TOE(2,1)          0 ; deg ! Static toe for wheel L2 [I]
 A_TOE(2,2)          0 ; deg ! Static toe for wheel R2 [I]
 H_CG_AXLE(2)      360 ; mm ! Z coordinate of axle 2 CG [I]
-H_WC(2,1)         359 ; mm ! Reference Z coordinate of wheel center L2 [I]
-H_WC(2,2)         361 ; mm ! Reference Z coordinate of wheel center R2 [I]
+H_WC(2,1)    370.3082 ; mm ! Reference Z coordinate of wheel center L2 [I]
+H_WC(2,2)    369.0134 ; mm ! Reference Z coordinate of wheel center R2 [I]
 IA(2)              21 ; kg-m2 ! Yaw and roll moment of inertia, axle 2 [I]
 IA_YY(2)            0 ; kg-m2 ! [D] Pitch moment of inertia, axle 2 [I]
 ! ISPIN(2,1)      2.2 ; kg-m2 ! CALC -- Spin inertia for wheel + tire L2 [I]
@@ -284,22 +284,22 @@ OPT_SUSP_COMPLIANCE_METHOD(1) 1 ! [D] Subtract offset from each compliance table
                                 ! avoid double-counting kinematical offset? 1 ->
                                 ! Yes, subtract the offset, 0 -> No, use compliance
                                 ! table as is [I]
-! CMP_DESIGN(1,1) 81.6489759 ; mm ! CALC -- Compression at design load, spring L1
-! CMP_DESIGN(1,2) 81.6489759 ; mm ! CALC -- Compression at design load, spring R1
+! CMP_DESIGN(1,1) 162.5680972 ; mm ! CALC -- Compression at design load, spring L1
+! CMP_DESIGN(1,2) 162.5680972 ; mm ! CALC -- Compression at design load, spring R1
 CMP_OFFSET(1,1)     0 ; mm ! Initial compression of external spring L1 [I]
 CMP_OFFSET(1,2)     0 ; mm ! Initial compression of external spring R1 [I]
 DAUX(1)             0 ; N-m-s/deg ! Auxiliary roll damping, axle 1
-! FSA_DESIGN(1) 15964.00777 ; N ! CALC -- Design Load (susp., unladen), axle 1
-! FSA_L(1) 15964.00777 ; N ! CALC -- Static suspension load, laden, axle  1
+! FSA_DESIGN(1) 11919.49289 ; N ! CALC -- Design Load (susp., unladen), axle 1
+! FSA_L(1) 11919.49289 ; N ! CALC -- Static suspension load, laden, axle  1
 FS_OFFSET(1,1)      0 ; N ! Force offset subtracted from built-in spring L1 [I]
 FS_OFFSET(1,2)      0 ; N ! Force offset subtracted from built-in spring R1 [I]
-! FS_STATIC(1,1) 13063.83614 ; N ! CALC -- Static spring force, laden, spring L1
-! FS_STATIC(1,2) 13063.83614 ; N ! CALC -- Static spring force, laden, spring R1
-! FZA_L(1) 17363.41672 ; N ! CALC -- Static ground load, laden, axle 1
-! FZA_UL(1) 17363.41672 ; N ! CALC -- Static ground load, unladen, axle 1
-! FZ_STATIC(1,1) 8681.708362 ; N ! CALC -- Static ground force, laden, wheel L1
-! FZ_STATIC(1,2) 8681.708362 ; N ! CALC -- Static ground force, laden, wheel R1
-! KA_ROLL(1) 3988.76323 ; N-m/deg ! CALC -- Total roll stiffness, axle 1
+! FS_STATIC(1,1) 9707.303524 ; N ! CALC -- Static spring force, laden, spring L1
+! FS_STATIC(1,2) 9800.868143 ; N ! CALC -- Static spring force, laden, spring R1
+! FZA_L(1) 13318.90184 ; N ! CALC -- Static ground load, laden, axle 1
+! FZA_UL(1) 13318.90184 ; N ! CALC -- Static ground load, unladen, axle 1
+! FZ_STATIC(1,1) 6618.184345 ; N ! CALC -- Static ground force, laden, wheel L1
+! FZ_STATIC(1,2) 6700.717499 ; N ! CALC -- Static ground force, laden, wheel R1
+! KA_ROLL(1) 1851.411211 ; N-m/deg ! CALC -- Total roll stiffness, axle 1
 L_SPG_ADJ(1,1)      0 ; mm ! Upper seat height increase for spring L1 to reduce
                       ! spring compression [I]
 L_SPG_ADJ(1,2)      0 ; mm ! Upper seat height increase for spring R1 [I]
@@ -315,8 +315,8 @@ OPT_EXT_SP(2,1)     0 ! Disable built-in spring L2? 0 -> no, 1 -> yes [I]
 OPT_EXT_SP(2,2)     0 ! Disable built-in spring R2? 0 -> no, 1 -> yes [I]
 OPT_SUSP_COMPLIANCE_METHOD(2) 1 ! [D] Adjust compliance tables to avoid
                                 ! double-counting? 1 -> Adjust, 0 -> No [I]
-! CMP_DESIGN(2,1) 86.46610641 ; mm ! CALC -- Compression at design load, spring L2
-! CMP_DESIGN(2,2) 86.46610641 ; mm ! CALC -- Compression at design load, spring R2
+! CMP_DESIGN(2,1) 83.54714616 ; mm ! CALC -- Compression at design load, spring L2
+! CMP_DESIGN(2,2) 83.54714616 ; mm ! CALC -- Compression at design load, spring R2
 CMP_OFFSET(2,1)     0 ; mm ! Initial compression of external spring L2 [I]
 CMP_OFFSET(2,2)     0 ; mm ! Initial compression of external spring R2 [I]
 DAUX(2)             0 ; N-m-s/deg ! Auxiliary roll damping, axle 2
@@ -332,17 +332,17 @@ SPG_AY(2,1)         0 ; deg ! [D] Side-view inclination angle for spring L2 [I]
 SPG_AY(2,2)         0 ; deg ! [D] Side-view inclination angle for spring R2 [I]
 SPG_LEN(2,1)        0 ; mm ! [D] Length at design for spring L2 [I]
 SPG_LEN(2,2)        0 ; mm ! [D] Length at design for spring R2 [I]
-! FSA_DESIGN(2) 8464.357382 ; N ! CALC -- Design Load (susp., unladen), axle 2
-! FSA_L(2) 8464.357382 ; N ! CALC -- Static suspension load, laden, axle  2
+! FSA_DESIGN(2) 12518.28665 ; N ! CALC -- Design Load (susp., unladen), axle 2
+! FSA_L(2) 12518.28665 ; N ! CALC -- Static suspension load, laden, axle  2
 FS_OFFSET(2,1)      0 ; N ! Force offset subtracted from built-in spring L2 [I]
 FS_OFFSET(2,2)      0 ; N ! Force offset subtracted from built-in spring R2 [I]
-! FS_STATIC(2,1) 4236.839214 ; N ! CALC -- Static spring force, laden, spring L2
-! FS_STATIC(2,2) 4236.839214 ; N ! CALC -- Static spring force, laden, spring R2
-! FZA_L(2) 9954.968182 ; N ! CALC -- Static ground load, laden, axle 2
-! FZA_UL(2) 9954.968182 ; N ! CALC -- Static ground load, unladen, axle 2
-! FZ_STATIC(2,1) 4977.484091 ; N ! CALC -- Static ground force, laden, wheel L2
-! FZ_STATIC(2,2) 4977.484091 ; N ! CALC -- Static ground force, laden, wheel R2
-! KA_ROLL(2) 520.5402375 ; N-m/deg ! CALC -- Total roll stiffness, axle 2
+! FS_STATIC(2,1) 6240.818467 ; N ! CALC -- Static spring force, laden, spring L2
+! FS_STATIC(2,2) 6291.253458 ; N ! CALC -- Static spring force, laden, spring R2
+! FZA_L(2) 14008.89745 ; N ! CALC -- Static ground load, laden, axle 2
+! FZA_UL(2) 14008.89745 ; N ! CALC -- Static ground load, unladen, axle 2
+! FZ_STATIC(2,1) 6986.689864 ; N ! CALC -- Static ground force, laden, wheel L2
+! FZ_STATIC(2,2) 7022.207581 ; N ! CALC -- Static ground force, laden, wheel R2
+! KA_ROLL(2) 796.7452615 ; N-m/deg ! CALC -- Total roll stiffness, axle 2
 L_DAMPERS(2)  1103.33 ; mm ! Distance between dampers on axle 2 [I]
 Y_DAMPERS(2)        0 ; mm ! [D] Lateral (left) offset of dampers on axle 2 [I]
 L_JNC_STOPS(2)   1100 ; mm ! Distance between jounce stops on axle 2 [I]
@@ -592,8 +592,8 @@ OPT_HEV             2 ! Propulsion types: 0 -> internal-combustion engine, 1 ->
                       ! hybrid electric
 OPT_MOTOR_ON_AXLE   1 ! Is electric motor placed on each drive axle?: 0 -> No, a
                       ! motor per vehicle; 1 -> Yes, a motor per drive axle
-OPT_THROTTLE_DELAY  0 ! [D] Apply lag to requested throttle using time constants: 0
-                      ! -> no, 1 -> yes
+OPT_THROTTLE_DELAY  0 ! Apply lag to requested throttle using time constants: 0 ->
+                      ! no, 1 -> yes
 INSTALL_ELECTRIC_DRIVE_MOTORS ! VS Command to install electric motors
 R_MDRIVE            1 ; - ! Multiplier for driveshaft torque acting on engine body
                       ! from drive axle: +1 -> cause positive vehicle roll, -1 ->
@@ -614,10 +614,13 @@ R_EFF_F_DIFF(1)  0.99 ; - ! Forward efficiency of front diff [I]
 R_EFF_R_DIFF(1)  0.99 ; - ! Reverse efficiency of front diff [I]
 R_GEAR_DIFF(1)  3.905 ; - ! Gear ratio of front diff [I]
 IDS(1)          0.013 ; kg-m2 ! Spin inertia of front diff input shaft [I]
-OPT_MOTOR_ON_WHEEL(1) 0 ! Is electric motor placed on each wheel of front diff?: 0
+OPT_MOTOR_ON_WHEEL(1) 1 ! Is electric motor placed on each wheel of front diff?: 0
                         ! -> No, a motor per axle; 1 -> Yes, a motor per wheel
 IHS_L(1)        0.009 ; kg-m2 ! Spin inertia of left half shaft, front diff [I]
 IHS_R(1)        0.009 ; kg-m2 ! Spin inertia of right half shaft, front diff [I]
+OPT_WHEEL_MOTOR_REACTION(1) 0 ! If sus. is independent, where the electric motor on
+                              ! each wheel at front diff reacts to?: 0 -> sprung
+                              ! mass; 1 -> un-sprung mass
 OPT_CLUTCH_DIFF(1)  0 ! [D] Clutch control for front diff: 0 -> table lookup or
                       ! external, 1 -> Torsen parameters, 2 -> yaw control. When 0
                       ! or 2, functions CLUTCH_CON_DIFF and CLUTCH_TORQUE_DIFF are
@@ -633,9 +636,11 @@ R_EFF_F_DIFF(2)  0.99 ; - ! Forward efficiency of rear diff [I]
 R_EFF_R_DIFF(2)  0.99 ; - ! Reverse efficiency of rear diff [I]
 R_GEAR_DIFF(2)  3.905 ; - ! Gear ratio of rear diff [I]
 IDS(2)          0.013 ; kg-m2 ! Spin inertia of rear diff input shaft [I]
-OPT_MOTOR_ON_WHEEL(2) 0 ! Electric motor per wheel/axle on rear diff
+OPT_MOTOR_ON_WHEEL(2) 1 ! Electric motor per wheel/axle on rear diff
 IHS_L(2)        0.009 ; kg-m2 ! Spin inertia of left half shaft, rear diff [I]
 IHS_R(2)        0.009 ; kg-m2 ! Spin inertia of right half shaft, rear diff [I]
+OPT_WHEEL_MOTOR_REACTION(2) 0 ! Electric motor wheel torque at rear diff reacts to
+                              ! unsprung mass if sus. is independent
 OPT_CLUTCH_DIFF(2)  0 ! [D] Clutch control for rear diff: 0 -> table lookup or
                       ! external, 1 -> Torsen parameters, 2 -> yaw control [I]
 OPT_TWIN_CLUTCH(2)  0 ! [D] Twin clutches on rear diff? 0 -> no, 1 -> yes [I]
@@ -655,7 +660,7 @@ OPT_CLUTCH_DIFF(3)  0 ! [D] Clutch control for transfer case: 0 -> table lookup 
 
 ! The Hybrid/Electric powertrain system parameters.
 
-TC_PWR_HYBRID_AV  1.5 ; s ! Time constant for hybrid/electric available power
+TC_PWR_HYBRID_AV  0.8 ; s ! Time constant for hybrid/electric available power
 
 ! The hybrid/electric powertrain battery parameters.
 
@@ -686,14 +691,31 @@ R_REAR_MOTOR_BIAS(3) 0.5 ; - ! Fraction: motor torque distributed on rear drive 
 
 ! The hybrid/electric powertrain axle/wheel motor parameters.
 
-I_MOTOR(1,1)   0.0226 ; kg-m2 ! Spin inertia of electric motor on center of front
-                      ! drive axle [I]
-TC_MOTOR(1,1)    0.05 ; s ! Time constant for electric motor torque on center of
+I_MOTOR(1,1)   0.0226 ; kg-m2 ! Spin inertia of electric motor on left wheel of
+                      ! front drive axle [I]
+TC_MOTOR(1,1)    0.05 ; s ! Time constant for electric motor torque on left wheel of
                       ! front drive axle
-I_MOTOR(2,1)   0.0226 ; kg-m2 ! Spin inertia of electric motor on center of rear
+I_MOTOR(1,2)   0.0226 ; kg-m2 ! Spin inertia of electric motor on right wheel of
+                      ! front drive axle [I]
+TC_MOTOR(1,2)    0.05 ; s ! Time constant for electric motor torque on right wheel
+                      ! of front drive axle
+I_MOTOR(2,1)   0.0226 ; kg-m2 ! Spin inertia of electric motor on left wheel of rear
                       ! drive axle [I]
-TC_MOTOR(2,1)    0.05 ; s ! Time constant for electric motor torque on center of
+TC_MOTOR(2,1)    0.05 ; s ! Time constant for electric motor torque on left wheel of
                       ! rear drive axle
+I_MOTOR(2,2)   0.0226 ; kg-m2 ! Spin inertia of electric motor on right wheel of
+                      ! rear drive axle [I]
+TC_MOTOR(2,2)    0.05 ; s ! Time constant for electric motor torque on right wheel
+                      ! of rear drive axle
+
+!------------------------------------------------------------------------------------
+! ENGINE
+!------------------------------------------------------------------------------------
+! Behavior of an internal-combustion engine is specified with the Configurable
+! Functions MENGINE and FUEL_RATE, along with the following parameters.
+
+INSTALL_ENGINE ! VS Command to install an engine
+
 
 !------------------------------------------------------------------------------------
 ! REFERENCE PATHS
@@ -728,34 +750,33 @@ SEGMENT_LENGTH(1,1) 200 ; m ! Segment length
 ! Y_SEGMENT_END(1,1) 0 ; m ! CALC -- Y coordinate at end of segment
 ! HEADING_END(1,1)  0 ; deg ! CALC -- Heading at end of segment
 
-SEGMENT_TYPE(1,2)   3 ! 0 -> straight, 1 -> table, 2 -> rho, 3 -> radius, 4 -> cloth
-SEGMENT_RADIUS(1,2) 100 ; m ! Radius of arc; + -> left turn
-SEGMENT_ARC(1,2)   90 ; deg ! Central angle of arc
-! S_SEGMENT_END(1,2) 357.0796327 ; m ! CALC -- Station at end of this segment
-! X_SEGMENT_END(1,2) -4.346877156e-15 ; m ! CALC -- X coordinate at end of segment
-! Y_SEGMENT_END(1,2) 100 ; m ! CALC -- Y coordinate at end of segment
-! HEADING_END(1,2) 90 ; deg ! CALC -- Heading at end of segment
+SEGMENT_TYPE(1,2)   0 ! 0 -> straight, 1 -> table, 2 -> rho, 3 -> radius, 4 -> cloth
+SEGMENT_LENGTH(1,2) 50 ; m ! Segment length
+! S_SEGMENT_END(1,2) 250 ; m ! CALC -- Station at end of this segment
+! X_SEGMENT_END(1,2) -50 ; m ! CALC -- X coordinate at end of segment
+! Y_SEGMENT_END(1,2) 0 ; m ! CALC -- Y coordinate at end of segment
+! HEADING_END(1,2)  0 ; deg ! CALC -- Heading at end of segment
 
 SEGMENT_TYPE(1,3)   0 ! 0 -> straight, 1 -> table, 2 -> rho, 3 -> radius, 4 -> cloth
 SEGMENT_LENGTH(1,3) 50 ; m ! Segment length
-! S_SEGMENT_END(1,3) 407.0796327 ; m ! CALC -- Station at end of this segment
-! X_SEGMENT_END(1,3) -3.061616998e-15 ; m ! CALC -- X coordinate at end of segment
-! Y_SEGMENT_END(1,3) 150 ; m ! CALC -- Y coordinate at end of segment
-! HEADING_END(1,3) 90 ; deg ! CALC -- Heading at end of segment
+! S_SEGMENT_END(1,3) 300 ; m ! CALC -- Station at end of this segment
+! X_SEGMENT_END(1,3) 0 ; m ! CALC -- X coordinate at end of segment
+! Y_SEGMENT_END(1,3) 0 ; m ! CALC -- Y coordinate at end of segment
+! HEADING_END(1,3)  0 ; deg ! CALC -- Heading at end of segment
 
 SEGMENT_TYPE(1,4)   0 ! 0 -> straight, 1 -> table, 2 -> rho, 3 -> radius, 4 -> cloth
 SEGMENT_LENGTH(1,4) 50 ; m ! Segment length
-! S_SEGMENT_END(1,4) 457.0796327 ; m ! CALC -- Station at end of this segment
-! X_SEGMENT_END(1,4) 0 ; m ! CALC -- X coordinate at end of segment
-! Y_SEGMENT_END(1,4) 200 ; m ! CALC -- Y coordinate at end of segment
-! HEADING_END(1,4) 90 ; deg ! CALC -- Heading at end of segment
+! S_SEGMENT_END(1,4) 350 ; m ! CALC -- Station at end of this segment
+! X_SEGMENT_END(1,4) 50 ; m ! CALC -- X coordinate at end of segment
+! Y_SEGMENT_END(1,4) 0 ; m ! CALC -- Y coordinate at end of segment
+! HEADING_END(1,4)  0 ; deg ! CALC -- Heading at end of segment
 
 SEGMENT_TYPE(1,5)   0 ! 0 -> straight, 1 -> table, 2 -> rho, 3 -> radius, 4 -> cloth
-SEGMENT_LENGTH(1,5) 50 ; m ! Segment length
-! S_SEGMENT_END(1,5) 507.0796327 ; m ! CALC -- Station at end of this segment
-! X_SEGMENT_END(1,5) 3.061616998e-15 ; m ! CALC -- X coordinate at end of segment
-! Y_SEGMENT_END(1,5) 250 ; m ! CALC -- Y coordinate at end of segment
-! HEADING_END(1,5) 90 ; deg ! CALC -- Heading at end of segment
+SEGMENT_LENGTH(1,5) 1000 ; m ! Segment length
+! S_SEGMENT_END(1,5) 1350 ; m ! CALC -- Station at end of this segment
+! X_SEGMENT_END(1,5) 1050 ; m ! CALC -- X coordinate at end of segment
+! Y_SEGMENT_END(1,5) 0 ; m ! CALC -- Y coordinate at end of segment
+! HEADING_END(1,5)  0 ; deg ! CALC -- Heading at end of segment
 
 !------------------------------------------------------------------------------------
 ! ROAD SURFACES
@@ -1476,19 +1497,19 @@ F_SCALE_C_LONG_AXLE(2) 1 ! [D] Divided into (force - F_START_C_LONG_AXLE)
 
 ! Col 1 = compression speed (mm/s), col 2 = damper force (N)
 FD_TABLE(1,1) SPLINE ! axle 1, left side
- -1030, -2671
- -520, -1290
- -390, -1013
- -260, -759
- -130, -513
- -50, -215
+ -1030, -5307
+ -520, -4424
+ -390, -4120
+ -260, -3735
+ -130, -1899
+ -50, -721
  0, 0
- 50, 302
- 130, 464
- 260, 721
- 390, 917
- 520, 1109
- 1030, 1955
+ 50, 364
+ 130, 671
+ 260, 971
+ 390, 1331
+ 520, 1571
+ 1030, 2472
 ENDTABLE
 FD_GAIN(1,1)        1 ! [D] Multiplied with calculated value to get damper force
 FD_OFFSET(1,1)      0 ; N ! [D] Added (after gain) to get damper force
@@ -1497,19 +1518,19 @@ CMP_R_SCALE_FD(1,1) 1 ! [D] Divided into (compression speed - CMP_R_START_FD)
 
 ! Col 1 = compression speed (mm/s), col 2 = damper force (N)
 FD_TABLE(1,2) SPLINE ! axle 1, right side
- -1030, -2671
- -520, -1290
- -390, -1013
- -260, -759
- -130, -513
- -50, -215
+ -1030, -5307
+ -520, -4424
+ -390, -4120
+ -260, -3735
+ -130, -1899
+ -50, -721
  0, 0
- 50, 302
- 130, 464
- 260, 721
- 390, 917
- 520, 1109
- 1030, 1955
+ 50, 364
+ 130, 671
+ 260, 971
+ 390, 1331
+ 520, 1571
+ 1030, 2472
 ENDTABLE
 FD_GAIN(1,2)        1 ! [D] Multiplied with calculated value to get damper force
 FD_OFFSET(1,2)      0 ; N ! [D] Added (after gain) to get damper force
@@ -1518,19 +1539,19 @@ CMP_R_SCALE_FD(1,2) 1 ! [D] Divided into (compression speed - CMP_R_START_FD)
 
 ! Col 1 = compression speed (mm/s), col 2 = damper force (N)
 FD_TABLE(2,1) SPLINE ! axle 2, left side
- -1030, -1814
- -520, -929
- -390, -749
- -260, -581
- -130, -411
- -50, -166
+ -1030, -4092
+ -520, -3370
+ -390, -3113
+ -260, -2606
+ -130, -1448
+ -50, -748
  0, 0
- 50, 274
- 130, 438
- 260, 665
- 390, 835
- 520, 1013
- 1030, 1813
+ 50, 382
+ 130, 702
+ 260, 1077
+ 390, 1464
+ 520, 1827
+ 1030, 2482
 ENDTABLE
 FD_GAIN(2,1)        1 ! [D] Multiplied with calculated value to get damper force
 FD_OFFSET(2,1)      0 ; N ! [D] Added (after gain) to get damper force
@@ -1539,19 +1560,19 @@ CMP_R_SCALE_FD(2,1) 1 ! [D] Divided into (compression speed - CMP_R_START_FD)
 
 ! Col 1 = compression speed (mm/s), col 2 = damper force (N)
 FD_TABLE(2,2) SPLINE ! axle 2, right side
- -1030, -1814
- -520, -929
- -390, -749
- -260, -581
- -130, -411
- -50, -166
+ -1030, -4092
+ -520, -3370
+ -390, -3113
+ -260, -2606
+ -130, -1448
+ -50, -748
  0, 0
- 50, 274
- 130, 438
- 260, 665
- 390, 835
- 520, 1013
- 1030, 1813
+ 50, 382
+ 130, 702
+ 260, 1077
+ 390, 1464
+ 520, 1827
+ 1030, 2482
 ENDTABLE
 FD_GAIN(2,2)        1 ! [D] Multiplied with calculated value to get damper force
 FD_OFFSET(2,2)      0 ; N ! [D] Added (after gain) to get damper force
@@ -1571,8 +1592,8 @@ CMP_R_SCALE_FD(2,2) 1 ! [D] Divided into (compression speed - CMP_R_START_FD)
 ! e.g., (1,2), the current values of the indices IAXLE and ISIDE are used to identify
 ! the dataset when reading data.
 
-FS_COMP_COEFFICIENT(1,1) 160 ! Spring force per unit spring compression (N/mm), axle
-                             ! 1, left side
+FS_COMP_COEFFICIENT(1,1) 60 ! Spring force per unit spring compression (N/mm), axle
+                            ! 1, left side
 FS_COMP_GAIN(1,1)   1 ! [D] Multiplied with calculated value to get spring force
 FS_COMP_OFFSET(1,1) 0 ; N ! Added (after gain) to get spring force
 CMP_START_FS_COMP(1,1) 0 ; mm ! [D] Subtracted from spring compression
@@ -1581,8 +1602,8 @@ FS_COMP_COMBINE(1,1) MULTIPLY ! [D] How to combine the two components
 FS_COMP_FSTATIC_CONSTANT(1,1) 1 ; - ! [D] Spring force component due to static
                                 ! spring force, axle 1, left side
 
-FS_COMP_COEFFICIENT(1,2) 160 ! Spring force per unit spring compression (N/mm), axle
-                             ! 1, right side
+FS_COMP_COEFFICIENT(1,2) 60 ! Spring force per unit spring compression (N/mm), axle
+                            ! 1, right side
 FS_COMP_GAIN(1,2)   1 ! [D] Multiplied with calculated value to get spring force
 FS_COMP_OFFSET(1,2) 0 ; N ! Added (after gain) to get spring force
 CMP_START_FS_COMP(1,2) 0 ; mm ! [D] Subtracted from spring compression
@@ -1591,7 +1612,7 @@ FS_COMP_COMBINE(1,2) MULTIPLY ! [D] How to combine the two components
 FS_COMP_FSTATIC_CONSTANT(1,2) 1 ; - ! [D] Spring force component due to static
                                 ! spring force, axle 1, right side
 
-FS_COMP_COEFFICIENT(2,1) 49 ! Spring force per unit spring compression (N/mm), axle
+FS_COMP_COEFFICIENT(2,1) 75 ! Spring force per unit spring compression (N/mm), axle
                             ! 2, left side
 FS_COMP_GAIN(2,1)   1 ! [D] Multiplied with calculated value to get spring force
 FS_COMP_OFFSET(2,1) 10 ; N ! Added (after gain) to get spring force
@@ -1601,7 +1622,7 @@ FS_COMP_COMBINE(2,1) MULTIPLY ! [D] How to combine the two components
 FS_COMP_FSTATIC_CONSTANT(2,1) 1 ; - ! [D] Spring force component due to static
                                 ! spring force, axle 2, left side
 
-FS_COMP_COEFFICIENT(2,2) 49 ! Spring force per unit spring compression (N/mm), axle
+FS_COMP_COEFFICIENT(2,2) 75 ! Spring force per unit spring compression (N/mm), axle
                             ! 2, right side
 FS_COMP_GAIN(2,2)   1 ! [D] Multiplied with calculated value to get spring force
 FS_COMP_OFFSET(2,2) 10 ; N ! Added (after gain) to get spring force
@@ -1624,8 +1645,8 @@ FS_COMP_FSTATIC_CONSTANT(2,2) 1 ; - ! [D] Spring force component due to static
 ! values of the indices IAXLE and ISIDE are used to identify the dataset when reading
 ! data.
 
-FS_EXT_COEFFICIENT(1,1) 160 ! Spring force per unit spring compression (N/mm), axle
-                            ! 1, left side
+FS_EXT_COEFFICIENT(1,1) 60 ! Spring force per unit spring compression (N/mm), axle
+                           ! 1, left side
 FS_EXT_GAIN(1,1)    1 ! [D] Multiplied with calculated value to get spring force
 FS_EXT_OFFSET(1,1)  0 ; N ! Added (after gain) to get spring force
 CMP_START_FS_EXT(1,1) 0 ; mm ! [D] Subtracted from spring compression
@@ -1634,8 +1655,8 @@ FS_EXT_COMBINE(1,1) MULTIPLY ! [D] How to combine the two components
 FS_EXT_FSTATIC_CONSTANT(1,1) 1 ; - ! [D] Spring force component due to static spring
                                ! force, axle 1, left side
 
-FS_EXT_COEFFICIENT(1,2) 160 ! Spring force per unit spring compression (N/mm), axle
-                            ! 1, right side
+FS_EXT_COEFFICIENT(1,2) 60 ! Spring force per unit spring compression (N/mm), axle
+                           ! 1, right side
 FS_EXT_GAIN(1,2)    1 ! [D] Multiplied with calculated value to get spring force
 FS_EXT_OFFSET(1,2)  0 ; N ! Added (after gain) to get spring force
 CMP_START_FS_EXT(1,2) 0 ; mm ! [D] Subtracted from spring compression
@@ -1644,7 +1665,7 @@ FS_EXT_COMBINE(1,2) MULTIPLY ! [D] How to combine the two components
 FS_EXT_FSTATIC_CONSTANT(1,2) 1 ; - ! [D] Spring force component due to static spring
                                ! force, axle 1, right side
 
-FS_EXT_COEFFICIENT(2,1) 49 ! Spring force per unit spring compression (N/mm), axle
+FS_EXT_COEFFICIENT(2,1) 75 ! Spring force per unit spring compression (N/mm), axle
                            ! 2, left side
 FS_EXT_GAIN(2,1)    1 ! [D] Multiplied with calculated value to get spring force
 FS_EXT_OFFSET(2,1) -10 ; N ! Added (after gain) to get spring force
@@ -1654,7 +1675,7 @@ FS_EXT_COMBINE(2,1) MULTIPLY ! [D] How to combine the two components
 FS_EXT_FSTATIC_CONSTANT(2,1) 1 ; - ! [D] Spring force component due to static spring
                                ! force, axle 2, left side
 
-FS_EXT_COEFFICIENT(2,2) 49 ! Spring force per unit spring compression (N/mm), axle
+FS_EXT_COEFFICIENT(2,2) 75 ! Spring force per unit spring compression (N/mm), axle
                            ! 2, right side
 FS_EXT_GAIN(2,2)    1 ! [D] Multiplied with calculated value to get spring force
 FS_EXT_OFFSET(2,2) -10 ; N ! Added (after gain) to get spring force
@@ -4019,17 +4040,17 @@ FZ_SCALE_L_RELAX_Y(2,2) 11500 ! Divided into Fz
 
 ! Col 1 = motor speed (rpm), col 2 = Motor full torque (N-m)
 MMOTOR_MAX_TABLE(1,1) LINEAR ! linear interpolation and extrapolation
- 0, 152.5
- 500, 152.5
- 1000, 144.71
- 1500, 96.097
- 2000, 71.935
- 2500, 57.457
- 3000, 47.824
- 3500, 40.959
- 4000, 35.857
- 4500, 32.367
- 6000, 23.85
+ 0, 297.76
+ 128.04, 297.76
+ 256.08, 282.55
+ 384.12, 187.63
+ 512.16, 140.45
+ 640.2, 112.18
+ 768.25, 93.376
+ 896.29, 79.972
+ 1024.3, 70.011
+ 1152.4, 63.197
+ 1536.5, 46.567
 ENDTABLE
 MMOTOR_MAX_GAIN(1,1) 1 ! [D] Multiplied with calculated value to get Motor full
                        ! torque
@@ -4039,24 +4060,66 @@ SPIN_SCALE_M_MOTOR_MAX(1,1) 1 ! [D] Divided into (motor speed -
                               ! SPIN_START_M_MOTOR_MAX)
 
 ! Col 1 = motor speed (rpm), col 2 = Motor full torque (N-m)
+MMOTOR_MAX_TABLE(1,2) LINEAR ! linear interpolation and extrapolation
+ 0, 297.76
+ 128.04, 297.76
+ 256.08, 282.55
+ 384.12, 187.63
+ 512.16, 140.45
+ 640.2, 112.18
+ 768.25, 93.376
+ 896.29, 79.972
+ 1024.3, 70.011
+ 1152.4, 63.197
+ 1536.5, 46.567
+ENDTABLE
+MMOTOR_MAX_GAIN(1,2) 1 ! [D] Multiplied with calculated value to get Motor full
+                       ! torque
+MMOTOR_MAX_OFFSET(1,2) 0 ; N-m ! [D] Added (after gain) to get Motor full torque
+SPIN_START_M_MOTOR_MAX(1,2) 0 ; rpm ! [D] Subtracted from motor speed
+SPIN_SCALE_M_MOTOR_MAX(1,2) 1 ! [D] Divided into (motor speed -
+                              ! SPIN_START_M_MOTOR_MAX)
+
+! Col 1 = motor speed (rpm), col 2 = Motor full torque (N-m)
 MMOTOR_MAX_TABLE(2,1) LINEAR ! linear interpolation and extrapolation
- 0, 152.5
- 500, 152.5
- 1000, 144.71
- 1500, 96.097
- 2000, 71.935
- 2500, 57.457
- 3000, 47.824
- 3500, 40.959
- 4000, 35.857
- 4500, 32.367
- 6000, 23.85
+ 0, 297.76
+ 128.04, 297.76
+ 256.08, 282.55
+ 384.12, 187.63
+ 512.16, 140.45
+ 640.2, 112.18
+ 768.25, 93.376
+ 896.29, 79.972
+ 1024.3, 70.011
+ 1152.4, 63.197
+ 1536.5, 46.567
 ENDTABLE
 MMOTOR_MAX_GAIN(2,1) 1 ! [D] Multiplied with calculated value to get Motor full
                        ! torque
 MMOTOR_MAX_OFFSET(2,1) 0 ; N-m ! [D] Added (after gain) to get Motor full torque
 SPIN_START_M_MOTOR_MAX(2,1) 0 ; rpm ! [D] Subtracted from motor speed
 SPIN_SCALE_M_MOTOR_MAX(2,1) 1 ! [D] Divided into (motor speed -
+                              ! SPIN_START_M_MOTOR_MAX)
+
+! Col 1 = motor speed (rpm), col 2 = Motor full torque (N-m)
+MMOTOR_MAX_TABLE(2,2) LINEAR ! linear interpolation and extrapolation
+ 0, 297.76
+ 128.04, 297.76
+ 256.08, 282.55
+ 384.12, 187.63
+ 512.16, 140.45
+ 640.2, 112.18
+ 768.25, 93.376
+ 896.29, 79.972
+ 1024.3, 70.011
+ 1152.4, 63.197
+ 1536.5, 46.567
+ENDTABLE
+MMOTOR_MAX_GAIN(2,2) 1 ! [D] Multiplied with calculated value to get Motor full
+                       ! torque
+MMOTOR_MAX_OFFSET(2,2) 0 ; N-m ! [D] Added (after gain) to get Motor full torque
+SPIN_START_M_MOTOR_MAX(2,2) 0 ; rpm ! [D] Subtracted from motor speed
+SPIN_SCALE_M_MOTOR_MAX(2,2) 1 ! [D] Divided into (motor speed -
                               ! SPIN_START_M_MOTOR_MAX)
 
 ! MU_ROAD: Tire/road friction coefficient (MU) for a road surface. Use MU = -1 for
@@ -4861,8 +4924,23 @@ PBK_DL_FZ_CONSTANT(2,2) 0 ; MPa ! Delivery pressure component due to dynamic whe
 ! SPIN_SCALE_PWR_DRV_THRT and SPIN_START_PWR_DRV_THRT. An inverse version of this
 ! function is used internally.
 
-PWR_DRV_THROTTLE_COEFFICIENT 118.1967921 ! Driving power per unit Throttle pedal
-                                         ! position (kW/-)
+! Col 1 = Throttle pedal position (-), col 2 = Driving power (kW)
+PWR_DRV_THROTTLE_TABLE LINEAR ! linear interpolation and extrapolation
+ 0, 0
+ 0.05, 30
+ 0.1, 50
+ 0.15, 70
+ 0.2, 80
+ 0.25, 90
+ 0.3, 110
+ 0.4, 130
+ 0.5, 150
+ 0.6, 180
+ 0.7, 210
+ 0.8, 240
+ 0.9, 270
+ 1, 300
+ENDTABLE
 PWR_DRV_THROTTLE_GAIN 1 ! [D] Multiplied with calculated value to get Driving power
 PWR_DRV_THROTTLE_OFFSET 0 ; kW ! [D] Added (after gain) to get Driving power
 SPIN_START_PWR_DRV_THRT 0 ; - ! [D] Subtracted from Throttle pedal position
@@ -4990,18 +5068,18 @@ TEMP_SCALE_R_DIS_BATTERY 1 ! [D] Divided into (Temperature -
 ! Row 1 has "0" (place holder) followed by 23 values of motor output torque (N-m).
 ! Other rows have motor speed (rpm) followed by 23 values of Motor efficiency (-).
 R_EFF_MOTOR_CARPET(1,1) 2D_LINEAR
- 0, -305, -275, -245, -215, -185, -155, -125, -95, -65, -35, -5, 0, 5, 35, 65, 95, 125, 155, 185, 215, 245, 275, 305
+ 0, -595.5125, -536.9375, -478.3625, -419.7875, -361.2125, -302.6375, -244.0625, -185.4875, -126.9125, -68.3375, -9.7625, 0, 9.7625, 68.3375, 126.9125, 185.4875, 244.0625, 302.6375, 361.2125, 419.7875, 478.3625, 536.9375, 595.5125
  0, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975
- 500, 0.532, 0.5605, 0.589, 0.6175, 0.646, 0.684, 0.722, 0.76, 0.8075, 0.855, 0.8265, 0.85975, 0.8265, 0.855, 0.8075, 0.76, 0.722, 0.684, 0.646, 0.6175, 0.589, 0.5605, 0.532
- 1000, 0.684, 0.703, 0.722, 0.741, 0.7695, 0.7885, 0.817, 0.8455, 0.8645, 0.893, 0.8075, 0.85975, 0.8075, 0.893, 0.8645, 0.8455, 0.817, 0.7885, 0.7695, 0.741, 0.722, 0.703, 0.684
- 1500, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.855, 0.874, 0.8835, 0.893, 0.7885, 0.85975, 0.7885, 0.893, 0.8835, 0.874, 0.855, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
- 2000, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.874, 0.8835, 0.9025, 0.9025, 0.779, 0.85975, 0.779, 0.9025, 0.9025, 0.8835, 0.874, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
- 2500, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.874, 0.893, 0.9025, 0.9025, 0.7695, 0.85975, 0.7695, 0.9025, 0.9025, 0.893, 0.874, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
- 3000, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.874, 0.9025, 0.912, 0.9025, 0.7695, 0.85975, 0.7695, 0.9025, 0.912, 0.9025, 0.874, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
- 3500, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.874, 0.9025, 0.912, 0.9025, 0.76, 0.85975, 0.76, 0.9025, 0.912, 0.9025, 0.874, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
- 4000, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.874, 0.9025, 0.9025, 0.9025, 0.76, 0.85975, 0.76, 0.9025, 0.9025, 0.9025, 0.874, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
- 4500, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.874, 0.9025, 0.9025, 0.9025, 0.7505, 0.85975, 0.7505, 0.9025, 0.9025, 0.9025, 0.874, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
- 6000, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.874, 0.9025, 0.9025, 0.9025, 0.7505, 0.85975, 0.7505, 0.9025, 0.9025, 0.9025, 0.874, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
+ 128.04, 0.532, 0.5605, 0.589, 0.6175, 0.646, 0.684, 0.722, 0.76, 0.8075, 0.855, 0.8265, 0.85975, 0.8265, 0.855, 0.8075, 0.76, 0.722, 0.684, 0.646, 0.6175, 0.589, 0.5605, 0.532
+ 256.08, 0.684, 0.703, 0.722, 0.741, 0.7695, 0.7885, 0.817, 0.8455, 0.8645, 0.893, 0.8075, 0.85975, 0.8075, 0.893, 0.8645, 0.8455, 0.817, 0.7885, 0.7695, 0.741, 0.722, 0.703, 0.684
+ 384.12, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.855, 0.874, 0.8835, 0.893, 0.7885, 0.85975, 0.7885, 0.893, 0.8835, 0.874, 0.855, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
+ 512.16, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.874, 0.8835, 0.9025, 0.9025, 0.779, 0.85975, 0.779, 0.9025, 0.9025, 0.8835, 0.874, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
+ 640.2, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.874, 0.893, 0.9025, 0.9025, 0.7695, 0.85975, 0.7695, 0.9025, 0.9025, 0.893, 0.874, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
+ 768.25, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.874, 0.9025, 0.912, 0.9025, 0.7695, 0.85975, 0.7695, 0.9025, 0.912, 0.9025, 0.874, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
+ 896.29, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.874, 0.9025, 0.912, 0.9025, 0.76, 0.85975, 0.76, 0.9025, 0.912, 0.9025, 0.874, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
+ 1024.3, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.874, 0.9025, 0.9025, 0.9025, 0.76, 0.85975, 0.76, 0.9025, 0.9025, 0.9025, 0.874, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
+ 1152.4, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.874, 0.9025, 0.9025, 0.9025, 0.7505, 0.85975, 0.7505, 0.9025, 0.9025, 0.9025, 0.874, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
+ 1536.5, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.874, 0.9025, 0.9025, 0.9025, 0.7505, 0.85975, 0.7505, 0.9025, 0.9025, 0.9025, 0.874, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
 ENDTABLE
 R_EFF_MOTOR_GAIN(1,1) 1 ! [D] Multiplied with calculated value to get Motor
                         ! efficiency
@@ -5015,19 +5093,45 @@ TORQUE_SCALE_R_EFF_MOTOR(1,1) 1 ! [D] Divided into (motor output torque -
 
 ! Row 1 has "0" (place holder) followed by 23 values of motor output torque (N-m).
 ! Other rows have motor speed (rpm) followed by 23 values of Motor efficiency (-).
-R_EFF_MOTOR_CARPET(2,1) 2D_LINEAR
- 0, -305, -275, -245, -215, -185, -155, -125, -95, -65, -35, -5, 0, 5, 35, 65, 95, 125, 155, 185, 215, 245, 275, 305
+R_EFF_MOTOR_CARPET(1,2) 2D_LINEAR
+ 0, -595.5125, -536.9375, -478.3625, -419.7875, -361.2125, -302.6375, -244.0625, -185.4875, -126.9125, -68.3375, -9.7625, 0, 9.7625, 68.3375, 126.9125, 185.4875, 244.0625, 302.6375, 361.2125, 419.7875, 478.3625, 536.9375, 595.5125
  0, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975
- 500, 0.532, 0.5605, 0.589, 0.6175, 0.646, 0.684, 0.722, 0.76, 0.8075, 0.855, 0.8265, 0.85975, 0.8265, 0.855, 0.8075, 0.76, 0.722, 0.684, 0.646, 0.6175, 0.589, 0.5605, 0.532
- 1000, 0.684, 0.703, 0.722, 0.741, 0.7695, 0.7885, 0.817, 0.8455, 0.8645, 0.893, 0.8075, 0.85975, 0.8075, 0.893, 0.8645, 0.8455, 0.817, 0.7885, 0.7695, 0.741, 0.722, 0.703, 0.684
- 1500, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.855, 0.874, 0.8835, 0.893, 0.7885, 0.85975, 0.7885, 0.893, 0.8835, 0.874, 0.855, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
- 2000, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.874, 0.8835, 0.9025, 0.9025, 0.779, 0.85975, 0.779, 0.9025, 0.9025, 0.8835, 0.874, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
- 2500, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.874, 0.893, 0.9025, 0.9025, 0.7695, 0.85975, 0.7695, 0.9025, 0.9025, 0.893, 0.874, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
- 3000, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.874, 0.9025, 0.912, 0.9025, 0.7695, 0.85975, 0.7695, 0.9025, 0.912, 0.9025, 0.874, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
- 3500, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.874, 0.9025, 0.912, 0.9025, 0.76, 0.85975, 0.76, 0.9025, 0.912, 0.9025, 0.874, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
- 4000, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.874, 0.9025, 0.9025, 0.9025, 0.76, 0.85975, 0.76, 0.9025, 0.9025, 0.9025, 0.874, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
- 4500, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.874, 0.9025, 0.9025, 0.9025, 0.7505, 0.85975, 0.7505, 0.9025, 0.9025, 0.9025, 0.874, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
- 6000, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.874, 0.9025, 0.9025, 0.9025, 0.7505, 0.85975, 0.7505, 0.9025, 0.9025, 0.9025, 0.874, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
+ 128.04, 0.532, 0.5605, 0.589, 0.6175, 0.646, 0.684, 0.722, 0.76, 0.8075, 0.855, 0.8265, 0.85975, 0.8265, 0.855, 0.8075, 0.76, 0.722, 0.684, 0.646, 0.6175, 0.589, 0.5605, 0.532
+ 256.08, 0.684, 0.703, 0.722, 0.741, 0.7695, 0.7885, 0.817, 0.8455, 0.8645, 0.893, 0.8075, 0.85975, 0.8075, 0.893, 0.8645, 0.8455, 0.817, 0.7885, 0.7695, 0.741, 0.722, 0.703, 0.684
+ 384.12, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.855, 0.874, 0.8835, 0.893, 0.7885, 0.85975, 0.7885, 0.893, 0.8835, 0.874, 0.855, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
+ 512.16, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.874, 0.8835, 0.9025, 0.9025, 0.779, 0.85975, 0.779, 0.9025, 0.9025, 0.8835, 0.874, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
+ 640.2, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.874, 0.893, 0.9025, 0.9025, 0.7695, 0.85975, 0.7695, 0.9025, 0.9025, 0.893, 0.874, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
+ 768.25, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.874, 0.9025, 0.912, 0.9025, 0.7695, 0.85975, 0.7695, 0.9025, 0.912, 0.9025, 0.874, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
+ 896.29, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.874, 0.9025, 0.912, 0.9025, 0.76, 0.85975, 0.76, 0.9025, 0.912, 0.9025, 0.874, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
+ 1024.3, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.874, 0.9025, 0.9025, 0.9025, 0.76, 0.85975, 0.76, 0.9025, 0.9025, 0.9025, 0.874, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
+ 1152.4, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.874, 0.9025, 0.9025, 0.9025, 0.7505, 0.85975, 0.7505, 0.9025, 0.9025, 0.9025, 0.874, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
+ 1536.5, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.874, 0.9025, 0.9025, 0.9025, 0.7505, 0.85975, 0.7505, 0.9025, 0.9025, 0.9025, 0.874, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
+ENDTABLE
+R_EFF_MOTOR_GAIN(1,2) 1 ! [D] Multiplied with calculated value to get Motor
+                        ! efficiency
+R_EFF_MOTOR_OFFSET(1,2) 0 ; - ! [D] Added (after gain) to get Motor efficiency
+SPIN_START_R_EFF_MOTOR(1,2) 0 ; rpm ! [D] Subtracted from motor speed
+SPIN_SCALE_R_EFF_MOTOR(1,2) 1 ! [D] Divided into (motor speed -
+                              ! SPIN_START_R_EFF_MOTOR)
+TORQUE_START_R_EFF_MOTOR(1,2) 0 ; N-m ! [D] Subtracted from motor output torque
+TORQUE_SCALE_R_EFF_MOTOR(1,2) 1 ! [D] Divided into (motor output torque -
+                                ! TORQUE_START_R_EFF_MOTOR)
+
+! Row 1 has "0" (place holder) followed by 23 values of motor output torque (N-m).
+! Other rows have motor speed (rpm) followed by 23 values of Motor efficiency (-).
+R_EFF_MOTOR_CARPET(2,1) 2D_LINEAR
+ 0, -595.5125, -536.9375, -478.3625, -419.7875, -361.2125, -302.6375, -244.0625, -185.4875, -126.9125, -68.3375, -9.7625, 0, 9.7625, 68.3375, 126.9125, 185.4875, 244.0625, 302.6375, 361.2125, 419.7875, 478.3625, 536.9375, 595.5125
+ 0, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975
+ 128.04, 0.532, 0.5605, 0.589, 0.6175, 0.646, 0.684, 0.722, 0.76, 0.8075, 0.855, 0.8265, 0.85975, 0.8265, 0.855, 0.8075, 0.76, 0.722, 0.684, 0.646, 0.6175, 0.589, 0.5605, 0.532
+ 256.08, 0.684, 0.703, 0.722, 0.741, 0.7695, 0.7885, 0.817, 0.8455, 0.8645, 0.893, 0.8075, 0.85975, 0.8075, 0.893, 0.8645, 0.8455, 0.817, 0.7885, 0.7695, 0.741, 0.722, 0.703, 0.684
+ 384.12, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.855, 0.874, 0.8835, 0.893, 0.7885, 0.85975, 0.7885, 0.893, 0.8835, 0.874, 0.855, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
+ 512.16, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.874, 0.8835, 0.9025, 0.9025, 0.779, 0.85975, 0.779, 0.9025, 0.9025, 0.8835, 0.874, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
+ 640.2, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.874, 0.893, 0.9025, 0.9025, 0.7695, 0.85975, 0.7695, 0.9025, 0.9025, 0.893, 0.874, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
+ 768.25, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.874, 0.9025, 0.912, 0.9025, 0.7695, 0.85975, 0.7695, 0.9025, 0.912, 0.9025, 0.874, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
+ 896.29, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.874, 0.9025, 0.912, 0.9025, 0.76, 0.85975, 0.76, 0.9025, 0.912, 0.9025, 0.874, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
+ 1024.3, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.874, 0.9025, 0.9025, 0.9025, 0.76, 0.85975, 0.76, 0.9025, 0.9025, 0.9025, 0.874, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
+ 1152.4, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.874, 0.9025, 0.9025, 0.9025, 0.7505, 0.85975, 0.7505, 0.9025, 0.9025, 0.9025, 0.874, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
+ 1536.5, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.874, 0.9025, 0.9025, 0.9025, 0.7505, 0.85975, 0.7505, 0.9025, 0.9025, 0.9025, 0.874, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
 ENDTABLE
 R_EFF_MOTOR_GAIN(2,1) 1 ! [D] Multiplied with calculated value to get Motor
                         ! efficiency
@@ -5037,6 +5141,32 @@ SPIN_SCALE_R_EFF_MOTOR(2,1) 1 ! [D] Divided into (motor speed -
                               ! SPIN_START_R_EFF_MOTOR)
 TORQUE_START_R_EFF_MOTOR(2,1) 0 ; N-m ! [D] Subtracted from motor output torque
 TORQUE_SCALE_R_EFF_MOTOR(2,1) 1 ! [D] Divided into (motor output torque -
+                                ! TORQUE_START_R_EFF_MOTOR)
+
+! Row 1 has "0" (place holder) followed by 23 values of motor output torque (N-m).
+! Other rows have motor speed (rpm) followed by 23 values of Motor efficiency (-).
+R_EFF_MOTOR_CARPET(2,2) 2D_LINEAR
+ 0, -595.5125, -536.9375, -478.3625, -419.7875, -361.2125, -302.6375, -244.0625, -185.4875, -126.9125, -68.3375, -9.7625, 0, 9.7625, 68.3375, 126.9125, 185.4875, 244.0625, 302.6375, 361.2125, 419.7875, 478.3625, 536.9375, 595.5125
+ 0, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975, 0.85975
+ 128.04, 0.532, 0.5605, 0.589, 0.6175, 0.646, 0.684, 0.722, 0.76, 0.8075, 0.855, 0.8265, 0.85975, 0.8265, 0.855, 0.8075, 0.76, 0.722, 0.684, 0.646, 0.6175, 0.589, 0.5605, 0.532
+ 256.08, 0.684, 0.703, 0.722, 0.741, 0.7695, 0.7885, 0.817, 0.8455, 0.8645, 0.893, 0.8075, 0.85975, 0.8075, 0.893, 0.8645, 0.8455, 0.817, 0.7885, 0.7695, 0.741, 0.722, 0.703, 0.684
+ 384.12, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.855, 0.874, 0.8835, 0.893, 0.7885, 0.85975, 0.7885, 0.893, 0.8835, 0.874, 0.855, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
+ 512.16, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.874, 0.8835, 0.9025, 0.9025, 0.779, 0.85975, 0.779, 0.9025, 0.9025, 0.8835, 0.874, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
+ 640.2, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.874, 0.893, 0.9025, 0.9025, 0.7695, 0.85975, 0.7695, 0.9025, 0.9025, 0.893, 0.874, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
+ 768.25, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.874, 0.9025, 0.912, 0.9025, 0.7695, 0.85975, 0.7695, 0.9025, 0.912, 0.9025, 0.874, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
+ 896.29, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.874, 0.9025, 0.912, 0.9025, 0.76, 0.85975, 0.76, 0.9025, 0.912, 0.9025, 0.874, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
+ 1024.3, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.874, 0.9025, 0.9025, 0.9025, 0.76, 0.85975, 0.76, 0.9025, 0.9025, 0.9025, 0.874, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
+ 1152.4, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.874, 0.9025, 0.9025, 0.9025, 0.7505, 0.85975, 0.7505, 0.9025, 0.9025, 0.9025, 0.874, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
+ 1536.5, 0.684, 0.703, 0.722, 0.741, 0.817, 0.836, 0.874, 0.9025, 0.9025, 0.9025, 0.7505, 0.85975, 0.7505, 0.9025, 0.9025, 0.9025, 0.874, 0.836, 0.817, 0.741, 0.722, 0.703, 0.684
+ENDTABLE
+R_EFF_MOTOR_GAIN(2,2) 1 ! [D] Multiplied with calculated value to get Motor
+                        ! efficiency
+R_EFF_MOTOR_OFFSET(2,2) 0 ; - ! [D] Added (after gain) to get Motor efficiency
+SPIN_START_R_EFF_MOTOR(2,2) 0 ; rpm ! [D] Subtracted from motor speed
+SPIN_SCALE_R_EFF_MOTOR(2,2) 1 ! [D] Divided into (motor speed -
+                              ! SPIN_START_R_EFF_MOTOR)
+TORQUE_START_R_EFF_MOTOR(2,2) 0 ; N-m ! [D] Subtracted from motor output torque
+TORQUE_SCALE_R_EFF_MOTOR(2,2) 1 ! [D] Divided into (motor output torque -
                                 ! TORQUE_START_R_EFF_MOTOR)
 
 ! SPEED_TARGET: Speed controller target. Speed can be a nonlinear CARPET function of
@@ -5051,7 +5181,7 @@ TORQUE_SCALE_R_EFF_MOTOR(2,1) 1 ! [D] Divided into (motor output torque -
 ! the index ISPEED is used to identify the dataset when reading data.
 
 SPEED_TARGET_ID(1)  1  ! Procedure: On-Center Steer Test
-SPEED_TARGET_CONSTANT(1) 100 ; km/h ! Speed component due to time
+SPEED_TARGET_CONSTANT(1) 80 ; km/h ! Speed component due to time
 SPEED_TARGET_GAIN(1) 1 ! [D] Multiplied with calculated value to get speed
 SPEED_TARGET_OFFSET(1) 0 ; km/h ! [D] Added to get speed
 SPEED_TARGET_COMBINE(1) ADD ! How to combine the two components

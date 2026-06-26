@@ -2,6 +2,7 @@ PARSFILE
 #FullDataName Powertrain: 4-Wheel Drive`10kW x4, Electric AWD Hi-Pw, 3.905 Ratio`Electric: 10kW x4 (4 Motors)
 INSTALL_POWERTRAIN 3
 OPT_PT 3
+INSTALL_ENGINE
 
 R_REAR_DRIVE_SC 0.5
 
@@ -13,11 +14,11 @@ R_MDRIVE 1
 #RingCtrl4 1
 #RingCtrl5 1
 #RingCtrl6 1
-#RingCtrl7 2
+#RingCtrl7 1
 #CheckBox0 0    
 #CheckBox1 0    
 
-OPT_ENGINE_INTERNAL 0
+OPT_ENGINE_INTERNAL 1
 OPT_PWR_CPL_INTERNAL 0
 OPT_TRANS_INTERNAL 0
 IDIFF 1
@@ -26,6 +27,9 @@ IDIFF 2
 OPT_DIFF_INTERNAL 1
 IDIFF 3
 OPT_DIFF_INTERNAL 1
+
+PARSFILE Powertrain\Engine\Engine_8040b1ad-5f06-4c6c-a6e6-740997750fc3.par
+#BlueLink0 Powertrain: Engine`300 kW Engine` 300 kW Engines` , Engine`Engine_8040b1ad-5f06-4c6c-a6e6-740997750fc3
 
 PARSFILE Powertrain\HEV\HEV_d85b4cba-5206-4048-9418-d11f80dfd1d3.par
 #BlueLink11 Powertrain: Hybrid/Electric System`Electric Motors on Axles Powertrain Assy` ` , Hybrid system`HEV_d85b4cba-5206-4048-9418-d11f80dfd1d3
@@ -60,7 +64,7 @@ LOG_ENTRY Used Dataset: Powertrain: 4-Wheel Drive; { Electric: 10kW x4 (4 Motors
 #DataSet : 10kW x4, Electric AWD Hi-Pw, 3.905 Ratio
 #Category: Electric: 10kW x4 (4 Motors)
 #FileID  : 4WD_e6cbf4dd-fb94-4478-aba0-d292b92a917e
-#Modified: 02-09-2022 16:11:04
+#Modified: 06-08-2026 21:07:46
 #Product : CarSim 2024.1
 #DataVer : 2024.1
 #VehCode 4WD

@@ -8,7 +8,7 @@ CATEGORY Steering Tests
 TITLE On-Center Steer Test, D-Class Sedan <Steering Tests>
 
 ! Echo: Runs\Target_Path_echo.par
-! This run was made 15:39 on June 04, 2026.
+! This run was made 00:56 on June 13, 2026.
 
 !------------------------------------------------------------------------------------
 ! SYSTEM PARAMETERS (SIMULATION OPTIONS)
@@ -40,7 +40,7 @@ TSTART              0 ; s ! Starting time for the simulation clock
 TSTART_WRITE        0 ; s ! Start writing outputs when this time is reached
 TSTEP          0.0005 ; s ! Time step between calculations [L]
 ! TSTEP_WRITE   0.025 ; s ! CALC -- Time interval in output time-series file
-TSTOP            37.2 ; s ! Stop when this time is reached
+TSTOP             100 ; s ! Stop when this time is reached
 ! T_DT         0.0005 ; s ! CALC -- Time increment between calculations
 
 !------------------------------------------------------------------------------------
@@ -70,33 +70,24 @@ SEGMENT_LENGTH(1,1) 200 ; m ! Segment length
 ! S_SEGMENT_END(1,1) 200 ; m ! CALC -- Station at end of this segment
 ! X_SEGMENT_END(1,1) -100 ; m ! CALC -- X coordinate at end of segment
 
-SEGMENT_TYPE(1,2)   3 ! 0 -> straight, 1 -> table, 2 -> rho, 3 -> radius, 4 -> cloth
-SEGMENT_RADIUS(1,2) 100 ; m ! Radius of arc; + -> left turn
-SEGMENT_ARC(1,2)   90 ; deg ! Central angle of arc
-! S_SEGMENT_END(1,2) 357.0796327 ; m ! CALC -- Station at end of this segment
-! X_SEGMENT_END(1,2) -4.346877156e-15 ; m ! CALC -- X coordinate at end of segment
-! Y_SEGMENT_END(1,2) 100 ; m ! CALC -- Y coordinate at end of segment
-! HEADING_END(1,2) 90 ; deg ! CALC -- Heading at end of segment
+SEGMENT_TYPE(1,2)   0 ! 0 -> straight, 1 -> table, 2 -> rho, 3 -> radius, 4 -> cloth
+SEGMENT_LENGTH(1,2) 50 ; m ! Segment length
+! S_SEGMENT_END(1,2) 250 ; m ! CALC -- Station at end of this segment
+! X_SEGMENT_END(1,2) -50 ; m ! CALC -- X coordinate at end of segment
 
 SEGMENT_TYPE(1,3)   0 ! 0 -> straight, 1 -> table, 2 -> rho, 3 -> radius, 4 -> cloth
 SEGMENT_LENGTH(1,3) 50 ; m ! Segment length
-! S_SEGMENT_END(1,3) 407.0796327 ; m ! CALC -- Station at end of this segment
-! X_SEGMENT_END(1,3) -3.061616998e-15 ; m ! CALC -- X coordinate at end of segment
-! Y_SEGMENT_END(1,3) 150 ; m ! CALC -- Y coordinate at end of segment
-! HEADING_END(1,3) 90 ; deg ! CALC -- Heading at end of segment
+! S_SEGMENT_END(1,3) 300 ; m ! CALC -- Station at end of this segment
 
 SEGMENT_TYPE(1,4)   0 ! 0 -> straight, 1 -> table, 2 -> rho, 3 -> radius, 4 -> cloth
 SEGMENT_LENGTH(1,4) 50 ; m ! Segment length
-! S_SEGMENT_END(1,4) 457.0796327 ; m ! CALC -- Station at end of this segment
-! Y_SEGMENT_END(1,4) 200 ; m ! CALC -- Y coordinate at end of segment
-! HEADING_END(1,4) 90 ; deg ! CALC -- Heading at end of segment
+! S_SEGMENT_END(1,4) 350 ; m ! CALC -- Station at end of this segment
+! X_SEGMENT_END(1,4) 50 ; m ! CALC -- X coordinate at end of segment
 
 SEGMENT_TYPE(1,5)   0 ! 0 -> straight, 1 -> table, 2 -> rho, 3 -> radius, 4 -> cloth
-SEGMENT_LENGTH(1,5) 50 ; m ! Segment length
-! S_SEGMENT_END(1,5) 507.0796327 ; m ! CALC -- Station at end of this segment
-! X_SEGMENT_END(1,5) 3.061616998e-15 ; m ! CALC -- X coordinate at end of segment
-! Y_SEGMENT_END(1,5) 250 ; m ! CALC -- Y coordinate at end of segment
-! HEADING_END(1,5) 90 ; deg ! CALC -- Heading at end of segment
+SEGMENT_LENGTH(1,5) 1000 ; m ! Segment length
+! S_SEGMENT_END(1,5) 1350 ; m ! CALC -- Station at end of this segment
+! X_SEGMENT_END(1,5) 1050 ; m ! CALC -- X coordinate at end of segment
 
 !------------------------------------------------------------------------------------
 ! ROAD SURFACES

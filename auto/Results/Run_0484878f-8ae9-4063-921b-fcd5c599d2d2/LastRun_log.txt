@@ -1,6 +1,6 @@
-Run made by CarSim 2024.1 at 14:09 on March 25, 2024.
+Run made by CarSim 2024.1 at 11:21 on June 16, 2026.
 Revision 222209, March 18, 2024
-Started with simfile: simfile_Run_0484878f-8ae9-4063-921b-fcd5c599d2d2.sim
+Started with simfile: simfile.sim
 
 Include PARSFILE "Results\Run_0484878f-8ae9-4063-921b-fcd5c599d2d2\Run_all.par"
 Installed keywords into VS Solver for MODEL_LAYOUT I_I
@@ -29,8 +29,8 @@ Used Dataset: Suspension: Auxiliary Roll Moment; { Linear } Linear: 384 N-m/deg
 Used Dataset: Suspension: Independent Compliance, Springs, and Dampers; { B-Class } B-Class, Sports Car - Front
 Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Tire
 Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Wheel
-Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Stripe
-Used Dataset: Animator: Shape Assembly; { Tires } 195/45 R16
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Stripe #1
+Used Dataset: Animator: Shape Assembly; { Tires } Sports Car
 Used Dataset: Generic Table; { Tire Relaxation Length } Lx Variable, Scaled to Tire
 Used Dataset: Generic Table; { Tire Relaxation Length } Ly Variable, Scaled to Tire
 Used Dataset: Tire: Aligning Moment; { Performance Tires } 205/45 R17
@@ -40,8 +40,8 @@ Used Dataset: Tire: Camber Thrust Coefficient; { Performance Tires } 205/45 R17
 Used Dataset: Tire; { Performance Tires } 205/45 R17
 Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Tire
 Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Wheel
-Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Stripe
-Used Dataset: Animator: Shape Assembly; { Tires } 195/45 R16
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Stripe #1
+Used Dataset: Animator: Shape Assembly; { Tires } Sports Car
 Used Dataset: Generic Table; { Tire Relaxation Length } Lx Variable, Scaled to Tire
 Used Dataset: Generic Table; { Tire Relaxation Length } Ly Variable, Scaled to Tire
 Used Dataset: Tire: Aligning Moment; { Performance Tires } 205/45 R17
@@ -66,8 +66,8 @@ Used Dataset: Suspension: Auxiliary Roll Moment; { Linear } Linear: 384 N-m/deg
 Used Dataset: Suspension: Independent Compliance, Springs, and Dampers; { B-Class } B-Class, Sports Car - Rear
 Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Tire
 Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Wheel
-Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Stripe
-Used Dataset: Animator: Shape Assembly; { Tires } 195/45 R16
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Stripe #1
+Used Dataset: Animator: Shape Assembly; { Tires } Sports Car
 Used Dataset: Generic Table; { Tire Relaxation Length } Lx Variable, Scaled to Tire
 Used Dataset: Generic Table; { Tire Relaxation Length } Ly Variable, Scaled to Tire
 Used Dataset: Tire: Aligning Moment; { Performance Tires } 205/45 R17
@@ -77,8 +77,8 @@ Used Dataset: Tire: Camber Thrust Coefficient; { Performance Tires } 205/45 R17
 Used Dataset: Tire; { Performance Tires } 205/45 R17
 Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Tire
 Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Wheel
-Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Stripe
-Used Dataset: Animator: Shape Assembly; { Tires } 195/45 R16
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Stripe #1
+Used Dataset: Animator: Shape Assembly; { Tires } Sports Car
 Used Dataset: Generic Table; { Tire Relaxation Length } Lx Variable, Scaled to Tire
 Used Dataset: Generic Table; { Tire Relaxation Length } Ly Variable, Scaled to Tire
 Used Dataset: Tire: Aligning Moment; { Performance Tires } 205/45 R17
@@ -88,11 +88,11 @@ Used Dataset: Tire: Camber Thrust Coefficient; { Performance Tires } 205/45 R17
 Used Dataset: Tire; { Performance Tires } 205/45 R17
 Used Dataset: Vehicle: Sprung Mass; { B-Class } B-Class, Sports Car
 Used Dataset: Aerodynamics: Fx (Drag) Coef. vs. Aero Slip; { Spline Interpolation } Spline: 0.30 at 0 deg.
-Used Dataset: Aerodynamics: Fy (Side Force) Coef. vs. Aero Slip; { Spline Interpolation } Spline: 2 at 90 deg.
+Used Dataset: Aerodynamics: Fy (Side Force) Coef. vs. Aero Slip; { Spline Interpolation } Spline: 0.5 at 90 deg.
 Used Dataset: Aerodynamics: Fz (Lift) Coef. vs. Aero Slip; { Spline Interpolation } Spline: 0.18 at 0 deg.
 Used Dataset: Aerodynamics: Mx (Roll Moment) Coef. vs. Aero Slip; { Spline Interpolation } Spline: 0.3 at 90 deg.
 Used Dataset: Aerodynamics: My (Pitch Moment) Coef. vs. Aero Slip; { Spline Interpolation } Spline: 0.15 at 0 deg.
-Used Dataset: Aerodynamics: Mz (Yaw Moment) Coef. vs. Aero Slip; { Spline Interpolation } Spline: 0.2 at 35 deg.
+Used Dataset: Aerodynamics: Mz (Yaw Moment) Coef. vs. Aero Slip; { Spline Interpolation } Spline: -0.05 at 90 deg.
 Used Dataset: Aerodynamics: Basic; { B-Class } B-Class, Sports Car Aero
 Used Dataset: Powertrain: Engine; { 43 kW - 125 kW Engines } 125 kW Engine
 Used Dataset: Powertrain: Torque Converter; { Torque Converters: 75 kW to 150 kW } Torque Converter: 125 kW Engine
@@ -165,8 +165,8 @@ Used Dataset: Control: Speed (Closed Loop) Using Target Speed; { Constant } Cons
  ISO Steady-State Circle, R = 30 <Handling and Stability Tests>
 Used Dataset: CarSim Run Control; { Handling and Stability Tests } ISO Steady-State Circle, R = 30
 
-Time to read input = 0.114285
-Function F_BOOST_R_TABLE extrapolated (out of range HIGH) for X = 47.9448 N-m at T = 0
+Time to read input = 1.08391
+Function F_BOOST_R_TABLE extrapolated (out of range HIGH) for X = 57.5337 N-m at T = 0
 Function F_REB_STOP_TABLE(1,1) extrapolated (out of range HIGH) for X = 0 mm at T = 0
 Function F_JNC_STOP_TABLE(1,1) extrapolated (out of range LOW) for X = 0 mm at T = 0
 Function F_REB_STOP_TABLE(1,2) extrapolated (out of range HIGH) for X = 0 mm at T = 0
@@ -176,595 +176,77 @@ Function F_JNC_STOP_TABLE(2,1) extrapolated (out of range LOW) for X = 0 mm at T
 Function F_REB_STOP_TABLE(2,2) extrapolated (out of range HIGH) for X = 0 mm at T = 0
 Function F_JNC_STOP_TABLE(2,2) extrapolated (out of range LOW) for X = 0 mm at T = 0
 
-Run started: VS output file = Results\Run_0484878f-8ae9-4063-921b-fcd5c599d2d2\Run.vsb
+Run started: VS output file = Results\Run_0484878f-8ae9-4063-921b-fcd5c599d2d2\LastRun.vsb
 
 Event #1 occurred at t = 21.0005: T > 3*T_WAIT
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_af9d66d2-5718-420d-bb2c-039f162ce175.par"
+Include PARSFILE "C:\workspace\AutoVehcileSim\auto\Events\Events_af9d66d2-5718-420d-bb2c-039f162ce175.par"
 Used Dataset: Events; { ISO Steady-State Circle Series } B. Save Ackermann Steer
 
 Event #2 occurred at t = 21.001: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_37a368e6-a61d-4f05-9aef-fa1acf6e4284.par"
+Include PARSFILE "C:\workspace\AutoVehcileSim\auto\Events\Events_37a368e6-a61d-4f05-9aef-fa1acf6e4284.par"
 Used Dataset: Events; { ISO Steady-State Circle Series } C. Go to Next Speed
 
 Event #3 occurred at t = 28.0015: T_EVENT > T_WAIT
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_3c5e0846-379b-4da1-a4cc-6995f56bf8ad.par"
+Include PARSFILE "C:\workspace\AutoVehcileSim\auto\Events\Events_3c5e0846-379b-4da1-a4cc-6995f56bf8ad.par"
 Used Dataset: Events; { ISO Steady-State Circle Series } D. Check Lateral Acceleration
 
 Event #4 (Group #1000) occurred at t = 28.002: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_13ce0693-4ddf-4e90-b64c-6b18e6d8ad95.par"
+Include PARSFILE "C:\workspace\AutoVehcileSim\auto\Events\Events_13ce0693-4ddf-4e90-b64c-6b18e6d8ad95.par"
 Pending Event removed by command DELETE_EVENTS_ID: ID = 1000, ABS(ABS(AY) - AY_TARG) > AY_STEP
 Used Dataset: Events; { ISO Steady-State Circle Series } E. Write One Time Step
 
 Event #5 (Group #1000) occurred at t = 28.0025: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_37a368e6-a61d-4f05-9aef-fa1acf6e4284.par"
+Include PARSFILE "C:\workspace\AutoVehcileSim\auto\Events\Events_37a368e6-a61d-4f05-9aef-fa1acf6e4284.par"
 Used Dataset: Events; { ISO Steady-State Circle Series } C. Go to Next Speed
 
 Event #6 occurred at t = 35.0025: T_EVENT > T_WAIT
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_3c5e0846-379b-4da1-a4cc-6995f56bf8ad.par"
+Include PARSFILE "C:\workspace\AutoVehcileSim\auto\Events\Events_3c5e0846-379b-4da1-a4cc-6995f56bf8ad.par"
 Used Dataset: Events; { ISO Steady-State Circle Series } D. Check Lateral Acceleration
 
 Event #7 (Group #1000) occurred at t = 35.003: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_13ce0693-4ddf-4e90-b64c-6b18e6d8ad95.par"
+Include PARSFILE "C:\workspace\AutoVehcileSim\auto\Events\Events_13ce0693-4ddf-4e90-b64c-6b18e6d8ad95.par"
 Pending Event removed by command DELETE_EVENTS_ID: ID = 1000, ABS(ABS(AY) - AY_TARG) > AY_STEP
 Used Dataset: Events; { ISO Steady-State Circle Series } E. Write One Time Step
 
 Event #8 (Group #1000) occurred at t = 35.0035: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_37a368e6-a61d-4f05-9aef-fa1acf6e4284.par"
+Include PARSFILE "C:\workspace\AutoVehcileSim\auto\Events\Events_37a368e6-a61d-4f05-9aef-fa1acf6e4284.par"
 Used Dataset: Events; { ISO Steady-State Circle Series } C. Go to Next Speed
 
 Event #9 occurred at t = 42.0035: T_EVENT > T_WAIT
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_3c5e0846-379b-4da1-a4cc-6995f56bf8ad.par"
+Include PARSFILE "C:\workspace\AutoVehcileSim\auto\Events\Events_3c5e0846-379b-4da1-a4cc-6995f56bf8ad.par"
 Used Dataset: Events; { ISO Steady-State Circle Series } D. Check Lateral Acceleration
 
 Event #10 (Group #1000) occurred at t = 42.004: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_13ce0693-4ddf-4e90-b64c-6b18e6d8ad95.par"
+Include PARSFILE "C:\workspace\AutoVehcileSim\auto\Events\Events_13ce0693-4ddf-4e90-b64c-6b18e6d8ad95.par"
 Pending Event removed by command DELETE_EVENTS_ID: ID = 1000, ABS(ABS(AY) - AY_TARG) > AY_STEP
 Used Dataset: Events; { ISO Steady-State Circle Series } E. Write One Time Step
 
 Event #11 (Group #1000) occurred at t = 42.0045: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_37a368e6-a61d-4f05-9aef-fa1acf6e4284.par"
+Include PARSFILE "C:\workspace\AutoVehcileSim\auto\Events\Events_37a368e6-a61d-4f05-9aef-fa1acf6e4284.par"
 Used Dataset: Events; { ISO Steady-State Circle Series } C. Go to Next Speed
 
 Event #12 occurred at t = 49.0045: T_EVENT > T_WAIT
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_3c5e0846-379b-4da1-a4cc-6995f56bf8ad.par"
+Include PARSFILE "C:\workspace\AutoVehcileSim\auto\Events\Events_3c5e0846-379b-4da1-a4cc-6995f56bf8ad.par"
 Used Dataset: Events; { ISO Steady-State Circle Series } D. Check Lateral Acceleration
 
 Event #13 (Group #1000) occurred at t = 49.005: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_13ce0693-4ddf-4e90-b64c-6b18e6d8ad95.par"
+Include PARSFILE "C:\workspace\AutoVehcileSim\auto\Events\Events_13ce0693-4ddf-4e90-b64c-6b18e6d8ad95.par"
 Pending Event removed by command DELETE_EVENTS_ID: ID = 1000, ABS(ABS(AY) - AY_TARG) > AY_STEP
 Used Dataset: Events; { ISO Steady-State Circle Series } E. Write One Time Step
 
 Event #14 (Group #1000) occurred at t = 49.0055: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_37a368e6-a61d-4f05-9aef-fa1acf6e4284.par"
+Include PARSFILE "C:\workspace\AutoVehcileSim\auto\Events\Events_37a368e6-a61d-4f05-9aef-fa1acf6e4284.par"
 Used Dataset: Events; { ISO Steady-State Circle Series } C. Go to Next Speed
 
 Event #15 occurred at t = 56.0055: T_EVENT > T_WAIT
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_3c5e0846-379b-4da1-a4cc-6995f56bf8ad.par"
+Include PARSFILE "C:\workspace\AutoVehcileSim\auto\Events\Events_3c5e0846-379b-4da1-a4cc-6995f56bf8ad.par"
 Used Dataset: Events; { ISO Steady-State Circle Series } D. Check Lateral Acceleration
 
-Event #16 (Group #1000) occurred at t = 56.006: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_13ce0693-4ddf-4e90-b64c-6b18e6d8ad95.par"
-Pending Event removed by command DELETE_EVENTS_ID: ID = 1000, ABS(ABS(AY) - AY_TARG) > AY_STEP
-Used Dataset: Events; { ISO Steady-State Circle Series } E. Write One Time Step
+Event #16 (Group #1000) occurred at t = 56.006: ABS(ABS(AY) - AY_TARG) > AY_STEP
+Include PARSFILE "C:\workspace\AutoVehcileSim\auto\Events\Events_1d005d14-e306-4b68-8bd0-51aadba92b68.par"
 
-Event #17 (Group #1000) occurred at t = 56.0065: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_37a368e6-a61d-4f05-9aef-fa1acf6e4284.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } C. Go to Next Speed
+Run stopped at t = 56.006. VS Command STOP_RUN_NOW  due to lateral acceleration error
+Used Dataset: Events; { Stop Run Now } Stop Due to Lateral Acceleration Error
 
-Event #18 occurred at t = 63.0065: T_EVENT > T_WAIT
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_3c5e0846-379b-4da1-a4cc-6995f56bf8ad.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } D. Check Lateral Acceleration
-
-Event #19 (Group #1000) occurred at t = 63.007: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_13ce0693-4ddf-4e90-b64c-6b18e6d8ad95.par"
-Pending Event removed by command DELETE_EVENTS_ID: ID = 1000, ABS(ABS(AY) - AY_TARG) > AY_STEP
-Used Dataset: Events; { ISO Steady-State Circle Series } E. Write One Time Step
-
-Event #20 (Group #1000) occurred at t = 63.0075: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_37a368e6-a61d-4f05-9aef-fa1acf6e4284.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } C. Go to Next Speed
-
-Event #21 occurred at t = 70.0075: T_EVENT > T_WAIT
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_3c5e0846-379b-4da1-a4cc-6995f56bf8ad.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } D. Check Lateral Acceleration
-
-Event #22 (Group #1000) occurred at t = 70.008: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_13ce0693-4ddf-4e90-b64c-6b18e6d8ad95.par"
-Pending Event removed by command DELETE_EVENTS_ID: ID = 1000, ABS(ABS(AY) - AY_TARG) > AY_STEP
-Used Dataset: Events; { ISO Steady-State Circle Series } E. Write One Time Step
-
-Event #23 (Group #1000) occurred at t = 70.0085: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_37a368e6-a61d-4f05-9aef-fa1acf6e4284.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } C. Go to Next Speed
-
-Event #24 occurred at t = 77.0085: T_EVENT > T_WAIT
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_3c5e0846-379b-4da1-a4cc-6995f56bf8ad.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } D. Check Lateral Acceleration
-
-Event #25 (Group #1000) occurred at t = 77.009: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_13ce0693-4ddf-4e90-b64c-6b18e6d8ad95.par"
-Pending Event removed by command DELETE_EVENTS_ID: ID = 1000, ABS(ABS(AY) - AY_TARG) > AY_STEP
-Used Dataset: Events; { ISO Steady-State Circle Series } E. Write One Time Step
-
-Event #26 (Group #1000) occurred at t = 77.0095: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_37a368e6-a61d-4f05-9aef-fa1acf6e4284.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } C. Go to Next Speed
-
-Event #27 occurred at t = 84.0095: T_EVENT > T_WAIT
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_3c5e0846-379b-4da1-a4cc-6995f56bf8ad.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } D. Check Lateral Acceleration
-
-Event #28 (Group #1000) occurred at t = 84.01: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_13ce0693-4ddf-4e90-b64c-6b18e6d8ad95.par"
-Pending Event removed by command DELETE_EVENTS_ID: ID = 1000, ABS(ABS(AY) - AY_TARG) > AY_STEP
-Used Dataset: Events; { ISO Steady-State Circle Series } E. Write One Time Step
-
-Event #29 (Group #1000) occurred at t = 84.0105: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_37a368e6-a61d-4f05-9aef-fa1acf6e4284.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } C. Go to Next Speed
-
-Event #30 occurred at t = 91.0105: T_EVENT > T_WAIT
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_3c5e0846-379b-4da1-a4cc-6995f56bf8ad.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } D. Check Lateral Acceleration
-
-Event #31 (Group #1000) occurred at t = 91.011: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_13ce0693-4ddf-4e90-b64c-6b18e6d8ad95.par"
-Pending Event removed by command DELETE_EVENTS_ID: ID = 1000, ABS(ABS(AY) - AY_TARG) > AY_STEP
-Used Dataset: Events; { ISO Steady-State Circle Series } E. Write One Time Step
-
-Event #32 (Group #1000) occurred at t = 91.0115: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_37a368e6-a61d-4f05-9aef-fa1acf6e4284.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } C. Go to Next Speed
-
-Event #33 occurred at t = 98.0115: T_EVENT > T_WAIT
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_3c5e0846-379b-4da1-a4cc-6995f56bf8ad.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } D. Check Lateral Acceleration
-
-Event #34 (Group #1000) occurred at t = 98.012: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_13ce0693-4ddf-4e90-b64c-6b18e6d8ad95.par"
-Pending Event removed by command DELETE_EVENTS_ID: ID = 1000, ABS(ABS(AY) - AY_TARG) > AY_STEP
-Used Dataset: Events; { ISO Steady-State Circle Series } E. Write One Time Step
-
-Event #35 (Group #1000) occurred at t = 98.0125: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_37a368e6-a61d-4f05-9aef-fa1acf6e4284.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } C. Go to Next Speed
-
-Event #36 occurred at t = 105.013: T_EVENT > T_WAIT
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_3c5e0846-379b-4da1-a4cc-6995f56bf8ad.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } D. Check Lateral Acceleration
-
-Event #37 (Group #1000) occurred at t = 105.013: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_13ce0693-4ddf-4e90-b64c-6b18e6d8ad95.par"
-Pending Event removed by command DELETE_EVENTS_ID: ID = 1000, ABS(ABS(AY) - AY_TARG) > AY_STEP
-Used Dataset: Events; { ISO Steady-State Circle Series } E. Write One Time Step
-
-Event #38 (Group #1000) occurred at t = 105.014: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_37a368e6-a61d-4f05-9aef-fa1acf6e4284.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } C. Go to Next Speed
-
-Event #39 occurred at t = 112.014: T_EVENT > T_WAIT
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_3c5e0846-379b-4da1-a4cc-6995f56bf8ad.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } D. Check Lateral Acceleration
-
-Event #40 (Group #1000) occurred at t = 112.014: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_13ce0693-4ddf-4e90-b64c-6b18e6d8ad95.par"
-Pending Event removed by command DELETE_EVENTS_ID: ID = 1000, ABS(ABS(AY) - AY_TARG) > AY_STEP
-Used Dataset: Events; { ISO Steady-State Circle Series } E. Write One Time Step
-
-Event #41 (Group #1000) occurred at t = 112.015: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_37a368e6-a61d-4f05-9aef-fa1acf6e4284.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } C. Go to Next Speed
-
-Event #42 occurred at t = 119.015: T_EVENT > T_WAIT
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_3c5e0846-379b-4da1-a4cc-6995f56bf8ad.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } D. Check Lateral Acceleration
-
-Event #43 (Group #1000) occurred at t = 119.015: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_13ce0693-4ddf-4e90-b64c-6b18e6d8ad95.par"
-Pending Event removed by command DELETE_EVENTS_ID: ID = 1000, ABS(ABS(AY) - AY_TARG) > AY_STEP
-Used Dataset: Events; { ISO Steady-State Circle Series } E. Write One Time Step
-
-Event #44 (Group #1000) occurred at t = 119.016: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_37a368e6-a61d-4f05-9aef-fa1acf6e4284.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } C. Go to Next Speed
-
-Event #45 occurred at t = 126.016: T_EVENT > T_WAIT
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_3c5e0846-379b-4da1-a4cc-6995f56bf8ad.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } D. Check Lateral Acceleration
-
-Event #46 (Group #1000) occurred at t = 126.016: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_13ce0693-4ddf-4e90-b64c-6b18e6d8ad95.par"
-Pending Event removed by command DELETE_EVENTS_ID: ID = 1000, ABS(ABS(AY) - AY_TARG) > AY_STEP
-Used Dataset: Events; { ISO Steady-State Circle Series } E. Write One Time Step
-
-Event #47 (Group #1000) occurred at t = 126.017: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_37a368e6-a61d-4f05-9aef-fa1acf6e4284.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } C. Go to Next Speed
-
-Event #48 occurred at t = 133.017: T_EVENT > T_WAIT
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_3c5e0846-379b-4da1-a4cc-6995f56bf8ad.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } D. Check Lateral Acceleration
-
-Event #49 (Group #1000) occurred at t = 133.018: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_13ce0693-4ddf-4e90-b64c-6b18e6d8ad95.par"
-Pending Event removed by command DELETE_EVENTS_ID: ID = 1000, ABS(ABS(AY) - AY_TARG) > AY_STEP
-Used Dataset: Events; { ISO Steady-State Circle Series } E. Write One Time Step
-
-Event #50 (Group #1000) occurred at t = 133.018: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_37a368e6-a61d-4f05-9aef-fa1acf6e4284.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } C. Go to Next Speed
-
-Event #51 occurred at t = 140.019: T_EVENT > T_WAIT
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_3c5e0846-379b-4da1-a4cc-6995f56bf8ad.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } D. Check Lateral Acceleration
-
-Event #52 (Group #1000) occurred at t = 140.019: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_13ce0693-4ddf-4e90-b64c-6b18e6d8ad95.par"
-Pending Event removed by command DELETE_EVENTS_ID: ID = 1000, ABS(ABS(AY) - AY_TARG) > AY_STEP
-Used Dataset: Events; { ISO Steady-State Circle Series } E. Write One Time Step
-
-Event #53 (Group #1000) occurred at t = 140.02: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_37a368e6-a61d-4f05-9aef-fa1acf6e4284.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } C. Go to Next Speed
-
-Event #54 occurred at t = 147.02: T_EVENT > T_WAIT
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_3c5e0846-379b-4da1-a4cc-6995f56bf8ad.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } D. Check Lateral Acceleration
-
-Event #55 (Group #1000) occurred at t = 147.02: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_13ce0693-4ddf-4e90-b64c-6b18e6d8ad95.par"
-Pending Event removed by command DELETE_EVENTS_ID: ID = 1000, ABS(ABS(AY) - AY_TARG) > AY_STEP
-Used Dataset: Events; { ISO Steady-State Circle Series } E. Write One Time Step
-
-Event #56 (Group #1000) occurred at t = 147.021: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_37a368e6-a61d-4f05-9aef-fa1acf6e4284.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } C. Go to Next Speed
-
-Event #57 occurred at t = 154.021: T_EVENT > T_WAIT
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_3c5e0846-379b-4da1-a4cc-6995f56bf8ad.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } D. Check Lateral Acceleration
-
-Event #58 (Group #1000) occurred at t = 154.022: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_13ce0693-4ddf-4e90-b64c-6b18e6d8ad95.par"
-Pending Event removed by command DELETE_EVENTS_ID: ID = 1000, ABS(ABS(AY) - AY_TARG) > AY_STEP
-Used Dataset: Events; { ISO Steady-State Circle Series } E. Write One Time Step
-
-Event #59 (Group #1000) occurred at t = 154.022: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_37a368e6-a61d-4f05-9aef-fa1acf6e4284.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } C. Go to Next Speed
-
-Event #60 occurred at t = 161.023: T_EVENT > T_WAIT
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_3c5e0846-379b-4da1-a4cc-6995f56bf8ad.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } D. Check Lateral Acceleration
-
-Event #61 (Group #1000) occurred at t = 161.023: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_13ce0693-4ddf-4e90-b64c-6b18e6d8ad95.par"
-Pending Event removed by command DELETE_EVENTS_ID: ID = 1000, ABS(ABS(AY) - AY_TARG) > AY_STEP
-Used Dataset: Events; { ISO Steady-State Circle Series } E. Write One Time Step
-
-Event #62 (Group #1000) occurred at t = 161.024: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_37a368e6-a61d-4f05-9aef-fa1acf6e4284.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } C. Go to Next Speed
-
-Event #63 occurred at t = 168.024: T_EVENT > T_WAIT
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_3c5e0846-379b-4da1-a4cc-6995f56bf8ad.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } D. Check Lateral Acceleration
-
-Event #64 (Group #1000) occurred at t = 168.025: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_13ce0693-4ddf-4e90-b64c-6b18e6d8ad95.par"
-Pending Event removed by command DELETE_EVENTS_ID: ID = 1000, ABS(ABS(AY) - AY_TARG) > AY_STEP
-Used Dataset: Events; { ISO Steady-State Circle Series } E. Write One Time Step
-
-Event #65 (Group #1000) occurred at t = 168.025: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_37a368e6-a61d-4f05-9aef-fa1acf6e4284.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } C. Go to Next Speed
-
-Event #66 occurred at t = 175.026: T_EVENT > T_WAIT
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_3c5e0846-379b-4da1-a4cc-6995f56bf8ad.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } D. Check Lateral Acceleration
-
-Event #67 (Group #1000) occurred at t = 175.026: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_13ce0693-4ddf-4e90-b64c-6b18e6d8ad95.par"
-Pending Event removed by command DELETE_EVENTS_ID: ID = 1000, ABS(ABS(AY) - AY_TARG) > AY_STEP
-Used Dataset: Events; { ISO Steady-State Circle Series } E. Write One Time Step
-
-Event #68 (Group #1000) occurred at t = 175.027: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_37a368e6-a61d-4f05-9aef-fa1acf6e4284.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } C. Go to Next Speed
-
-Event #69 occurred at t = 182.027: T_EVENT > T_WAIT
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_3c5e0846-379b-4da1-a4cc-6995f56bf8ad.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } D. Check Lateral Acceleration
-
-Event #70 (Group #1000) occurred at t = 182.028: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_13ce0693-4ddf-4e90-b64c-6b18e6d8ad95.par"
-Pending Event removed by command DELETE_EVENTS_ID: ID = 1000, ABS(ABS(AY) - AY_TARG) > AY_STEP
-Used Dataset: Events; { ISO Steady-State Circle Series } E. Write One Time Step
-
-Event #71 (Group #1000) occurred at t = 182.028: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_37a368e6-a61d-4f05-9aef-fa1acf6e4284.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } C. Go to Next Speed
-
-Event #72 occurred at t = 189.029: T_EVENT > T_WAIT
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_3c5e0846-379b-4da1-a4cc-6995f56bf8ad.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } D. Check Lateral Acceleration
-
-Event #73 (Group #1000) occurred at t = 189.029: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_13ce0693-4ddf-4e90-b64c-6b18e6d8ad95.par"
-Pending Event removed by command DELETE_EVENTS_ID: ID = 1000, ABS(ABS(AY) - AY_TARG) > AY_STEP
-Used Dataset: Events; { ISO Steady-State Circle Series } E. Write One Time Step
-
-Event #74 (Group #1000) occurred at t = 189.03: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_37a368e6-a61d-4f05-9aef-fa1acf6e4284.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } C. Go to Next Speed
-
-Event #75 occurred at t = 196.03: T_EVENT > T_WAIT
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_3c5e0846-379b-4da1-a4cc-6995f56bf8ad.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } D. Check Lateral Acceleration
-
-Event #76 (Group #1000) occurred at t = 196.031: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_13ce0693-4ddf-4e90-b64c-6b18e6d8ad95.par"
-Pending Event removed by command DELETE_EVENTS_ID: ID = 1000, ABS(ABS(AY) - AY_TARG) > AY_STEP
-Used Dataset: Events; { ISO Steady-State Circle Series } E. Write One Time Step
-
-Event #77 (Group #1000) occurred at t = 196.031: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_37a368e6-a61d-4f05-9aef-fa1acf6e4284.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } C. Go to Next Speed
-
-Event #78 occurred at t = 203.032: T_EVENT > T_WAIT
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_3c5e0846-379b-4da1-a4cc-6995f56bf8ad.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } D. Check Lateral Acceleration
-
-Event #79 (Group #1000) occurred at t = 203.032: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_13ce0693-4ddf-4e90-b64c-6b18e6d8ad95.par"
-Pending Event removed by command DELETE_EVENTS_ID: ID = 1000, ABS(ABS(AY) - AY_TARG) > AY_STEP
-Used Dataset: Events; { ISO Steady-State Circle Series } E. Write One Time Step
-
-Event #80 (Group #1000) occurred at t = 203.033: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_37a368e6-a61d-4f05-9aef-fa1acf6e4284.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } C. Go to Next Speed
-
-Event #81 occurred at t = 210.033: T_EVENT > T_WAIT
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_3c5e0846-379b-4da1-a4cc-6995f56bf8ad.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } D. Check Lateral Acceleration
-
-Event #82 (Group #1000) occurred at t = 210.034: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_13ce0693-4ddf-4e90-b64c-6b18e6d8ad95.par"
-Pending Event removed by command DELETE_EVENTS_ID: ID = 1000, ABS(ABS(AY) - AY_TARG) > AY_STEP
-Used Dataset: Events; { ISO Steady-State Circle Series } E. Write One Time Step
-
-Event #83 (Group #1000) occurred at t = 210.034: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_37a368e6-a61d-4f05-9aef-fa1acf6e4284.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } C. Go to Next Speed
-
-Event #84 occurred at t = 217.035: T_EVENT > T_WAIT
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_3c5e0846-379b-4da1-a4cc-6995f56bf8ad.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } D. Check Lateral Acceleration
-
-Event #85 (Group #1000) occurred at t = 217.035: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_13ce0693-4ddf-4e90-b64c-6b18e6d8ad95.par"
-Pending Event removed by command DELETE_EVENTS_ID: ID = 1000, ABS(ABS(AY) - AY_TARG) > AY_STEP
-Used Dataset: Events; { ISO Steady-State Circle Series } E. Write One Time Step
-
-Event #86 (Group #1000) occurred at t = 217.036: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_37a368e6-a61d-4f05-9aef-fa1acf6e4284.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } C. Go to Next Speed
-
-Event #87 occurred at t = 224.036: T_EVENT > T_WAIT
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_3c5e0846-379b-4da1-a4cc-6995f56bf8ad.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } D. Check Lateral Acceleration
-
-Event #88 (Group #1000) occurred at t = 224.037: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_13ce0693-4ddf-4e90-b64c-6b18e6d8ad95.par"
-Pending Event removed by command DELETE_EVENTS_ID: ID = 1000, ABS(ABS(AY) - AY_TARG) > AY_STEP
-Used Dataset: Events; { ISO Steady-State Circle Series } E. Write One Time Step
-
-Event #89 (Group #1000) occurred at t = 224.037: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_37a368e6-a61d-4f05-9aef-fa1acf6e4284.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } C. Go to Next Speed
-
-Event #90 occurred at t = 231.038: T_EVENT > T_WAIT
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_3c5e0846-379b-4da1-a4cc-6995f56bf8ad.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } D. Check Lateral Acceleration
-
-Event #91 (Group #1000) occurred at t = 231.038: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_13ce0693-4ddf-4e90-b64c-6b18e6d8ad95.par"
-Pending Event removed by command DELETE_EVENTS_ID: ID = 1000, ABS(ABS(AY) - AY_TARG) > AY_STEP
-Used Dataset: Events; { ISO Steady-State Circle Series } E. Write One Time Step
-
-Event #92 (Group #1000) occurred at t = 231.039: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_37a368e6-a61d-4f05-9aef-fa1acf6e4284.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } C. Go to Next Speed
-
-Event #93 occurred at t = 238.039: T_EVENT > T_WAIT
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_3c5e0846-379b-4da1-a4cc-6995f56bf8ad.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } D. Check Lateral Acceleration
-
-Event #94 (Group #1000) occurred at t = 238.04: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_13ce0693-4ddf-4e90-b64c-6b18e6d8ad95.par"
-Pending Event removed by command DELETE_EVENTS_ID: ID = 1000, ABS(ABS(AY) - AY_TARG) > AY_STEP
-Used Dataset: Events; { ISO Steady-State Circle Series } E. Write One Time Step
-
-Event #95 (Group #1000) occurred at t = 238.04: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_37a368e6-a61d-4f05-9aef-fa1acf6e4284.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } C. Go to Next Speed
-
-Event #96 occurred at t = 245.041: T_EVENT > T_WAIT
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_3c5e0846-379b-4da1-a4cc-6995f56bf8ad.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } D. Check Lateral Acceleration
-
-Event #97 (Group #1000) occurred at t = 245.041: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_13ce0693-4ddf-4e90-b64c-6b18e6d8ad95.par"
-Pending Event removed by command DELETE_EVENTS_ID: ID = 1000, ABS(ABS(AY) - AY_TARG) > AY_STEP
-Used Dataset: Events; { ISO Steady-State Circle Series } E. Write One Time Step
-
-Event #98 (Group #1000) occurred at t = 245.042: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_37a368e6-a61d-4f05-9aef-fa1acf6e4284.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } C. Go to Next Speed
-
-Event #99 occurred at t = 252.042: T_EVENT > T_WAIT
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_3c5e0846-379b-4da1-a4cc-6995f56bf8ad.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } D. Check Lateral Acceleration
-
-Event #100 (Group #1000) occurred at t = 252.043: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_13ce0693-4ddf-4e90-b64c-6b18e6d8ad95.par"
-Pending Event removed by command DELETE_EVENTS_ID: ID = 1000, ABS(ABS(AY) - AY_TARG) > AY_STEP
-Used Dataset: Events; { ISO Steady-State Circle Series } E. Write One Time Step
-
-Event #101 (Group #1000) occurred at t = 252.043: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_37a368e6-a61d-4f05-9aef-fa1acf6e4284.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } C. Go to Next Speed
-
-Event #102 occurred at t = 259.044: T_EVENT > T_WAIT
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_3c5e0846-379b-4da1-a4cc-6995f56bf8ad.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } D. Check Lateral Acceleration
-
-Event #103 (Group #1000) occurred at t = 259.044: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_13ce0693-4ddf-4e90-b64c-6b18e6d8ad95.par"
-Pending Event removed by command DELETE_EVENTS_ID: ID = 1000, ABS(ABS(AY) - AY_TARG) > AY_STEP
-Used Dataset: Events; { ISO Steady-State Circle Series } E. Write One Time Step
-
-Event #104 (Group #1000) occurred at t = 259.045: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_37a368e6-a61d-4f05-9aef-fa1acf6e4284.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } C. Go to Next Speed
-
-Event #105 occurred at t = 266.045: T_EVENT > T_WAIT
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_3c5e0846-379b-4da1-a4cc-6995f56bf8ad.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } D. Check Lateral Acceleration
-
-Event #106 (Group #1000) occurred at t = 266.046: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_13ce0693-4ddf-4e90-b64c-6b18e6d8ad95.par"
-Pending Event removed by command DELETE_EVENTS_ID: ID = 1000, ABS(ABS(AY) - AY_TARG) > AY_STEP
-Used Dataset: Events; { ISO Steady-State Circle Series } E. Write One Time Step
-
-Event #107 (Group #1000) occurred at t = 266.046: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_37a368e6-a61d-4f05-9aef-fa1acf6e4284.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } C. Go to Next Speed
-
-Event #108 occurred at t = 273.047: T_EVENT > T_WAIT
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_3c5e0846-379b-4da1-a4cc-6995f56bf8ad.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } D. Check Lateral Acceleration
-
-Event #109 (Group #1000) occurred at t = 273.047: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_13ce0693-4ddf-4e90-b64c-6b18e6d8ad95.par"
-Pending Event removed by command DELETE_EVENTS_ID: ID = 1000, ABS(ABS(AY) - AY_TARG) > AY_STEP
-Used Dataset: Events; { ISO Steady-State Circle Series } E. Write One Time Step
-
-Event #110 (Group #1000) occurred at t = 273.048: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_37a368e6-a61d-4f05-9aef-fa1acf6e4284.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } C. Go to Next Speed
-
-Event #111 occurred at t = 280.048: T_EVENT > T_WAIT
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_3c5e0846-379b-4da1-a4cc-6995f56bf8ad.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } D. Check Lateral Acceleration
-
-Event #112 (Group #1000) occurred at t = 280.049: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_13ce0693-4ddf-4e90-b64c-6b18e6d8ad95.par"
-Pending Event removed by command DELETE_EVENTS_ID: ID = 1000, ABS(ABS(AY) - AY_TARG) > AY_STEP
-Used Dataset: Events; { ISO Steady-State Circle Series } E. Write One Time Step
-
-Event #113 (Group #1000) occurred at t = 280.049: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_37a368e6-a61d-4f05-9aef-fa1acf6e4284.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } C. Go to Next Speed
-
-Event #114 occurred at t = 287.05: T_EVENT > T_WAIT
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_3c5e0846-379b-4da1-a4cc-6995f56bf8ad.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } D. Check Lateral Acceleration
-
-Event #115 (Group #1000) occurred at t = 287.05: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_13ce0693-4ddf-4e90-b64c-6b18e6d8ad95.par"
-Pending Event removed by command DELETE_EVENTS_ID: ID = 1000, ABS(ABS(AY) - AY_TARG) > AY_STEP
-Used Dataset: Events; { ISO Steady-State Circle Series } E. Write One Time Step
-
-Event #116 (Group #1000) occurred at t = 287.051: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_37a368e6-a61d-4f05-9aef-fa1acf6e4284.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } C. Go to Next Speed
-
-Event #117 occurred at t = 294.051: T_EVENT > T_WAIT
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_3c5e0846-379b-4da1-a4cc-6995f56bf8ad.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } D. Check Lateral Acceleration
-
-Event #118 (Group #1000) occurred at t = 294.052: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_13ce0693-4ddf-4e90-b64c-6b18e6d8ad95.par"
-Pending Event removed by command DELETE_EVENTS_ID: ID = 1000, ABS(ABS(AY) - AY_TARG) > AY_STEP
-Used Dataset: Events; { ISO Steady-State Circle Series } E. Write One Time Step
-
-Event #119 (Group #1000) occurred at t = 294.052: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_37a368e6-a61d-4f05-9aef-fa1acf6e4284.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } C. Go to Next Speed
-
-Event #120 occurred at t = 301.053: T_EVENT > T_WAIT
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_3c5e0846-379b-4da1-a4cc-6995f56bf8ad.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } D. Check Lateral Acceleration
-
-Event #121 (Group #1000) occurred at t = 301.053: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_13ce0693-4ddf-4e90-b64c-6b18e6d8ad95.par"
-Pending Event removed by command DELETE_EVENTS_ID: ID = 1000, ABS(ABS(AY) - AY_TARG) > AY_STEP
-Used Dataset: Events; { ISO Steady-State Circle Series } E. Write One Time Step
-
-Event #122 (Group #1000) occurred at t = 301.054: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_37a368e6-a61d-4f05-9aef-fa1acf6e4284.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } C. Go to Next Speed
-
-Event #123 occurred at t = 308.054: T_EVENT > T_WAIT
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_3c5e0846-379b-4da1-a4cc-6995f56bf8ad.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } D. Check Lateral Acceleration
-
-Event #124 (Group #1000) occurred at t = 308.055: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_13ce0693-4ddf-4e90-b64c-6b18e6d8ad95.par"
-Pending Event removed by command DELETE_EVENTS_ID: ID = 1000, ABS(ABS(AY) - AY_TARG) > AY_STEP
-Used Dataset: Events; { ISO Steady-State Circle Series } E. Write One Time Step
-
-Event #125 (Group #1000) occurred at t = 308.055: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_37a368e6-a61d-4f05-9aef-fa1acf6e4284.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } C. Go to Next Speed
-
-Event #126 occurred at t = 315.056: T_EVENT > T_WAIT
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_3c5e0846-379b-4da1-a4cc-6995f56bf8ad.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } D. Check Lateral Acceleration
-
-Event #127 (Group #1000) occurred at t = 315.056: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_13ce0693-4ddf-4e90-b64c-6b18e6d8ad95.par"
-Pending Event removed by command DELETE_EVENTS_ID: ID = 1000, ABS(ABS(AY) - AY_TARG) > AY_STEP
-Used Dataset: Events; { ISO Steady-State Circle Series } E. Write One Time Step
-
-Event #128 (Group #1000) occurred at t = 315.057: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_37a368e6-a61d-4f05-9aef-fa1acf6e4284.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } C. Go to Next Speed
-
-Event #129 occurred at t = 322.057: T_EVENT > T_WAIT
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_3c5e0846-379b-4da1-a4cc-6995f56bf8ad.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } D. Check Lateral Acceleration
-
-Event #130 (Group #1000) occurred at t = 322.058: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_13ce0693-4ddf-4e90-b64c-6b18e6d8ad95.par"
-Pending Event removed by command DELETE_EVENTS_ID: ID = 1000, ABS(ABS(AY) - AY_TARG) > AY_STEP
-Used Dataset: Events; { ISO Steady-State Circle Series } E. Write One Time Step
-
-Event #131 (Group #1000) occurred at t = 322.058: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_37a368e6-a61d-4f05-9aef-fa1acf6e4284.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } C. Go to Next Speed
-
-Event #132 occurred at t = 329.059: T_EVENT > T_WAIT
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_3c5e0846-379b-4da1-a4cc-6995f56bf8ad.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } D. Check Lateral Acceleration
-
-Event #133 (Group #1000) occurred at t = 329.059: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_13ce0693-4ddf-4e90-b64c-6b18e6d8ad95.par"
-Pending Event removed by command DELETE_EVENTS_ID: ID = 1000, ABS(ABS(AY) - AY_TARG) > AY_STEP
-Used Dataset: Events; { ISO Steady-State Circle Series } E. Write One Time Step
-
-Event #134 (Group #1000) occurred at t = 329.06: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_37a368e6-a61d-4f05-9aef-fa1acf6e4284.par"
-Used Dataset: Events; { ISO Steady-State Circle Series } C. Go to Next Speed
-Function FY_TIRE_CARPET(1,1) extrapolated (out of range HIGH) for X = 26.0154 deg at T = 331.078
-Function MZ_TIRE_CARPET(1,1) extrapolated (out of range HIGH) for X = 26.0154 deg at T = 331.078
-Function FY_TIRE_CARPET(1,2) extrapolated (out of range HIGH) for X = 26.0015 deg at T = 331.288
-Function MZ_TIRE_CARPET(1,2) extrapolated (out of range HIGH) for X = 26.0015 deg at T = 331.288
-Function RACK_KIN_TABLE(1,1) extrapolated (out of range HIGH) for X = 60.0094 mm at T = 331.464
-Function RACK_KIN_TABLE(1,2) extrapolated (out of range HIGH) for X = 60.0094 mm at T = 331.464
-
-Run stopped at t = 331.735. Lateral position for tire R1 was less than the specified minimum of L = -2 for road with ID = 1
-
-Computational time ratio: RTIME = 0.112803 (real time)/(simulation time)
+Computational time ratio: RTIME = 0.504953 (real time)/(simulation time)
 

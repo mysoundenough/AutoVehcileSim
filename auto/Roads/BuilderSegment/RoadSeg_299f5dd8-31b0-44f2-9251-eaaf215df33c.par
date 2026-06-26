@@ -34,10 +34,10 @@ NSEGMENTS 5
 #MIXTABLE0
 #NUMROWS 5
 #straight, , 200, 100, 360, deg, 0.01, 90, deg, 400
-#radius, , 50, 100, 90, deg, 0.01, 90, deg, 400
 #straight, , 50, 100, 90, deg, 0.01, 90, deg, 400
 #straight, , 50, 100, 90, deg, 0.01, 90, deg, 400
 #straight, , 50, 100, 90, deg, 0.01, 90, deg, 400
+#straight, , 1000, 100, 90, deg, 0.01, 90, deg, 400
 #ENDTABLE
 
 ! Segment 1, straight
@@ -45,11 +45,10 @@ IPATHSEG 1
 SEGMENT_TYPE 0
 SEGMENT_LENGTH 200
 
-! Segment 2, radius
+! Segment 2, straight
 IPATHSEG 2
-SEGMENT_TYPE 3
-SEGMENT_RADIUS 100.000000
-SEGMENT_ARC 90.000000
+SEGMENT_TYPE 0
+SEGMENT_LENGTH 50
 
 ! Segment 3, straight
 IPATHSEG 3
@@ -64,7 +63,7 @@ SEGMENT_LENGTH 50
 ! Segment 5, straight
 IPATHSEG 5
 SEGMENT_TYPE 0
-SEGMENT_LENGTH 50
+SEGMENT_LENGTH 1000
 
 Title Straight East <Straight>
 
@@ -77,7 +76,7 @@ LOG_ENTRY Used Dataset: Path: Segment Builder; { Straight } Straight East
 #DataSet : Straight East
 #Category: Straight
 #FileID  : RoadSeg_299f5dd8-31b0-44f2-9251-eaaf215df33c
-#Modified: 06-02-2026 19:07:48
+#Modified: 06-09-2026 10:56:52
 #Product : CarSim 2024.1
 #DataVer : 2024.1
 #VehCode Path Segment Builder

@@ -152,7 +152,7 @@ def copy_result(name):
     # 源文件路径
     src_csv = Path(r"C:\workspace\AutoVehcileSim\auto\Results\Run_6f6dddbf-6f3d-45dd-95c6-f5662819b1e8\LastRun.csv")
     # 目标文件夹&文件名res.csv
-    dst_folder = Path(r"./result")
+    dst_folder = Path(r"./result_sin_xishu9")
     dst_csv = dst_folder / name
 
     # 创建result文件夹(不存在自动新建)
@@ -182,125 +182,89 @@ def run_sim():
 
     return True
 
-if __name__ == "__main__":
-    update_roughness = False
-    update_roadline = True
-    update_Friction = False
-    scenario_name = "MyDoubleLaneChange"
-    simfile_path = Path(CARSIM_DB_DIR) / "simfile.sim"
-    
-    # 读取simfile
-    with open(simfile_path, 'r', encoding='utf-8') as f:
+def set_vehicle_v(par_path, v):
+    # change v
+    logger.info(par_path)
+    if not os.path.exists(par_path):
+        logger.error("Proc v not found.")
+        raise FileNotFoundError
+    # 读取源文件并替换
+    with open(par_path, "r", encoding="utf-8") as f:
         content = f.read()
-    run_name, F_CmpInd_path, R_CmpInd_path,  Shock_path, StrDM_path, RoadSeg_path, Friction_path, profile_path = get_parfile_name(content)
-    os.makedirs('./Results', exist_ok=True)
-    output_dir = WORK_DIR + '\\' + run_name
-    os.makedirs(output_dir, exist_ok=True)
-    db_run_all_path = CARSIM_DB_DIR + "\\Results\\" + run_name + "\\Run_all.par"
-    run_all_path = output_dir + "\\Run_all.par"
-    shutil.copy(db_run_all_path, run_all_path)
-    bak_run_all_path = run_all_path.replace('.par', '.par.bak')
-    shutil.copy(run_all_path, bak_run_all_path)
-    if update_roughness and profile_path:
-        # 生成带坑洼的Profile文件
-        new_profile = generate_pothole_profile(
-            original_profile_path=profile_path,
-            output_dir=output_dir,
-            depth_mm=5000,      # 5m深的坑
-            position_m=100,   # 100米处
-            width_m=5.0       # 5米宽
-        )
-        
-        update_run_all_with_new_profile(
-            run_all_path=run_all_path,
-            new_profile_path=new_profile
-        )
-    if update_roadline:
-        # 自定义参数
-        params = LineOffsetParams(
-            road_length=600.0,
-            straight_segments=[
-                (0, 50),      # 起步段50m
-                (150, 450)    # 结束段450m
-            ],
-            lane_change_points=[
-                (50, 0.0),
-                (55, 0.2),
-                (60, 1.1),
-                (65, 2.4),
-                (70, 3.3),
-                (75, 3.5),
-                (80, 3.5),
-                (85, 3.5),
-                (90, 3.5),
-                (95, 3.5),
-                (100, 3.3),
-                (105, 2.4),
-                (110, 1.1),
-                (115, 0.2),
-                (120, 0.0),
-            ],
-            preview_time=0.5,
-            max_steer_rate=1000.0,
-            max_steer_angle=500.0
+    # 替换 TC_PWR_HYBRID_AV 后面的数字
+    new_content = content
+    new_content = re.sub(r'\*SPEED\s+[\d.-]+', f'*SPEED {v}', content, flags=re.MULTILINE)
+    # 保存新文件
+    with open(par_path, "w", encoding="utf-8") as f:
+        f.write(new_content)
+    f.close()
+
+def modify_power_data(par_path: str, value: float, data: list):
+    logger.info("change power file:" + par_path)
+    try:
+        # 1. 读取文件
+        with open(par_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+
+        # 2. 匹配阻尼表格区域
+        pattern = re.compile(
+            r"(PWR_DRV_THROTTLE_TABLE LINEAR\n)(.*?)(ENDTABLE)",
+            re.DOTALL
         )
 
-        if params.lane_change_points is not None:
-            # 自定义参数
-            generator = LineOffsetGenerator(output_dir, scenario_name, RoadSeg_path.name, StrDM_path.name)
-            strdm_file = generator.generate_strdm_par(params)
-            
-            result = update_driver_in_runall(
-                run_all_path=run_all_path,
-                new_driver_file_path=strdm_file,
-                # output_path=Path(output_dir) /"updated"/ "Run_all.par"
-                output_path=Path(output_dir) / "Run_all.par"
-            )
+        match = pattern.search(content)
+        if not match:
+            raise ValueError("未找到 PWR_DRV_THROTTLE_TABLE LINEAR 减震数据")
 
-        generator = RoadSegGenerator(output_dir)
-        """ print("\n1. 生成直线道路...")
-        length = 150.0
-        circle_name = "Straight East " + str(int(length))
-        RoadSeg_file = generator.generate_straight_road(
-            name="MyStraightRoad",
-            length=length
-            ) """
-            
-        # 4. 生成S型弯道（类似文件4）
-        print("\n4. 生成S型弯道...")
-        temp_name="MySTurnRoad"
-        RoadSeg_file = generator.generate_s_turn_road(
-            name=temp_name
-            )
-        update_road_in_runall(
-            name=temp_name,
-            run_all_path=run_all_path,
-            new_road_file_path=RoadSeg_file,
-            # output_path=Path(output_dir) /"updated"/ "Run_all.par"
-            output_path=Path(output_dir) / "Run_all.par"
-            )
+        # 3. 逐行修改阻尼力
+        table_lines = match.group(2).strip().splitlines()
+        new_lines = []
 
-    if update_Friction:
-        # 示例1: 使用默认参数生成
-        generator = CarSimFrictionMapGenerator(output_dir, scenario_name, Friction_path.name)
-        
-        # 默认参数: 在station范围-100到400，侧向-9到9之间设置mu=0.5
-        params = FrictionMapParams(
-            default_mu=0.85,
-            friction_zones=[
-                (-100, 400, -9, 9, 0.5)  # 低附着区域
-            ]
+        for i, line in enumerate(table_lines):
+            line = line.strip()
+            if not line or ',' not in line:
+                new_lines.append(line)
+                continue
+
+            # 拆分速度、力
+            vel_str, force_str = line.split(',', 1)
+            vel = vel_str.strip()
+            force = float(force_str.strip())
+
+            # 按比例缩放
+            if value == 1:
+                vel = data[i][0]
+                new_force = data[i][1]
+                if vel.is_integer():
+                    vel = int(vel)
+            else:
+                new_force = force * value
+
+            # 保持格式（整数/小数都兼容）
+            if new_force.is_integer():
+                new_force = int(new_force)
+
+            new_lines.append(f"{vel}, {new_force}")
+
+        # 4. 替换回文件内容
+        new_table = "\n".join(new_lines)
+        new_content = pattern.sub(
+            match.group(1) + new_table + '\n' + match.group(3),
+            content
         )
-        
-        file_path = generator.generate_friction_map_par(params)
-        print(f"\n生成的配置文件: {file_path}")
-        updater = RunAllParUpdater(run_all_path, run_all_path)
-    
-        # 如果新文件存在，可以直接使用
-        updated_file = updater.update_with_file(file_path)
-    DURATION_SEC = 10.0  # 仿真时长(s)
-    THROTTLE = 30.0      # 油门(%)
 
+        # 5. 保存文件
+        with open(par_path, 'w', encoding='utf-8') as f:
+            f.write(new_content)
+        f.close()
+
+        logger.info(f"减震器阻尼修改成功: {par_path}, 缩放比例 = {value}")
+
+    except Exception as e:
+        logger.error(f"修改减震器失败: {str(e)}")
+        raise FileNotFoundError("Simfile not found.")
+
+if __name__ == "__main__":
 
     cm = CarsimManager(
         carsim_db_dir=CARSIM_DB_DIR,
@@ -341,6 +305,10 @@ if __name__ == "__main__":
                             [[-1030,-1943],[-520,-1002],[-390,-811], [-260,-630], [-130,-436], [-50,-169], [0,0],[50,287],[130,450], [260,670], [390,854], [520,1037],[1030,1867]],
                             [[-1030,-1814],[-520,-929], [-390,-749], [-260,-581], [-130,-411], [-50,-166], [0,0],[50,274],[130,438], [260,665], [390,835], [520,1013],[1030,1813]]]
     
+    pedmaps = [[[0, 0], [0.05, 5], [0.1, 50], [0.15, 70], [0.2, 80], [0.25, 90], [0.3, 110], [0.4, 130], [0.5, 150], [0.6, 180], [0.7, 210], [0.8, 240], [0.9, 270], [1.0, 300]],
+               [[0, 0], [0.05, 15], [0.1, 50], [0.15, 70], [0.2, 80], [0.25, 90], [0.3, 110], [0.4, 130], [0.5, 150], [0.6, 180], [0.7, 210], [0.8, 240], [0.9, 270], [1.0, 300]],
+               [[0, 0], [0.05, 30], [0.1, 50], [0.15, 70], [0.2, 80], [0.25, 90], [0.3, 110], [0.4, 130], [0.5, 150], [0.6, 180], [0.7, 210], [0.8, 240], [0.9, 270], [1.0, 300]]]
+    
     # ===================== 初始化 =====================
     pythoncom.CoInitialize()
     # 【只打开一次】
@@ -348,50 +316,64 @@ if __name__ == "__main__":
     time.sleep(2)  # 等待CarSim完全启动
     print("✅ CarSim 已启动，全程不关闭，可反复运行")
 
-    fk = 34
-    rk = 75
-    fk_add = 2
-    rk_add = 5
+    # 车辆e68
+    fks = np.linspace(34,80,10)
+    fks = fks.round().astype(int).tolist()
+    rks = [75, 155]
 
-    for fk in range(34, 80, 2):
-        for rk in range(75, 155, 5):
-            for i in range(14):
-                for j in range(14):
-                    # 1. 修改 前悬架空气弹簧刚度
-                    # 前悬
-                    F_CmpInd_path = r"C:\workspace\AutoVehcileSim\auto\Suspensions\Compliance\CmpInd_83b37c60-f193-47f3-8b2e-03d0e2ecf1f5.par" 
-                    cm.set_vehicle_param(par_path=F_CmpInd_path, front_spring_rate=fk)  # N/m
-                    # 后悬
-                    R_CmpInd_path = r"C:\workspace\AutoVehcileSim\auto\Suspensions\Compliance_SA\CmpSA_9166f5c2-2174-435d-8570-aa6e19302ef9.par"
-                    cm.set_vehicle_param(par_path=R_CmpInd_path, front_spring_rate=rk)  # N/m
-                    fk += fk_add
-                    rk += rk_add
+    id_fcs = [0,1,2,3,4,5,6,7,8,9,10,11,12,13]
+    id_rcs = [0,13]
 
-                    # 2. 修改 转向
-                    
+    # 动力响应延迟
+    dts = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+
+    # 驱动需求扭矩
+    id_pfs = [0, 1, 2]
+
+    # 场景sin
+    vs = [60, 80, 100]
+
+    for v in vs:
+        print(f"\n=== 仿真速度: {v} km/h ===")
+        vpath = r"C:\workspace\AutoVehcileSim\auto\Procedures\Proc_07d9a19f-3ef9-44ff-9e52-f41142cc19c3.par"
+        set_vehicle_v(par_path=vpath, v=v)
+        for fk in fks:
+            # 1. 修改 前悬架空气弹簧刚度
+            # 前悬
+            F_CmpInd_path = r"C:\workspace\AutoVehcileSim\auto\Suspensions\Compliance\CmpInd_83b37c60-f193-47f3-8b2e-03d0e2ecf1f5.par" 
+            cm.set_vehicle_param(par_path=F_CmpInd_path, front_spring_rate=fk)  # N/m
+            for rk in rks:
+                # 后悬
+                R_CmpInd_path = r"C:\workspace\AutoVehcileSim\auto\Suspensions\Compliance_SA\CmpSA_9166f5c2-2174-435d-8570-aa6e19302ef9.par"
+                cm.set_vehicle_param(par_path=R_CmpInd_path, front_spring_rate=rk)  # N/m
+                for i in id_fcs:
                     # 3. 修改 阻尼
                     # 前悬
                     F_Shock_path = r"C:\workspace\AutoVehcileSim\auto\Suspensions\Shocks\Shock_0751644e-013f-45f4-8119-29f0d1bd5cc4.par"
                     shock_force_data = f_shock_force_data_all[i]
                     cm.set_vehicle_param(par_path=F_Shock_path, shock_force_rate=1, shock_force_data=shock_force_data)  # *k 变化倍数
-                    # 后悬
-                    R_Shock_path = r"C:\workspace\AutoVehcileSim\auto\Suspensions\Shocks\Shock_df9857ff-75d8-44ea-8bc2-62a47417d5d6.par"
-                    shock_force_data = r_shock_force_data_all[i]
-                    cm.set_vehicle_param(par_path=R_Shock_path, shock_force_rate=1, shock_force_data=shock_force_data)  # *k 变化倍数
-                    
-                    # 4. 修改 动力响应
-                    par_path = r"C:\workspace\AutoVehcileSim\auto\Powertrain\HEV_PMC\PMC_a65582f0-a085-4bc8-9606-1a4f75f80775.par"
-                    cm.set_vehicle_param(par_path=par_path, power_delay_rate=1.5)  # s
-                    # 5. 修改 dirive demand power
-                    par_path = r"C:\workspace\AutoVehcileSim\auto\Generic\tables\GenTab_90d23e81-2c53-435f-8e2c-d6503354f720.par"
-                    cm.set_vehicle_param(par_path=par_path, power_tao_rate=1)  # *k 变化倍数
+                    for j in id_rcs:
+                        # 后悬
+                        R_Shock_path = r"C:\workspace\AutoVehcileSim\auto\Suspensions\Shocks\Shock_df9857ff-75d8-44ea-8bc2-62a47417d5d6.par"
+                        shock_force_data = r_shock_force_data_all[j]
+                        cm.set_vehicle_param(par_path=R_Shock_path, shock_force_rate=1, shock_force_data=shock_force_data)  # *k 变化倍数
+                        for dt in dts:
+                            # 4. 修改 动力响应
+                            par_path = r"C:\workspace\AutoVehcileSim\auto\Powertrain\HEV_PMC\PMC_a65582f0-a085-4bc8-9606-1a4f75f80775.par"
+                            cm.set_vehicle_param(par_path=par_path, power_delay_rate=dt)  # s
+                            for id_pf in id_pfs:
+                                # 5. 修改 dirive demand power
+                                pedmap = pedmaps[id_pf]
+                                par_path = r"C:\workspace\AutoVehcileSim\auto\Generic\tables\GenTab_90d23e81-2c53-435f-8e2c-d6503354f720.par"
+                                modify_power_data(par_path=par_path, value=1, data=pedmap)  # *k 可变为 变化倍数 
 
-                    # 运行仿真
-                    run_sim()
+                                # 运行仿真
+                                run_sim()
 
-                    # 另存csv 按照参数变化改名
-                    name = f"fk_{fk}_rk_{rk}_Fshock_{i}_Rshock_{j}_F_{1.5}_t_{1}.csv"
-                    copy_result(name)
+                                # 另存csv 按照参数变化改名
+                                name = f"sin_v_{v}_car_fk_{fk}_rk_{rk}_fc_{i}_rc_{j}_delay_{dt}_T_{id_pf}.csv"
+                                copy_result(name)
+
     
     print(f"\n仿真完成")
     
