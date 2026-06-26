@@ -1,26 +1,26 @@
-2026-06-23T16:08:18 Logfile initialized.
-2026-06-23T16:08:18 (Info):    CarSim 2024.1
-2026-06-23T16:08:18 (Info):    -
-2026-06-23T16:08:18 (Info):    command-line: 
-2026-06-23T16:08:18 (Info):    -
-2026-06-23T16:08:18 (Info):    Working Dir: C:\workspace\AutoVehcileSim\auto\
-2026-06-23T16:08:18 (Info):    Program Dir: C:\Program Files (x86)\CarSim2024.1_Prog\
-2026-06-23T16:08:18 (Info):    -
-2026-06-23T16:08:18 (Info):    OS Version:        6.2 (build 9200)
-2026-06-23T16:08:18 (Info):    CPU Architecture:  x64
-2026-06-23T16:08:18 (Info):    CPU Count:         2
-2026-06-23T16:08:18 (Info):    CPU Level/Rev:     21/1
-2026-06-23T16:08:18 (Info):    Start Mem Total:   4090 MB
-2026-06-23T16:08:18 (Info):    Start Mem Used:    67%
-2026-06-23T16:08:18 (Info):    -
-2026-06-23T16:08:19 (Info):    Loaded dataset index cache in 0.12s, 27.2 megabytes.
-2026-06-23T16:08:19 (Info):    Error: A license manager is already running.
-2026-06-23T16:08:19 (Info):    License check took 0.38 seconds.
-2026-06-23T16:08:19 (Info):    No install ID found at regkey "Software\Mechanical Simulation Corp\CarSim 2024.1".
-2026-06-23T16:08:19 (Info):    No install ID found at regkey "Software\Mechanical Simulation Corp\CarSim 2024.1".
-2026-06-23T16:08:21 (Info):    Initial setup took 1.39 seconds.
-2026-06-23T16:08:21 (Info):    Auto updates took 0.00 seconds.
-2026-06-23T16:08:22 (Info):    Loaded last screen in 0.84 seconds.
-2026-06-23T16:08:22 (Info):    Total init time 3.44 seconds.
-2026-06-23T16:09:18 (Info):    6314 index cache entries written in 0.047s
-2026-06-23T16:09:18 (Info):    Exiting application...
+2026-06-26T16:45:19 Logfile initialized.
+2026-06-26T16:45:19 (Info):    CarSim 2024.1
+2026-06-26T16:45:19 (Info):    -
+2026-06-26T16:45:19 (Info):    command-line: /Automation -Embedding
+2026-06-26T16:45:19 (Info):    -
+2026-06-26T16:45:19 (Info):    Working Dir: C:\workspace\AutoVehcileSim\auto\
+2026-06-26T16:45:19 (Info):    Program Dir: C:\Program Files (x86)\CarSim2024.1_Prog\
+2026-06-26T16:45:19 (Info):    -
+2026-06-26T16:45:19 (Info):    OS Version:        6.2 (build 9200)
+2026-06-26T16:45:19 (Info):    CPU Architecture:  x64
+2026-06-26T16:45:19 (Info):    CPU Count:         2
+2026-06-26T16:45:19 (Info):    CPU Level/Rev:     15/1034
+2026-06-26T16:45:19 (Info):    Start Mem Total:   4090 MB
+2026-06-26T16:45:19 (Info):    Start Mem Used:    83%
+2026-06-26T16:45:19 (Info):    -
+2026-06-26T16:45:20 (Info):    Loaded dataset index cache in 0.17s, 27.2 megabytes.
+2026-06-26T16:45:22 (Info):    Error: A license manager is already running.
+2026-06-26T16:45:23 (Info):    License check took 2.92 seconds.
+2026-06-26T16:45:24 (Info):    Initial setup took 1.69 seconds.
+2026-06-26T16:45:24 (Info):    Auto updates took 0.00 seconds.
+2026-06-26T16:45:26 (Info):    Loaded last screen in 0.31 seconds.
+2026-06-26T16:45:26 (Info):    Total init time 6.30 seconds.
+2026-06-26T16:45:26 (Info):    Automation triggered by command-line options (/Automation or /RegServer)
+2026-06-26T16:45:26 (Info):    COM server initialized successfully.
+2026-06-26T16:45:38 (Info):    6314 index cache entries written in 0.110s
+2026-06-26T16:45:38 (Info):    Exiting application...

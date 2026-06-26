@@ -70,7 +70,7 @@ def copy_result(name):
     # 源文件路径
     src_csv = Path(r"C:\workspace\AutoVehcileSim\auto\Results\Run_6f6dddbf-6f3d-45dd-95c6-f5662819b1e8\LastRun.csv")
     # 目标文件夹&文件名res.csv
-    dst_folder = Path(r"./result_sin_xishu9")
+    dst_folder = Path(r"./result_sin_c_hotmap")
     dst_csv = dst_folder / name
 
     # 创建result文件夹(不存在自动新建)
@@ -108,39 +108,41 @@ if __name__ == "__main__":
     # ===================== 工况切换模块 =====================
     
 
-    all_param_rows = get_csv_input()
+    # all_param_rows = get_csv_input()
+    # # ===================== 2. 遍历每一组参数跑仿真 =====================
+    # for param_idx, param_row_str in enumerate(all_param_rows, 1):
+    #     # 拆解当前行的6个数字（可根据你的参数含义重命名变量）
+    #     param_row_num = []
+    #     for s in param_row_str:
+    #         s_clean = s.strip()  # 清理前后空格
+    #         if '.' in s_clean:
+    #             # 带小数点 → 转float浮点数
+    #             num = float(s_clean)
+    #         else:
+    #             # 无小数点 → 转int整数
+    #             num = int(s_clean)
+    #         param_row_num.append(num)
+    #     param1, param2, param3, param4, param5, param6 = param_row_num
+    #     print(f"\n===== 第{param_idx}/{len(all_param_rows)}组仿真 =====")
+    #     print(f"当前参数：{param_row_num}")
 
-    # ===================== 2. 遍历每一组参数跑仿真 =====================
-    for param_idx, param_row_str in enumerate(all_param_rows, 1):
-        # 拆解当前行的6个数字（可根据你的参数含义重命名变量）
-        param_row_num = []
-        for s in param_row_str:
-            s_clean = s.strip()  # 清理前后空格
-            if '.' in s_clean:
-                # 带小数点 → 转float浮点数
-                num = float(s_clean)
-            else:
-                # 无小数点 → 转int整数
-                num = int(s_clean)
-            param_row_num.append(num)
-        param1, param2, param3, param4, param5, param6 = param_row_num
-        print(f"\n===== 第{param_idx}/{len(all_param_rows)}组仿真 =====")
-        print(f"当前参数：{param_row_num}")
+    for fk in [34,80]:  # 前轮弹簧刚度
+        for rk in [75, 155]: # 后轮弹簧刚度
+            for fc in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:  # 前轮阻尼系数
+                for rc in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:  # 后轮阻尼系数
+                    for dt in [0.05]:  # 动力响应延迟
+                        for id_pf in [1]:  # 电机动力响应延迟
+                            print(f"\n===== 仿真参数：fk={fk}, rk={rk}, fc={fc}, rc={rc}, dt={dt}, id_pf={id_pf} =====")
 
-        fk = param1
-        rk = param2
-        fc = param3
-        rc = param4
-        dt = param5
-        id_pf = param6
-        add_car('E68', param1, param2, param3, param4, dt, id_pf)
+                            add_car('E68', fk=fk, rk=rk, fc=fc, rc=rc, dt=dt, T= id_pf)
+                            # add_car('E68', param1, param2, param3, param4, dt, id_pf)
 
-        # 运行仿真
-        run_sim()
+                            # 运行仿真
+                            run_sim()
 
-        # 另存csv 按照参数变化改名
-        name = f"sin_car_fk_{fk}_rk_{rk}_fc_{i}_rc_{j}_delay_{dt}_T_{id_pf}.csv"
-        copy_result(name)
+                            # 另存csv 按照参数变化改名
+                            name = f"sin_car_fk_{fk}_rk_{rk}_fc_{i}_rc_{j}_delay_{dt}_T_{id_pf}.csv"
+                            copy_result(name)
 
     
     print(f"\n仿真完成")

@@ -50,8 +50,8 @@ LastDS Control: Electronic Stability (ESC)`ESC_7c83e406-8fbe-4de3-8a54-cf7a2e0c5
 LastDS Control: Shifting (Closed Loop)`GearCL_3f60e7d2-b8c4-4d68-a9c4-d897bb3e2a86
 LastDS Control: Shifting (Open Loop)`GearOL_0c1bc042-7f28-45be-9a4c-6317fbe6ee6f
 LastDS Control: Speed (Closed Loop) Using Path Preview`SpdPath_108bdc4f-b575-4a8e-8b6d-d06501ea7043
-LastDS Control: Speed (Closed Loop) Using Target Speed`SpdTime_d0416e8a-956a-459b-918e-0dc16c204214
-LastDS Control: Steering by the Closed-loop Driver Model`StrDM_a8694f5a-e834-4010-bab0-44ffb6bfa609
+LastDS Control: Speed (Closed Loop) Using Target Speed`SpdTime_4cd1ef5f-1970-43d6-9c4f-a9895f489dd9
+LastDS Control: Steering by the Closed-loop Driver Model`StrDM_d830fedd-8d44-49d5-9f7d-e459d39ff7aa
 LastDS Control: Steering Preview Time for the Driver Model`Tprev_bb983917-6a82-49cb-bff9-9b55d3ce762f
 LastDS Control: Steering (Open Loop)`StrSW_d02d6236-3489-4162-b8b9-953cdc586f4c
 LastDS Control: Steering Torque (Open Loop)`StrTrq_f3c7a142-84e8-4bf8-ac82-6dc3c250e7d2
@@ -66,7 +66,7 @@ LastDS Generic Data Group (More)`GenGrpM_0b991afb-5203-4a67-959f-803cd005505e
 LastDS Generic Group of Links`GenLink_8f5cd0fa-0b43-4a59-bdd6-246a628e9303
 LastDS Generic Data Lists`GenList_e20a984f-5042-4839-a50a-93ddf35dd413
 LastDS Generic Table`GenTab_90d23e81-2c53-435f-8e2c-d6503354f720
-LastDS Generic VS Commands`GenVS_c96c2cc2-c0d1-4663-ae05-5283353f8542
+LastDS Generic VS Commands`GenVS_5cdc6194-e7c9-45c4-88e4-2ce9b304ca41
 LastDS Hitch: Joint Assembly`Hitch_578c1d9f-486e-482d-a566-b7269af1988e
 LastDS Hitch: Parameters`HchPar_828f0a72-c288-4f90-a946-de314a8caab1
 LastDS Hitch: Roll Moment`HchMx_77caad58-009b-4029-a7ad-e826f03dd7c3
@@ -81,7 +81,7 @@ LastDS Models: Export FMU/FMI`Fmu_030e4833-1a28-4a04-be00-a1e00d16dbb5
 LastDS Models: LabVIEW for Windows (VI)`LabVIEW_c73dc6ea-d5bf-4129-879d-6f5df9d34ec8
 LastDS Models: Self-Contained Solvers`Extern_58ae5add-6e3a-4ad8-98d3-b3f1902fef08
 LastDS Models: Transfer to Local Windows Directory`Local_a46aa896-fe7e-4355-9adc-1b4ea56df6a3
-LastDS Road: 3D Surface (All Properties)`Road_0faf324d-1ca1-41ca-9752-14fc08f50f0b
+LastDS Road: 3D Surface (All Properties)`Road_4a352805-f13c-472a-9878-ce32d1ac1fd3
 LastDS Path: Segment Builder`RoadSeg_9d55df69-78d8-4ef0-b3f8-5ce42816350e
 LastDS Path: X-Y Coordinates`PathXY_480c3b1d-b257-4782-be49-215f4b86419d
 LastDS Road: Boundaries`RdBnd_a8b2f48f-57e3-4eba-86dd-f7739efdcad6
@@ -120,9 +120,9 @@ LastDS Powertrain: Torque Converter`TC_6167f7ca-1ba7-4746-98f1-f7e38f6f5f0a
 LastDS Powertrain: Transfer Case`XC_934b2147-0838-4ed2-8068-8304af5a0278
 LastDS Powertrain: Transmission (18 Gears or CVT)`Trans18_55b3d8ee-e987-4803-8615-8a5b5c910733
 LastDS Powertrain: Transmission (External, Deprecated)`TransExt_af12a1fb-2189-4c80-aaa1-dca12ff3e927
-LastDS Powertrain: Hybrid/Electric System`HEV_3a33a31c-d1cf-4ec7-b62c-108429a0b5f7
+LastDS Powertrain: Hybrid/Electric System`HEV_d85b4cba-5206-4048-9418-d11f80dfd1d3
 LastDS Powertrain: Hybrid/Electric Power Management Control`PMC_6ae01742-2231-4526-8745-21786d28d0c8
-LastDS Powertrain: Electric Motor Torque`MMotor_9bd3c49a-ecdf-4f55-b1c2-c4a6b156e240
+LastDS Powertrain: Electric Motor Torque`MMotor_299ad95f-8e21-4744-9fe7-270ae97bc67a
 LastDS Powertrain: AT Clutch Schedule`ClSched_6b7b439a-f0ca-4048-937e-7705d820021d
 LastDS Powertrain: Clutch with Viscous Differential`ClVisc_18c9e10f-c1a2-436f-91fa-7ac2e9f945c6
 LastDS Powertrain: CVT Efficiencies`CvtEff_3bb5f059-3f87-4223-822a-a250c4fdd859
@@ -133,7 +133,7 @@ LastDS Powertrain: Limited Slip Differential for Center Case`LSD_X_29db6699-1dca
 LastDS Powertrain: Shift Schedule`Shift_b8faaefc-ee63-464f-8c2f-6bc9d4bda3b1
 LastDS Powertrain: Yaw Control Differential`DiffYC_93aaf9b6-8264-4a56-adda-41b1d3293795
 LastDS Events`Events_b5af09b5-d8ad-4e81-ae24-eebce691780e
-LastDS Procedures`Proc_a0851ee1-9bdf-4e52-9626-6e255ef6ca84
+LastDS Procedures`Proc_d5e84ddf-cf9c-4adb-a0b7-0ac26b182874
 LastDS Tire Tester`TestTire_c40879d2-b79a-4bdb-a475-2a7fed4b67c0
 LastDS Steering`StrSys2_64ffa9d1-b87b-4da1-94c4-81269337c3d3
 LastDS Steering: Virtual Steering Axis`StrSys3_471f59d3-210b-488c-8991-8fcae5ebd02f
@@ -146,7 +146,7 @@ LastDS Steering: Parking Torque for 2 Wheels`TqPark2_d9890fef-6cac-43fb-8e99-10d
 LastDS Steering: Power Assist Force`FBoost_8d4ea40b-57f4-4380-8805-f8a2a13612be
 LastDS Steering: Power Assist Torque`TqBoost_48b61665-f910-4b83-8e0e-8cd6c704a17b
 LastDS Steering Wheel Torque`TqSW_517e3dff-abbb-45ab-9063-ae6058ef799a
-LastDS Suspension: Independent System Kinematics`KinInd_2bdce8df-63ad-4eb0-9064-7c3a20fb5dbe
+LastDS Suspension: Independent System Kinematics`KinInd_d4958b18-bf17-4b35-85ad-4efdeb10e29d
 LastDS Suspension: Independent Compliance, Springs, and Dampers`CmpInd_83b37c60-f193-47f3-8b2e-03d0e2ecf1f5
 LastDS Suspension: Solid Axle System Kinematics`KinSA_3b8fbaec-cc26-4e27-91bc-8954cbec560a
 LastDS Suspension: Solid Axle Compliance, Springs, and Dampers`CmpSA_9166f5c2-2174-435d-8570-aa6e19302ef9
@@ -204,4 +204,4 @@ LastDS Vehicle: Trailer with 3 Axles`Trl_3a_6c189aac-d4f0-4b9f-91b0-e75200b1be75
 LastDS Wind Speed`Wind_6ccad2e5-8eb6-4c82-a840-76bdc3d08bf7
 LastDS Wind Heading`WindDir_00d792b9-c449-4be8-80eb-3282122ed26a
 LastDS Preferences`pref_a9da94e2-90cd-46fc-a780-bb613a55ea92
-LastScreen Vehicle: Sprung Mass (from Whole Vehicle)
+LastScreen Powertrain: Electric Motor Torque

@@ -5,7 +5,7 @@ PARSFILE
 #CheckBox1 0    
 OPT_REGEN_OFF_THRT 0
 PWR_HEV_DRV_MAX 55
-TC_PWR_HYBRID_AV 0.8
+TC_PWR_HYBRID_AV 0.5
 KPW_PBK_HEV 16
 PWR_EV_MODE 25
 REGEN_BRK_OFF 0.8
@@ -19,7 +19,7 @@ LOG_ENTRY Used Dataset: Powertrain: Hybrid/Electric Power Management Control; El
 #DataSet : Electric Power Manage.: Full Load 165kW
 #Category: 
 #FileID  : PMC_6ae01742-2231-4526-8745-21786d28d0c8
-#Modified: 08-03-2021 10:11:08
+#Modified: 06-26-2026 23:25:56
 #Product : CarSim 2024.1
 #DataVer : 2024.1
 #VehCode Power Management (HEV)

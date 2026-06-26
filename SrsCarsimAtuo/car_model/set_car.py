@@ -146,6 +146,22 @@ def modify_power_delay(par_path: str, param_name: str, value: float):
         f.write(new_content)
     f.close()
 
+def set_motor_power_delay_param(par_path: str, power_delay_rate: float):
+    print(par_path)
+    if not os.path.exists(par_path):
+        print("Simfile not found.")
+        raise FileNotFoundError
+    # 读取源文件并替换
+    with open(par_path, "r", encoding="utf-8") as f:
+        content = f.read()
+    # 替换 TC_MOTOR 0.05 后面的数字
+    new_content = content
+    new_content = re.sub(r'(^\s*TC_MOTOR\s+)([\d.-]+)(\s*)$', f'\nTC_MOTOR {power_delay_rate}', content, flags=re.MULTILINE)
+    # 保存新文件
+    with open(par_path, "w", encoding="utf-8", newline='') as f:
+        f.write(new_content)
+    f.close()
+
 def modify_power_data(par_path: str, value: float, data: list):
     print("change power file:" + par_path)
     try:
@@ -300,7 +316,7 @@ def modify_shock_force(par_path: str, value: float, data: list):
         raise FileNotFoundError("Simfile not found.")
 
 
-def add_car(car_type='E68', fk=46, rk=115, fc=7, rc=7, t=0.5, T=1):
+def add_car(car_type='E68', fk=None, rk=None, fc=None, rc=None, dt=None, T=None):
 
     if car_type == "E68":
         # 循环修改参数
@@ -343,30 +359,42 @@ def add_car(car_type='E68', fk=46, rk=115, fc=7, rc=7, t=0.5, T=1):
 
     # 1. 修改 前悬架空气弹簧刚度
     # 前悬
-    F_CmpInd_path = r"C:\workspace\AutoVehcileSim\auto\Suspensions\Compliance\CmpInd_83b37c60-f193-47f3-8b2e-03d0e2ecf1f5.par" 
-    set_vehicle_param(par_path=F_CmpInd_path, front_spring_rate=fk)  # N/m
+    if fk is not None:
+        F_CmpInd_path = r"C:\workspace\AutoVehcileSim\auto\Suspensions\Compliance\CmpInd_83b37c60-f193-47f3-8b2e-03d0e2ecf1f5.par" 
+        set_vehicle_param(par_path=F_CmpInd_path, front_spring_rate=fk)  # N/m
 
     # 后悬
-    R_CmpInd_path = r"C:\workspace\AutoVehcileSim\auto\Suspensions\Compliance_SA\CmpSA_9166f5c2-2174-435d-8570-aa6e19302ef9.par"
-    set_vehicle_param(par_path=R_CmpInd_path, front_spring_rate=rk)  # N/m
+    if rk is not None:
+        R_CmpInd_path = r"C:\workspace\AutoVehcileSim\auto\Suspensions\Compliance_SA\CmpSA_9166f5c2-2174-435d-8570-aa6e19302ef9.par"
+        set_vehicle_param(par_path=R_CmpInd_path, front_spring_rate=rk)  # N/m
 
     # 3. 修改 阻尼
     # 前悬
-    F_Shock_path = r"C:\workspace\AutoVehcileSim\auto\Suspensions\Shocks\Shock_0751644e-013f-45f4-8119-29f0d1bd5cc4.par"
-    shock_force_data = f_shock_force_data_all[fc]
-    set_vehicle_param(par_path=F_Shock_path, shock_force_rate=1, shock_force_data=shock_force_data)  # *k 变化倍数
+    if fc is not None:
+        F_Shock_path = r"C:\workspace\AutoVehcileSim\auto\Suspensions\Shocks\Shock_0751644e-013f-45f4-8119-29f0d1bd5cc4.par"
+        shock_force_data = f_shock_force_data_all[fc]
+        set_vehicle_param(par_path=F_Shock_path, shock_force_rate=1, shock_force_data=shock_force_data)  # *k 变化倍数
 
     # 后悬
-    R_Shock_path = r"C:\workspace\AutoVehcileSim\auto\Suspensions\Shocks\Shock_df9857ff-75d8-44ea-8bc2-62a47417d5d6.par"
-    shock_force_data = r_shock_force_data_all[rc]
-    set_vehicle_param(par_path=R_Shock_path, shock_force_rate=1, shock_force_data=shock_force_data)  # *k 变化倍数
+    if rc is not None:
+        R_Shock_path = r"C:\workspace\AutoVehcileSim\auto\Suspensions\Shocks\Shock_df9857ff-75d8-44ea-8bc2-62a47417d5d6.par"
+        shock_force_data = r_shock_force_data_all[rc]
+        set_vehicle_param(par_path=R_Shock_path, shock_force_rate=1, shock_force_data=shock_force_data)  # *k 变化倍数
 
-    # 4. 修改 动力响应
+    # 4. 修改 增程到动力响应
     par_path = r"C:\workspace\AutoVehcileSim\auto\Powertrain\HEV_PMC\PMC_a65582f0-a085-4bc8-9606-1a4f75f80775.par"
-    set_vehicle_param(par_path=par_path, power_delay_rate=t)  # s
+    set_vehicle_param(par_path=par_path, power_delay_rate=dt)  # s
+
+    # 修改电机特性动力延迟参数
+    if dt is not None:
+        par_path = r"C:\workspace\AutoVehcileSim\auto\Powertrain\Motor\MMotor_299ad95f-8e21-4744-9fe7-270ae97bc67a.par"
+        set_motor_power_delay_param(par_path=par_path, power_delay_rate=dt)  # s
 
     # 5. 修改 dirive demand power
-    pedmap = pedmaps[T]
-    par_path = r"C:\workspace\AutoVehcileSim\auto\Generic\tables\GenTab_90d23e81-2c53-435f-8e2c-d6503354f720.par"
-    modify_power_data(par_path=par_path, value=1, data=pedmap)  # *k 可变为 变化倍数 
-    
+    if T is not None:
+        pedmap = pedmaps[T]
+        par_path = r"C:\workspace\AutoVehcileSim\auto\Generic\tables\GenTab_90d23e81-2c53-435f-8e2c-d6503354f720.par"
+        modify_power_data(par_path=par_path, value=1, data=pedmap)  # *k 可变为 变化倍数 
+
+if __name__ == "__main__":
+    add_car(dt=0.08)

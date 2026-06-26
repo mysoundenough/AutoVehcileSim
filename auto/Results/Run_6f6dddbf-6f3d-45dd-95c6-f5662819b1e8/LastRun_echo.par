@@ -9,7 +9,7 @@ CATEGORY Steering Tests
 TITLE On-Center Steer Test, D-Class Sedan <Steering Tests>
 
 ! Echo: Results\Run_6f6dddbf-6f3d-45dd-95c6-f5662819b1e8\LastRun_echo.par
-! This run was made 11:21 on June 26, 2026.
+! This run was made 17:54 on June 26, 2026.
 
 !------------------------------------------------------------------------------------
 ! SYSTEM PARAMETERS (SIMULATION OPTIONS)
@@ -679,7 +679,7 @@ REGEN_BRK_OFF     0.8 ; - ! Battery charged level to turn off regenerative brake
 ! The hybrid/electric powertrain motor parameters.
 
 I_MOTOR        0.0226 ; kg-m2 ! Spin inertia of electric motor [I]
-TC_MOTOR         0.05 ; s ! Time constant for electric motor torque
+TC_MOTOR         0.07 ; s ! Time constant for electric motor torque
 
 !------------------------------------------------------------------------------------
 ! ENGINE
