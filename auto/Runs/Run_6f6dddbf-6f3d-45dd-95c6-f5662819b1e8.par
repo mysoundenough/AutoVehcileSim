@@ -26,7 +26,7 @@ PARSFILE Animator\Cameras\Camera_36b2ee7b-54ec-4c39-9781-51b289ab39c0.par
 #CheckBox6 0    
 #CheckBox7 0    
 #CheckBox8 0    
-#CheckBox9 1    
+#CheckBox9 0    
 #CheckBox10 0    
 #CheckBox11 0    
 #CheckBox12 0    
@@ -53,8 +53,9 @@ OPT_VS_FILETYPE 4
 
 *IMAGE_TYPE PASS_THROUGH
 *IMAGE_PASS_THROUGH Vehicles\Assembly\Vehicle_b33d0470-7675-4784-bccf-0454dff86bc3.png
+PARSFILE IO_Channels\W_Channels\Write_dc8bc2e0-07f2-4e4f-ba78-a2a662821bf1.par
+#BlueLink13 I/O Channels: Write`Handling Analysis (MAT File)` ` , Output Variables`Write_dc8bc2e0-07f2-4e4f-ba78-a2a662821bf1
 
-OPT_ALL_WRITE 1
 WRITE_SENSOR_DETECT
 Title On-Center Steer Test, D-Class Sedan <Steering Tests>
 CATEGORY Steering Tests 
@@ -76,7 +77,7 @@ LOG_ENTRY Used Dataset: CarSim Run Control; { Steering Tests } On-Center Steer T
 #DataSet : On-Center Steer Test, D-Class Sedan
 #Category: Steering Tests
 #FileID  : Run_6f6dddbf-6f3d-45dd-95c6-f5662819b1e8
-#Modified: 06-16-2026 09:46:57
+#Modified: 06-27-2026 00:45:51
 #Product : CarSim 2024.1
 #DataVer : 2024.1
 #VehCode Run

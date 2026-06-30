@@ -126,12 +126,22 @@ if __name__ == "__main__":
     #     print(f"\n===== 第{param_idx}/{len(all_param_rows)}组仿真 =====")
     #     print(f"当前参数：{param_row_num}")
 
-    for fk in [34,80]:  # 前轮弹簧刚度
-        for rk in [75, 155]: # 后轮弹簧刚度
-            for fc in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:  # 前轮阻尼系数
-                for rc in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]:  # 后轮阻尼系数
-                    for dt in [0.05]:  # 动力响应延迟
-                        for id_pf in [1]:  # 电机动力响应延迟
+    
+    fks = [56]
+    rks = [115]
+    # fcs = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+    # rcs = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+    fcs = [0, 7, 13]
+    rcs = [0, 7, 13]
+    dts = [0.01,0.02,0.03,0.04,0.05,0.06,0.07,0.08,0.09]
+    id_pfs = [0,1,2]
+
+    for fk in fks:  # 前轮弹簧刚度
+        for rk in rks: # 后轮弹簧刚度
+            for fc in fcs:  # 前轮阻尼系数
+                for rc in rcs:  # 后轮阻尼系数
+                    for dt in dts:  # 动力响应延迟
+                        for id_pf in id_pfs:  # 电机动力响应延迟
                             print(f"\n===== 仿真参数：fk={fk}, rk={rk}, fc={fc}, rc={rc}, dt={dt}, id_pf={id_pf} =====")
 
                             add_car('E68', fk=fk, rk=rk, fc=fc, rc=rc, dt=dt, T= id_pf)
@@ -141,7 +151,7 @@ if __name__ == "__main__":
                             run_sim()
 
                             # 另存csv 按照参数变化改名
-                            name = f"sin_car_fk_{fk}_rk_{rk}_fc_{i}_rc_{j}_delay_{dt}_T_{id_pf}.csv"
+                            name = f"sin_car_fk_{fk}_rk_{rk}_fc_{fc}_rc_{rc}_delay_{dt}_T_{id_pf}.csv"
                             copy_result(name)
 
     

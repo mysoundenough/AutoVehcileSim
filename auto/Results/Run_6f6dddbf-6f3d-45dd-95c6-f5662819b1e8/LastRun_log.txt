@@ -1,4 +1,4 @@
-Run made by CarSim 2024.1 at 17:54 on June 26, 2026.
+Run made by CarSim 2024.1 at 19:06 on June 29, 2026.
 Revision 222209, March 18, 2024
 Started with simfile: simfile.sim
 
@@ -165,26 +165,27 @@ Used Dataset: Plot: Setup; { Vehicle Motion } Yaw Rate of Sprung Masses vs. Time
 Used Dataset: Plot: Format; Default Plot Settings
 Used Dataset: Plot: Setup; { Steering } Road Wheel Steer Angle - Front
 Used Dataset: Procedures; { Driver Controls } On-Center Steer Test
+Used Dataset: I/O Channels: Write; Handling Analysis (MAT File)
  On-Center Steer Test, D-Class Sedan <Steering Tests>
 Used Dataset: CarSim Run Control; { Steering Tests } On-Center Steer Test, D-Class Sedan
 
-Time to read input = 0.298649
+Time to read input = 0.241564
 Function MMOTOR_MAX_TABLE(1,1) extrapolated (out of range HIGH) for X = 2388.09 rpm at T = 0
 Function R_EFF_MOTOR_CARPET(1,1) extrapolated (out of range HIGH) for X = 2388.09 rpm at T = 0
 Function VOC_BATTERY_CARPET extrapolated (out of range HIGH) for XCOL = 40 C at T = 0
-Function F_REB_STOP_TABLE(1,1) extrapolated (out of range HIGH) for X = -0.783533 mm at T = 0
-Function F_JNC_STOP_TABLE(1,1) extrapolated (out of range LOW) for X = -0.783533 mm at T = 0
-Function F_REB_STOP_TABLE(1,2) extrapolated (out of range HIGH) for X = 0.783533 mm at T = 0
-Function F_JNC_STOP_TABLE(1,2) extrapolated (out of range LOW) for X = 0.783533 mm at T = 0
-Function F_JNC_STOP_TABLE(2,1) extrapolated (out of range LOW) for X = -0.335588 mm at T = 0
-Function F_REB_STOP_TABLE(2,1) extrapolated (out of range HIGH) for X = -0.335588 mm at T = 0
-Function F_JNC_STOP_TABLE(2,2) extrapolated (out of range LOW) for X = 0.335588 mm at T = 0
-Function F_REB_STOP_TABLE(2,2) extrapolated (out of range HIGH) for X = 0.335588 mm at T = 0
+Function F_REB_STOP_TABLE(1,1) extrapolated (out of range HIGH) for X = -0.694512 mm at T = 0
+Function F_JNC_STOP_TABLE(1,1) extrapolated (out of range LOW) for X = -0.694512 mm at T = 0
+Function F_REB_STOP_TABLE(1,2) extrapolated (out of range HIGH) for X = 0.694512 mm at T = 0
+Function F_JNC_STOP_TABLE(1,2) extrapolated (out of range LOW) for X = 0.694512 mm at T = 0
+Function F_JNC_STOP_TABLE(2,1) extrapolated (out of range LOW) for X = -0.29746 mm at T = 0
+Function F_REB_STOP_TABLE(2,1) extrapolated (out of range HIGH) for X = -0.29746 mm at T = 0
+Function F_JNC_STOP_TABLE(2,2) extrapolated (out of range LOW) for X = 0.29746 mm at T = 0
+Function F_REB_STOP_TABLE(2,2) extrapolated (out of range HIGH) for X = 0.29746 mm at T = 0
 
 Run started: CSV output file = Results\Run_6f6dddbf-6f3d-45dd-95c6-f5662819b1e8\LastRun.csv
-Function M_BOOST_G_TABLE extrapolated (out of range LOW) for X = -2.70035 N-m at T = 6.5605
+Function M_BOOST_G_TABLE extrapolated (out of range LOW) for X = -2.70005 N-m at T = 6.5485
 
 Run stopped at t = 100. Stop time reached.
 
-Computational time ratio: RTIME = 0.135561 (real time)/(simulation time)
+Computational time ratio: RTIME = 0.197933 (real time)/(simulation time)
 

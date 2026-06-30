@@ -382,8 +382,8 @@ def add_car(car_type='E68', fk=None, rk=None, fc=None, rc=None, dt=None, T=None)
         set_vehicle_param(par_path=R_Shock_path, shock_force_rate=1, shock_force_data=shock_force_data)  # *k 变化倍数
 
     # 4. 修改 增程到动力响应
-    par_path = r"C:\workspace\AutoVehcileSim\auto\Powertrain\HEV_PMC\PMC_a65582f0-a085-4bc8-9606-1a4f75f80775.par"
-    set_vehicle_param(par_path=par_path, power_delay_rate=dt)  # s
+    # par_path = r"C:\workspace\AutoVehcileSim\auto\Powertrain\HEV_PMC\PMC_a65582f0-a085-4bc8-9606-1a4f75f80775.par"
+    # set_vehicle_param(par_path=par_path, power_delay_rate=dt)  # s
 
     # 修改电机特性动力延迟参数
     if dt is not None:
