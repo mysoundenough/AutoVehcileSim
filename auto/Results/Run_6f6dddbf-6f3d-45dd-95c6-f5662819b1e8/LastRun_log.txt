@@ -1,4 +1,4 @@
-Run made by CarSim 2024.1 at 19:06 on June 29, 2026.
+Run made by CarSim 2024.1 at 17:23 on July 01, 2026.
 Revision 222209, March 18, 2024
 Started with simfile: simfile.sim
 
@@ -17,14 +17,7 @@ Used Dataset: Suspension: Longitudinal Movement; { SLA } Front SLA - Longitudina
 Used Dataset: Suspension: Camber Angle; { SLA } Front SLA - Camber Change
 Used Dataset: Suspension: Lateral Movement Due to Jounce; { SLA } Front SLA - Lateral Movement
 Used Dataset: Suspension: Toe Angle; { SLA } Front SLA - Toe Change
-Used Dataset: Suspension: Dive Angle (Caster Change); { SLA } Front SLA - Dive Angle
-Used Dataset: Suspension: Longitudinal Movement; { SLA } Front SLA - Longitudinal Movement
-Used Dataset: Suspension: Camber Angle; { SLA } Front SLA - Camber Change
-Used Dataset: Suspension: Lateral Movement Due to Jounce; { SLA } Front SLA - Lateral Movement
-Used Dataset: Suspension: Toe Angle; { SLA } Front SLA - Toe Change
 Used Dataset: Suspension: Independent System Kinematics; { D-Class } D-Class, SUV - Front
-Used Dataset: Suspension: Shock Absorber; { SUV and Light Truck } Big SUV
-Used Dataset: Suspension: Jounce and Rebound Stops; { Jounce Range: 50 mm to 99 mm } +70 mm / -50 mm
 Used Dataset: Suspension: Shock Absorber; { SUV and Light Truck } Big SUV
 Used Dataset: Suspension: Jounce and Rebound Stops; { Jounce Range: 50 mm to 99 mm } +70 mm / -50 mm
 Used Dataset: Suspension: Auxiliary Roll Moment; { Linear } Linear: 569 N-m/deg
@@ -91,29 +84,18 @@ Used Dataset: Aerodynamics: Mx (Roll Moment) Coef. vs. Aero Slip; { Spline Inter
 Used Dataset: Aerodynamics: My (Pitch Moment) Coef. vs. Aero Slip; { Spline Interpolation } Spline: 0.15 at 0 deg.
 Used Dataset: Aerodynamics: Mz (Yaw Moment) Coef. vs. Aero Slip; { Spline Interpolation } Spline: -0.05 at 90 deg.
 Used Dataset: Aerodynamics: Basic; { D-Class } D-Class, SUV Aero
-Used Dataset: Powertrain: Fuel Consumption Rate; 300 kW Gasoline Engine
-Used Dataset: Powertrain: Engine; { 300 kW Engines } 300 kW Engine
-Used Dataset: Generic Table; { Powertrain (HEV) } Motor efficiency at wheel
-Used Dataset: Powertrain: Electric Motor Torque; { Electric Motor } Max. Output 298 N-m
-Used Dataset: Generic Table; { Powertrain (HEV) } Batt. charged resis. (15 milliohms)
-Used Dataset: Generic Table; { Powertrain (HEV) } Batt. discharged resis. (18 milliohms)
-Used Dataset: Generic Table; { Powertrain (HEV) } Battery Open-Circuit Voltage
-Used Dataset: Generic Table; { Powertrain (HEV) } Battery Max Capacity (Pure Electric)
-Used Dataset: Powertrain: Hybrid/Electric System; Electric Motors on Axles Powertrain Assy
-Used Dataset: Generic Table; { Powertrain (HEV) } Driver Demand Power: Full Load 165 kW
-Used Dataset: Powertrain: Hybrid/Electric Power Management Control; Electric Power Manage.: Full Load 165kW
-Used Dataset: Powertrain: Transfer Case; { Electric Motor Drive } EV eTransfer Case: 50/50, Gr. 1.0
-Used Dataset: Generic Table; { Powertrain (HEV) } Motor efficiency at wheel
-Used Dataset: Powertrain: Electric Motor Torque; { Electric Motor } Max. Output 298 N-m
-Used Dataset: Generic Table; { Powertrain (HEV) } Motor efficiency at wheel
-Used Dataset: Powertrain: Electric Motor Torque; { Electric Motor } Max. Output 298 N-m
-Used Dataset: Powertrain: Front Differential; { Electric Motor Drive (20 kW) } EV Twin-Motor: Gear Ratio 3.905:1
-Used Dataset: Generic Table; { Powertrain (HEV) } Motor efficiency at wheel
-Used Dataset: Powertrain: Electric Motor Torque; { Electric Motor } Max. Output 298 N-m
-Used Dataset: Generic Table; { Powertrain (HEV) } Motor efficiency at wheel
-Used Dataset: Powertrain: Electric Motor Torque; { Electric Motor } Max. Output 298 N-m
-Used Dataset: Powertrain: Rear Differential; { Electric Motor Drive (20 kW) } EV Twin-Motor: Gear Ratio 3.905:1
-Used Dataset: Powertrain: 4-Wheel Drive; { Electric: 10kW x4 (4 Motors) } 10kW x4, Electric AWD Hi-Pw, 3.905 Ratio
+Used Dataset: Powertrain: Engine; { 200 kW - 270 kW Engines } 250 kW Engine
+Used Dataset: Powertrain: Shift Schedule; { 7-speed } 7-speed, 1-2 Shift
+Used Dataset: Powertrain: Shift Schedule; { 7-speed } 7-speed, 2-3 Shift
+Used Dataset: Powertrain: Shift Schedule; { 7-speed } 7-speed, 3-4 Shift
+Used Dataset: Powertrain: Shift Schedule; { 7-speed } 7-speed, 4-5 Shift
+Used Dataset: Powertrain: Shift Schedule; { 7-speed } 7-speed, 5-6 Shift
+Used Dataset: Powertrain: Shift Schedule; { 7-speed } 7-speed, 6-7 Shift
+Used Dataset: Powertrain: Transmission (18 Gears or CVT); { 7-Speed Transmissions } 7-Speed
+Used Dataset: Powertrain: Transfer Case; { Limited Slip and Viscous Coupling } Viscous Coupling: 50/50, Gear Ratio 1:1
+Used Dataset: Powertrain: Front Differential; { Limited Slip and Viscous Coupling } Viscous: Gear Ratio 2.65
+Used Dataset: Powertrain: Rear Differential; { Limited Slip and Viscous Coupling } Viscous: Gear Ratio 2.65:1
+Used Dataset: Powertrain: 4-Wheel Drive; { External Components } 250 kW, 7-spd, Ext. Torq. Coupler
 Used Dataset: Brakes: Proportioning / Limiting Valve; Unity until 2.0 MPa then 30%
 Used Dataset: Brakes: Proportioning / Limiting Valve; Unity until 2.0 MPa then 30%
 Used Dataset: Brakes: Four-Wheel System; { D-Class } (SUV), MC Press, No ABS
@@ -169,23 +151,20 @@ Used Dataset: I/O Channels: Write; Handling Analysis (MAT File)
  On-Center Steer Test, D-Class Sedan <Steering Tests>
 Used Dataset: CarSim Run Control; { Steering Tests } On-Center Steer Test, D-Class Sedan
 
-Time to read input = 0.241564
-Function MMOTOR_MAX_TABLE(1,1) extrapolated (out of range HIGH) for X = 2388.09 rpm at T = 0
-Function R_EFF_MOTOR_CARPET(1,1) extrapolated (out of range HIGH) for X = 2388.09 rpm at T = 0
-Function VOC_BATTERY_CARPET extrapolated (out of range HIGH) for XCOL = 40 C at T = 0
-Function F_REB_STOP_TABLE(1,1) extrapolated (out of range HIGH) for X = -0.694512 mm at T = 0
-Function F_JNC_STOP_TABLE(1,1) extrapolated (out of range LOW) for X = -0.694512 mm at T = 0
-Function F_REB_STOP_TABLE(1,2) extrapolated (out of range HIGH) for X = 0.694512 mm at T = 0
-Function F_JNC_STOP_TABLE(1,2) extrapolated (out of range LOW) for X = 0.694512 mm at T = 0
-Function F_JNC_STOP_TABLE(2,1) extrapolated (out of range LOW) for X = -0.29746 mm at T = 0
-Function F_REB_STOP_TABLE(2,1) extrapolated (out of range HIGH) for X = -0.29746 mm at T = 0
-Function F_JNC_STOP_TABLE(2,2) extrapolated (out of range LOW) for X = 0.29746 mm at T = 0
-Function F_REB_STOP_TABLE(2,2) extrapolated (out of range HIGH) for X = 0.29746 mm at T = 0
+Time to read input = 0.511318
+Function F_REB_STOP_TABLE(1,1) extrapolated (out of range HIGH) for X = -1.38085 mm at T = 0
+Function F_JNC_STOP_TABLE(1,1) extrapolated (out of range LOW) for X = -1.38085 mm at T = 0
+Function F_JNC_STOP_TABLE(2,1) extrapolated (out of range LOW) for X = -0.100974 mm at T = 0
+Function F_REB_STOP_TABLE(2,1) extrapolated (out of range HIGH) for X = -0.100974 mm at T = 0
+Function F_JNC_STOP_TABLE(2,2) extrapolated (out of range LOW) for X = 0.100974 mm at T = 0
+Function F_REB_STOP_TABLE(2,2) extrapolated (out of range HIGH) for X = 0.100974 mm at T = 0
 
 Run started: CSV output file = Results\Run_6f6dddbf-6f3d-45dd-95c6-f5662819b1e8\LastRun.csv
-Function M_BOOST_G_TABLE extrapolated (out of range LOW) for X = -2.70005 N-m at T = 6.5485
+Function INV_CAP_TC_TABLE extrapolated (out of range HIGH) for X = 1 - at T = 0.0035
+Function M_BOOST_G_TABLE extrapolated (out of range LOW) for X = -2.70626 N-m at T = 6.5385
+Function L_RELAX_X_FZ_TABLE(1,2) extrapolated (out of range HIGH) for X = 1.0003 N at T = 82.535
 
 Run stopped at t = 100. Stop time reached.
 
-Computational time ratio: RTIME = 0.197933 (real time)/(simulation time)
+Computational time ratio: RTIME = 0.101202 (real time)/(simulation time)
 

@@ -2,10 +2,10 @@
   "VsChannelGroup" : {
     "Category" : "Simulink Models",
     "Dataset" : "Ext. Eng. and Torque Coupler",
-    "Input File" : "Results\\Run_997a0e7e-6488-4674-a75c-4b0eb84ff737\\Run.vs",
+    "Input File" : "C:\\workspace\\AutoVehcileSim\\auto\\Results\\Run_997a0e7e-6488-4674-a75c-4b0eb84ff737\\LastRun.vs",
     "Model" : "Vehicle Configuration: I_I",
     "Product" : "CarSim 2024.1",
-    "Timestamp" : "14:37 on March 25, 2024",
+    "Timestamp" : "17:17 on July 01, 2026",
     "Title" : "Ext. Eng. and Torque Coupler <Simulink Models>",
     "Version" : 2,
     "XLabel" : "Time",

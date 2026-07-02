@@ -1,26 +1,25 @@
-2026-06-30T10:19:31 Logfile initialized.
-2026-06-30T10:19:31 (Info):    CarSim 2024.1
-2026-06-30T10:19:31 (Info):    -
-2026-06-30T10:19:31 (Info):    command-line: 
-2026-06-30T10:19:31 (Info):    -
-2026-06-30T10:19:31 (Info):    Working Dir: C:\workspace\AutoVehcileSim\auto\
-2026-06-30T10:19:31 (Info):    Program Dir: C:\Program Files (x86)\CarSim2024.1_Prog\
-2026-06-30T10:19:31 (Info):    -
-2026-06-30T10:19:31 (Info):    OS Version:        6.2 (build 9200)
-2026-06-30T10:19:31 (Info):    CPU Architecture:  x64
-2026-06-30T10:19:31 (Info):    CPU Count:         2
-2026-06-30T10:19:31 (Info):    CPU Level/Rev:     21/1
-2026-06-30T10:19:31 (Info):    Start Mem Total:   4090 MB
-2026-06-30T10:19:31 (Info):    Start Mem Used:    87%
-2026-06-30T10:19:31 (Info):    -
-2026-06-30T10:19:31 (Info):    Loaded dataset index cache in 0.14s, 27.2 megabytes.
-2026-06-30T10:19:33 (Info):    Error: A license manager is already running.
-2026-06-30T10:19:34 (Info):    License check took 2.53 seconds.
-2026-06-30T10:19:34 (Info):    No install ID found at regkey "Software\Mechanical Simulation Corp\CarSim 2024.1".
-2026-06-30T10:19:34 (Info):    No install ID found at regkey "Software\Mechanical Simulation Corp\CarSim 2024.1".
-2026-06-30T10:19:37 (Info):    Initial setup took 2.69 seconds.
-2026-06-30T10:19:37 (Info):    Auto updates took 0.00 seconds.
-2026-06-30T10:19:38 (Info):    Loaded last screen in 1.11 seconds.
-2026-06-30T10:19:38 (Info):    Total init time 6.99 seconds.
-2026-06-30T13:37:40 (Info):    6314 index cache entries written in 0.109s
-2026-06-30T13:37:41 (Info):    Exiting application...
+2026-07-02T14:21:43 Logfile initialized.
+2026-07-02T14:21:43 (Info):    CarSim 2024.1
+2026-07-02T14:21:43 (Info):    -
+2026-07-02T14:21:43 (Info):    command-line: 
+2026-07-02T14:21:43 (Info):    -
+2026-07-02T14:21:43 (Info):    Working Dir: C:\workspace\AutoVehcileSim\auto\
+2026-07-02T14:21:43 (Info):    Program Dir: C:\Program Files (x86)\CarSim2024.1_Prog\
+2026-07-02T14:21:43 (Info):    -
+2026-07-02T14:21:43 (Info):    OS Version:        6.2 (build 9200)
+2026-07-02T14:21:43 (Info):    CPU Architecture:  x64
+2026-07-02T14:21:43 (Info):    CPU Count:         2
+2026-07-02T14:21:43 (Info):    CPU Level/Rev:     21/1
+2026-07-02T14:21:43 (Info):    Start Mem Total:   4090 MB
+2026-07-02T14:21:43 (Info):    Start Mem Used:    89%
+2026-07-02T14:21:43 (Info):    -
+2026-07-02T14:21:43 (Info):    Loaded dataset index cache in 0.11s, 27.2 megabytes.
+2026-07-02T14:21:43 (Info):    Error: A license manager is already running.
+2026-07-02T14:21:44 (Info):    License check took 0.64 seconds.
+2026-07-02T14:21:44 (Info):    No install ID found at regkey "Software\Mechanical Simulation Corp\CarSim 2024.1".
+2026-07-02T14:21:44 (Info):    No install ID found at regkey "Software\Mechanical Simulation Corp\CarSim 2024.1".
+2026-07-02T14:21:46 (Info):    Initial setup took 2.08 seconds.
+2026-07-02T14:21:46 (Info):    Auto updates took 0.00 seconds.
+2026-07-02T14:21:47 (Info):    Loaded last screen in 0.66 seconds.
+2026-07-02T14:21:47 (Info):    Total init time 4.45 seconds.
+2026-07-02T16:35:17 (Info):    Regenerated road shapes for "R

@@ -5,9 +5,9 @@ PARSFILE
 *README_FILE Results\Run_db360068-5241-470d-a358-3b37cd8f26f7\Run_imp_tab.txt
 
 #MiscYellow0
-IMP_MENGINE Add 0.0! 1
-IMP_AV_ENG Add 0.0! 0
-IMP_PWR_ENGINE_AV Replace 0.0! 1
+IMP_MENGINE Add 0.0 ! 1
+IMP_AV_ENG Add 0.0 ! 0
+IMP_PWR_ENGINE_AV Replace 0.0 ! 1
 #ENDMYellow
 
 #MiscYellow1
@@ -26,7 +26,7 @@ LOG_ENTRY Used Dataset: I/O Channels: Import; { Powertrain Control and Ext. Mode
 #DataSet : External Engine: Imports
 #Category: Powertrain Control and Ext. Models
 #FileID  : Import_60cdc616-6948-48b1-ba23-9497b4beba6e
-#Modified: 05-28-2021 15:02:23
+#Modified: 07-01-2026 14:40:22
 #Product : CarSim 2024.1
 #DataVer : 2024.1
 #VehCode Import Channels

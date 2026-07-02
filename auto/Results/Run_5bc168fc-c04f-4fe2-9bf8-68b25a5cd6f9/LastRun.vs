@@ -2,10 +2,10 @@
   "VsChannelGroup" : {
     "Category" : "Simulink Models",
     "Dataset" : "External Powertrain, Acceleration",
-    "Input File" : "Results\\Run_5bc168fc-c04f-4fe2-9bf8-68b25a5cd6f9\\Run.vs",
+    "Input File" : "C:\\workspace\\AutoVehcileSim\\auto\\Results\\Run_5bc168fc-c04f-4fe2-9bf8-68b25a5cd6f9\\LastRun.vs",
     "Model" : "Vehicle Configuration: I_I",
     "Product" : "CarSim 2024.1",
-    "Timestamp" : "14:35 on March 25, 2024",
+    "Timestamp" : "14:58 on July 01, 2026",
     "Title" : "External Powertrain, Acceleration <Simulink Models>",
     "Version" : 2,
     "XLabel" : "Time",

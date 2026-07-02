@@ -2,10 +2,10 @@
   "VsChannelGroup" : {
     "Category" : "Simulink Models",
     "Dataset" : "Active Transfer Case Control",
-    "Input File" : "Results\\Run_333d07a8-912b-417b-8761-07870e16c3c1\\Run.vs",
+    "Input File" : "C:\\workspace\\AutoVehcileSim\\auto\\Results\\Run_333d07a8-912b-417b-8761-07870e16c3c1\\LastRun.vs",
     "Model" : "Vehicle Configuration: I_S",
     "Product" : "CarSim 2024.1",
-    "Timestamp" : "14:32 on March 25, 2024",
+    "Timestamp" : "13:47 on July 01, 2026",
     "Title" : "Active Transfer Case Control <Simulink Models>",
     "Version" : 2,
     "XLabel" : "Time",

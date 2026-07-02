@@ -818,19 +818,19 @@ CMP_OFFSET 0
 ENTER_PARSFILE Suspensions\Shocks\Shock_06339072-ca43-46c4-af82-ec3bf59d6ffc.par
 #FullDataName Suspension: Shock Absorber`Big Car`Passenger Car
 FD_TABLE SPLINE
--1410, -5008
--720, -3436
--390, -2324
--210, -1792
--90, -1008
--20, -228
+-1030, -7100
+-520, -5652
+-390, -5283
+-260, -4822
+-130, -3488
+-50, -836
 0, 0
-20, 228
-90, 596
-200, 784
-390, 1100
-760, 1796
-1160, 2560
+50, 405
+130, 977
+260, 1697
+390, 2157
+520, 2584
+1030, 3723
 ENDTABLE
 LOG_ENTRY Used Dataset: Suspension: Shock Absorber; { Passenger Car } Big Car
 EXIT_PARSFILE Suspensions\Shocks\Shock_06339072-ca43-46c4-af82-ec3bf59d6ffc.par
@@ -877,19 +877,19 @@ CMP_OFFSET 0
 ENTER_PARSFILE Suspensions\Shocks\Shock_06339072-ca43-46c4-af82-ec3bf59d6ffc.par
 #FullDataName Suspension: Shock Absorber`Big Car`Passenger Car
 FD_TABLE SPLINE
--1410, -5008
--720, -3436
--390, -2324
--210, -1792
--90, -1008
--20, -228
+-1030, -7100
+-520, -5652
+-390, -5283
+-260, -4822
+-130, -3488
+-50, -836
 0, 0
-20, 228
-90, 596
-200, 784
-390, 1100
-760, 1796
-1160, 2560
+50, 405
+130, 977
+260, 1697
+390, 2157
+520, 2584
+1030, 3723
 ENDTABLE
 LOG_ENTRY Used Dataset: Suspension: Shock Absorber; { Passenger Car } Big Car
 EXIT_PARSFILE Suspensions\Shocks\Shock_06339072-ca43-46c4-af82-ec3bf59d6ffc.par
@@ -973,7 +973,7 @@ OPT_TIRE_LAG_KAPPA 2
 OPT_TIRE_LAG_ALPHA 1
 OPT_TIRE_MODEL 1
 ENTER_PARSFILE Animator\STL_Groups\ShpGrp_d5b55623-3c6f-43ea-b7a0-880a3303d1d2.par
-#FullDataName Animator: Shape Assembly`195/45 R16`Tires
+#FullDataName Animator: Shape Assembly`Sports Car`Tires
 ENTER_PARSFILE Animator\STL\Shape_9e9cf3ff-6a77-4076-a9f0-1b70114e603e.par
 #FullDataName Animator: Shape File Link`195/45 R16: Tire`Common Vehicle Assets: Tires
 add_obj Animator\3D_Shape_Files\Common_Vehicle_Assets\Tires\195_45R16\tire.obj
@@ -996,23 +996,23 @@ vsv_enable_shadows_recursive
 LOG_ENTRY Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Wheel
 EXIT_PARSFILE Animator\STL\Shape_e8969a6e-9ef6-43c7-9f40-228c21b5b4a1.par
 
-ENTER_PARSFILE Animator\STL\Shape_21a8656e-547d-4831-954d-38d95a9dff2b.par
-#FullDataName Animator: Shape File Link`195/45 R16: Stripe`Common Vehicle Assets: Tires
+ENTER_PARSFILE Animator\STL\Shape_8ffa6ffc-1b17-4180-964d-d52d768c1b70.par
+#FullDataName Animator: Shape File Link`195/45 R16: Stripe #1`Common Vehicle Assets: Tires
 add_obj Animator\3D_Shape_Files\Common_Vehicle_Assets\Tires\195_45R16\stripe.obj
-SET_COLOR 1 1 1
+SET_COLOR white
 SET_OFFSET_X 0
 SET_OFFSET_Y 0.01
 SET_OFFSET_Z 0.01
 set_lighting on
 set_fogging on
 SET_SPECULAR 0 0 0
-LOG_ENTRY Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Stripe
-EXIT_PARSFILE Animator\STL\Shape_21a8656e-547d-4831-954d-38d95a9dff2b.par
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Stripe #1
+EXIT_PARSFILE Animator\STL\Shape_8ffa6ffc-1b17-4180-964d-d52d768c1b70.par
 
 x_ref_length 291
 y_ref_length 195
 z_ref_length 291
-LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Tires } 195/45 R16
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Tires } Sports Car
 EXIT_PARSFILE Animator\STL_Groups\ShpGrp_d5b55623-3c6f-43ea-b7a0-880a3303d1d2.par
 
 WRITE_WHEEL_OFFSET
@@ -1397,7 +1397,7 @@ OPT_TIRE_LAG_KAPPA 2
 OPT_TIRE_LAG_ALPHA 1
 OPT_TIRE_MODEL 1
 ENTER_PARSFILE Animator\STL_Groups\ShpGrp_d5b55623-3c6f-43ea-b7a0-880a3303d1d2.par
-#FullDataName Animator: Shape Assembly`195/45 R16`Tires
+#FullDataName Animator: Shape Assembly`Sports Car`Tires
 ENTER_PARSFILE Animator\STL\Shape_9e9cf3ff-6a77-4076-a9f0-1b70114e603e.par
 #FullDataName Animator: Shape File Link`195/45 R16: Tire`Common Vehicle Assets: Tires
 add_obj Animator\3D_Shape_Files\Common_Vehicle_Assets\Tires\195_45R16\tire.obj
@@ -1420,23 +1420,23 @@ vsv_enable_shadows_recursive
 LOG_ENTRY Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Wheel
 EXIT_PARSFILE Animator\STL\Shape_e8969a6e-9ef6-43c7-9f40-228c21b5b4a1.par
 
-ENTER_PARSFILE Animator\STL\Shape_21a8656e-547d-4831-954d-38d95a9dff2b.par
-#FullDataName Animator: Shape File Link`195/45 R16: Stripe`Common Vehicle Assets: Tires
+ENTER_PARSFILE Animator\STL\Shape_8ffa6ffc-1b17-4180-964d-d52d768c1b70.par
+#FullDataName Animator: Shape File Link`195/45 R16: Stripe #1`Common Vehicle Assets: Tires
 add_obj Animator\3D_Shape_Files\Common_Vehicle_Assets\Tires\195_45R16\stripe.obj
-SET_COLOR 1 1 1
+SET_COLOR white
 SET_OFFSET_X 0
 SET_OFFSET_Y 0.01
 SET_OFFSET_Z 0.01
 set_lighting on
 set_fogging on
 SET_SPECULAR 0 0 0
-LOG_ENTRY Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Stripe
-EXIT_PARSFILE Animator\STL\Shape_21a8656e-547d-4831-954d-38d95a9dff2b.par
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Stripe #1
+EXIT_PARSFILE Animator\STL\Shape_8ffa6ffc-1b17-4180-964d-d52d768c1b70.par
 
 x_ref_length 291
 y_ref_length 195
 z_ref_length 291
-LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Tires } 195/45 R16
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Tires } Sports Car
 EXIT_PARSFILE Animator\STL_Groups\ShpGrp_d5b55623-3c6f-43ea-b7a0-880a3303d1d2.par
 
 WRITE_WHEEL_OFFSET
@@ -2056,19 +2056,19 @@ CMP_OFFSET 0
 ENTER_PARSFILE Suspensions\Shocks\Shock_06339072-ca43-46c4-af82-ec3bf59d6ffc.par
 #FullDataName Suspension: Shock Absorber`Big Car`Passenger Car
 FD_TABLE SPLINE
--1410, -5008
--720, -3436
--390, -2324
--210, -1792
--90, -1008
--20, -228
+-1030, -7100
+-520, -5652
+-390, -5283
+-260, -4822
+-130, -3488
+-50, -836
 0, 0
-20, 228
-90, 596
-200, 784
-390, 1100
-760, 1796
-1160, 2560
+50, 405
+130, 977
+260, 1697
+390, 2157
+520, 2584
+1030, 3723
 ENDTABLE
 LOG_ENTRY Used Dataset: Suspension: Shock Absorber; { Passenger Car } Big Car
 EXIT_PARSFILE Suspensions\Shocks\Shock_06339072-ca43-46c4-af82-ec3bf59d6ffc.par
@@ -2115,19 +2115,19 @@ CMP_OFFSET 0
 ENTER_PARSFILE Suspensions\Shocks\Shock_06339072-ca43-46c4-af82-ec3bf59d6ffc.par
 #FullDataName Suspension: Shock Absorber`Big Car`Passenger Car
 FD_TABLE SPLINE
--1410, -5008
--720, -3436
--390, -2324
--210, -1792
--90, -1008
--20, -228
+-1030, -7100
+-520, -5652
+-390, -5283
+-260, -4822
+-130, -3488
+-50, -836
 0, 0
-20, 228
-90, 596
-200, 784
-390, 1100
-760, 1796
-1160, 2560
+50, 405
+130, 977
+260, 1697
+390, 2157
+520, 2584
+1030, 3723
 ENDTABLE
 LOG_ENTRY Used Dataset: Suspension: Shock Absorber; { Passenger Car } Big Car
 EXIT_PARSFILE Suspensions\Shocks\Shock_06339072-ca43-46c4-af82-ec3bf59d6ffc.par
@@ -2209,7 +2209,7 @@ OPT_TIRE_LAG_KAPPA 2
 OPT_TIRE_LAG_ALPHA 1
 OPT_TIRE_MODEL 1
 ENTER_PARSFILE Animator\STL_Groups\ShpGrp_d5b55623-3c6f-43ea-b7a0-880a3303d1d2.par
-#FullDataName Animator: Shape Assembly`195/45 R16`Tires
+#FullDataName Animator: Shape Assembly`Sports Car`Tires
 ENTER_PARSFILE Animator\STL\Shape_9e9cf3ff-6a77-4076-a9f0-1b70114e603e.par
 #FullDataName Animator: Shape File Link`195/45 R16: Tire`Common Vehicle Assets: Tires
 add_obj Animator\3D_Shape_Files\Common_Vehicle_Assets\Tires\195_45R16\tire.obj
@@ -2232,23 +2232,23 @@ vsv_enable_shadows_recursive
 LOG_ENTRY Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Wheel
 EXIT_PARSFILE Animator\STL\Shape_e8969a6e-9ef6-43c7-9f40-228c21b5b4a1.par
 
-ENTER_PARSFILE Animator\STL\Shape_21a8656e-547d-4831-954d-38d95a9dff2b.par
-#FullDataName Animator: Shape File Link`195/45 R16: Stripe`Common Vehicle Assets: Tires
+ENTER_PARSFILE Animator\STL\Shape_8ffa6ffc-1b17-4180-964d-d52d768c1b70.par
+#FullDataName Animator: Shape File Link`195/45 R16: Stripe #1`Common Vehicle Assets: Tires
 add_obj Animator\3D_Shape_Files\Common_Vehicle_Assets\Tires\195_45R16\stripe.obj
-SET_COLOR 1 1 1
+SET_COLOR white
 SET_OFFSET_X 0
 SET_OFFSET_Y 0.01
 SET_OFFSET_Z 0.01
 set_lighting on
 set_fogging on
 SET_SPECULAR 0 0 0
-LOG_ENTRY Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Stripe
-EXIT_PARSFILE Animator\STL\Shape_21a8656e-547d-4831-954d-38d95a9dff2b.par
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Stripe #1
+EXIT_PARSFILE Animator\STL\Shape_8ffa6ffc-1b17-4180-964d-d52d768c1b70.par
 
 x_ref_length 291
 y_ref_length 195
 z_ref_length 291
-LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Tires } 195/45 R16
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Tires } Sports Car
 EXIT_PARSFILE Animator\STL_Groups\ShpGrp_d5b55623-3c6f-43ea-b7a0-880a3303d1d2.par
 
 WRITE_WHEEL_OFFSET
@@ -2633,7 +2633,7 @@ OPT_TIRE_LAG_KAPPA 2
 OPT_TIRE_LAG_ALPHA 1
 OPT_TIRE_MODEL 1
 ENTER_PARSFILE Animator\STL_Groups\ShpGrp_d5b55623-3c6f-43ea-b7a0-880a3303d1d2.par
-#FullDataName Animator: Shape Assembly`195/45 R16`Tires
+#FullDataName Animator: Shape Assembly`Sports Car`Tires
 ENTER_PARSFILE Animator\STL\Shape_9e9cf3ff-6a77-4076-a9f0-1b70114e603e.par
 #FullDataName Animator: Shape File Link`195/45 R16: Tire`Common Vehicle Assets: Tires
 add_obj Animator\3D_Shape_Files\Common_Vehicle_Assets\Tires\195_45R16\tire.obj
@@ -2656,23 +2656,23 @@ vsv_enable_shadows_recursive
 LOG_ENTRY Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Wheel
 EXIT_PARSFILE Animator\STL\Shape_e8969a6e-9ef6-43c7-9f40-228c21b5b4a1.par
 
-ENTER_PARSFILE Animator\STL\Shape_21a8656e-547d-4831-954d-38d95a9dff2b.par
-#FullDataName Animator: Shape File Link`195/45 R16: Stripe`Common Vehicle Assets: Tires
+ENTER_PARSFILE Animator\STL\Shape_8ffa6ffc-1b17-4180-964d-d52d768c1b70.par
+#FullDataName Animator: Shape File Link`195/45 R16: Stripe #1`Common Vehicle Assets: Tires
 add_obj Animator\3D_Shape_Files\Common_Vehicle_Assets\Tires\195_45R16\stripe.obj
-SET_COLOR 1 1 1
+SET_COLOR white
 SET_OFFSET_X 0
 SET_OFFSET_Y 0.01
 SET_OFFSET_Z 0.01
 set_lighting on
 set_fogging on
 SET_SPECULAR 0 0 0
-LOG_ENTRY Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Stripe
-EXIT_PARSFILE Animator\STL\Shape_21a8656e-547d-4831-954d-38d95a9dff2b.par
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Stripe #1
+EXIT_PARSFILE Animator\STL\Shape_8ffa6ffc-1b17-4180-964d-d52d768c1b70.par
 
 x_ref_length 291
 y_ref_length 195
 z_ref_length 291
-LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Tires } 195/45 R16
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Tires } Sports Car
 EXIT_PARSFILE Animator\STL_Groups\ShpGrp_d5b55623-3c6f-43ea-b7a0-880a3303d1d2.par
 
 WRITE_WHEEL_OFFSET
@@ -3077,7 +3077,7 @@ ENTER_PARSFILE Aerodynamics\Aero_Main\Aero_d2edabc2-0402-4d99-a986-94430d6589aa.
 ENTER_PARSFILE Aerodynamics\Aero_Fx\AirCFx_67b7c1a5-2eb8-4548-b585-873fbb86b674.par
 #FullDataName Aerodynamics: Fx (Drag) Coef. vs. Aero Slip`Spline: 0.30 at 0 deg.`Spline Interpolation
 FX_AERO_SHAPING_TABLE SPLINE_FLAT
--180, -0.3
+-180, -0.45
 -160, -0.45
 -90, 0
 -20, 0.325
@@ -3085,21 +3085,21 @@ FX_AERO_SHAPING_TABLE SPLINE_FLAT
 20, 0.325
 90, 0
 160, -0.45
-180, -0.3
+180, -0.45
 ENDTABLE
 LOG_ENTRY Used Dataset: Aerodynamics: Fx (Drag) Coef. vs. Aero Slip; { Spline Interpolation } Spline: 0.30 at 0 deg.
 EXIT_PARSFILE Aerodynamics\Aero_Fx\AirCFx_67b7c1a5-2eb8-4548-b585-873fbb86b674.par
 
 ENTER_PARSFILE Aerodynamics\Aero_Fy\AirCFy_fdb1d5b6-475a-4d35-bfcc-b2b05bed2d67.par
-#FullDataName Aerodynamics: Fy (Side Force) Coef. vs. Aero Slip`Spline: 2 at 90 deg.`Spline Interpolation
-FY_AERO_SHAPING_TABLE SPLINE_FLAT
+#FullDataName Aerodynamics: Fy (Side Force) Coef. vs. Aero Slip`Spline: 0.5 at 90 deg.`Spline Interpolation
+FY_AERO_SHAPING_TABLE SPLINE
 -180, 0
--90, -2
+-90, -0.5
 0, 0
-90, 2
+90, 0.5
 180, 0
 ENDTABLE
-LOG_ENTRY Used Dataset: Aerodynamics: Fy (Side Force) Coef. vs. Aero Slip; { Spline Interpolation } Spline: 2 at 90 deg.
+LOG_ENTRY Used Dataset: Aerodynamics: Fy (Side Force) Coef. vs. Aero Slip; { Spline Interpolation } Spline: 0.5 at 90 deg.
 EXIT_PARSFILE Aerodynamics\Aero_Fy\AirCFy_fdb1d5b6-475a-4d35-bfcc-b2b05bed2d67.par
 
 ENTER_PARSFILE Aerodynamics\Aero_Fz\AirCFz_181dc205-db9c-4a33-a480-7f8380b96502.par
@@ -3133,7 +3133,7 @@ EXIT_PARSFILE Aerodynamics\Aero_Mx\AirCMx_3f02edea-099a-450e-bb38-0cab04c7d554.p
 ENTER_PARSFILE Aerodynamics\Aero_My\AirCMy_d0c39dc5-f1b1-477a-8422-5ef53720bcf1.par
 #FullDataName Aerodynamics: My (Pitch Moment) Coef. vs. Aero Slip`Spline: 0.15 at 0 deg.`Spline Interpolation
 MY_AERO_SHAPING_TABLE SPLINE_FLAT
--180, -0.17
+-180, -0.25
 -160, -0.25
 -90, 0
 -20, 0.17
@@ -3141,25 +3141,21 @@ MY_AERO_SHAPING_TABLE SPLINE_FLAT
 20, 0.17
 90, 0
 160, -0.25
-180, -0.17
+180, -0.25
 ENDTABLE
 LOG_ENTRY Used Dataset: Aerodynamics: My (Pitch Moment) Coef. vs. Aero Slip; { Spline Interpolation } Spline: 0.15 at 0 deg.
 EXIT_PARSFILE Aerodynamics\Aero_My\AirCMy_d0c39dc5-f1b1-477a-8422-5ef53720bcf1.par
 
 ENTER_PARSFILE Aerodynamics\Aero_Mz\AirCMz_8c859ffc-2eb2-44f3-8fa4-850e39efba8a.par
-#FullDataName Aerodynamics: Mz (Yaw Moment) Coef. vs. Aero Slip`Spline: 0.2 at 35 deg.`Spline Interpolation
-MZ_AERO_SHAPING_TABLE SPLINE_FLAT
+#FullDataName Aerodynamics: Mz (Yaw Moment) Coef. vs. Aero Slip`Spline: -0.05 at 90 deg.`Spline Interpolation
+MZ_AERO_SHAPING_TABLE SPLINE
 -180, 0
--135, 0.2
--75, 0
--35, -0.2
+-90, 0.05
 0, 0
-35, 0.2
-75, 0
-135, -0.2
+90, -0.05
 180, 0
 ENDTABLE
-LOG_ENTRY Used Dataset: Aerodynamics: Mz (Yaw Moment) Coef. vs. Aero Slip; { Spline Interpolation } Spline: 0.2 at 35 deg.
+LOG_ENTRY Used Dataset: Aerodynamics: Mz (Yaw Moment) Coef. vs. Aero Slip; { Spline Interpolation } Spline: -0.05 at 90 deg.
 EXIT_PARSFILE Aerodynamics\Aero_Mz\AirCMz_8c859ffc-2eb2-44f3-8fa4-850e39efba8a.par
 
 X_REF_AERO -1525
@@ -3186,14 +3182,18 @@ OPT_HEV 0
 OPT_ENGINE_INTERNAL 0
 OPT_PWR_CPL_INTERNAL 0
 OPT_TRANS_INTERNAL 0
-OPT_SHIFT_INTERNAL 0
-OPT_TR_GEAR_INTERNAL 0
 IDIFF 1
 OPT_DIFF_INTERNAL 0
 IDIFF 2
 OPT_DIFF_INTERNAL 0
 IDIFF 3
 OPT_DIFF_INTERNAL 0
+ENTER_PARSFILE Powertrain\Extrans\TransExt_af12a1fb-2189-4c80-aaa1-dca12ff3e927.par
+#FullDataName Powertrain: Transmission (External, Deprecated)`External Shift Schedule`
+OPT_SHIFT_INTERNAL 0
+LOG_ENTRY Used Dataset: Powertrain: Transmission (External, Deprecated); External Shift Schedule
+EXIT_PARSFILE Powertrain\Extrans\TransExt_af12a1fb-2189-4c80-aaa1-dca12ff3e927.par
+
 IDIFF 3
 IDIFF 1
 IDIFF 2
@@ -3525,8 +3525,10 @@ ENTER_PARSFILE Generic\Group\GenGrp_c11e4bbe-5e3a-4498-91a5-6c42d1db378a.par
 ENTER_PARSFILE Animator\Arrows\Arrows_4e3feb5a-68cd-4d99-b6af-c725ceea66fe.par
 #FullDataName Animator: Wheel Arrows and Other Indicators`2A - Fx Tire Force Arrows`Tire Force Arrows (2 Axles)
 ADD_REFERENCE_FRAME wheel L1 indicator: 2A - Fx Tire Force Arrows
+ENTER_PARSFILE Animator\STL_Groups\ShpGrp_e7c42d80-d4a9-435d-b144-6711593470f6.par
+#FullDataName Animator: Shape Assembly`Fx 3D Arrow (Tail Origin)`Arrows
 ENTER_PARSFILE Animator\STL\Shape_121d1f5b-e0e1-4397-b1a3-9459bdc4d022.par
-#FullDataName Animator: Shape File Link`3D Pyramid: Tail Org (X-Axis)`Geometric Shapes: Arrows
+#FullDataName Animator: Shape File Link`3D Pyramidal Arrow: Tail Origin (X-Axis)`Geometric Shapes
 add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\3D_Arrow_Pyramid\arrow_3D.OSG
 SET_COLOR 1 1 0
 SET_SCALE_X 0.15
@@ -3534,16 +3536,59 @@ SET_SCALE_Y 0.25
 SET_SCALE_Z 0.15
 SET_ANGLE_Z -90
 SET_ANGLE_Y 0
-SET_ANGLE_X 0
-SET_OFFSET_X 0.5
-SET_OFFSET_Y 0
-SET_OFFSET_Z 0.02
+SET_ANGLE_X -90
 X_REF_LENGTH 2000
 set_lighting on
 set_fogging on
 USE_RUN_COLOR
-LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 3D Pyramid: Tail Org (X-Axis)
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes } 3D Pyramidal Arrow: Tail Origin (X-Axis)
 EXIT_PARSFILE Animator\STL\Shape_121d1f5b-e0e1-4397-b1a3-9459bdc4d022.par
+
+set_offset_x 0.5
+set_offset_y 0
+set_offset_z 0.02
+ENTER_PARSFILE Animator\STL\Shape_e00c79c1-cf34-4cc8-8a2a-46cc17d8a00a.par
+#FullDataName Animator: Shape File Link`2D Arrow: Point Origin (X-Axis, XZ-Plane)`Geometric Shapes
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\2D_Arrow\arrow_flat.obj
+SET_COLOR 1 1 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.25
+SET_ANGLE_Z -90
+SET_ANGLE_Y 0
+SET_ANGLE_X -90
+X_REF_LENGTH 2000
+set_lighting off
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes } 2D Arrow: Point Origin (X-Axis, XZ-Plane)
+EXIT_PARSFILE Animator\STL\Shape_e00c79c1-cf34-4cc8-8a2a-46cc17d8a00a.par
+
+set_offset_x 0.5
+set_offset_y 0
+set_offset_z 0.02
+ENTER_PARSFILE Animator\STL\Shape_f420bcc5-0b6e-48a8-95cd-f923b18d56fe.par
+#FullDataName Animator: Shape File Link`2D Arrow: Point Origin (0.5m Long, X-Axis, XY-Plane)`Geometric Shapes
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\2D_Arrow\arrow_flat.obj
+SET_COLOR 1 1 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.25
+SET_ANGLE_Z -90
+SET_ANGLE_Y 0
+SET_ANGLE_X 0
+X_REF_LENGTH 2000
+set_lighting off
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes } 2D Arrow: Point Origin (0.5m Long, X-Axis, XY-Plane)
+EXIT_PARSFILE Animator\STL\Shape_f420bcc5-0b6e-48a8-95cd-f923b18d56fe.par
+
+set_offset_x 0.5
+set_offset_y 0
+set_offset_z 0.02
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Arrows } Fx 3D Arrow (Tail Origin)
+EXIT_PARSFILE Animator\STL_Groups\ShpGrp_e7c42d80-d4a9-435d-b144-6711593470f6.par
 
 SET_EULER_ANGLES yaw_pitch_roll
 SET_X_NAME Xctc_L1
@@ -3573,8 +3618,10 @@ Y_LENGTH 1
 Z_LENGTH 1
 SET_OFFSET_VAR_Z 0
 ADD_REFERENCE_FRAME wheel L2 indicator: 2A - Fx Tire Force Arrows
+ENTER_PARSFILE Animator\STL_Groups\ShpGrp_e7c42d80-d4a9-435d-b144-6711593470f6.par
+#FullDataName Animator: Shape Assembly`Fx 3D Arrow (Tail Origin)`Arrows
 ENTER_PARSFILE Animator\STL\Shape_121d1f5b-e0e1-4397-b1a3-9459bdc4d022.par
-#FullDataName Animator: Shape File Link`3D Pyramid: Tail Org (X-Axis)`Geometric Shapes: Arrows
+#FullDataName Animator: Shape File Link`3D Pyramidal Arrow: Tail Origin (X-Axis)`Geometric Shapes
 add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\3D_Arrow_Pyramid\arrow_3D.OSG
 SET_COLOR 1 1 0
 SET_SCALE_X 0.15
@@ -3582,16 +3629,59 @@ SET_SCALE_Y 0.25
 SET_SCALE_Z 0.15
 SET_ANGLE_Z -90
 SET_ANGLE_Y 0
-SET_ANGLE_X 0
-SET_OFFSET_X 0.5
-SET_OFFSET_Y 0
-SET_OFFSET_Z 0.02
+SET_ANGLE_X -90
 X_REF_LENGTH 2000
 set_lighting on
 set_fogging on
 USE_RUN_COLOR
-LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 3D Pyramid: Tail Org (X-Axis)
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes } 3D Pyramidal Arrow: Tail Origin (X-Axis)
 EXIT_PARSFILE Animator\STL\Shape_121d1f5b-e0e1-4397-b1a3-9459bdc4d022.par
+
+set_offset_x 0.5
+set_offset_y 0
+set_offset_z 0.02
+ENTER_PARSFILE Animator\STL\Shape_e00c79c1-cf34-4cc8-8a2a-46cc17d8a00a.par
+#FullDataName Animator: Shape File Link`2D Arrow: Point Origin (X-Axis, XZ-Plane)`Geometric Shapes
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\2D_Arrow\arrow_flat.obj
+SET_COLOR 1 1 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.25
+SET_ANGLE_Z -90
+SET_ANGLE_Y 0
+SET_ANGLE_X -90
+X_REF_LENGTH 2000
+set_lighting off
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes } 2D Arrow: Point Origin (X-Axis, XZ-Plane)
+EXIT_PARSFILE Animator\STL\Shape_e00c79c1-cf34-4cc8-8a2a-46cc17d8a00a.par
+
+set_offset_x 0.5
+set_offset_y 0
+set_offset_z 0.02
+ENTER_PARSFILE Animator\STL\Shape_f420bcc5-0b6e-48a8-95cd-f923b18d56fe.par
+#FullDataName Animator: Shape File Link`2D Arrow: Point Origin (0.5m Long, X-Axis, XY-Plane)`Geometric Shapes
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\2D_Arrow\arrow_flat.obj
+SET_COLOR 1 1 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.25
+SET_ANGLE_Z -90
+SET_ANGLE_Y 0
+SET_ANGLE_X 0
+X_REF_LENGTH 2000
+set_lighting off
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes } 2D Arrow: Point Origin (0.5m Long, X-Axis, XY-Plane)
+EXIT_PARSFILE Animator\STL\Shape_f420bcc5-0b6e-48a8-95cd-f923b18d56fe.par
+
+set_offset_x 0.5
+set_offset_y 0
+set_offset_z 0.02
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Arrows } Fx 3D Arrow (Tail Origin)
+EXIT_PARSFILE Animator\STL_Groups\ShpGrp_e7c42d80-d4a9-435d-b144-6711593470f6.par
 
 SET_EULER_ANGLES yaw_pitch_roll
 SET_X_NAME Xctc_L2
@@ -3621,8 +3711,10 @@ Y_LENGTH 1
 Z_LENGTH 1
 SET_OFFSET_VAR_Z 0
 ADD_REFERENCE_FRAME wheel R1 indicator: 2A - Fx Tire Force Arrows
+ENTER_PARSFILE Animator\STL_Groups\ShpGrp_e7c42d80-d4a9-435d-b144-6711593470f6.par
+#FullDataName Animator: Shape Assembly`Fx 3D Arrow (Tail Origin)`Arrows
 ENTER_PARSFILE Animator\STL\Shape_121d1f5b-e0e1-4397-b1a3-9459bdc4d022.par
-#FullDataName Animator: Shape File Link`3D Pyramid: Tail Org (X-Axis)`Geometric Shapes: Arrows
+#FullDataName Animator: Shape File Link`3D Pyramidal Arrow: Tail Origin (X-Axis)`Geometric Shapes
 add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\3D_Arrow_Pyramid\arrow_3D.OSG
 SET_COLOR 1 1 0
 SET_SCALE_X 0.15
@@ -3630,16 +3722,59 @@ SET_SCALE_Y 0.25
 SET_SCALE_Z 0.15
 SET_ANGLE_Z -90
 SET_ANGLE_Y 0
-SET_ANGLE_X 0
-SET_OFFSET_X 0.5
-SET_OFFSET_Y 0
-SET_OFFSET_Z 0.02
+SET_ANGLE_X -90
 X_REF_LENGTH 2000
 set_lighting on
 set_fogging on
 USE_RUN_COLOR
-LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 3D Pyramid: Tail Org (X-Axis)
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes } 3D Pyramidal Arrow: Tail Origin (X-Axis)
 EXIT_PARSFILE Animator\STL\Shape_121d1f5b-e0e1-4397-b1a3-9459bdc4d022.par
+
+set_offset_x 0.5
+set_offset_y 0
+set_offset_z 0.02
+ENTER_PARSFILE Animator\STL\Shape_e00c79c1-cf34-4cc8-8a2a-46cc17d8a00a.par
+#FullDataName Animator: Shape File Link`2D Arrow: Point Origin (X-Axis, XZ-Plane)`Geometric Shapes
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\2D_Arrow\arrow_flat.obj
+SET_COLOR 1 1 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.25
+SET_ANGLE_Z -90
+SET_ANGLE_Y 0
+SET_ANGLE_X -90
+X_REF_LENGTH 2000
+set_lighting off
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes } 2D Arrow: Point Origin (X-Axis, XZ-Plane)
+EXIT_PARSFILE Animator\STL\Shape_e00c79c1-cf34-4cc8-8a2a-46cc17d8a00a.par
+
+set_offset_x 0.5
+set_offset_y 0
+set_offset_z 0.02
+ENTER_PARSFILE Animator\STL\Shape_f420bcc5-0b6e-48a8-95cd-f923b18d56fe.par
+#FullDataName Animator: Shape File Link`2D Arrow: Point Origin (0.5m Long, X-Axis, XY-Plane)`Geometric Shapes
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\2D_Arrow\arrow_flat.obj
+SET_COLOR 1 1 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.25
+SET_ANGLE_Z -90
+SET_ANGLE_Y 0
+SET_ANGLE_X 0
+X_REF_LENGTH 2000
+set_lighting off
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes } 2D Arrow: Point Origin (0.5m Long, X-Axis, XY-Plane)
+EXIT_PARSFILE Animator\STL\Shape_f420bcc5-0b6e-48a8-95cd-f923b18d56fe.par
+
+set_offset_x 0.5
+set_offset_y 0
+set_offset_z 0.02
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Arrows } Fx 3D Arrow (Tail Origin)
+EXIT_PARSFILE Animator\STL_Groups\ShpGrp_e7c42d80-d4a9-435d-b144-6711593470f6.par
 
 SET_EULER_ANGLES yaw_pitch_roll
 SET_X_NAME Xctc_R1
@@ -3669,8 +3804,10 @@ Y_LENGTH 1
 Z_LENGTH 1
 SET_OFFSET_VAR_Z 0
 ADD_REFERENCE_FRAME wheel R2 indicator: 2A - Fx Tire Force Arrows
+ENTER_PARSFILE Animator\STL_Groups\ShpGrp_e7c42d80-d4a9-435d-b144-6711593470f6.par
+#FullDataName Animator: Shape Assembly`Fx 3D Arrow (Tail Origin)`Arrows
 ENTER_PARSFILE Animator\STL\Shape_121d1f5b-e0e1-4397-b1a3-9459bdc4d022.par
-#FullDataName Animator: Shape File Link`3D Pyramid: Tail Org (X-Axis)`Geometric Shapes: Arrows
+#FullDataName Animator: Shape File Link`3D Pyramidal Arrow: Tail Origin (X-Axis)`Geometric Shapes
 add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\3D_Arrow_Pyramid\arrow_3D.OSG
 SET_COLOR 1 1 0
 SET_SCALE_X 0.15
@@ -3678,16 +3815,59 @@ SET_SCALE_Y 0.25
 SET_SCALE_Z 0.15
 SET_ANGLE_Z -90
 SET_ANGLE_Y 0
-SET_ANGLE_X 0
-SET_OFFSET_X 0.5
-SET_OFFSET_Y 0
-SET_OFFSET_Z 0.02
+SET_ANGLE_X -90
 X_REF_LENGTH 2000
 set_lighting on
 set_fogging on
 USE_RUN_COLOR
-LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 3D Pyramid: Tail Org (X-Axis)
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes } 3D Pyramidal Arrow: Tail Origin (X-Axis)
 EXIT_PARSFILE Animator\STL\Shape_121d1f5b-e0e1-4397-b1a3-9459bdc4d022.par
+
+set_offset_x 0.5
+set_offset_y 0
+set_offset_z 0.02
+ENTER_PARSFILE Animator\STL\Shape_e00c79c1-cf34-4cc8-8a2a-46cc17d8a00a.par
+#FullDataName Animator: Shape File Link`2D Arrow: Point Origin (X-Axis, XZ-Plane)`Geometric Shapes
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\2D_Arrow\arrow_flat.obj
+SET_COLOR 1 1 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.25
+SET_ANGLE_Z -90
+SET_ANGLE_Y 0
+SET_ANGLE_X -90
+X_REF_LENGTH 2000
+set_lighting off
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes } 2D Arrow: Point Origin (X-Axis, XZ-Plane)
+EXIT_PARSFILE Animator\STL\Shape_e00c79c1-cf34-4cc8-8a2a-46cc17d8a00a.par
+
+set_offset_x 0.5
+set_offset_y 0
+set_offset_z 0.02
+ENTER_PARSFILE Animator\STL\Shape_f420bcc5-0b6e-48a8-95cd-f923b18d56fe.par
+#FullDataName Animator: Shape File Link`2D Arrow: Point Origin (0.5m Long, X-Axis, XY-Plane)`Geometric Shapes
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\2D_Arrow\arrow_flat.obj
+SET_COLOR 1 1 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.25
+SET_ANGLE_Z -90
+SET_ANGLE_Y 0
+SET_ANGLE_X 0
+X_REF_LENGTH 2000
+set_lighting off
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes } 2D Arrow: Point Origin (0.5m Long, X-Axis, XY-Plane)
+EXIT_PARSFILE Animator\STL\Shape_f420bcc5-0b6e-48a8-95cd-f923b18d56fe.par
+
+set_offset_x 0.5
+set_offset_y 0
+set_offset_z 0.02
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Arrows } Fx 3D Arrow (Tail Origin)
+EXIT_PARSFILE Animator\STL_Groups\ShpGrp_e7c42d80-d4a9-435d-b144-6711593470f6.par
 
 SET_EULER_ANGLES yaw_pitch_roll
 SET_X_NAME Xctc_R2
@@ -3722,25 +3902,70 @@ EXIT_PARSFILE Animator\Arrows\Arrows_4e3feb5a-68cd-4d99-b6af-c725ceea66fe.par
 ENTER_PARSFILE Animator\Arrows\Arrows_94aef88b-f22e-4c93-b17a-72a15e42b3fb.par
 #FullDataName Animator: Wheel Arrows and Other Indicators`2A - Fy Tire Force Arrows`Tire Force Arrows (2 Axles)
 ADD_REFERENCE_FRAME wheel L1 indicator: 2A - Fy Tire Force Arrows
+ENTER_PARSFILE Animator\STL_Groups\ShpGrp_7db2d468-7dc0-4e22-9d2b-810bf37e9021.par
+#FullDataName Animator: Shape Assembly`Fy 3D Arrow (Tail Origin)`Arrows
 ENTER_PARSFILE Animator\STL\Shape_adff5bc7-5cc6-40c6-8119-03dd91486a9c.par
-#FullDataName Animator: Shape File Link`3D Pyramid: Tail Org (Y-Axis)`Geometric Shapes: Arrows
+#FullDataName Animator: Shape File Link`3D Pyramidal Arrow: Tail Origin (Y-Axis)`Geometric Shapes
 add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\3D_Arrow_Pyramid\arrow_3D.OSG
 SET_COLOR 1 1 0
 SET_SCALE_X 0.15
 SET_SCALE_Y 0.25
 SET_SCALE_Z 0.15
 SET_ANGLE_Z 0
-SET_ANGLE_Y 0
+SET_ANGLE_Y 90
 SET_ANGLE_X 0
-SET_OFFSET_X 0
-SET_OFFSET_Y 0.5
-SET_OFFSET_Z 0.02
 Y_REF_LENGTH 2000
 set_lighting on
 set_fogging on
 USE_RUN_COLOR
-LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 3D Pyramid: Tail Org (Y-Axis)
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes } 3D Pyramidal Arrow: Tail Origin (Y-Axis)
 EXIT_PARSFILE Animator\STL\Shape_adff5bc7-5cc6-40c6-8119-03dd91486a9c.par
+
+set_offset_x 0
+set_offset_y 0.5
+set_offset_z 0.02
+ENTER_PARSFILE Animator\STL\Shape_608027c7-a123-4bfe-b3bd-307975c7684b.par
+#FullDataName Animator: Shape File Link`2D Arrow: Point Origin (Y-Axis, YZ-Plane)`Geometric Shapes
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\2D_Arrow\arrow_flat.obj
+SET_COLOR 1 1 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.25
+SET_ANGLE_Z 0
+SET_ANGLE_Y 90
+SET_ANGLE_X 0
+Y_REF_LENGTH 2000
+set_lighting off
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes } 2D Arrow: Point Origin (Y-Axis, YZ-Plane)
+EXIT_PARSFILE Animator\STL\Shape_608027c7-a123-4bfe-b3bd-307975c7684b.par
+
+set_offset_x 0
+set_offset_y 0.5
+set_offset_z 0.02
+ENTER_PARSFILE Animator\STL\Shape_5809a616-1039-46c8-9167-0bb7e9735084.par
+#FullDataName Animator: Shape File Link`2D Arrow: Point Origin (Y-Axis, XY-Plane)`Geometric Shapes
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\2D_Arrow\arrow_flat.obj
+SET_COLOR 1 1 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.25
+SET_ANGLE_Z 0
+SET_ANGLE_Y 0
+SET_ANGLE_X 0
+Y_REF_LENGTH 2000
+set_lighting off
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes } 2D Arrow: Point Origin (Y-Axis, XY-Plane)
+EXIT_PARSFILE Animator\STL\Shape_5809a616-1039-46c8-9167-0bb7e9735084.par
+
+set_offset_x 0
+set_offset_y 0.5
+set_offset_z 0.02
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Arrows } Fy 3D Arrow (Tail Origin)
+EXIT_PARSFILE Animator\STL_Groups\ShpGrp_7db2d468-7dc0-4e22-9d2b-810bf37e9021.par
 
 SET_EULER_ANGLES yaw_pitch_roll
 SET_X_NAME Xctc_L1
@@ -3770,25 +3995,70 @@ Y_LENGTH 1
 Z_LENGTH 1
 SET_OFFSET_VAR_Z 0
 ADD_REFERENCE_FRAME wheel L2 indicator: 2A - Fy Tire Force Arrows
+ENTER_PARSFILE Animator\STL_Groups\ShpGrp_7db2d468-7dc0-4e22-9d2b-810bf37e9021.par
+#FullDataName Animator: Shape Assembly`Fy 3D Arrow (Tail Origin)`Arrows
 ENTER_PARSFILE Animator\STL\Shape_adff5bc7-5cc6-40c6-8119-03dd91486a9c.par
-#FullDataName Animator: Shape File Link`3D Pyramid: Tail Org (Y-Axis)`Geometric Shapes: Arrows
+#FullDataName Animator: Shape File Link`3D Pyramidal Arrow: Tail Origin (Y-Axis)`Geometric Shapes
 add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\3D_Arrow_Pyramid\arrow_3D.OSG
 SET_COLOR 1 1 0
 SET_SCALE_X 0.15
 SET_SCALE_Y 0.25
 SET_SCALE_Z 0.15
 SET_ANGLE_Z 0
-SET_ANGLE_Y 0
+SET_ANGLE_Y 90
 SET_ANGLE_X 0
-SET_OFFSET_X 0
-SET_OFFSET_Y 0.5
-SET_OFFSET_Z 0.02
 Y_REF_LENGTH 2000
 set_lighting on
 set_fogging on
 USE_RUN_COLOR
-LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 3D Pyramid: Tail Org (Y-Axis)
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes } 3D Pyramidal Arrow: Tail Origin (Y-Axis)
 EXIT_PARSFILE Animator\STL\Shape_adff5bc7-5cc6-40c6-8119-03dd91486a9c.par
+
+set_offset_x 0
+set_offset_y 0.5
+set_offset_z 0.02
+ENTER_PARSFILE Animator\STL\Shape_608027c7-a123-4bfe-b3bd-307975c7684b.par
+#FullDataName Animator: Shape File Link`2D Arrow: Point Origin (Y-Axis, YZ-Plane)`Geometric Shapes
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\2D_Arrow\arrow_flat.obj
+SET_COLOR 1 1 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.25
+SET_ANGLE_Z 0
+SET_ANGLE_Y 90
+SET_ANGLE_X 0
+Y_REF_LENGTH 2000
+set_lighting off
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes } 2D Arrow: Point Origin (Y-Axis, YZ-Plane)
+EXIT_PARSFILE Animator\STL\Shape_608027c7-a123-4bfe-b3bd-307975c7684b.par
+
+set_offset_x 0
+set_offset_y 0.5
+set_offset_z 0.02
+ENTER_PARSFILE Animator\STL\Shape_5809a616-1039-46c8-9167-0bb7e9735084.par
+#FullDataName Animator: Shape File Link`2D Arrow: Point Origin (Y-Axis, XY-Plane)`Geometric Shapes
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\2D_Arrow\arrow_flat.obj
+SET_COLOR 1 1 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.25
+SET_ANGLE_Z 0
+SET_ANGLE_Y 0
+SET_ANGLE_X 0
+Y_REF_LENGTH 2000
+set_lighting off
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes } 2D Arrow: Point Origin (Y-Axis, XY-Plane)
+EXIT_PARSFILE Animator\STL\Shape_5809a616-1039-46c8-9167-0bb7e9735084.par
+
+set_offset_x 0
+set_offset_y 0.5
+set_offset_z 0.02
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Arrows } Fy 3D Arrow (Tail Origin)
+EXIT_PARSFILE Animator\STL_Groups\ShpGrp_7db2d468-7dc0-4e22-9d2b-810bf37e9021.par
 
 SET_EULER_ANGLES yaw_pitch_roll
 SET_X_NAME Xctc_L2
@@ -3818,25 +4088,70 @@ Y_LENGTH 1
 Z_LENGTH 1
 SET_OFFSET_VAR_Z 0
 ADD_REFERENCE_FRAME wheel R1 indicator: 2A - Fy Tire Force Arrows
+ENTER_PARSFILE Animator\STL_Groups\ShpGrp_7db2d468-7dc0-4e22-9d2b-810bf37e9021.par
+#FullDataName Animator: Shape Assembly`Fy 3D Arrow (Tail Origin)`Arrows
 ENTER_PARSFILE Animator\STL\Shape_adff5bc7-5cc6-40c6-8119-03dd91486a9c.par
-#FullDataName Animator: Shape File Link`3D Pyramid: Tail Org (Y-Axis)`Geometric Shapes: Arrows
+#FullDataName Animator: Shape File Link`3D Pyramidal Arrow: Tail Origin (Y-Axis)`Geometric Shapes
 add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\3D_Arrow_Pyramid\arrow_3D.OSG
 SET_COLOR 1 1 0
 SET_SCALE_X 0.15
 SET_SCALE_Y 0.25
 SET_SCALE_Z 0.15
 SET_ANGLE_Z 0
-SET_ANGLE_Y 0
+SET_ANGLE_Y 90
 SET_ANGLE_X 0
-SET_OFFSET_X 0
-SET_OFFSET_Y 0.5
-SET_OFFSET_Z 0.02
 Y_REF_LENGTH 2000
 set_lighting on
 set_fogging on
 USE_RUN_COLOR
-LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 3D Pyramid: Tail Org (Y-Axis)
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes } 3D Pyramidal Arrow: Tail Origin (Y-Axis)
 EXIT_PARSFILE Animator\STL\Shape_adff5bc7-5cc6-40c6-8119-03dd91486a9c.par
+
+set_offset_x 0
+set_offset_y 0.5
+set_offset_z 0.02
+ENTER_PARSFILE Animator\STL\Shape_608027c7-a123-4bfe-b3bd-307975c7684b.par
+#FullDataName Animator: Shape File Link`2D Arrow: Point Origin (Y-Axis, YZ-Plane)`Geometric Shapes
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\2D_Arrow\arrow_flat.obj
+SET_COLOR 1 1 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.25
+SET_ANGLE_Z 0
+SET_ANGLE_Y 90
+SET_ANGLE_X 0
+Y_REF_LENGTH 2000
+set_lighting off
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes } 2D Arrow: Point Origin (Y-Axis, YZ-Plane)
+EXIT_PARSFILE Animator\STL\Shape_608027c7-a123-4bfe-b3bd-307975c7684b.par
+
+set_offset_x 0
+set_offset_y 0.5
+set_offset_z 0.02
+ENTER_PARSFILE Animator\STL\Shape_5809a616-1039-46c8-9167-0bb7e9735084.par
+#FullDataName Animator: Shape File Link`2D Arrow: Point Origin (Y-Axis, XY-Plane)`Geometric Shapes
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\2D_Arrow\arrow_flat.obj
+SET_COLOR 1 1 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.25
+SET_ANGLE_Z 0
+SET_ANGLE_Y 0
+SET_ANGLE_X 0
+Y_REF_LENGTH 2000
+set_lighting off
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes } 2D Arrow: Point Origin (Y-Axis, XY-Plane)
+EXIT_PARSFILE Animator\STL\Shape_5809a616-1039-46c8-9167-0bb7e9735084.par
+
+set_offset_x 0
+set_offset_y 0.5
+set_offset_z 0.02
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Arrows } Fy 3D Arrow (Tail Origin)
+EXIT_PARSFILE Animator\STL_Groups\ShpGrp_7db2d468-7dc0-4e22-9d2b-810bf37e9021.par
 
 SET_EULER_ANGLES yaw_pitch_roll
 SET_X_NAME Xctc_R1
@@ -3866,25 +4181,70 @@ Y_LENGTH 1
 Z_LENGTH 1
 SET_OFFSET_VAR_Z 0
 ADD_REFERENCE_FRAME wheel R2 indicator: 2A - Fy Tire Force Arrows
+ENTER_PARSFILE Animator\STL_Groups\ShpGrp_7db2d468-7dc0-4e22-9d2b-810bf37e9021.par
+#FullDataName Animator: Shape Assembly`Fy 3D Arrow (Tail Origin)`Arrows
 ENTER_PARSFILE Animator\STL\Shape_adff5bc7-5cc6-40c6-8119-03dd91486a9c.par
-#FullDataName Animator: Shape File Link`3D Pyramid: Tail Org (Y-Axis)`Geometric Shapes: Arrows
+#FullDataName Animator: Shape File Link`3D Pyramidal Arrow: Tail Origin (Y-Axis)`Geometric Shapes
 add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\3D_Arrow_Pyramid\arrow_3D.OSG
 SET_COLOR 1 1 0
 SET_SCALE_X 0.15
 SET_SCALE_Y 0.25
 SET_SCALE_Z 0.15
 SET_ANGLE_Z 0
-SET_ANGLE_Y 0
+SET_ANGLE_Y 90
 SET_ANGLE_X 0
-SET_OFFSET_X 0
-SET_OFFSET_Y 0.5
-SET_OFFSET_Z 0.02
 Y_REF_LENGTH 2000
 set_lighting on
 set_fogging on
 USE_RUN_COLOR
-LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 3D Pyramid: Tail Org (Y-Axis)
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes } 3D Pyramidal Arrow: Tail Origin (Y-Axis)
 EXIT_PARSFILE Animator\STL\Shape_adff5bc7-5cc6-40c6-8119-03dd91486a9c.par
+
+set_offset_x 0
+set_offset_y 0.5
+set_offset_z 0.02
+ENTER_PARSFILE Animator\STL\Shape_608027c7-a123-4bfe-b3bd-307975c7684b.par
+#FullDataName Animator: Shape File Link`2D Arrow: Point Origin (Y-Axis, YZ-Plane)`Geometric Shapes
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\2D_Arrow\arrow_flat.obj
+SET_COLOR 1 1 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.25
+SET_ANGLE_Z 0
+SET_ANGLE_Y 90
+SET_ANGLE_X 0
+Y_REF_LENGTH 2000
+set_lighting off
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes } 2D Arrow: Point Origin (Y-Axis, YZ-Plane)
+EXIT_PARSFILE Animator\STL\Shape_608027c7-a123-4bfe-b3bd-307975c7684b.par
+
+set_offset_x 0
+set_offset_y 0.5
+set_offset_z 0.02
+ENTER_PARSFILE Animator\STL\Shape_5809a616-1039-46c8-9167-0bb7e9735084.par
+#FullDataName Animator: Shape File Link`2D Arrow: Point Origin (Y-Axis, XY-Plane)`Geometric Shapes
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\2D_Arrow\arrow_flat.obj
+SET_COLOR 1 1 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.25
+SET_ANGLE_Z 0
+SET_ANGLE_Y 0
+SET_ANGLE_X 0
+Y_REF_LENGTH 2000
+set_lighting off
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes } 2D Arrow: Point Origin (Y-Axis, XY-Plane)
+EXIT_PARSFILE Animator\STL\Shape_5809a616-1039-46c8-9167-0bb7e9735084.par
+
+set_offset_x 0
+set_offset_y 0.5
+set_offset_z 0.02
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Arrows } Fy 3D Arrow (Tail Origin)
+EXIT_PARSFILE Animator\STL_Groups\ShpGrp_7db2d468-7dc0-4e22-9d2b-810bf37e9021.par
 
 SET_EULER_ANGLES yaw_pitch_roll
 SET_X_NAME Xctc_R2
@@ -3919,8 +4279,10 @@ EXIT_PARSFILE Animator\Arrows\Arrows_94aef88b-f22e-4c93-b17a-72a15e42b3fb.par
 ENTER_PARSFILE Animator\Arrows\Arrows_f2c29d4b-df79-4c67-b153-729d3f552770.par
 #FullDataName Animator: Wheel Arrows and Other Indicators`2A - Fz Tire Force Arrows`Tire Force Arrows (2 Axles)
 ADD_REFERENCE_FRAME wheel L1 indicator: 2A - Fz Tire Force Arrows
+ENTER_PARSFILE Animator\STL_Groups\ShpGrp_cea899b5-fef5-46f2-a37e-8da55a09e847.par
+#FullDataName Animator: Shape Assembly`Fz 3D, Offset (Tail Origin)`Arrows
 ENTER_PARSFILE Animator\STL\Shape_252e3627-824b-46c7-8ec4-f437c8cdcf34.par
-#FullDataName Animator: Shape File Link`3D Pyramid: Tail Org (Z-Axis)`Geometric Shapes: Arrows
+#FullDataName Animator: Shape File Link`3D Pyramidal Arrow: Tail Origin (Z-Axis)`Geometric Shapes
 add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\3D_Arrow_Pyramid\arrow_3D.OSG
 SET_COLOR 1 1 0
 SET_SCALE_X 0.15
@@ -3929,15 +4291,61 @@ SET_SCALE_Z 0.15
 SET_ANGLE_Z 0
 SET_ANGLE_Y 0
 SET_ANGLE_X 90
-SET_OFFSET_X 0
-SET_OFFSET_Y 0.5
 SET_OFFSET_Z 0.5
 Z_REF_LENGTH 2000
 set_lighting on
 set_fogging on
 USE_RUN_COLOR
-LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 3D Pyramid: Tail Org (Z-Axis)
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes } 3D Pyramidal Arrow: Tail Origin (Z-Axis)
 EXIT_PARSFILE Animator\STL\Shape_252e3627-824b-46c7-8ec4-f437c8cdcf34.par
+
+set_offset_x 0
+set_offset_y 0.5
+set_offset_z 0
+ENTER_PARSFILE Animator\STL\Shape_594c986b-5329-4baa-8564-723fc91a0441.par
+#FullDataName Animator: Shape File Link`2D Arrow: Point Origin (Z-Axis, XZ-Plane)`Geometric Shapes
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\2D_Arrow\arrow_flat.obj
+SET_COLOR 1 1 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.25
+SET_ANGLE_Z 0
+SET_ANGLE_Y 90
+SET_ANGLE_X 90
+SET_OFFSET_Z 0.5
+Z_REF_LENGTH 2000
+set_lighting off
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes } 2D Arrow: Point Origin (Z-Axis, XZ-Plane)
+EXIT_PARSFILE Animator\STL\Shape_594c986b-5329-4baa-8564-723fc91a0441.par
+
+set_offset_x 0
+set_offset_y 0.5
+set_offset_z 0
+ENTER_PARSFILE Animator\STL\Shape_856fb306-c3cb-47a7-be79-a3fee3033c14.par
+#FullDataName Animator: Shape File Link`2D Arrow: Point Origin (Z-Axis, XZ-Plane) #1`Geometric Shapes
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\2D_Arrow\arrow_flat.obj
+SET_COLOR 1 1 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.25
+SET_ANGLE_Z 0
+SET_ANGLE_Y 0
+SET_ANGLE_X 90
+SET_OFFSET_Z 0.5
+Z_REF_LENGTH 2000
+set_lighting off
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes } 2D Arrow: Point Origin (Z-Axis, XZ-Plane) #1
+EXIT_PARSFILE Animator\STL\Shape_856fb306-c3cb-47a7-be79-a3fee3033c14.par
+
+set_offset_x 0
+set_offset_y 0.5
+set_offset_z 0
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Arrows } Fz 3D, Offset (Tail Origin)
+EXIT_PARSFILE Animator\STL_Groups\ShpGrp_cea899b5-fef5-46f2-a37e-8da55a09e847.par
 
 SET_EULER_ANGLES yaw_pitch_roll
 SET_X_NAME Xctc_L1
@@ -3967,8 +4375,10 @@ Y_LENGTH 1
 Z_LENGTH 1
 SET_OFFSET_VAR_Z 0
 ADD_REFERENCE_FRAME wheel L2 indicator: 2A - Fz Tire Force Arrows
+ENTER_PARSFILE Animator\STL_Groups\ShpGrp_cea899b5-fef5-46f2-a37e-8da55a09e847.par
+#FullDataName Animator: Shape Assembly`Fz 3D, Offset (Tail Origin)`Arrows
 ENTER_PARSFILE Animator\STL\Shape_252e3627-824b-46c7-8ec4-f437c8cdcf34.par
-#FullDataName Animator: Shape File Link`3D Pyramid: Tail Org (Z-Axis)`Geometric Shapes: Arrows
+#FullDataName Animator: Shape File Link`3D Pyramidal Arrow: Tail Origin (Z-Axis)`Geometric Shapes
 add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\3D_Arrow_Pyramid\arrow_3D.OSG
 SET_COLOR 1 1 0
 SET_SCALE_X 0.15
@@ -3977,15 +4387,61 @@ SET_SCALE_Z 0.15
 SET_ANGLE_Z 0
 SET_ANGLE_Y 0
 SET_ANGLE_X 90
-SET_OFFSET_X 0
-SET_OFFSET_Y 0.5
 SET_OFFSET_Z 0.5
 Z_REF_LENGTH 2000
 set_lighting on
 set_fogging on
 USE_RUN_COLOR
-LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 3D Pyramid: Tail Org (Z-Axis)
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes } 3D Pyramidal Arrow: Tail Origin (Z-Axis)
 EXIT_PARSFILE Animator\STL\Shape_252e3627-824b-46c7-8ec4-f437c8cdcf34.par
+
+set_offset_x 0
+set_offset_y 0.5
+set_offset_z 0
+ENTER_PARSFILE Animator\STL\Shape_594c986b-5329-4baa-8564-723fc91a0441.par
+#FullDataName Animator: Shape File Link`2D Arrow: Point Origin (Z-Axis, XZ-Plane)`Geometric Shapes
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\2D_Arrow\arrow_flat.obj
+SET_COLOR 1 1 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.25
+SET_ANGLE_Z 0
+SET_ANGLE_Y 90
+SET_ANGLE_X 90
+SET_OFFSET_Z 0.5
+Z_REF_LENGTH 2000
+set_lighting off
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes } 2D Arrow: Point Origin (Z-Axis, XZ-Plane)
+EXIT_PARSFILE Animator\STL\Shape_594c986b-5329-4baa-8564-723fc91a0441.par
+
+set_offset_x 0
+set_offset_y 0.5
+set_offset_z 0
+ENTER_PARSFILE Animator\STL\Shape_856fb306-c3cb-47a7-be79-a3fee3033c14.par
+#FullDataName Animator: Shape File Link`2D Arrow: Point Origin (Z-Axis, XZ-Plane) #1`Geometric Shapes
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\2D_Arrow\arrow_flat.obj
+SET_COLOR 1 1 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.25
+SET_ANGLE_Z 0
+SET_ANGLE_Y 0
+SET_ANGLE_X 90
+SET_OFFSET_Z 0.5
+Z_REF_LENGTH 2000
+set_lighting off
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes } 2D Arrow: Point Origin (Z-Axis, XZ-Plane) #1
+EXIT_PARSFILE Animator\STL\Shape_856fb306-c3cb-47a7-be79-a3fee3033c14.par
+
+set_offset_x 0
+set_offset_y 0.5
+set_offset_z 0
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Arrows } Fz 3D, Offset (Tail Origin)
+EXIT_PARSFILE Animator\STL_Groups\ShpGrp_cea899b5-fef5-46f2-a37e-8da55a09e847.par
 
 SET_EULER_ANGLES yaw_pitch_roll
 SET_X_NAME Xctc_L2
@@ -4015,8 +4471,10 @@ Y_LENGTH 1
 Z_LENGTH 1
 SET_OFFSET_VAR_Z 0
 ADD_REFERENCE_FRAME wheel R1 indicator: 2A - Fz Tire Force Arrows
+ENTER_PARSFILE Animator\STL_Groups\ShpGrp_cea899b5-fef5-46f2-a37e-8da55a09e847.par
+#FullDataName Animator: Shape Assembly`Fz 3D, Offset (Tail Origin)`Arrows
 ENTER_PARSFILE Animator\STL\Shape_252e3627-824b-46c7-8ec4-f437c8cdcf34.par
-#FullDataName Animator: Shape File Link`3D Pyramid: Tail Org (Z-Axis)`Geometric Shapes: Arrows
+#FullDataName Animator: Shape File Link`3D Pyramidal Arrow: Tail Origin (Z-Axis)`Geometric Shapes
 add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\3D_Arrow_Pyramid\arrow_3D.OSG
 SET_COLOR 1 1 0
 SET_SCALE_X 0.15
@@ -4025,15 +4483,61 @@ SET_SCALE_Z 0.15
 SET_ANGLE_Z 0
 SET_ANGLE_Y 0
 SET_ANGLE_X 90
-SET_OFFSET_X 0
-SET_OFFSET_Y 0.5
 SET_OFFSET_Z 0.5
 Z_REF_LENGTH 2000
 set_lighting on
 set_fogging on
 USE_RUN_COLOR
-LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 3D Pyramid: Tail Org (Z-Axis)
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes } 3D Pyramidal Arrow: Tail Origin (Z-Axis)
 EXIT_PARSFILE Animator\STL\Shape_252e3627-824b-46c7-8ec4-f437c8cdcf34.par
+
+set_offset_x 0
+set_offset_y 0.5
+set_offset_z 0
+ENTER_PARSFILE Animator\STL\Shape_594c986b-5329-4baa-8564-723fc91a0441.par
+#FullDataName Animator: Shape File Link`2D Arrow: Point Origin (Z-Axis, XZ-Plane)`Geometric Shapes
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\2D_Arrow\arrow_flat.obj
+SET_COLOR 1 1 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.25
+SET_ANGLE_Z 0
+SET_ANGLE_Y 90
+SET_ANGLE_X 90
+SET_OFFSET_Z 0.5
+Z_REF_LENGTH 2000
+set_lighting off
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes } 2D Arrow: Point Origin (Z-Axis, XZ-Plane)
+EXIT_PARSFILE Animator\STL\Shape_594c986b-5329-4baa-8564-723fc91a0441.par
+
+set_offset_x 0
+set_offset_y 0.5
+set_offset_z 0
+ENTER_PARSFILE Animator\STL\Shape_856fb306-c3cb-47a7-be79-a3fee3033c14.par
+#FullDataName Animator: Shape File Link`2D Arrow: Point Origin (Z-Axis, XZ-Plane) #1`Geometric Shapes
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\2D_Arrow\arrow_flat.obj
+SET_COLOR 1 1 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.25
+SET_ANGLE_Z 0
+SET_ANGLE_Y 0
+SET_ANGLE_X 90
+SET_OFFSET_Z 0.5
+Z_REF_LENGTH 2000
+set_lighting off
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes } 2D Arrow: Point Origin (Z-Axis, XZ-Plane) #1
+EXIT_PARSFILE Animator\STL\Shape_856fb306-c3cb-47a7-be79-a3fee3033c14.par
+
+set_offset_x 0
+set_offset_y 0.5
+set_offset_z 0
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Arrows } Fz 3D, Offset (Tail Origin)
+EXIT_PARSFILE Animator\STL_Groups\ShpGrp_cea899b5-fef5-46f2-a37e-8da55a09e847.par
 
 SET_EULER_ANGLES yaw_pitch_roll
 SET_X_NAME Xctc_R1
@@ -4066,8 +4570,10 @@ Y_LENGTH 1
 Z_LENGTH 1
 SET_OFFSET_VAR_Z 0
 ADD_REFERENCE_FRAME wheel R2 indicator: 2A - Fz Tire Force Arrows
+ENTER_PARSFILE Animator\STL_Groups\ShpGrp_cea899b5-fef5-46f2-a37e-8da55a09e847.par
+#FullDataName Animator: Shape Assembly`Fz 3D, Offset (Tail Origin)`Arrows
 ENTER_PARSFILE Animator\STL\Shape_252e3627-824b-46c7-8ec4-f437c8cdcf34.par
-#FullDataName Animator: Shape File Link`3D Pyramid: Tail Org (Z-Axis)`Geometric Shapes: Arrows
+#FullDataName Animator: Shape File Link`3D Pyramidal Arrow: Tail Origin (Z-Axis)`Geometric Shapes
 add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\3D_Arrow_Pyramid\arrow_3D.OSG
 SET_COLOR 1 1 0
 SET_SCALE_X 0.15
@@ -4076,15 +4582,61 @@ SET_SCALE_Z 0.15
 SET_ANGLE_Z 0
 SET_ANGLE_Y 0
 SET_ANGLE_X 90
-SET_OFFSET_X 0
-SET_OFFSET_Y 0.5
 SET_OFFSET_Z 0.5
 Z_REF_LENGTH 2000
 set_lighting on
 set_fogging on
 USE_RUN_COLOR
-LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 3D Pyramid: Tail Org (Z-Axis)
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes } 3D Pyramidal Arrow: Tail Origin (Z-Axis)
 EXIT_PARSFILE Animator\STL\Shape_252e3627-824b-46c7-8ec4-f437c8cdcf34.par
+
+set_offset_x 0
+set_offset_y 0.5
+set_offset_z 0
+ENTER_PARSFILE Animator\STL\Shape_594c986b-5329-4baa-8564-723fc91a0441.par
+#FullDataName Animator: Shape File Link`2D Arrow: Point Origin (Z-Axis, XZ-Plane)`Geometric Shapes
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\2D_Arrow\arrow_flat.obj
+SET_COLOR 1 1 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.25
+SET_ANGLE_Z 0
+SET_ANGLE_Y 90
+SET_ANGLE_X 90
+SET_OFFSET_Z 0.5
+Z_REF_LENGTH 2000
+set_lighting off
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes } 2D Arrow: Point Origin (Z-Axis, XZ-Plane)
+EXIT_PARSFILE Animator\STL\Shape_594c986b-5329-4baa-8564-723fc91a0441.par
+
+set_offset_x 0
+set_offset_y 0.5
+set_offset_z 0
+ENTER_PARSFILE Animator\STL\Shape_856fb306-c3cb-47a7-be79-a3fee3033c14.par
+#FullDataName Animator: Shape File Link`2D Arrow: Point Origin (Z-Axis, XZ-Plane) #1`Geometric Shapes
+add_obj Animator\3D_Shape_Files\Geometric_Shapes\Arrows\2D_Arrow\arrow_flat.obj
+SET_COLOR 1 1 0
+SET_SCALE_X 0.15
+SET_SCALE_Y 0.25
+SET_SCALE_Z 0.25
+SET_ANGLE_Z 0
+SET_ANGLE_Y 0
+SET_ANGLE_X 90
+SET_OFFSET_Z 0.5
+Z_REF_LENGTH 2000
+set_lighting off
+set_fogging on
+USE_RUN_COLOR
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Geometric Shapes } 2D Arrow: Point Origin (Z-Axis, XZ-Plane) #1
+EXIT_PARSFILE Animator\STL\Shape_856fb306-c3cb-47a7-be79-a3fee3033c14.par
+
+set_offset_x 0
+set_offset_y 0.5
+set_offset_z 0
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Arrows } Fz 3D, Offset (Tail Origin)
+EXIT_PARSFILE Animator\STL_Groups\ShpGrp_cea899b5-fef5-46f2-a37e-8da55a09e847.par
 
 SET_EULER_ANGLES yaw_pitch_roll
 SET_X_NAME Xctc_R2
@@ -4576,15 +5128,27 @@ set_description road_id 1200 m, One Lane, Mu = 0.9
 ENTER_PARSFILE Roads\BuilderSegment\RoadSeg_299f5dd8-31b0-44f2-9251-eaaf215df33c.par
 #FullDataName Path: Segment Builder`Straight East`Straight
 SET_IPATH_FOR_ID 0
-OPT_PATH_START 0
+OPT_PATH_START 1
 OPT_PATH_LOOP 0
-SPATH_START 0
+X_PATH_START -300
 PATH_ID_DM = PATH_ID
 set_description path_id Straight East
-NSEGMENTS 1
+NSEGMENTS 5
 IPATHSEG 1
 SEGMENT_TYPE 0
-SEGMENT_LENGTH 100
+SEGMENT_LENGTH 200
+IPATHSEG 2
+SEGMENT_TYPE 0
+SEGMENT_LENGTH 50
+IPATHSEG 3
+SEGMENT_TYPE 0
+SEGMENT_LENGTH 50
+IPATHSEG 4
+SEGMENT_TYPE 0
+SEGMENT_LENGTH 50
+IPATHSEG 5
+SEGMENT_TYPE 0
+SEGMENT_LENGTH 1000
 Title Straight East <Straight>
 LOG_ENTRY Used Dataset: Path: Segment Builder; { Straight } Straight East
 EXIT_PARSFILE Roads\BuilderSegment\RoadSeg_299f5dd8-31b0-44f2-9251-eaaf215df33c.par
@@ -5360,16 +5924,16 @@ NUM_CACHED_RUNS 1
 LOG_ENTRY Used Dataset: CarSim Run Control; { Simulink Models } External Powertrain, Acceleration
 EXIT_PARSFILE Runs\Run_5bc168fc-c04f-4fe2-9bf8-68b25a5cd6f9.par
 
-IMPORT IMP_MY_OUT_D1_L Add 0.0! 0
-IMPORT IMP_MY_OUT_D1_R Add 0.0! 0
-IMPORT IMP_MY_OUT_D2_L Add 0.0! 0
-IMPORT IMP_MY_OUT_D2_R Add 0.0! 0
-IMPORT IMP_GEAR_TRANS Add 0.0! 0
-IMPORT IMP_AV_ENG Add 0.0! 0
-IMPORT IMP_AV_TC Add 0.0! 0
-IMPORT IMP_AV_TRANS Add 0.0! 1
-IMPORT IMP_AV_D3_F Add 0.0! 0
-IMPORT IMP_AV_D3_R Add 0.0! 0
+IMPORT IMP_MY_OUT_D1_L Add 0.0 ! 0
+IMPORT IMP_MY_OUT_D1_R Add 0.0 ! 0
+IMPORT IMP_MY_OUT_D2_L Add 0.0 ! 0
+IMPORT IMP_MY_OUT_D2_R Add 0.0 ! 0
+IMPORT IMP_GEAR_TRANS Add 0.0 ! 0
+IMPORT IMP_AV_ENG Add 0.0 ! 0
+IMPORT IMP_AV_TC Add 0.0 ! 0
+IMPORT IMP_AV_TRANS Add 0.0 ! 1
+IMPORT IMP_AV_D3_F Add 0.0 ! 0
+IMPORT IMP_AV_D3_R Add 0.0 ! 0
 EXPORT Throttle
 EXPORT ModeTran
 EXPORT Gear_OL

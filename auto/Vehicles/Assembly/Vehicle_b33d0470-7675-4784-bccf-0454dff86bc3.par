@@ -82,8 +82,8 @@ PARSFILE Vehicles\Total_Mass\TotMass_76c326af-0e9e-4233-b16d-955b0cdaced3.par
 PARSFILE Aerodynamics\Aero_Main\Aero_b684a7c8-b9a3-41b1-a1bc-6c8a48809c81.par
 #BlueLink1 Aerodynamics: Basic`D-Class, SUV Aero` D-Class` , Aerodynamics`Aero_b684a7c8-b9a3-41b1-a1bc-6c8a48809c81
 
-PARSFILE Powertrain\4wd\4WD_e6cbf4dd-fb94-4478-aba0-d292b92a917e.par
-#BlueLink5 Powertrain: 4-Wheel Drive`10kW x4, Electric AWD Hi-Pw, 3.905 Ratio` Electric: 10kW x4 (4 Motors)` , Powertrain`4WD_e6cbf4dd-fb94-4478-aba0-d292b92a917e
+PARSFILE Powertrain\4wd\4WD_4972bf8d-6108-4a12-a5ed-0a4d34c44c6b.par
+#BlueLink5 Powertrain: 4-Wheel Drive`All External Powertrain Components` External Components` , Powertrain`4WD_4972bf8d-6108-4a12-a5ed-0a4d34c44c6b
 
 PARSFILE Brakes\4W_System\Brk4W_5011ad03-3228-4bdc-8aba-aebd0486c2eb.par
 #BlueLink6 Brakes: Four-Wheel System`(SUV), MC Press, No ABS` D-Class` , Brake System`Brk4W_5011ad03-3228-4bdc-8aba-aebd0486c2eb
@@ -112,7 +112,7 @@ LOG_ENTRY Used Dataset: Vehicle: Assembly; { D-Class } D-Class, SUV
 #DataSet : D-Class, SUV
 #Category: D-Class
 #FileID  : Vehicle_b33d0470-7675-4784-bccf-0454dff86bc3
-#Modified: 06-30-2026 10:57:36
+#Modified: 07-02-2026 10:58:01
 #Product : CarSim 2024.1
 #DataVer : 2024.1
 #VehCode Ind_SA

@@ -1,6 +1,6 @@
 PARSFILE
 #FullDataName CarSim Run Control`Sim_Power_Pedmap`My Simulink
-#VEHICLECODE Ind_Ind
+#VEHICLECODE Ind_SA
 symbol_push  <<vehicle>> 0
 symbol_push  <<unit>> 0
 symbol_push  <<axle>> 0
@@ -46,11 +46,11 @@ SET_RUN_COLOR 0 0.6 0.973
 RT_WINDOW_CLOSE off
 #RingCtrl5 0
 LIVE_SERVER_MAX_CONNECTIONS 0
-PARSFILE Vehicles\Assembly\Vehicle_75802f40-eb2e-4e37-bcbf-3edbf9efd47a.par
-#BlueLink2 Vehicle: Assembly`Sim Power Pedmap Car AWD` D-Class` , Math Model`Vehicle_75802f40-eb2e-4e37-bcbf-3edbf9efd47a
+PARSFILE Vehicles\Assembly\Vehicle_b33d0470-7675-4784-bccf-0454dff86bc3.par
+#BlueLink2 Vehicle: Assembly`D-Class, SUV` D-Class` , Math Model`Vehicle_b33d0470-7675-4784-bccf-0454dff86bc3
 
-PARSFILE Procedures\Proc_52b56441-9905-47a2-b74f-f6fd14f87b6d.par
-#BlueLink28 Procedures`DLC @ 120 km/h (Quick Start) #1` Handling Testing` , Procedure`Proc_52b56441-9905-47a2-b74f-f6fd14f87b6d
+PARSFILE Procedures\Proc_a0851ee1-9bdf-4e52-9626-6e255ef6ca84.par
+#BlueLink28 Procedures`Rollover Steer Input` Stability Testing` , Procedure`Proc_a0851ee1-9bdf-4e52-9626-6e255ef6ca84
 
 *TSTEP 0.0005
 *FREQ_MODEL 2000
@@ -64,7 +64,7 @@ SPECIAL_PARSFILE Runs\Run_353dd288-31ca-4b64-ad3b-96b097a50a6a.par
 
 
 *IMAGE_TYPE PASS_THROUGH
-*IMAGE_PASS_THROUGH Vehicles\Assembly\Vehicle_75802f40-eb2e-4e37-bcbf-3edbf9efd47a.png
+*IMAGE_PASS_THROUGH Vehicles\Assembly\Vehicle_b33d0470-7675-4784-bccf-0454dff86bc3.png
 WRITE_SENSOR_DETECT
 Title Sim_Power_Pedmap <My Simulink>
 CATEGORY My Simulink 
@@ -88,7 +88,7 @@ LOG_ENTRY Used Dataset: CarSim Run Control; { My Simulink } Sim_Power_Pedmap
 #DataSet : Sim_Power_Pedmap
 #Category: My Simulink
 #FileID  : Run_353dd288-31ca-4b64-ad3b-96b097a50a6a
-#Modified: 06-03-2026 14:09:21
+#Modified: 07-02-2026 16:32:19
 #Product : CarSim 2024.1
 #DataVer : 2024.1
 #VehCode Run
