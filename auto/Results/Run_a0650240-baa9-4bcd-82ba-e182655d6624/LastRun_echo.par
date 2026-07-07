@@ -8,8 +8,8 @@ DATASET_TITLE Atlas: 3D Highway Exit (Basic)
 CATEGORY Scene Import
 TITLE Atlas: 3D Highway Exit (Basic) <Scene Import>
 
-! Echo: Results\Run_a0650240-baa9-4bcd-82ba-e182655d6624\Run_echo.par
-! This run was made 14:11 on March 25, 2024.
+! Echo: Results\Run_a0650240-baa9-4bcd-82ba-e182655d6624\LastRun_echo.par
+! This run was made 13:42 on July 07, 2026.
 
 !------------------------------------------------------------------------------------
 ! SYSTEM PARAMETERS (SIMULATION OPTIONS)
@@ -45,7 +45,7 @@ OPT_ECHO_ICS        0 ! [D] Echo initial conditions? 0 -> no, 1 -> yes
 OPT_ECHO_KEYWORDS_LC 0 ! [D] Echo all keywords in lowercase? 0 -> no, 1 -> yes
 OPT_ECHO_WRITE      0 ! [D] Echo written outputs? 0 -> no, 1 -> yes
 OPT_ENABLE_PYTHON   0 ! [D] Enable access to embedded Python? 0 -> no, 1 -> yes
-OPT_ERROR_DIALOG    0 ! Show pop-up dialog box if fatal error occurs: 1 -> yes
+OPT_ERROR_DIALOG    1 ! [D] Show pop-up dialog box if fatal error occurs: 1 -> yes
                       ! (normal use), 0 -> no (for batch runs)
 OPT_ERROR_DUP_DEF   0 ! [D] Handle case where DEFINE_IMPORT, DEFINE_OUTPUT,
                       ! DEFINE_PARAMETER, or DEFINE_VARIABLE attempts to define a
@@ -1820,19 +1820,19 @@ THROTTLE_SCALE_DOWNSHIFT(5) 1 ! [D] Divided into (throttle position -
 
 ! Col 1 = compression speed (mm/s), col 2 = damper force (N)
 FD_TABLE(1,1) SPLINE ! axle 1, left side
- -1410, -5008
- -720, -3436
- -390, -2324
- -210, -1792
- -90, -1008
- -20, -228
+ -1030, -7100
+ -520, -5652
+ -390, -5283
+ -260, -4822
+ -130, -3488
+ -50, -836
  0, 0
- 20, 228
- 90, 596
- 200, 784
- 390, 1100
- 760, 1796
- 1160, 2560
+ 50, 405
+ 130, 977
+ 260, 1697
+ 390, 2157
+ 520, 2584
+ 1030, 3723
 ENDTABLE
 FD_GAIN(1,1)        1 ! [D] Multiplied with calculated value to get damper force
 FD_OFFSET(1,1)      0 ; N ! [D] Added (after gain) to get damper force
@@ -1841,19 +1841,19 @@ CMP_R_SCALE_FD(1,1) 1 ! [D] Divided into (compression speed - CMP_R_START_FD)
 
 ! Col 1 = compression speed (mm/s), col 2 = damper force (N)
 FD_TABLE(1,2) SPLINE ! axle 1, right side
- -1410, -5008
- -720, -3436
- -390, -2324
- -210, -1792
- -90, -1008
- -20, -228
+ -1030, -7100
+ -520, -5652
+ -390, -5283
+ -260, -4822
+ -130, -3488
+ -50, -836
  0, 0
- 20, 228
- 90, 596
- 200, 784
- 390, 1100
- 760, 1796
- 1160, 2560
+ 50, 405
+ 130, 977
+ 260, 1697
+ 390, 2157
+ 520, 2584
+ 1030, 3723
 ENDTABLE
 FD_GAIN(1,2)        1 ! [D] Multiplied with calculated value to get damper force
 FD_OFFSET(1,2)      0 ; N ! [D] Added (after gain) to get damper force
@@ -1862,19 +1862,19 @@ CMP_R_SCALE_FD(1,2) 1 ! [D] Divided into (compression speed - CMP_R_START_FD)
 
 ! Col 1 = compression speed (mm/s), col 2 = damper force (N)
 FD_TABLE(2,1) SPLINE ! axle 2, left side
- -1410, -5008
- -720, -3436
- -390, -2324
- -210, -1792
- -90, -1008
- -20, -228
+ -1030, -7100
+ -520, -5652
+ -390, -5283
+ -260, -4822
+ -130, -3488
+ -50, -836
  0, 0
- 20, 228
- 90, 596
- 200, 784
- 390, 1100
- 760, 1796
- 1160, 2560
+ 50, 405
+ 130, 977
+ 260, 1697
+ 390, 2157
+ 520, 2584
+ 1030, 3723
 ENDTABLE
 FD_GAIN(2,1)        1 ! [D] Multiplied with calculated value to get damper force
 FD_OFFSET(2,1)      0 ; N ! [D] Added (after gain) to get damper force
@@ -1883,19 +1883,19 @@ CMP_R_SCALE_FD(2,1) 1 ! [D] Divided into (compression speed - CMP_R_START_FD)
 
 ! Col 1 = compression speed (mm/s), col 2 = damper force (N)
 FD_TABLE(2,2) SPLINE ! axle 2, right side
- -1410, -5008
- -720, -3436
- -390, -2324
- -210, -1792
- -90, -1008
- -20, -228
+ -1030, -7100
+ -520, -5652
+ -390, -5283
+ -260, -4822
+ -130, -3488
+ -50, -836
  0, 0
- 20, 228
- 90, 596
- 200, 784
- 390, 1100
- 760, 1796
- 1160, 2560
+ 50, 405
+ 130, 977
+ 260, 1697
+ 390, 2157
+ 520, 2584
+ 1030, 3723
 ENDTABLE
 FD_GAIN(2,2)        1 ! [D] Multiplied with calculated value to get damper force
 FD_OFFSET(2,2)      0 ; N ! [D] Added (after gain) to get damper force
@@ -2059,7 +2059,7 @@ THROTTLE_SCALE_FUEL_RATE 1 ! [D] Divided into (throttle position -
 
 ! Col 1 = aerodynamic slip angle (deg), col 2 = CFX (-)
 FX_AERO_SHAPING_TABLE SPLINE_FLAT ! spline interpolation, flat-line extrapolation
- -180, -0.3
+ -180, -0.45
  -160, -0.45
  -90, 0
  -20, 0.325
@@ -2067,7 +2067,7 @@ FX_AERO_SHAPING_TABLE SPLINE_FLAT ! spline interpolation, flat-line extrapolatio
  20, 0.325
  90, 0
  160, -0.45
- 180, -0.3
+ 180, -0.45
 ENDTABLE
 FX_AERO_SHAPING_GAIN 1 ! [D] Multiplied with calculated value to get CFX
 FX_AERO_SHAPING_OFFSET 0 ; - ! [D] Added (after gain) to get CFX
@@ -2365,11 +2365,11 @@ FZ_SCALE_FX_TIRE(2,2) 1 ! [D] Divided into (Fz - FZ_START_FX_TIRE)
 ! SLIP_SCALE_FY_AERO and SLIP_START_FY_AERO.
 
 ! Col 1 = aerodynamic slip angle (deg), col 2 = CFY (-)
-FY_AERO_SHAPING_TABLE SPLINE_FLAT ! spline interpolation, flat-line extrapolation
+FY_AERO_SHAPING_TABLE SPLINE ! spline interpolation and extrapolation
  -180, 0
- -90, -2
+ -90, -0.5
  0, 0
- 90, 2
+ 90, 0.5
  180, 0
 ENDTABLE
 FY_AERO_SHAPING_GAIN 1 ! [D] Multiplied with calculated value to get CFY
@@ -3913,7 +3913,7 @@ MX_AUX_FSTATIC_CONSTANT(2) 0 ; N-m ! Auxiliary roll moment component due to stat
 
 ! Col 1 = aerodynamic slip angle (deg), col 2 = CMY (-)
 MY_AERO_SHAPING_TABLE SPLINE_FLAT ! spline interpolation, flat-line extrapolation
- -180, -0.17
+ -180, -0.25
  -160, -0.25
  -90, 0
  -20, 0.17
@@ -3921,7 +3921,7 @@ MY_AERO_SHAPING_TABLE SPLINE_FLAT ! spline interpolation, flat-line extrapolatio
  20, 0.17
  90, 0
  160, -0.25
- 180, -0.17
+ 180, -0.25
 ENDTABLE
 MY_AERO_SHAPING_GAIN 1 ! [D] Multiplied with calculated value to get CMY
 MY_AERO_SHAPING_OFFSET 0 ; - ! [D] Added (after gain) to get CMY
@@ -3993,15 +3993,11 @@ PBK_SCALE_MY_BRAKE(2,2) 1 ! [D] Divided into (wheel cylinder pressure -
 ! SLIP_SCALE_MZ_AERO and SLIP_START_MZ_AERO.
 
 ! Col 1 = aerodynamic slip angle (deg), col 2 = CMZ (-)
-MZ_AERO_SHAPING_TABLE SPLINE_FLAT ! spline interpolation, flat-line extrapolation
+MZ_AERO_SHAPING_TABLE SPLINE ! spline interpolation and extrapolation
  -180, 0
- -135, 0.2
- -75, 0
- -35, -0.2
+ -90, 0.05
  0, 0
- 35, 0.2
- 75, 0
- 135, -0.2
+ 90, -0.05
  180, 0
 ENDTABLE
 MZ_AERO_SHAPING_GAIN 1 ! [D] Multiplied with calculated value to get CMZ

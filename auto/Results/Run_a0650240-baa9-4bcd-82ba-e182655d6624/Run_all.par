@@ -1033,19 +1033,19 @@ CMP_OFFSET 0
 ENTER_PARSFILE Suspensions\Shocks\Shock_06339072-ca43-46c4-af82-ec3bf59d6ffc.par
 #FullDataName Suspension: Shock Absorber`Big Car`Passenger Car
 FD_TABLE SPLINE
--1410, -5008
--720, -3436
--390, -2324
--210, -1792
--90, -1008
--20, -228
+-1030, -7100
+-520, -5652
+-390, -5283
+-260, -4822
+-130, -3488
+-50, -836
 0, 0
-20, 228
-90, 596
-200, 784
-390, 1100
-760, 1796
-1160, 2560
+50, 405
+130, 977
+260, 1697
+390, 2157
+520, 2584
+1030, 3723
 ENDTABLE
 LOG_ENTRY Used Dataset: Suspension: Shock Absorber; { Passenger Car } Big Car
 EXIT_PARSFILE Suspensions\Shocks\Shock_06339072-ca43-46c4-af82-ec3bf59d6ffc.par
@@ -1092,19 +1092,19 @@ CMP_OFFSET 0
 ENTER_PARSFILE Suspensions\Shocks\Shock_06339072-ca43-46c4-af82-ec3bf59d6ffc.par
 #FullDataName Suspension: Shock Absorber`Big Car`Passenger Car
 FD_TABLE SPLINE
--1410, -5008
--720, -3436
--390, -2324
--210, -1792
--90, -1008
--20, -228
+-1030, -7100
+-520, -5652
+-390, -5283
+-260, -4822
+-130, -3488
+-50, -836
 0, 0
-20, 228
-90, 596
-200, 784
-390, 1100
-760, 1796
-1160, 2560
+50, 405
+130, 977
+260, 1697
+390, 2157
+520, 2584
+1030, 3723
 ENDTABLE
 LOG_ENTRY Used Dataset: Suspension: Shock Absorber; { Passenger Car } Big Car
 EXIT_PARSFILE Suspensions\Shocks\Shock_06339072-ca43-46c4-af82-ec3bf59d6ffc.par
@@ -1188,7 +1188,7 @@ OPT_TIRE_LAG_KAPPA 2
 OPT_TIRE_LAG_ALPHA 1
 OPT_TIRE_MODEL 1
 ENTER_PARSFILE Animator\STL_Groups\ShpGrp_d5b55623-3c6f-43ea-b7a0-880a3303d1d2.par
-#FullDataName Animator: Shape Assembly`195/45 R16`Tires
+#FullDataName Animator: Shape Assembly`Sports Car`Tires
 ENTER_PARSFILE Animator\STL\Shape_9e9cf3ff-6a77-4076-a9f0-1b70114e603e.par
 #FullDataName Animator: Shape File Link`195/45 R16: Tire`Common Vehicle Assets: Tires
 add_obj Animator\3D_Shape_Files\Common_Vehicle_Assets\Tires\195_45R16\tire.obj
@@ -1211,23 +1211,23 @@ vsv_enable_shadows_recursive
 LOG_ENTRY Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Wheel
 EXIT_PARSFILE Animator\STL\Shape_e8969a6e-9ef6-43c7-9f40-228c21b5b4a1.par
 
-ENTER_PARSFILE Animator\STL\Shape_21a8656e-547d-4831-954d-38d95a9dff2b.par
-#FullDataName Animator: Shape File Link`195/45 R16: Stripe`Common Vehicle Assets: Tires
+ENTER_PARSFILE Animator\STL\Shape_8ffa6ffc-1b17-4180-964d-d52d768c1b70.par
+#FullDataName Animator: Shape File Link`195/45 R16: Stripe #1`Common Vehicle Assets: Tires
 add_obj Animator\3D_Shape_Files\Common_Vehicle_Assets\Tires\195_45R16\stripe.obj
-SET_COLOR 1 1 1
+SET_COLOR white
 SET_OFFSET_X 0
 SET_OFFSET_Y 0.01
 SET_OFFSET_Z 0.01
 set_lighting on
 set_fogging on
 SET_SPECULAR 0 0 0
-LOG_ENTRY Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Stripe
-EXIT_PARSFILE Animator\STL\Shape_21a8656e-547d-4831-954d-38d95a9dff2b.par
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Stripe #1
+EXIT_PARSFILE Animator\STL\Shape_8ffa6ffc-1b17-4180-964d-d52d768c1b70.par
 
 x_ref_length 291
 y_ref_length 195
 z_ref_length 291
-LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Tires } 195/45 R16
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Tires } Sports Car
 EXIT_PARSFILE Animator\STL_Groups\ShpGrp_d5b55623-3c6f-43ea-b7a0-880a3303d1d2.par
 
 WRITE_WHEEL_OFFSET
@@ -1611,7 +1611,7 @@ OPT_TIRE_LAG_KAPPA 2
 OPT_TIRE_LAG_ALPHA 1
 OPT_TIRE_MODEL 1
 ENTER_PARSFILE Animator\STL_Groups\ShpGrp_d5b55623-3c6f-43ea-b7a0-880a3303d1d2.par
-#FullDataName Animator: Shape Assembly`195/45 R16`Tires
+#FullDataName Animator: Shape Assembly`Sports Car`Tires
 ENTER_PARSFILE Animator\STL\Shape_9e9cf3ff-6a77-4076-a9f0-1b70114e603e.par
 #FullDataName Animator: Shape File Link`195/45 R16: Tire`Common Vehicle Assets: Tires
 add_obj Animator\3D_Shape_Files\Common_Vehicle_Assets\Tires\195_45R16\tire.obj
@@ -1634,23 +1634,23 @@ vsv_enable_shadows_recursive
 LOG_ENTRY Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Wheel
 EXIT_PARSFILE Animator\STL\Shape_e8969a6e-9ef6-43c7-9f40-228c21b5b4a1.par
 
-ENTER_PARSFILE Animator\STL\Shape_21a8656e-547d-4831-954d-38d95a9dff2b.par
-#FullDataName Animator: Shape File Link`195/45 R16: Stripe`Common Vehicle Assets: Tires
+ENTER_PARSFILE Animator\STL\Shape_8ffa6ffc-1b17-4180-964d-d52d768c1b70.par
+#FullDataName Animator: Shape File Link`195/45 R16: Stripe #1`Common Vehicle Assets: Tires
 add_obj Animator\3D_Shape_Files\Common_Vehicle_Assets\Tires\195_45R16\stripe.obj
-SET_COLOR 1 1 1
+SET_COLOR white
 SET_OFFSET_X 0
 SET_OFFSET_Y 0.01
 SET_OFFSET_Z 0.01
 set_lighting on
 set_fogging on
 SET_SPECULAR 0 0 0
-LOG_ENTRY Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Stripe
-EXIT_PARSFILE Animator\STL\Shape_21a8656e-547d-4831-954d-38d95a9dff2b.par
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Stripe #1
+EXIT_PARSFILE Animator\STL\Shape_8ffa6ffc-1b17-4180-964d-d52d768c1b70.par
 
 x_ref_length 291
 y_ref_length 195
 z_ref_length 291
-LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Tires } 195/45 R16
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Tires } Sports Car
 EXIT_PARSFILE Animator\STL_Groups\ShpGrp_d5b55623-3c6f-43ea-b7a0-880a3303d1d2.par
 
 WRITE_WHEEL_OFFSET
@@ -2329,19 +2329,19 @@ CMP_OFFSET 0
 ENTER_PARSFILE Suspensions\Shocks\Shock_06339072-ca43-46c4-af82-ec3bf59d6ffc.par
 #FullDataName Suspension: Shock Absorber`Big Car`Passenger Car
 FD_TABLE SPLINE
--1410, -5008
--720, -3436
--390, -2324
--210, -1792
--90, -1008
--20, -228
+-1030, -7100
+-520, -5652
+-390, -5283
+-260, -4822
+-130, -3488
+-50, -836
 0, 0
-20, 228
-90, 596
-200, 784
-390, 1100
-760, 1796
-1160, 2560
+50, 405
+130, 977
+260, 1697
+390, 2157
+520, 2584
+1030, 3723
 ENDTABLE
 LOG_ENTRY Used Dataset: Suspension: Shock Absorber; { Passenger Car } Big Car
 EXIT_PARSFILE Suspensions\Shocks\Shock_06339072-ca43-46c4-af82-ec3bf59d6ffc.par
@@ -2388,19 +2388,19 @@ CMP_OFFSET 0
 ENTER_PARSFILE Suspensions\Shocks\Shock_06339072-ca43-46c4-af82-ec3bf59d6ffc.par
 #FullDataName Suspension: Shock Absorber`Big Car`Passenger Car
 FD_TABLE SPLINE
--1410, -5008
--720, -3436
--390, -2324
--210, -1792
--90, -1008
--20, -228
+-1030, -7100
+-520, -5652
+-390, -5283
+-260, -4822
+-130, -3488
+-50, -836
 0, 0
-20, 228
-90, 596
-200, 784
-390, 1100
-760, 1796
-1160, 2560
+50, 405
+130, 977
+260, 1697
+390, 2157
+520, 2584
+1030, 3723
 ENDTABLE
 LOG_ENTRY Used Dataset: Suspension: Shock Absorber; { Passenger Car } Big Car
 EXIT_PARSFILE Suspensions\Shocks\Shock_06339072-ca43-46c4-af82-ec3bf59d6ffc.par
@@ -2482,7 +2482,7 @@ OPT_TIRE_LAG_KAPPA 2
 OPT_TIRE_LAG_ALPHA 1
 OPT_TIRE_MODEL 1
 ENTER_PARSFILE Animator\STL_Groups\ShpGrp_d5b55623-3c6f-43ea-b7a0-880a3303d1d2.par
-#FullDataName Animator: Shape Assembly`195/45 R16`Tires
+#FullDataName Animator: Shape Assembly`Sports Car`Tires
 ENTER_PARSFILE Animator\STL\Shape_9e9cf3ff-6a77-4076-a9f0-1b70114e603e.par
 #FullDataName Animator: Shape File Link`195/45 R16: Tire`Common Vehicle Assets: Tires
 add_obj Animator\3D_Shape_Files\Common_Vehicle_Assets\Tires\195_45R16\tire.obj
@@ -2505,23 +2505,23 @@ vsv_enable_shadows_recursive
 LOG_ENTRY Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Wheel
 EXIT_PARSFILE Animator\STL\Shape_e8969a6e-9ef6-43c7-9f40-228c21b5b4a1.par
 
-ENTER_PARSFILE Animator\STL\Shape_21a8656e-547d-4831-954d-38d95a9dff2b.par
-#FullDataName Animator: Shape File Link`195/45 R16: Stripe`Common Vehicle Assets: Tires
+ENTER_PARSFILE Animator\STL\Shape_8ffa6ffc-1b17-4180-964d-d52d768c1b70.par
+#FullDataName Animator: Shape File Link`195/45 R16: Stripe #1`Common Vehicle Assets: Tires
 add_obj Animator\3D_Shape_Files\Common_Vehicle_Assets\Tires\195_45R16\stripe.obj
-SET_COLOR 1 1 1
+SET_COLOR white
 SET_OFFSET_X 0
 SET_OFFSET_Y 0.01
 SET_OFFSET_Z 0.01
 set_lighting on
 set_fogging on
 SET_SPECULAR 0 0 0
-LOG_ENTRY Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Stripe
-EXIT_PARSFILE Animator\STL\Shape_21a8656e-547d-4831-954d-38d95a9dff2b.par
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Stripe #1
+EXIT_PARSFILE Animator\STL\Shape_8ffa6ffc-1b17-4180-964d-d52d768c1b70.par
 
 x_ref_length 291
 y_ref_length 195
 z_ref_length 291
-LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Tires } 195/45 R16
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Tires } Sports Car
 EXIT_PARSFILE Animator\STL_Groups\ShpGrp_d5b55623-3c6f-43ea-b7a0-880a3303d1d2.par
 
 WRITE_WHEEL_OFFSET
@@ -2905,7 +2905,7 @@ OPT_TIRE_LAG_KAPPA 2
 OPT_TIRE_LAG_ALPHA 1
 OPT_TIRE_MODEL 1
 ENTER_PARSFILE Animator\STL_Groups\ShpGrp_d5b55623-3c6f-43ea-b7a0-880a3303d1d2.par
-#FullDataName Animator: Shape Assembly`195/45 R16`Tires
+#FullDataName Animator: Shape Assembly`Sports Car`Tires
 ENTER_PARSFILE Animator\STL\Shape_9e9cf3ff-6a77-4076-a9f0-1b70114e603e.par
 #FullDataName Animator: Shape File Link`195/45 R16: Tire`Common Vehicle Assets: Tires
 add_obj Animator\3D_Shape_Files\Common_Vehicle_Assets\Tires\195_45R16\tire.obj
@@ -2928,23 +2928,23 @@ vsv_enable_shadows_recursive
 LOG_ENTRY Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Wheel
 EXIT_PARSFILE Animator\STL\Shape_e8969a6e-9ef6-43c7-9f40-228c21b5b4a1.par
 
-ENTER_PARSFILE Animator\STL\Shape_21a8656e-547d-4831-954d-38d95a9dff2b.par
-#FullDataName Animator: Shape File Link`195/45 R16: Stripe`Common Vehicle Assets: Tires
+ENTER_PARSFILE Animator\STL\Shape_8ffa6ffc-1b17-4180-964d-d52d768c1b70.par
+#FullDataName Animator: Shape File Link`195/45 R16: Stripe #1`Common Vehicle Assets: Tires
 add_obj Animator\3D_Shape_Files\Common_Vehicle_Assets\Tires\195_45R16\stripe.obj
-SET_COLOR 1 1 1
+SET_COLOR white
 SET_OFFSET_X 0
 SET_OFFSET_Y 0.01
 SET_OFFSET_Z 0.01
 set_lighting on
 set_fogging on
 SET_SPECULAR 0 0 0
-LOG_ENTRY Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Stripe
-EXIT_PARSFILE Animator\STL\Shape_21a8656e-547d-4831-954d-38d95a9dff2b.par
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Stripe #1
+EXIT_PARSFILE Animator\STL\Shape_8ffa6ffc-1b17-4180-964d-d52d768c1b70.par
 
 x_ref_length 291
 y_ref_length 195
 z_ref_length 291
-LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Tires } 195/45 R16
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Tires } Sports Car
 EXIT_PARSFILE Animator\STL_Groups\ShpGrp_d5b55623-3c6f-43ea-b7a0-880a3303d1d2.par
 
 WRITE_WHEEL_OFFSET
@@ -3350,7 +3350,7 @@ ENTER_PARSFILE Aerodynamics\Aero_Main\Aero_a610d4fd-9cf5-4ffa-90af-33c3c3fe903c.
 ENTER_PARSFILE Aerodynamics\Aero_Fx\AirCFx_67b7c1a5-2eb8-4548-b585-873fbb86b674.par
 #FullDataName Aerodynamics: Fx (Drag) Coef. vs. Aero Slip`Spline: 0.30 at 0 deg.`Spline Interpolation
 FX_AERO_SHAPING_TABLE SPLINE_FLAT
--180, -0.3
+-180, -0.45
 -160, -0.45
 -90, 0
 -20, 0.325
@@ -3358,21 +3358,21 @@ FX_AERO_SHAPING_TABLE SPLINE_FLAT
 20, 0.325
 90, 0
 160, -0.45
-180, -0.3
+180, -0.45
 ENDTABLE
 LOG_ENTRY Used Dataset: Aerodynamics: Fx (Drag) Coef. vs. Aero Slip; { Spline Interpolation } Spline: 0.30 at 0 deg.
 EXIT_PARSFILE Aerodynamics\Aero_Fx\AirCFx_67b7c1a5-2eb8-4548-b585-873fbb86b674.par
 
 ENTER_PARSFILE Aerodynamics\Aero_Fy\AirCFy_fdb1d5b6-475a-4d35-bfcc-b2b05bed2d67.par
-#FullDataName Aerodynamics: Fy (Side Force) Coef. vs. Aero Slip`Spline: 2 at 90 deg.`Spline Interpolation
-FY_AERO_SHAPING_TABLE SPLINE_FLAT
+#FullDataName Aerodynamics: Fy (Side Force) Coef. vs. Aero Slip`Spline: 0.5 at 90 deg.`Spline Interpolation
+FY_AERO_SHAPING_TABLE SPLINE
 -180, 0
--90, -2
+-90, -0.5
 0, 0
-90, 2
+90, 0.5
 180, 0
 ENDTABLE
-LOG_ENTRY Used Dataset: Aerodynamics: Fy (Side Force) Coef. vs. Aero Slip; { Spline Interpolation } Spline: 2 at 90 deg.
+LOG_ENTRY Used Dataset: Aerodynamics: Fy (Side Force) Coef. vs. Aero Slip; { Spline Interpolation } Spline: 0.5 at 90 deg.
 EXIT_PARSFILE Aerodynamics\Aero_Fy\AirCFy_fdb1d5b6-475a-4d35-bfcc-b2b05bed2d67.par
 
 ENTER_PARSFILE Aerodynamics\Aero_Fz\AirCFz_181dc205-db9c-4a33-a480-7f8380b96502.par
@@ -3406,7 +3406,7 @@ EXIT_PARSFILE Aerodynamics\Aero_Mx\AirCMx_3f02edea-099a-450e-bb38-0cab04c7d554.p
 ENTER_PARSFILE Aerodynamics\Aero_My\AirCMy_d0c39dc5-f1b1-477a-8422-5ef53720bcf1.par
 #FullDataName Aerodynamics: My (Pitch Moment) Coef. vs. Aero Slip`Spline: 0.15 at 0 deg.`Spline Interpolation
 MY_AERO_SHAPING_TABLE SPLINE_FLAT
--180, -0.17
+-180, -0.25
 -160, -0.25
 -90, 0
 -20, 0.17
@@ -3414,25 +3414,21 @@ MY_AERO_SHAPING_TABLE SPLINE_FLAT
 20, 0.17
 90, 0
 160, -0.25
-180, -0.17
+180, -0.25
 ENDTABLE
 LOG_ENTRY Used Dataset: Aerodynamics: My (Pitch Moment) Coef. vs. Aero Slip; { Spline Interpolation } Spline: 0.15 at 0 deg.
 EXIT_PARSFILE Aerodynamics\Aero_My\AirCMy_d0c39dc5-f1b1-477a-8422-5ef53720bcf1.par
 
 ENTER_PARSFILE Aerodynamics\Aero_Mz\AirCMz_8c859ffc-2eb2-44f3-8fa4-850e39efba8a.par
-#FullDataName Aerodynamics: Mz (Yaw Moment) Coef. vs. Aero Slip`Spline: 0.2 at 35 deg.`Spline Interpolation
-MZ_AERO_SHAPING_TABLE SPLINE_FLAT
+#FullDataName Aerodynamics: Mz (Yaw Moment) Coef. vs. Aero Slip`Spline: -0.05 at 90 deg.`Spline Interpolation
+MZ_AERO_SHAPING_TABLE SPLINE
 -180, 0
--135, 0.2
--75, 0
--35, -0.2
+-90, 0.05
 0, 0
-35, 0.2
-75, 0
-135, -0.2
+90, -0.05
 180, 0
 ENDTABLE
-LOG_ENTRY Used Dataset: Aerodynamics: Mz (Yaw Moment) Coef. vs. Aero Slip; { Spline Interpolation } Spline: 0.2 at 35 deg.
+LOG_ENTRY Used Dataset: Aerodynamics: Mz (Yaw Moment) Coef. vs. Aero Slip; { Spline Interpolation } Spline: -0.05 at 90 deg.
 EXIT_PARSFILE Aerodynamics\Aero_Mz\AirCMz_8c859ffc-2eb2-44f3-8fa4-850e39efba8a.par
 
 X_REF_AERO -1433
@@ -4137,7 +4133,7 @@ ROAD_ID_OBJ 0
 OPT_RECYCLE_OBJ 0
 H_OBJ = 0 ! Default for blank field
 WRITE_ADD_REFERENCE_FRAME_OBJECT
-ADD_REFERENCE_FRAME object_1e
+ADD_REFERENCE_FRAME object_1
 SET_EULER_ANGLES YAW_PITCH_ROLL
 SET_X_NAME X_Obj_1
 WRT_X_Obj_1
@@ -4860,7 +4856,10 @@ set_description road_path_id PATH_ID for: I-94, Exit 172 (Jackson Ave)
 ENTER_PARSFILE Roads\Friction\RdMu_25e73395-9471-44b9-9c60-27bd9cc24921.par
 #FullDataName Road: Friction Map, S-L Grid`Constant: 0.85`Constant
 MU_ROAD_COMBINE ADD
-MU_ROAD_CONSTANT 0.85
+MU_ROAD_TABLE LINEAR_LOOP
+0, 0.85
+1, 0.85
+ENDTABLE
 MU_ROAD_L_CONSTANT 0
 LOG_ENTRY Used Dataset: Road: Friction Map, S-L Grid; { Constant } Constant: 0.85
 EXIT_PARSFILE Roads\Friction\RdMu_25e73395-9471-44b9-9c60-27bd9cc24921.par
@@ -10574,7 +10573,10 @@ set_description road_path_id PATH_ID for: Jackson Ave Near I-94
 ENTER_PARSFILE Roads\Friction\RdMu_25e73395-9471-44b9-9c60-27bd9cc24921.par
 #FullDataName Road: Friction Map, S-L Grid`Constant: 0.85`Constant
 MU_ROAD_COMBINE ADD
-MU_ROAD_CONSTANT 0.85
+MU_ROAD_TABLE LINEAR_LOOP
+0, 0.85
+1, 0.85
+ENDTABLE
 MU_ROAD_L_CONSTANT 0
 LOG_ENTRY Used Dataset: Road: Friction Map, S-L Grid; { Constant } Constant: 0.85
 EXIT_PARSFILE Roads\Friction\RdMu_25e73395-9471-44b9-9c60-27bd9cc24921.par
@@ -10867,7 +10869,10 @@ EXIT_PARSFILE Roads\dZ_Map_V_Wdth\VarWidZ_815d1b75-28a5-487b-9325-ae40641b7ebc.p
 ENTER_PARSFILE Roads\Friction\RdMu_25e73395-9471-44b9-9c60-27bd9cc24921.par
 #FullDataName Road: Friction Map, S-L Grid`Constant: 0.85`Constant
 MU_ROAD_COMBINE ADD
-MU_ROAD_CONSTANT 0.85
+MU_ROAD_TABLE LINEAR_LOOP
+0, 0.85
+1, 0.85
+ENDTABLE
 MU_ROAD_L_CONSTANT 0
 LOG_ENTRY Used Dataset: Road: Friction Map, S-L Grid; { Constant } Constant: 0.85
 EXIT_PARSFILE Roads\Friction\RdMu_25e73395-9471-44b9-9c60-27bd9cc24921.par
