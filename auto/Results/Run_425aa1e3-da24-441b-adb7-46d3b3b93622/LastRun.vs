@@ -2,10 +2,10 @@
   "VsChannelGroup" : {
     "Category" : "Proving Grounds, VS Scene Builder",
     "Dataset" : "VSPG: Lift Throttle in Curve",
-    "Input File" : "Results\\Run_425aa1e3-da24-441b-adb7-46d3b3b93622\\Run.vs",
+    "Input File" : "Results\\Run_425aa1e3-da24-441b-adb7-46d3b3b93622\\LastRun.vs",
     "Model" : "Vehicle Configuration: I_I",
     "Product" : "CarSim 2024.1",
-    "Timestamp" : "14:08 on March 25, 2024",
+    "Timestamp" : "17:19 on July 07, 2026",
     "Title" : "VSPG: Lift Throttle in Curve <Proving Grounds, VS Scene Builder>",
     "Version" : 2,
     "XLabel" : "Time",

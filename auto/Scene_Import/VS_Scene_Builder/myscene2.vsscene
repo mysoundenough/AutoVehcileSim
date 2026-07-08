@@ -1,0 +1,58 @@
+{
+  "version" : "2023.0",
+  "segments" : [ {
+      "id" : 0,
+      "coords" : [ {
+          "S" : 0,
+          "X" : 0,
+          "Y" : 151.79159999999998831,
+          "Z" : -9.0287630882812663913e-06
+        }, {
+          "S" : 89.234079483576394409,
+          "X" : -89.233678909993599859,
+          "Y" : 151.52422485270381003,
+          "Z" : -5.56281338504049927e-06
+        } ]
+    } ],
+  "paths" : [
+    [ {
+        "name" : "User Path",
+        "id" : 0
+      } ] ],
+  "renderData" : [ {
+      "title" : "90_Turn_01",
+      "noShadows" : false,
+      "path" : "Animator/3D_Shape_Files/VS_SceneBuilder/Resources/Tilesets/Rural/Mesh/VsV/90_Turn_01.OSG",
+      "aZ" : -270,
+      "oX" : -149.99950032130539057,
+      "oY" : -149.99999958535897804,
+      "oZ" : 0
+    }, {
+      "title" : "90_Turn_01",
+      "noShadows" : false,
+      "path" : "Animator/3D_Shape_Files/VS_SceneBuilder/Resources/Tilesets/Rural/Mesh/VsV/90_Turn_01.OSG",
+      "aZ" : -180,
+      "oX" : 150.00000082928204392,
+      "oY" : -150.00000009847724414,
+      "oZ" : 0
+    }, {
+      "title" : "90_Turn_01",
+      "noShadows" : false,
+      "path" : "Animator/3D_Shape_Files/VS_SceneBuilder/Resources/Tilesets/Rural/Mesh/VsV/90_Turn_01.OSG",
+      "aZ" : -90,
+      "oX" : 150,
+      "oY" : 150,
+      "oZ" : 0
+    }, {
+      "title" : "90_Turn_01",
+      "noShadows" : false,
+      "path" : "Animator/3D_Shape_Files/VS_SceneBuilder/Resources/Tilesets/Rural/Mesh/VsV/90_Turn_01.OSG",
+      "aZ" : -0,
+      "oX" : -150,
+      "oY" : 150,
+      "oZ" : 0
+    } ],
+  "terrainData" : {
+    "path" : "Scene_Import/VS_Scene_Builder/myscene2.vsterrain"
+  }
+}

@@ -1,27 +1,114 @@
-2026-07-02T14:17:29 Logfile initialized.
-2026-07-02T14:17:29 (Info):    CarSim 2024.1
-2026-07-02T14:17:29 (Info):    -
-2026-07-02T14:17:29 (Info):    command-line: 
-2026-07-02T14:17:29 (Info):    -
-2026-07-02T14:17:29 (Info):    Working Dir: C:\workspace\AutoVehcileSim\auto\
-2026-07-02T14:17:29 (Info):    Program Dir: C:\Program Files (x86)\CarSim2024.1_Prog\
-2026-07-02T14:17:29 (Info):    -
-2026-07-02T14:17:29 (Info):    OS Version:        6.2 (build 9200)
-2026-07-02T14:17:29 (Info):    CPU Architecture:  x64
-2026-07-02T14:17:29 (Info):    CPU Count:         2
-2026-07-02T14:17:29 (Info):    CPU Level/Rev:     21/1
-2026-07-02T14:17:29 (Info):    Start Mem Total:   4090 MB
-2026-07-02T14:17:29 (Info):    Start Mem Used:    92%
-2026-07-02T14:17:29 (Info):    -
-2026-07-02T14:17:29 (Info):    Loaded dataset index cache in 0.09s, 27.2 megabytes.
-2026-07-02T14:17:29 (Info):    Error: A license manager is already running.
-2026-07-02T14:17:29 (Info):    License check took 0.56 seconds.
-2026-07-02T14:17:30 (Info):    No install ID found at regkey "Software\Mechanical Simulation Corp\CarSim 2024.1".
-2026-07-02T14:17:30 (Info):    No install ID found at regkey "Software\Mechanical Simulation Corp\CarSim 2024.1".
-2026-07-02T14:17:38 (Info):    Initial setup took 8.22 seconds.
-2026-07-02T14:17:38 (Info):    Auto updates took 0.00 seconds.
-2026-07-02T14:17:40 (Info):    Loaded last screen in 1.50 seconds.
-2026-07-02T14:17:40 (Info):    Total init time 11.55 seconds.
-2026-07-02T14:18:49 (Info):    Running math model for: { My Simulink } Sim_Power_Pedmap
-2026-07-02T14:21:39 (Info):    6314 index cache entries written in 0.094s
-2026-07-02T14:21:39 (Info):    Exiting application...
+2026-07-08T10:09:01 Logfile initialized.
+2026-07-08T10:09:01 (Info):    CarSim 2024.1
+2026-07-08T10:09:01 (Info):    -
+2026-07-08T10:09:01 (Info):    command-line: 
+2026-07-08T10:09:01 (Info):    -
+2026-07-08T10:09:01 (Info):    Working Dir: C:\workspace\AutoVehcileSim\auto\
+2026-07-08T10:09:01 (Info):    Program Dir: C:\Program Files (x86)\CarSim2024.1_Prog\
+2026-07-08T10:09:01 (Info):    -
+2026-07-08T10:09:01 (Info):    OS Version:        6.2 (build 9200)
+2026-07-08T10:09:01 (Info):    CPU Architecture:  x64
+2026-07-08T10:09:01 (Info):    CPU Count:         2
+2026-07-08T10:09:01 (Info):    CPU Level/Rev:     21/1
+2026-07-08T10:09:01 (Info):    Start Mem Total:   4090 MB
+2026-07-08T10:09:01 (Info):    Start Mem Used:    78%
+2026-07-08T10:09:01 (Info):    -
+2026-07-08T10:09:01 (Info):    Loaded dataset index cache in 0.02s, 0.1 megabytes.
+2026-07-08T10:09:01 (Info):    Feature                  Source                       Version  Acquired  Count
+2026-07-08T10:09:01 (Info):    -----------------        -----------------            -------  --------  -----
+2026-07-08T10:09:01 (Info):    bikesimsguiCN            ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    bikesimCN                ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    bikesimtCN               ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    bikesimsmoCN             ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    bikesimsmortCN           ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    bikesimsrcCN             ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    bikesimsrctCN            ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    bikesimopalCN            ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    bikesimopaltCN           ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    bikesimlinuxCN           ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    bikesimlinuxtCN          ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    bikesimdspaceCN          ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    bikesimdspacetCN         ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    bikesimadiCN             ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    bikesimaditCN            ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    bikesimlabviewCN         ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    bikesimlabviewtCN        ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    bikesimwdsCN             ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    bikesimwdstCN            ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    bikesimfrtCN             ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    bikesimfCN               ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    bikesimlabcarCN          ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    bikesimlabcartCN         ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    bikesimaniCN             ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    bikesimrtsvrCN           ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    bikesimrtsvrtCN          ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    bikesimartelabCN         ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    bikesimartelabtCN        ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    bikesimepiCN             ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    bikesimengmtCN           ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    bikesimengmtrtCN         ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    trucksimsguiCN           ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    trucksimCN               ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    trucksimsmoCN            ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    trucksimsmortCN          ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    trucksimtCN              ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    trucksimsrcCN            ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    trucksimsrctCN           ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    trucksimopalCN           ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    trucksimopaltCN          ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    trucksimlinuxCN          ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    trucksimlinuxtCN         ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    trucksimdspaceCN         ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    trucksimdspacetCN        ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    trucksimadiCN            ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    trucksimaditCN           ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    trucksimlabviewCN        ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    trucksimlabviewtCN       ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    trucksimwdsCN            ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    trucksimwdstCN           ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    trucksimfrtCN            ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    trucksimfCN              ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    trucksimlabtruckCN       ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    trucksimlabtrucktCN      ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    trucksimaniCN            ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    trucksimrtsvrCN          ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    trucksimrtsvrtCN         ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    trucksimartelabCN        ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    trucksimartelabtCN       ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    trucksimepiCN            ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    trucksimengmtCN          ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    trucksimengmtrtCN        ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    carsimsguiCN             ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    carsimCN                 ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    carsimtCN                ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    carsimsmoCN              ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    carsimsmortCN            ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    carsimsrcCN              ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    carsimsrctCN             ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    carsimopalCN             ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    carsimopaltCN            ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    carsimlinuxCN            ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    carsimlinuxtCN           ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    carsimdspaceCN           ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    carsimdspacetCN          ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    carsimadiCN              ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    carsimaditCN             ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    carsimlabviewCN          ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    carsimlabviewtCN         ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    carsimwdsCN              ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    carsimwdstCN             ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    carsimfrtCN              ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    carsimfCN                ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    carsimlabcarCN           ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    carsimlabcartCN          ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    carsimaniCN              ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    carsimrtsvrCN            ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    carsimrtsvrtCN           ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    carsimartelabCN          ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    carsimartelabtCN         ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    carsimepiCN              ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    carsimengmtCN            ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    carsimengmtrtCN          ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:01 (Info):    sussimCN                 ...24.1_Prog\MSCLIC_SSQ.lic  22024    [   ]          
+2026-07-08T10:09:19 (Info):    0 index cache entries written in 0.016s
+2026-07-08T10:09:19 (Info):    Exiting application...

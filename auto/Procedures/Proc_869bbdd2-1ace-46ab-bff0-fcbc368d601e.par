@@ -35,7 +35,7 @@ PARSFILE Roads\3D_Road\Road_9a4c072a-6444-47c0-a973-4d46fefa890d.par
 #BlueLink0 Road: 3D Surface (All Properties)`Proving Ground` VS Scene Builder` , Miscellaneous`Road_9a4c072a-6444-47c0-a973-4d46fefa890d
 
 #MiscYellow1
-PATH_ID_DM = 1015 ! 111 m radius on skidpad
+PATH_ID_DM =1000 ! 111 m radius on skidpad
 #ENDMYellow
 
 PARSFILE Events\Events_f2b3c470-5d71-44a5-8959-93368cbbdac0.par
@@ -75,7 +75,7 @@ LOG_ENTRY Used Dataset: Procedures; { Proving Ground } Lift Throttle in Curve
 #DataSet : Lift Throttle in Curve
 #Category: Proving Ground
 #FileID  : Proc_869bbdd2-1ace-46ab-bff0-fcbc368d601e
-#Modified: 05-28-2021 14:59:22
+#Modified: 07-07-2026 17:19:37
 #Product : CarSim 2024.1
 #DataVer : 2024.1
 #VehCode Procedure

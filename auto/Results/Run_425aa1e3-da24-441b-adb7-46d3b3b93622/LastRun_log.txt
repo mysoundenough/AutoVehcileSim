@@ -1,6 +1,6 @@
-Run made by CarSim 2024.1 at 14:08 on March 25, 2024.
+Run made by CarSim 2024.1 at 17:19 on July 07, 2026.
 Revision 222209, March 18, 2024
-Started with simfile: simfile_Run_425aa1e3-da24-441b-adb7-46d3b3b93622.sim
+Started with simfile: simfile.sim
 
 Include PARSFILE "Results\Run_425aa1e3-da24-441b-adb7-46d3b3b93622\Run_all.par"
 Installed keywords into VS Solver for MODEL_LAYOUT I_I
@@ -31,8 +31,8 @@ Used Dataset: Suspension: Auxiliary Roll Moment; { Linear } Linear: 384 N-m/deg
 Used Dataset: Suspension: Independent Compliance, Springs, and Dampers; { D-Class } D-Class, Sdn - Front
 Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Tire
 Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Wheel
-Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Stripe
-Used Dataset: Animator: Shape Assembly; { Tires } 195/45 R16
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Stripe #1
+Used Dataset: Animator: Shape Assembly; { Tires } Sports Car
 Used Dataset: Generic Table; { Tire Relaxation Length } Lx Variable, Scaled to Tire
 Used Dataset: Generic Table; { Tire Relaxation Length } Ly Variable, Scaled to Tire
 Used Dataset: Tire: Aligning Moment; { Touring Tires } 215/55 R17 (SAE)
@@ -42,8 +42,8 @@ Used Dataset: Tire: Camber Thrust Coefficient; { Touring Tires } 215/55 R17
 Used Dataset: Tire; { Touring Tires } 215/55 R17
 Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Tire
 Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Wheel
-Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Stripe
-Used Dataset: Animator: Shape Assembly; { Tires } 195/45 R16
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Stripe #1
+Used Dataset: Animator: Shape Assembly; { Tires } Sports Car
 Used Dataset: Generic Table; { Tire Relaxation Length } Lx Variable, Scaled to Tire
 Used Dataset: Generic Table; { Tire Relaxation Length } Ly Variable, Scaled to Tire
 Used Dataset: Tire: Aligning Moment; { Touring Tires } 215/55 R17 (SAE)
@@ -68,8 +68,8 @@ Used Dataset: Suspension: Auxiliary Roll Moment; { Linear } Linear: 344 N-m/deg
 Used Dataset: Suspension: Independent Compliance, Springs, and Dampers; { D-Class } D-Class, Sdn - Rear
 Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Tire
 Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Wheel
-Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Stripe
-Used Dataset: Animator: Shape Assembly; { Tires } 195/45 R16
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Stripe #1
+Used Dataset: Animator: Shape Assembly; { Tires } Sports Car
 Used Dataset: Generic Table; { Tire Relaxation Length } Lx Variable, Scaled to Tire
 Used Dataset: Generic Table; { Tire Relaxation Length } Ly Variable, Scaled to Tire
 Used Dataset: Tire: Aligning Moment; { Touring Tires } 215/55 R17 (SAE)
@@ -79,8 +79,8 @@ Used Dataset: Tire: Camber Thrust Coefficient; { Touring Tires } 215/55 R17
 Used Dataset: Tire; { Touring Tires } 215/55 R17
 Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Tire
 Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Wheel
-Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Stripe
-Used Dataset: Animator: Shape Assembly; { Tires } 195/45 R16
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Stripe #1
+Used Dataset: Animator: Shape Assembly; { Tires } Sports Car
 Used Dataset: Generic Table; { Tire Relaxation Length } Lx Variable, Scaled to Tire
 Used Dataset: Generic Table; { Tire Relaxation Length } Ly Variable, Scaled to Tire
 Used Dataset: Tire: Aligning Moment; { Touring Tires } 215/55 R17 (SAE)
@@ -90,11 +90,11 @@ Used Dataset: Tire: Camber Thrust Coefficient; { Touring Tires } 215/55 R17
 Used Dataset: Tire; { Touring Tires } 215/55 R17
 Used Dataset: Vehicle: Sprung Mass; { D-Class } D-Class, Sedan
 Used Dataset: Aerodynamics: Fx (Drag) Coef. vs. Aero Slip; { Spline Interpolation } Spline: 0.30 at 0 deg.
-Used Dataset: Aerodynamics: Fy (Side Force) Coef. vs. Aero Slip; { Spline Interpolation } Spline: 2 at 90 deg.
+Used Dataset: Aerodynamics: Fy (Side Force) Coef. vs. Aero Slip; { Spline Interpolation } Spline: 0.5 at 90 deg.
 Used Dataset: Aerodynamics: Fz (Lift) Coef. vs. Aero Slip; { Spline Interpolation } Spline: 0.18 at 0 deg.
 Used Dataset: Aerodynamics: Mx (Roll Moment) Coef. vs. Aero Slip; { Spline Interpolation } Spline: 0.3 at 90 deg.
 Used Dataset: Aerodynamics: My (Pitch Moment) Coef. vs. Aero Slip; { Spline Interpolation } Spline: 0.15 at 0 deg.
-Used Dataset: Aerodynamics: Mz (Yaw Moment) Coef. vs. Aero Slip; { Spline Interpolation } Spline: 0.2 at 35 deg.
+Used Dataset: Aerodynamics: Mz (Yaw Moment) Coef. vs. Aero Slip; { Spline Interpolation } Spline: -0.05 at 90 deg.
 Used Dataset: Aerodynamics: Basic; { D-Class } D-Class, Sedan Aero
 Used Dataset: Powertrain: Fuel Consumption Rate; 150 kW Gasoline Engine
 Used Dataset: Powertrain: Engine; { 150 kW Engines } 150 kW Engine
@@ -143,8 +143,7 @@ Used Dataset: Procedures; { Proving Ground } Lift Throttle in Curve
  VSPG: Lift Throttle in Curve <Proving Grounds, VS Scene Builder>
 Used Dataset: CarSim Run Control; { Proving Grounds, VS Scene Builder } VSPG: Lift Throttle in Curve
 
-Time to read input = 0.622955
-Function F_BOOST_R_TABLE extrapolated (out of range HIGH) for X = 91.6256 N-m at T = 0
+Time to read input = 0.367105
 Function F_REB_STOP_TABLE(1,1) extrapolated (out of range HIGH) for X = 0 mm at T = 0
 Function F_JNC_STOP_TABLE(1,1) extrapolated (out of range LOW) for X = 0 mm at T = 0
 Function F_REB_STOP_TABLE(1,2) extrapolated (out of range HIGH) for X = 0 mm at T = 0
@@ -154,30 +153,32 @@ Function F_JNC_STOP_TABLE(2,1) extrapolated (out of range LOW) for X = 0 mm at T
 Function F_REB_STOP_TABLE(2,2) extrapolated (out of range HIGH) for X = 0 mm at T = 0
 Function F_JNC_STOP_TABLE(2,2) extrapolated (out of range LOW) for X = 0 mm at T = 0
 
-Run started: VS output file = Results\Run_425aa1e3-da24-441b-adb7-46d3b3b93622\Run.vsb
-Function L_RELAX_X_FZ_TABLE(1,2) extrapolated (out of range HIGH) for X = 1 N at T = 1.34
+Run started: VS output file = Results\Run_425aa1e3-da24-441b-adb7-46d3b3b93622\LastRun.vsb
+Function L_RELAX_X_FZ_TABLE(1,1) extrapolated (out of range HIGH) for X = 1.00052 N at T = 3.7465
+Function FD_TABLE(1,1) extrapolated (out of range HIGH) for X = 1031.26 mm/s at T = 3.7745
+Function L_RELAX_X_FZ_TABLE(2,1) extrapolated (out of range HIGH) for X = 1.00463 N at T = 3.84
+Function SUSP_X_TABLE(1,1) extrapolated (out of range HIGH) for X = 70.1737 mm at T = 3.8655
+Function SUSP_LAT_TABLE(1,1) extrapolated (out of range HIGH) for X = 70.1737 mm at T = 3.8655
+Function CAMBER_TABLE(1,1) extrapolated (out of range HIGH) for X = 70.1737 mm at T = 3.8655
+Function SUSP_DIVE_TABLE(1,1) extrapolated (out of range HIGH) for X = 70.1737 mm at T = 3.8655
+Function TOE_TABLE(1,1) extrapolated (out of range HIGH) for X = 70.1737 mm at T = 3.8655
+Function L_RELAX_X_FZ_TABLE(1,2) extrapolated (out of range HIGH) for X = 1.00512 N at T = 3.94
+Function FD_TABLE(1,2) extrapolated (out of range HIGH) for X = 1032.1 mm/s at T = 3.9625
+Function L_RELAX_X_FZ_TABLE(2,2) extrapolated (out of range HIGH) for X = 1.01899 N at T = 4.024
+Function FD_TABLE(2,2) extrapolated (out of range HIGH) for X = 1039.32 mm/s at T = 4.047
+Function KGAMMA_TABLE(1,1) extrapolated (out of range HIGH) for X = 12840.1 N at T = 4.502
+Function FY_TIRE_CARPET(1,1) extrapolated (out of range HIGH) for XCOL = 12840.1 N at T = 4.502
+Function FX_TIRE_CARPET(1,1) extrapolated (out of range HIGH) for XCOL = 12840.1 N at T = 4.502
+Function MZ_TIRE_CARPET(1,1) extrapolated (out of range HIGH) for XCOL = 12840.1 N at T = 4.502
+Function L_RELAX_Y_FZ_TABLE(1,1) extrapolated (out of range HIGH) for X = 2.00402 N at T = 4.503
+Function FD_TABLE(2,1) extrapolated (out of range HIGH) for X = 1030.12 mm/s at T = 4.5145
+Function SUSP_X_TABLE(1,2) extrapolated (out of range HIGH) for X = 70.032 mm at T = 4.6065
+Function SUSP_LAT_TABLE(1,2) extrapolated (out of range HIGH) for X = 70.032 mm at T = 4.6065
+Function CAMBER_TABLE(1,2) extrapolated (out of range HIGH) for X = 70.032 mm at T = 4.6065
+Function SUSP_DIVE_TABLE(1,2) extrapolated (out of range HIGH) for X = 70.032 mm at T = 4.6065
+Function TOE_TABLE(1,2) extrapolated (out of range HIGH) for X = 70.032 mm at T = 4.6065
 
-Event #1 occurred at t = 25.258: SV_N_START_CROSS >= 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_28e04772-798a-497c-954e-6f40bbfdfdbb.par"
-Used Dataset: Events; { Lift Throttle in Curve } B. Save steady state values
+Run stopped at t = 66.7955. External control (manual or external model)
 
-Event #2 occurred at t = 25.2585: 1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_86d6c15d-a6b4-4081-b3e9-46bbbdcfcad5.par"
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Control\Throttle\Throttle_768d3744-c109-4ff7-a65b-3b0bea560117.par"
-Used Dataset: Control: Throttle (Open Loop); { Constant } Constant: 0
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Control\Steer\StrSW_807fd9b8-a176-446c-a7b6-f7b1fa82d768.par"
-Used Dataset: Control: Steering (Open Loop); { Miscellaneous } Saved Value for Lift Throttle Test
-Used Dataset: Events; { Lift Throttle in Curve } C. Lift throttle, hold wheel
-
-Event #3 occurred at t = 26.259: T >= T_LIFT+1
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_ae228394-1e94-4790-b3d6-144636c37d83.par"
-Used Dataset: Events; { Lift Throttle in Curve } D. Save values after 1 s
-
-Event #4 occurred at t = 35.259: T >= T_LIFT+10
-Include PARSFILE "D:\product_dev\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_b5af09b5-d8ad-4e81-ae24-eebce691780e.par"
-
-Run stopped at t = 35.259. VS Command STOP_RUN_NOW End event triggered
-Used Dataset: Events; End Events
-
-Computational time ratio: RTIME = 0.244186 (real time)/(simulation time)
+Computational time ratio: RTIME = 0.0945853 (real time)/(simulation time)
 
