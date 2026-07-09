@@ -1,30 +1,19 @@
-2026-07-08T10:10:00 Logfile initialized.
-2026-07-08T10:10:00 (Info):    CarSim 2024.1
-2026-07-08T10:10:00 (Info):    -
-2026-07-08T10:10:00 (Info):    command-line: 
-2026-07-08T10:10:00 (Info):    -
-2026-07-08T10:10:00 (Info):    Working Dir: C:\workspace\AutoVehcileSim\auto\
-2026-07-08T10:10:00 (Info):    Program Dir: C:\Program Files (x86)\CarSim2024.1_Prog\
-2026-07-08T10:10:00 (Info):    -
-2026-07-08T10:10:00 (Info):    OS Version:        6.2 (build 9200)
-2026-07-08T10:10:00 (Info):    CPU Architecture:  x64
-2026-07-08T10:10:00 (Info):    CPU Count:         2
-2026-07-08T10:10:00 (Info):    CPU Level/Rev:     21/1
-2026-07-08T10:10:00 (Info):    Start Mem Total:   4090 MB
-2026-07-08T10:10:00 (Info):    Start Mem Used:    79%
-2026-07-08T10:10:00 (Info):    -
-2026-07-08T10:10:00 (Info):    Loaded dataset index cache in 0.00s, 0.1 megabytes.
-2026-07-08T10:10:00 (Info):    Error: A license manager is already running.
-2026-07-08T10:10:01 (Info):    License check took 0.38 seconds.
-2026-07-08T10:10:24 (Info):    Couldn't scan file data, ignoring: Roads\BuilderSegment\RoadSeg_299f5dd8-31b0-44f2-9251-eaaf215df33c_echo1.par
-2026-07-08T10:10:41 (Info):    Indexed whole database in 40.16s
-2026-07-08T10:10:41 (Info):    No install ID found at regkey "Software\Mechanical Simulation Corp\CarSim 2024.1".
-2026-07-08T10:10:41 (Info):    No install ID found at regkey "Software\Mechanical Simulation Corp\CarSim 2024.1".
-2026-07-08T10:10:44 (Info):    Initial setup took 2.95 seconds.
-2026-07-08T10:10:44 (Info):    Auto updates took 0.00 seconds.
-2026-07-08T10:10:45 (Info):    Loaded last screen in 0.44 seconds.
-2026-07-08T10:10:45 (Info):    Total init time 44.89 seconds.
-2026-07-08T14:41:32 (Info):    Running math model for: { Scene Import } Atlas: 3D Highway Exit (Basic)
-2026-07-08T14:41:33 (Info):    Math model run completed.
-2026-07-09T10:11:36 (Info):    6314 index cache entries written in 0.062s
-2026-07-09T10:11:39 (Info):    Exiting application...
+2026-07-09T10:39:19 Logfile initialized.
+2026-07-09T10:39:19 (Info):    CarSim 2024.1
+2026-07-09T10:39:19 (Info):    -
+2026-07-09T10:39:19 (Info):    command-line: 
+2026-07-09T10:39:19 (Info):    -
+2026-07-09T10:39:19 (Info):    Working Dir: C:\workspace\AutoVehcileSim\auto\
+2026-07-09T10:39:19 (Info):    Program Dir: C:\Program Files (x86)\CarSim2024.1_Prog\
+2026-07-09T10:39:19 (Info):    -
+2026-07-09T10:39:19 (Info):    OS Version:        6.2 (build 9200)
+2026-07-09T10:39:19 (Info):    CPU Architecture:  x64
+2026-07-09T10:39:19 (Info):    CPU Count:         2
+2026-07-09T10:39:19 (Info):    CPU Level/Rev:     21/1
+2026-07-09T10:39:19 (Info):    Start Mem Total:   4090 MB
+2026-07-09T10:39:19 (Info):    Start Mem Used:    66%
+2026-07-09T10:39:19 (Info):    -
+2026-07-09T10:39:19 (Info):    Loaded dataset index cache in 0.11s, 27.2 megabytes.
+2026-07-09T10:39:20 (Info):    Error: A license manager is already running.
+2026-07-09T10:39:21 (Info):    License check took 1.83 seconds.
+2026-07-09T10:39:21 (Info):    N
