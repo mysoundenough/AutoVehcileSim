@@ -45,16 +45,21 @@ reference_frame_ghosts off
 PARSFILE Roads\AniGroup\AniRep_4d17b50f-122e-4db4-984d-68640daf38b7.par
 #BlueLink8 Road: Animator Repeated Object`Trees (-100, 400)` Trees` , 3D Shapes`AniRep_4d17b50f-122e-4db4-984d-68640daf38b7
 
+add_reference_frame road_stuff_9_Wooden_Post_(Repeating)
+reference_frame_ghosts off
+PARSFILE Roads\AniGroup\AniRep_95b18ab9-70b6-45d1-b036-340b518b4014.par
+#BlueLink9 Road: Animator Repeated Object`Wooden Post (Repeating)` Fences` , 3D Shapes`AniRep_95b18ab9-70b6-45d1-b036-340b518b4014
+
 
 SPECIAL_PARSFILE Animator\Cameras\Camera_36b2ee7b-54ec-4c39-9781-51b289ab39c0.par
-#BlueLink5 Animator: Camera Setup`180 Azm, 5 El, 49 m` Road Reference` , Camera`Camera_36b2ee7b-54ec-4c39-9781-51b289ab39c0
+#BlueLink5 Animator: Camera Setup`Rear View, Road Ref. (Frt. Facing)` Road Reference` , Camera`Camera_36b2ee7b-54ec-4c39-9781-51b289ab39c0
 
 parsfile Roads\3D_Road\Road_20acdffb-81f3-4ae3-9c6f-cdbfe0db69fc.ani
 
 add_reference_frame road_stuff_1_2_Traffic_Cone
 reference_frame_ghosts off
 set_offset_var_yaw 0
-set_offset_var_x 0
+set_offset_var_x -300
 set_offset_var_y -2
 set_offset_var_z 0
 parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
@@ -63,7 +68,7 @@ parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
 add_reference_frame road_stuff_2_2_Traffic_Cone
 reference_frame_ghosts off
 set_offset_var_yaw 180
-set_offset_var_x 0
+set_offset_var_x -300
 set_offset_var_y 2
 set_offset_var_z 0
 parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
@@ -72,7 +77,7 @@ parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
 add_reference_frame road_stuff_3_2_Traffic_Cone
 reference_frame_ghosts off
 set_offset_var_yaw 0
-set_offset_var_x 10
+set_offset_var_x -290
 set_offset_var_y -2
 set_offset_var_z 0
 parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
@@ -81,7 +86,7 @@ parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
 add_reference_frame road_stuff_4_2_Traffic_Cone
 reference_frame_ghosts off
 set_offset_var_yaw 180
-set_offset_var_x 10
+set_offset_var_x -290
 set_offset_var_y 2
 set_offset_var_z 0
 parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
@@ -90,7 +95,7 @@ parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
 add_reference_frame road_stuff_5_2_Traffic_Cone
 reference_frame_ghosts off
 set_offset_var_yaw 0
-set_offset_var_x 20
+set_offset_var_x -280
 set_offset_var_y -2
 set_offset_var_z 0
 parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
@@ -99,7 +104,7 @@ parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
 add_reference_frame road_stuff_6_2_Traffic_Cone
 reference_frame_ghosts off
 set_offset_var_yaw 180
-set_offset_var_x 20
+set_offset_var_x -280
 set_offset_var_y 2
 set_offset_var_z 0
 parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
@@ -108,7 +113,7 @@ parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
 add_reference_frame road_stuff_7_2_Traffic_Cone
 reference_frame_ghosts off
 set_offset_var_yaw 0
-set_offset_var_x 30
+set_offset_var_x -270
 set_offset_var_y -2
 set_offset_var_z 0
 parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
@@ -117,7 +122,7 @@ parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
 add_reference_frame road_stuff_8_2_Traffic_Cone
 reference_frame_ghosts off
 set_offset_var_yaw 180
-set_offset_var_x 30
+set_offset_var_x -270
 set_offset_var_y 2
 set_offset_var_z 0
 parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
@@ -126,7 +131,7 @@ parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
 add_reference_frame road_stuff_9_2_Traffic_Cone
 reference_frame_ghosts off
 set_offset_var_yaw 0
-set_offset_var_x 40
+set_offset_var_x -260
 set_offset_var_y -2
 set_offset_var_z 0
 parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
@@ -135,7 +140,7 @@ parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
 add_reference_frame road_stuff_10_2_Traffic_Cone
 reference_frame_ghosts off
 set_offset_var_yaw 180
-set_offset_var_x 40
+set_offset_var_x -260
 set_offset_var_y 2
 set_offset_var_z 0
 parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
@@ -144,7 +149,7 @@ parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
 add_reference_frame road_stuff_11_2_Traffic_Cone
 reference_frame_ghosts off
 set_offset_var_yaw 0
-set_offset_var_x 50
+set_offset_var_x -250
 set_offset_var_y -2
 set_offset_var_z 0
 parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
@@ -153,7 +158,7 @@ parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
 add_reference_frame road_stuff_12_2_Traffic_Cone
 reference_frame_ghosts off
 set_offset_var_yaw 180
-set_offset_var_x 50
+set_offset_var_x -250
 set_offset_var_y 2
 set_offset_var_z 0
 parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
@@ -162,7 +167,7 @@ parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
 add_reference_frame road_stuff_13_2_Traffic_Cone
 reference_frame_ghosts off
 set_offset_var_yaw 0
-set_offset_var_x 60
+set_offset_var_x -240
 set_offset_var_y -2
 set_offset_var_z 0
 parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
@@ -171,7 +176,7 @@ parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
 add_reference_frame road_stuff_14_2_Traffic_Cone
 reference_frame_ghosts off
 set_offset_var_yaw 180
-set_offset_var_x 60
+set_offset_var_x -240
 set_offset_var_y 2
 set_offset_var_z 0
 parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
@@ -180,7 +185,7 @@ parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
 add_reference_frame road_stuff_15_2_Traffic_Cone
 reference_frame_ghosts off
 set_offset_var_yaw 0
-set_offset_var_x 70
+set_offset_var_x -230
 set_offset_var_y -2
 set_offset_var_z 0
 parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
@@ -189,7 +194,7 @@ parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
 add_reference_frame road_stuff_16_2_Traffic_Cone
 reference_frame_ghosts off
 set_offset_var_yaw 180
-set_offset_var_x 70
+set_offset_var_x -230
 set_offset_var_y 2
 set_offset_var_z 0
 parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
@@ -198,7 +203,7 @@ parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
 add_reference_frame road_stuff_17_2_Traffic_Cone
 reference_frame_ghosts off
 set_offset_var_yaw 180
-set_offset_var_x 100
+set_offset_var_x -200
 set_offset_var_y 1.5
 set_offset_var_z 0
 parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
@@ -207,7 +212,7 @@ parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
 add_reference_frame road_stuff_18_2_Traffic_Cone
 reference_frame_ghosts off
 set_offset_var_yaw 180
-set_offset_var_x 100
+set_offset_var_x -200
 set_offset_var_y 5.5
 set_offset_var_z 0
 parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
@@ -216,7 +221,7 @@ parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
 add_reference_frame road_stuff_19_2_Traffic_Cone
 reference_frame_ghosts off
 set_offset_var_yaw 180
-set_offset_var_x 110
+set_offset_var_x -190
 set_offset_var_y 1.5
 set_offset_var_z 0
 parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
@@ -225,7 +230,7 @@ parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
 add_reference_frame road_stuff_20_2_Traffic_Cone
 reference_frame_ghosts off
 set_offset_var_yaw 180
-set_offset_var_x 110
+set_offset_var_x -190
 set_offset_var_y 5.5
 set_offset_var_z 0
 parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
@@ -234,7 +239,7 @@ parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
 add_reference_frame road_stuff_21_2_Traffic_Cone
 reference_frame_ghosts off
 set_offset_var_yaw 180
-set_offset_var_x 120
+set_offset_var_x -180
 set_offset_var_y 1.5
 set_offset_var_z 0
 parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
@@ -243,7 +248,7 @@ parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
 add_reference_frame road_stuff_22_2_Traffic_Cone
 reference_frame_ghosts off
 set_offset_var_yaw 180
-set_offset_var_x 120
+set_offset_var_x -180
 set_offset_var_y 5.5
 set_offset_var_z 0
 parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
@@ -252,7 +257,7 @@ parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
 add_reference_frame road_stuff_23_2_Traffic_Cone
 reference_frame_ghosts off
 set_offset_var_yaw 0
-set_offset_var_x 150
+set_offset_var_x -150
 set_offset_var_y -2
 set_offset_var_z 0
 parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
@@ -261,7 +266,7 @@ parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
 add_reference_frame road_stuff_24_2_Traffic_Cone
 reference_frame_ghosts off
 set_offset_var_yaw 180
-set_offset_var_x 150
+set_offset_var_x -150
 set_offset_var_y 2
 set_offset_var_z 0
 parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
@@ -270,7 +275,7 @@ parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
 add_reference_frame road_stuff_25_2_Traffic_Cone
 reference_frame_ghosts off
 set_offset_var_yaw 0
-set_offset_var_x 160
+set_offset_var_x -140
 set_offset_var_y -2
 set_offset_var_z 0
 parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
@@ -279,7 +284,7 @@ parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
 add_reference_frame road_stuff_26_2_Traffic_Cone
 reference_frame_ghosts off
 set_offset_var_yaw 180
-set_offset_var_x 160
+set_offset_var_x -140
 set_offset_var_y 2
 set_offset_var_z 0
 parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
@@ -288,7 +293,7 @@ parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
 add_reference_frame road_stuff_27_2_Traffic_Cone
 reference_frame_ghosts off
 set_offset_var_yaw 0
-set_offset_var_x 170
+set_offset_var_x -130
 set_offset_var_y -2
 set_offset_var_z 0
 parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
@@ -297,7 +302,7 @@ parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
 add_reference_frame road_stuff_28_2_Traffic_Cone
 reference_frame_ghosts off
 set_offset_var_yaw 180
-set_offset_var_x 170
+set_offset_var_x -130
 set_offset_var_y 2
 set_offset_var_z 0
 parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
@@ -306,7 +311,7 @@ parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
 add_reference_frame road_stuff_29_2_Traffic_Cone
 reference_frame_ghosts off
 set_offset_var_yaw 0
-set_offset_var_x 180
+set_offset_var_x -120
 set_offset_var_y -2
 set_offset_var_z 0
 parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
@@ -315,7 +320,7 @@ parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
 add_reference_frame road_stuff_30_2_Traffic_Cone
 reference_frame_ghosts off
 set_offset_var_yaw 180
-set_offset_var_x 180
+set_offset_var_x -120
 set_offset_var_y 2
 set_offset_var_z 0
 parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
@@ -324,7 +329,7 @@ parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
 add_reference_frame road_stuff_31_2_Traffic_Cone
 reference_frame_ghosts off
 set_offset_var_yaw 0
-set_offset_var_x 190
+set_offset_var_x -110
 set_offset_var_y -2
 set_offset_var_z 0
 parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
@@ -333,7 +338,7 @@ parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
 add_reference_frame road_stuff_32_2_Traffic_Cone
 reference_frame_ghosts off
 set_offset_var_yaw 180
-set_offset_var_x 190
+set_offset_var_x -110
 set_offset_var_y 2
 set_offset_var_z 0
 parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
@@ -342,7 +347,7 @@ parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
 add_reference_frame road_stuff_33_2_Traffic_Cone
 reference_frame_ghosts off
 set_offset_var_yaw 0
-set_offset_var_x 199
+set_offset_var_x -101
 set_offset_var_y -2
 set_offset_var_z 0
 parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
@@ -351,7 +356,7 @@ parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
 add_reference_frame road_stuff_34_2_Traffic_Cone
 reference_frame_ghosts off
 set_offset_var_yaw 180
-set_offset_var_x 199
+set_offset_var_x -101
 set_offset_var_y 2
 set_offset_var_z 0
 parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
@@ -360,7 +365,7 @@ parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
 add_reference_frame road_stuff_35_2_Traffic_Cone
 reference_frame_ghosts off
 set_offset_var_yaw 0
-set_offset_var_x 200
+set_offset_var_x -100
 set_offset_var_y -2
 set_offset_var_z 0
 parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
@@ -369,7 +374,7 @@ parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
 add_reference_frame road_stuff_36_2_Traffic_Cone
 reference_frame_ghosts off
 set_offset_var_yaw 180
-set_offset_var_x 200
+set_offset_var_x -100
 set_offset_var_y 2
 set_offset_var_z 0
 parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
@@ -378,7 +383,7 @@ parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
 add_reference_frame road_stuff_37_2_Traffic_Cone
 reference_frame_ghosts off
 set_offset_var_yaw 0
-set_offset_var_x 201
+set_offset_var_x -99
 set_offset_var_y -2
 set_offset_var_z 0
 parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
@@ -387,7 +392,7 @@ parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
 add_reference_frame road_stuff_38_2_Traffic_Cone
 reference_frame_ghosts off
 set_offset_var_yaw 180
-set_offset_var_x 201
+set_offset_var_x -99
 set_offset_var_y 2
 set_offset_var_z 0
 parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
@@ -396,7 +401,7 @@ parsfile Animator\STL\Shape_779f3bdc-916c-4cf1-af00-e21db3ccca79.par
 add_reference_frame road_stuff_1_3_Elm:_Summer,_Small
 reference_frame_ghosts off
 set_offset_var_yaw 0
-set_offset_var_x -99.5
+set_offset_var_x -399.5
 set_offset_var_y -33
 set_offset_var_z 0
 parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
@@ -405,7 +410,7 @@ parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
 add_reference_frame road_stuff_2_3_Elm:_Summer,_Small
 reference_frame_ghosts off
 set_offset_var_yaw 180
-set_offset_var_x -81.8
+set_offset_var_x -381.8
 set_offset_var_y 35.55
 set_offset_var_z 0
 parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
@@ -414,7 +419,7 @@ parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
 add_reference_frame road_stuff_3_3_Elm:_Summer,_Small
 reference_frame_ghosts off
 set_offset_var_yaw 0
-set_offset_var_x -52.2
+set_offset_var_x -352.2
 set_offset_var_y -27.6
 set_offset_var_z 0
 parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
@@ -423,7 +428,7 @@ parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
 add_reference_frame road_stuff_4_3_Elm:_Summer,_Small
 reference_frame_ghosts off
 set_offset_var_yaw 180
-set_offset_var_x -37.6
+set_offset_var_x -337.6
 set_offset_var_y 32.1
 set_offset_var_z 0
 parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
@@ -432,7 +437,7 @@ parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
 add_reference_frame road_stuff_5_3_Elm:_Summer,_Small
 reference_frame_ghosts off
 set_offset_var_yaw 0
-set_offset_var_x -24.1
+set_offset_var_x -324.1
 set_offset_var_y -30.75
 set_offset_var_z 0
 parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
@@ -441,7 +446,7 @@ parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
 add_reference_frame road_stuff_6_3_Elm:_Summer,_Small
 reference_frame_ghosts off
 set_offset_var_yaw 180
-set_offset_var_x -9.1
+set_offset_var_x -309.1
 set_offset_var_y 34.95
 set_offset_var_z 0
 parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
@@ -450,7 +455,7 @@ parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
 add_reference_frame road_stuff_7_3_Elm:_Summer,_Small
 reference_frame_ghosts off
 set_offset_var_yaw 0
-set_offset_var_x 38.4
+set_offset_var_x -261.6
 set_offset_var_y -22.8
 set_offset_var_z 0
 parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
@@ -459,7 +464,7 @@ parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
 add_reference_frame road_stuff_8_3_Elm:_Summer,_Small
 reference_frame_ghosts off
 set_offset_var_yaw 180
-set_offset_var_x 52.3
+set_offset_var_x -247.7
 set_offset_var_y 36.45
 set_offset_var_z 0
 parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
@@ -468,7 +473,7 @@ parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
 add_reference_frame road_stuff_9_3_Elm:_Summer,_Small
 reference_frame_ghosts off
 set_offset_var_yaw 0
-set_offset_var_x 67
+set_offset_var_x -233
 set_offset_var_y -30.9
 set_offset_var_z 0
 parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
@@ -477,7 +482,7 @@ parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
 add_reference_frame road_stuff_10_3_Elm:_Summer,_Small
 reference_frame_ghosts off
 set_offset_var_yaw 180
-set_offset_var_x 83.6
+set_offset_var_x -216.4
 set_offset_var_y 34.2
 set_offset_var_z 0
 parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
@@ -486,7 +491,7 @@ parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
 add_reference_frame road_stuff_11_3_Elm:_Summer,_Small
 reference_frame_ghosts off
 set_offset_var_yaw 0
-set_offset_var_x 95.5
+set_offset_var_x -204.5
 set_offset_var_y -24.75
 set_offset_var_z 0
 parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
@@ -495,7 +500,7 @@ parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
 add_reference_frame road_stuff_12_3_Elm:_Summer,_Small
 reference_frame_ghosts off
 set_offset_var_yaw 180
-set_offset_var_x 110.6
+set_offset_var_x -189.4
 set_offset_var_y 24
 set_offset_var_z 0
 parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
@@ -504,7 +509,7 @@ parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
 add_reference_frame road_stuff_13_3_Elm:_Summer,_Small
 reference_frame_ghosts off
 set_offset_var_yaw 0
-set_offset_var_x 128.7
+set_offset_var_x -171.3
 set_offset_var_y -32.1
 set_offset_var_z 0
 parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
@@ -513,7 +518,7 @@ parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
 add_reference_frame road_stuff_14_3_Elm:_Summer,_Small
 reference_frame_ghosts off
 set_offset_var_yaw 180
-set_offset_var_x 142.8
+set_offset_var_x -157.2
 set_offset_var_y 35.1
 set_offset_var_z 0
 parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
@@ -522,7 +527,7 @@ parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
 add_reference_frame road_stuff_15_3_Elm:_Summer,_Small
 reference_frame_ghosts off
 set_offset_var_yaw 0
-set_offset_var_x 156
+set_offset_var_x -144
 set_offset_var_y -32.85
 set_offset_var_z 0
 parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
@@ -531,7 +536,7 @@ parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
 add_reference_frame road_stuff_16_3_Elm:_Summer,_Small
 reference_frame_ghosts off
 set_offset_var_yaw 180
-set_offset_var_x 172.4
+set_offset_var_x -127.6
 set_offset_var_y 22.8
 set_offset_var_z 0
 parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
@@ -540,7 +545,7 @@ parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
 add_reference_frame road_stuff_17_3_Elm:_Summer,_Small
 reference_frame_ghosts off
 set_offset_var_yaw 0
-set_offset_var_x 188.5
+set_offset_var_x -111.5
 set_offset_var_y -24.45
 set_offset_var_z 0
 parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
@@ -549,7 +554,7 @@ parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
 add_reference_frame road_stuff_18_3_Elm:_Summer,_Small
 reference_frame_ghosts off
 set_offset_var_yaw 180
-set_offset_var_x 203
+set_offset_var_x -97
 set_offset_var_y 33
 set_offset_var_z 0
 parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
@@ -558,7 +563,7 @@ parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
 add_reference_frame road_stuff_19_3_Elm:_Summer,_Small
 reference_frame_ghosts off
 set_offset_var_yaw 0
-set_offset_var_x 217.1
+set_offset_var_x -82.9
 set_offset_var_y -28.95
 set_offset_var_z 0
 parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
@@ -567,7 +572,7 @@ parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
 add_reference_frame road_stuff_20_3_Elm:_Summer,_Small
 reference_frame_ghosts off
 set_offset_var_yaw 180
-set_offset_var_x 233.8
+set_offset_var_x -66.2
 set_offset_var_y 28.5
 set_offset_var_z 0
 parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
@@ -576,7 +581,7 @@ parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
 add_reference_frame road_stuff_21_3_Elm:_Summer,_Small
 reference_frame_ghosts off
 set_offset_var_yaw 0
-set_offset_var_x 248.3
+set_offset_var_x -51.7
 set_offset_var_y -36
 set_offset_var_z 0
 parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
@@ -585,7 +590,7 @@ parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
 add_reference_frame road_stuff_22_3_Elm:_Summer,_Small
 reference_frame_ghosts off
 set_offset_var_yaw 180
-set_offset_var_x 262.4
+set_offset_var_x -37.6
 set_offset_var_y 24.9
 set_offset_var_z 0
 parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
@@ -594,7 +599,7 @@ parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
 add_reference_frame road_stuff_23_3_Elm:_Summer,_Small
 reference_frame_ghosts off
 set_offset_var_yaw 0
-set_offset_var_x 277.3
+set_offset_var_x -22.7
 set_offset_var_y -26.7
 set_offset_var_z 0
 parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
@@ -603,7 +608,7 @@ parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
 add_reference_frame road_stuff_24_3_Elm:_Summer,_Small
 reference_frame_ghosts off
 set_offset_var_yaw 180
-set_offset_var_x 293.7
+set_offset_var_x -6.3
 set_offset_var_y 28.35
 set_offset_var_z 0
 parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
@@ -612,7 +617,7 @@ parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
 add_reference_frame road_stuff_25_3_Elm:_Summer,_Small
 reference_frame_ghosts off
 set_offset_var_yaw 0
-set_offset_var_x 307
+set_offset_var_x 7
 set_offset_var_y -34.65
 set_offset_var_z 0
 parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
@@ -621,7 +626,7 @@ parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
 add_reference_frame road_stuff_26_3_Elm:_Summer,_Small
 reference_frame_ghosts off
 set_offset_var_yaw 180
-set_offset_var_x 320.6
+set_offset_var_x 20.6
 set_offset_var_y 35.85
 set_offset_var_z 0
 parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
@@ -630,7 +635,7 @@ parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
 add_reference_frame road_stuff_27_3_Elm:_Summer,_Small
 reference_frame_ghosts off
 set_offset_var_yaw 0
-set_offset_var_x 336.7
+set_offset_var_x 36.7
 set_offset_var_y -31.35
 set_offset_var_z 0
 parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
@@ -639,7 +644,7 @@ parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
 add_reference_frame road_stuff_28_3_Elm:_Summer,_Small
 reference_frame_ghosts off
 set_offset_var_yaw 180
-set_offset_var_x 350.5
+set_offset_var_x 50.5
 set_offset_var_y 31.95
 set_offset_var_z 0
 parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
@@ -648,7 +653,7 @@ parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
 add_reference_frame road_stuff_29_3_Elm:_Summer,_Small
 reference_frame_ghosts off
 set_offset_var_yaw 0
-set_offset_var_x 367.2
+set_offset_var_x 67.2
 set_offset_var_y -31.8
 set_offset_var_z 0
 parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
@@ -657,7 +662,7 @@ parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
 add_reference_frame road_stuff_30_3_Elm:_Summer,_Small
 reference_frame_ghosts off
 set_offset_var_yaw 180
-set_offset_var_x 381.6
+set_offset_var_x 81.6
 set_offset_var_y 27.45
 set_offset_var_z 0
 parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
@@ -666,10 +671,46 @@ parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
 add_reference_frame road_stuff_31_3_Elm:_Summer,_Small
 reference_frame_ghosts off
 set_offset_var_yaw 0
-set_offset_var_x 397.8
+set_offset_var_x 97.8
 set_offset_var_y -28.65
 set_offset_var_z 0
 parsfile Animator\STL\Shape_a1860187-937f-4a26-bbf6-484e7ce439e3.par
+
+
+add_reference_frame road_stuff_1_4_Fences:_Wooden_Post
+reference_frame_ghosts off
+set_offset_var_yaw 0
+set_offset_var_x -286.55
+set_offset_var_y 43
+set_offset_var_z 0
+parsfile Animator\STL\Shape_2600c701-0800-4c91-b5ae-80f3fdb2e390.par
+
+
+add_reference_frame road_stuff_2_4_Fences:_Wooden_Post
+reference_frame_ghosts off
+set_offset_var_yaw 0
+set_offset_var_x -284.112
+set_offset_var_y 43
+set_offset_var_z 0
+parsfile Animator\STL\Shape_2600c701-0800-4c91-b5ae-80f3fdb2e390.par
+
+
+add_reference_frame road_stuff_3_4_Fences:_Wooden_Post
+reference_frame_ghosts off
+set_offset_var_yaw 0
+set_offset_var_x -281.674
+set_offset_var_y 43
+set_offset_var_z 0
+parsfile Animator\STL\Shape_2600c701-0800-4c91-b5ae-80f3fdb2e390.par
+
+
+add_reference_frame road_stuff_4_4_Fences:_Wooden_Post
+reference_frame_ghosts off
+set_offset_var_yaw 0
+set_offset_var_x -279.236
+set_offset_var_y 43
+set_offset_var_z 0
+parsfile Animator\STL\Shape_2600c701-0800-4c91-b5ae-80f3fdb2e390.par
 
 
 #EMBEDDED_NOTES
@@ -685,7 +726,7 @@ LOG_ENTRY Used Dataset: Road: 3D Surface (All Properties); { Flat Test Pads } DL
 #DataSet : DLC, Mu = 0.5
 #Category: Flat Test Pads
 #FileID  : Road_20acdffb-81f3-4ae3-9c6f-cdbfe0db69fc
-#Modified: 01-21-2022 13:48:29
+#Modified: 07-09-2026 10:11:14
 #Product : CarSim 2024.1
 #DataVer : 2024.1
 #VehCode 3D Road

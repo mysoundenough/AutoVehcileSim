@@ -21,4 +21,10 @@
 2026-07-08T10:10:41 (Info):    No install ID found at regkey "Software\Mechanical Simulation Corp\CarSim 2024.1".
 2026-07-08T10:10:41 (Info):    No install ID found at regkey "Software\Mechanical Simulation Corp\CarSim 2024.1".
 2026-07-08T10:10:44 (Info):    Initial setup took 2.95 seconds.
-2026-07-08T10:10:44 (Info):    Auto updates too
+2026-07-08T10:10:44 (Info):    Auto updates took 0.00 seconds.
+2026-07-08T10:10:45 (Info):    Loaded last screen in 0.44 seconds.
+2026-07-08T10:10:45 (Info):    Total init time 44.89 seconds.
+2026-07-08T14:41:32 (Info):    Running math model for: { Scene Import } Atlas: 3D Highway Exit (Basic)
+2026-07-08T14:41:33 (Info):    Math model run completed.
+2026-07-09T10:11:36 (Info):    6314 index cache entries written in 0.062s
+2026-07-09T10:11:39 (Info):    Exiting application...

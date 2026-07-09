@@ -3,10 +3,10 @@ PARSFILE
 ! Utility to calculate road and path coordinates for visualization
 ! Revision 222209, March 18, 2024
 
-TITLE Straight East <Straight>
+TITLE DLC, Mu = 0.5 <Flat Test Pads>
 
 ! Echo: Roads\3D_Road\Road_20acdffb-81f3-4ae3-9c6f-cdbfe0db69fc_echo.par
-! This run was made 16:47 on May 08, 2026.
+! This run was made 10:11 on July 09, 2026.
 
 !------------------------------------------------------------------------------------
 ! SYSTEM PARAMETERS (SIMULATION OPTIONS)
@@ -16,10 +16,6 @@ TITLE Straight East <Straight>
 
 ID_EVENT            0 ; - ! ID number that can be assigned to the current event
 ID_RUN              0 ; - ! ID number that can be assigned to a simulation run
-IPRINT              1 ! Print interval: output time step TSTEP_WRITE = TSTEP*IPRINT;
-                      ! set IPRINT = 0 for debug (TSTEP_WRITE = T_DT) [L]
-! NOUT_ANI_LIVE     3 ! Number of variables sent live to animators (read only)
-! NOUT_WRITE        3 ! Number of output variables written to file (read only)
 OPT_ALL_WRITE       0 ! Write all outputs to file? 1 -> all, 0 -> only activated
                       ! outputs
 OPT_ECHO_DEFAULT    2 ! Show values that were not set by reading from a file? 1 ->
@@ -31,7 +27,6 @@ OPT_WRITE           0 ; - ! Write outputs when T > TSTART_WRITE? 1 -> write, 0 -
                       ! don't write; change this using VS Commands or Events
 TSTART           8.96 ; s ! Starting time for the simulation clock
 TSTEP            0.04 ; s ! Time step between calculations [L]
-! TSTEP_WRITE    0.04 ; s ! CALC -- Time interval in output time-series file
 ! T_DT           0.04 ; s ! CALC -- Time increment between calculations
 
 !------------------------------------------------------------------------------------
@@ -50,16 +45,35 @@ TSTEP            0.04 ; s ! Time step between calculations [L]
                       ! and moving objects (read only)
 DEFINE_PATHS        1 ! VS Command to install reference paths
 
-OPT_PATH_START(1)   0 ! Set initial heading and X-Y coordinates of the path? 0 -> no
+OPT_PATH_START(1)   1 ! Set initial heading and X-Y coordinates of the path? 0 -> no
                       ! (legacy, using table data), 1 -> yes
 OPT_PATH_LOOP(1)    0 ! Is this path looped? 0 -> no, 1 -> yes
-SPATH_START(1)      0 ; m ! Station at the start of this path
+X_PATH_START(1)  -300 ; m ! Global X coordinate at the start of this path
 
-NSEGMENTS(1)        1 ! Number of segments in this path
+NSEGMENTS(1)        5 ! Number of segments in this path
 SEGMENT_TYPE(1,1)   0 ! 0 -> straight, 1 -> table, 2 -> rho, 3 -> radius, 4 -> cloth
-SEGMENT_LENGTH(1,1) 100 ; m ! Segment length
-! S_SEGMENT_END(1,1) 100 ; m ! CALC -- Station at end of this segment
-! X_SEGMENT_END(1,1) 100 ; m ! CALC -- X coordinate at end of segment
+SEGMENT_LENGTH(1,1) 200 ; m ! Segment length
+! S_SEGMENT_END(1,1) 200 ; m ! CALC -- Station at end of this segment
+! X_SEGMENT_END(1,1) -100 ; m ! CALC -- X coordinate at end of segment
+
+SEGMENT_TYPE(1,2)   0 ! 0 -> straight, 1 -> table, 2 -> rho, 3 -> radius, 4 -> cloth
+SEGMENT_LENGTH(1,2) 50 ; m ! Segment length
+! S_SEGMENT_END(1,2) 250 ; m ! CALC -- Station at end of this segment
+! X_SEGMENT_END(1,2) -50 ; m ! CALC -- X coordinate at end of segment
+
+SEGMENT_TYPE(1,3)   0 ! 0 -> straight, 1 -> table, 2 -> rho, 3 -> radius, 4 -> cloth
+SEGMENT_LENGTH(1,3) 50 ; m ! Segment length
+! S_SEGMENT_END(1,3) 300 ; m ! CALC -- Station at end of this segment
+
+SEGMENT_TYPE(1,4)   0 ! 0 -> straight, 1 -> table, 2 -> rho, 3 -> radius, 4 -> cloth
+SEGMENT_LENGTH(1,4) 50 ; m ! Segment length
+! S_SEGMENT_END(1,4) 350 ; m ! CALC -- Station at end of this segment
+! X_SEGMENT_END(1,4) 50 ; m ! CALC -- X coordinate at end of segment
+
+SEGMENT_TYPE(1,5)   0 ! 0 -> straight, 1 -> table, 2 -> rho, 3 -> radius, 4 -> cloth
+SEGMENT_LENGTH(1,5) 1000 ; m ! Segment length
+! S_SEGMENT_END(1,5) 1350 ; m ! CALC -- Station at end of this segment
+! X_SEGMENT_END(1,5) 1050 ; m ! CALC -- X coordinate at end of segment
 
 !------------------------------------------------------------------------------------
 ! ROAD SURFACES
@@ -74,7 +88,6 @@ SEGMENT_LENGTH(1,1) 100 ; m ! Segment length
 
 ! NROAD             1 ! Number of installed road surfaces (read only)
 DEFINE_ROADS        1 ! VS Command to define road surfaces
-CURRENT_ROAD_ID     1 ! ROAD_ID for the vehicle during initialization [I]
 
 ROAD_PATH_ID(1)     1 ! PATH_ID of reference path used for this road [I]
 

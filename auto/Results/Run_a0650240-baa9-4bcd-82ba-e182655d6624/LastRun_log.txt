@@ -1,4 +1,4 @@
-Run made by CarSim 2024.1 at 13:42 on July 07, 2026.
+Run made by CarSim 2024.1 at 14:41 on July 08, 2026.
 Revision 222209, March 18, 2024
 Started with simfile: simfile.sim
 
@@ -475,7 +475,7 @@ Used Dataset: Generic Group of Links; { Roads and Paths } 3D Highway Exit, I-94 
  Atlas: 3D Highway Exit (Basic) <Scene Import>
 Used Dataset: CarSim Run Control; { Scene Import } Atlas: 3D Highway Exit (Basic)
 
-Time to read input = 0.439265
+Time to read input = 0.299104
 Function F_REB_STOP_TABLE(1,1) extrapolated (out of range HIGH) for X = 0 mm at T = 0
 Function F_JNC_STOP_TABLE(1,1) extrapolated (out of range LOW) for X = 0 mm at T = 0
 Function F_REB_STOP_TABLE(1,2) extrapolated (out of range HIGH) for X = 0 mm at T = 0
@@ -496,5 +496,5 @@ Function L_RELAX_X_FZ_TABLE(2,2) extrapolated (out of range HIGH) for X = 1.0364
 
 Run stopped at t = 44.201. Station limit reached: driver station = 1500
 
-Computational time ratio: RTIME = 0.100642 (real time)/(simulation time)
+Computational time ratio: RTIME = 0.102048 (real time)/(simulation time)
 

@@ -9,7 +9,7 @@ CATEGORY Scene Import
 TITLE Atlas: 3D Highway Exit (Basic) <Scene Import>
 
 ! Echo: Results\Run_a0650240-baa9-4bcd-82ba-e182655d6624\LastRun_echo.par
-! This run was made 13:43 on July 07, 2026.
+! This run was made 14:41 on July 08, 2026.
 
 !------------------------------------------------------------------------------------
 ! SYSTEM PARAMETERS (SIMULATION OPTIONS)
@@ -78,7 +78,7 @@ OPT_VS_FILETYPE     2 ! Type of output file: 1-> 64-bit VS, 2-> 32-bit VS, 3 ->
                       ! 32-bit ERD, 4 -> text CSV (no binary), 0 -> no output file
 OPT_WRITE           1 ; - ! [D] Write outputs when T > TSTART_WRITE? 1 -> write, 0
                       ! -> don't write; change this using VS Commands or Events
-! RTIME  0.1006424562 ; - ! CALC -- Computational efficiency (sec/sim. sec)
+! RTIME  0.1020477714 ; - ! CALC -- Computational efficiency (sec/sim. sec)
 TSTART         44.201 ; s ! Starting time for the simulation clock
 TSTART_T_EVENT      0 ; s ! [D] Event clock reset time: T_EVENT = T - TSTART_T_EVENT
 TSTART_WRITE   44.201 ; s ! Start writing outputs when this time is reached
