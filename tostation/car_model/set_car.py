@@ -1,0 +1,400 @@
+import pandas as pd
+from pathlib import Path
+
+"""
+CarSim 单场景坑洼仿真 - 正确引用Profile文件
+"""
+import os,sys
+from pathlib import Path
+sys.path.insert(0, str(Path.cwd().parent))
+import stat
+import re
+import shutil
+
+from datetime import timedelta
+import matplotlib.pyplot as plt
+from pathlib import Path
+import shutil
+from pathlib import Path
+import shutil
+
+
+# ========== 配置参数 ==========
+CARSIM_DB_DIR = r"C:\workspace\AutoVehcileSim\auto"
+WORK_DIR = r".\Results"
+
+
+VEHICLE_TYPE = "normal_vehicle"
+RUN_ALL_DIR = r"C:\workspace\AutoVehcileSim\auto\Results\Run_6f6dddbf-6f3d-45dd-95c6-f5662819b1e8"
+
+
+def set_vehicle_v(par_path, v):
+    # change v
+    if not os.path.exists(par_path):
+        print("Proc v not found.")
+        raise FileNotFoundError
+    # 读取源文件并替换
+    with open(par_path, "r", encoding="utf-8") as f:
+        content = f.read()
+    # 替换 TC_PWR_HYBRID_AV 后面的数字
+    new_content = content
+    new_content = re.sub(r'\*SPEED\s+[\d.-]+', f'*SPEED {v}', content, flags=re.MULTILINE)
+    # 保存新文件
+    with open(par_path, "w", encoding="utf-8") as f:
+        f.write(new_content)
+    f.close()
+
+def modify_power_data(par_path: str, value: float, data: list):
+    print("change power file:" + par_path)
+    try:
+        # 1. 读取文件
+        with open(par_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+
+        # 2. 匹配阻尼表格区域
+        pattern = re.compile(
+            r"(PWR_DRV_THROTTLE_TABLE LINEAR\n)(.*?)(ENDTABLE)",
+            re.DOTALL
+        )
+
+        match = pattern.search(content)
+        if not match:
+            raise ValueError("未找到 PWR_DRV_THROTTLE_TABLE LINEAR 减震数据")
+
+        # 3. 逐行修改阻尼力
+        table_lines = match.group(2).strip().splitlines()
+        new_lines = []
+
+        for i, line in enumerate(table_lines):
+            line = line.strip()
+            if not line or ',' not in line:
+                new_lines.append(line)
+                continue
+
+            # 拆分速度、力
+            vel_str, force_str = line.split(',', 1)
+            vel = vel_str.strip()
+            force = float(force_str.strip())
+
+            # 按比例缩放
+            if value == 1:
+                vel = data[i][0]
+                new_force = data[i][1]
+                if vel.is_integer():
+                    vel = int(vel)
+            else:
+                new_force = force * value
+
+            # 保持格式（整数/小数都兼容）
+            if new_force.is_integer():
+                new_force = int(new_force)
+
+            new_lines.append(f"{vel}, {new_force}")
+
+        # 4. 替换回文件内容
+        new_table = "\n".join(new_lines)
+        new_content = pattern.sub(
+            match.group(1) + new_table + '\n' + match.group(3),
+            content
+        )
+
+        # 5. 保存文件
+        with open(par_path, 'w', encoding='utf-8') as f:
+            f.write(new_content)
+        f.close()
+
+        print(f"减震器阻尼修改成功: {par_path}, 缩放比例 = {value}")
+
+    except Exception as e:
+        print(f"修改减震器失败: {str(e)}")
+        raise FileNotFoundError("Simfile not found.")
+
+def set_vehicle_param(
+                    par_path,
+                    front_spring_rate: float = None,
+                    shock_force_rate: float = None,
+                    shock_force_data: list = None,
+                    power_delay_rate: float = None,
+                    power_rate: float = None,
+                    power_data: list = None,
+                    user_speed: float = None):
+        
+    if front_spring_rate is not None:
+        modify_spring_rate(par_path, "", front_spring_rate)
+    if shock_force_rate is not None:
+        modify_shock_force(par_path, shock_force_rate, shock_force_data)
+    if power_data is not None:
+        modify_power_data(par_path, power_rate, power_data)
+    if power_delay_rate is not None:
+        modify_power_delay(par_path, "", power_delay_rate)
+
+    print("vehicle param change done ---")
+
+def modify_power_delay(par_path: str, param_name: str, value: float):
+    print(par_path)
+    if not os.path.exists(par_path):
+        print("Simfile not found.")
+        raise FileNotFoundError
+    # 读取源文件并替换
+    with open(par_path, "r", encoding="utf-8") as f:
+        content = f.read()
+    # 替换 TC_PWR_HYBRID_AV 后面的数字
+    new_content = content
+    new_content = re.sub(r'^\s*TC_PWR_HYBRID_AV\s+[\d.-]+\s*$', f'TC_PWR_HYBRID_AV {value}', content, flags=re.MULTILINE)
+    # 保存新文件
+    with open(par_path, "w", encoding="utf-8") as f:
+        f.write(new_content)
+    f.close()
+
+def set_motor_power_delay_param(par_path: str, power_delay_rate: float):
+    print(par_path)
+    if not os.path.exists(par_path):
+        print("Simfile not found.")
+        raise FileNotFoundError
+    # 读取源文件并替换
+    with open(par_path, "r", encoding="utf-8") as f:
+        content = f.read()
+    # 替换 TC_MOTOR 0.05 后面的数字
+    new_content = content
+    new_content = re.sub(r'(^\s*TC_MOTOR\s+)([\d.-]+)(\s*)$', f'\nTC_MOTOR {power_delay_rate}', content, flags=re.MULTILINE)
+    # 保存新文件
+    with open(par_path, "w", encoding="utf-8", newline='') as f:
+        f.write(new_content)
+    f.close()
+
+def modify_power_data(par_path: str, value: float, data: list):
+    print("change power file:" + par_path)
+    try:
+        # 1. 读取文件
+        with open(par_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+
+        # 2. 匹配阻尼表格区域
+        pattern = re.compile(
+            r"(PWR_DRV_THROTTLE_TABLE LINEAR\n)(.*?)(ENDTABLE)",
+            re.DOTALL
+        )
+
+        match = pattern.search(content)
+        if not match:
+            raise ValueError("未找到 PWR_DRV_THROTTLE_TABLE LINEAR 减震数据")
+
+        # 3. 逐行修改阻尼力
+        table_lines = match.group(2).strip().splitlines()
+        new_lines = []
+
+        for i, line in enumerate(table_lines):
+            line = line.strip()
+            if not line or ',' not in line:
+                new_lines.append(line)
+                continue
+
+            # 拆分速度、力
+            vel_str, force_str = line.split(',', 1)
+            vel = vel_str.strip()
+            force = float(force_str.strip())
+
+            # 按比例缩放
+            if value == 1:
+                vel = data[i][0]
+                new_force = data[i][1]
+                if vel.is_integer():
+                    vel = int(vel)
+            else:
+                new_force = force * value
+
+            # 保持格式（整数/小数都兼容）
+            if new_force.is_integer():
+                new_force = int(new_force)
+
+            new_lines.append(f"{vel}, {new_force}")
+
+        # 4. 替换回文件内容
+        new_table = "\n".join(new_lines)
+        new_content = pattern.sub(
+            match.group(1) + new_table + '\n' + match.group(3),
+            content
+        )
+
+        # 5. 保存文件
+        with open(par_path, 'w', encoding='utf-8') as f:
+            f.write(new_content)
+        f.close()
+
+        print(f"减震器阻尼修改成功: {par_path}, 缩放比例 = {value}")
+
+    except Exception as e:
+        print(f"修改减震器失败: {str(e)}")
+        raise FileNotFoundError("Simfile not found.")
+
+def modify_spring_rate(par_path: str, param_name: str, value: float):
+    print(par_path)
+    if not os.path.exists(par_path):
+        print("Simfile not found.")
+        raise FileNotFoundError
+    # 读取源文件并替换
+    with open(par_path, "r", encoding="utf-8") as f:
+        content = f.read()
+    # 替换 *KSPRING_L 后面的数字
+    new_content = content
+    new_content = re.sub(r'\**KSPRING_L\s+[\d.-]+', f"*KSPRING_L {value}", new_content)
+    new_content = re.sub(r'^\s*FS_COMP_COEFFICIENT\s+[\d.-]+\s*$', f'FS_COMP_COEFFICIENT {value}', new_content, flags=re.MULTILINE)
+    new_content = re.sub(r'^\s*FS_EXT_COEFFICIENT\s+[\d.-]+\s*$', f'FS_EXT_COEFFICIENT {value}', new_content, flags=re.MULTILINE)
+    # 保存新文件
+    with open(par_path, "w", encoding="utf-8") as f:
+        f.write(new_content)
+    f.close()
+
+def modify_shock_force(par_path: str, value: float, data: list):
+    """
+    修改 CarSim 减震器阻尼力表格（按比例缩放）
+    :param par_path: 减震器 .par 文件完整路径
+    :param param_name: 固定传 "FD_TABLE" 即可
+    :param value: 缩放比例（如 1.0 不变，0.5 变软，1.5 变硬）
+    """
+    try:
+        # 1. 读取文件
+        with open(par_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+
+        # 2. 匹配阻尼表格区域
+        pattern = re.compile(
+            r"(FD_TABLE SPLINE\n)(.*?)(ENDTABLE)",
+            re.DOTALL
+        )
+
+        match = pattern.search(content)
+        if not match:
+            raise ValueError("未找到 FD_TABLE SPLINE 减震数据")
+
+        # 3. 逐行修改阻尼力
+        table_lines = match.group(2).strip().splitlines()
+        new_lines = []
+
+        for i, line in enumerate(table_lines):
+            line = line.strip()
+            if not line or ',' not in line:
+                new_lines.append(line)
+                continue
+
+            # 拆分速度、力
+            vel_str, force_str = line.split(',', 1)
+            vel = vel_str.strip()
+            force = float(force_str.strip())
+
+            # 按比例缩放
+            if value == 1:
+                vel = data[i][0]
+                new_force = data[i][1]
+                if vel.is_integer():
+                    vel = int(vel)
+            else:
+                new_force = force * value
+
+            # 保持格式（整数/小数都兼容）
+            if new_force.is_integer():
+                new_force = int(new_force)
+
+            new_lines.append(f"{vel}, {new_force}")
+
+        # 4. 替换回文件内容
+        new_table = "\n".join(new_lines)
+        new_content = pattern.sub(
+            rf"\1{new_table}\n\3",
+            content
+        )
+
+        # 5. 保存文件
+        with open(par_path, 'w', encoding='utf-8') as f:
+            f.write(new_content)
+        f.close()
+
+        print(f"减震器阻尼修改成功: {par_path}, 缩放比例 = {value}")
+
+    except Exception as e:
+        print(f"修改减震器失败: {str(e)}")
+        raise FileNotFoundError("Simfile not found.")
+
+
+def add_car(car_type='E68', fk=None, rk=None, fc=None, rc=None, dt=None, T=None):
+
+    if car_type == "E68":
+        # 循环修改参数
+        f_shock_force_data_all = [[[-1030,-7100],[-520,-5652],[-390,-5283],[-260,-4822],[-130,-3488],[-50,-836],[0,0],[50,405],[130,977],[260,1697],[390,2157],[520,2584],[1030,3723]],
+                                [[-1030,-7031],[-520,-5502],[-390,-5094],[-260,-4604],[-130,-3251],[-50,-831],[0,0],[50,374],[130,950],[260,1547],[390,1998],[520,2405],[1030,3668]],
+                                [[-1030,-6876],[-520,-5399],[-390,-4972],[-260,-4466],[-130,-2946],[-50,-803],[0,0],[50,370],[130,911],[260,1430],[390,1873],[520,2295],[1030,3580]],
+                                [[-1030,-6493],[-520,-5307],[-390,-4908],[-260,-4351],[-130,-2578],[-50,-768],[0,0],[50,368],[130,879],[260,1333],[390,1756],[520,2188],[1030,3449]],
+                                [[-1030,-6050],[-520,-5193],[-390,-4812],[-260,-4198],[-130,-2345],[-50,-733],[0,0],[50,367],[130,852],[260,1248],[390,1644],[520,2059],[1030,3250]],
+                                [[-1030,-5678],[-520,-4927],[-390,-4561],[-260,-4058],[-130,-2101],[-50,-732],[0,0],[50,366],[130,719],[260,1040],[390,1425],[520,1790],[1030,2714]],
+                                [[-1030,-5307],[-520,-4424],[-390,-4120],[-260,-3735],[-130,-1899],[-50,-721],[0,0],[50,364],[130,671],[260,971],[390,1331],[520,1571],[1030,2472]],
+                                [[-1030,-4973],[-520,-3849],[-390,-3395],[-260,-2896],[-130,-1614],[-50,-705],[0,0],[50,363],[130,796],[260,1159],[390,1533],[520,1964],[1030,3046]],
+                                [[-1030,-4575],[-520,-3240],[-390,-2867],[-260,-2314],[-130,-1449],[-50,-661],[0,0],[50,354],[130,568],[260,868],[390,1169],[520,1367],[1030,2232]],
+                                [[-1030,-4105],[-520,-2445],[-390,-2088],[-260,-1660],[-130,-1169],[-50,-458],[0,0],[50,337],[130,975],[260,1764],[390,2228],[520,2699],[1030,3742]],
+                                [[-1030,-3708],[-520,-2067],[-390,-1700],[-260,-1335],[-130,-940],[-50,-349],[0,0],[50,320],[130,513],[260,809],[390,1038],[520,1233],[1030,2085]],
+                                [[-1030,-3192],[-520,-1590],[-390,-1265],[-260,-959],[-130,-636],[-50,-233],[0,0],[50,312],[130,467],[260,700],[390,884],[520,1069],[1030,1893]],
+                                [[-1030,-2890],[-520,-1411],[-390,-1107],[-260,-833],[-130,-553],[-50,-222],[0,0],[50,311],[130,463],[260,687],[390,867],[520,1044],[1030,1862]],
+                                [[-1030,-2671],[-520,-1290],[-390,-1013],[-260,-759],[-130,-513],[-50,-215],[0,0],[50,302],[130,464],[260,721],[390,917],[520,1109],[1030,1955]]]
+        
+        r_shock_force_data_all = [[[-1030,-6255],[-520,-5184],[-390,-4850],[-260,-4416],[-130,-3354],[-50,-1629],[0,0],[50,470],[130,1235],[260,1702],[390,1897],[520,2046],[1030,2605]],
+                                [[-1030,-6081],[-520,-5053],[-390,-4729],[-260,-4275],[-130,-2983],[-50,-1407],[0,0],[50,467],[130,1187],[260,1688],[390,1863],[520,2014],[1030,2589]],
+                                [[-1030,-5830],[-520,-4923],[-390,-4577],[-260,-4087],[-130,-2621],[-50,-1358],[0,0],[50,444],[130,1105],[260,1583],[390,1809],[520,1976],[1030,2560]],
+                                [[-1030,-5494],[-520,-4849],[-390,-4505],[-260,-3991],[-130,-2510],[-50,-1339],[0,0],[50,434],[130,1002],[260,1575],[390,1796],[520,1958],[1030,2540]],
+                                [[-1030,-5205],[-520,-4565],[-390,-4357],[-260,-3819],[-130,-2264],[-50,-1204],[0,0],[50,428],[130,950], [260,1447],[390,1749],[520,1927],[1030,2529]],
+                                [[-1030,-4873],[-520,-4233],[-390,-4036],[-260,-3611],[-130,-2028],[-50,-999], [0,0],[50,398],[130,939], [260,1319],[390,1711],[520,1898],[1030,2512]],
+                                [[-1030,-4495],[-520,-3828],[-390,-3615],[-260,-3297],[-130,-1760],[-50,-953], [0,0],[50,385],[130,840], [260,1208],[390,1650],[520,1876],[1030,2505]],
+                                [[-1030,-4092],[-520,-3370],[-390,-3113],[-260,-2606],[-130,-1448],[-50,-748], [0,0],[50,382],[130,702], [260,1077],[390,1464],[520,1827],[1030,2482]],
+                                [[-1030,-3753],[-520,-2916],[-390,-2563],[-260,-2151],[-130,-1262],[-50,-634], [0,0],[50,379],[130,673], [260,997], [390,1384],[520,1676],[1030,2427]],
+                                [[-1030,-3254],[-520,-2166],[-390,-1828],[-260,-1502],[-130,-975], [-50,-394], [0,0],[50,312],[130,549], [260,884], [390,1202],[520,1430],[1030,2301]],
+                                [[-1030,-2887],[-520,-1698],[-390,-1432],[-260,-1145],[-130,-736], [-50,-283], [0,0],[50,299],[130,487], [260,783], [390,1051],[520,1262],[1030,2160]],
+                                [[-1030,-2237],[-520,-1157],[-390,-938], [-260,-714], [-130,-452], [-50,-170], [0,0],[50,292],[130,450], [260,673], [390,871], [520,1074],[1030,1928]],
+                                [[-1030,-1943],[-520,-1002],[-390,-811], [-260,-630], [-130,-436], [-50,-169], [0,0],[50,287],[130,450], [260,670], [390,854], [520,1037],[1030,1867]],
+                                [[-1030,-1814],[-520,-929], [-390,-749], [-260,-581], [-130,-411], [-50,-166], [0,0],[50,274],[130,438], [260,665], [390,835], [520,1013],[1030,1813]]]
+        
+        pedmaps = [[[0, 0], [0.05, 5], [0.1, 50], [0.15, 70], [0.2, 80], [0.25, 90], [0.3, 110], [0.4, 130], [0.5, 150], [0.6, 180], [0.7, 210], [0.8, 240], [0.9, 270], [1.0, 300]],
+                [[0, 0], [0.05, 15], [0.1, 50], [0.15, 70], [0.2, 80], [0.25, 90], [0.3, 110], [0.4, 130], [0.5, 150], [0.6, 180], [0.7, 210], [0.8, 240], [0.9, 270], [1.0, 300]],
+                [[0, 0], [0.05, 30], [0.1, 50], [0.15, 70], [0.2, 80], [0.25, 90], [0.3, 110], [0.4, 130], [0.5, 150], [0.6, 180], [0.7, 210], [0.8, 240], [0.9, 270], [1.0, 300]]]
+    else:
+        print("无该车辆")
+        return
+
+    # 1. 修改 前悬架空气弹簧刚度
+    # 前悬
+    if fk is not None:
+        F_CmpInd_path = r"C:\workspace\AutoVehcileSim\auto\Suspensions\Compliance\CmpInd_83b37c60-f193-47f3-8b2e-03d0e2ecf1f5.par" 
+        set_vehicle_param(par_path=F_CmpInd_path, front_spring_rate=fk)  # N/m
+
+    # 后悬
+    if rk is not None:
+        R_CmpInd_path = r"C:\workspace\AutoVehcileSim\auto\Suspensions\Compliance_SA\CmpSA_9166f5c2-2174-435d-8570-aa6e19302ef9.par"
+        set_vehicle_param(par_path=R_CmpInd_path, front_spring_rate=rk)  # N/m
+
+    # 3. 修改 阻尼
+    # 前悬
+    if fc is not None:
+        F_Shock_path = r"C:\workspace\AutoVehcileSim\auto\Suspensions\Shocks\Shock_0751644e-013f-45f4-8119-29f0d1bd5cc4.par"
+        shock_force_data = f_shock_force_data_all[fc]
+        set_vehicle_param(par_path=F_Shock_path, shock_force_rate=1, shock_force_data=shock_force_data)  # *k 变化倍数
+
+    # 后悬
+    if rc is not None:
+        R_Shock_path = r"C:\workspace\AutoVehcileSim\auto\Suspensions\Shocks\Shock_df9857ff-75d8-44ea-8bc2-62a47417d5d6.par"
+        shock_force_data = r_shock_force_data_all[rc]
+        set_vehicle_param(par_path=R_Shock_path, shock_force_rate=1, shock_force_data=shock_force_data)  # *k 变化倍数
+
+    # 4. 修改 增程到动力响应
+    # par_path = r"C:\workspace\AutoVehcileSim\auto\Powertrain\HEV_PMC\PMC_a65582f0-a085-4bc8-9606-1a4f75f80775.par"
+    # set_vehicle_param(par_path=par_path, power_delay_rate=dt)  # s
+
+    # 修改电机特性动力延迟参数
+    if dt is not None:
+        par_path = r"C:\workspace\AutoVehcileSim\auto\Powertrain\Motor\MMotor_299ad95f-8e21-4744-9fe7-270ae97bc67a.par"
+        set_motor_power_delay_param(par_path=par_path, power_delay_rate=dt)  # s
+
+    # 5. 修改 dirive demand power
+    if T is not None:
+        pedmap = pedmaps[T]
+        par_path = r"C:\workspace\AutoVehcileSim\auto\Generic\tables\GenTab_90d23e81-2c53-435f-8e2c-d6503354f720.par"
+        modify_power_data(par_path=par_path, value=1, data=pedmap)  # *k 可变为 变化倍数 
+
+if __name__ == "__main__":
+    add_car(dt=0.08)
