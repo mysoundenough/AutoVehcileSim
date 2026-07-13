@@ -1,0 +1,43 @@
+PARSFILE
+#FullDataName Animator: Shape File Link`speed bump`Environment: Props (1 of 2)
+#MiscYellow3
+add_obj C:\workspace\AutoVehcileSim\SrsCarsimAtuo\scene_model\3dmodel\speedbump1.obj
+#ENDMYellow
+
+SET_COLOR 1 1 1
+SET_ANGLE_X 90
+SET_OFFSET_Y -3.5
+SET_OFFSET_Z 0.06
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_5f245a76-02e8-4402-ad4f-d68e6778dc25.par
+#BlueLink2 Animator: Camera Setup`Isometric View - Medium Objects` Shape Preview` , Video Camera`Camera_5f245a76-02e8-4402-ad4f-d68e6778dc25
+
+*IMAGE_TYPE CUSTOM
+*IMAGE_FILE C:\workspace\AutoVehcileSim\SrsCarsimAtuo\scene_model\3dmodel\speed_bump1.png
+
+#EMBEDDED_NOTES
+#Stone Pillar
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Environment: Props (1 of 2) } speed bump
+#Library : Animator: Shape File Link
+#DataSet : speed bump
+#Category: Environment: Props (1 of 2)
+#FileID  : Shape_565c2997-642d-456e-978f-6bd9533d535b
+#Created : 07-13-2026 15:18:04
+#Modified: 07-13-2026 16:12:53
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape File
+
+END

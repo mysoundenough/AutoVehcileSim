@@ -1,0 +1,27 @@
+PARSFILE
+
+! EXPANDED_PARSFILE for Math models and animator
+
+! This is an expansion of the Parsfile: "Animator\STL\Shape_565c2997-642d-456e-978f-6bd9533d535b.par"
+! It contains the contents of that file plus the contents of any files linked
+! with the "PARSFILE" keyword.
+
+! File created by CarSim 2024.1
+
+PRODUCT_NAME CarSim
+MODEL_LAYOUT i_i
+
+ENTER_PARSFILE Animator\STL\Shape_565c2997-642d-456e-978f-6bd9533d535b.par
+#FullDataName Animator: Shape File Link`speed bump`Environment: Props (1 of 2)
+add_obj C:\workspace\AutoVehcileSim\SrsCarsimAtuo\scene_model\3dmodel\speedbump1.obj
+SET_COLOR 1 1 1
+set_lighting on
+set_fogging on
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Environment: Props (1 of 2) } speed bump
+EXIT_PARSFILE Animator\STL\Shape_565c2997-642d-456e-978f-6bd9533d535b.par
+
+
+
+END

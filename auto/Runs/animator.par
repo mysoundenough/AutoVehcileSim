@@ -4,9 +4,6 @@ search_path_append C:\workspace\AutoVehcileSim\auto\
 search_path_append C:\Program Files (x86)\CarSim2024.1_Prog\Resources\
 search_path_append C:\Program Files (x86)\CarSim2024.1_Prog\
 search_path_append C:\Program Files (x86)\CarSim2024.1_Prog\Resources\Animator\Deprecated_Assets\
-DATASET Roads\3D_Road\Road_20acdffb-81f3-4ae3-9c6f-cdbfe0db69fc.vs
-PARSFILE Animator\Cameras\Camera_36b2ee7b-54ec-4c39-9781-51b289ab39c0.par
-#BlueLink5 Animator: Camera Setup`Rear View, Road Ref. (Frt. Facing)` Road Reference` , Camera`Camera_36b2ee7b-54ec-4c39-9781-51b289ab39c0
-
-PARSFILE Roads\3D_Road\Road_20acdffb-81f3-4ae3-9c6f-cdbfe0db69fc.par
+DATASET Animator\STL\view.erd
+PARSFILE Animator\STL\Shape_565c2997-642d-456e-978f-6bd9533d535b_all.par
 END

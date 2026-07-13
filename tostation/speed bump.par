@@ -1,0 +1,111 @@
+/! VS Export Parsfile v3.1.0, 3 files.
+/! 2026-07-13T16:14:05
+/!
+/!
+/F Animator\STL\Shape_565c2997-642d-456e-978f-6bd9533d535b.par`Animator: Shape File Link`speed bump`Environment: Props (1 of 2)
+PARSFILE
+#FullDataName Animator: Shape File Link`speed bump`Environment: Props (1 of 2)
+#MiscYellow3
+add_obj C:\workspace\AutoVehcileSim\SrsCarsimAtuo\scene_model\3dmodel\speedbump1.obj
+#ENDMYellow
+
+SET_COLOR 1 1 1
+SET_ANGLE_X 90
+SET_OFFSET_Y -3.5
+SET_OFFSET_Z 0.06
+*SPECULAR 1
+#CheckBox0 0    
+set_lighting on
+#CheckBox1 0    
+set_fogging on
+#CheckBox3 0    
+#CheckBox4 1    
+
+SET_SPECULAR 1 1 1
+vsv_enable_shadows_recursive
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_5f245a76-02e8-4402-ad4f-d68e6778dc25.par
+#BlueLink2 Animator: Camera Setup`Isometric View - Medium Objects` Shape Preview` , Video Camera`Camera_5f245a76-02e8-4402-ad4f-d68e6778dc25
+
+*IMAGE_TYPE CUSTOM
+*IMAGE_FILE C:\workspace\AutoVehcileSim\SrsCarsimAtuo\scene_model\3dmodel\speed_bump1.png
+
+#EMBEDDED_NOTES
+#Stone Pillar
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { Environment: Props (1 of 2) } speed bump
+#Library : Animator: Shape File Link
+#DataSet : speed bump
+#Category: Environment: Props (1 of 2)
+#FileID  : Shape_565c2997-642d-456e-978f-6bd9533d535b
+#Created : 07-13-2026 15:18:04
+#Modified: 07-13-2026 16:12:53
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Shape File
+
+END
+/F Animator\Cameras\Camera_5f245a76-02e8-4402-ad4f-d68e6778dc25.par`Animator: Camera Setup`Isometric View - Medium Objects`Shape Preview
+PARSFILE
+#FullDataName Animator: Camera Setup`Isometric View - Medium Objects`Shape Preview
+#RingCtrl1 0
+
+#CheckBox1 0    
+#CheckBox2 0    
+#CheckBox3 0    
+
+SET_CAMERA_REFERENCE_FRAME Frame_02b47476-96e6-474b-919e-07d03b43f1ec
+PARSFILE Animator\Frames\Frame_02b47476-96e6-474b-919e-07d03b43f1ec.par
+#BlueLink0 Animator: Reference Frame`Yaw for Shape Preview` Shape Preview: Generic` , Reference frame for outside camera`Frame_02b47476-96e6-474b-919e-07d03b43f1ec
+
+SET_LOOKPOINT_REFERENCE_FRAME Frame_02b47476-96e6-474b-919e-07d03b43f1ec
+SET_LOOKPOINT_X 0
+SET_LOOKPOINT_Y 0
+SET_LOOKPOINT_Z 0
+SET_AZIMUTH 45
+SET_ELEVATION 35.264
+SET_DISTANCE 15
+SET_CAMERAMAN_NAME External camera
+*SET_LOOKPOINT_X 0
+*SET_LOOKPOINT_Y 0
+*SET_LOOKPOINT_Z 0
+*SET_AZIMUTH 45
+*SET_ELEVATION 35.264
+*SET_DISTANCE 15
+FOG_SCALE 0
+SET_FIELD_OF_VIEW 21.1
+
+LOG_ENTRY Used Dataset: Animator: Camera Setup; { Shape Preview } Isometric View - Medium Objects
+#Library : Animator: Camera Setup
+#DataSet : Isometric View - Medium Objects
+#Category: Shape Preview
+#FileID  : Camera_5f245a76-02e8-4402-ad4f-d68e6778dc25
+#Modified: 05-28-2021 15:03:29
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Camera
+
+END
+/F Animator\Frames\Frame_02b47476-96e6-474b-919e-07d03b43f1ec.par`Animator: Reference Frame`Yaw for Shape Preview`Shape Preview: Generic
+PARSFILE
+#FullDataName Animator: Reference Frame`Yaw for Shape Preview`Shape Preview: Generic
+ADD_REFERENCE_FRAME Frame_02b47476-96e6-474b-919e-07d03b43f1ec
+#RingCtrl0 yaw_pitch_roll
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME Yaw
+
+WRT_Yaw
+ANI_Yaw
+
+LOG_ENTRY Used Dataset: Animator: Reference Frame; { Shape Preview: Generic } Yaw for Shape Preview
+#Library : Animator: Reference Frame
+#DataSet : Yaw for Shape Preview
+#Category: Shape Preview: Generic
+#FileID  : Frame_02b47476-96e6-474b-919e-07d03b43f1ec
+#Modified: 06-02-2026 19:07:19
+#Product : CarSim 2024.1
+#DataVer : 2024.1
+#VehCode Reference Frame
+
+END

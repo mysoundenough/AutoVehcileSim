@@ -1,46 +1,50 @@
-2026-07-09T10:39:19 Logfile initialized.
-2026-07-09T10:39:19 (Info):    CarSim 2024.1
-2026-07-09T10:39:19 (Info):    -
-2026-07-09T10:39:19 (Info):    command-line: 
-2026-07-09T10:39:19 (Info):    -
-2026-07-09T10:39:19 (Info):    Working Dir: C:\workspace\AutoVehcileSim\auto\
-2026-07-09T10:39:19 (Info):    Program Dir: C:\Program Files (x86)\CarSim2024.1_Prog\
-2026-07-09T10:39:19 (Info):    -
-2026-07-09T10:39:19 (Info):    OS Version:        6.2 (build 9200)
-2026-07-09T10:39:19 (Info):    CPU Architecture:  x64
-2026-07-09T10:39:19 (Info):    CPU Count:         2
-2026-07-09T10:39:19 (Info):    CPU Level/Rev:     21/1
-2026-07-09T10:39:19 (Info):    Start Mem Total:   4090 MB
-2026-07-09T10:39:19 (Info):    Start Mem Used:    66%
-2026-07-09T10:39:19 (Info):    -
-2026-07-09T10:39:19 (Info):    Loaded dataset index cache in 0.11s, 27.2 megabytes.
-2026-07-09T10:39:20 (Info):    Error: A license manager is already running.
-2026-07-09T10:39:21 (Info):    License check took 1.83 seconds.
-2026-07-09T10:39:21 (Info):    No install ID found at regkey "Software\Mechanical Simulation Corp\CarSim 2024.1".
-2026-07-09T10:39:21 (Info):    No install ID found at regkey "Software\Mechanical Simulation Corp\CarSim 2024.1".
-2026-07-09T10:39:24 (Info):    Initial setup took 3.14 seconds.
-2026-07-09T10:39:24 (Info):    Auto updates took 0.00 seconds.
-2026-07-09T10:39:26 (Info):    Loaded last screen in 1.50 seconds.
-2026-07-09T10:39:26 (Info):    Total init time 7.20 seconds.
-2026-07-09T11:06:03 (Info):    Dataset created in "Roads\AniGroup\": { my_3d_object } my_3d_object (UUID: AniRep_9cb90584-0471-4ee3-a9ef-61bd9620d05e).
-2026-07-09T15:19:49 (Info):    Created temp directory: C:\Users\mayuan\AppData\Local\Temp\CarSim_SaveAs\03f8d245-b536-4f24-ba09-89cfd5f61a28
-2026-07-09T15:19:49 (Info):    Initialize creation of CPAR: C:\workspace\AutoVehcileSim\my_3d_object.cpar
-2026-07-09T15:19:49 (Info):    Generating export file C:\Users\mayuan\AppData\Local\Temp\CarSim_SaveAs\03f8d245-b536-4f24-ba09-89cfd5f61a28\temp.par
-2026-07-09T15:19:49 (Info):    ----------------------------------
-2026-07-09T15:19:49 (Info):    * Generating include list
-2026-07-09T15:19:49 (Info):    Processing: file Roads\AniGroup\AniRep_9cb90584-0471-4ee3-a9ef-61bd9620d05e.par
-2026-07-09T15:19:49 (Info):    Processing: file Animator\STL\Shape_8832f7d8-c97e-415b-96ac-8910a017080f.par
-2026-07-09T15:19:49 (Info):    Processing: file Animator\Cameras\Camera_5f245a76-02e8-4402-ad4f-d68e6778dc25.par
-2026-07-09T15:19:49 (Info):    Processing: file Animator\Frames\Frame_02b47476-96e6-474b-919e-07d03b43f1ec.par
-2026-07-09T15:19:49 (Info):    * Writing output file
-2026-07-09T15:19:49 (Info):    ----------------------------------
-2026-07-09T15:19:49 (Info):    ----------------------------------
-2026-07-09T15:19:49 (Info):    Finished generating export file "C:\Users\mayuan\AppData\Local\Temp\CarSim_SaveAs\03f8d245-b536-4f24-ba09-89cfd5f61a28\temp.par".
-2026-07-09T15:19:49 (Info):        Included 4 files, 3.7 kb.
-2026-07-09T15:19:49 (Info):        It took 0.3 seconds.
-2026-07-09T15:19:49 (Info):    ----------------------------------
-2026-07-09T15:19:49 (Info):    Generating include list for CPar.
-2026-07-09T15:19:49 (Info):    Include cpar file: Animator\STL\Shape_8832f7d8-c97e-415b-96ac-8910a017080f.png
-2026-07-09T15:19:49 (Info):    Finished generating include list for CPar.
-2026-07-09T15:19:49 (Info):    Creating CPar: C:\workspace\AutoVehcileSim\my_3d_object.cpar
-2026-07-09T15:19:53 (Info):    Removing temp directory: "C:\Users\mayuan\AppData\Local\Temp\CarSim_SaveAs\03f8d245-b536-4f24-
+2026-07-13T15:11:47 Logfile initialized.
+2026-07-13T15:11:47 (Info):    CarSim 2024.1
+2026-07-13T15:11:47 (Info):    -
+2026-07-13T15:11:47 (Info):    command-line: 
+2026-07-13T15:11:47 (Info):    -
+2026-07-13T15:11:47 (Info):    Working Dir: C:\workspace\AutoVehcileSim\auto\
+2026-07-13T15:11:47 (Info):    Program Dir: C:\Program Files (x86)\CarSim2024.1_Prog\
+2026-07-13T15:11:47 (Info):    -
+2026-07-13T15:11:47 (Info):    OS Version:        6.2 (build 9200)
+2026-07-13T15:11:47 (Info):    CPU Architecture:  x64
+2026-07-13T15:11:47 (Info):    CPU Count:         2
+2026-07-13T15:11:47 (Info):    CPU Level/Rev:     21/1
+2026-07-13T15:11:47 (Info):    Start Mem Total:   4090 MB
+2026-07-13T15:11:47 (Info):    Start Mem Used:    78%
+2026-07-13T15:11:47 (Info):    -
+2026-07-13T15:11:47 (Info):    Loaded dataset index cache in 0.08s, 27.2 megabytes.
+2026-07-13T15:11:47 (Info):    Error: A license manager is already running.
+2026-07-13T15:11:47 (Info):    License check took 0.36 seconds.
+2026-07-13T15:11:47 (Info):    No install ID found at regkey "Software\Mechanical Simulation Corp\CarSim 2024.1".
+2026-07-13T15:11:48 (Info):    No install ID found at regkey "Software\Mechanical Simulation Corp\CarSim 2024.1".
+2026-07-13T15:11:48 (Info):    Initial setup took 0.55 seconds.
+2026-07-13T15:11:48 (Info):    Auto updates took 0.00 seconds.
+2026-07-13T15:11:49 (Info):    Loaded last screen in 1.06 seconds.
+2026-07-13T15:11:49 (Info):    Total init time 2.56 seconds.
+2026-07-13T15:12:22 (Info):    Created temp directory: C:\Users\mayuan\AppData\Local\Temp\CarSim_SaveAs\2fc295bc-47f8-49a0-8c82-1dc0477fc97a
+2026-07-13T15:12:24 (Info):    ----------------------------------
+2026-07-13T15:12:24 (Info):    Starting import preview...
+2026-07-13T15:12:24 (Info):    Skip File, Roads\AniGroup\AniRep_9cb90584-0471-4ee3-a9ef-61bd9620d05e.par, Blocked, Road: Animator Repeated Object, my_3d_object, my_3d_object
+2026-07-13T15:12:24 (Info):    Skip File, Animator\STL\Shape_8832f7d8-c97e-415b-96ac-8910a017080f.par, Blocked, Animator: Shape File Link, Environment: Props (1 of 2), Fences: Stone Pillar
+2026-07-13T15:12:24 (Info):    Skip File, Animator\Cameras\Camera_5f245a76-02e8-4402-ad4f-d68e6778dc25.par, Blocked, Animator: Camera Setup, Shape Preview, Isometric View - Medium Objects
+2026-07-13T15:12:24 (Info):    Skip File, Animator\Frames\Frame_02b47476-96e6-474b-919e-07d03b43f1ec.par, Blocked, Animator: Reference Frame, Shape Preview: Generic, Yaw for Shape Preview
+2026-07-13T15:12:48 (Info):    Couldn't scan file data, ignoring: Roads\BuilderSegment\RoadSeg_299f5dd8-31b0-44f2-9251-eaaf215df33c_echo1.par
+2026-07-13T15:13:04 (Info):    Indexed whole database in 39.28s
+2026-07-13T15:13:04 (Info):    Completed import preview, mapped 4 items. Would have:
+2026-07-13T15:13:04 (Info):        [Imported 0 files, skipped 4.]
+2026-07-13T15:13:04 (Info):        [It took 39.4 seconds.]
+2026-07-13T15:13:04 (Info):    ----------------------------------
+2026-07-13T15:16:41 (Info):    ----------------------------------
+2026-07-13T15:16:41 (Info):    Performing an import based on previously generated import preview...
+2026-07-13T15:16:41 (Info):    Skipped: Skip File, Roads\AniGroup\AniRep_9cb90584-0471-4ee3-a9ef-61bd9620d05e.par, UUID & Name, Road: Animator Repeated Object, my_3d_object, my_3d_object
+2026-07-13T15:16:41 (Info):    Skipped: Skip File, Animator\STL\Shape_8832f7d8-c97e-415b-96ac-8910a017080f.par, UUID & Name, Animator: Shape File Link, Environment: Props (1 of 2), Fences: Stone Pillar
+2026-07-13T15:16:41 (Info):    Skipped: Skip File, Animator\Cameras\Camera_5f245a76-02e8-4402-ad4f-d68e6778dc25.par, UUID & Name, Animator: Camera Setup, Shape Preview, Isometric View - Medium Objects
+2026-07-13T15:16:41 (Info):    Skipped: Skip File, Animator\Frames\Frame_02b47476-96e6-474b-919e-07d03b43f1ec.par, UUID & Name, Animator: Reference Frame, Shape Preview: Generic, Yaw for Shape Preview
+2026-07-13T15:16:42 (Info):    Couldn't scan file data, ignoring: Roads\BuilderSegment\RoadSeg_299f5dd8-31b0-44f2-9251-eaaf215df33c_echo1.par
+2026-07-13T15:16:43 (Info):    Indexed whole database in 1.39s
+2026-07-13T15:16:43 (Info):    Import completed.
+2026-07-13T15:16:43 (Info):        Imported 0 files, skipped 4.
+2026-07-13T15:16:43 (Info):        It took 1.5 seconds to import.
+2026-07-13T15:16:43 (Info):    ----------------------------------
+2026-07-13T15:16:43 (Info):    Starting import of Consolidated Parsfile "C:\workspace\AutoVehcileSim\tostation\my_3d_object.cpar"
